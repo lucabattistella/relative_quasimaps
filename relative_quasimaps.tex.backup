@@ -1,0 +1,306 @@
+\documentclass[11pt]{amsart}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+%\usepackage{showlabels}
+\usepackage{amsthm}
+
+\usepackage[english]{babel}
+\usepackage{yfonts}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{enumerate}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{faktor}
+\usepackage{xcolor}
+\usepackage{xfrac}
+\usepackage{tikz,tikz-cd}
+\usepackage[all]{xy}
+\usepackage{bbm}
+
+\newcommand{\M}[4]{\overline{\mathcal M}_{#1,#2}(#3,#4)}
+\newcommand{\Q}[4]{\overline{\mathcal Q}_{#1,#2}(#3,#4)}
+\newcommand{\Qt}[4]{\widetilde{\mathcal Q}_{#1,#2}(#3,#4)}
+\newcommand{\PP}{\mathbb P}
+\renewcommand{\to}{\rightarrow}
+\newcommand{\A}{\mathcal A}
+\newcommand{\B}{\mathcal B}
+\newcommand{\C}{\mathfrak C}
+\renewcommand{\L}{\mathcal L}
+\newcommand{\MM}{\mathfrak M}
+\newcommand{\comp}{\chi}
+\newcommand{\sst}{\sigma^{ss}}
+
+
+\newcommand{\bq}{\begin{equation}}
+\newcommand{\eq}{\end{equation}}
+\newcommand{\ba}{\begin{aligned}}
+\newcommand{\ea}{\end{aligned}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\bsm}{\left(\begin{smallmatrix}}
+\newcommand{\esm}{\end{smallmatrix}\right)}                   
+\newcommand{\bpm}{\begin{pmatrix}}
+\newcommand{\epm}{\end{pmatrix}}
+\newcommand{\barr}{\begin{displaymath}\begin{array}{cccc}}
+\newcommand{\earr}{\end{array}\end{displaymath}}
+\newcommand{\barrl}{\begin{displaymath}\begin{array}{lcl}}
+\newcommand{\earrl}{\end{array}\end{displaymath}}
+\newcommand{\barl}{\begin{displaymath}\begin{array}{l}}
+\newcommand{\earl}{\end{array}\end{displaymath}}
+\newcommand{\bxym}{ \begin{displaymath}\xymatrix }
+\newcommand{\exym}{\end{displaymath}}
+\newcommand{\bcd}{ \begin{center}\begin{tikzcd}}
+\newcommand{\ecd}{\end{tikzcd}\end{center}}
+
+\newcommand{\tr}{{\rm tr}}
+\newcommand{\Isom}{\text{Isom}}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\pr}{\operatorname{pr}}
+\newcommand{\ev}{\operatorname{ev}}
+\newcommand{\codim}{\operatorname{codim}}
+\newcommand{\vdim}{\operatorname{vdim}}
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem*{teo*}{Theorem}
+\newtheorem{ipotesi}{ipotesi}
+\newtheorem*{nota}{Nota}
+\newtheorem{claim}{Claim}
+\newtheorem{question}[thm]{Question}
+
+\theoremstyle{definition}
+\newtheorem{example}[thm]{Example}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{dfn}[thm]{Definition}
+\newtheorem{remark}[thm]{Remark}
+\newtheorem{com}[thm]{Comment}
+\newtheorem{num}{Number}
+\newtheorem*{sketch}{Sketch}
+\newtheorem*{rem}{Remark}
+
+
+\newcommand{\todo}[1]{\vspace{5mm}\par \noindent
+\framebox{\begin{minipage}[c]{0.95 \textwidth} \tt #1\end{minipage}} \vspace{5mm} \par}
+
+\def\ti{-\allowhyphens}
+\newcommand{\thismonth}{\ifcase\month % case 0 --- impossible!
+  \or January\or February\or March\or April\or May\or June%
+  \or July\or August\or September\or October\or November%
+  \or December\fi}
+\newcommand{\thismonthyear}{{\thismonth} {\number\year}}
+\newcommand{\thisdaymonthyear}{{\number\day} {\thismonth} {\number\year}}
+
+\title{Relative quasimaps \`a la Gathmann}
+\date{\today}
+\begin{document}
+\maketitle
+\begin{abstract}
+abstract
+\end{abstract}
+
+\section{Quasimaps to $\PP^r$ relative to a hyperplane}
+
+We first deal with genus 0 quasimaps to projective space, relative to a hyperplane. We give a Gathmann-like description of the space of relative quasimaps as a closed substack of the moduli space of (absolute) quasimaps to $\PP^r$; it turns out to be irreducible of the expected dimension. Finally, we retrieve a Gathmann-type formula by pushforward along the comparison morphism $\comp\colon \M{0}{n}{\PP^r}{d}\to\Q{0}{n}{\PP^r}{d}$.
+
+Fix coordinates on $\PP^r$ such that the hyperplane $H$ is $\{x_0=0\}$. Let $\alpha=(\alpha_1,\ldots,\alpha_n)$ be an $n$-tuple of nonnegative integers. Consider the following locus $\Qt{0}{\alpha}{\PP^r|H}{d}$ inside $\Q{0}{n}{\PP^r}{d}$: the quasimaps $(C,x_1,\ldots,x_n,L,u_0,\ldots,u_r)$ such that, if $Z$ is a connected component of the vanishing locus of $u_0$ in $C$, then one of the following holds:
+
+\begin{enumerate}
+\item $Z$ is a point, either unmarked, or one of the $x_i$'s, and in this case $u_0$ vanishes at $Z$ with multiplicity at least $\alpha_i$.
+\item $Z$ is a curve (\emph{internal}); letting $C^{(1)},\ldots,C^{(k)}$ be the (\emph{external}) irreducible components adjacent to $Z$, with nodes $q_i=Z\cap C^{(i)}$, and $m^{(i)}$ the order of vanishing of $u_{0|C^{(i)}}$ at $q_i$, we must have
+\[
+\deg(L_{|Z})+\sum_{i=1}^k m^{(i)}\geq\sum_{x_j\in Z} \alpha_j
+\]
+\end{enumerate}
+
+On the other hand, denote by $\mathcal Q_{0,\alpha}(\PP^r|H,d)$ the \emph{nice locus}, consisting of actual maps from an irreducible curve (i.e. $\PP^1$) and with specified tangency condition $\alpha$ at the markings $\mathbf x$. Notice that this is an irreducible, locally closed substack of $\Q{0}{n}{\PP^r}{d}$, by pretty much the same argument as in \cite[Lemma 1.8]{Ga}; it has codimension $\sum\alpha$. In fact it is isomorphic to the nice locus inside stable maps, that Gathmann denotes by $\mathcal M_{0,\alpha}(\PP^r|H,d)$ \cite[Def. 1.6]{Ga} (the stricter stability condition has no effect when the source curve is irreducible, of course provided $n\geq2$); hence:
+
+\begin{lem}\label{lem:comparison}
+The comparison morphism restricts to a birational morphism $\M{0}{\alpha}{\PP^r|H}{d}\to \Qt{0}{\alpha}{\PP^r|H}{d}$.
+\end{lem}
+\begin{proof}
+The contraction of a rational tail $R$ always happens far away from the markings, hence the only care we need to take is when the one component touching $R$ is internal (call it $Z$); in this case, observe that $m^{(R)}\leq\deg(f_{|R})$ and the quasimap resulting from the contraction of $R$ has $\deg(L_{|Z})=\deg(f_{|Z})+\deg(f_{|R})$, so the corresponding term only moves around the LHS of the $\alpha$-tangency condition nr. 2.
+
+Birationality follows from the fact that the comparison morphism restricts to give an isomorphism between the nice loci.
+\end{proof}
+
+\begin{lem}
+With notations as above (with $\sum\alpha\leq d$), $\Qt{0}{\alpha}{\PP^r|H}{d}$ is the closure of the nice locus $\mathcal Q_{0,\alpha}(\PP^r|H,d)$ inside $\Q{0}{n}{\PP^r}{d}$. 
+\end{lem}
+\begin{proof}
+$\Qt{0}{\alpha}{\PP^r|H}{d}\subseteq\overline{\mathcal Q_{0,\alpha}(\PP^r|H,d)}$: we show that, given any quasimap satisfying the $\alpha$-tangency conditions spelled above, it can be (infinitesimally) deformed to a stable \emph{map} satisfying Gathmann's conditions \cite[Def. 1.1 and Rmk. 1.4]{Ga}, and then appeal to \cite[Prop. 1.14]{Ga}.
+
+We induct on the number of components containing at least one base-point. If this number is zero, we're done (because quasimap stability is stronger than map stability); otherwise, pick such a component $C_0$, with base-points $p_1,\ldots,p_h$ and adjacent rational trees $R_1,\ldots,R_k$, joined to $C_0$ at the nodes $q_1,\ldots,q_k$. Since there are base-points but the quasimap respects the nondegeneracy condition, $\deg(L_{|C_0})>0$, and since $C_0\simeq\PP^1$ we can find a section $w$ of $L_{|C_0}\simeq\mathcal O_{\PP^1}(d_0)$ not vanishing at any of the base-points $p_i$'s; then it is enough to deform the section $u_{r|C_0}$ to $u_{r|C_0}+\epsilon w$ (and keep the other sections the same) in order to delete the base-points belonging to $C_0$. Notice that $u_{0|C_0}$ is unchanged, so the deformation still respects $\alpha$-tangency at the markings lying on $C_0$ (whether the latter is an internal or an external component). We need to check that such a deformation can be extended to the whole curve $C$ without changing the vanishing conditions on $u_0$. Notice that the action of $PGL_{r+1}$ on $\PP^r$ extends to an action of the group on the space of quasimaps; we can apply the matrix
+\[
+\begin{bmatrix}
+1 & & \\
+ & \ddots & \\
+ & \epsilon \frac{w(q_i)}{u_j(q_i)} & 1
+\end{bmatrix}
+\]
+to the restriction of the original quasimap to $R_i$, where $j$ is any index s.t. $u_j(q_i)\neq 0$ (one such must exist because the node is not allowed to be a base-point), and by doing this separately to every rational tree springing from $C_0$ we get a deformation of the original quasimap that still has $\alpha$-tangency with the hyperplane $H$ ($u_0$ hasn't been touched at all), but the base-points on $C_0$ have been eliminated.
+
+$\overline{\mathcal Q_{0,\alpha}(\PP^r|H,d)}\subseteq\Qt{0}{\alpha}{\PP^r|H}{d}$: consider a family of relative quasimaps over a smooth curve $S$, such that the generic fiber lies in the nice locus. Then we may blow-up the source curve (which is a fibered surface) in the base-points of the quasimap (that are finitely many smooth points of the central fiber) in order to get an actual morphism to $\mathbb P^r$; we may as well suppose that the central fiber of the new family is stable. Notice that the central fiber actually belongs to Gathmann's space $\M{0}{\alpha}{\PP^r|H}{d}$: we have just introduced some rational tails away from the markings, hence the only thing we have to check is, when we blow-up a base-point on an internal component, the rational tail will again be internal ($u_0\equiv 0$ in a neighborhood of the base-point), so it will contribute to the LHS of the $\alpha$-tangency condition nr. 2 in the very same way. We may now invoke \cite[Lemma 1.9]{Ga} and the quasimap case follows from Lemma \ref{lem:comparison}.
+\end{proof}
+From now on we shall denote this closed substack by $\Q{0}{\alpha}{\PP^r|H}{d}$.
+
+\medskip
+
+Increasing the multiplicity can be naively performed in the very same way as Gathmann did:
+\[
+\sigma^m_k:=x_k^*d^m_{\mathcal C/\overline{\mathcal Q}}(u_0)\in H^0(\overline{\mathcal Q},x_k^*\mathcal P^m_{\mathcal C/\overline{\mathcal Q}}(\mathcal L))
+\]
+with $m=\alpha_k+1$ cuts $\Q{0}{\alpha+e_k}{\PP^r|H}{d}$ inside $\Q{0}{\alpha}{\PP^r|H}{d}$, together with a bunch of degenerate contributions from quasimaps where the component on which $x_k$ lies is internal (call it $Z$) and (notice the equality sign!)
+\[
+\deg(L_{|Z})+\sum m^{(i)}=\sum_{x_j\in Z}\alpha_j.
+\]
+Of course, quasimap stability forces these degenerate contributions not to have any rational tail; this is really the only difference with the case of stable maps, and indeed we can pushforward Gathmann's formula along the comparison morphism $\comp\colon \M{0}{n}{\PP^r}{d}\to\Q{0}{n}{\PP^r}{d}$ and the only terms that are going to change are the degenerate ones with rational tails (in fact they disappear, since the restriction of the comparison map has positive dimensional fibers there). With an eye to the future, we remark that these contributions do matter when computing GW invariants of a CY hypersurface in projective space, and may well account for the divergence between GW and quasimap invariants in the CY case \cite[Rmk. 1.6]{Ga-MF}.
+
+\begin{lem}\label{lem:compare_psi}
+$\comp^*(\psi_k)=\psi_k$ and $\comp^*(x_k^*\mathcal L)=\ev_k^*(\mathcal O_{\mathbb P^r}(H))$.
+\end{lem}
+\begin{proof}
+Recall that $\psi_k=c_1(x_k^*\omega_{\mathcal C/\mathcal M})$ and contemplate the following diagram
+\bcd
+& & & \PP^r & \\
+\mathcal C_{\overline {\mathcal M}}\ar[rr,"\sst"]\ar[rd] \ar[urrr,"f"] & & \comp^*\mathcal C_{\overline {\mathcal Q}} \ar[ld]\ar[rr]\ar[ur,dashed] & & \mathcal C_{\overline {\mathcal Q}} \ar[d]\ar[ul,dashed] \\
+& \M{0}{n}{\PP^r}{d} \ar[rrr,"\comp"] \ar[ul,bend left,"x_k"]\ar[ur,bend right,"x_k"right=.2cm]& & & \Q{0}{n}{\PP^r}{d}\ar[u,bend right, "x_k"right]
+\ecd
+where $\sst$ is the strong stabilisation map, i.e. contracting the rational tails, which is an isomorphism near the markings.
+\end{proof}
+
+\begin{lem}\label{lem:posdimfiber}
+$\dim(\M{0}{(m^{(i)})}{\PP^r|H}{d}\cap \ev_1^*(p))>0$ everytime $rd>1$, where $p$ is a point of $H$, so the pushforward along $\comp$ of a degenerate locus with rational tails is 0.
+\end{lem}
+\begin{proof}
+$\dim(\M{0}{(m^{(i)})}{\PP^r|H}{d}\cap \ev_1^*(p))=(r-3)+(1-m^{(i)})+d(r+1)-(r-1)=(rd-1)+(d-m^{(i)})$.
+\end{proof}
+
+\begin{prop}
+Denote by $[D^\mathcal{Q}_{\alpha,k}(\PP^r|H,d)]$ the sum of the (product) fundamental classes of
+\[
+\Q{0}{\alpha^{(0)}\cup {(0,\ldots,0)}}{H}{d_0}\times_{(\PP^r)^k}\prod_{i=1}^k \Q{0}{(m^{(i)})\cup\alpha^{(i)}}{\PP^r|H}{d_i}
+\]
+with coefficient $\frac{m^{(1)}\ldots m^{(k)}}{k!}$, where the sum runs over all splittings $d=\sum d_i$ and $\alpha=\bigcup \alpha^{(i)}$ such that the above spaces are well-defined, in particular $|\alpha^{(0)}|+k$ and $|\alpha^{(i)}|+1$ are all $\geq 2$, and such that
+\[
+d_0+\sum_{i=1}^k m^{(i)}=\sum \alpha^{(0)}
+\]
+
+The following formula holds
+\[
+(\alpha_k\psi_k+x_k^*\mathcal L)\cdot[\Q{0}{\alpha}{\PP^r|H}{d}]=[\Q{0}{\alpha+e_k}{\PP^r|H}{d}]+[D^\mathcal{Q}_{\alpha,k}(\PP^r|H,d)].
+\]
+\end{prop}
+\begin{proof}
+Follows from \cite[Thm. 2.6]{Ga} by pushforward along $\comp\colon \M{0}{n}{\PP^r}{d}\to\Q{0}{n}{\PP^r}{d}$, using the projection fomula and Lemmas \ref{lem:comparison}, \ref{lem:compare_psi} and \ref{lem:posdimfiber}.
+\end{proof}
+
+\section{The quasimap mirror theorem}
+Assuming that quasimap invariants for $\PP^r$ coincide with Gromov-Witten invariants on the nose, we get the following result.
+\begin{dfn}
+ For a complete intersection $X$ in $\PP^r$ and $d>0$, let
+ \[
+  I^X_d=(\ev_1)_*\left(\frac{1}{z-\psi_1}[\Q{0}{2}{X}{d}]^\text{vir}\right)
+ \]
+ where $\ev_1$ is always thought of as landing in $\PP^r$.
+ 
+ Set also $I^X_0=\mathbbm 1_{\PP^r}$ and $I^X=\sum_{d\geq 0}I^X_d q^d$.
+\end{dfn}
+\begin{thm}
+Let $X\subseteq\PP^4$ be a smooth quintic 3-fold. Then
+ \[
+  \sum_{d\geq 0} q^d\prod_{i=0}^{5d}(X+iz)I^{\PP^4}_d= XP(q)I^X
+ \]
+where
+\[
+ P(q)=1+\sum_{d>0}dq^d\langle H^4,\mathbbm 1_{\PP^4}\rangle_{\Q{0}{\{5d,0\}}{\PP^4|X}{d}}=1+\sum_{d>0}q^d\frac{(5d)!}{(d!)^5}\sum_{i=d+1}^{5d-1}\frac{1}{i}.
+\]
+\end{thm}
+\begin{proof}
+ We'll write it for a general CY hypersurface in $i\colon X_a\hookrightarrow\PP^r$, so the degree of $X$ is $a=r+1$. Notice that dual bases for $H^*(\PP^r)$ are given by $T^i=H^i$ and $T_i=H^{r-i}$, while (induced) dual bases for $i^*H^*(\PP^r)$ are $S^i=H^i$ and $S_i=\frac{1}{a}H^{r-i-1}$; the restriction of $H^r$ is 0.
+ 
+ Define
+ \[
+  I^{\PP^r|X}_{d,(m)}=(\ev_1)_*\left(\frac{1}{z-\psi_1}[\Q{0}{\{m,0\}}{\PP^r|X}{d}]^\text{vir}\right),
+ \]
+which coincides with the absolute $I$-function defined above for $m=0$, and
+\[
+ J^{\PP^r|X}_{d,(m)}=(\ev_1)_*\left(m[\Q{0}{\{m,0\}}{\PP^r|X}{d}]^\text{vir}+\frac{1}{z-\psi_1}[D_m^{\mathcal Q}(\PP^r|X,d)]^\text{vir}\right).
+\]
+Then, by Gathmann's formula, we can prove that
+\begin{equation}\label{eqn:G}
+ (X+mz) I^{\PP^r|X}_{d,(m)}= I^{\PP^r|X}_{d,(m+1)}+ J^{\PP^r|X}_{d,(m)},
+\end{equation}
+from which it follows that
+\[
+ \prod_{i=0}^{ad}(X+iz) I^{\PP^r}_d=\sum_{m=0}^{ad}\prod_{i=m+1}^{ad}(X+iz)J^{\PP^r|X}_{d,(m)}.
+\]
+It is now a matter of evaluating the RHS. Notice that $J^{\PP^r|X}_{d,(m)}$ is made of two parts:
+\begin{itemize}
+ \item the boundary terms: the strong stability condition for quasimaps and the choice of working with only two markings makes these boundary contributions particularly simple to compute. The shape of the source curve is that of a snake which the hypersurface cuts into two pieces, the internal one of degree $d^{(0)}$, and the external one of degree $d^{(1)}$ and multiplicity $m^{(1)}$ of contact with $X$, with the first marking point belonging to the internal component and the second to the external one.
+ 
+ The invariants which we need to consider will hence be of the form
+ \[
+  \langle T^i\psi_1^j,S_i\rangle_{\Q{0}{2}{X}{d^{(0)}}}\langle S^i,\mathbbm 1_{\PP^r}\rangle_{\Q{0}{\{m^{(1)},0\}}{\PP^r|X}.{d^{(1)}}}
+ \]
+ A dimensional computation
+\begin{align*}
+ 0\leq \codim S_i &= \dim X-\codim S^i \\
+ &= \dim X-\vdim \Q{0}{\{m^{(1)},0\}}{\PP^r|X}{d^{(1)}} \\
+ &= \dim X-(\dim\PP^r-3+2-m^{(1)}-K_{\PP^r}\cdot d^{(1)}\ell)\\
+ &= m^{(1)}-X\cdot d^{(1)}\ell+K_{X}\cdot d^{(1)}\ell \\
+ &= m^{(1)}-X\cdot d^{(1)}\ell\leq 0
+\end{align*}
+forces $S_1=\mathbbm 1_X$ and $S^1=\frac{1}{a}H^{r-1}$, $m^{(1)}=ad^{(1)}$ hence
+\[
+ m=\alpha_1=X\cdot d^{(0)}\ell+m^{(1)}=ad,
+\]
+so this doesn't show up but at the very end of the ``increasing the multiplicity'' process.
+
+\item The other term in $J^{\PP^r|X}_{d,(m)}$ is $m(\ev_1)_*[\Q{0}{\{m,0\}}{\PP^r|X}{d}]^\text{vir}$; notice that it only gets insertions from the cohomology of $\PP^r$ (restricted to $X$). On the other hand
+\[
+ \vdim \Q{0}{\{m,0\}}{\PP^r|X}{d}=r-3+2-m+d(r+1)\geq r-1
+\]
+because $m\leq ad$; since the restriction of $H^r$ to $X$ vanishes, the only insertion that contributes is $H^{r-1}$, forcing the equality $m=ad$.
+\end{itemize}
+So, in the end, we see that equation \ref{eqn:G} reduces to
+\begin{align*}
+ \prod_{i=0}^{ad}(X+iz) I^{\PP^r}_d &=J^{\PP^r|X}_{d,(ad)} \\
+ &= \sum_{i=0,\ldots,r-1;j\geq 0}(da)\langle H^{r-1},\mathbbm 1_{\PP^r}\rangle_{\Q{0}{\{ad,0\}}{\PP^r|X}{d}} H \\
+ &+\sum_{\substack{0<d^{(0)}<d \\ d^{(0)}+d^{(1)}=d}}z^{j+1}H^{r-i}\langle H^i\psi_1^j,\mathbbm 1_{X}\rangle_{\Q{0}{2}{X}{d^{(0)}}}(ad^{(1)})\langle \frac{1}{a}H^{r-1},\mathbbm 1_{\PP^r}\rangle_{\Q{0}{\{ad^{(1)},0\}}{\PP^r|X}{d^{(1)}}}\\
+ &+z^{j+1}H^{r-i}\langle H^i\psi_1^j,\mathbbm 1_{X}\rangle_{\Q{0}{2}{X}{d}}
+\end{align*}
+from which the first claim of the theorem is now evident (with a bit of rearranging, using $X=aH$ and $i^*(H^r)=0$, so in the last line everything is divisible by $H$).
+
+\smallskip
+
+In order to evaluate $P(q)$, we use again Gathmann's algorithm, this time in the other direction, to go all the way back to $\PP^r$; then we make use of our assumption that quasimap invariants and ordinary GW coincide for the projective space. So it starts:
+\[
+ [\Q{0}{\{ad,0\}}{\PP^r|X}{d}]^\text{vir}=(X+(ad-1)\psi_1)[\Q{0}{\{ad-1,0\}}{\PP^r|X}{d}]^\text{vir}-[D_{ad}^{\mathcal Q}(\PP^r|X,d)]^\text{vir}
+\]
+When looking at the boundary, the invariants that come into play are of the form
+\[
+ \langle H^{r-1},S_i\rangle_{\Q{0}{2}{X}{d^{(0)}}}\langle S^i,\mathbbm 1_{\PP^r}\rangle_{\Q{0}{\{a(d-d^{(0)})-1,0\}}{\PP^r|X}{d-d^{(0)}}}
+\]
+but notice that they must vanish by dimensional reasons, since
+\[
+ \codim(S_i)=\dim X-3+2-K_X\cdot d^{(0)}\ell-(r-1)=-1.
+\]
+So
+\begin{align}
+ d\langle H^{r-1},\mathbbm 1_{\PP^r}\rangle_{\Q{0}{\{ad,0\}}{\PP^r|X}{d}}=d[\Q{0}{2}{\PP^r}{d}]\cap\ev_1^*(H^{r-1})\prod_{i=0}^{ad-1}(\ev_1^*X+i\psi_1) \\
+ =
+\end{align}
+
+\end{proof}
+
+\bibliographystyle{alpha}
+\bibliography{relqm}
+
+\end{document}
