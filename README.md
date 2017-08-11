@@ -1,6 +1,5 @@
-# relative_quasimaps
+# Relative Quasimaps
 
-here is a test
-and here is another one
+Paper on relative quasimaps a la Gathmann.
 
-Blah blah.
+Copyright 2017 Luca Battistella and Navid Nabijou
