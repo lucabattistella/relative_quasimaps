@@ -53,7 +53,7 @@
 \newcommand{\earl}{\end{array}\end{displaymath}}
 \newcommand{\bxym}{ \begin{displaymath}\xymatrix }
 \newcommand{\exym}{\end{displaymath}}
-\newcommand{\bcd}{ \begin{center}\begin{tikzcd}}
+\newcommand{\bcd}{\begin{center}\begin{tikzcd}}
 \newcommand{\ecd}{\end{tikzcd}\end{center}}
 
 \newcommand{\tr}{{\rm tr}}
@@ -201,6 +201,31 @@ The following formula holds
 Follows from \cite[Thm. 2.6]{Ga} by pushforward along $\comp\colon \M{0}{n}{\PP^r}{d}\to\Q{0}{n}{\PP^r}{d}$, using the projection fomula and Lemmas \ref{lem:comparison}, \ref{lem:compare_psi} and \ref{lem:posdimfiber}.
 \end{proof}
 
+\section{Comparison with the GIT construction}
+Let $X$ be a hypersurface of degree $a$ in $\PP^r$. In the preceding sections, we have put a virtual class on $\Q{g}{n}{X}{d}$ by way of the following Cartesian diagram:
+
+\bcd
+\Q{g}{n}{X}{d}\ar[d]\ar[r] & \Q{g}{n}{\PP^r}{d}\ar[d,"\nu_a"] \\
+\Q{g}{n}{H}{ad}\ar[r] & \Q{g}{n}{\PP^N}{ad}
+\ecd
+
+where $N={{r+a}\choose{a}}-1$ and $\nu_a$ is the Veronese embedding. In fact, $\Q{g}{n}{X}{d}$ is thought of as representing stable quasimaps to $\PP^r$ such that the corresponding sections satisfy the equation for $X$ inside $\PP^r$, that is a homogeneous polynomial $Q$ of degree $a$, i.e. gives a section of $L^{\otimes a}$ on the source curve $C$.
+
+We wish to compare this with the GIT approach of \cite{CFKM}. Here $X$ is seen as the GIT quotient of the affine cone $C_X\subseteq \mathbb A^{r+1}$ with respect to the diagonal $\mathbb G_m$-action. Objects of $\Q{g}{n}{X}{d}^\text{GIT}$ are diagrams of the form
+
+\bcd
+P\ar[d,"\mathbb G_m"]\ar[r] & C_X & \text{or, equivalently,} & P\times_{\mathbb G_m} C_X \ar[d,"\rho" left] \\
+C & & & C \ar[u,bend right,"u"right]
+\ecd
+and the dual perfect obstruction theory with respect to $\mathfrak{Bun}_{\mathbb G_m}$ is given by $R^\bullet\pi_*(u^*\mathbb T^\bullet_\rho$), where $\pi\colon \mathcal C_{\mathfrak{Bun}}\to\mathfrak{Bun}_{\mathbb G_m}$ is the universal curve.
+
+Notice that $\mathfrak{Bun}_{\mathbb G_m}\simeq \mathfrak{Pic}$ by taking the line bundle $L=P\times_{\mathbb G_m}\mathbb A^1\to C$ associated to the $\mathbb G_m$-torsor $P\to C$. Furthermore, the $\mathbb G_m$-equivariant embedding in a smooth stack
+\bcd
+P\times_{\mathbb G_m} C_X \ar[r,hook]\ar[d,"\rho" left] & P\times_{\mathbb G_m}\mathbb A^{r+1}\simeq L^{\oplus r+1}\ar[dl]\\
+C \ar[u,bend right,"u"right] &
+\ecd
+gives us $u^*T^\bullet_\rho\simeq[L^{\oplus r+1}\to L^{\otimes a}]$, where the arrow is induced by $Q$, and shows that both the modular interpretation and the obstruction theory coincide.
+
 \section{The quasimap mirror theorem}
 Assuming that quasimap invariants for $\PP^r$ coincide with Gromov-Witten invariants on the nose, we get the following result.
 \begin{dfn}
@@ -294,15 +319,10 @@ but notice that they must vanish by dimensional reasons, since
 \]
 So
 \begin{align*} 
-
  d\langle H^{r-1},\mathbbm 1_{\PP^r}\rangle_{\Q{0}{\{ad,0\}}{\PP^r|X}{d}} \\
- 
  = d[\Q{0}{2}{\PP^r}{d}]\cap\ev_1^*(H^{r-1})\prod_{i=0}^{ad-1}(\ev_1^*X+i\psi_1) \\
- 
  = d[\Q{0}{2}{\PP^r}{d}]\cap\left((da-1)!\psi_1^{ad}\ev_1^*(H^{r-1})+a\left(\sum_{j=1}^{ad-1}\frac{(ad-1)!}{j}\right)\psi_1^{ad-1}\ev_1^*(H^{r})\right) \\
- 
  = d\left((da-1)!\langle \psi_1^{ad-1}H^{r-1}\rangle_{0,1,d}+a\left(\sum_{j=1}^{ad-1}\frac{(ad-1)!}{j}\right)\langle\psi_1^{ad-2}H^{r}\rangle_{0,1,d}\right)
- 
 \end{align*}
 using the equality of quasimap and GW invariants and the string equation for the latter. These numbers can be extracted from the $J$-function for $\PP^r$
 \[
