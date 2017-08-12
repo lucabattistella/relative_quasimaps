@@ -1,11 +1,12 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: relative_quasimaps.aux
 The style file: alpha.bst
 Database file #1: relqm.bib
+Warning--I didn't find a database entry for "CFKM"
 You've used 2 entries,
             2543 wiz_defined-function locations,
-            573 strings with 4686 characters,
+            575 strings with 4694 characters,
 and the built_in function-call counts, 738 in all, are:
 = -- 76
 > -- 16
@@ -44,3 +45,4 @@ warning$ -- 0
 while$ -- 8
 width$ -- 3
 write$ -- 28
+(There was 1 warning)
