@@ -27,6 +27,8 @@
 \newcommand{\Qt}[4]{\widetilde{\mathcal Q}_{#1,#2}(#3,#4)}
 \newcommand{\PP}{\mathbb P}
 \newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\OO}{\mathcal{O}}
 \renewcommand{\to}{\rightarrow}
 \newcommand{\A}{\mathcal A}
 \newcommand{\B}{\mathcal B}
@@ -118,23 +120,23 @@ abstract
 
 \newpage
 
-\section{Functoriality of Quasimaps}
+\section{Functoriality of Quasimap Spaces}
 
-In the case of stable maps, a morphism $\varphi : X \to Y$ induces a morphism between the corresponding moduli spaces
-\begin{equation*}\M{g}{n}{X}{\beta} \rightarrow \M{g}{n}{Y}{\varphi_* \beta} \end{equation*}
-given by composition with $\varphi$ (in general this induced morphism may involve stabilisation of the source curve). Because of this, the construction of the moduli space of stable maps is said to be \ildef{functorial}.
+In the case of stable maps, a morphism $f : X \to Y$ induces a morphism between the corresponding moduli spaces
+\begin{equation*}\M{g}{n}{X}{\beta} \rightarrow \M{g}{n}{Y}{f_* \beta} \end{equation*}
+given by composition with $f$ (in general this induced morphism may involve stabilisation of the source curve). Because of this, the construction of the moduli space of stable maps is said to be \ildef{functorial}.
 
-It is natural to ask whether the same holds for the moduli space of quasimaps. Since here the objects of the moduli space are not maps, we cannot simply compose with $\varphi$, and indeed it is not immediately clear how we should proceed. In \cite[Section 3.1]{CF-K-wallcrossing} a definition is given when $\varphi$ is an embedding into a projective space; however, this uses the more general language of GIT quotients which we seek to avoid here. As such, we will provide an alternative (but entirely equivalent) construction in the setting of toric varieties, while simultaneously relaxing the conditions on the map $\varphi$ and the target $Y$.
+It is natural to ask whether the same holds for the moduli space of quasimaps. Since here the objects of the moduli space are not maps, we cannot simply compose with $f$, and indeed it is not immediately clear how we should proceed. In \cite[Section 3.1]{CF-K-wallcrossing} a definition is given when $f$ is an embedding into a projective space; however, this uses the more general language of GIT quotients which we seek to avoid here. As such, we will provide an alternative (but entirely equivalent) construction in the setting of toric varieties, while simultaneously relaxing the conditions on the map $f$ and the target $Y$.
 
 \footnote{We should probably look a bit harder to see if the definition exists elsewhere.}
 
 Our approach uses the language of $\Sigma$--collections introduced by D. Cox. This approach is natural insofar as a quasimap is a generalisation of a $\Sigma$--collection. We will refer extensively to \cite{CoxRing} and \cite{CoxFunctor}, which we recommend as an  introduction for any readers unfamiliar with the theory.
 
-So let $X$ and $Y$ be smooth and proper toric varieties with fans $\Sigma_X \subseteq N_X$ and $\Sigma_Y \subseteq N_Y$. Suppose we are given $\varphi : Y \to X$ (which we do not assume to be a toric morphism). By \cite[Theorem 1.1]{CoxFunctor} the data of such a map is equivalent to a $\Sigma_X$--collection on $Y$:
+So let $X$ and $Y$ be smooth and proper toric varieties with fans $\Sigma_X \subseteq N_X$ and $\Sigma_Y \subseteq N_Y$. Suppose we are given $f : Y \to X$ (which we do not assume to be a toric morphism). By \cite[Theorem 1.1]{CoxFunctor} the data of such a map is equivalent to a $\Sigma_X$--collection on $Y$:
 \begin{equation*} ( (L_\rho, u_\rho)_{\rho \in \Sigma_X(1)}, (\varphi_{m_x})_{m_x \in M_X} ) \end{equation*}
 In addition, \cite{CoxRing} allows us to describe line bundles on $Y$ and their global sections in terms of the homogeneous coordinates $(z_\tau)_{\tau \in \Sigma_Y(1)}$. All of these observations are combined into the following theorem, which is so useful that we will state it here in its entirety:
 
-\begin{thm} \cite[Theorem 2.2]{CoxFunctor} The data of a morphism $Y \to X$ is the same as the data of homogeneous polynomials
+\begin{thm} \cite[Theorem 2.2]{CoxFunctor} The data of a morphism $f:Y \to X$ is the same as the data of homogeneous polynomials
 \begin{equation*} P_\rho \in S^Y_{\beta_\rho} \end{equation*}
 for $\rho \in \Sigma_X(1)$, where $\beta_\rho \in \Pic Y$ and $S^Y_{\beta_\rho}$ is the corresponding graded piece of the Cox ring
 \begin{equation*}S^Y = k[z_\tau : \tau \in \Sigma_Y(1)]\end{equation*}
@@ -145,22 +147,51 @@ This data is required to satisfy the following two conditions:
 \end{enumerate}
 Furthermore, two such sets of data $(P_\rho)$ and $(P^\prime_\rho)$ correspond to the same morphism if and only if there exists a $\lambda \in \Hom_\Z(\Pic X, \Gm)$ such that
 \begin{equation*} \lambda(D_\rho) \cdot P_\rho = P^\prime_\rho \end{equation*}
-for all $\rho \in \Sigma_X(1)$. Finally, if we define $\tilde{\varphi}(z_\tau) = (P_\rho(z_\tau))$ then this defines a lift of $\varphi$ to the prequotients:
+for all $\rho \in \Sigma_X(1)$. Finally, if we define $\tilde{f}(z_\tau) = (P_\rho(z_\tau))$ then this defines a lift of $f$ to the prequotients:
 \bcd
-\Aaff_k^{\Sigma_Y(1)} - Z(\Sigma_Y) \ar[r, "\tilde{\varphi}"] \ar[d, "\pi"] & \Aaff_k^{\Sigma_X(1)} - Z(\Sigma_X) \ar[d,"\pi"] \\
-Y \ar[r, "\varphi"] & X
+\Aaff_k^{\Sigma_Y(1)} - Z(\Sigma_Y) \ar[r, "\tilde{f}"] \ar[d, "\pi"] & \Aaff_k^{\Sigma_X(1)} - Z(\Sigma_X) \ar[d,"\pi"] \\
+Y \ar[r, "f"] & X
 \ecd
 \end{thm}
 \begin{aside} Throughout this section we will stick to the notation established above; in particular we will use $\rho$ to denote a ray in $\Sigma_X(1)$ and $\tau$ to denote a ray in $\Sigma_Y(1)$. \end{aside}
 
-Recall our goal: given a map $\varphi : Y \to X$ we wish to define a ``push-forward'' map:
-\begin{equation*} \varphi_* : \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{\varphi_*\beta} \end{equation*}
-Consider then a quasimap $(C, (L_\tau, u_\tau)_{\tau \in \Sigma_Y(1)}, (\varphi_{m_Y})_{m_Y \in M_Y})$ with target $Y$.
+Recall our goal: given a map $f : Y \to X$ we wish to define a ``push-forward'' map:
+\begin{equation*} f_* : \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_*\beta} \end{equation*}
+Consider therefore a quasimap $(C, (L_\tau, u_\tau)_{\tau \in \Sigma_Y(1)}, (\varphi_{m_Y})_{m_Y \in M_Y})$ with target $Y$. Pick data $(P_\rho)_{\rho \in \Sigma_X(1)}$ corresponding to the map $f$, as in the theorem above; we will later see that our construction does not depend on this choice.
 
+For each $\rho$, $P_\rho$ is a polynomial in the $z_\tau$; we can write it as
+\begin{equation} \label{Prho} P_\rho(z_\tau) = \sum_{\underline{a}} P_\rho^{\underline{a}}(z_\tau) = \sum_{\underline{a}} \mu_{\underline{a}} \prod_{\tau} z_{\tau}^{a_{\tau}} \end{equation}
+where the sum is over certain multindices $\underline{a} = (a_\tau) \in \N^{\Sigma_Y(1)}$ and the $\mu_{\underline{a}}$ are nonzero scalars. The homogeneity of $P_\rho$ implies that for all $\underline{a}$ we have:
+\begin{equation*} \sum_{\tau} a_\tau D_\tau = \beta_\rho \in \Pic Y \end{equation*}
+For each $\underline{a}$ consider the following line bundle on $C$:
+\begin{equation*} \tilde{L}_\rho^{\underline{a}} = \bigotimes_\tau L_\tau^{\otimes a_\tau} \end{equation*}
+Then we may take the following section of $\tilde{L}_\rho^{\underline{a}}$:
+\begin{equation*} \mu_{\underline{a}} \prod_\tau u_\tau^{a_\tau} \end{equation*}
+Thus each of the terms $P_\rho^{\underline{a}}$ of $P_\rho$ defines a section $\tilde{u}_\rho^{\underline{a}}$ of a line bundle $\tilde{L}_\rho^{\underline{a}}$. But what we want is a single section $\tilde{u}_\rho$ of a single line bundle $\tilde{L}_\rho$. This is where the isomorphisms $\varphi_{m_Y}$ come in.
 
+Recall that we have a short exact sequence:
+\bcd
+0 \ar[r] & M_Y \ar[r, "\theta"] & \Z^{\Sigma_Y(1)} \ar[r] & \Pic Y \ar[r] & 0
+\ecd
+Let $\underline{a}$ and $\underline{b}$ be multindices appearing in the sum \eqref{Prho} above. By the homogeneity of $P_\rho$ we have
+\begin{equation*} \sum_\tau a_\tau D_\tau = \beta_\rho = \sum_\tau b_\tau D_\tau \end{equation*}
+which is precisely the statement that in the above sequence $\underline{a}$ and $\underline{b}$ map to the same element of $\Pic Y$. Hence there exists an $m_Y \in M_Y$ such that:
+\begin{equation*} \theta(m_Y) = \underline{a} - \underline{b} \end{equation*}
+Now, the isomorphism $\varphi_{m_Y}$ (contained in the data of our original quasimap) is a map:
+\begin{equation*} \varphi_{m_Y} : \bigotimes_\tau L_\tau^{\otimes \langle m_Y, u_\tau \rangle} \cong \OO_C \end{equation*}
+By definition, $\theta(m_Y) = (\langle m_Y,u_\tau)_{\tau \in \Sigma_Y(1)}$. But also $\theta(m_Y) = (a_\tau - b_\tau)_{\tau \in \Sigma_Y(1)}$. Hence we have:
+\begin{equation*} \varphi_{m_Y} : \bigotimes_\tau L_\tau^{\otimes a_\tau} \cong \bigotimes_\tau L_\tau^{\otimes b_\tau} \end{equation*}
+In other words, we have well-defined canonical isomorphisms
+\begin{equation*} \tilde{L}_\rho^{\underline{a}} \cong \tilde{L}_\rho^{\underline{b}} \end{equation*}
+for all $\underline{a}$ and $\underline{b}$. Let us choose one such $\underline{a}$ (it doesn't matter which) and define:
+\begin{equation*} \tilde{L}_\rho = \tilde{L}_\rho^{\underline{a}} \end{equation*}
+Then for all $\underline{b}$ we can use the above isomorphism to view $\tilde{u}_\rho^{\underline{b}}$ as a section of $\tilde{L}_\rho$. Summing all of these together we obtain a section $\tilde{u}_\rho$ of $\tilde{L}_\rho$, which we can write (with abuse of notation) as:
+\begin{equation*} \tilde{u}_\rho = \sum_{\underline{a}} \mu_{\underline{a}} \prod_\tau u_\tau^{a_\tau} \end{equation*}
+(Note that if we had made a different choice of $\underline{a}$ above the result would have been isomorphic.)
 
-
-
+Thus, we have $(\tilde{L}_\rho, \tilde{u}_\rho)_{\rho \in \Sigma_X(1)}$ on $C$. It remains to define the isomorphisms
+\begin{equation*} \tilde{\varphi}_{m_X} : \bigotimes_\rho \tilde{L}_\rho^{\otimes \langle m_X, u_\rho \rangle} \cong \OO_C \end{equation*}
+for all $m_X \in M_X$. 
 
 
 
