@@ -26,15 +26,20 @@
 \newcommand{\Q}[4]{\overline{\mathcal Q}_{#1,#2}(#3,#4)}
 \newcommand{\Qt}[4]{\widetilde{\mathcal Q}_{#1,#2}(#3,#4)}
 \newcommand{\PP}{\mathbb P}
+\newcommand{\Z}{\mathbb{Z}}
 \renewcommand{\to}{\rightarrow}
 \newcommand{\A}{\mathcal A}
 \newcommand{\B}{\mathcal B}
 \newcommand{\C}{\mathfrak C}
 \renewcommand{\L}{\mathcal L}
 \newcommand{\MM}{\mathfrak M}
+\newcommand{\Aaff}{\mathbb{A}}
+\newcommand{\kfield}{\mathbb{K}}
 \newcommand{\comp}{\chi}
 \newcommand{\sst}{\sigma^{ss}}
-
+\newcommand{\Pic}{\operatorname{Pic}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\Gm}{\mathbb{G}_m}
 
 \newcommand{\bq}{\begin{equation}}
 \newcommand{\eq}{\end{equation}}
@@ -81,6 +86,7 @@
 \newtheorem{example}[thm]{Example}
 \newtheorem{ex}[thm]{Example}
 \newtheorem{dfn}[thm]{Definition}
+\newtheorem{aside}[thm]{Aside}
 \newtheorem{remark}[thm]{Remark}
 \newtheorem{com}[thm]{Comment}
 \newtheorem{num}{Number}
@@ -99,6 +105,9 @@
 \newcommand{\thismonthyear}{{\thismonth} {\number\year}}
 \newcommand{\thisdaymonthyear}{{\number\day} {\thismonth} {\number\year}}
 
+\usepackage[T1]{fontenc}
+\usepackage{newpxtext,newpxmath}
+
 \title{Relative quasimaps \`a la Gathmann}
 \author{Luca Battistella and Navid Nabijou}
 \begin{document}
@@ -115,19 +124,38 @@ In the case of stable maps, a morphism $\varphi : X \to Y$ induces a morphism be
 \begin{equation*}\M{g}{n}{X}{\beta} \rightarrow \M{g}{n}{Y}{\varphi_* \beta} \end{equation*}
 given by composition with $\varphi$ (in general this induced morphism may involve stabilisation of the source curve). Because of this, the construction of the moduli space of stable maps is said to be \ildef{functorial}.
 
-It is natural to ask whether the same holds for the moduli space of quasimaps. Since here the objects of the moduli space are not maps, we cannot simply compose with $\varphi$, and indeed it is not immediately clear how we should proceed. In \cite[Section 3.1]{CF-K-wallcrossing} a definition is given when $\varphi$ is an embedding into a projective space; however, this uses the more general language of GIT quotients which we seek to avoid here. As such, we will provide an alternative (but entirely equivalent) construction in the setting of toric varieties, while simultaneously relaxing the condition on the map $\varphi$.
+It is natural to ask whether the same holds for the moduli space of quasimaps. Since here the objects of the moduli space are not maps, we cannot simply compose with $\varphi$, and indeed it is not immediately clear how we should proceed. In \cite[Section 3.1]{CF-K-wallcrossing} a definition is given when $\varphi$ is an embedding into a projective space; however, this uses the more general language of GIT quotients which we seek to avoid here. As such, we will provide an alternative (but entirely equivalent) construction in the setting of toric varieties, while simultaneously relaxing the conditions on the map $\varphi$ and the target $Y$.
 
 \footnote{We should probably look a bit harder to see if the definition exists elsewhere.}
 
-Our approach uses the language of $\Sigma$--collections introduced by D. Cox. This approach is natural insofar as quasimaps are a generalisation of $\Sigma$--collections. We will refer extensively to \cite{CoxRing} and \cite{CoxFunctor}, which we recommend as a  introduction for any readers unfamiliar with the theory.
+Our approach uses the language of $\Sigma$--collections introduced by D. Cox. This approach is natural insofar as a quasimap is a generalisation of a $\Sigma$--collection. We will refer extensively to \cite{CoxRing} and \cite{CoxFunctor}, which we recommend as an  introduction for any readers unfamiliar with the theory.
 
-So let $X$ and $Y$ be smooth and proper toric varieties with fans $\Sigma_X \subseteq N_X$ and $\Sigma_Y \subseteq N_Y$. Suppose we are given a map $\varphi : Y \to X$ (which we do not assume to be toric). By \cite[Theorem 1.1]{CoxFunctor} the data of such a map is equivalent to a $\Sigma_X$--collection on $Y$:
+So let $X$ and $Y$ be smooth and proper toric varieties with fans $\Sigma_X \subseteq N_X$ and $\Sigma_Y \subseteq N_Y$. Suppose we are given $\varphi : Y \to X$ (which we do not assume to be a toric morphism). By \cite[Theorem 1.1]{CoxFunctor} the data of such a map is equivalent to a $\Sigma_X$--collection on $Y$:
 \begin{equation*} ( (L_\rho, u_\rho)_{\rho \in \Sigma_X(1)}, (\varphi_{m_x})_{m_x \in M_X} ) \end{equation*}
 In addition, \cite{CoxRing} allows us to describe line bundles on $Y$ and their global sections in terms of the homogeneous coordinates $(z_\tau)_{\tau \in \Sigma_Y(1)}$. All of these observations are combined into the following theorem, which is so useful that we will state it here in its entirety:
 
+\begin{thm} \cite[Theorem 2.2]{CoxFunctor} The data of a morphism $Y \to X$ is the same as the data of homogeneous polynomials
+\begin{equation*} P_\rho \in S^Y_{\beta_\rho} \end{equation*}
+for $\rho \in \Sigma_X(1)$, where $\beta_\rho \in \Pic Y$ and $S^Y_{\beta_\rho}$ is the corresponding graded piece of the Cox ring
+\begin{equation*}S^Y = k[z_\tau : \tau \in \Sigma_Y(1)]\end{equation*}
+This data is required to satisfy the following two conditions:
+\begin{enumerate}
+\item $\sum_{\rho \in \Sigma_X(1)} \beta_\rho \otimes n_\rho = 0$ in $\Pic Y \otimes N_X$.
+\item $(P_\rho(z_\tau)) \notin Z(\Sigma_X) \subseteq \Aaff_k^{\Sigma_X(1)}$ whenever $(z_\tau) \notin Z(\Sigma_Y) \subseteq \Aaff_k^{\Sigma_Y(1)}$.
+\end{enumerate}
+Furthermore, two such sets of data $(P_\rho)$ and $(P^\prime_\rho)$ correspond to the same morphism if and only if there exists a $\lambda \in \Hom_\Z(\Pic X, \Gm)$ such that
+\begin{equation*} \lambda(D_\rho) \cdot P_\rho = P^\prime_\rho \end{equation*}
+for all $\rho \in \Sigma_X(1)$. Finally, if we define $\tilde{\varphi}(z_\tau) = (P_\rho(z_\tau))$ then this defines a lift of $\varphi$ to the prequotients:
+\bcd
+\Aaff_k^{\Sigma_Y(1)} - Z(\Sigma_Y) \ar[r, "\tilde{\varphi}"] \ar[d, "\pi"] & \Aaff_k^{\Sigma_X(1)} - Z(\Sigma_X) \ar[d,"\pi"] \\
+Y \ar[r, "\varphi"] & X
+\ecd
+\end{thm}
+\begin{aside} Throughout this section we will stick to the notation established above; in particular we will use $\rho$ to denote a ray in $\Sigma_X(1)$ and $\tau$ to denote a ray in $\Sigma_Y(1)$. \end{aside}
 
-
-
+Recall our goal: given a map $\varphi : Y \to X$ we wish to define a ``push-forward'' map:
+\begin{equation*} \varphi_* : \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{\varphi_*\beta} \end{equation*}
+Consider then a quasimap $(C, (L_\tau, u_\tau)_{\tau \in \Sigma_Y(1)}, (\varphi_{m_Y})_{m_Y \in M_Y})$ with target $Y$.
 
 
 
