@@ -1,4 +1,14 @@
-\begin{thebibliography}{Gat03}
+\begin{thebibliography}{Cox95b}
+
+\bibitem[Cox95a]{CoxFunctor}
+David~A. Cox.
+\newblock The functor of a smooth toric variety.
+\newblock {\em Tohoku Math. J. (2)}, 47(2):251--262, 1995.
+
+\bibitem[Cox95b]{CoxRing}
+David~A. Cox.
+\newblock The homogeneous coordinate ring of a toric variety.
+\newblock {\em J. Algebraic Geom.}, 4(1):17--50, 1995.
 
 \bibitem[Gat02]{Ga}
 Andreas Gathmann.

@@ -5,6 +5,7 @@
 \usepackage{amssymb}
 %\usepackage{showlabels}
 \usepackage{amsthm}
+\usepackage{marginnote}
 
 \usepackage[english]{babel}
 \usepackage{yfonts}
@@ -63,6 +64,7 @@
 \newcommand{\ev}{\operatorname{ev}}
 \newcommand{\codim}{\operatorname{codim}}
 \newcommand{\vdim}{\operatorname{vdim}}
+\newcommand{\ildef}[1]{\textbf{\textsc{#1}}}
 
 \theoremstyle{plain}
 \newtheorem{thm}{Theorem}[section]
@@ -98,13 +100,61 @@
 \newcommand{\thisdaymonthyear}{{\number\day} {\thismonth} {\number\year}}
 
 \title{Relative quasimaps \`a la Gathmann}
-\date{\today}
+\author{Luca Battistella and Navid Nabijou}
 \begin{document}
 \maketitle
 \begin{abstract}
 abstract
 \end{abstract}
 
+\newpage
+
+\section{Functoriality of Quasimaps}
+
+In the case of stable maps, a morphism $\varphi : X \to Y$ induces a morphism between the corresponding moduli spaces
+\begin{equation*}\M{g}{n}{X}{\beta} \rightarrow \M{g}{n}{Y}{\varphi_* \beta} \end{equation*}
+given by composition with $\varphi$ (in general this induced morphism may involve stabilisation of the source curve). Because of this, the construction of the moduli space of stable maps is said to be \ildef{functorial}.
+
+It is natural to ask whether the same holds for the moduli space of quasimaps. Since here the objects of the moduli space are not maps, we cannot simply compose with $\varphi$, and indeed it is not immediately clear how we should proceed. In \cite[Section 3.1]{CF-K-wallcrossing} a definition is given when $\varphi$ is an embedding into a projective space; however, this uses the more general language of GIT quotients which we seek to avoid here. As such, we will provide an alternative (but entirely equivalent) construction in the setting of toric varieties, while simultaneously relaxing the condition on the map $\varphi$.
+
+\footnote{We should probably look a bit harder to see if the definition exists elsewhere.}
+
+Our approach uses the language of $\Sigma$--collections introduced by D. Cox. This approach is natural insofar as quasimaps are a generalisation of $\Sigma$--collections. We will refer extensively to \cite{CoxRing} and \cite{CoxFunctor}, which we recommend as a  introduction for any readers unfamiliar with the theory.
+
+So let $X$ and $Y$ be smooth and proper toric varieties with fans $\Sigma_X \subseteq N_X$ and $\Sigma_Y \subseteq N_Y$. Suppose we are given a map $\varphi : Y \to X$ (which we do not assume to be toric). By \cite[Theorem 1.1]{CoxFunctor} the data of such a map is equivalent to a $\Sigma_X$--collection on $Y$:
+\begin{equation*} ( (L_\rho, u_\rho)_{\rho \in \Sigma_X(1)}, (\varphi_{m_x})_{m_x \in M_X} ) \end{equation*}
+In addition, \cite{CoxRing} allows us to describe line bundles on $Y$ and their global sections in terms of the homogeneous coordinates $(z_\tau)_{\tau \in \Sigma_Y(1)}$. All of these observations are combined into the following theorem, which is so useful that we will state it here in its entirety:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
 \section{Quasimaps to $\PP^r$ relative to a hyperplane}
 
 We first deal with genus 0 quasimaps to projective space, relative to a hyperplane. We give a Gathmann-like description of the space of relative quasimaps as a closed substack of the moduli space of (absolute) quasimaps to $\PP^r$; it turns out to be irreducible of the expected dimension. Finally, we retrieve a Gathmann-type formula by pushforward along the comparison morphism $\comp\colon \M{0}{n}{\PP^r}{d}\to\Q{0}{n}{\PP^r}{d}$.
