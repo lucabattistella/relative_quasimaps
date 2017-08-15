@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  15 AUG 2017 15:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  15 AUG 2017 15:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1209,7 +1209,7 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 10.95pt on input line 139.
  [2] [3]
 [4] [5] [6] [7]
-Overfull \hbox (25.83867pt too wide) in paragraph at lines 256--257
+Overfull \hbox (25.83867pt too wide) in paragraph at lines 259--260
 \T1/zpltlf/m/n/10.95 lo-cus $[]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OM
 S/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it/10.95 ~$ \T1/zpltlf
 /m/n/10.95 in-side $[][]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OML/npxmi
@@ -1219,13 +1219,13 @@ pxmia/m/it/10.95 ~$
  []
 
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 266.
+(Font)              scaled to size 10.95pt on input line 269.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 266.
+(Font)              scaled to size 8.0pt on input line 269.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 6.1pt on input line 266.
+(Font)              scaled to size 6.1pt on input line 269.
 
-Overfull \hbox (42.22516pt too wide) in paragraph at lines 269--270
+Overfull \hbox (42.22516pt too wide) in paragraph at lines 272--273
 []\T1/zpltlf/b/n/10.95 Lemma 2.1. []\T1/zpltlf/m/it/10.95 The com-par-i-son mor
 -phism re-stricts to a bi-ra-tional mor-phism $[][]\U/npxmia/m/it/10.95 }\U/npx
 sym/m/n/10.95 P[]\OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it
@@ -1233,24 +1233,24 @@ sym/m/n/10.95 P[]\OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it
  []
 
 [8] [9] [10]
-Overfull \hbox (12.88531pt too wide) in paragraph at lines 345--346
+Overfull \hbox (12.88531pt too wide) in paragraph at lines 348--349
 []\T1/zpltlf/m/n/10.95 Follows from [[], Thm. 2.6] by push-for-ward along $\OML
 /npxmi/m/it/10.95 ^^_ [] [] [][]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\O
 ML/npxmi/m/it/10.95 ; d\U/npxmia/m/it/10.95 ~ \OMS/npxsy/m/n/10.95 !
  []
 
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 6.1pt on input line 353.
-LaTeX Font Info:    Try loading font information for U+bbm on input line 357.
+(Font)              scaled to size 6.1pt on input line 356.
+LaTeX Font Info:    Try loading font information for U+bbm on input line 360.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [11] [12]
-Overfull \hbox (70.17993pt too wide) in paragraph at lines 422--422
+Overfull \hbox (70.17993pt too wide) in paragraph at lines 425--425
 [] 
  []
 
 
-Overfull \hbox (15.29062pt too wide) detected at line 430
+Overfull \hbox (15.29062pt too wide) detected at line 433
 \OT1/zpltlf/m/n/10.95 [[][]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OMS/np
 xsy/m/n/10.95 j\OML/npxmi/m/it/10.95 X; d\U/npxmia/m/it/10.95 ~\OT1/zpltlf/m/n/
 10.95 ][] \U/npxmia/m/it/10.95 5 }\OML/npxmi/m/it/10.95 X \U/npxmia/m/it/10.95 
@@ -1264,7 +1264,7 @@ S/npxsy/m/n/10.95 ^^@ \OT1/zpltlf/m/n/10.95 [\OML/npxmi/m/it/10.95 D[]\U/npxmia
  []
 
 
-Overfull \hbox (10.84416pt too wide) in paragraph at lines 445--445
+Overfull \hbox (10.84416pt too wide) in paragraph at lines 448--448
 [] 
  []
 
@@ -1306,7 +1306,7 @@ tino/uplri8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local
 /texlive/2016/texmf-dist/fonts/type1/public/newpx/zplri.pfb></usr/local/texlive
 /2016/texmf-dist/fonts/type1/public/newpx/zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (14 pages, 185955 bytes).
+Output written on relative_quasimaps.pdf (14 pages, 186986 bytes).
 PDF statistics:
  130 PDF objects out of 1000 (max. 8388607)
  98 compressed objects within 1 object stream

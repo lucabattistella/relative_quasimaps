@@ -241,10 +241,13 @@ which does not modify the underlying prestable curves.\end{thm}
 
 \begin{aside} We expect that such a map exists even if $f$ does not satisfy Condition (1). However, in this case we will need to modify the underlying prestable curves by contracting unstable components. The same is true in the stable maps case. \end{aside}
 
-
-
-
-
+Finally, let us describe how this push-forward morphism behaves when $f$ is a nonconstant map $\PP^r \to \PP^N$, since we will make use of this later. Write $f$ in homogeneous coordinates as:
+\begin{equation*} f[z_0, \ldots, z_r] = [f_0(z_0, \ldots, z_r), \ldots, f_N(z_0, \ldots, z_r)] \end{equation*}
+where the $f_i$ are all homogeneous of degree $a$. Then given a quasimap with target $\PP^r$
+\begin{equation*} (C, L, u_o, \ldots, u_r) \end{equation*}
+the pushed-forward quasimap with target $\PP^N$ is:
+\begin{equation*} (C, L^{\otimes a}, f_0(u_0, \ldots, u_r) , \ldots, f_N(u_0, \ldots, u_r)) \end{equation*}
+(This is stable as long as $a > 0$, which is precisely when $f$ satsfies Condition (1) above.)
 
 
 
