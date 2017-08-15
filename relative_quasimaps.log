@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  15 AUG 2017 16:02
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  13 AUG 2017 13:58
+>>>>>>> Stashed changes
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -123,10 +127,13 @@ File: babel.def 2016/04/23 3.9r Babel common definitions
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
+<<<<<<< Updated upstream
 (/usr/local/texlive/2016/texmf-dist/tex/latex/marginnote/marginnote.sty
 Package: marginnote 2012/03/29 v1.1i non floating margin notes for LaTeX
 \c@mn@abspage=\count100
 )
+=======
+>>>>>>> Stashed changes
 (/usr/local/texlive/2016/texmf-dist/tex/latex/yfonts/yfonts.sty
 Package: yfonts 2003/01/08 v1.3 (WaS)
 )
@@ -234,6 +241,7 @@ L3 Module: l3tl 2016/03/26 v6465 L3 Token lists
 L3 Module: l3str 2016/03/24 v6441 L3 Strings
 L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
 L3 Module: l3int 2016/03/24 v6441 L3 Integers
+<<<<<<< Updated upstream
 \c_max_int=\count103
 \l_tmpa_int=\count104
 \l_tmpb_int=\count105
@@ -242,16 +250,34 @@ L3 Module: l3int 2016/03/24 v6441 L3 Integers
 L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
 L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
 \g__prg_map_int=\count108
+=======
+\c_max_int=\count102
+\l_tmpa_int=\count103
+\l_tmpb_int=\count104
+\g_tmpa_int=\count105
+\g_tmpb_int=\count106
+L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
+L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
+\g__prg_map_int=\count107
+>>>>>>> Stashed changes
 L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
 L3 Module: l3token 2016/04/03 v6470 L3 Experimental token manipulation
 L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
 L3 Module: l3msg 2016/03/26 v6464 L3 Messages
 L3 Module: l3file 2016/03/25 v6458 L3 File and I/O operations
+<<<<<<< Updated upstream
 \l_iow_line_count_int=\count109
 \l__iow_target_count_int=\count110
 \l__iow_current_line_int=\count111
 \l__iow_current_word_int=\count112
 \l__iow_current_indentation_int=\count113
+=======
+\l_iow_line_count_int=\count108
+\l__iow_target_count_int=\count109
+\l__iow_current_line_int=\count110
+\l__iow_current_word_int=\count111
+\l__iow_current_indentation_int=\count112
+>>>>>>> Stashed changes
 L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \c_zero_dim=\dimen117
 \c_max_dim=\dimen118
@@ -272,6 +298,7 @@ L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
 L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
+<<<<<<< Updated upstream
 \g__keyval_level_int=\count114
 \l_keys_choice_int=\count115
 L3 Module: l3fp 2016/03/26 v6465 L3 Floating points
@@ -284,6 +311,20 @@ L3 Module: l3fp 2016/03/26 v6465 L3 Floating points
 \c__fp_Bigg_leading_shift_int=\count122
 \c__fp_Bigg_middle_shift_int=\count123
 \c__fp_Bigg_trailing_shift_int=\count124
+=======
+\g__keyval_level_int=\count113
+\l_keys_choice_int=\count114
+L3 Module: l3fp 2016/03/26 v6465 L3 Floating points
+\c__fp_leading_shift_int=\count115
+\c__fp_middle_shift_int=\count116
+\c__fp_trailing_shift_int=\count117
+\c__fp_big_leading_shift_int=\count118
+\c__fp_big_middle_shift_int=\count119
+\c__fp_big_trailing_shift_int=\count120
+\c__fp_Bigg_leading_shift_int=\count121
+\c__fp_Bigg_middle_shift_int=\count122
+\c__fp_Bigg_trailing_shift_int=\count123
+>>>>>>> Stashed changes
 L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \c_empty_box=\box29
 \l_tmpa_box=\box30
@@ -333,7 +374,11 @@ L3 Module: l3luatex 2016/03/26 v6465 L3 Experimental LuaTeX-specific functions
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2016/03/26 v6465 L3 Experimental driver: PDF mode
+<<<<<<< Updated upstream
 \l__driver_color_stack_int=\count125
+=======
+\l__driver_color_stack_int=\count124
+>>>>>>> Stashed changes
 \l__driver_tmp_box=\box44
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
@@ -422,11 +467,19 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2016/05/18 v6512 L3 Experimental document command parser
+<<<<<<< Updated upstream
 \l__xparse_current_arg_int=\count126
 \l__xparse_m_args_int=\count127
 \l__xparse_mandatory_args_int=\count128
 \l__xparse_processor_int=\count129
 \l__xparse_v_nesting_int=\count130
+=======
+\l__xparse_current_arg_int=\count125
+\l__xparse_m_args_int=\count126
+\l__xparse_mandatory_args_int=\count127
+\l__xparse_processor_int=\count128
+\l__xparse_v_nesting_int=\count129
+>>>>>>> Stashed changes
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.st
 y
@@ -537,7 +590,11 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen164
+<<<<<<< Updated upstream
 \pgfmath@count=\count138
+=======
+\pgfmath@count=\count137
+>>>>>>> Stashed changes
 \pgfmath@box=\box48
 \pgfmath@toks=\toks41
 \pgfmath@stack@operand=\toks42
@@ -562,7 +619,11 @@ code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+<<<<<<< Updated upstream
 \c@pgfmathroundto@lastzeros=\count139
+=======
+\c@pgfmathroundto@lastzeros=\count138
+>>>>>>> Stashed changes
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
@@ -600,7 +661,11 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box49
 \pgf@hbox=\box50
 \pgf@layerbox@main=\box51
+<<<<<<< Updated upstream
 \pgf@picture@serial@count=\count140
+=======
+\pgf@picture@serial@count=\count139
+>>>>>>> Stashed changes
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
@@ -698,7 +763,11 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+<<<<<<< Updated upstream
 \pgf@plot@mark@count=\count142
+=======
+\pgf@plot@mark@count=\count141
+>>>>>>> Stashed changes
 \pgfplotmarksize=\dimen193
 )
 \tikz@lastx=\dimen194
@@ -711,10 +780,17 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@figbox@bg=\box55
 \tikz@tempbox=\box56
 \tikz@tempbox@bg=\box57
+<<<<<<< Updated upstream
 \tikztreelevel=\count143
 \tikznumberofchildren=\count144
 \tikznumberofcurrentchild=\count145
 \tikz@fig@count=\count146
+=======
+\tikztreelevel=\count142
+\tikznumberofchildren=\count143
+\tikznumberofcurrentchild=\count144
+\tikz@fig@count=\count145
+>>>>>>> Stashed changes
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
@@ -789,14 +865,24 @@ Loading kernel: messages; fonts; allocations: state,
  direction,
 \d@X=\dimen284
 \d@Y=\dimen285
+<<<<<<< Updated upstream
 \K@=\count151
 \KK@=\count152
 \Direction=\count153
+=======
+\K@=\count150
+\KK@=\count151
+\Direction=\count152
+>>>>>>> Stashed changes
 \K@dXdY=\dimen286
 \K@dYdX=\dimen287
 \xyread@=\read3
 \xywrite@=\write4
+<<<<<<< Updated upstream
 \csp@=\count154
+=======
+\csp@=\count153
+>>>>>>> Stashed changes
 \quotPTK@=\dimen288
 
 utility macros; pictures: \xy, positions,
@@ -1014,6 +1100,7 @@ LaTeX Info: Redefining \openbox on input line 1503.
 (./relative_quasimaps.aux)
 \openout1 = `relative_quasimaps.aux'.
 
+<<<<<<< Updated upstream
 LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 115.
 LaTeX Font Info:    Try loading font information for OML+npxmi on input line 11
 5.
@@ -1078,10 +1165,43 @@ LaTeX Font Info:    Try loading font information for U+msa on input line 115.
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 115.
+=======
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 101.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 101.
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Try loading font information for U+msa on input line 101.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 101.
+>>>>>>> Stashed changes
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+<<<<<<< Updated upstream
 LaTeX Font Info:    Try loading font information for U+npxmia on input line 115
 .
 
@@ -1103,11 +1223,14 @@ File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 Package marginnote Info: \pdfoutput not 0 and \pdflastxpos available.
 (marginnote)             Extended position detection mode activated.
 
+=======
+>>>>>>> Stashed changes
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
+<<<<<<< Updated upstream
 \scratchcounter=\count168
 \scratchdimen=\dimen295
 \scratchbox=\box62
@@ -1119,6 +1242,19 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 \MPnumerator=\count172
 \makeMPintoPDFobject=\count173
 \everyMPtoPDFconversion=\toks56
+=======
+\scratchcounter=\count164
+\scratchdimen=\dimen295
+\scratchbox=\box62
+\nofMPsegments=\count165
+\nofMParguments=\count166
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count167
+\MPscratchDim=\dimen296
+\MPnumerator=\count168
+\makeMPintoPDFobject=\count169
+\everyMPtoPDFconversion=\toks54
+>>>>>>> Stashed changes
 ) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -1164,6 +1300,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
+<<<<<<< Updated upstream
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
 (Font)              scaled to size 10.95pt on input line 115.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
@@ -1277,11 +1414,73 @@ sta-ble toric
  []
 
 ) [13] (./relative_quasimaps.aux)
+=======
+Package xypdf Info: Line width: 0.43799pt on input line 101.
+
+
+Class amsart Warning: Abstract should precede \maketitle in AMS document classe
+s; reported on input line 103.
+
+
+Overfull \hbox (14.23836pt too wide) in paragraph at lines 111--112
+\T1/cmr/m/n/10.95 cus $[]\OT1/cmr/m/n/10.95 (\U/msb/m/n/10.95 P[]\OMS/cmsy/m/n/
+10.95 j\OML/cmm/m/it/10.95 H; d\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/n/10.95 in-side 
+$[][]\OT1/cmr/m/n/10.95 (\U/msb/m/n/10.95 P[]\OML/cmm/m/it/10.95 ; d\OT1/cmr/m/
+n/10.95 )$\T1/cmr/m/n/10.95 : the quasimaps $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/
+10.95 C; x[]; [] ; x[]; L; u[]; [] ; u[]\OT1/cmr/m/n/10.95 )$
+ []
+
+
+Overfull \hbox (11.38649pt too wide) in paragraph at lines 127--128
+\T1/cmr/m/n/10.95 and the quasimap re-sult-ing from the con-trac-tion of $\OML/
+cmm/m/it/10.95 R$ \T1/cmr/m/n/10.95 has $[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10
+.95 L[]\OT1/cmr/m/n/10.95 ) = [](\OML/cmm/m/it/10.95 f[]\OT1/cmr/m/n/10.95 ) +
+ []
+
+[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2] [3]
+Overfull \hbox (10.56596pt too wide) in paragraph at lines 200--201
+[]\T1/cmr/m/n/10.95 Follows from [[], Thm. 2.6] by push-for-ward along $\OML/cm
+m/m/it/10.95 ^^_ [] [] [][]\OT1/cmr/m/n/10.95 (\U/msb/m/n/10.95 P[]\OML/cmm/m/i
+t/10.95 ; d\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 !
+ []
+
+LaTeX Font Info:    Try loading font information for U+bbm on input line 212.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
+) [4] [5]
+Overfull \hbox (99.86955pt too wide) in paragraph at lines 277--277
+[] 
+ []
+
+
+Overfull \hbox (23.73558pt too wide) detected at line 285
+\OT1/cmr/m/n/10.95 [[][](\U/msb/m/n/10.95 P[]\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it
+/10.95 X; d\OT1/cmr/m/n/10.95 )][] = (\OML/cmm/m/it/10.95 X \OT1/cmr/m/n/10.95 
++ (\OML/cmm/m/it/10.95 ad \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1)\OML/cmm
+/m/it/10.95  []\OT1/cmr/m/n/10.95 )[[][](\U/msb/m/n/10.95 P[]\OMS/cmsy/m/n/10.9
+5 j\OML/cmm/m/it/10.95 X; d\OT1/cmr/m/n/10.95 )][] \OMS/cmsy/m/n/10.95 ^^@ \OT1
+/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 D[]\OT1/cmr/m/n/10.95 (\U/msb/m/n/10.95 P[]
+\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 X; d\OT1/cmr/m/n/10.95 )][]
+ []
+
+
+Overfull \hbox (31.54408pt too wide) in paragraph at lines 300--300
+[] 
+ []
+
+
+Underfull \vbox (badness 3439) has occurred while \output is active []
+
+ [6]
+(./relative_quasimaps.bbl) [7] (./relative_quasimaps.aux)
+>>>>>>> Stashed changes
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< Updated upstream
  27098 strings out of 493014
  515203 string characters out of 6133351
  574156 words of memory out of 5000000
@@ -1310,6 +1509,39 @@ exmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist
 pe1/public/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/newpx/zplx-regular.pfb>
 Output written on relative_quasimaps.pdf (13 pages, 187030 bytes).
+=======
+ 25331 strings out of 493014
+ 489569 string characters out of 6133351
+ 551645 words of memory out of 5000000
+ 28279 multiletter control sequences out of 15000+600000
+ 19825 words of font info for 65 fonts, out of 8000000 for 9000
+ 1302 hyphenation exceptions out of 8191
+ 56i,15n,82p,10394b,968s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </Users/navid/Library/texlive/2016/texmf-var/fonts/pk/ljfour/public/bbm/bbm1
+0.657pk>{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t
+1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10
+.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.
+pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfcc0900.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
+Output written on relative_quasimaps.pdf (7 pages, 312201 bytes).
+>>>>>>> Stashed changes
 PDF statistics:
  127 PDF objects out of 1000 (max. 8388607)
  96 compressed objects within 1 object stream
