@@ -1,48 +1,46 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: relative_quasimaps.aux
 The style file: alpha.bst
 Database file #1: relqm.bib
-Warning--I didn't find a database entry for "CFKM"
-You've used 2 entries,
+You've used 6 entries,
             2543 wiz_defined-function locations,
-            575 strings with 4694 characters,
-and the built_in function-call counts, 738 in all, are:
-= -- 76
-> -- 16
-< -- 2
-+ -- 4
-- -- 4
-* -- 56
-:= -- 124
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 10
-chr.to.int$ -- 2
-cite$ -- 2
-duplicate$ -- 30
-empty$ -- 61
-format.name$ -- 8
-if$ -- 146
-int.to.chr$ -- 1
+            601 strings with 5116 characters,
+and the built_in function-call counts, 2284 in all, are:
+= -- 240
+> -- 70
+< -- 4
++ -- 23
+- -- 20
+* -- 176
+:= -- 374
+add.period$ -- 18
+call.type$ -- 6
+change.case$ -- 32
+chr.to.int$ -- 5
+cite$ -- 6
+duplicate$ -- 88
+empty$ -- 181
+format.name$ -- 30
+if$ -- 456
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 2
-newline$ -- 13
-num.names$ -- 6
-pop$ -- 6
+missing$ -- 6
+newline$ -- 33
+num.names$ -- 18
+pop$ -- 18
 preamble$ -- 1
-purify$ -- 12
+purify$ -- 38
 quote$ -- 0
-skip$ -- 23
+skip$ -- 69
 stack$ -- 0
-substring$ -- 64
-swap$ -- 2
-text.length$ -- 2
-text.prefix$ -- 2
+substring$ -- 194
+swap$ -- 6
+text.length$ -- 4
+text.prefix$ -- 4
 top$ -- 0
-type$ -- 16
+type$ -- 48
 warning$ -- 0
-while$ -- 8
-width$ -- 3
-write$ -- 28
-(There was 1 warning)
+while$ -- 26
+width$ -- 8
+write$ -- 80
