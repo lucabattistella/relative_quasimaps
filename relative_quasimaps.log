@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  15 AUG 2017 16:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  16 AUG 2017 12:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1208,7 +1208,12 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
  [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] 
 [3] [4]
 [5] [6]
-Overfull \hbox (25.83867pt too wide) in paragraph at lines 253--254
+LaTeX Font Info:    Try loading font information for U+bbm on input line 255.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
+)
+[7]
+Overfull \hbox (25.83867pt too wide) in paragraph at lines 269--270
 \T1/zpltlf/m/n/10.95 lo-cus $[]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OM
 S/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it/10.95 ~$ \T1/zpltlf
 /m/n/10.95 in-side $[][]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OML/npxmi
@@ -1218,21 +1223,21 @@ pxmia/m/it/10.95 ~$
  []
 
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 263.
+(Font)              scaled to size 10.95pt on input line 279.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 263.
+(Font)              scaled to size 8.0pt on input line 279.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 6.1pt on input line 263.
+(Font)              scaled to size 6.1pt on input line 279.
 
-Overfull \hbox (42.22516pt too wide) in paragraph at lines 266--267
-[]\T1/zpltlf/b/n/10.95 Lemma 2.1. []\T1/zpltlf/m/it/10.95 The com-par-i-son mor
+Overfull \hbox (42.22516pt too wide) in paragraph at lines 282--283
+[]\T1/zpltlf/b/n/10.95 Lemma 3.1. []\T1/zpltlf/m/it/10.95 The com-par-i-son mor
 -phism re-stricts to a bi-ra-tional mor-phism $[][]\U/npxmia/m/it/10.95 }\U/npx
 sym/m/n/10.95 P[]\OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it
 /10.95 ~ \OMS/npxsy/m/n/10.95 !
  []
 
-[7] [8] [9]
-Overfull \hbox (12.88531pt too wide) in paragraph at lines 342--343
+[8] [9] [10]
+Overfull \hbox (12.88531pt too wide) in paragraph at lines 358--359
 []\T1/zpltlf/m/n/10.95 Follows from [[], Thm. 2.6] by push-for-ward along $\OML
 /npxmi/m/it/10.95 ^^_ [] [] [][]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\O
 ML/npxmi/m/it/10.95 ; d\U/npxmia/m/it/10.95 ~ \OMS/npxsy/m/n/10.95 !
@@ -1241,24 +1246,20 @@ ML/npxmi/m/it/10.95 ; d\U/npxmia/m/it/10.95 ~ \OMS/npxsy/m/n/10.95 !
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 353.
+(amsmath)                 on input line 369.
 
 
-LaTeX Warning: Citation `CFKM' on page 10 undefined on input line 355.
+LaTeX Warning: Citation `CFKM' on page 11 undefined on input line 371.
 
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 6.1pt on input line 355.
-[10]
-LaTeX Font Info:    Try loading font information for U+bbm on input line 379.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
-File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [11]
-Overfull \hbox (70.17993pt too wide) in paragraph at lines 444--444
+(Font)              scaled to size 6.1pt on input line 371.
+[11] [12]
+Overfull \hbox (70.17993pt too wide) in paragraph at lines 460--460
 [] 
  []
 
-[12]
-Overfull \hbox (15.29062pt too wide) detected at line 452
+[13]
+Overfull \hbox (15.29062pt too wide) detected at line 468
 \OT1/zpltlf/m/n/10.95 [[][]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OMS/np
 xsy/m/n/10.95 j\OML/npxmi/m/it/10.95 X; d\U/npxmia/m/it/10.95 ~\OT1/zpltlf/m/n/
 10.95 ][] \U/npxmia/m/it/10.95 5 }\OML/npxmi/m/it/10.95 X \U/npxmia/m/it/10.95 
@@ -1272,11 +1273,11 @@ S/npxsy/m/n/10.95 ^^@ \OT1/zpltlf/m/n/10.95 [\OML/npxmi/m/it/10.95 D[]\U/npxmia
  []
 
 
-Overfull \hbox (10.84416pt too wide) in paragraph at lines 467--467
+Overfull \hbox (10.84416pt too wide) in paragraph at lines 483--483
 [] 
  []
 
-(./relative_quasimaps.bbl
+[14] (./relative_quasimaps.bbl
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 9.0pt on input line 6.
 
@@ -1285,22 +1286,22 @@ Underfull \hbox (badness 1292) in paragraph at lines 4--7
 sta-ble toric
  []
 
-[13]) [14] (./relative_quasimaps.aux)
+) [15] (./relative_quasimaps.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 27254 strings out of 493014
- 519139 string characters out of 6133351
- 575155 words of memory out of 5000000
- 30079 multiletter control sequences out of 15000+600000
+ 27255 strings out of 493014
+ 519155 string characters out of 6133351
+ 574165 words of memory out of 5000000
+ 30080 multiletter control sequences out of 15000+600000
  85662 words of font info for 166 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  56i,15n,82p,10394b,996s stack positions out of 5000i,500n,10000p,200000b,80000s
- </Users/navid/Library/texlive/2016/texmf-var/fonts/pk/ljfour/public/bbm/bbm1
-0.657pk>{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.e
-nc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newpx/tgpdiff.enc}{/usr/
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc} </
+Users/navid/Library/texlive/2016/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657
+pk>{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newpx/tgpdiff.enc}{/usr/
 local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/
 texlive/2016/texmf-dist/fonts/enc/dvips/newpx/ecsups.enc}{/usr/local/texlive/20
 16/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-sc.enc}{/usr/local/texlive/2016/
@@ -1319,10 +1320,10 @@ ist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
 blic/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/new
 px/zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (14 pages, 195849 bytes).
+Output written on relative_quasimaps.pdf (15 pages, 198590 bytes).
 PDF statistics:
- 135 PDF objects out of 1000 (max. 8388607)
- 101 compressed objects within 2 object streams
+ 138 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

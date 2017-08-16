@@ -246,6 +246,22 @@ the pushed-forward quasimap with target $\PP^N$ is:
 \begin{equation*} (C, L^{\otimes a}, f_0(u_0, \ldots, u_r) , \ldots, f_N(u_0, \ldots, u_r)) \end{equation*}
 (This is stable as long as $a > 0$, which is precisely when $f$ satsfies Condition (1) above.)
 
+\newpage
+
+\section{The Quasimap String Equation for $\PP^r$}
+
+The string equation for the Gromov--Witten invariants of a smooth projective variety $X$ is given by
+\begin{align*} \langle \mathbbm{1} , \gamma_1 \psi^{a_1} , \ldots, & \gamma_n \psi^{a_n} \rangle_{g,n+1,\beta}^X = \\
+&  \sum_{i=1}^n \langle \gamma_1 \psi^{a_1}, \ldots, \gamma_{i-1} \psi^{a_{i-1}} , \gamma_i \psi^{a_i - 1} , \gamma_{i+1} \psi^{a_{i+1}} \ldots, \gamma_n \psi^{a_n} \rangle_{g,n,\beta}^X \end{align*}
+where $\mathbbm{1} \in H^*(X)$ is the unit class (by convention any term involving a negative power of $\psi$ is set to zero). Since Gromov--Witten invariants and quasimap invariants coincide for $X=\PP^r$ (\cite[Section 5.4]{Manolache-Push}) we know that the same equation holds for quasimap invariants to $\PP^r$.
+
+Nevertheless, it would be illuminating to have a direct proof of this statement, without relying on the equivalence with Gromov--Witten theory. Amongst other things, such a proof would necessarily involve some interesting intersection computations in the cohomology ring of the quasimap space. It is this task which we undertake in this section.
+
+The proof of the classical string equation (for Gromov--Witten invariants) 
+
+
+\newpage
+
 \section{Quasimaps to $\PP^r$ relative to a hyperplane}
 
 We first deal with genus 0 quasimaps to projective space, relative to a hyperplane. We give a Gathmann-like description of the space of relative quasimaps as a closed substack of the moduli space of (absolute) quasimaps to $\PP^r$; it turns out to be irreducible of the expected dimension. Finally, we retrieve a Gathmann-type formula by pushforward along the comparison morphism $\comp\colon \M{0}{n}{\PP^r}{d}\to\Q{0}{n}{\PP^r}{d}$.
