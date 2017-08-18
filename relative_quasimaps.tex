@@ -83,6 +83,7 @@
 \newtheorem*{nota}{Nota}
 \newtheorem{claim}{Claim}
 \newtheorem{question}[thm]{Question}
+\newtheorem{conj}[thm]{Conjecture}
 
 \theoremstyle{definition}
 \newtheorem{example}[thm]{Example}
@@ -255,7 +256,7 @@ The string equation for the Gromov--Witten invariants of a smooth projective var
 &  \sum_{i=1}^n \langle \gamma_1 \psi^{a_1}, \ldots, \gamma_{i-1} \psi^{a_{i-1}} , \gamma_i \psi^{a_i - 1} , \gamma_{i+1} \psi^{a_{i+1}} \ldots, \gamma_n \psi^{a_n} \rangle_{g,n,\beta}^X \end{align*}
 where $\mathbbm{1} \in H^*(X)$ is the unit class (by convention any term involving a negative power of $\psi$ is set to zero). Since Gromov--Witten invariants and quasimap invariants coincide for $X=\PP^r$ (\cite[Section 5.4]{Manolache-Push}) we know that the same equation holds for quasimap invariants to $\PP^r$.
 
-Nevertheless, it would be illuminating to have a direct proof of this statement, without relying on the equivalence with Gromov--Witten theory. Amongst other things, such a proof would necessarily involve some interesting intersection computations in the cohomology ring of the quasimap space. It is this task which we undertake in this section.
+Nevertheless, it would be illuminating to have a direct proof of this statement, without relying on the equivalence with Gromov--Witten theory. Amongst other things, such a proof would necessarily involve some nontrivial intersection computations in the cohomology ring of the quasimap space, which would be of independent interest.
 
 The proof of the classical string equation (for Gromov--Witten invariants) relies on three key lemmas involving certain codimension--1 classes on the moduli space of stable maps. Let
 \begin{equation*} \pi : \M{g}{n+1}{X}{\beta} \to \M{g}{n}{X}{\beta}\end{equation*}
@@ -267,11 +268,11 @@ denote the contraction map given by forgetting the last marked point and stabili
 \item $D_{i,n+1} \cdot D_{j,n+1} = 0$ for $i \neq j$
 \end{enumerate}
 
-Here $D_{i,n+1}$ can be described as the locus of stable maps $(C,x_1, \ldots, x_{n+1}, f)$ such that we can split up $C$ into two pieces, $C = C^\prime \cup C^{\prime\prime}$ (intersecting in a single node) such that $C^{\prime\prime}$ has degree $0$ and contains only the markings $x_i$ and $x_{n+1}$.
+Here $D_{i,n+1}$ is  the locus of stable maps $(C,x_1, \ldots, x_{n+1}, f)$ such that we can split up $C$ into two pieces, $C = C^\prime \cup C^{\prime\prime}$ (intersecting in a single node) such that $C^{\prime\prime}$ has degree $0$ and contains only the markings $x_i$ and $x_{n+1}$.
 
 [FIGURE]
 
-We would like to have some analogue of these in the quasimap setting. In fact, equations (2) and (3) carry over without difficulty. Equation (1), on the other hand, is rather more delicate.
+We would like to have some analogue of these results in the quasimap setting. In fact, equations (2) and (3) carry over without difficulty. Equation (1), on the other hand, is rather more delicate.
 
 In the stable map setting, equation (1) is proved by considering the following diagram
 \bcd
@@ -299,7 +300,12 @@ What is different in the case of quasimaps? We have a similar-looking diagram
 \mathcal{C}_{g,n+1} \ar[r,"\rho"] \ar[dr, "\psi" below left] & \pi^* \mathcal{C}_{g,n} \ar[r,"\alpha"] \ar[d, "\eta"] & \mathcal{C}_{g,n} \ar[d,"\varphi"] \\
 & \Q{g}{n+1}{X}{\beta} \ar[r,"\pi"] & \Q{g}{n}{X}{\beta}
 \ecd
-but now, because of the stronger stability condition, $\rho$ also contracts the locus $T_{n+1}$ consisting of rational tails (of any degree) with a single marking $x_{n+1}$. Let us examine the line bundle $\rho^*\omega_\eta$.
+but now, because of the stronger stability condition, $\rho$ also contracts the locus $T_{n+1}$ consisting of rational tails (of any degree) with a single marking $x_{n+1}$. We claim that:
+
+\begin{conj} $\rho^* \omega_\eta ( \Sigma_{i=1}^n x_i ) = \omega_\psi (\Sigma_{i=1}^n x_i - T_{n+1})$ \end{conj}
+
+Once we have this, the string equation follows as in the stable maps case by pulling back along the section $x_i$ (and using the obvious fact that $x_i^* T_{n+1} = 0$).
+
 \newpage
 
 
