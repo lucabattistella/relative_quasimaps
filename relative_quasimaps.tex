@@ -293,50 +293,118 @@ Then by compatiblity of Gysin maps with push-forwards we have:
 Thus, the first two terms of the recursion formula pull back easily along $k$. It remains to consider the third term, namely the virtual class of the comb locus. We wish to prove that:
 \begin{equation*} k^! [D^\mathcal{Q}_{\alpha,k}(\PP^r|H,d)] = \virt{D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)} \end{equation*}
 We will require a number of lemmas. We begin by considering a simpler moduli space than the comb locus, which we call the \ildef{centipede locus}. We fix a partition $A=(A_0,\ldots,A_r)$ of the marked points and a partition $B=(\beta_0, \ldots, \beta_r)$ of the curve class satisfying the usual stability conditions for the comb loci, and then consider the space:
-\begin{equation*} \Q{0}{A_0 \cup \{ q_1, \ldots, q_r \}}{X}{\beta_0} \times_{X^r} \prod_{i=1}^l \Q{0}{A_i\cup\{q_i\}}{X}{\beta_i} \end{equation*}
-Notice that the comb locus lives inside this space as a closed substack. There are two natural virtual classes that we can equip this space with. The first is the so-called \ildef{product class}, obtained in the usual way by pulling back
+\begin{equation*} \mathcal{K}(X,A,B) := \Q{0}{A_0 \cup \{ q_1, \ldots, q_r \}}{X}{\beta_0} \times_{X^r} \prod_{i=1}^l \Q{0}{A_i\cup\{q_i\}}{X}{\beta_i} \end{equation*}
+Notice that the comb locus lives inside this space as a closed substack. We equip this space with a virtual class in the usual way by pulling back
 \begin{equation*} \virt{\Q{0}{A_0 \cup \{ q_1, \ldots, q_r \}}{X}{\beta_0}} \times \prod_{i=1}^l \virt{\Q{0}{A_i\cup\{q_i\}}{X}{\beta_i}} \end{equation*}
-along $\Delta : X^r \to X^r \times X^r$. On the other hand, we can consider the following cartesian diagram
+along $\Delta : X^r \to X^r \times X^r$. That is, we set:
+\begin{equation*} \mathcal{L}(X,A,B) =  \Q{0}{A_0 \cup \{ q_1, \ldots, q_r \}}{X}{\beta_0} \times \prod_{i=1}^l \Q{0}{A_i\cup\{q_i\}}{X}{\beta_i} \end{equation*}
+and then make use of the cartesian diagram:
 \bcd
-\Q{0}{A_0 \cup \{ q_1, \ldots, q_r \}}{X}{\beta_0} \times_{X^r} \prod_{i=1}^r \Q{0}{A_i\cup\{q_i\}}{X}{\beta_i} \ar[r,"f"] \ar[d] \ar[rd,phantom,"\square"] & \Q{0}{n}{X}{\beta} \ar[d] \\
-\MM_{0,A_0\cup\{q_1,\ldots,q_r\},\beta_0}^{\operatorname{wt}} \times \prod_{i=1}^r \MM_{0,A_i\cup\{q_i\},\beta_i}^{\operatorname{wt}} \ar[r] & \MM_{0,n,\beta}^{\operatorname{wt}}
+\mathcal{K}(X,A,B) \ar[r,"g"] \ar[d,"\ev_q"] \ar[rd,phantom,"\square"] & \mathcal{L}(X,A,B) \ar[d,"\ev_q"] \\
+X^r \ar[r,"\Delta_{X^r}"] & X^r \times X^r
 \ecd
-where the moduli spaces on the bottom row are moduli spaces of weighted nodal curves (see [REFERENCE]).
+On the other hand, we can consider the following cartesian diagram
+\bcd
+\mathcal{K}(X,A,B) \ar[r,"\varphi"] \ar[d,"\rho"] \ar[rd,phantom,"\square"] & \Q{0}{n}{X}{\beta} \ar[d,"\pi"] \\
+\MM_{0,A,B}^{\operatorname{wt}} \ar[r,"\psi"] & \MM_{0,n,\beta}^{\operatorname{wt}}
+\ecd
+where the moduli spaces on the bottom row are moduli spaces of weighted nodal curves, and we set:
+\begin{equation*} \MM_{0,A,B}^{\operatorname{wt}} := \MM_{0,A_0\cup\{q_1,\ldots,q_r\},\beta_0}^{\operatorname{wt}} \times \prod_{i=1}^r \MM_{0,A_i\cup\{q_i\},\beta_i}^{\operatorname{wt}} \end{equation*}
 
 \begin{remark} The horizontal maps are not injective: due to the existence of degree--$0$ components, there may be many possible equally valid ways of breaking up a nodal curve into pieces. For instance, consider the following example of two elements which map to the same curve under $f$.
 [FIGURE]
 \end{remark}
-
-Given such a diagram (where all the maps are equipped with relative perfect obstruction theories), we can consider the induced virtual class
-\begin{equation*} f^! \virt{\Q{0}{A}{X}{\beta}} \end{equation*}
-which we call (for want of a better name) the \ildef{pullback class}.
-
-\begin{lem} The product class and the pullback class coincide. \end{lem}
-
-\begin{proof} The idea is to compare two obstruction theories on the centipede locus. Let us denote the centipede locus by:
-\begin{equation*} \tilde{D}^\mathcal{Q}(X,A,B) \end{equation*}
-Then the product class is obtained from the following cartesian diagram:
+We claim that we can obtain the virtual class of $\mathcal{K}(X,A,B)$ defined previously from a perfect obstruction theory relative to the morphism $\psi \circ \rho$ in the diagram above. We will then construct a compatible triple $(E_{\psi \circ \rho}, E_{\pi}, E_{\varphi})$ so that there exists a virtual pull-back morphism $\varphi^!$ such that:
+\begin{equation*} \virt{\mathcal{K}(X,A,B)} = \varphi^! \virt{\Q{0}{n}{X}{\beta}} \end{equation*}
+Let us begin. First we consider the diagram [REFERENCE: diagram involving L]. Consider the following commuting diagram:
 \bcd
-\tilde{D}^\mathcal{Q}(X,A,B) \ar[r,"\eta"] \ar[d,"\varphi"] \ar[rd,phantom,"\square"] & \Q{0}{A_0\cup\{q_1,\ldots,q_r\}}{X}{\beta_0} \times \prod_{i=1}^r \Q{0}{A_i \cup \{q_i\}}{X}{\beta_i} \ar[d,"\psi"] \\
-X^r \ar[r,"\Delta"] & X^r \times X^r
+\mathcal{L}(X,A,B) \ar[rr,"\ev \times \pi"] \ar[dr,"\pi"] & & X^r \times X^r \times \MM_{0,A,B}^{\operatorname{wt}} \ar[dl,left,"\pi_2"] \\
+& \MM_{0,A,B}^{\operatorname{wt}} &
 \ecd
-That is, there are relative perfect obstruction theories for $\varphi$, $\psi$ and $\eta$ which fit together as a compatible triple:
-\begin{equation*} \eta^* E_\psi \to E_\varphi \to E_\eta \xrightarrow{[1]} \end{equation*}
-Let us explain how these arise. The obstruction theory $E_\psi$ is obtained as the direct sum of the natural obstruction theories pulled back from each of the factors. For instance, if we consider the map
-\begin{equation*} \ev_q : \overline{\mathcal{Q}} = \Q{0}{A_0 \cup \{ q_1 \ldots, q_r \}}{X}{\beta_0} \to X^r \end{equation*}
-then we have an exact triangle
-\begin{equation*} \ev_q^* L_{X^r} \to L_{\overline{\mathcal{Q}}} \to L_{\ev_q} \xrightarrow{[1]} \end{equation*}
-and the definition of $E_{\overline{\mathcal{Q}}}$ together with the Euler sequence for $X$ and the fact that none of the $q_i$ are basepoints gives a lifting:
-\begin{equation*} \ev_q^* L_{X^r} \to E_{\overline{\mathcal{Q}}} \end{equation*}
-Taking the cone of this we obtain a morphism of exact triangles:
+This induces an exact triangle of contangent complexes:
+\begin{equation*} (\ev \times \pi)^* L_{\pi_2} = \ev^* L_{X^r \times X^r} \to L_\pi \to L_{\ev \times \pi} \end{equation*}
+The product virtual fundamental class on $\mathcal{L}(X,A,B)$ is induced by a perfect obstruction theory:
+\begin{equation*} E_\pi \to L_\pi \end{equation*}
+On the other hand, there exists a map
+\begin{equation*} \ev^* L_{X^r \times X^r} \to E_\pi \end{equation*}
+whose dual is given fibrewise by the natural morphism:
+\begin{equation*} H^0(C,\mathcal{F}) \to \bigoplus_q T_q X \end{equation*} \footnote{Flesh this out!}
+Here we have used the Euler sequence on $X$ and the fact that none of the $q$ are basepoints. We can complete this morphism to an exact triangle and thus obtain a diagram:
 \bcd
-\ev_q^* L_{X^r} \ar[r] \ar[d] & E_{\overline{\mathcal{Q}}} \ar[r] \ar[d] & E_{\ev_q} \ar[r,"1"] \ar[d] & \, \\
-\ev_q^* L_{X^r} \ar[r] & L_{\overline{\mathcal{Q}}} \ar[r] & L_{\ev_q} \ar[r,"1"] & \,
+\ev^* L_{X^r \times X^r} \ar[r] \ar[d,"\Id"] & E_\pi \ar[r] \ar[d] & E_{\ev \times \pi} \ar[r] \ar[d] & \, \\
+\ev^* L_{X^r \times X^r} \ar[r] & L_\pi \ar[r] & L_{\ev \times \pi} \ar[r] & \,
 \ecd
-with $E_{\ev_q} \to L_{\ev_q}$ the relative obstruction theory we are seeking. The same holds for the other factors. Thus, we have an exact triangle on $\tilde{C}^\mathcal{Q}(X,A,B)$:
-\begin{equation*} \psi^* L_{X^r \times X^r} \to E_{\tilde{C}^\mathcal{Q}(X,A,B)} \to E_\psi \xrightarrow{[1]} \end{equation*}
+\newpage
+Thus obtaining a perfect obstruction theory for the morphism $\ev \times \pi$. Now let us consider the other commuting diagram
+\bcd
+\mathcal{L}(X,A,B) \ar[rr,"\ev \times \pi"] \ar[dr,"\ev"] & & X^r \times X^r \times \MM_{0,A,B}^{\operatorname{wt}} \ar[dl,left,"\pi_1"] \\
+& X^r \times X^r &
+\ecd
+which produces an exact triangle:
+\begin{equation*} \pi^* L_{\MM_{0,A,B}^{\operatorname{wt}}} \to L_{\ev} \to L_{\ev \times \pi} \xrightarrow{[1]} \end{equation*}
+By composing the connecting homomorphism with $E_{\ev \times \pi} \to L_{\ev \times \pi}$ we obtain a morphism of exact triangles:
+\bcd
+\pi^* L_{\MM_{0,A,B}^{\operatorname{wt}}} \ar[r] \ar[d,"\Id"] & E_{\ev} \ar[r] \ar[d] & E_{\ev \times \pi} \ar[r] \ar[d] & \, \\
+\pi^* L_{\MM_{0,A,B}^{\operatorname{wt}}} \ar[r] & L_{\ev} \ar[r] & L_{\ev \times \pi} \ar[r] & \,
+\ecd
+Thus we have obtained a perfect obstruction theory $E_{\ev} \to L_{\ev}$ for $\mathcal{L}(X,A,B)$ over $X^r \times X^r$ which, by the nature of its construction, induces the standard virtual class. 
 
+Then by functoriality of the virtual class (see REFERENCE Behrend Fantechi Proposition 7.2) we have that
+\begin{equation*} g^* E_{\ev} \to g^* L_{\ev} = L_{\ev} \end{equation*}
+is a perfect obstruction theory on $\mathcal{K}(X,A,B)$ over $X^r$ which induces the product class:
+\begin{equation*} \Delta_{X^r}^! \virt{\mathcal{L}(X,A,B)} \end{equation*}
+We now aim to use this to express the same virtual class as being induced from a perfect obstruction theory over $\MM_{0,A,B}$. Consider the diagram (REFERENCE DIAGRAM INVOLVING POINTED SPACES].
+
+As in the previous argument we can consider the composition
+\begin{equation*} \mathcal{K}(X,A,B) \xrightarrow{\ev \times \rho} X^r \times \MM_{0,A,B}^{\operatorname{wt}} \xrightarrow{\pi_2} \MM_{0,A,B}^{\operatorname{wt}} \end{equation*}
+and thus obtain an exact triangle:
+\begin{equation*} \ev^* L_{X^r} \to L_\rho \to L_{\ev \times \rho} \xrightarrow{[1]} \end{equation*}
+Earlier we obtained a relative obstruction theory $E_{\ev \times \rho} \to L_{\ev \times \rho}$ on $\mathcal{L}(X,A,B)$. We can use the cartesian diagram
+\bcd
+\mathcal{K}(X,A,B) \ar[r,"g"] \ar[d,"\ev \times \rho"] \ar[rd,phantom,"\square"] & \mathcal{L}(X,A,B) \ar[d,"\ev \times \rho"] \\
+X^r \times \MM_{0,A,B}^{\operatorname{wt}} \ar[r,"\Delta \times \Id"] & X^r \times X^r \times \MM_{0,A,B}^{\operatorname{wt}}
+\ecd
+to pull back this back to an obstruction theory $E_{\ev \times \rho} \to L_{\ev \times \rho}$ on $\mathcal{K}(X,A,B)$. We can then compose it with the above exact triangle to obtain:
+\bcd
+\ev^* L_{X^r} \ar[r] \ar[d,"\Id"] & E_\rho \ar[r] \ar[d] & E_{\ev \times \rho} \ar[r] \ar[d] & \, \\
+\ev^* L_{X^r} \ar[r] & L_\rho \ar[r] & L_{\ev \times \rho} \ar[r] & \,
+\ecd
+So we have a perfect obstructon theory for $\mathcal{K}(X,A,B)$ over $\MM_{0,A,B}^{\operatorname{wt}}$ which by construction induces the class pulled back from $\mathcal{L}(X,A,B)$.
+
+On the other hand, we can construct a map:
+\begin{equation*} \varphi^* E_\pi \to E_\rho \end{equation*}
+[EXPLAIN HOW THIS IS DONE] Therefore we can construct an obstruction theory for the morphism $\varphi$, and we have a virtual pull-back morphism $\varphi^!_{E_\varphi}$ such that:
+\begin{equation*} \varphi^!_{E_\varphi} \virt{\Q{0}{n}{X}{\beta}} = \Delta_{X^r}^! \virt{\mathcal{L}(X,A,B)} \end{equation*}
+
+With this lemma proven, consider the following cartesian diagram:
+\bcd
+\mathcal{K}(X,A,B) \ar[r] \ar[d,"q"] \ar[rd,phantom,"\square"] & \mathcal{K}(\PP^N, A, i_* B) \times \Q{0}{n}{X}{\beta} \ar[d,"p \times \Id"] \\
+\Q{0}{n}{X}{\beta} \ar[d,"k"] \ar[r,"k \times \Id"] \ar[rd,phantom,"\square"] & \Q{0}{n}{\PP^N}{d} \times \Q{0}{n}{X}{\beta} \ar[d,"\Id \times k"] \\
+\Q{0}{n}{\PP^N}{d} \ar[r,"\Delta"] & \Q{0}{n}{\PP^N}{d} \times \Q{0}{n}{\PP^N}{d} 
+\ecd
+Note that $\Delta$ is a regular embedding because $\Q{0}{n}{\PP^N}{d}$ is smooth. All the other morphisms in the diagram admit relative obstruction theories as discussed above, and hence (see REFERENCE) admit virtual pullback morphisms. The following result is the analogue of Lemma REFERENCE in Gathmann REFERENCE.
+\begin{lem} $\Delta^! \left( [ \mathcal{K}(\PP^N, A, i_* B)] \times \virt{\Q{0}{n}{X}{\beta}} \right) = \Delta_{X^r}^! \virt{\mathcal{L}(X,A,B)}$ \end{lem}
+\begin{proof}
+We make use of commutativity of Gysin maps (and virtual pull-backs) and their compatibility with push-forwards. We have:
+\begin{align*} \Delta^! \left( [ \mathcal{K}(\PP^N,A,i_* B) ] \times \virt{\Q{0}{n}{X}{\beta}} \right) & = \Delta^! (p \times \Id)_{\text{v}}^! \left( [\Q{0}{n}{\PP^N}{d}] \times \virt{\Q{0}{n}{X}{\beta}} \right) \\
+& = q_{\text{v}}^! \Delta^! \left( [\Q{0}{n}{\PP^N}{d}] \times \virt{\Q{0}{n}{X}{\beta}} \right) \\
+& = q_{\text{v}}^! \Delta^! \left( [\Q{0}{n}{\PP^N}{d}] \times k_{E_k}^! [ \Q{0}{n}{\PP^N}{d} ] \right) \\
+& = q_{\text{v}}^! \Delta^! (\Id \times k)_{\text{v}}^! \left( [\Q{0}{n}{\PP^N}{d}] \times [ \Q{0}{n}{\PP^N}{d}]  \right) \\
+& = q_{\text{v}}^! k_{\text{v}}^! \Delta^!\left( [\Q{0}{n}{\PP^N}{d}] \times [ \Q{0}{n}{\PP^N}{d}]  \right)  \\
+& = q_{\text{v}}^! k_{\text{v}}^! [ \Q{0}{n}{\PP^N}{d} ] \\
+& = q_{\text{v}}^! \virt{\Q{0}{n}{X}{\beta}} \\
+& = \Delta_{X^r}^! \virt{\mathcal{L}(X,A,B)}
+\end{align*}
+where the final equality follows by Lemma REFERENCE above.
 \end{proof}
+
+
+
+
+
+
+
+
 
 
 
