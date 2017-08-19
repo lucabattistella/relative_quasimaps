@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  18 AUG 2017 18:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  19 AUG 2017 12:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1203,6 +1203,9 @@ pxmia/m/it/10.95 ~$
 
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 10.95pt on input line 138.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 8.0pt on input line 141.
+[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 10.95pt on input line 144.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
@@ -1210,14 +1213,6 @@ LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 6.1pt on input line 144.
 
-LaTeX Warning: Citation `Ga' on page 1 undefined on input line 144.
-
-
-LaTeX Warning: Citation `Ga' on page 1 undefined on input line 144.
-
-LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 145.
-[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Overfull \hbox (42.22516pt too wide) in paragraph at lines 147--148
 []\T1/zpltlf/b/n/10.95 Lemma 3.1. []\T1/zpltlf/m/it/10.95 The com-par-i-son mor
 -phism re-stricts to a bi-ra-tional mor-phism $[][]\U/npxmia/m/it/10.95 }\U/npx
@@ -1225,81 +1220,42 @@ sym/m/n/10.95 P[]\OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it
 /10.95 ~ \OMS/npxsy/m/n/10.95 !
  []
 
+[2] [3]
+Overfull \hbox (12.88531pt too wide) in paragraph at lines 223--224
+[]\T1/zpltlf/m/n/10.95 Follows from [[], Thm. 2.6] by push-for-ward along $\OML
+/npxmi/m/it/10.95 ^^_ [] [] [][]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\O
+ML/npxmi/m/it/10.95 ; d\U/npxmia/m/it/10.95 ~ \OMS/npxsy/m/n/10.95 !
+ []
 
-LaTeX Warning: Citation `Ga' on page 2 undefined on input line 159.
-
-
-LaTeX Warning: Citation `Ga' on page 2 undefined on input line 159.
-
-[2]
-
-LaTeX Warning: Citation `Ga' on page 3 undefined on input line 171.
-
-
-LaTeX Warning: Reference `lem:comparison' on page 3 undefined on input line 171
-.
-
-
-LaTeX Warning: Citation `Ga-MF' on page 3 undefined on input line 185.
-
-[3]
-
-LaTeX Warning: Citation `Ga' on page 4 undefined on input line 223.
-
-
-LaTeX Warning: Reference `lem:comparison' on page 4 undefined on input line 223
-.
-
-
-LaTeX Warning: Reference `lem:compare_psi' on page 4 undefined on input line 22
-3.
-
-
-LaTeX Warning: Reference `lem:posdimfiber' on page 4 undefined on input line 22
-3.
-
+[4]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 234.
 
-[4]
 
 LaTeX Warning: Citation `CFKM' on page 5 undefined on input line 236.
 
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 6.1pt on input line 236.
-[5]
-
-LaTeX Warning: Reference `Functoriality of Quasimap Spaces Section' on page 6 u
-ndefined on input line 264.
-
-
-Underfull \vbox (badness 1917) has occurred while \output is active []
-
- [6]
+[5] [6]
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/sc' in size <10.95> not available
 (Font)              Font shape `T1/zpltlf/b/sc' tried instead on input line 295
 .
 LaTeX Font Info:    Font shape `T1/zpltlf/b/sc' will be
 (Font)              scaled to size 10.95pt on input line 295.
+ [7] [8]
+LaTeX Font Info:    Try loading font information for U+bbm on input line 358.
 
-[7] [8]
-LaTeX Font Info:    Try loading font information for U+bbm on input line 341.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+(/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-)
-[9]
-
-LaTeX Warning: Reference `eqn:G' on page 10 undefined on input line 400.
-
-
-Overfull \hbox (70.17993pt too wide) in paragraph at lines 406--406
+) [9]
+Overfull \hbox (70.17993pt too wide) in paragraph at lines 423--423
 [] 
  []
 
 [10]
-Overfull \hbox (15.29062pt too wide) detected at line 414
+Overfull \hbox (15.29062pt too wide) detected at line 431
 \OT1/zpltlf/m/n/10.95 [[][]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OMS/np
 xsy/m/n/10.95 j\OML/npxmi/m/it/10.95 X; d\U/npxmia/m/it/10.95 ~\OT1/zpltlf/m/n/
 10.95 ][] \U/npxmia/m/it/10.95 5 }\OML/npxmi/m/it/10.95 X \U/npxmia/m/it/10.95 
@@ -1313,65 +1269,22 @@ S/npxsy/m/n/10.95 ^^@ \OT1/zpltlf/m/n/10.95 [\OML/npxmi/m/it/10.95 D[]\U/npxmia
  []
 
 
-Overfull \hbox (10.84416pt too wide) in paragraph at lines 429--429
+Overfull \hbox (10.84416pt too wide) in paragraph at lines 446--446
 [] 
  []
 
 [11]
-
-LaTeX Warning: Citation `CF-K-wallcrossing' on page 12 undefined on input line 
-452.
-
 LaTeX Font Info:    Try loading font information for T1+zplsups on input line 4
-54.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/t1zplsups.fd
+71.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/t1zplsups.fd
 File: t1zplsups.fd 2015/01/17 v1.0
 )
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
-(Font)              scaled to size 10.95pt on input line 454.
+(Font)              scaled to size 10.95pt on input line 471.
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
-(Font)              scaled to size 9.0pt on input line 454.
-
-
-LaTeX Warning: Citation `CoxRing' on page 12 undefined on input line 456.
-
-
-LaTeX Warning: Citation `CoxFunctor' on page 12 undefined on input line 456.
-
-
-LaTeX Warning: Citation `CoxFunctor' on page 12 undefined on input line 458.
-
-
-LaTeX Warning: Citation `CoxRing' on page 12 undefined on input line 460.
-
-
-LaTeX Warning: Citation `CoxFunctor' on page 12 undefined on input line 462.
-
-[12] [13]
-
-LaTeX Warning: Reference `Prho' on page 14 undefined on input line 505.
-
-[14]
-
-LaTeX Warning: Reference `Pic short exact sequence for Y' on page 15 undefined 
-on input line 527.
-
-
-LaTeX Warning: Reference `CoxTheorem' on page 15 undefined on input line 535.
-
-
-LaTeX Warning: Reference `CoxTheorem' on page 15 undefined on input line 541.
-
-[15]
-
-LaTeX Warning: Citation `CF-K' on page 16 undefined on input line 545.
-
-[16]
-
-LaTeX Warning: Citation `Manolache-Push' on page 17 undefined on input line 579
-.
-
-[17] [18] (./relative_quasimaps.bbl
+(Font)              scaled to size 9.0pt on input line 471.
+ [12]
+[13] [14] [15] [16] [17] [18] (./relative_quasimaps.bbl
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 9.0pt on input line 6.
 
@@ -1384,15 +1297,12 @@ sta-ble toric
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 27530 strings out of 493014
- 525961 string characters out of 6133351
- 581632 words of memory out of 5000000
- 30352 multiletter control sequences out of 15000+600000
+ 27638 strings out of 493014
+ 528745 string characters out of 6133351
+ 585818 words of memory out of 5000000
+ 30460 multiletter control sequences out of 15000+600000
  85662 words of font info for 166 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  56i,15n,82p,10394b,1003s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1417,7 +1327,7 @@ ist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
 blic/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/new
 px/zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (19 pages, 219279 bytes).
+Output written on relative_quasimaps.pdf (19 pages, 222346 bytes).
 PDF statistics:
  151 PDF objects out of 1000 (max. 8388607)
  112 compressed objects within 2 object streams

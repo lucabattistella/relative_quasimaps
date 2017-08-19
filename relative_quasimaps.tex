@@ -275,11 +275,11 @@ Furthermore one can show that this is cartesian. As such we can define a virtual
 \ecd
 which is equivalent to the previous one. Then we define:
 \begin{equation*} \virt{\Q{0}{\alpha}{X|Y}{\beta}} := \Delta^! \left( \virt{\Q{0}{n}{X}{\beta}} \times [\Q{0}{\alpha}{\PP^N|H}{d}] \right) \end{equation*}
-The idea is to prove the recursion formula in $\Q{0}{n}{X}{\beta}$ by pulling back the formula for $\PP^N$ relative $H$ along $k = i^!$. In order to do this, we need to understand how various virtual classes pull back along this map. This is the technical heart of the proof.
+The idea is to prove the recursion formula for $(X,Y)$ by pulling back the formula for $(\PP^N,H)$ along $k = i_*$. In order to do this, we need to understand how various virtual classes pull back along this map. This is the technical heart of the proof.
 
 First, we claim that for any $\alpha$ we have:
 \begin{equation*} k^! [\Q{0}{\alpha}{\PP^N|H}{d}] = f_* \virt{\Q{0}{\alpha}{X|Y}{\beta}} \end{equation*}
-inside $A_* \left(\Q{0}{\alpha}{X|Y}{\beta}\right)$. To see this, consider the following cartesian diagram:
+inside $A_* \left(\Q{0}{n}{X}{\beta}\right)$. To see this, consider the following cartesian diagram:
 \bcd
 \Q{0}{\alpha}{X|Y}{\beta} \ar[r,"f \times g"] \ar[d,"f"] \ar[rd,phantom,"\square"] & \Q{0}{n}{X}{\beta} \times \Q{0}{\alpha}{\PP^N|H}{d} \ar[d,"\operatorname{Id} \times i"] \\
 \Q{0}{n}{X}{\beta} \ar[r, "\operatorname{Id} \times k"]  \ar[d,"k"] \ar[rd,phantom,"\square"] & \Q{0}{n}{X}{\beta} \times \Q{0}{n}{\PP^N}{d} \ar[d,"k \times \operatorname{Id}"]  \\
@@ -292,14 +292,14 @@ Then by compatiblity of Gysin maps with push-forwards we have:
 & = k^! [\Q{0}{\alpha}{\PP^N|H}{d}] \end{align*}
 Thus, the first two terms of the recursion formula pull back easily along $k$. It remains to consider the third term, namely the virtual class of the comb locus. We wish to prove that:
 \begin{equation*} k^! [D^\mathcal{Q}_{\alpha,k}(\PP^r|H,d)] = \virt{D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)} \end{equation*}
-To do so will require a number of lemmas. We begin by considering a simpler moduli space than the comb locus, which we call the \ildef{centipede locus}. We fix a partition $A=(A_0,\ldots,A_r)$ of the marked points and a partition $B=(\beta_0, \ldots, \beta_r)$ of the curve class satisfying the usual stability conditions for the comb loci, and then consider the space:
+We will require a number of lemmas. We begin by considering a simpler moduli space than the comb locus, which we call the \ildef{centipede locus}. We fix a partition $A=(A_0,\ldots,A_r)$ of the marked points and a partition $B=(\beta_0, \ldots, \beta_r)$ of the curve class satisfying the usual stability conditions for the comb loci, and then consider the space:
 \begin{equation*} \Q{0}{A_0 \cup \{ q_1, \ldots, q_r \}}{X}{\beta_0} \times_{X^r} \prod_{i=1}^l \Q{0}{A_i\cup\{q_i\}}{X}{\beta_i} \end{equation*}
 Notice that the comb locus lives inside this space as a closed substack. There are two natural virtual classes that we can equip this space with. The first is the so-called \ildef{product class}, obtained in the usual way by pulling back
 \begin{equation*} \virt{\Q{0}{A_0 \cup \{ q_1, \ldots, q_r \}}{X}{\beta_0}} \times \prod_{i=1}^l \virt{\Q{0}{A_i\cup\{q_i\}}{X}{\beta_i}} \end{equation*}
 along $\Delta : X^r \to X^r \times X^r$. On the other hand, we can consider the following cartesian diagram
 \bcd
-\Q{0}{A_0 \cup \{ q_1, \ldots, q_r \}}{X}{\beta_0} \times_{X^r} \prod_{i=1}^r \Q{0}{A_i\cup\{q_i\}}{X}{\beta_i} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \Q{0}{A}{X}{\beta} \ar[d] \\
-\MM_{0,A_0\cup\{q_1,\ldots,q_r\},\beta_0}^{\operatorname{wt}} \times \prod_{i=1}^r \MM_{0,A_i\cup\{q_i\},\beta_i}^{\operatorname{wt}} \ar[r,"f"] & \MM_{0,A,\beta}^{\operatorname{wt}}
+\Q{0}{A_0 \cup \{ q_1, \ldots, q_r \}}{X}{\beta_0} \times_{X^r} \prod_{i=1}^r \Q{0}{A_i\cup\{q_i\}}{X}{\beta_i} \ar[r,"f"] \ar[d] \ar[rd,phantom,"\square"] & \Q{0}{n}{X}{\beta} \ar[d] \\
+\MM_{0,A_0\cup\{q_1,\ldots,q_r\},\beta_0}^{\operatorname{wt}} \times \prod_{i=1}^r \MM_{0,A_i\cup\{q_i\},\beta_i}^{\operatorname{wt}} \ar[r] & \MM_{0,n,\beta}^{\operatorname{wt}}
 \ecd
 where the moduli spaces on the bottom row are moduli spaces of weighted nodal curves (see [REFERENCE]).
 
@@ -313,15 +313,32 @@ which we call (for want of a better name) the \ildef{pullback class}.
 
 \begin{lem} The product class and the pullback class coincide. \end{lem}
 
+\begin{proof} The idea is to compare two obstruction theories on the centipede locus. Let us denote the centipede locus by:
+\begin{equation*} \tilde{D}^\mathcal{Q}(X,A,B) \end{equation*}
+Then the product class is obtained from the following cartesian diagram:
+\bcd
+\tilde{D}^\mathcal{Q}(X,A,B) \ar[r,"\eta"] \ar[d,"\varphi"] \ar[rd,phantom,"\square"] & \Q{0}{A_0\cup\{q_1,\ldots,q_r\}}{X}{\beta_0} \times \prod_{i=1}^r \Q{0}{A_i \cup \{q_i\}}{X}{\beta_i} \ar[d,"\psi"] \\
+X^r \ar[r,"\Delta"] & X^r \times X^r
+\ecd
+That is, there are relative perfect obstruction theories for $\varphi$, $\psi$ and $\eta$ which fit together as a compatible triple:
+\begin{equation*} \eta^* E_\psi \to E_\varphi \to E_\eta \xrightarrow{[1]} \end{equation*}
+Let us explain how these arise. The obstruction theory $E_\psi$ is obtained as the direct sum of the natural obstruction theories pulled back from each of the factors. For instance, if we consider the map
+\begin{equation*} \ev_q : \overline{\mathcal{Q}} = \Q{0}{A_0 \cup \{ q_1 \ldots, q_r \}}{X}{\beta_0} \to X^r \end{equation*}
+then we have an exact triangle
+\begin{equation*} \ev_q^* L_{X^r} \to L_{\overline{\mathcal{Q}}} \to L_{\ev_q} \xrightarrow{[1]} \end{equation*}
+and the definition of $E_{\overline{\mathcal{Q}}}$ together with the Euler sequence for $X$ and the fact that none of the $q_i$ are basepoints gives a lifting:
+\begin{equation*} \ev_q^* L_{X^r} \to E_{\overline{\mathcal{Q}}} \end{equation*}
+Taking the cone of this we obtain a morphism of exact triangles:
+\bcd
+\ev_q^* L_{X^r} \ar[r] \ar[d] & E_{\overline{\mathcal{Q}}} \ar[r] \ar[d] & E_{\ev_q} \ar[r,"1"] \ar[d] & \, \\
+\ev_q^* L_{X^r} \ar[r] & L_{\overline{\mathcal{Q}}} \ar[r] & L_{\ev_q} \ar[r,"1"] & \,
+\ecd
+with $E_{\ev_q} \to L_{\ev_q}$ the relative obstruction theory we are seeking. The same holds for the other factors.
 
 
 
 
-
-
-
-
-
+\end{proof}
 
 
 
