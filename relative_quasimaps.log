@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  20 AUG 2017 15:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  20 AUG 2017 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1307,9 +1307,6 @@ sta-ble toric
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  28152 strings out of 493014
@@ -1340,7 +1337,7 @@ ist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
 blic/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/new
 px/zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (26 pages, 249298 bytes).
+Output written on relative_quasimaps.pdf (26 pages, 249260 bytes).
 PDF statistics:
  173 PDF objects out of 1000 (max. 8388607)
  127 compressed objects within 2 object streams
