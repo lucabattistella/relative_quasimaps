@@ -1,5 +1,10 @@
 \begin{thebibliography}{Cox95b}
 
+\bibitem[BF97]{BF}
+K.~Behrend and B.~Fantechi.
+\newblock The intrinsic normal cone.
+\newblock {\em Invent. Math.}, 128(1):45--88, 1997.
+
 \bibitem[CFK10]{CF-K}
 Ionu\c~t Ciocan-Fontanine and Bumsig Kim.
 \newblock {Moduli stacks of stable toric quasimaps}.
