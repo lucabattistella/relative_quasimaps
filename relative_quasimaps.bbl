@@ -1,4 +1,9 @@
-\begin{thebibliography}{Cox95b}
+\begin{thebibliography}{CFKM14}
+
+\bibitem[Ber00]{Bertram}
+Aaron Bertram.
+\newblock {Another way to enumerate rational curves with torus actions}.
+\newblock {\em Invent. Math.}, 142(3):487--512, 2000.
 
 \bibitem[CFK10]{CF-K}
 Ionu\c~t Ciocan-Fontanine and Bumsig Kim.
@@ -10,14 +15,19 @@ Ionu\c~t Ciocan-Fontanine and Bumsig Kim.
 \newblock {Wall-crossing in genus zero quasimap theory and mirror maps}.
 \newblock {\em Algebr. Geom.}, 1(4):400--448, 2014.
 
+\bibitem[CFKM14]{CFKM}
+Ionu\c~t Ciocan-Fontanine, Bumsig Kim, and Davesh Maulik.
+\newblock {Stable quasimaps to {GIT} quotients}.
+\newblock {\em J. Geom. Phys.}, 75:17--47, 2014.
+
 \bibitem[Cox95a]{CoxFunctor}
 David~A. Cox.
-\newblock The functor of a smooth toric variety.
+\newblock {The functor of a smooth toric variety}.
 \newblock {\em Tohoku Math. J. (2)}, 47(2):251--262, 1995.
 
 \bibitem[Cox95b]{CoxRing}
 David~A. Cox.
-\newblock The homogeneous coordinate ring of a toric variety.
+\newblock {The homogeneous coordinate ring of a toric variety}.
 \newblock {\em J. Algebraic Geom.}, 4(1):17--50, 1995.
 
 \bibitem[Gat02]{Ga}
@@ -31,9 +41,31 @@ Andreas Gathmann.
 \newblock {Relative {G}romov-{W}itten invariants and the mirror formula}.
 \newblock {\em Math. Ann.}, 325(2):393--412, 2003.
 
+\bibitem[Har77]{HAR}
+Robin Hartshorne.
+\newblock {\em {Algebraic geometry}}.
+\newblock Springer-Verlag, New York-Heidelberg, 1977.
+\newblock Graduate Texts in Mathematics, No. 52.
+
+\bibitem[Knu83]{Knudsen}
+Finn~F. Knudsen.
+\newblock {The projectivity of the moduli space of stable curves. {II}. {T}he
+  stacks {$M_{g,n}$}}.
+\newblock {\em Math. Scand.}, 52(2):161--199, 1983.
+
 \bibitem[Man12]{Manolache-Push}
 Cristina Manolache.
-\newblock Virtual push-forwards.
+\newblock {Virtual push-forwards}.
 \newblock {\em Geom. Topol.}, 16(4):2003--2036, 2012.
+
+\bibitem[MOP11]{MOP}
+Alina Marian, Dragos Oprea, and Rahul Pandharipande.
+\newblock {The moduli space of stable quotients}.
+\newblock {\em Geom. Topol.}, 15(3):1651--1706, 2011.
+
+\bibitem[PR03]{Popa-Roth}
+Mihnea Popa and Mike Roth.
+\newblock {Stable maps and {Q}uot schemes}.
+\newblock {\em Invent. Math.}, 152(3):625--663, 2003.
 
 \end{thebibliography}
