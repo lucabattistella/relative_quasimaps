@@ -2,7 +2,7 @@
 \contentsline {section}{\tocsection {}{1}{Introduction}}{1}
 \contentsline {section}{\tocsection {}{2}{Stable Quasimaps and their Invariants}}{1}
 \contentsline {section}{\tocsection {}{3}{Quasimaps to $\mathbb P^r$ Relative to a Hyperplane}}{1}
-\contentsline {section}{\tocsection {}{4}{Comparison with the GIT Construction}}{5}
+\contentsline {section}{\tocsection {}{4}{Comparison with the GIT Construction}}{4}
 \contentsline {section}{\tocsection {}{5}{Recursion Formula in the General Case}}{6}
 \contentsline {section}{\tocsection {}{6}{The Quasimap Mirror Theorem}}{19}
 \contentsline {section}{\tocsection {Appendix}{A}{Functoriality of Quasimap Spaces}}{21}
