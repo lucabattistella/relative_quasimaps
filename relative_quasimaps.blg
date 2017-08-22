@@ -4,45 +4,45 @@ The top-level auxiliary file: relative_quasimaps.aux
 The style file: alpha.bst
 Database file #1: relqm.bib
 Warning--I didn't find a database entry for "CFKM"
-You've used 8 entries,
+You've used 10 entries,
             2543 wiz_defined-function locations,
-            619 strings with 5303 characters,
-and the built_in function-call counts, 3056 in all, are:
-= -- 322
-> -- 97
-< -- 5
-+ -- 32
-- -- 28
-* -- 236
-:= -- 498
-add.period$ -- 24
-call.type$ -- 8
-change.case$ -- 43
-chr.to.int$ -- 7
-cite$ -- 8
-duplicate$ -- 117
-empty$ -- 241
-format.name$ -- 41
-if$ -- 611
-int.to.chr$ -- 2
+            633 strings with 5642 characters,
+and the built_in function-call counts, 3704 in all, are:
+= -- 386
+> -- 113
+< -- 8
++ -- 37
+- -- 32
+* -- 285
+:= -- 599
+add.period$ -- 30
+call.type$ -- 10
+change.case$ -- 53
+chr.to.int$ -- 8
+cite$ -- 10
+duplicate$ -- 149
+empty$ -- 297
+format.name$ -- 49
+if$ -- 743
+int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 8
-newline$ -- 43
-num.names$ -- 24
-pop$ -- 24
+missing$ -- 11
+newline$ -- 53
+num.names$ -- 30
+pop$ -- 34
 preamble$ -- 1
-purify$ -- 51
+purify$ -- 63
 quote$ -- 0
-skip$ -- 93
+skip$ -- 114
 stack$ -- 0
-substring$ -- 259
-swap$ -- 8
-text.length$ -- 5
-text.prefix$ -- 5
+substring$ -- 298
+swap$ -- 12
+text.length$ -- 8
+text.prefix$ -- 7
 top$ -- 0
-type$ -- 64
+type$ -- 76
 warning$ -- 0
-while$ -- 35
-width$ -- 10
-write$ -- 106
+while$ -- 41
+width$ -- 11
+write$ -- 133
 (There was 1 warning)

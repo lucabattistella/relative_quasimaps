@@ -75,6 +75,8 @@
 \newcommand{\codim}{\operatorname{codim}}
 \newcommand{\vdim}{\operatorname{vdim}}
 \newcommand{\ildef}[1]{\textbf{\textsc{#1}}}
+\newcommand{\om}[1]{\overline{\mathcal{#1}}}
+\newcommand{\h}{\operatorname{h}}
 
 \theoremstyle{plain}
 \newtheorem{thm}{Theorem}[section]
@@ -267,8 +269,8 @@ We now move on to the general case. Let $X$ be an arbitrary toric variety (smoot
 \begin{equation*} k := i_* : \Q{0}{n}{X}{\beta} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
 where $d=i_*\beta$. Furthermore since $i$ is a closed embedding it follows that $i_*$ is as well. It is easy to show that $i_*$ restricts to a morphism between the relative spaces, and thus we have a commuting diagram of embeddings:
 \bcd
-\Q{0}{\alpha}{X|Y}{\beta} \ar[r, "f", hook] \ar[d, "g", hook] \ar[dr, phantom, "\square"] & \Q{0}{n}{X}{\beta} \ar[d, "k", hook] \\
-\Q{0}{\alpha}{\PP^N|H}{d} \ar[r, "j", hook] & \Q{0}{n}{\PP^N}{d}
+\Q{0}{\alpha}{X|Y}{\beta} \ar[d, "f", hook] \ar[r, "g", hook] \ar[dr, phantom, "\square"] & \Q{0}{\alpha}{\PP^N|H}{d} \ar[d, "j", hook] \\
+\Q{0}{n}{X}{\beta}  \ar[r, "k", hook] & \Q{0}{n}{\PP^N}{d}
 \ecd
 Furthermore one can show that this is cartesian. As such we can define a virtual class on $\Q{0}{\alpha}{X|Y}{\beta}$ by pullback; that is, we consider the cartesian diagram
 \bcd
@@ -279,32 +281,106 @@ which is equivalent to the previous one. The morphism $\Delta$ is a regular embe
 \begin{equation*} \virt{\Q{0}{\alpha}{X|Y}{\beta}} := \Delta^! \left( \virt{\Q{0}{n}{X}{\beta}} \times [\Q{0}{\alpha}{\PP^N|H}{d}] \right) \end{equation*}
 The idea is to prove the recursion formula for $(X,Y)$ by pulling back the formula for $(\PP^N,H)$ along $k = i_*$. In order to do this, we need to understand how the various virtual classes involved in the formula pull back along this map. This is the technical heart of the proof.
 
-\begin{remark} Note that $k$ is a regular embedding, since its image can be described as the zero locus of a section of the bundle
-\begin{equation*} \R \pi_* \left( \bigoplus_i \mathcal{L}^{\otimes a_i} \right) \end{equation*}
-on $\Q{0}{n}{\PP^N}{d}$, where $(a_i)$ is the multidegree of $X$ in $\PP^N$ (the embedding $X \hookrightarrow \PP^N$ being regular because both source and target are smooth). So the Gysin map $k^!$ is well-defined. \end{remark}
+But before getting into any of this, we need to explain what we mean by ``pulling back along $k$.'' Indeed, $k$ is not necessarily a regular embedding, so the Gysin map in the sense of \cite{FUL} does not necessarily exist.
 
+In \cite{Manolache-Pull} a generalisation of the Gysin map (called the \ildef{virtual pull-back}) is defined for morphisms endowed with a relative perfect obstruction theory. Moreover, a sufficient condition is given (Corollary 4.9) for this map to respect the virtual classes.
+
+\begin{lem} \label{Exists relative POT} There exists a relative perfect obstruction theory $E_k$ for the morphism
+\begin{equation*} k : \Q{0}{n}{X}{\beta} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
+and hence there exists a virtual pull-back morphism $k^!_{\text{v}}$. Moreover, $E_k$ fits into a compatible triple with the standard obstruction theories for the quasimap spaces over $\MM_{0,n}$, so that:
+\begin{equation*} k^!_{\text{v}} [ \Q{0}{n}{\PP^N}{d} ] = \virt{\Q{0}{n}{X}{\beta}} \end{equation*} \end{lem}
+
+\begin{proof} Note first that since $k$ does not change the source curve of a quasimap we indeed have a commuting triangle:
+\bcd
+\Q{0}{n}{X}{\beta} \ar[rr,"k"] \ar[rd] & & \Q{0}{n}{\PP^N}{d} \ar[ld] \\
+& \MM_{0,n} & 
+\ecd
+We have perfect obstruction theories $E_{\overline{\mathcal{Q}}(X)/\MM}$ and $E_{\overline{\mathcal{Q}}(\PP^N)/\MM}$ and we want to find a perfect obstruction theory $E_k$. Consider the diagram of universal curves
+\bcd
+\mathcal{C}_X \ar[r,"\alpha"] \ar[d,"\pi"] \ar[rd,phantom,"\square" right] & \mathcal{C}_{\PP^N} \ar[d,"\rho"] \\
+\Q{0}{n}{X}{\beta} \ar[r,"k"] & \Q{0}{n}{\PP^N}{d}
+\ecd
+which is cartesian because $k$ does not alter the source curve of any quasimap. We have sheaves $\mathcal{F}_X$ and $\mathcal{F}_{\PP^N}$ on $\mathcal{C}_X$ and $\mathcal{C}_{\PP^N}$ respectively such that:
+\begin{align*} E_{\overline{\mathcal{Q}}(X)/\MM}^\vee & = \R \pi_* \mathcal{F}_X \\
+E_{\overline{\mathcal{Q}}(\PP^N)/\MM}^\vee & = \R \rho_* \mathcal{F}_{\PP^N} \end{align*}
+It follows that when we pull back the latter obstruction theory to $\om{Q}(X)$ we obtain:
+\begin{equation*} k^* E_{\overline{\mathcal{Q}}(\PP^N)/\MM}^\vee = \R \pi_* \alpha^* \mathcal{F}_{\PP^N} \end{equation*}
+To construct a compatible triple, we require a morphism $k^* E_{\om{Q}(\PP^N)/\MM} \to E_{\om{Q}(X)/\MM}$. It is therefore enough to construct a morphism of sheaves on $\mathcal{C}_X$
+\begin{equation*} \mathcal{F}_X \to \alpha^* \mathcal{F}_{\PP^N} \end{equation*}
+and then apply $\R \pi_*$. This is analogous to the morphism $f^* T_X \to f^* T_{\PP^N}|_X$ which is used in the stable maps setting. Here, however, the construction requires a little more ingenuity, because we do not have acess to a universal map $f$.
+
+The sheaf $\mathcal{F}_X$ is defined on $\mathcal{C}_X$ by the short exact sequence
+\begin{equation*} 0 \to \OO_{\mathcal{C}_X}^{\oplus r} \to \oplus_{\rho} \mathcal{L}_\rho \to \mathcal{F}_X \to 0 \end{equation*}
+where $r = \operatorname{rk} \Pic X$ (implicitly we have chosen a basis for this $\Z$-module) and similarly $\mathcal{F}_{\PP^N}$ is defined on $\mathcal{C}_{\PP^N}$ by:
+\begin{equation*} 0 \to \OO_{\mathcal{C}_{\PP^N}} \to \mathcal{L}^{\oplus (N+1)} \to \mathcal{F}_{\PP^N} \to 0 \end{equation*}
+We will construct our morphism by first constructing a morhism:
+\begin{equation*} \oplus_{\rho} \mathcal{L}_\rho \to \alpha^* \mathcal{L}^{\oplus(N+1)} \end{equation*}
+Recall that $i : X \hookrightarrow \PP^N$ is given by homogeneous polynomials
+\begin{equation*} P_0 , \ldots, P_N \in S^X_\gamma \subset S^X = k[z_\rho : \rho \in \Sigma_X(1)] \end{equation*}
+in the Cox ring of $X$, where $\gamma \in \Pic X$ is some divisor class. We can write this (non-uniquely) as:
+\begin{equation*} \gamma = \sum_\rho c_\rho D_\rho \end{equation*}
+Then given $i \in \{0,\ldots,N\}$ and sections $v_\rho$ of $\mathcal{L}_\rho$ for all $\rho \in \Sigma_X(1)$ we can use the same trick as in the proof of functoriality (see Appendix \ref{Functoriality of Quasimap Spaces Section}) to view $P_i(v_\rho)$ as a section of:
+\begin{equation*} \otimes_\rho \mathcal{L}_\rho^{\otimes c_\rho} = \alpha^* \mathcal{L} \end{equation*}
+Thus we obtain a morphism
+\begin{equation*} (P_0, \ldots, P_N) : \oplus_\rho \mathcal{L}_\rho \to \alpha^* \mathcal{L}^{\oplus (N+1)} \end{equation*}
+as required. On the other hand if we let $M_1, \ldots, M_r$ denote the chosen generators for $\Pic X$ then there exist unique numbers $b_1, \ldots, b_r$ such that:
+\begin{equation*} i^* \OO_{\PP^N}(1) = \otimes_{i=1}^r M_i^{\otimes b_i} \end{equation*}
+These define a map $\OO_{C_X}^{\oplus r} \to \OO_{C_X}$ and so we obtain a digram
+\bcd
+0 \ar[r] & \OO_{C_X}^{\oplus r} \ar[r] \ar[d] & \oplus_\rho \mathcal{L}_\rho \ar[r] \ar[d] & \mathcal{F}_X \ar[r] & 0 \\
+& \OO_{C_X} \ar[r] & \alpha^* \mathcal{L}^{\oplus (N+1)} \ar[r] & \alpha^* \mathcal{F}_{\PP^N} \ar[r] & 0
+\ecd
+which one can check is commutative. By exactness of the first row, our morphism descends to a morphism $\mathcal{F}_X \to \alpha^* \mathcal{F}_{\PP^N}$ if the composition
+\begin{equation*} \OO_{C_X}^{\oplus r} \to \oplus_\rho \mathcal{L}_\rho \to \alpha^* \mathcal{L}^{\oplus (N+1)} \to \alpha^* \mathcal{F}_{\PP^N} \end{equation*}
+is zero. But this follows from the commutativity of the left square and the fact that the bottom row is a complex. Hence we obtain a morphism:
+\begin{equation*} \mathcal{F}_X \to \alpha^* \mathcal{F}_{\PP^N} \end{equation*}
+Applying $\R \pi_*$ and dualising we obtain a morphism between the obstruction theories for the quasimap spaces, and we can complete this to obtain an exact triangle
+\begin{equation*} k^* E_{\om{Q}{\PP^N}/\MM} \to E_{\om{Q}(X)/\MM} \to E_k  \xrightarrow{[1]}\end{equation*}
+on $\om{Q}(X)$. The complex $E_k$ is perfect (locally isomorphic to a bounded complex of vector bundles) because the other two are. On the other hand if we look at the long exact sequence in cohomology we find
+\begin{equation*} 0 \to \h^{-2}(E_k) \to \h^{-1}(k^* E_{\om{Q}(\PP^N)/\MM}) = 0\end{equation*}
+where the last term is zero because $\om{Q}(\PP^N) = \Q{0}{n}{\PP^N}{d}$ is unobstructed. Hence $\h^{-2}(E_k) = 0$ and it is easy to show using similar arguments that $E_k$ is of perfect amplitude contained in $[-1,0]$.
+
+Finally the axioms of a triangulated category give a morphism of exact triangles
+\bcd
+k^* E_{\om{Q}{\PP^N}/\MM} \ar[r] \ar[d] & E_{\om{Q}(X)/\MM} \ar[r] \ar[d] & E_k  \ar[r,"{[1]}"] \ar[d] & \, \\
+k^*L_{\om{Q}(\PP^N)/\MM} \ar[r] & L_{\om{Q}(X)/\MM} \ar[r] & L_k \ar[r,"{[1]}"] & \,
+\ecd
+and it follows from a simple diagram chase that $E_k \to L_k$ is a relative perfect obstruction theory. \end{proof}
+We have thus produced a virtual pull-back morphism
+\begin{equation*} k^!_{\text{v}} : A_*(\Q{0}{n}{\PP^N}{d}) \to A_*(\Q{0}{n}{X}{\beta}) \end{equation*}
+and more generally for any cartesian diagram
+\bcd
+F \ar[r] \ar[d] \ar[rd,phantom,"\square" right] & G \ar[d] \\
+\Q{0}{n}{X}{\beta} \ar[r,"k"] & \Q{0}{n}{\PP^N}{d}
+\ecd
+we get a virtual pull-back morphism:
+\begin{equation*} k^!_{\text{v}} : A_*(G) \to A_*(F) \end{equation*}
 
 \begin{lem} \label{Relative spaces pull back} For any $\alpha$ we have:
-\begin{equation*} k^! [\Q{0}{\alpha}{\PP^N|H}{d}] = \virt{\Q{0}{\alpha}{X|Y}{\beta}} \end{equation*}
-inside $A_* (\Q{0}{n}{X}{\beta})$. \end{lem}
+\begin{equation*} k^!_{\text{v}} [\Q{0}{\alpha}{\PP^N|H}{d}] = \virt{\Q{0}{\alpha}{X|Y}{\beta}} \end{equation*} \end{lem}
 
-\begin{proof} Here of course by $\virt{\Q{0}{\alpha}{X|Y}{\beta}}$ inside $A_* (\Q{0}{n}{X}{\beta})$ we really mean $f_* \virt{\Q{0}{\alpha}{X|Y}{\beta}}$. Consider the following cartesian diagram:
+\begin{proof} Consider the following cartesian diagram:
 \bcd
-\Q{0}{\alpha}{X|Y}{\beta} \ar[r,"f \times g"] \ar[d,"f"] \ar[rd,phantom,"\square"] & \Q{0}{n}{X}{\beta} \times \Q{0}{\alpha}{\PP^N|H}{d} \ar[d,"\operatorname{Id} \times j"] \\
-\Q{0}{n}{X}{\beta} \ar[r, "\operatorname{Id} \times k"]  \ar[d,"k"] \ar[rd,phantom,"\square"] & \Q{0}{n}{X}{\beta} \times \Q{0}{n}{\PP^N}{d} \ar[d,"k \times \operatorname{Id}"]  \\
-\Q{0}{n}{\PP^N}{d} \ar[r,"\Delta"] & \Q{0}{n}{\PP^N}{d} \times \Q{0}{n}{\PP^N}{d}
+\om{Q}(X|Y) \ar[r,"f \times g"] \ar[d,"f"] \ar[rd,phantom,"\square"] & \om{Q}(X) \times \om{Q}(\PP^N|H) \ar[r,"\pi_1"] \ar[d,"k \times \Id"] \ar[rd,phantom,"\square"] & \om{Q}(X) \ar[d,"k"] \\
+\om{Q}(\PP^N|H) \ar[r,"j \times \Id"] \ar[d,"j"] \ar[rd,phantom,"\square"] & \om{Q}(\PP^N) \times \om{Q}(\PP^N|H) \ar[r,"\pi_1"] \ar[d,"\Id \times j"] & \om{Q}(\PP^N) \\
+\om{Q}(\PP^N) \ar[r,"\Delta"] & \om{Q}(\PP^N) \times \om{Q}(\PP^N)
 \ecd
-Then by compatiblity of Gysin maps with push-forwards we have:
-\begin{align*} f_*\virt{\Q{0}{\alpha}{X|Y}{\beta}} & = f_* \Delta^! \left( \virt{\Q{0}{n}{X}{\beta}} \times [\Q{0}{\alpha}{\PP^N|H}{d}] \right)\\
-& = (\Id \times k)^! (\Id \times j)_* \left( \virt{\Q{0}{n}{X}{\beta}} \times [\Q{0}{\alpha}{\PP^N|H}{d}] \right) \\
-& = (\Id \times k)^! \left( \virt{\Q{0}{n}{X}{\beta}} \times [\Q{0}{\alpha}{\PP^N|H}{d}] \right) \\
-& = k^! [\Q{0}{\alpha}{\PP^N|H}{d}]
+
+Then by commutativity of virtual pull-backs and their compatibility with flat pull-backs we have
+\begin{align*} \virt{\om{Q}(X|Y)} & = \Delta^! \left( \virt{\om{Q}(X)} \times [ \om{Q}(\PP^N|H) ] \right) \\
+& = \Delta^! \pi_1^* \virt{\om{Q}(X)} \\
+& = \Delta^! \pi_1^* k_{\text{v}}^! [\om{Q}(\PP^N)] \\
+& = \Delta^! k^!_{\text{v}} \pi_1^* [\om{Q}(\PP^N)] \\
+& = \Delta^! k_{\text{v}}^! \left( [ \om{Q}(\PP^N) ]\times [\om{Q}(\PP^N | H) ] \right) \\
+& = k_{\text{v}}^! \Delta^! \left( [ \om{Q}(\PP^N)] \times [\om{Q}(\PP^N|H) ] \right) \\
+& = k_{\text{v}}^! [ \om{Q}(\PP^N|H) ]
 \end{align*}
+as required.
 \end{proof}
 
 Thus, the first two terms of the recursion formula pull back easily along $k$. It remains to consider the third term, namely the virtual class of the comb locus. We wish to prove:
 \begin{lem} \label{Comb loci pull back} For any $\alpha$ we have:
-\begin{equation*} k^! [D^\mathcal{Q}_{\alpha,k}(\PP^N|H,d)] = \virt{D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)} \end{equation*} \end{lem}
+\begin{equation*} k_{\text{v}}^! [D^\mathcal{Q}_{\alpha,k}(\PP^N|H,d)] = \virt{D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)} \end{equation*} \end{lem}
 We will require a number of preparatory results. We begin by considering a simpler moduli space than the comb locus, which we call the \ildef{centipede locus}. We fix a partition $A=(A_0,\ldots,A_r)$ of the marked points and a partition $B=(\beta_0, \ldots, \beta_r)$ of the curve class satisfying the usual stability conditions for the comb loci, and then consider the space:
 \begin{equation*} \mathcal{K}(X,A,B) := \Q{0}{A_0 \cup \{ q_1, \ldots, q_r \}}{X}{\beta_0} \times_{X^r} \prod_{i=1}^l \Q{0}{A_i\cup\{q_i\}}{X}{\beta_i} \end{equation*}
 Notice that the comb locus lives inside this space as a closed substack. We equip this space with a virtual class in the usual way by pulling back the product class along the diagonal. That is, we set

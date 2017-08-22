@@ -4,7 +4,7 @@
 \contentsline {section}{\tocsection {}{3}{Quasimaps to $\mathbb P^r$ Relative to a Hyperplane}}{1}
 \contentsline {section}{\tocsection {}{4}{Comparison with the GIT Construction}}{5}
 \contentsline {section}{\tocsection {}{5}{Recursion Formula in the General Case}}{6}
-\contentsline {section}{\tocsection {}{6}{The Quasimap Mirror Theorem}}{16}
-\contentsline {section}{\tocsection {Appendix}{A}{Functoriality of Quasimap Spaces}}{18}
-\contentsline {section}{\tocsection {Appendix}{B}{The Quasimap String Equation for $\mathbb P^r$}}{24}
-\contentsline {section}{\tocsection {Appendix}{}{References}}{26}
+\contentsline {section}{\tocsection {}{6}{The Quasimap Mirror Theorem}}{19}
+\contentsline {section}{\tocsection {Appendix}{A}{Functoriality of Quasimap Spaces}}{21}
+\contentsline {section}{\tocsection {Appendix}{B}{The Quasimap String Equation for $\mathbb P^r$}}{27}
+\contentsline {section}{\tocsection {Appendix}{}{References}}{29}

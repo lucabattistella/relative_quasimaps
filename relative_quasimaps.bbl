@@ -1,4 +1,4 @@
-\begin{thebibliography}{Cox95b}
+\begin{thebibliography}{Man12b}
 
 \bibitem[BF97]{BF}
 K.~Behrend and B.~Fantechi.
@@ -25,6 +25,14 @@ David~A. Cox.
 \newblock The homogeneous coordinate ring of a toric variety.
 \newblock {\em J. Algebraic Geom.}, 4(1):17--50, 1995.
 
+\bibitem[Ful98]{FUL}
+William Fulton.
+\newblock {\em {Intersection theory}}, volume~2 of {\em {Ergebnisse der
+  Mathematik und ihrer Grenzgebiete. 3. Folge. A Series of Modern Surveys in
+  Mathematics [Results in Mathematics and Related Areas. 3rd Series. A Series
+  of Modern Surveys in Mathematics]}}.
+\newblock Springer-Verlag, Berlin, second edition, 1998.
+
 \bibitem[Gat02]{Ga}
 Andreas Gathmann.
 \newblock {Absolute and relative {G}romov-{W}itten invariants of very ample
@@ -36,7 +44,12 @@ Andreas Gathmann.
 \newblock {Relative {G}romov-{W}itten invariants and the mirror formula}.
 \newblock {\em Math. Ann.}, 325(2):393--412, 2003.
 
-\bibitem[Man12]{Manolache-Push}
+\bibitem[Man12a]{Manolache-Pull}
+Cristina Manolache.
+\newblock Virtual pull-backs.
+\newblock {\em J. Algebraic Geom.}, 21(2):201--245, 2012.
+
+\bibitem[Man12b]{Manolache-Push}
 Cristina Manolache.
 \newblock Virtual push-forwards.
 \newblock {\em Geom. Topol.}, 16(4):2003--2036, 2012.
