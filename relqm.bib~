@@ -503,17 +503,3 @@
 	year = "1983"
 }
 
-@incollection{KP,
-	author = "Kim, B. and Pandharipande, R.",
-	booktitle = "{Symplectic geometry and mirror symmetry ({S}eoul, 2000)}",
-	doi = "10.1142/9789812799821_0006",
-	mrclass = "14D22 (14L30 14M20)",
-	mrnumber = "1882330",
-	mrreviewer = "Domenico Fiorenza",
-	pages = "187--201",
-	publisher = "World Sci. Publ., River Edge, NJ",
-	title = "{The connectedness of the moduli space of maps to homogeneous spaces}",
-	url = "http://dx.doi.org/10.1142/9789812799821_0006",
-	year = "2001"
-}
-
