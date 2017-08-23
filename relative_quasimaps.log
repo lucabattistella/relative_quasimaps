@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.10.6)  23 AUG 2017 12:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.10.6)  23 AUG 2017 18:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1259,13 +1259,13 @@ pxsy/m/n/10.95 ' \OML/npxmi/m/it/10.95 H[]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it
 /10.95 f[]T[]\U/npxmia/m/it/10.95 ~\OML/npxmi/m/it/10.95 :
  []
 
-[10] [11]
-LaTeX Font Info:    Try loading font information for U+bbm on input line 389.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+[10] [11] [12] [13]
+LaTeX Font Info:    Try loading font information for U+bbm on input line 446.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-)
-[12] [13]
-Overfull \hbox (25.83867pt too wide) in paragraph at lines 471--472
+) [14] [15]
+Overfull \hbox (25.83867pt too wide) in paragraph at lines 528--529
 \T1/zpltlf/m/n/10.95 lo-cus $[]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OM
 S/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it/10.95 ~$ \T1/zpltlf
 /m/n/10.95 in-side $[][]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OML/npxmi
@@ -1275,15 +1275,15 @@ pxmia/m/it/10.95 ~$
  []
 
 
-Overfull \hbox (42.22516pt too wide) in paragraph at lines 484--485
+Overfull \hbox (42.22516pt too wide) in paragraph at lines 541--542
 []\T1/zpltlf/b/n/10.95 Lemma 4.1. []\T1/zpltlf/m/it/10.95 The com-par-i-son mor
 -phism re-stricts to a bi-ra-tional mor-phism $[][]\U/npxmia/m/it/10.95 }\U/npx
 sym/m/n/10.95 P[]\OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it
 /10.95 ~ \OMS/npxsy/m/n/10.95 !
  []
 
-[14] [15] [16]
-Overfull \hbox (12.88531pt too wide) in paragraph at lines 560--561
+[16] [17] [18]
+Overfull \hbox (12.88531pt too wide) in paragraph at lines 617--618
 []\T1/zpltlf/m/n/10.95 Follows from [[], Thm. 2.6] by push-for-ward along $\OML
 /npxmi/m/it/10.95 ^^_ [] [] [][]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\O
 ML/npxmi/m/it/10.95 ; d\U/npxmia/m/it/10.95 ~ \OMS/npxsy/m/n/10.95 !
@@ -1292,15 +1292,15 @@ ML/npxmi/m/it/10.95 ; d\U/npxmia/m/it/10.95 ~ \OMS/npxsy/m/n/10.95 !
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 571.
+(amsmath)                 on input line 628.
 
-[17] [18]
-Overfull \hbox (70.17993pt too wide) in paragraph at lines 662--662
+[19] [20]
+Overfull \hbox (70.17993pt too wide) in paragraph at lines 719--719
 [] 
  []
 
-[19]
-Overfull \hbox (15.29062pt too wide) detected at line 670
+[21]
+Overfull \hbox (15.29062pt too wide) detected at line 727
 \OT1/zpltlf/m/n/10.95 [[][]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OMS/np
 xsy/m/n/10.95 j\OML/npxmi/m/it/10.95 X; d\U/npxmia/m/it/10.95 ~\OT1/zpltlf/m/n/
 10.95 ][] \U/npxmia/m/it/10.95 5 }\OML/npxmi/m/it/10.95 X \U/npxmia/m/it/10.95 
@@ -1314,11 +1314,11 @@ S/npxsy/m/n/10.95 ^^@ \OT1/zpltlf/m/n/10.95 [\OML/npxmi/m/it/10.95 D[]\U/npxmia
  []
 
 
-Overfull \hbox (10.84416pt too wide) in paragraph at lines 685--685
+Overfull \hbox (10.84416pt too wide) in paragraph at lines 742--742
 [] 
  []
 
-[20] (./relative_quasimaps.bbl
+[22] (./relative_quasimaps.bbl
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 9.0pt on input line 6.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
@@ -1332,17 +1332,17 @@ LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 LaTeX Font Warning: Font shape `U/bbm/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 53.
 
-) [21] (./relative_quasimaps.aux)
+) [23] (./relative_quasimaps.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 27229 strings out of 493091
- 522728 string characters out of 6134970
- 573837 words of memory out of 5000000
- 29991 multiletter control sequences out of 15000+600000
+ 27256 strings out of 493091
+ 523462 string characters out of 6134970
+ 574232 words of memory out of 5000000
+ 30018 multiletter control sequences out of 15000+600000
  90906 words of font info for 178 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  56i,16n,99p,10454b,996s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1367,10 +1367,10 @@ type1/public/newpx/zplb.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pub
 lic/newpx/zplr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/newpx
 /zplri.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/newpx/zplx-re
 gular.pfb>
-Output written on relative_quasimaps.pdf (21 pages, 232757 bytes).
+Output written on relative_quasimaps.pdf (23 pages, 239391 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
+ 163 PDF objects out of 1000 (max. 8388607)
+ 120 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
