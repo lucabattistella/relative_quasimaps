@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  23 AUG 2017 14:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  23 AUG 2017 15:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1249,21 +1249,22 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 6.1pt on input line 290.
  [6] [7] [8] [9] [10] [11] [12] [13] [14] [15]
-Overfull \hbox (44.1279pt too wide) in paragraph at lines 556--556
+Overfull \hbox (44.1279pt too wide) in paragraph at lines 563--563
 [] 
  []
 
-[16] [17] [18]
-LaTeX Font Info:    Try loading font information for U+bbm on input line 626.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+[16] [17] [18] [19]
+LaTeX Font Info:    Try loading font information for U+bbm on input line 633.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [19]
-Overfull \hbox (70.17993pt too wide) in paragraph at lines 691--691
+) [20]
+Overfull \hbox (70.17993pt too wide) in paragraph at lines 698--698
 [] 
  []
 
-[20]
-Overfull \hbox (15.29062pt too wide) detected at line 699
+[21]
+Overfull \hbox (15.29062pt too wide) detected at line 706
 \OT1/zpltlf/m/n/10.95 [[][]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OMS/np
 xsy/m/n/10.95 j\OML/npxmi/m/it/10.95 X; d\U/npxmia/m/it/10.95 ~\OT1/zpltlf/m/n/
 10.95 ][] \U/npxmia/m/it/10.95 5 }\OML/npxmi/m/it/10.95 X \U/npxmia/m/it/10.95 
@@ -1277,22 +1278,22 @@ S/npxsy/m/n/10.95 ^^@ \OT1/zpltlf/m/n/10.95 [\OML/npxmi/m/it/10.95 D[]\U/npxmia
  []
 
 
-Overfull \hbox (10.84416pt too wide) in paragraph at lines 714--714
+Overfull \hbox (10.84416pt too wide) in paragraph at lines 721--721
 [] 
  []
 
-[21]
+[22]
 LaTeX Font Info:    Try loading font information for T1+zplsups on input line 7
-39.
+46.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/t1zplsups.fd
 File: t1zplsups.fd 2015/01/17 v1.0
 )
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
-(Font)              scaled to size 10.95pt on input line 739.
+(Font)              scaled to size 10.95pt on input line 746.
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
-(Font)              scaled to size 9.0pt on input line 739.
- [22]
-[23] [24] [25] [26] [27] [28] (./relative_quasimaps.bbl
+(Font)              scaled to size 9.0pt on input line 746.
+ [23]
+[24] [25] [26] [27] [28] [29] (./relative_quasimaps.bbl
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 9.0pt on input line 6.
 
@@ -1301,16 +1302,16 @@ Underfull \hbox (badness 1043) in paragraph at lines 9--12
 sta-ble toric
  []
 
-) [29] (./relative_quasimaps.aux)
+) [30] (./relative_quasimaps.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 28572 strings out of 493014
- 552514 string characters out of 6133351
- 605906 words of memory out of 5000000
- 31392 multiletter control sequences out of 15000+600000
+ 28635 strings out of 493014
+ 554149 string characters out of 6133351
+ 607089 words of memory out of 5000000
+ 31455 multiletter control sequences out of 15000+600000
  92168 words of font info for 170 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  56i,15n,82p,10394b,1004s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1335,10 +1336,10 @@ ist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
 blic/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/new
 px/zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (29 pages, 266781 bytes).
+Output written on relative_quasimaps.pdf (30 pages, 268687 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 133 compressed objects within 2 object streams
+ 185 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

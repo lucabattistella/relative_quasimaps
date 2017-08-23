@@ -512,25 +512,32 @@ There are natural sheaves $\mathcal{F}$ and $\tilde{\mathcal{F}}$ on $\mathcal{C
 h^* E_\pi^\vee & = \R \eta_* \tilde{\mathcal{F}} \end{align*}
 from which we obtain:
 \begin{equation*} \varphi^* E_\pi^\vee = \R \rho_* \alpha^* \mathcal{F} \end{equation*}
-Now, since $\nu$ is a partial normalisation there is a well-defined (injective) morphism:
-\begin{equation*} \OO_{\varphi^*{\mathcal{C}}} \to \nu_* \OO_{h^* \tilde{\mathcal{C}}} \end{equation*}
-On the other hand it is clear that
+Now, since $\nu$ is a partial normalisation there is a short exact sequence of sheaves on $\varphi^*\mathcal{C}$:
+\begin{equation*} 0 \to \OO_{\varphi^*{\mathcal{C}}} \to \nu_* \OO_{h^* \tilde{\mathcal{C}}} \to \OO_q \to 0 \end{equation*}
+where $q$ is the locus of nodes connecting the trunk to the spine. On the other hand it is clear that
 \begin{equation*} \nu_* \tilde{\mathcal{F}} = \nu_* \OO_{h^* \tilde{\mathcal{C}}} \otimes \alpha^* \mathcal{F} \end{equation*}
-so tensoring the above morphism with $\alpha^* \mathcal{F}$ we obtain
-\begin{equation*} \alpha^* \mathcal{F} \to \nu_* \tilde{\mathcal{F}} \end{equation*}
-to which we can apply $\R \rho_*$ to obtain a map
-\begin{equation*} \R \rho_* \alpha^* \mathcal{F} \to \R \rho_* \nu_* \tilde{\mathcal{F}} = \R \eta_* \tilde{\mathcal{F}} \end{equation*}
-which is the morphism $h^* E_\pi^\vee \to \varphi^* E_\pi^\vee$ that we promised.
+so tensoring the above exact sequence with $\alpha^* \mathcal{F}$ we obtain:
+\begin{equation*} 0 \to \alpha^* \mathcal{F} \to \nu_* \tilde{\mathcal{F}} \to \alpha^* \mathcal{F}_q \to 0 \end{equation*}
+(The fact that the morphism on the left is injective follows by applying the Snake Lemma to the short exact sequence defining $\mathcal{F}$.) To this we can apply $\R \rho_*$ to obtain an exact triangle
+\begin{equation} \label{Normalisation exact triangle} \R \rho_* \alpha^* \mathcal{F} \to \R \eta_* \tilde{\mathcal{F}} \to \R \rho_* \alpha^* \mathcal{F}_q \xrightarrow{[1]} \end{equation}
+the first morphism of which is the map $h^* E_\pi^\vee \to \varphi^* E_\pi^\vee$ that was promised.
 
 It remains to show that the composition
-\begin{equation*} \ev^*L_{X^r}^\vee [-1] \to E_{\ev \times \rho}^\vee \to \varphi^* E_\pi^\vee \end{equation*}
-is zero. It is equivalent to consider the composition
-\begin{equation*}  E_{\ev \times \rho}^\vee \to \varphi^* E_\pi^\vee \to \ev^*L_{X^r}^\vee \end{equation*}
-which is obtained by a simple extension of the above construction: we consider the full short exact sequence
-\begin{equation*} 0 \to \OO_{\varphi^* \mathcal{C}} \to \nu_* \OO_{g^* \tilde{\mathcal{C}}} \to \OO_q \to 0 \end{equation*}
-where $q$ is the locus of nodes connecting the trunk to the spine; tensoring with $\alpha^* \mathcal{F}$ and pushing down, we obtain precisely $\ev^* L_{X^r}^\vee$. The composition is then zero by functoriality. Thus we finally obtain a map:
+\begin{equation*} \varphi^* E_\pi \to E_{\ev \times \rho} \to \ev^*L_{X^r}[1] \end{equation*}
+is zero. This follows from the existence of the exact triangle \eqref{Normalisation exact triangle} above. To be precise, this triangle can be rewritten as
+\begin{equation*} h^* E_\pi^\vee \to \varphi^* E_\pi^\vee \to h^* \ev^* L_{X^r \times X^r}^\vee \xrightarrow{[1]} \end{equation*}
+and hence we obtain a diagram
+\bcd
+\varphi^* E_\pi \ar[r] \ar[d,"\Id"] & h^*E_\pi \ar[r] \ar[d] & h^* \ev^* L_{X^r \times X^r}[1] \ar[d] \ar[r,"{[1]}"] & \, \\
+\varphi^* E_\pi \ar[r] & E_{\ev \times \rho} = h^* E_{\ev \times \pi} \ar[r] & \ev^* L_{X^r}[1]
+\ecd
+where the third vertical morphism is obtain by pulling back the natural map
+\begin{equation*} \Delta_{X^r}^* L_{X^r \times X^r} \to L_{X^r} \end{equation*}
+along $\ev^*$. Commutativity and the fact that the top row is an exact triangle (hence composes to zero) implies that the bottom row composes to zero also.
+
+Thus we finally obtain a map:
 \begin{equation*} \varphi^* E_\pi \to E_\rho \end{equation*}
-Hence we can construct an obstruction theory for the morphism $\varphi$, and we have a virtual pull-back morphism $\varphi^!_{\text{v}}$ such that
+A simple but fairly lengthy diagram chase shows that the obstruction theory $E_\varphi$ induced by this map is perfect. Hence we have a virtual pull-back morphism $\varphi^!_{\text{v}}$ such that
 \begin{equation*} \varphi^!_{\text{v}} \virt{\Q{0}{n}{X}{\beta}} = \virt{\mathcal{K}(X,A,B)} \end{equation*}
 as claimed. \end{proof}
 
