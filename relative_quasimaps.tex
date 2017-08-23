@@ -441,7 +441,10 @@ as required. Dualising we obtain a morphism $\ev^* L_{X^r \times X^r} \to E_\pi$
 \ev^* L_{X^r \times X^r} \ar[r] & L_\pi \ar[r] & L_{\ev \times \pi} \ar[r,"{[1]}"] & \,
 \end{tikzcd}
 \end{equation}
-It is simple to check (using the fact that $\ev^* L_{X^r \times X^r}$ is concentrated in degree $0$) that $E_{\ev \times \pi} \to L_{\ev \times \pi}$ is a perfect obstruction theory for the morphism $\ev \times \pi$. Now let us consider the other commuting diagram
+It is simple to check (using the fact that $\ev^* L_{X^r \times X^r}$ is concentrated in degree $0$) that $E_{\ev \times \pi} \to L_{\ev \times \pi}$ is a perfect obstruction theory for the morphism $\ev \times \pi$.
+
+\begin{comment}
+Now let us consider the other commuting diagram
 \bcd
 \mathcal{L}(X,A,B) \ar[r,"\ev \times \pi"] \ar[rr, bend right = 20, "\ev"] & X^r \times X^r \times \MM_{0,A,B}^{\operatorname{wt}} \ar[r,"\pi_1"] & X^r \times X^r
 \ecd
@@ -475,28 +478,48 @@ Thus, we have a perfect obstruction theory $E_{\ev} \to L_{\ev}$ for $\mathcal{L
 Then by compatibility of the virtual class with pullback (\cite[Proposition 7.2]{BF}) we have that
 \begin{equation*} h^* E_{\ev} \to h^* L_{\ev} = L_{\ev} \end{equation*}
 is a perfect obstruction theory on $\mathcal{K}(X,A,B)$ over $X^r$ which induces the virtual fundamental class $\virt{\mathcal{K}(X,A,B)}$ as defined earlier.
+\end{comment}
 
-We will now use this fact to express the virtual class as a class induced from a perfect obstruction theory over $\MM_{0,A,B}^{\operatorname{wt}}$. Consider diagram \eqref{Full quasimap diagram} above.
-
-As in the previous argument we can consider the composition
-\begin{equation*} \mathcal{K}(X,A,B) \xrightarrow{\ev \times \rho} X^r \times \MM_{0,A,B}^{\operatorname{wt}} \xrightarrow{\pi_2} \MM_{0,A,B}^{\operatorname{wt}} \end{equation*}
-and thus obtain an exact triangle:
-\begin{equation*} \ev^* L_{X^r} \to L_\rho \to L_{\ev \times \rho} \xrightarrow{[1]} \end{equation*}
-Now, earlier we obtained a relative obstruction theory $E_{\ev \times \pi} \to L_{\ev \times \pi}$ on $\mathcal{L}(X,A,B)$. We can use the cartesian diagram
+Let us move over to $\mathcal{K}(X,A,B)$. We can use the cartesian diagram
 \bcd
 \mathcal{K}(X,A,B) \ar[r,"h"] \ar[d,"\ev \times \rho"] \ar[rd,phantom,"\square"] & \mathcal{L}(X,A,B) \ar[d,"\ev \times \pi"] \\
 X^r \times \MM_{0,A,B}^{\operatorname{wt}} \ar[r,"\Delta \times \Id"] & X^r \times X^r \times \MM_{0,A,B}^{\operatorname{wt}}
 \ecd
-to pull back this back to an obstruction theory $E_{\ev \times \rho} \to L_{\ev \times \rho}$ on $\mathcal{K}(X,A,B)$. We can then compose it with the above exact triangle to obtain:
-\bcd
+to pull back the obstruction theory $E_{\ev \times \pi} \to L_{\ev \times \pi}$ to an obstruction theory $E_{\ev \times \rho} \to L_{\ev \times \rho}$, which induces $\virt{\mathcal{K}(X,A,B)}$ as defined earlier (REFERENCE BEHREND FANTECHI).
+
+We want to use this to obtain an obstruction theory for $\mathcal{K}(X,A,B)$ over $\MM_{0,A,B}^{\operatorname{wt}}$. As in the previous argument we can consider the composition
+\begin{equation*} \mathcal{K}(X,A,B) \xrightarrow{\ev \times \rho} X^r \times \MM_{0,A,B}^{\operatorname{wt}} \xrightarrow{\pi_2} \MM_{0,A,B}^{\operatorname{wt}} \end{equation*}
+and thus obtain an exact triangle:
+\begin{equation*} \ev^* L_{X^r} \to L_\rho \to L_{\ev \times \rho} \xrightarrow{[1]} \end{equation*}
+We then compose this with $E_{\ev \times \rho} \to L_{\ev \times \rho}$ to obtain a morphism of exact triangles
+\begin{equation} \label{Morphism of exact triangles rho and ev times rho}
+\begin{tikzcd}
 \ev^* L_{X^r} \ar[r] \ar[d,"\Id"] & E_\rho \ar[r] \ar[d] & E_{\ev \times \rho} \ar[r,"{[1]}"] \ar[d] & \, \\
 \ev^* L_{X^r} \ar[r] & L_\rho \ar[r] & L_{\ev \times \rho} \ar[r,"{[1]}"] & \,
-\ecd
-And it is simple to check that $E_\rho \to L_\rho$ is a perfect obstruction theory for $\mathcal{K}(X,A,B)$ over $\MM_{0,A,B}^{\operatorname{wt}}$ which by construction induces the class $\virt{\mathcal{K}(X,A,B)}$.
+\end{tikzcd}
+\end{equation}
+and it is simple to check that $E_\rho \to L_\rho$ is a perfect obstruction theory for $\mathcal{K}(X,A,B)$ over $\MM_{0,A,B}^{\operatorname{wt}}$ which by construction induces the class $\virt{\mathcal{K}(X,A,B)}$.
 
-Finally, we can construct a map
-\begin{equation*} \varphi^* E_\pi \to E_\rho \end{equation*}
-as follows. By the diagram above, to construct a morphism $\varphi^* E_\pi \to E_\rho$ is the same thing as to construct a morphism $\varphi^* E_\pi \to E_{\ev \times \rho}$ such that the composition
+Finally we wish to obtain a perfect obstruction theory for $\mathcal{K}(X,A,B)$ over $\MM_{0,n,\beta}^{\operatorname{wt}}$. We can compose this map with the connecting homomorphism $L_\rho \to \rho^* L_\psi[1]$ to obtain a morphism of exact triangles:
+\bcd
+\rho^* L_\psi \ar[d,"\Id"] \ar[r] & E_{\rho \circ \psi} \ar[r] \ar[d] & E_\rho \ar[r,"{[1]}"] \ar[d] & \, \\
+\rho^* L_\psi \ar[r] & L_{\rho \circ \psi} \ar[r] & L_\rho \ar[r,"{[1]}"] & \,
+\ecd
+We wish to prove that $E_{\rho \circ \psi} \to L_{\rho \circ \psi}$ is a perfect obstruction theory. We claim that $\rho^* L_{\psi}$ is concentrated in degrees $[-1,0]$. To see this, consider the exact triangle of cotangent complexes associated to the morphism $\psi$:
+\begin{equation*} \psi^* L_{\MM_{0,n,\beta}^{\operatorname{wt}}} \to L_{\MM_{0,A,B}^{\operatorname{wt}}} \to L_\psi \xrightarrow{[1]} \end{equation*}
+The first two terms are concentrated in degrees $[0,1]$ because they are the cotangent complexes of smooth Artin stacks. Therefore $L_\psi$ is concentrated in degrees $[-1,1]$. Furthermore, if we examine the long exact cohomology sequence near $\h^1(L_\psi)$ we find:
+\begin{equation*} \h^1(\psi^* L_{\MM_{0,n,\beta}^{\operatorname{wt}}}) \to \h^1(L_{\MM_{0,A,B}^{\operatorname{wt}}}) \to \h^1(L_\psi) \to 0 \end{equation*}
+We must show that the first map is surjective. But this is dual to the map which takes infinitesimal automorphisms of the disconnected curve to infinitesimal automorphisms of the corresponding connected curve (obtained by glueing the ``nodal'' marked points together). Since these two curves have the same set of components, this map is an isomorphism. Hence $\h^1(L_\psi) = 0$ as claimed.
+
+\begin{aside} Intuitively this makes sense, since the fibres of $\psi$ are Deligne--Mumford and hence should have cotangent complex suppported in negative degrees. \end{aside}
+
+It then follows formally that $E_{\psi \circ \rho} \to L_{\psi \circ \rho}$ is a perfect obstruction theory for $\mathcal{K}(X,A,B)$ over $\MM_{0,n,\beta}^{\operatorname{wt}}$. This completes the proof of the first part of the lemma.
+
+To prove the second part, we must construct a map
+\begin{equation*} \varphi^* E_\pi \to E_{\psi \circ \rho} \end{equation*}
+By the diagram above, to construct such a morphism is the same thing as to construct a morphism $\varphi^* E_{\pi} \to E_\rho$ such that the composition
+\begin{equation*} \varphi^* E_\pi \to E_\rho \to \rho^* L_\psi[1] \end{equation*}
+is zero. But again by diagram \eqref{Morphism of exact triangles rho and ev times rho} a morphism $\varphi^* E_\pi \to E_\rho$ is the same thing as a morphism $\varphi^* E_\pi \to E_{\ev \times \rho}$ such that the composition
 \begin{equation*} \varphi^* E_\pi \to E_{\ev \times \rho} \to \ev^*L_{X^r}[1] \end{equation*}
 is zero. Recall that $E_{\ev \times \rho} = h^* E_{\ev \times \pi}$ and hence by diagram \eqref{Diagram ev times pi and pi} above we get a map $\varphi^* E_\pi \to h^* E_{\ev \times \pi}$ if we can produce a map $\varphi^* E_\pi \to h^* E_\pi$, or equivalently a map $h^* E_\pi^\vee \to \varphi^*E_\pi^\vee$.
 
@@ -522,7 +545,7 @@ so tensoring the above exact sequence with $\alpha^* \mathcal{F}$ we obtain:
 \begin{equation} \label{Normalisation exact triangle} \R \rho_* \alpha^* \mathcal{F} \to \R \eta_* \tilde{\mathcal{F}} \to \R \rho_* \alpha^* \mathcal{F}_q \xrightarrow{[1]} \end{equation}
 the first morphism of which is the map $h^* E_\pi^\vee \to \varphi^* E_\pi^\vee$ that was promised.
 
-It remains to show that the composition
+Now we must show that the composition
 \begin{equation*} \varphi^* E_\pi \to E_{\ev \times \rho} \to \ev^*L_{X^r}[1] \end{equation*}
 is zero. This follows from the existence of the exact triangle \eqref{Normalisation exact triangle} above. To be precise, this triangle can be rewritten as
 \begin{equation*} h^* E_\pi^\vee \to \varphi^* E_\pi^\vee \to h^* \ev^* L_{X^r \times X^r}^\vee \xrightarrow{[1]} \end{equation*}
@@ -533,11 +556,29 @@ and hence we obtain a diagram
 \ecd
 where the third vertical morphism is obtain by pulling back the natural map
 \begin{equation*} \Delta_{X^r}^* L_{X^r \times X^r} \to L_{X^r} \end{equation*}
-along $\ev^*$. Commutativity and the fact that the top row is an exact triangle (hence composes to zero) implies that the bottom row composes to zero also.
+along $\ev$. Then the bottom row composes to zero because the top row does (being an exact triangle).
 
-Thus we finally obtain a map:
+Hence we obtain a map $\varphi^* E_\pi \to E_\rho$. Finally we must show that the composition
+\begin{equation*} \varphi^* E_\pi \to E_\rho \to \rho^* L_\psi[1] \end{equation*}
+is zero. To see this, consider the composition
+\begin{equation*} \varphi^* E_\pi \to \varphi^* L_\pi \to L_{\psi \circ \rho} \end{equation*}
+where the second map is induced by the sequence of morphisms
+\bcd
+\mathcal{K}(X,A,B) \ar[r,"\varphi"] \ar[rr,"\psi \circ \rho", bend right=25] & \Q{0}{n}{X}{\beta} \ar[r,"\pi"] & \MM_{0,n,\beta}^{\operatorname{wt}}
+\ecd
+and form the diagram:
+\bcd
+\varphi^* E_\pi \ar[r] \ar[d] & E_\rho \ar[r] \ar[d] & \rho^* L_\psi[1] \ar[d,"\Id"] \\
+L_{\psi \circ \rho} \ar[r] & L_\rho \ar[r] & \rho^* L_\psi[1] \ar[r,"{[1]}"] & \,
+\ecd
+Then the top row composes to zero because the bottom row does.
+
+
+
+
+Thus we finally obtain a map
 \begin{equation*} \varphi^* E_\pi \to E_\rho \end{equation*}
-A simple but fairly lengthy diagram chase shows that the obstruction theory $E_\varphi$ induced by this map is perfect. Hence we have a virtual pull-back morphism $\varphi^!_{\text{v}}$ such that
+and a simple (but quite lengthy) diagram chase shows that the obstruction theory $E_\varphi$ induced by this map is perfect. Hence we have a virtual pull-back morphism $\varphi^!_{\text{v}}$ such that
 \begin{equation*} \varphi^!_{\text{v}} \virt{\Q{0}{n}{X}{\beta}} = \virt{\mathcal{K}(X,A,B)} \end{equation*}
 as claimed. \end{proof}
 
