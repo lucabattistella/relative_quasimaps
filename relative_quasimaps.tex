@@ -282,6 +282,7 @@ which is equivalent to the previous one. The morphism $\Delta$ is a regular embe
 \begin{equation*} \virt{\Q{0}{\alpha}{X|Y}{\beta}} := \Delta^! \left( \virt{\Q{0}{n}{X}{\beta}} \times [\Q{0}{\alpha}{\PP^N|H}{d}] \right) \end{equation*}
 The idea is to prove the recursion formula for $(X,Y)$ by pulling back the formula for $(\PP^N,H)$ along $k = i_*$. In order to do this, we need to understand how the various virtual classes involved in the formula pull back along this map. This is the technical heart of the proof.
 
+\subsection{Relative Spaces Pull Back}
 But before getting into any of this, we need to explain what we mean by ``pulling back along $k$.'' Indeed, $k$ is not necessarily a regular embedding, so the Gysin map in the sense of \cite{FUL} does not necessarily exist.
 
 In \cite{Manolache-Pull} a generalisation of the Gysin map (called the \ildef{virtual pull-back}) is defined for morphisms endowed with a relative perfect obstruction theory. Moreover, a sufficient condition is given (Corollary 4.9) for this map to respect the virtual classes.
@@ -379,9 +380,9 @@ Then by commutativity of virtual pull-backs and their compatibility with flat pu
 as required.
 \end{proof}
 
-Thus, the first two terms of the recursion formula pull back easily along $k$. It remains to consider the third term, namely the virtual class of the comb locus. We wish to prove:
-\begin{lem} \label{Comb loci pull back} For any $\alpha$ we have:
-\begin{equation*} k_{\text{v}}^! [D^\mathcal{Q}_{\alpha,k}(\PP^N|H,d)] = \virt{D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)} \end{equation*} \end{lem}
+\subsection{Centipede Loci and Obstruction Theories}
+Thus, the first two terms of the recursion formula pull back easily along $k$. It remains to consider the third term, namely the virtual class of the comb locus. We wish to prove (see Lemma \ref{Comb loci pull back}) that:
+\begin{equation*} k_{\text{v}}^! [D^\mathcal{Q}_{\alpha,k}(\PP^N|H,d)] = \virt{D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)} \end{equation*}
 We will require a number of preparatory results. We begin by considering a simpler moduli space than the comb locus, which we call the \ildef{centipede locus}. We fix a partition $A=(A_0,\ldots,A_r)$ of the marked points and a partition $B=(\beta_0, \ldots, \beta_r)$ of the curve class satisfying the usual stability conditions for the comb loci, and then consider the space:
 \begin{equation*} \mathcal{K}(X,A,B) := \Q{0}{A_0 \cup \{ q_1, \ldots, q_r \}}{X}{\beta_0} \times_{X^r} \prod_{i=1}^r \Q{0}{A_i\cup\{q_i\}}{X}{\beta_i} \end{equation*}
 Notice that the comb locus lives inside this space as a closed substack. We equip this space with a virtual class in the usual way by pulling back the product class along the diagonal. That is, we set
@@ -593,9 +594,60 @@ Then commutativity of virtual pull-backs gives
 \end{align*}
 where we have used Lemma \ref{Lemma product class equals pullback class} twice. \end{proof}
 
+\subsection{An Intersection-Theoretic Lemma}
+Shortly we will be dealing with morphisms which do not admit relative perfect obstruction theories, and as such we will require a slightly different version of the virtual pull-back morphism.
+
+Suppose that we have a cartesian diagram
+\bcd
+W \ar[r,"f"] \ar[d] \ar[rd,phantom,"\square"] & X \ar[d] \\
+Y \ar[r] & Z
+\ecd
+with $Z$ smooth. Then the diagram
+\bcd
+W \ar[r] \ar[d] \ar[rd,phantom,"\square"] & X \times Y \ar[d] \\
+Z \ar[r,"\Delta"] & Z \times Z
+\ecd
+defines a morphism:
+\begin{equation*} \Delta^! : A_*(X \times Y) \to A_*(W) \end{equation*}
+In particular if we fix a class $\virt{Y} \in A_*(Y)$ we get a pullback morphism
+\begin{align*}
+f_{\text{v}}^! : \, & A_*(X) \longrightarrow A_*(W) \\
+& \gamma \mapsto \Delta^!(\gamma \times \virt{Y})
+\end{align*}
+which we call (by abuse of terminology) a \ildef{virtual pull-back} morphism.
+
+\begin{lemma} The virtual pull-back morphism as defined above commutes with ordinary Gysin maps and with virtual pull-backs. \end{lemma}
+\begin{proof} First consider the case of ordinary Gysin maps. We must consider a cartesian diagram:
+\bcd
+X^{\prime \prime} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & Y^{\prime \prime} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & S \ar[d,"f"] \\
+X^\prime \ar[r] \ar[d] \ar[rd,phantom,"\square"] & Y^\prime \ar[r] \ar[d] & T \\
+X \ar[r,"k"] & Y
+\ecd
+with $k$ a regular embedding and $T$ smooth. We assume we have fixed some class $\virt{S} \in A_*(S)$, so that the virtual pull-back $f_{\text{v}}^!$ is defined. We need to show that for all $\gamma \in A_*(Y^\prime)$:
+\begin{equation*} k^! f_{\text{v}}^!(\gamma) = f^!_{\text{v}} k^!(\gamma) \end{equation*}
+We form the cartesian diagram:
+\bcd
+X^{\prime \prime} \times Y^{\prime \prime} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & Y^{\prime \prime} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & T \ar[d,"\Delta"] \\
+X^\prime \times S \ar[r] \ar[d] \ar[rd,phantom,"\square"] & Y^\prime \times S \ar[r] \ar[d] & T \times T \\
+X \times S \ar[r,"k \times Id"] \ar[d] \ar[rd,phantom,"\square"] & Y \times S \ar[d]\\
+X \ar[r,"k"] & Y
+\ecd
+Then we have
+\begin{align*} 
+k^! f_{\text{v}}^! (\gamma) & = (k \times \Id)^! \Delta^! (\gamma \times \virt{S}) \\
+& = \Delta^! (k \times \Id)^! (\gamma \times \virt{S}) \\
+& = \Delta^! (k^!(\gamma) \times \virt{S}) \\
+& = f_{\text{v}}^! k^!(\gamma)
+\end{align*}
+which completes the proof. In the case where $k$ is not a regular embedding but rather is equipped with a relative perfect obstruction theory, the same argument works with $k^!$ replaced by $k_{\text{v}}^!$.\end{proof}
+
+\subsection{Comb Loci Pull Back}
 We are finally able to prove that the third term in the recursion formula pulls back along $k$.
 
-\begin{proof}[Proof of Lemma \ref{Comb loci pull back}] We have a cartesian diagram:
+\begin{lem} \label{Comb loci pull back} For any $\alpha$ we have:
+\begin{equation*} k_{\text{v}}^! [D^\mathcal{Q}_{\alpha,k}(\PP^N|H,d)] = \virt{D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)} \end{equation*} \end{lem}
+
+\begin{proof} We have a cartesian diagram:
 \bcd
 D^\mathcal{Q}_{\alpha,k}(X|Y,\beta) \ar[r,"k"] \ar[d] \ar[rd,phantom,"\square"] & D^\mathcal{Q}_{\alpha,k}(\PP^N|H,d) \ar[d] \\
 \Q{0}{n}{X}{\beta} \ar[r,"k"] & \Q{0}{n}{\PP^N}{d}
@@ -619,87 +671,22 @@ X^r \ar[r,"\Delta"] & X^r \times X^r
 \ecd
 The morphism $\theta$ does not have a perfect relative obstruction theory. Nevertheless, we can define a virtual pull-back morphism as follows.
 
-\begin{definition} Suppose that we have a cartesian diagram
-\bcd
-W \ar[r,"f"] \ar[d] \ar[rd,phantom,"\square"] & X \ar[d] \\
-Y \ar[r] & Z
-\ecd
-with $Z$ smooth. Then the diagram
-\bcd
-W \ar[r] \ar[d] \ar[rd,phantom,"\square"] & X \times Y \ar[d] \\
-Z \ar[r,"\Delta"] & Z \times Z
-\ecd
-defines a morphism:
-\begin{equation*} \Delta^! : A_*(X \times Y) \to A_*(W) \end{equation*}
-In particular if we fix a class $\virt{Y} \in A_*(Y)$ we get a pullback morphism
-\begin{align*}
-f_{\text{v}}^! : \, & A_*(X) \longrightarrow A_*(W) \\
-& \gamma \mapsto \Delta^!(\gamma \times \virt{Y})
-\end{align*}
-which we call (by abuse of terminology) a \ildef{virtual pull-back} morphism.
-\end{definition}
-
-\begin{lemma} The virtual pull-back morphism as defined above commutes with ordinary Gysin maps and with virtual pull-backs. \end{lemma}
-\begin{proof} First consider the case of ordinary Gysin maps. We must consider a cartesian diagram:
-\bcd
-X^{\prime \prime} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & Y^{\prime \prime} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & S \ar[d,"f"] \\
-X^\prime \ar[r] \ar[d] \ar[rd,phantom,"\square"] & Y^\prime \ar[r] \ar[d] & T \\
-X \ar[r,"k"] & Y
-\ecd
-with $k$ a regular embedding and $T$ smooth. We assume we have fixed some class $\virt{S} \in A_*(S)$, so that the virtual pull-back $f_{\text{v}}^!$ is defined. We need to show that for all $\gamma \in A_*(Y^\prime)$:
-\begin{equation*} k^! f_{\text{v}}^!(\gamma) = f^!_{\text{v}} k^!(\gamma) \end{equation*}
-We form the cartesian diagram:
-\bcd
-X^{\prime \prime} \times Y^{\prime \prime} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & Y^{\prime \prime} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & T \ar[d,"\Delta"] \\
-X^\prime \times S \ar[r] \ar[d] \ar[rd,phantom,"\square"] & Y^\prime \times S \ar[r] \ar[d] & T \times T \\
-X \times S \ar[r,"k \times Id"] \ar[d] \ar[rd,phantom,"\square"] & Y \times S \ar[d]\\
-X \ar[r,"k"] & S
-\ecd
-Then we have
-\begin{align*} 
-k^! f_{\text{v}}^! (\gamma) & = (k \times \Id)^! \Delta^! (\gamma \times \virt{S}) \\
-& = \Delta^! (k \times \Id)^! (\gamma \times \virt{S}) \\
-& = \Delta^! (k^!(\gamma) \times \virt{S}) \\
-& = f_{\text{v}}^! k^!(\gamma)
-\end{align*}
-which completes the proof. In the case where $k$ is not a regular embedding but rather is equipped with a relative perfect obstruction theory, the same argument works with $k^!$ replaced by $k_{\text{v}}^!$.\end{proof}
 Returning to our diagram above, there is a natural class on $\mathcal{L}(\PP^N|H)$ so we have a well-defined virtual pull-back $\theta_{\text{v}}^!$, and by the very definition:
 \begin{equation*} \virt{\mathcal{L}(X|Y)} = \theta_{\text{v}}^! \virt{\mathcal{L}(X)} \end{equation*}
 Hence we obtain:
-\begin{align*} \virt{\mathcal{K}(X|Y)} & = \Delta^! \mathcal{L}(X|Y) \\
-& = \Delta^! \theta_{\text{v}}^! \virt{\mathcal{L}(X)} \\
-& = \theta_{\text{v}}^! \Delta^! \virt{\mathcal{L}(X)} \\
-& = \theta_{\text{v}}^! \virt{\mathcal{K}(X)} \end{align*}
+\begin{align*} \virt{\mathcal{K}(X|Y)} & = \Delta^! [\mathcal{L}(X|Y)] = \Delta^! \theta_{\text{v}}^! \virt{\mathcal{L}(X)} \\
+& = \theta_{\text{v}}^! \Delta^! \virt{\mathcal{L}(X)} = \theta_{\text{v}}^! \virt{\mathcal{K}(X)} \end{align*}
 Finally, consider the diagram:
 \bcd
-\mathcal{K}(X|Y) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \mathcal{K}(\PP^N|H) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \mathcal{L}(\PP^N|H) \ar[d,"\zeta"] \\
+\mathcal{K}(X|Y) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \mathcal{K}(\PP^N|H) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \mathcal{L}(\PP^N|H) \ar[d,"\theta"] \\
 \mathcal{K}(X) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \mathcal{K}(\PP^N) \ar[r] \ar[d] & \mathcal{L}(\PP^N) \\
 \om{Q}(X) \ar[r,"k"] & \om{Q}(\PP^N)
 \ecd
-Then we have
-\begin{align*} k_{\text{v}}^! [ \mathcal{K}(\PP^N|H) ] & = k_{\text{v}}^! \zeta_{\text{v}}^! [ \mathcal{K}(\PP^N) ] \\
-& = \zeta_{\text{v}}^! k_{\text{v}}^! [ \mathcal{K}(\PP^N) ] \\
-& = \zeta_{\text{v}}^! \virt{\mathcal{K}(X)}
+Then we have:
+\begin{align*} k_{\text{v}}^! [ \mathcal{K}(\PP^N|H) ] & = k_{\text{v}}^! \theta_{\text{v}}^! [ \mathcal{K}(\PP^N) ] = \theta_{\text{v}}^! k_{\text{v}}^! [ \mathcal{K}(\PP^N) ] \\
+& = \theta_{\text{v}}^! \virt{\mathcal{K}(X)} = \virt{\mathcal{K}(X|Y)}
 \end{align*}
-but the following cartesian diagram shows that $\zeta_{\text{v}}^! = \theta_{\text{v}}^!$
-\bcd
-\mathcal{K}(X|Y) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \mathcal{L}(X|Y) \ar[r] \ar[d,"\theta"] \ar[rd,phantom,"\square"] & \mathcal{L}(\PP^N|H) \ar[d,"\zeta"] \\
-\mathcal{K}(X) \ar[r,"l"] & \mathcal{L}(X) \ar[r] & \mathcal{L}(\PP^N)
-\ecd
-because $l_{\text{v}}^! [ \mathcal{L}(\PP^N|H)] = \virt{\mathcal{L}(X|Y)}$. Hence, we have
-\begin{align*}
-k_{\text{v}}^! [ \mathcal{K}(\PP^N|H) ] & = \zeta_{\text{v}}^! \virt{\mathcal{K}}(X) \\
-& = \theta_{\text{v}}^! \virt{\mathcal{K}(X)} \\
-& = \virt{\mathcal{K}(X|Y)}
-\end{align*}
-which completes the proof.
-
-
-
-
-
-
-\end{proof}
+The lemma follows because $D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ and $D^\mathcal{Q}_{\alpha,k}(\PP^N|H,d)$ are the disjoint union of the $\mathcal{K}(X|Y)$ and $\mathcal{K}(\PP^N|H)$. \end{proof}
 
 \begin{thm} Let $X$ be a smooth and proper toric variety and let $Y \subseteq X$ be a very ample hypersurface (not necessarily toric). Then, with the set-up as in the preceding discussion, we have an equality
 \begin{equation*} (\alpha_k \psi_k + ev_k^* [Y]) \virt{\Q{0}{\alpha}{X|Y}{\beta}} = \virt{\Q{0}{\alpha+e_k}{X|Y}{\beta}} + \virt{D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)} \end{equation*}
