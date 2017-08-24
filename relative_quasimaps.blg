@@ -3,8 +3,17 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: relative_quasimaps.aux
 The style file: alpha.bst
 Database file #1: relqm.bib
+<<<<<<< HEAD
 You've used 14 entries,
+||||||| merged common ancestors
+Warning--I didn't find a database entry for "CFKM"
+You've used 7 entries,
+=======
+Warning--I didn't find a database entry for "CFKM"
+You've used 10 entries,
+>>>>>>> navid
             2543 wiz_defined-function locations,
+<<<<<<< HEAD
             661 strings with 6140 characters,
 and the built_in function-call counts, 5509 in all, are:
 = -- 580
@@ -24,23 +33,118 @@ empty$ -- 431
 format.name$ -- 80
 if$ -- 1119
 int.to.chr$ -- 2
+||||||| merged common ancestors
+            611 strings with 5220 characters,
+and the built_in function-call counts, 2658 in all, are:
+= -- 280
+> -- 78
+< -- 5
++ -- 25
+- -- 22
+* -- 205
+:= -- 432
+add.period$ -- 21
+call.type$ -- 7
+change.case$ -- 37
+chr.to.int$ -- 6
+cite$ -- 7
+duplicate$ -- 103
+empty$ -- 213
+format.name$ -- 34
+if$ -- 532
+int.to.chr$ -- 2
+=======
+            633 strings with 5642 characters,
+and the built_in function-call counts, 3704 in all, are:
+= -- 386
+> -- 113
+< -- 8
++ -- 37
+- -- 32
+* -- 285
+:= -- 599
+add.period$ -- 30
+call.type$ -- 10
+change.case$ -- 53
+chr.to.int$ -- 8
+cite$ -- 10
+duplicate$ -- 149
+empty$ -- 297
+format.name$ -- 49
+if$ -- 743
+int.to.chr$ -- 3
+>>>>>>> navid
 int.to.str$ -- 0
+<<<<<<< HEAD
 missing$ -- 15
 newline$ -- 74
 num.names$ -- 42
 pop$ -- 54
+||||||| merged common ancestors
+missing$ -- 7
+newline$ -- 38
+num.names$ -- 21
+pop$ -- 21
+=======
+missing$ -- 11
+newline$ -- 53
+num.names$ -- 30
+pop$ -- 34
+>>>>>>> navid
 preamble$ -- 1
+<<<<<<< HEAD
 purify$ -- 92
+||||||| merged common ancestors
+purify$ -- 44
+=======
+purify$ -- 63
+>>>>>>> navid
 quote$ -- 0
+<<<<<<< HEAD
 skip$ -- 172
+||||||| merged common ancestors
+skip$ -- 80
+=======
+skip$ -- 114
+>>>>>>> navid
 stack$ -- 0
+<<<<<<< HEAD
 substring$ -- 436
 swap$ -- 23
 text.length$ -- 9
 text.prefix$ -- 8
+||||||| merged common ancestors
+substring$ -- 232
+swap$ -- 7
+text.length$ -- 5
+text.prefix$ -- 5
+=======
+substring$ -- 298
+swap$ -- 12
+text.length$ -- 8
+text.prefix$ -- 7
+>>>>>>> navid
 top$ -- 0
+<<<<<<< HEAD
 type$ -- 108
+||||||| merged common ancestors
+type$ -- 56
+=======
+type$ -- 76
+>>>>>>> navid
 warning$ -- 0
+<<<<<<< HEAD
 while$ -- 61
 width$ -- 17
 write$ -- 186
+||||||| merged common ancestors
+while$ -- 30
+width$ -- 9
+write$ -- 93
+(There was 1 warning)
+=======
+while$ -- 41
+width$ -- 11
+write$ -- 133
+(There was 1 warning)
+>>>>>>> navid

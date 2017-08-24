@@ -46,6 +46,8 @@
 \newcommand{\Hom}{\operatorname{Hom}}
 \newcommand{\Ext}{\operatorname{Ext}}
 \newcommand{\Gm}{\mathbb{G}_m}
+\newcommand{\virt}[1]{[#1]^{\operatorname{virt}}}
+\newcommand{\Id}{\operatorname{Id}}
 
 \newcommand{\bq}{\begin{equation}}
 \newcommand{\eq}{\end{equation}}
@@ -67,6 +69,7 @@
 \newcommand{\exym}{\end{displaymath}}
 \newcommand{\bcd}{\begin{center}\begin{tikzcd}}
 \newcommand{\ecd}{\end{tikzcd}\end{center}}
+\newcommand{\R}{\operatorname{R}^{\bullet}}
 
 \newcommand{\tr}{{\rm tr}}
 \newcommand{\Isom}{\text{Isom}}
@@ -75,10 +78,13 @@
 \newcommand{\codim}{\operatorname{codim}}
 \newcommand{\vdim}{\operatorname{vdim}}
 \newcommand{\ildef}[1]{\textbf{\textsc{#1}}}
+\newcommand{\om}[1]{\overline{\mathcal{#1}}}
+\newcommand{\h}{\operatorname{h}}
 
 \theoremstyle{plain}
 \newtheorem{thm}{Theorem}[section]
 \newtheorem{lem}[thm]{Lemma}
+\newtheorem{lemma}[thm]{Lemma}
 \newtheorem{prop}[thm]{Proposition}
 \newtheorem{cor}[thm]{Corollary}
 \newtheorem*{teo*}{Theorem}
@@ -92,6 +98,7 @@
 \newtheorem{example}[thm]{Example}
 \newtheorem{ex}[thm]{Example}
 \newtheorem{dfn}[thm]{Definition}
+\newtheorem{definition}[thm]{Definition}
 \newtheorem{aside}[thm]{Aside}
 \newtheorem{remark}[thm]{Remark}
 \newtheorem{com}[thm]{Comment}
@@ -123,8 +130,694 @@ Relative quasimaps are good.
 \end{abstract}
 
 \maketitle
+\tableofcontents
 
-\section{Functoriality of Quasimap Spaces}
+\section{Introduction}
+
+\section{Relative Stable Quasimaps}
+
+\section{Recursion Formula for $\PP^N$ Relative $H$}
+
+We first deal with genus 0 quasimaps to projective space, relative to a hyperplane. We give a Gathmann-like description of the space of relative quasimaps as a closed substack of the moduli space of (absolute) quasimaps to $\PP^r$; it turns out to be irreducible of the expected dimension. Finally, we retrieve a Gathmann-type formula by pushforward along the comparison morphism $\comp\colon \M{0}{n}{\PP^r}{d}\to\Q{0}{n}{\PP^r}{d}$.
+
+Fix coordinates on $\PP^r$ such that the hyperplane $H$ is $\{x_0=0\}$. Let $\alpha=(\alpha_1,\ldots,\alpha_n)$ be an $n$-tuple of nonnegative integers. Consider the following locus $\Qt{0}{\alpha}{\PP^r|H}{d}$ inside $\Q{0}{n}{\PP^r}{d}$: the quasimaps $(C,x_1,\ldots,x_n,L,u_0,\ldots,u_r)$ such that, if $Z$ is a connected component of the vanishing locus of $u_0$ in $C$, then one of the following holds:
+
+\begin{enumerate}
+\item $Z$ is a point, either unmarked, or one of the $x_i$'s, and in this case $u_0$ vanishes at $Z$ with multiplicity at least $\alpha_i$.
+\item $Z$ is a curve (\emph{internal}); letting $C^{(1)},\ldots,C^{(k)}$ be the (\emph{external}) irreducible components adjacent to $Z$, with nodes $q_i=Z\cap C^{(i)}$, and $m^{(i)}$ the order of vanishing of $u_{0|C^{(i)}}$ at $q_i$, we must have
+\[
+\deg(L_{|Z})+\sum_{i=1}^k m^{(i)}\geq\sum_{x_j\in Z} \alpha_j
+\]
+\end{enumerate}
+
+On the other hand, denote by $\mathcal Q_{0,\alpha}(\PP^r|H,d)$ the \emph{nice locus}, consisting of actual maps from an irreducible curve (i.e. $\PP^1$) and with specified tangency condition $\alpha$ at the markings $\mathbf x$. Notice that this is an irreducible, locally closed substack of $\Q{0}{n}{\PP^r}{d}$, by pretty much the same argument as in \cite[Lemma 1.8]{Ga}; it has codimension $\sum\alpha$. In fact it is isomorphic to the nice locus inside stable maps, that Gathmann denotes by $\mathcal M_{0,\alpha}(\PP^r|H,d)$ \cite[Def. 1.6]{Ga} (the stricter stability condition has no effect when the source curve is irreducible, of course provided $n\geq2$); hence:
+
+\begin{lem}\label{lem:comparison}
+The comparison morphism restricts to a birational morphism $\M{0}{\alpha}{\PP^r|H}{d}\to \Qt{0}{\alpha}{\PP^r|H}{d}$.
+\end{lem}
+\begin{proof}
+The contraction of a rational tail $R$ always happens far away from the markings, hence the only care we need to take is when the one component touching $R$ is internal (call it $Z$); in this case, observe that $m^{(R)}\leq\deg(f_{|R})$ and the quasimap resulting from the contraction of $R$ has $\deg(L_{|Z})=\deg(f_{|Z})+\deg(f_{|R})$, so the corresponding term only moves around the LHS of the $\alpha$-tangency condition nr. 2.
+
+Birationality follows from the fact that the comparison morphism restricts to give an isomorphism between the nice loci.
+\end{proof}
+
+\begin{lem}
+With notations as above (with $\sum\alpha\leq d$), $\Qt{0}{\alpha}{\PP^r|H}{d}$ is the closure of the nice locus $\mathcal Q_{0,\alpha}(\PP^r|H,d)$ inside $\Q{0}{n}{\PP^r}{d}$. 
+\end{lem}
+\begin{proof}
+$\Qt{0}{\alpha}{\PP^r|H}{d}\subseteq\overline{\mathcal Q_{0,\alpha}(\PP^r|H,d)}$: we show that, given any quasimap satisfying the $\alpha$-tangency conditions spelled above, it can be (infinitesimally) deformed to a stable \emph{map} satisfying Gathmann's conditions \cite[Def. 1.1 and Rmk. 1.4]{Ga}, and then appeal to \cite[Prop. 1.14]{Ga}.
+
+We induct on the number of components containing at least one base-point. If this number is zero, we're done (because quasimap stability is stronger than map stability); otherwise, pick such a component $C_0$, with base-points $p_1,\ldots,p_h$ and adjacent rational trees $R_1,\ldots,R_k$, joined to $C_0$ at the nodes $q_1,\ldots,q_k$. Since there are base-points but the quasimap respects the nondegeneracy condition, $\deg(L_{|C_0})>0$, and since $C_0\simeq\PP^1$ we can find a section $w$ of $L_{|C_0}\simeq\mathcal O_{\PP^1}(d_0)$ not vanishing at any of the base-points $p_i$'s; then it is enough to deform the section $u_{r|C_0}$ to $u_{r|C_0}+\epsilon w$ (and keep the other sections the same) in order to delete the base-points belonging to $C_0$. Notice that $u_{0|C_0}$ is unchanged, so the deformation still respects $\alpha$-tangency at the markings lying on $C_0$ (whether the latter is an internal or an external component). We need to check that such a deformation can be extended to the whole curve $C$ without changing the vanishing conditions on $u_0$. Notice that the action of $PGL_{r+1}$ on $\PP^r$ extends to an action of the group on the space of quasimaps; we can apply the matrix
+\[
+\begin{bmatrix}
+1 & & \\
+ & \ddots & \\
+ & \epsilon \frac{w(q_i)}{u_j(q_i)} & 1
+\end{bmatrix}
+\]
+to the restriction of the original quasimap to $R_i$, where $j$ is any index s.t. $u_j(q_i)\neq 0$ (one such must exist because the node is not allowed to be a base-point), and by doing this separately to every rational tree springing from $C_0$ we get a deformation of the original quasimap that still has $\alpha$-tangency with the hyperplane $H$ ($u_0$ hasn't been touched at all), but the base-points on $C_0$ have been eliminated.
+
+$\overline{\mathcal Q_{0,\alpha}(\PP^r|H,d)}\subseteq\Qt{0}{\alpha}{\PP^r|H}{d}$: consider a family of relative quasimaps over a smooth curve $S$, such that the generic fiber lies in the nice locus. Then we may blow-up the source curve (which is a fibered surface) in the base-points of the quasimap (that are finitely many smooth points of the central fiber) in order to get an actual morphism to $\mathbb P^r$; we may as well suppose that the central fiber of the new family is stable. Notice that the central fiber actually belongs to Gathmann's space $\M{0}{\alpha}{\PP^r|H}{d}$: we have just introduced some rational tails away from the markings, hence the only thing we have to check is, when we blow-up a base-point on an internal component, the rational tail will again be internal ($u_0\equiv 0$ in a neighborhood of the base-point), so it will contribute to the LHS of the $\alpha$-tangency condition nr. 2 in the very same way. We may now invoke \cite[Lemma 1.9]{Ga} and the quasimap case follows from Lemma \ref{lem:comparison}.
+\end{proof}
+From now on we shall denote this closed substack by $\Q{0}{\alpha}{\PP^r|H}{d}$.
+
+\medskip
+
+Increasing the multiplicity can be naively performed in the very same way as Gathmann did:
+\[
+\sigma^m_k:=x_k^*d^m_{\mathcal C/\overline{\mathcal Q}}(u_0)\in H^0(\overline{\mathcal Q},x_k^*\mathcal P^m_{\mathcal C/\overline{\mathcal Q}}(\mathcal L))
+\]
+with $m=\alpha_k+1$ cuts $\Q{0}{\alpha+e_k}{\PP^r|H}{d}$ inside $\Q{0}{\alpha}{\PP^r|H}{d}$, together with a bunch of degenerate contributions from quasimaps where the component on which $x_k$ lies is internal (call it $Z$) and (notice the equality sign!)
+\[
+\deg(L_{|Z})+\sum m^{(i)}=\sum_{x_j\in Z}\alpha_j.
+\]
+Of course, quasimap stability forces these degenerate contributions not to have any rational tail; this is really the only difference with the case of stable maps, and indeed we can pushforward Gathmann's formula along the comparison morphism $\comp\colon \M{0}{n}{\PP^r}{d}\to\Q{0}{n}{\PP^r}{d}$ and the only terms that are going to change are the degenerate ones with rational tails (in fact they disappear, since the restriction of the comparison map has positive dimensional fibers there). With an eye to the future, we remark that these contributions do matter when computing GW invariants of a CY hypersurface in projective space, and may well account for the divergence between GW and quasimap invariants in the CY case \cite[Rmk. 1.6]{Ga-MF}.
+
+\begin{lem}\label{lem:compare_psi}
+$\comp^*(\psi_k)=\psi_k$ and $\comp^*(x_k^*\mathcal L)=\ev_k^*(\mathcal O_{\mathbb P^r}(H))$.
+\end{lem}
+\begin{proof}
+Recall that $\psi_k=c_1(x_k^*\omega_{\mathcal C/\mathcal M})$ and contemplate the following diagram
+\bcd
+& & & \PP^r & \\
+\mathcal C_{\overline {\mathcal M}}\ar[rr,"\sst"]\ar[rd] \ar[urrr,"f"] & & \comp^*\mathcal C_{\overline {\mathcal Q}} \ar[ld]\ar[rr]\ar[ur,dashed] & & \mathcal C_{\overline {\mathcal Q}} \ar[d]\ar[ul,dashed] \\
+& \M{0}{n}{\PP^r}{d} \ar[rrr,"\comp"] \ar[ul,bend left,"x_k"]\ar[ur,bend right,"x_k"right=.2cm]& & & \Q{0}{n}{\PP^r}{d}\ar[u,bend right, "x_k"right]
+\ecd
+where $\sst$ is the strong stabilisation map, i.e. contracting the rational tails, which is an isomorphism near the markings.
+\end{proof}
+
+\begin{lem}\label{lem:posdimfiber}
+$\dim(\M{0}{(m^{(i)})}{\PP^r|H}{d}\cap \ev_1^*(p))>0$ everytime $rd>1$, where $p$ is a point of $H$, so the pushforward along $\comp$ of a degenerate locus with rational tails is 0.
+\end{lem}
+\begin{proof}
+$\dim(\M{0}{(m^{(i)})}{\PP^r|H}{d}\cap \ev_1^*(p))=(r-3)+(1-m^{(i)})+d(r+1)-(r-1)=(rd-1)+(d-m^{(i)})$.
+\end{proof}
+
+\begin{prop}
+Denote by $[D^\mathcal{Q}_{\alpha,k}(\PP^r|H,d)]$ the sum of the (product) fundamental classes of
+\[
+\Q{0}{\alpha^{(0)}\cup {(0,\ldots,0)}}{H}{d_0}\times_{(\PP^r)^k}\prod_{i=1}^k \Q{0}{(m^{(i)})\cup\alpha^{(i)}}{\PP^r|H}{d_i}
+\]
+with coefficient $\frac{m^{(1)}\ldots m^{(k)}}{k!}$, where the sum runs over all splittings $d=\sum d_i$ and $\alpha=\bigcup \alpha^{(i)}$ such that the above spaces are well-defined, in particular $|\alpha^{(0)}|+k$ and $|\alpha^{(i)}|+1$ are all $\geq 2$, and such that
+\[
+d_0+\sum_{i=1}^k m^{(i)}=\sum \alpha^{(0)}
+\]
+
+The following formula holds
+\[
+(\alpha_k\psi_k+x_k^*\mathcal L)\cdot[\Q{0}{\alpha}{\PP^r|H}{d}]=[\Q{0}{\alpha+e_k}{\PP^r|H}{d}]+[D^\mathcal{Q}_{\alpha,k}(\PP^r|H,d)].
+\]
+\end{prop}
+\begin{proof}
+Follows from \cite[Thm. 2.6]{Ga} by pushforward along $\comp\colon \M{0}{n}{\PP^r}{d}\to\Q{0}{n}{\PP^r}{d}$, using the projection fomula and Lemmas \ref{lem:comparison}, \ref{lem:compare_psi} and \ref{lem:posdimfiber}.
+\end{proof}
+
+\section{Comparison with the GIT Construction}
+Let $X$ be a hypersurface of degree $a$ in $\PP^r$. In the preceding sections, we have put a virtual class on $\Q{g}{n}{X}{d}$ by way of the following Cartesian diagram:
+
+\bcd
+\Q{g}{n}{X}{d}\ar[d]\ar[r] & \Q{g}{n}{\PP^r}{d}\ar[d,"\nu_a"] \\
+\Q{g}{n}{H}{ad}\ar[r] & \Q{g}{n}{\PP^N}{ad}
+\ecd
+
+where $N={{r+a}\choose{a}}-1$ and $\nu_a$ is the Veronese embedding. In fact, $\Q{g}{n}{X}{d}$ is thought of as representing stable quasimaps to $\PP^r$ such that the corresponding sections satisfy the equation for $X$ inside $\PP^r$, that is a homogeneous polynomial $Q$ of degree $a$, i.e. gives a section of $L^{\otimes a}$ on the source curve $C$.
+
+We wish to compare this with the GIT approach of \cite{CFKM}. Here $X$ is seen as the GIT quotient of the affine cone $C_X\subseteq \mathbb A^{r+1}$ with respect to the diagonal $\mathbb G_m$-action. Objects of $\Q{g}{n}{X}{d}^\text{GIT}$ are diagrams of the form
+
+\bcd
+P\ar[d,"\mathbb G_m"]\ar[r] & C_X & \text{or, equivalently,} & P\times_{\mathbb G_m} C_X \ar[d,"\rho" left] \\
+C & & & C \ar[u,bend right,"u"right]
+\ecd
+and the dual perfect obstruction theory with respect to $\mathfrak{Bun}_{\mathbb G_m}$ is given by $R^\bullet\pi_*(u^*\mathbb T^\bullet_\rho$), where $\pi\colon \mathcal C_{\mathfrak{Bun}}\to\mathfrak{Bun}_{\mathbb G_m}$ is the universal curve.
+
+Notice that $\mathfrak{Bun}_{\mathbb G_m}\simeq \mathfrak{Pic}$ by taking the line bundle $L=P\times_{\mathbb G_m}\mathbb A^1\to C$ associated to the $\mathbb G_m$-torsor $P\to C$. Furthermore, the $\mathbb G_m$-equivariant embedding in a smooth stack
+\bcd
+P\times_{\mathbb G_m} C_X \ar[r,hook]\ar[d,"\rho" left] & P\times_{\mathbb G_m}\mathbb A^{r+1}\simeq L^{\oplus r+1}\ar[dl]\\
+C \ar[u,bend right,"u"right] &
+\ecd
+gives us $u^*T^\bullet_\rho\simeq[L^{\oplus r+1}\to L^{\otimes a}]$, where the arrow is induced by $Q$, and shows that both the modular interpretation and the obstruction theory coincide.
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+
+\section{Recursion Formula in the General Case}
+We now move on to the general case. Let $X$ be an arbitrary toric variety (smooth and proper) and $Y \subseteq X$ a very ample hypersurface (not necessarily toric). The complete linear system associated to $\OO(Y)$ defines an embedding $i : X \hookrightarrow \PP^N$ such that $i^{-1}(H) = Y$. By the functoriality property of quasimap spaces (see Appendix \ref{Functoriality of Quasimap Spaces Section}) we have a map:
+\begin{equation*} k := i_* : \Q{0}{n}{X}{\beta} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
+where $d=i_*\beta$. Furthermore since $i$ is a closed embedding it follows that $i_*$ is as well. It is easy to show that $i_*$ restricts to a morphism between the relative spaces, and thus we have a diagram of embeddings
+\bcd
+\Q{0}{\alpha}{X|Y}{\beta} \ar[d, "f", hook] \ar[r, "g", hook] \ar[dr, phantom, "\square"] & \Q{0}{\alpha}{\PP^N|H}{d} \ar[d, "j", hook] \\
+\Q{0}{n}{X}{\beta}  \ar[r, "k", hook] & \Q{0}{n}{\PP^N}{d}
+\ecd
+which one can show is cartesian. As such we can define a virtual class on $\Q{0}{\alpha}{X|Y}{\beta}$ by pullback; that is, we consider the cartesian diagram
+\bcd
+\Q{0}{\alpha}{X|Y}{\beta} \ar[r, "f \times g", hook] \ar[d, hook]  \ar[rd, phantom, "\square"] & \Q{0}{n}{X}{\beta} \times \Q{0}{\alpha}{\PP^N|H}{d} \ar[d,"k \times j"] \\
+\Q{0}{n}{\PP^N}{d} \ar[r, "\Delta"] & \Q{0}{n}{\PP^N}{d} \times \Q{0}{n}{\PP^N}{d}
+\ecd
+which is equivalent to the previous one. The morphism $\Delta$ is a regular embedding because $\Q{0}{n}{\PP^N}{d}$ is smooth, and thus we can define:
+\begin{equation*} \virt{\Q{0}{\alpha}{X|Y}{\beta}} := \Delta^! \left( \virt{\Q{0}{n}{X}{\beta}} \times [\Q{0}{\alpha}{\PP^N|H}{d}] \right) \end{equation*}
+The idea is to prove the recursion formula for $(X,Y)$ by pulling back the formula for $(\PP^N,H)$ along $k = i_*$. In order to do this, we need to understand how the various virtual classes involved in the formula pull back along this map. This is the technical heart of the proof.
+
+\subsection{Relative Spaces Pull Back}
+But before getting into any of this, we need to explain what we mean by ``pulling back along $k$.'' Indeed, $k$ is not necessarily a regular embedding, so the Gysin map in the sense of \cite{FUL} does not necessarily exist.
+
+In \cite{Manolache-Pull} a generalisation of the Gysin map (called the \ildef{virtual pull-back}) is defined for morphisms endowed with a relative perfect obstruction theory. Moreover, a sufficient condition is given (Corollary 4.9) for this map to respect the virtual classes.
+
+\begin{lem} \label{Exists relative POT} There exists a relative perfect obstruction theory $E_k$ for the morphism
+\begin{equation*} k : \Q{0}{n}{X}{\beta} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
+and hence there exists a virtual pull-back morphism $k^!_{\text{v}}$. Moreover, $E_k$ fits into a compatible triple with the standard obstruction theories for the quasimap spaces over $\MM_{0,n}$, so that:
+\begin{equation*} k^!_{\text{v}} [ \Q{0}{n}{\PP^N}{d} ] = \virt{\Q{0}{n}{X}{\beta}} \end{equation*} \end{lem}
+
+\begin{proof} Note first that since $k$ does not change the source curve of a quasimap we indeed have a commuting triangle:
+\bcd
+\Q{0}{n}{X}{\beta} \ar[rr,"k"] \ar[rd] & & \Q{0}{n}{\PP^N}{d} \ar[ld] \\
+& \MM_{0,n} & 
+\ecd
+We have perfect obstruction theories $E_{\overline{\mathcal{Q}}(X)/\MM}$ and $E_{\overline{\mathcal{Q}}(\PP^N)/\MM}$ and we want to find a perfect obstruction theory $E_k$. Consider the diagram of universal curves
+\bcd
+\mathcal{C}_X \ar[r,"\alpha"] \ar[d,"\pi"] \ar[rd,phantom,"\square" right] & \mathcal{C}_{\PP^N} \ar[d,"\rho"] \\
+\Q{0}{n}{X}{\beta} \ar[r,"k"] & \Q{0}{n}{\PP^N}{d}
+\ecd
+which is cartesian because $k$ does not alter the source curve of any quasimap. We have sheaves $\mathcal{F}_X$ and $\mathcal{F}_{\PP^N}$ on $\mathcal{C}_X$ and $\mathcal{C}_{\PP^N}$ respectively such that:
+\begin{align*} E_{\overline{\mathcal{Q}}(X)/\MM}^\vee & = \R \pi_* \mathcal{F}_X \\
+E_{\overline{\mathcal{Q}}(\PP^N)/\MM}^\vee & = \R \rho_* \mathcal{F}_{\PP^N} \end{align*}
+It follows that when we pull back the latter obstruction theory to $\om{Q}(X)$ we obtain:
+\begin{equation*} k^* E_{\overline{\mathcal{Q}}(\PP^N)/\MM}^\vee = \R \pi_* \alpha^* \mathcal{F}_{\PP^N} \end{equation*}
+To construct a compatible triple, we require a morphism $k^* E_{\om{Q}(\PP^N)/\MM} \to E_{\om{Q}(X)/\MM}$. It is therefore enough to construct a morphism of sheaves on $\mathcal{C}_X$
+\begin{equation*} \mathcal{F}_X \to \alpha^* \mathcal{F}_{\PP^N} \end{equation*}
+and then apply $\R \pi_*$. This is analogous to the morphism $f^* T_X \to f^* T_{\PP^N}|_X$ which is used in the stable maps setting. However the construction for quasimaps requires a little more ingenuity, because we do not have acess to a universal map $f$.
+
+The sheaf $\mathcal{F}_X$ is defined on $\mathcal{C}_X$ by the short exact sequence
+\begin{equation*} 0 \to \OO_{\mathcal{C}_X}^{\oplus r} \to \oplus_{\rho} \mathcal{L}_\rho \to \mathcal{F}_X \to 0 \end{equation*}
+where $r = \operatorname{rk} \Pic X$ (implicitly we have chosen a basis for this $\Z$-module). Similarly $\mathcal{F}_{\PP^N}$ is defined on $\mathcal{C}_{\PP^N}$ by:
+\begin{equation*} 0 \to \OO_{\mathcal{C}_{\PP^N}} \to \mathcal{L}^{\oplus (N+1)} \to \mathcal{F}_{\PP^N} \to 0 \end{equation*}
+We will construct our morphism by first constructing a morhism:
+\begin{equation*} \oplus_{\rho} \mathcal{L}_\rho \to \alpha^* \mathcal{L}^{\oplus(N+1)} \end{equation*}
+Recall that $i : X \hookrightarrow \PP^N$ is given by homogeneous polynomials
+\begin{equation*} P_0 , \ldots, P_N \in S^X_\gamma \subset S^X = k[z_\rho : \rho \in \Sigma_X(1)] \end{equation*}
+in the Cox ring of $X$, where $\gamma \in \Pic X$ is some divisor class. We can write this (non-uniquely) as:
+\begin{equation*} \gamma = \sum_\rho c_\rho D_\rho \end{equation*}
+Then given $i \in \{0,\ldots,N\}$ and sections $v_\rho$ of $\mathcal{L}_\rho$ for all $\rho \in \Sigma_X(1)$ we can use the same trick as in the proof of functoriality (see Appendix \ref{Functoriality of Quasimap Spaces Section}) to view $P_i(v_\rho)$ as a section of:
+\begin{equation*} \otimes_\rho \mathcal{L}_\rho^{\otimes c_\rho} = \alpha^* \mathcal{L} \end{equation*}
+Thus we obtain a morphism
+\begin{equation*} (P_0, \ldots, P_N) : \oplus_\rho \mathcal{L}_\rho \to \alpha^* \mathcal{L}^{\oplus (N+1)} \end{equation*}
+as required. On the other hand if we let $M_1, \ldots, M_r$ denote the chosen generators for $\Pic X$ then there exist unique numbers $b_1, \ldots, b_r$ such that:
+\begin{equation*} i^* \OO_{\PP^N}(1) = \otimes_{i=1}^r M_i^{\otimes b_i} \end{equation*}
+These define a map $\OO_{C_X}^{\oplus r} \to \OO_{C_X}$ and so we obtain a digram
+\bcd
+0 \ar[r] & \OO_{C_X}^{\oplus r} \ar[r] \ar[d] & \oplus_\rho \mathcal{L}_\rho \ar[r] \ar[d] & \mathcal{F}_X \ar[r] & 0 \\
+& \OO_{C_X} \ar[r] & \alpha^* \mathcal{L}^{\oplus (N+1)} \ar[r] & \alpha^* \mathcal{F}_{\PP^N} \ar[r] & 0
+\ecd
+which one can check is commutative. By exactness of the first row, our morphism descends to a morphism $\mathcal{F}_X \to \alpha^* \mathcal{F}_{\PP^N}$ if the composition
+\begin{equation*} \OO_{C_X}^{\oplus r} \to \oplus_\rho \mathcal{L}_\rho \to \alpha^* \mathcal{L}^{\oplus (N+1)} \to \alpha^* \mathcal{F}_{\PP^N} \end{equation*}
+is zero. But this follows from the commutativity of the left square and the fact that the bottom row is a complex. Hence we obtain a morphism:
+\begin{equation*} \mathcal{F}_X \to \alpha^* \mathcal{F}_{\PP^N} \end{equation*}
+Applying $\R \pi_*$ and dualising we obtain a morphism between the obstruction theories for the quasimap spaces, and we can complete this to obtain an exact triangle
+\begin{equation*} k^* E_{\om{Q}{\PP^N}/\MM} \to E_{\om{Q}(X)/\MM} \to E_k  \xrightarrow{[1]}\end{equation*}
+on $\om{Q}(X)$. The complex $E_k$ is perfect (locally isomorphic to a bounded complex of vector bundles) because the other two are. On the other hand if we look at the long exact sequence in cohomology we find
+\begin{equation*} 0 \to \h^{-2}(E_k) \to \h^{-1}(k^* E_{\om{Q}(\PP^N)/\MM}) = 0\end{equation*}
+where the last term is zero because $\om{Q}(\PP^N) = \Q{0}{n}{\PP^N}{d}$ is unobstructed. Hence $\h^{-2}(E_k) = 0$ and it is easy to show using similar arguments that $E_k$ is of perfect amplitude contained in $[-1,0]$.
+
+Finally the axioms of a triangulated category give a morphism of exact triangles
+\bcd
+k^* E_{\om{Q}{\PP^N}/\MM} \ar[r] \ar[d] & E_{\om{Q}(X)/\MM} \ar[r] \ar[d] & E_k  \ar[r,"{[1]}"] \ar[d] & \, \\
+k^*L_{\om{Q}(\PP^N)/\MM} \ar[r] & L_{\om{Q}(X)/\MM} \ar[r] & L_k \ar[r,"{[1]}"] & \,
+\ecd
+and it follows from a simple diagram chase that $E_k \to L_k$ is a relative perfect obstruction theory. \end{proof}
+We have thus produced a virtual pull-back morphism
+\begin{equation*} k^!_{\text{v}} : A_*(\Q{0}{n}{\PP^N}{d}) \to A_*(\Q{0}{n}{X}{\beta}) \end{equation*}
+and more generally for any cartesian diagram
+\bcd
+F \ar[r] \ar[d] \ar[rd,phantom,"\square" right] & G \ar[d] \\
+\Q{0}{n}{X}{\beta} \ar[r,"k"] & \Q{0}{n}{\PP^N}{d}
+\ecd
+we get a virtual pull-back morphism:
+\begin{equation*} k^!_{\text{v}} : A_*(G) \to A_*(F) \end{equation*}
+
+\begin{lem} \label{Relative spaces pull back} For any $\alpha$ we have:
+\begin{equation*} k^!_{\text{v}} [\Q{0}{\alpha}{\PP^N|H}{d}] = \virt{\Q{0}{\alpha}{X|Y}{\beta}} \end{equation*} \end{lem}
+
+\begin{proof} Consider the following cartesian diagram:
+\bcd
+\om{Q}(X|Y) \ar[r,"f \times g"] \ar[d,"g"] \ar[rd,phantom,"\square"] & \om{Q}(X) \times \om{Q}(\PP^N|H) \ar[r,"\pi_1"] \ar[d,"k \times \Id"] \ar[rd,phantom,"\square"] & \om{Q}(X) \ar[d,"k"] \\
+\om{Q}(\PP^N|H) \ar[r,"j \times \Id"] \ar[d,"j"] \ar[rd,phantom,"\square"] & \om{Q}(\PP^N) \times \om{Q}(\PP^N|H) \ar[r,"\pi_1"] \ar[d,"\Id \times j"] & \om{Q}(\PP^N) \\
+\om{Q}(\PP^N) \ar[r,"\Delta"] & \om{Q}(\PP^N) \times \om{Q}(\PP^N)
+\ecd
+
+Then by commutativity of virtual pull-backs and their compatibility with flat pull-backs we have
+\begin{align*} \virt{\om{Q}(X|Y)} & = \Delta^! \left( \virt{\om{Q}(X)} \times [ \om{Q}(\PP^N|H) ] \right) \\
+& = \Delta^! \pi_1^* \virt{\om{Q}(X)} \\
+& = \Delta^! \pi_1^* k_{\text{v}}^! [\om{Q}(\PP^N)] \\
+& = \Delta^! k^!_{\text{v}} \pi_1^* [\om{Q}(\PP^N)] \\
+& = \Delta^! k_{\text{v}}^! \left( [ \om{Q}(\PP^N) ]\times [\om{Q}(\PP^N | H) ] \right) \\
+& = k_{\text{v}}^! \Delta^! \left( [ \om{Q}(\PP^N)] \times [\om{Q}(\PP^N|H) ] \right) \\
+& = k_{\text{v}}^! [ \om{Q}(\PP^N|H) ]
+\end{align*}
+as required.
+\end{proof}
+
+\subsection{Centipede Loci and Obstruction Theories}
+Thus, the first two terms of the recursion formula pull back easily along $k$. It remains to consider the third term, namely the virtual class of the comb locus. We wish to prove (see Lemma \ref{Comb loci pull back}) that:
+\begin{equation*} k_{\text{v}}^! [D^\mathcal{Q}_{\alpha,k}(\PP^N|H,d)] = \virt{D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)} \end{equation*}
+We will require a number of preparatory results. We begin by considering a simpler moduli space than the comb locus, which we call the \ildef{centipede locus}. We fix a partition $A=(A_0,\ldots,A_r)$ of the marked points and a partition $B=(\beta_0, \ldots, \beta_r)$ of the curve class satisfying the usual stability conditions for the comb loci, and then consider the space:
+\begin{equation*} \mathcal{K}(X,A,B) := \Q{0}{A_0 \cup \{ q_1, \ldots, q_r \}}{X}{\beta_0} \times_{X^r} \prod_{i=1}^r \Q{0}{A_i\cup\{q_i\}}{X}{\beta_i} \end{equation*}
+Notice that the comb locus lives inside this space as a closed substack. We equip this space with a virtual class in the usual way by pulling back the product class along the diagonal. That is, we set
+\begin{equation*} \mathcal{L}(X,A,B) :=  \Q{0}{A_0 \cup \{ q_1, \ldots, q_r \}}{X}{\beta_0} \times \prod_{i=1}^r \Q{0}{A_i\cup\{q_i\}}{X}{\beta_i} \end{equation*}
+which we equip with the class:
+\begin{equation*} \virt{\mathcal{L}(X,A,B)} := \virt{\Q{0}{A_0 \cup \{ q_1, \ldots, q_r \}}{X}{\beta_0}} \times \prod_{i=1}^r \virt{\Q{0}{A_i\cup\{q_i\}}{X}{\beta_i}} \end{equation*}
+We then consider the cartesian diagram
+\begin{equation} \label{Product diagram}
+\begin{tikzcd}
+\mathcal{K}(X,A,B) \ar[r,"h"] \ar[d,"\ev_q"] \ar[rd,phantom,"\square"] & \mathcal{L}(X,A,B) \ar[d,"\ev_q"] \\
+X^r \ar[r,"\Delta_{X^r}"] & X^r \times X^r
+\end{tikzcd}
+\end{equation}
+and define:
+\begin{equation*} \virt{\mathcal{K}(X,A,B)} := \Delta_{X^r}^! (\virt{\mathcal{L}(X,A,B)}) \end{equation*}
+On the other hand, we have the following cartesian diagram
+\begin{equation} \label{Full quasimap diagram}
+\begin{tikzcd}
+\mathcal{K}(X,A,B) \ar[r,"\varphi"] \ar[d,"\rho"] \ar[rd,phantom,"\square"] & \Q{0}{n}{X}{\beta} \ar[d,"\pi"] \\
+\MM_{0,A,B}^{\operatorname{wt}} \ar[r,"\psi"] & \MM_{0,n,\beta}^{\operatorname{wt}}
+\end{tikzcd}
+\end{equation}
+where the moduli spaces on the bottom row are moduli spaces of weighted nodal curves, and we have set:
+\begin{equation*} \MM_{0,A,B}^{\operatorname{wt}} := \MM_{0,A_0\cup\{q_1,\ldots,q_r\},\beta_0}^{\operatorname{wt}} \times \prod_{i=1}^r \MM_{0,A_i\cup\{q_i\},\beta_i}^{\operatorname{wt}} \end{equation*}
+
+\begin{remark} The horizontal maps are not injective: due to the existence of degree--$0$ components, there may be many possible equally valid ways of breaking up a nodal curve. For instance, consider the following example of two elements which map to the same curve under $\psi$.
+
+[FIGURE]
+\end{remark}
+
+\begin{lemma} \label{Lemma product class equals pullback class} The virtual class of $\mathcal{K}(X,A,B)$ as defined previously is induced by a perfect obstruction theory relative to the morphism $\psi \circ \rho$ in diagram \eqref{Full quasimap diagram}. Furthermore, there exists a compatible triple $(E_{\psi \circ \rho}, E_{\pi}, E_{\varphi})$ and therefore a virtual pull-back morphism $\varphi_{\text{v}}^!$ such that:
+\begin{equation*} \virt{\mathcal{K}(X,A,B)} = \varphi_{\text{v}}^! \virt{\Q{0}{n}{X}{\beta}} \end{equation*} \end{lemma}
+\begin{proof} See Lemmas \ref{First part of pullback lemma} and \ref{Second part of pullback lemma} below. \end{proof}
+
+The proof will proceed by constructing a number of relative perfect obstruction theories. We start with the obstruction theory relative to the morphism
+\begin{equation*} \pi : \mathcal{L}(X,A,B) \to \MM_{0,A,B}^{\operatorname{wt}} \end{equation*}
+and construct in sequence obstruction theories relative to the following morphisms:
+\begin{align*}
+\ev \times \pi & : \mathcal{L}(X,A,B) \to X^r \times X^r \times \MM_{0,A,B}^{\operatorname{wt}}\\
+\ev \times \rho & : \mathcal{K}(X,A,B) \to X^r \times \MM_{0,A,B}^{\operatorname{wt}} \\
+\rho & : \mathcal{K}(X,A,B) \to \MM_{0,A,B}^{\operatorname{wt}}\\
+\psi \circ \rho & : \mathcal{K}(X,A,B) \to \MM_{0,n,\beta}^{\operatorname{wt}} \\
+\varphi & : \mathcal{K}(X,A,B) \to \Q{0}{n}{X}{\beta}
+\end{align*}
+Each perfect obstruction theory will be constructed from the preceding item in the list.
+
+\begin{lemma} There exists a perfect obstruction theory for the morphism $\ev \times \pi$ which induces $\virt{\mathcal{L}(X,A,B)}$. \end{lemma}
+
+\begin{proof} Consider the following sequence of morphisms:
+\bcd
+\mathcal{L}(X,A,B) \ar[r,"\ev \times \pi"] \ar[rr, bend right = 20, "\pi"] & X^r \times X^r \times \MM_{0,A,B}^{\operatorname{wt}} \ar[r,"\pi_2"] & \MM_{0,A,B}^{\operatorname{wt}}
+\ecd
+This induces an exact triangle of contangent complexes:
+\begin{equation*} (\ev \times \pi)^* L_{\pi_2} = \ev^* L_{X^r \times X^r} \to L_\pi \to L_{\ev \times \pi} \xrightarrow{[1]} \end{equation*}
+By definition the product virtual fundamental class on $\mathcal{L}(X,A,B)$ is induced by a perfect obstruction theory:
+\begin{equation*} E_\pi \to L_\pi \end{equation*}
+On the other hand, there exists a natural map
+\begin{equation*} \ev^* L_{X^r \times X^r} \to E_\pi \end{equation*}
+which we now describe. The (dual of the) complex $E_\pi$ is concentrated in degrees $0$ and $1$ and is given fibrewise on $\mathcal{L}(X,A,B)$ by:
+\begin{equation*} H^0(C,\mathcal{F}) \xrightarrow{0} H^1(C,\mathcal{F}) \end{equation*}
+Here $\mathcal{F}$ is the sheaf on $C$ defined by the following short exact sequence:
+\begin{equation} \label{Sequence defining F} 0 \to \OO_C^{\oplus r} \to \bigoplus_{\rho} L_\rho \to \mathcal{F} \to 0 \end{equation}
+On the other hand (the dual of) $\ev^* L_{X^r \times X^r}$ is concentrated in degree $0$ and is given fibrewise as the direct sum
+\begin{equation*} \bigoplus_q T_{u(q)} X \end{equation*}
+where the sum runs over all the ``nodal'' marked points $q$ of the disconnected curve $C$. Since none of these are basepoints, we can restrict to a neighbourhood of each $q$ where we obtain a map $u: C \to X$. Then the sequence \eqref{Sequence defining F} is nothing more than the pullback along $u$ of the Euler sequence on $X$:
+\begin{equation*} 0 \to \OO_X^{\oplus r} \to \bigoplus_\rho \OO(D_\rho) \to T_X \to 0 \end{equation*}
+From this it follows that $\mathcal{F} \cong u^* T_X$ in a neighbourhood of each $q$, and hence we can evaluate at $q$ to obtain a map
+\begin{equation*} H^0(C,\mathcal{F}) \to \bigoplus_q T_q X \end{equation*}
+as required. Dualising we obtain a morphism $\ev^* L_{X^r \times X^r} \to E_\pi$ which we can complete to an exact triangle, obtaining a diagram:
+\begin{equation} \label{Diagram ev times pi and pi}
+\begin{tikzcd}
+\ev^* L_{X^r \times X^r} \ar[r] \ar[d,"\Id"] & E_\pi \ar[r] \ar[d] & E_{\ev \times \pi} \ar[r,"{[1]}"] \ar[d] & \, \\
+\ev^* L_{X^r \times X^r} \ar[r] & L_\pi \ar[r] & L_{\ev \times \pi} \ar[r,"{[1]}"] & \,
+\end{tikzcd}
+\end{equation}
+It is simple to check (using the fact that $\ev^* L_{X^r \times X^r}$ is concentrated in degree $0$) that $E_{\ev \times \pi} \to L_{\ev \times \pi}$ is a perfect obstruction theory for the morphism $\ev \times \pi$. \end{proof}
+
+\begin{lemma} There exists a perfect obstruction theory for the morphism $\ev \times \rho$ which induces $\virt{\mathcal{K}(X,A,B)}$.\end{lemma}
+
+\begin{proof} We can use the following cartesian diagram
+\bcd
+\mathcal{K}(X,A,B) \ar[r,"h"] \ar[d,"\ev \times \rho"] \ar[rd,phantom,"\square"] & \mathcal{L}(X,A,B) \ar[d,"\ev \times \pi"] \\
+X^r \times \MM_{0,A,B}^{\operatorname{wt}} \ar[r,"\Delta \times \Id"] & X^r \times X^r \times \MM_{0,A,B}^{\operatorname{wt}}
+\ecd
+to pull back the obstruction theory $E_{\ev \times \pi} \to L_{\ev \times \pi}$ to an obstruction theory $E_{\ev \times \rho} \to L_{\ev \times \rho}$, which induces $\virt{\mathcal{K}(X,A,B)}$ as defined earlier (see \cite[Proposition 7.2]{BF}). \end{proof}
+
+\begin{lemma} There exists a perfect obstruction theory for the morphism $\rho$ which induces $\virt{\mathcal{K}(X,A,B)}$.\end{lemma}
+
+\begin{proof} As earlier we can consider the composition
+\bcd
+\mathcal{K}(X,A,B) \ar[r,"\ev \times \rho"] \ar[rr,"\rho",bend right=20] & X^r \times \MM_{0,A,B}^{\operatorname{wt}} \ar[r,"\pi_2"] & \MM_{0,A,B}^{\operatorname{wt}}
+\ecd
+and thus obtain an exact triangle:
+\begin{equation*} \ev^* L_{X^r} \to L_\rho \to L_{\ev \times \rho} \xrightarrow{[1]} \end{equation*}
+We then compose this with $E_{\ev \times \rho} \to L_{\ev \times \rho}$ to obtain a morphism of exact triangles
+\begin{equation} \label{Morphism of exact triangles rho and ev times rho}
+\begin{tikzcd}
+\ev^* L_{X^r} \ar[r] \ar[d,"\Id"] & E_\rho \ar[r] \ar[d] & E_{\ev \times \rho} \ar[r,"{[1]}"] \ar[d] & \, \\
+\ev^* L_{X^r} \ar[r] & L_\rho \ar[r] & L_{\ev \times \rho} \ar[r,"{[1]}"] & \,
+\end{tikzcd}
+\end{equation}
+and it is simple to check that $E_\rho \to L_\rho$ is a perfect obstruction theory for $\mathcal{K}(X,A,B)$ over $\MM_{0,A,B}^{\operatorname{wt}}$. \end{proof}
+
+\begin{lemma}[Lemma \ref{Lemma product class equals pullback class}, First Part] \label{First part of pullback lemma} There exists a perfect obstruction theory for the morphism $\psi \circ \rho$ which induces $\virt{\mathcal{K}(X,A,B)}$.\end{lemma}
+
+\begin{proof} Compose $E_\rho \to L_\rho$ with the connecting homomorphism $L_\rho \to \rho^* L_\psi[1]$ to obtain a morphism of exact triangles:
+\begin{equation} \label{E rho and E psi rho diagram}
+\begin{tikzcd}
+\rho^* L_\psi \ar[d,"\Id"] \ar[r] & E_{\psi \circ \rho} \ar[r] \ar[d] & E_\rho \ar[r,"{[1]}"] \ar[d] & \, \\
+\rho^* L_\psi \ar[r] & L_{\psi \circ \rho} \ar[r] & L_\rho \ar[r,"{[1]}"] & \,
+\end{tikzcd}
+\end{equation}
+We wish to prove that $E_{\psi \circ \rho} \to L_{\psi \circ \rho}$ is a perfect obstruction theory. We claim that $\rho^* L_{\psi}$ is concentrated in degrees $[-1,0]$. To see this, consider the exact triangle of cotangent complexes associated to the morphism $\psi$:
+\begin{equation*} \psi^* L_{\MM_{0,n,\beta}^{\operatorname{wt}}} \to L_{\MM_{0,A,B}^{\operatorname{wt}}} \to L_\psi \xrightarrow{[1]} \end{equation*}
+The first two terms are concentrated in degrees $[0,1]$ because they are the cotangent complexes of smooth Artin stacks. Therefore $L_\psi$ is concentrated in degrees $[-1,1]$. Furthermore, if we examine the long exact cohomology sequence near $\h^1(L_\psi)$ we find
+\begin{equation*} \h^1(\psi^* L_{\MM_{0,n,\beta}^{\operatorname{wt}}}) \to \h^1(L_{\MM_{0,A,B}^{\operatorname{wt}}}) \to \h^1(L_\psi) \to 0 \end{equation*}
+and hence we must show that the first map is surjective. But this is dual to the map which takes an infinitesimal automorphism of the disconnected curve to an infinitesimal automorphism of the corresponding connected curve (obtained by glueing together the ``nodal'' marked points). Since these two curves have the same components, this map is an isomorphism. Hence $\h^1(L_\psi) = 0$ as claimed.
+
+\begin{aside} Intuitively this makes sense, since the fibres of $\psi$ are Deligne--Mumford and hence should have cotangent complex suppported in negative degrees. \end{aside}
+It then follows formally that $E_{\psi \circ \rho} \to L_{\psi \circ \rho}$ is a perfect obstruction theory for $\mathcal{K}(X,A,B)$ over $\MM_{0,n,\beta}^{\operatorname{wt}}$. \end{proof}
+
+\begin{lemma}[Lemma \ref{Lemma product class equals pullback class}, Second Part] \label{Second part of pullback lemma} There exist a perfect  obstruction theory for the morphism $\varphi$ which fits into a compatible triple $(E_{\psi \circ \rho}, E_\pi, E_\varphi)$.\end{lemma}
+
+\begin{proof}
+To prove the second part, we must construct a map:
+\begin{equation*} \varphi^* E_\pi \to E_{\psi \circ \rho} \end{equation*}
+By diagram \eqref{E rho and E psi rho diagram} above, to construct such a morphism is the same thing as to construct a morphism $\varphi^* E_{\pi} \to E_\rho$ such that the composition
+\begin{equation*} \varphi^* E_\pi \to E_\rho \to \rho^* L_\psi[1] \end{equation*}
+is zero. But again by diagram \eqref{Morphism of exact triangles rho and ev times rho} a morphism $\varphi^* E_\pi \to E_\rho$ is the same thing as a morphism $\varphi^* E_\pi \to E_{\ev \times \rho}$ such that the composition
+\begin{equation*} \varphi^* E_\pi \to E_{\ev \times \rho} \to \ev^*L_{X^r}[1] \end{equation*}
+is zero. Recall that $E_{\ev \times \rho} = h^* E_{\ev \times \pi}$ and hence by diagram \eqref{Diagram ev times pi and pi} above we get a map $\varphi^* E_\pi \to h^* E_{\ev \times \pi}$ if we can produce a map $\varphi^* E_\pi \to h^* E_\pi$, or equivalently a map $h^* E_\pi^\vee \to \varphi^*E_\pi^\vee$.
+
+We are now dealing with sheaves that we understand. Consider the following diagram:
+\bcd
+h^* \tilde{\mathcal{C}} \ar[r,"\nu"] \ar[rd,"\eta" below] & \varphi^* \mathcal{C} \ar[r,"\alpha"] \ar[d,"\rho"] \ar[rd,phantom,"\square"] & \mathcal{C} \ar[d,"\pi"] \\
+& \mathcal{K}(X,A,B) \ar[r,"\varphi"] & \Q{0}{n}{X}{\beta}
+\ecd
+Here $\tilde{C}$ is the universal (disconnected) curve over $\mathcal{L}(X,A,B)$, which we have pulled back to $\mathcal{K}(X,A,B)$. On the other hand $\varphi^* \mathcal{C}$ is isomorphic to the universal curve over $\mathcal{K}(X,A,B)$. Therefore the map $\nu : h^* \tilde{\mathcal{C}} \to \varphi^* \mathcal{C}$ is a partial normalisation map given by normalising the nodes which connect the ``trunk'' of the centipede to the ``legs.''
+
+There are natural sheaves $\mathcal{F}$ and $\tilde{\mathcal{F}}$ on $\mathcal{C}$ and $h^* \tilde{\mathcal{C}}$ respectively, such that
+\begin{align*} E_\pi^\vee & = \R \pi_* \mathcal{F} \\
+h^* E_\pi^\vee & = \R \eta_* \tilde{\mathcal{F}} \end{align*}
+from which we obtain:
+\begin{equation*} \varphi^* E_\pi^\vee = \R \rho_* \alpha^* \mathcal{F} \end{equation*}
+Now, since $\nu$ is a partial normalisation there is a short exact sequence of sheaves on $\varphi^*\mathcal{C}$:
+\begin{equation*} 0 \to \OO_{\varphi^*{\mathcal{C}}} \to \nu_* \OO_{h^* \tilde{\mathcal{C}}} \to \OO_q \to 0 \end{equation*}
+where $q$ is the locus of nodes connecting the trunk to the spine. On the other hand it is clear that
+\begin{equation*} \nu_* \tilde{\mathcal{F}} = \nu_* \OO_{h^* \tilde{\mathcal{C}}} \otimes \alpha^* \mathcal{F} \end{equation*}
+so tensoring the above exact sequence with $\alpha^* \mathcal{F}$ we obtain:
+\begin{equation*} 0 \to \alpha^* \mathcal{F} \to \nu_* \tilde{\mathcal{F}} \to \alpha^* \mathcal{F}_q \to 0 \end{equation*}
+(The fact that the morphism on the left is injective follows by applying the Snake Lemma to the short exact sequence defining $\mathcal{F}$.) To this we can apply $\R \rho_*$ to obtain an exact triangle
+\begin{equation} \label{Normalisation exact triangle} \R \rho_* \alpha^* \mathcal{F} \to \R \eta_* \tilde{\mathcal{F}} \to \R \rho_* \alpha^* \mathcal{F}_q \xrightarrow{[1]} \end{equation}
+the first morphism of which is the map $h^* E_\pi^\vee \to \varphi^* E_\pi^\vee$ that was promised.
+
+Now we must show that the composition
+\begin{equation*} \varphi^* E_\pi \to E_{\ev \times \rho} \to \ev^*L_{X^r}[1] \end{equation*}
+is zero. This follows from the existence of the exact triangle \eqref{Normalisation exact triangle} above. To be precise, this triangle can be rewritten as
+\begin{equation*} h^* E_\pi^\vee \to \varphi^* E_\pi^\vee \to h^* \ev^* L_{X^r \times X^r}^\vee \xrightarrow{[1]} \end{equation*}
+and hence we obtain a diagram
+\bcd
+\varphi^* E_\pi \ar[r] \ar[d,"\Id"] & h^*E_\pi \ar[r] \ar[d] & h^* \ev^* L_{X^r \times X^r}[1] \ar[d] \ar[r,"{[1]}"] & \, \\
+\varphi^* E_\pi \ar[r] & E_{\ev \times \rho} = h^* E_{\ev \times \pi} \ar[r] & \ev^* L_{X^r}[1]
+\ecd
+where the third vertical morphism is obtain by pulling back the natural map
+\begin{equation*} \Delta_{X^r}^* L_{X^r \times X^r} \to L_{X^r} \end{equation*}
+along $\ev$. Then the bottom row composes to zero because the top row does (being an exact triangle).
+
+Hence we obtain a map $\varphi^* E_\pi \to E_\rho$. Finally we must show that the composition
+\begin{equation*} \varphi^* E_\pi \to E_\rho \to \rho^* L_\psi[1] \end{equation*}
+is zero. To see this, consider the composition
+\begin{equation*} \varphi^* E_\pi \to \varphi^* L_\pi \to L_{\psi \circ \rho} \end{equation*}
+where the second map is induced by the sequence of morphisms
+\bcd
+\mathcal{K}(X,A,B) \ar[r,"\varphi"] \ar[rr,"\psi \circ \rho", bend right=25] & \Q{0}{n}{X}{\beta} \ar[r,"\pi"] & \MM_{0,n,\beta}^{\operatorname{wt}}
+\ecd
+and form the diagram:
+\bcd
+\varphi^* E_\pi \ar[r] \ar[d] & E_\rho \ar[r] \ar[d] & \rho^* L_\psi[1] \ar[d,"\Id"] \\
+L_{\psi \circ \rho} \ar[r] & L_\rho \ar[r] & \rho^* L_\psi[1] \ar[r,"{[1]}"] & \,
+\ecd
+Then the top row composes to zero because the bottom row does.
+
+
+
+
+Thus we finally obtain a map
+\begin{equation*} \varphi^* E_\pi \to E_\rho \end{equation*}
+and a simple (but quite lengthy) diagram chase shows that the obstruction theory $E_\varphi$ induced by this map is perfect. Hence we have a virtual pull-back morphism $\varphi^!_{\text{v}}$ such that
+\begin{equation*} \varphi^!_{\text{v}} \virt{\Q{0}{n}{X}{\beta}} = \virt{\mathcal{K}(X,A,B)} \end{equation*}
+as claimed. \end{proof}
+This completes the proof of Lemma \ref{Lemma product class equals pullback class} and provides us with all the obstruction-theoretic results we require.
+
+There is one other way of obtaining $\mathcal{K}(X,A,B)$ as a pullback. Recall that we have an embedding $i: X \hookrightarrow \PP^N$. Let $i_*B = (i_* \beta_0, \ldots, i_* \beta_r)$. Then we have a cartesian diagram:
+\bcd
+\mathcal{K}(X,A,B) \ar[r,"\eta"] \ar[d,"\varphi_X"] \ar[rd,phantom,"\square"] & \mathcal{K}(\PP^N,A,i_*B) \ar[d,"\varphi_{\PP^N}"] \\
+\Q{0}{n}{X}{\beta} \ar[r,"k"] & \Q{0}{n}{\PP^N}{d}
+\ecd
+
+\begin{lemma} $k_{\text{v}}^! [ \mathcal{K}(\PP^N,A,i_*B)] = \virt{\mathcal{K}(X,A,B)}$ \end{lemma}
+
+\begin{proof} It follows from the construction above that the obstruction theory $E_{\varphi_X} \to L_{\varphi_X}$ is equal to the pullback of $E_{\varphi_\PP^N} \to L_{\varphi_{\PP^N}}$ along $\eta$. So:
+\begin{equation*} (\varphi_X)_{\text{v}}^! = (\varphi_{\PP^N})_{\text{v}}^! : A_*(\om{Q}(X)) \to A_*(\mathcal{K}(X)) \end{equation*}
+Then commutativity of virtual pull-backs gives
+\begin{align*} k_{\text{v}}^! [\mathcal{K}(\PP^N)] & = k_{\text{v}}^! (\varphi_{\PP^N})_{\text{v}}^! [\om{Q}(\PP^N)] \\
+& = (\varphi_{\PP^N})_{\text{v}}^! k_{\text{v}}^! [ \om{Q}(\PP^N) ] \\
+& = (\varphi_{\PP^N})_{\text{v}}^! \virt{\om{Q}(X)} \\
+& = (\varphi_X)_{\text{v}}^! \virt{\om{Q}(X)} \\
+& = \virt{\mathcal{K}(X)}
+\end{align*}
+where we have used Lemma \ref{Lemma product class equals pullback class} twice. \end{proof}
+
+\subsection{An Intersection-Theoretic Lemma}
+Shortly we will be dealing with morphisms which do not admit relative perfect obstruction theories, and as such we will require a slightly different version of the virtual pull-back morphism.
+
+Suppose that we have a cartesian diagram
+\bcd
+W \ar[r,"f"] \ar[d] \ar[rd,phantom,"\square"] & X \ar[d] \\
+Y \ar[r] & Z
+\ecd
+with $Z$ smooth. Then the diagram
+\bcd
+W \ar[r] \ar[d] \ar[rd,phantom,"\square"] & X \times Y \ar[d] \\
+Z \ar[r,"\Delta"] & Z \times Z
+\ecd
+defines a morphism:
+\begin{equation*} \Delta^! : A_*(X \times Y) \to A_*(W) \end{equation*}
+In particular if we fix a class $\virt{Y} \in A_*(Y)$ we get a pullback morphism
+\begin{align*}
+f_{\text{v}}^! : \, & A_*(X) \longrightarrow A_*(W) \\
+& \gamma \mapsto \Delta^!(\gamma \times \virt{Y})
+\end{align*}
+which we call (by abuse of terminology) a \ildef{virtual pull-back} morphism.
+
+\begin{lemma} The virtual pull-back morphism as defined above commutes with ordinary Gysin maps and with virtual pull-backs. \end{lemma}
+\begin{proof} First consider the case of ordinary Gysin maps. We must consider a cartesian diagram:
+\bcd
+X^{\prime \prime} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & Y^{\prime \prime} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & S \ar[d,"f"] \\
+X^\prime \ar[r] \ar[d] \ar[rd,phantom,"\square"] & Y^\prime \ar[r] \ar[d] & T \\
+X \ar[r,"k"] & Y
+\ecd
+with $k$ a regular embedding and $T$ smooth. We assume we have fixed some class $\virt{S} \in A_*(S)$, so that the virtual pull-back $f_{\text{v}}^!$ is defined. We need to show that for all $\gamma \in A_*(Y^\prime)$:
+\begin{equation*} k^! f_{\text{v}}^!(\gamma) = f^!_{\text{v}} k^!(\gamma) \end{equation*}
+We form the cartesian diagram:
+\bcd
+X^{\prime \prime} \times Y^{\prime \prime} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & Y^{\prime \prime} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & T \ar[d,"\Delta"] \\
+X^\prime \times S \ar[r] \ar[d] \ar[rd,phantom,"\square"] & Y^\prime \times S \ar[r] \ar[d] & T \times T \\
+X \times S \ar[r,"k \times Id"] \ar[d] \ar[rd,phantom,"\square"] & Y \times S \ar[d]\\
+X \ar[r,"k"] & Y
+\ecd
+Then we have
+\begin{align*} 
+k^! f_{\text{v}}^! (\gamma) & = (k \times \Id)^! \Delta^! (\gamma \times \virt{S}) \\
+& = \Delta^! (k \times \Id)^! (\gamma \times \virt{S}) \\
+& = \Delta^! (k^!(\gamma) \times \virt{S}) \\
+& = f_{\text{v}}^! k^!(\gamma)
+\end{align*}
+which completes the proof. In the case where $k$ is not a regular embedding but rather is equipped with a relative perfect obstruction theory, the same argument works with $k^!$ replaced by $k_{\text{v}}^!$.\end{proof}
+
+\subsection{Comb Loci Pull Back}
+We are finally able to prove that the third term in the recursion formula pulls back along $k$.
+
+\begin{lem} \label{Comb loci pull back} For any $\alpha$ we have:
+\begin{equation*} k_{\text{v}}^! [D^\mathcal{Q}_{\alpha,k}(\PP^N|H,d)] = \virt{D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)} \end{equation*} \end{lem}
+
+\begin{proof} We have a cartesian diagram:
+\bcd
+D^\mathcal{Q}_{\alpha,k}(X|Y,\beta) \ar[r,"k"] \ar[d] \ar[rd,phantom,"\square"] & D^\mathcal{Q}_{\alpha,k}(\PP^N|H,d) \ar[d] \\
+\Q{0}{n}{X}{\beta} \ar[r,"k"] & \Q{0}{n}{\PP^N}{d}
+\ecd
+We can write $D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ as the disjoint union of spaces
+\begin{equation*} D^{\mathcal{Q}}(X|Y,A,B,M) = \Q{0}{A_0 \cup \{q_1, \ldots, q_r\}}{Y}{\beta_0} \times_{Y^r} \prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta_i} \end{equation*}
+where $A$ and $B$ are partitions of the marked points and curve class as before, and $M=(m_1,\ldots,m_r)$ records the intersection multiplicities at the nodes which connect the internal component to the external components (the spine of the comb to the teeth).
+
+As usual this space has a virtual class induced by pulling back the virtual class from the total product:
+\begin{equation*} E^{\mathcal{Q}}(X|Y,A,B,M) = \Q{0}{A_0 \cup \{q_1, \ldots, q_r\}}{Y}{\beta_0} \times \prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta_i} \end{equation*}
+In order to make the following discussion readable, we will need to introduce some shorthand notation. We suppose that the data of $A$,$B$ and $M$ has been fixed, and set:
+\begin{align*}
+\mathcal{K}(X|Y) & := D^{\mathcal{Q}}(X|Y,A,B,M) \\
+\mathcal{L}(X|Y) & := E^{\mathcal{Q}}(X|Y,A,B,M)
+\end{align*}
+We then have a cartesian diagram:
+\bcd
+\mathcal{K}(X|Y) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \mathcal{L}(X|Y) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \mathcal{L}(\PP^N|H) \ar[d,"\theta"] \\
+\mathcal{K}(X) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \mathcal{L}(X) \ar[r] \ar[d] & \mathcal{L}(\PP^N) \\
+X^r \ar[r,"\Delta"] & X^r \times X^r
+\ecd
+The morphism $\theta$ does not have a perfect relative obstruction theory. Nevertheless, we can define a virtual pull-back morphism as follows.
+
+Returning to our diagram above, there is a natural class on $\mathcal{L}(\PP^N|H)$ so we have a well-defined virtual pull-back $\theta_{\text{v}}^!$, and by the very definition:
+\begin{equation*} \virt{\mathcal{L}(X|Y)} = \theta_{\text{v}}^! \virt{\mathcal{L}(X)} \end{equation*}
+Hence we obtain:
+\begin{align*} \virt{\mathcal{K}(X|Y)} & = \Delta^! [\mathcal{L}(X|Y)] = \Delta^! \theta_{\text{v}}^! \virt{\mathcal{L}(X)} \\
+& = \theta_{\text{v}}^! \Delta^! \virt{\mathcal{L}(X)} = \theta_{\text{v}}^! \virt{\mathcal{K}(X)} \end{align*}
+Finally, consider the diagram:
+\bcd
+\mathcal{K}(X|Y) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \mathcal{K}(\PP^N|H) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \mathcal{L}(\PP^N|H) \ar[d,"\theta"] \\
+\mathcal{K}(X) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \mathcal{K}(\PP^N) \ar[r] \ar[d] & \mathcal{L}(\PP^N) \\
+\om{Q}(X) \ar[r,"k"] & \om{Q}(\PP^N)
+\ecd
+Then we have:
+\begin{align*} k_{\text{v}}^! [ \mathcal{K}(\PP^N|H) ] & = k_{\text{v}}^! \theta_{\text{v}}^! [ \mathcal{K}(\PP^N) ] = \theta_{\text{v}}^! k_{\text{v}}^! [ \mathcal{K}(\PP^N) ] \\
+& = \theta_{\text{v}}^! \virt{\mathcal{K}(X)} = \virt{\mathcal{K}(X|Y)}
+\end{align*}
+The lemma follows because $D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ and $D^\mathcal{Q}_{\alpha,k}(\PP^N|H,d)$ are the disjoint union of the $\mathcal{K}(X|Y)$ and $\mathcal{K}(\PP^N|H)$. \end{proof}
+
+\begin{thm} Let $X$ be a smooth and proper toric variety and let $Y \subseteq X$ be a very ample hypersurface (not necessarily toric). Then, with the set-up as in the preceding discussion, we have an equality
+\begin{equation*} (\alpha_k \psi_k + ev_k^* [Y]) \virt{\Q{0}{\alpha}{X|Y}{\beta}} = \virt{\Q{0}{\alpha+e_k}{X|Y}{\beta}} + \virt{D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)} \end{equation*}
+in the Chow group of $\Q{0}{n}{X}{\beta}$. \end{thm}
+\begin{proof} Pull-back the equation for $\PP^N$ relative $H$ using the map $k_{\text{v}}^!$, applying Lemmas \ref{Relative spaces pull back} and \ref{Comb loci pull back}. \end{proof}
+
+
+
+
+
+
+
+
+\newpage
+
+\section{The Quasimap Mirror Theorem}
+Assuming that quasimap invariants for $\PP^r$ coincide with Gromov-Witten invariants on the nose, we get the following result.
+\begin{dfn}
+ For a complete intersection $X$ in $\PP^r$ and $d>0$, let
+ \[
+  I^X_d=(\ev_1)_*\left(\frac{1}{z-\psi_1}[\Q{0}{2}{X}{d}]^\text{vir}\right)
+ \]
+ where $\ev_1$ is always thought of as landing in $\PP^r$.
+ 
+ Set also $I^X_0=\mathbbm 1_{\PP^r}$ and $I^X=\sum_{d\geq 0}I^X_d q^d$.
+\end{dfn}
+\begin{thm}
+Let $X\subseteq\PP^4$ be a smooth quintic 3-fold. Then
+ \[
+  \sum_{d\geq 0} q^d\prod_{i=0}^{5d}(X+iz)I^{\PP^4}_d= XP(q)I^X
+ \]
+where
+\[
+ P(q)=1+\sum_{d>0}dq^d\langle H^4,\mathbbm 1_{\PP^4}\rangle_{\Q{0}{\{5d,0\}}{\PP^4|X}{d}}=1+\sum_{d>0}q^d\frac{(5d)!}{(d!)^5}\sum_{i=d+1}^{5d-1}\frac{1}{i}.
+\]
+\end{thm}
+\begin{proof}
+ We'll write it for a general CY hypersurface in $i\colon X_a\hookrightarrow\PP^r$, so the degree of $X$ is $a=r+1$. Notice that dual bases for $H^*(\PP^r)$ are given by $T^i=H^i$ and $T_i=H^{r-i}$, while (induced) dual bases for $i^*H^*(\PP^r)$ are $S^i=H^i$ and $S_i=\frac{1}{a}H^{r-i-1}$; the restriction of $H^r$ is 0.
+ 
+ Define
+ \[
+  I^{\PP^r|X}_{d,(m)}=(\ev_1)_*\left(\frac{1}{z-\psi_1}[\Q{0}{\{m,0\}}{\PP^r|X}{d}]^\text{vir}\right),
+ \]
+which coincides with the absolute $I$-function defined above for $m=0$, and
+\[
+ J^{\PP^r|X}_{d,(m)}=(\ev_1)_*\left(m[\Q{0}{\{m,0\}}{\PP^r|X}{d}]^\text{vir}+\frac{1}{z-\psi_1}[D_m^{\mathcal Q}(\PP^r|X,d)]^\text{vir}\right).
+\]
+Then, by Gathmann's formula, we can prove that
+\begin{equation}\label{eqn:G}
+ (X+mz) I^{\PP^r|X}_{d,(m)}= I^{\PP^r|X}_{d,(m+1)}+ J^{\PP^r|X}_{d,(m)},
+\end{equation}
+from which it follows that
+\[
+ \prod_{i=0}^{ad}(X+iz) I^{\PP^r}_d=\sum_{m=0}^{ad}\prod_{i=m+1}^{ad}(X+iz)J^{\PP^r|X}_{d,(m)}.
+\]
+It is now a matter of evaluating the RHS. Notice that $J^{\PP^r|X}_{d,(m)}$ is made of two parts:
+\begin{itemize}
+ \item the boundary terms: the strong stability condition for quasimaps and the choice of working with only two markings makes these boundary contributions particularly simple to compute. The shape of the source curve is that of a snake which the hypersurface cuts into two pieces, the internal one of degree $d^{(0)}$, and the external one of degree $d^{(1)}$ and multiplicity $m^{(1)}$ of contact with $X$, with the first marking point belonging to the internal component and the second to the external one.
+ 
+ The invariants which we need to consider will hence be of the form
+ \[
+  \langle T^i\psi_1^j,S_i\rangle_{\Q{0}{2}{X}{d^{(0)}}}\langle S^i,\mathbbm 1_{\PP^r}\rangle_{\Q{0}{\{m^{(1)},0\}}{\PP^r|X}.{d^{(1)}}}
+ \]
+ A dimensional computation
+\begin{align*}
+ 0\leq \codim S_i &= \dim X-\codim S^i \\
+ &= \dim X-\vdim \Q{0}{\{m^{(1)},0\}}{\PP^r|X}{d^{(1)}} \\
+ &= \dim X-(\dim\PP^r-3+2-m^{(1)}-K_{\PP^r}\cdot d^{(1)}\ell)\\
+ &= m^{(1)}-X\cdot d^{(1)}\ell+K_{X}\cdot d^{(1)}\ell \\
+ &= m^{(1)}-X\cdot d^{(1)}\ell\leq 0
+\end{align*}
+forces $S_1=\mathbbm 1_X$ and $S^1=\frac{1}{a}H^{r-1}$, $m^{(1)}=ad^{(1)}$ hence
+\[
+ m=\alpha_1=X\cdot d^{(0)}\ell+m^{(1)}=ad,
+\]
+so this doesn't show up but at the very end of the ``increasing the multiplicity'' process.
+
+\item The other term in $J^{\PP^r|X}_{d,(m)}$ is $m(\ev_1)_*[\Q{0}{\{m,0\}}{\PP^r|X}{d}]^\text{vir}$; notice that it only gets insertions from the cohomology of $\PP^r$ (restricted to $X$). On the other hand
+\[
+ \vdim \Q{0}{\{m,0\}}{\PP^r|X}{d}=r-3+2-m+d(r+1)\geq r-1
+\]
+because $m\leq ad$; since the restriction of $H^r$ to $X$ vanishes, the only insertion that contributes is $H^{r-1}$, forcing the equality $m=ad$.
+\end{itemize}
+So, in the end, we see that equation \ref{eqn:G} reduces to
+\begin{align*}
+ \prod_{i=0}^{ad}(X+iz) I^{\PP^r}_d &=J^{\PP^r|X}_{d,(ad)} \\
+ &= \sum_{i=0,\ldots,r-1;j\geq 0}(da)\langle H^{r-1},\mathbbm 1_{\PP^r}\rangle_{\Q{0}{\{ad,0\}}{\PP^r|X}{d}} H \\
+ &+\sum_{\substack{0<d^{(0)}<d \\ d^{(0)}+d^{(1)}=d}}z^{j+1}H^{r-i}\langle H^i\psi_1^j,\mathbbm 1_{X}\rangle_{\Q{0}{2}{X}{d^{(0)}}}(ad^{(1)})\langle \frac{1}{a}H^{r-1},\mathbbm 1_{\PP^r}\rangle_{\Q{0}{\{ad^{(1)},0\}}{\PP^r|X}{d^{(1)}}}\\
+ &+z^{j+1}H^{r-i}\langle H^i\psi_1^j,\mathbbm 1_{X}\rangle_{\Q{0}{2}{X}{d}}
+\end{align*}
+from which the first claim of the theorem is now evident (with a bit of rearranging, using $X=aH$ and $i^*(H^r)=0$, so in the last line everything is divisible by $H$).
+
+\smallskip
+
+In order to evaluate $P(q)$, we use again Gathmann's algorithm, this time in the other direction, to go all the way back to $\PP^r$; then we make use of our assumption that quasimap invariants and ordinary GW coincide for the projective space. So it starts:
+\[
+ [\Q{0}{\{ad,0\}}{\PP^r|X}{d}]^\text{vir}=(X+(ad-1)\psi_1)[\Q{0}{\{ad-1,0\}}{\PP^r|X}{d}]^\text{vir}-[D_{ad}^{\mathcal Q}(\PP^r|X,d)]^\text{vir}
+\]
+When looking at the boundary, the invariants that come into play are of the form
+\[
+ \langle H^{r-1},S_i\rangle_{\Q{0}{2}{X}{d^{(0)}}}\langle S^i,\mathbbm 1_{\PP^r}\rangle_{\Q{0}{\{a(d-d^{(0)})-1,0\}}{\PP^r|X}{d-d^{(0)}}}
+\]
+but notice that they must vanish by dimensional reasons, since
+\[
+ \codim(S_i)=\dim X-3+2-K_X\cdot d^{(0)}\ell-(r-1)=-1.
+\]
+So
+\begin{align*}
+ d\langle H^{r-1},\mathbbm 1_{\PP^r}\rangle_{\Q{0}{\{ad,0\}}{\PP^r|X}{d}} \\
+ = d[\Q{0}{2}{\PP^r}{d}]\cap\ev_1^*(H^{r-1})\prod_{i=0}^{ad-1}(\ev_1^*X+i\psi_1) \\
+ = d[\Q{0}{2}{\PP^r}{d}]\cap\left((da-1)!\psi_1^{ad}\ev_1^*(H^{r-1})+a\left(\sum_{j=1}^{ad-1}\frac{(ad-1)!}{j}\right)\psi_1^{ad-1}\ev_1^*(H^{r})\right) \\
+ = d\left((da-1)!\langle \psi_1^{ad-1}H^{r-1}\rangle_{0,1,d}+a\left(\sum_{j=1}^{ad-1}\frac{(ad-1)!}{j}\right)\langle\psi_1^{ad-2}H^{r}\rangle_{0,1,d}\right)
+\end{align*}
+using the equality of quasimap and GW invariants and the string equation for the latter. These numbers can be extracted from the $J$-function for $\PP^r$
+\[
+ I^{\PP^r}_d=\prod_{i=1}^d\frac{1}{H+i}
+\]
+from which
+\begin{align*}
+ \langle \psi_1^{ad-2}\ev_1^*(H^{r})\rangle_{0,1,d} &=\frac{1}{(d!)^{r+1}} \\
+ \langle \psi_1^{ad-1}\ev_1^*(H^{r-1}\rangle_{0,1,d} &=-(r+1)\frac{1}{(d!)^{r+1}}\sum_{j=1}^d\frac{1}{j}
+\end{align*}
+and the second claim of the theorem follows.
+\end{proof}
+
+\appendix
+\section{Functoriality of Quasimap Spaces} \label{Functoriality of Quasimap Spaces Section}
 
 In the case of stable maps, a morphism $f : X \to Y$ induces a morphism between the corresponding moduli spaces
 \begin{equation*}\M{g}{n}{X}{\beta} \rightarrow \M{g}{n}{Y}{f_* \beta} \end{equation*}
@@ -252,8 +945,6 @@ the pushed-forward quasimap with target $\PP^N$ is:
 \begin{equation*} (C, L^{\otimes a}, f_0(u_0, \ldots, u_r) , \ldots, f_N(u_0, \ldots, u_r)) \end{equation*}
 (This is stable as long as $a > 0$, which is precisely when $f$ satsfies Condition (1) above.)
 
-\newpage
-
 \section{The Comparison Morphism}
 
 We summarise the existence of the comparison morphism for $\PP^r$ and how it implies that GW and quasimap invariants of projective space coincide. This has been proven in \cite[Theorem 3]{MOP} and \cite[Section 4.3]{Manolache-Push} (but see also \cite[Proposition 4.1]{Bertram} and \cite[Theorem 7.1]{Popa-Roth} for inspiration). We shall try to clarify as many details as possible, for our own benefit and, hopefully, that of the novice reader.
@@ -345,7 +1036,7 @@ In order to prove that the dashed arrow exists, we need to show that $\phi$ is t
  \item $h^0(\phi^\vee)$ is zero because: the LHS involves automorphisms of the rational tail that leave $C^{(0)}$ fixed, while the RHS involves deformations of $C^{(0)}$, so there is no possible interference.
  \item $h^1(\phi^\vee)$ is zero because: \textcolor{red}{this is slightly awkward.} There are two types of possible contributions to the LHS. They correspond to either moving the node $q$ along $C^{(0)}$, or smoothing it. The former appears in the relative tangent of $\chi'$ only if the marked curve $(C^{(0)},\mathbf p)$ has no automorphisms that may ``move $q$ back'', i.e. $(C^{(0)},\mathbf p)$ is a stable pointed curve. The latter matters only if $(C^{(0)},q,\mathbf p)$ has no moduli, i.e. $(C^{(0)},\mathbf p)$ is a rational tail with less than 3 markings. \textcolor{red}{I will try to justify why the first type vanishes under $h^1(\phi^\vee)$, and leave the second type because I do not understand it as yet.} Look at the long exact sequence
  
- \begin{align*}
+\begin{align*}
   0 &\to \Hom(\Omega_{C^{(0)}},\mathcal O_{C^{(0)}}(-q-\sum p_i)) &\to \Hom(\Omega_{C^{(0)}},\mathcal O_{C^{(0)}}(-\sum p_i)) &\to \\
   T_{C^{(0)},q} &\to \Ext^1(\Omega_{C^{(0)}},\mathcal O_{C^{(0)}}(-q-\sum p_i)) &\to \Ext^1(\Omega_{C^{(0)}},\mathcal O_{C^{(0)}}(-\sum p_i)) &\to 0
  \end{align*}
@@ -437,9 +1128,8 @@ When thinking of $\mathbb F_1$ as a $\PP^1$-bundle over $\PP^1$, $C_1$ and $C_3$
 Let us look at $\M{0}{2}{\mathbb F_1}{[C_4]}$. Since $[C_4]=[C_2]+[C_3]$, there are going to be maps of the following sort: the source curve is reducible $R_1\sqcup_q R_2$, $R_1$ is mapped isomorphically to a fiber (i.e. in class $[C_3]$) and $R_2$ is mapped isomorphically to $C_2$, all the markings belong to $R_1$. So $R_2$ is a rational tail and deserves to be contracted. Notice that the line bundle $\mathcal O(D_2)$ has degree $-1$ on $R_2$ (and $1$ on $R_1$). In this case everything works well because the corresponding section $u_{2|R_1}$ must vanish at the node, so we can divide it by a chosen (once for all toric line bundles) section of $\mathcal O_{R_1}(q)$.
 
 Consider now $\M{0}{2}{\mathbb F_1}{2[C_2]+[C_3]}$. Certainly there are going to be maps similar to the ones described above, with $R_2$ now covering $C_2$ $2\colon 1$. The point is that $\mathcal O(D_2)$ has degree $-2$ on $R_2$, but $u_{2|R_1}$ doesn't have to vanish at the node of order $2$, so we are in trouble. \textcolor{blue}{Something is going on here: in this case there is a boundary component where the map is of the type that we have just described, and the requirement that $u_{2|R_1}$ vanishes of order $2$ at the node defines precisely the intersection with the main component. Check this. Could we possibly exploit this phenomenon to define a smaller compactification, possibly even smaller than quasimaps?}
-\newpage
 
-\section{Quasimap String Equation for $\PP^r$}
+\section{The Quasimap String Equation for $\PP^r$}
 
 The string equation for the Gromov--Witten invariants of a smooth projective variety $X$ is given by
 \begin{align*} \langle \mathbbm{1} , \gamma_1 \psi^{a_1} , \ldots, & \gamma_n \psi^{a_n} \rangle_{g,n+1,\beta}^X = \\
@@ -495,262 +1185,6 @@ but now, because of the stronger stability condition, $\rho$ also contracts the 
 \begin{conj} $\rho^* \omega_\eta ( \Sigma_{i=1}^n x_i ) = \omega_\psi (\Sigma_{i=1}^n x_i - T_{n+1})$ \end{conj}
 
 Once we have this, the string equation follows as in the stable maps case by pulling back along the section $x_i$ (and using the obvious fact that $x_i^* T_{n+1} = 0$).
-
-\newpage
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\section{Quasimaps to $\PP^r$ relative to a hyperplane}
-
-We first deal with genus 0 quasimaps to projective space, relative to a hyperplane. We give a Gathmann-like description of the space of relative quasimaps as a closed substack of the moduli space of (absolute) quasimaps to $\PP^r$; it turns out to be irreducible of the expected dimension. Finally, we retrieve a Gathmann-type formula by pushforward along the comparison morphism $\comp\colon \M{0}{n}{\PP^r}{d}\to\Q{0}{n}{\PP^r}{d}$.
-
-Fix coordinates on $\PP^r$ such that the hyperplane $H$ is $\{x_0=0\}$. Let $\alpha=(\alpha_1,\ldots,\alpha_n)$ be an $n$-tuple of nonnegative integers. Consider the following locus $\Qt{0}{\alpha}{\PP^r|H}{d}$ inside $\Q{0}{n}{\PP^r}{d}$: the quasimaps $(C,x_1,\ldots,x_n,L,u_0,\ldots,u_r)$ such that, if $Z$ is a connected component of the vanishing locus of $u_0$ in $C$, then one of the following holds:
-
-\begin{enumerate}
-\item $Z$ is a point, either unmarked, or one of the $x_i$'s, and in this case $u_0$ vanishes at $Z$ with multiplicity at least $\alpha_i$.
-\item $Z$ is a curve (\emph{internal}); letting $C^{(1)},\ldots,C^{(k)}$ be the (\emph{external}) irreducible components adjacent to $Z$, with nodes $q_i=Z\cap C^{(i)}$, and $m^{(i)}$ the order of vanishing of $u_{0|C^{(i)}}$ at $q_i$, we must have
-\[
-\deg(L_{|Z})+\sum_{i=1}^k m^{(i)}\geq\sum_{x_j\in Z} \alpha_j
-\]
-\end{enumerate}
-
-On the other hand, denote by $\mathcal Q_{0,\alpha}(\PP^r|H,d)$ the \emph{nice locus}, consisting of actual maps from an irreducible curve (i.e. $\PP^1$) and with specified tangency condition $\alpha$ at the markings $\mathbf x$. Notice that this is an irreducible, locally closed substack of $\Q{0}{n}{\PP^r}{d}$, by pretty much the same argument as in \cite[Lemma 1.8]{Ga}; it has codimension $\sum\alpha$. In fact it is isomorphic to the nice locus inside stable maps, that Gathmann denotes by $\mathcal M_{0,\alpha}(\PP^r|H,d)$ \cite[Def. 1.6]{Ga} (the stricter stability condition has no effect when the source curve is irreducible, of course provided $n\geq2$); hence:
-
-\begin{lem}\label{lem:comparison}
-The comparison morphism restricts to a birational morphism $\M{0}{\alpha}{\PP^r|H}{d}\to \Qt{0}{\alpha}{\PP^r|H}{d}$.
-\end{lem}
-\begin{proof}
-The contraction of a rational tail $R$ always happens far away from the markings, hence the only care we need to take is when the one component touching $R$ is internal (call it $Z$); in this case, observe that $m^{(R)}\leq\deg(f_{|R})$ and the quasimap resulting from the contraction of $R$ has $\deg(L_{|Z})=\deg(f_{|Z})+\deg(f_{|R})$, so the corresponding term only moves around the LHS of the $\alpha$-tangency condition nr. 2.
-
-Birationality follows from the fact that the comparison morphism restricts to give an isomorphism between the nice loci.
-\end{proof}
-
-\begin{lem}
-With notations as above (with $\sum\alpha\leq d$), $\Qt{0}{\alpha}{\PP^r|H}{d}$ is the closure of the nice locus $\mathcal Q_{0,\alpha}(\PP^r|H,d)$ inside $\Q{0}{n}{\PP^r}{d}$. 
-\end{lem}
-\begin{proof}
-$\Qt{0}{\alpha}{\PP^r|H}{d}\subseteq\overline{\mathcal Q_{0,\alpha}(\PP^r|H,d)}$: we show that, given any quasimap satisfying the $\alpha$-tangency conditions spelled above, it can be (infinitesimally) deformed to a stable \emph{map} satisfying Gathmann's conditions \cite[Def. 1.1 and Rmk. 1.4]{Ga}, and then appeal to \cite[Prop. 1.14]{Ga}.
-
-We induct on the number of components containing at least one base-point. If this number is zero, we're done (because quasimap stability is stronger than map stability); otherwise, pick such a component $C_0$, with base-points $p_1,\ldots,p_h$ and adjacent rational trees $R_1,\ldots,R_k$, joined to $C_0$ at the nodes $q_1,\ldots,q_k$. Since there are base-points but the quasimap respects the nondegeneracy condition, $\deg(L_{|C_0})>0$, and since $C_0\simeq\PP^1$ we can find a section $w$ of $L_{|C_0}\simeq\mathcal O_{\PP^1}(d_0)$ not vanishing at any of the base-points $p_i$'s; then it is enough to deform the section $u_{r|C_0}$ to $u_{r|C_0}+\epsilon w$ (and keep the other sections the same) in order to delete the base-points belonging to $C_0$. Notice that $u_{0|C_0}$ is unchanged, so the deformation still respects $\alpha$-tangency at the markings lying on $C_0$ (whether the latter is an internal or an external component). We need to check that such a deformation can be extended to the whole curve $C$ without changing the vanishing conditions on $u_0$. Notice that the action of $PGL_{r+1}$ on $\PP^r$ extends to an action of the group on the space of quasimaps; we can apply the matrix
-\[
-\begin{bmatrix}
-1 & & \\
- & \ddots & \\
- & \epsilon \frac{w(q_i)}{u_j(q_i)} & 1
-\end{bmatrix}
-\]
-to the restriction of the original quasimap to $R_i$, where $j$ is any index s.t. $u_j(q_i)\neq 0$ (one such must exist because the node is not allowed to be a base-point), and by doing this separately to every rational tree springing from $C_0$ we get a deformation of the original quasimap that still has $\alpha$-tangency with the hyperplane $H$ ($u_0$ hasn't been touched at all), but the base-points on $C_0$ have been eliminated.
-
-$\overline{\mathcal Q_{0,\alpha}(\PP^r|H,d)}\subseteq\Qt{0}{\alpha}{\PP^r|H}{d}$: consider a family of relative quasimaps over a smooth curve $S$, such that the generic fiber lies in the nice locus. Then we may blow-up the source curve (which is a fibered surface) in the base-points of the quasimap (that are finitely many smooth points of the central fiber) in order to get an actual morphism to $\mathbb P^r$; we may as well suppose that the central fiber of the new family is stable. Notice that the central fiber actually belongs to Gathmann's space $\M{0}{\alpha}{\PP^r|H}{d}$: we have just introduced some rational tails away from the markings, hence the only thing we have to check is, when we blow-up a base-point on an internal component, the rational tail will again be internal ($u_0\equiv 0$ in a neighborhood of the base-point), so it will contribute to the LHS of the $\alpha$-tangency condition nr. 2 in the very same way. We may now invoke \cite[Lemma 1.9]{Ga} and the quasimap case follows from Lemma \ref{lem:comparison}.
-\end{proof}
-From now on we shall denote this closed substack by $\Q{0}{\alpha}{\PP^r|H}{d}$.
-
-\medskip
-
-Increasing the multiplicity can be naively performed in the very same way as Gathmann did:
-\[
-\sigma^m_k:=x_k^*d^m_{\mathcal C/\overline{\mathcal Q}}(u_0)\in H^0(\overline{\mathcal Q},x_k^*\mathcal P^m_{\mathcal C/\overline{\mathcal Q}}(\mathcal L))
-\]
-with $m=\alpha_k+1$ cuts $\Q{0}{\alpha+e_k}{\PP^r|H}{d}$ inside $\Q{0}{\alpha}{\PP^r|H}{d}$, together with a bunch of degenerate contributions from quasimaps where the component on which $x_k$ lies is internal (call it $Z$) and (notice the equality sign!)
-\[
-\deg(L_{|Z})+\sum m^{(i)}=\sum_{x_j\in Z}\alpha_j.
-\]
-Of course, quasimap stability forces these degenerate contributions not to have any rational tail; this is really the only difference with the case of stable maps, and indeed we can pushforward Gathmann's formula along the comparison morphism $\comp\colon \M{0}{n}{\PP^r}{d}\to\Q{0}{n}{\PP^r}{d}$ and the only terms that are going to change are the degenerate ones with rational tails (in fact they disappear, since the restriction of the comparison map has positive dimensional fibers there). With an eye to the future, we remark that these contributions do matter when computing GW invariants of a CY hypersurface in projective space, and may well account for the divergence between GW and quasimap invariants in the CY case \cite[Rmk. 1.6]{Ga-MF}.
-
-\begin{lem}\label{lem:compare_psi}
-$\comp^*(\psi_k)=\psi_k$ and $\comp^*(x_k^*\mathcal L)=\ev_k^*(\mathcal O_{\mathbb P^r}(H))$.
-\end{lem}
-\begin{proof}
-Recall that $\psi_k=c_1(x_k^*\omega_{\mathcal C/\mathcal M})$ and contemplate the following diagram
-\bcd
-& & & \PP^r & \\
-\mathcal C_{\overline {\mathcal M}}\ar[rr,"\sst"]\ar[rd] \ar[urrr,"f"] & & \comp^*\mathcal C_{\overline {\mathcal Q}} \ar[ld]\ar[rr]\ar[ur,dashed] & & \mathcal C_{\overline {\mathcal Q}} \ar[d]\ar[ul,dashed] \\
-& \M{0}{n}{\PP^r}{d} \ar[rrr,"\comp"] \ar[ul,bend left,"x_k"]\ar[ur,bend right,"x_k"right=.2cm]& & & \Q{0}{n}{\PP^r}{d}\ar[u,bend right, "x_k"right]
-\ecd
-where $\sst$ is the strong stabilisation map, i.e. contracting the rational tails, which is an isomorphism near the markings.
-\end{proof}
-
-\begin{lem}\label{lem:posdimfiber}
-$\dim(\M{0}{(m^{(i)})}{\PP^r|H}{d}\cap \ev_1^*(p))>0$ everytime $rd>1$, where $p$ is a point of $H$, so the pushforward along $\comp$ of a degenerate locus with rational tails is 0.
-\end{lem}
-\begin{proof}
-$\dim(\M{0}{(m^{(i)})}{\PP^r|H}{d}\cap \ev_1^*(p))=(r-3)+(1-m^{(i)})+d(r+1)-(r-1)=(rd-1)+(d-m^{(i)})$.
-\end{proof}
-
-\begin{prop}
-Denote by $[D^\mathcal{Q}_{\alpha,k}(\PP^r|H,d)]$ the sum of the (product) fundamental classes of
-\[
-\Q{0}{\alpha^{(0)}\cup {(0,\ldots,0)}}{H}{d_0}\times_{(\PP^r)^k}\prod_{i=1}^k \Q{0}{(m^{(i)})\cup\alpha^{(i)}}{\PP^r|H}{d_i}
-\]
-with coefficient $\frac{m^{(1)}\ldots m^{(k)}}{k!}$, where the sum runs over all splittings $d=\sum d_i$ and $\alpha=\bigcup \alpha^{(i)}$ such that the above spaces are well-defined, in particular $|\alpha^{(0)}|+k$ and $|\alpha^{(i)}|+1$ are all $\geq 2$, and such that
-\[
-d_0+\sum_{i=1}^k m^{(i)}=\sum \alpha^{(0)}
-\]
-
-The following formula holds
-\[
-(\alpha_k\psi_k+x_k^*\mathcal L)\cdot[\Q{0}{\alpha}{\PP^r|H}{d}]=[\Q{0}{\alpha+e_k}{\PP^r|H}{d}]+[D^\mathcal{Q}_{\alpha,k}(\PP^r|H,d)].
-\]
-\end{prop}
-\begin{proof}
-Follows from \cite[Thm. 2.6]{Ga} by pushforward along $\comp\colon \M{0}{n}{\PP^r}{d}\to\Q{0}{n}{\PP^r}{d}$, using the projection fomula and Lemmas \ref{lem:comparison}, \ref{lem:compare_psi} and \ref{lem:posdimfiber}.
-\end{proof}
-
-\section{Comparison with the GIT construction}
-Let $X$ be a hypersurface of degree $a$ in $\PP^r$. In the preceding sections, we have put a virtual class on $\Q{g}{n}{X}{d}$ by way of the following Cartesian diagram:
-
-\bcd
-\Q{g}{n}{X}{d}\ar[d]\ar[r] & \Q{g}{n}{\PP^r}{d}\ar[d,"\nu_a"] \\
-\Q{g}{n}{H}{ad}\ar[r] & \Q{g}{n}{\PP^N}{ad}
-\ecd
-
-where $N={{r+a}\choose{a}}-1$ and $\nu_a$ is the Veronese embedding. In fact, $\Q{g}{n}{X}{d}$ is thought of as representing stable quasimaps to $\PP^r$ such that the corresponding sections satisfy the equation for $X$ inside $\PP^r$, that is a homogeneous polynomial $Q$ of degree $a$, i.e. gives a section of $L^{\otimes a}$ on the source curve $C$.
-
-We wish to compare this with the GIT approach of \cite{CFKM}. Here $X$ is seen as the GIT quotient of the affine cone $C_X\subseteq \mathbb A^{r+1}$ with respect to the diagonal $\mathbb G_m$-action. Objects of $\Q{g}{n}{X}{d}^\text{GIT}$ are diagrams of the form
-
-\bcd
-P\ar[d,"\mathbb G_m"]\ar[r] & C_X & \text{or, equivalently,} & P\times_{\mathbb G_m} C_X \ar[d,"\rho" left] \\
-C & & & C \ar[u,bend right,"u"right]
-\ecd
-and the dual perfect obstruction theory with respect to $\mathfrak{Bun}_{\mathbb G_m}$ is given by $R^\bullet\pi_*(u^*\mathbb T^\bullet_\rho$), where $\pi\colon \mathcal C_{\mathfrak{Bun}}\to\mathfrak{Bun}_{\mathbb G_m}$ is the universal curve.
-
-Notice that $\mathfrak{Bun}_{\mathbb G_m}\simeq \mathfrak{Pic}$ by taking the line bundle $L=P\times_{\mathbb G_m}\mathbb A^1\to C$ associated to the $\mathbb G_m$-torsor $P\to C$. Furthermore, the $\mathbb G_m$-equivariant embedding in a smooth stack
-\bcd
-P\times_{\mathbb G_m} C_X \ar[r,hook]\ar[d,"\rho" left] & P\times_{\mathbb G_m}\mathbb A^{r+1}\simeq L^{\oplus r+1}\ar[dl]\\
-C \ar[u,bend right,"u"right] &
-\ecd
-gives us $u^*T^\bullet_\rho\simeq[L^{\oplus r+1}\to L^{\otimes a}]$, where the arrow is induced by $Q$, and shows that both the modular interpretation and the obstruction theory coincide.
-
-\section{The quasimap mirror theorem}
-Assuming that quasimap invariants for $\PP^r$ coincide with Gromov-Witten invariants on the nose, we get the following result.
-\begin{dfn}
- For a complete intersection $X$ in $\PP^r$ and $d>0$, let
- \[
-  I^X_d=(\ev_1)_*\left(\frac{1}{z-\psi_1}[\Q{0}{2}{X}{d}]^\text{vir}\right)
- \]
- where $\ev_1$ is always thought of as landing in $\PP^r$.
- 
- Set also $I^X_0=\mathbbm 1_{\PP^r}$ and $I^X=\sum_{d\geq 0}I^X_d q^d$.
-\end{dfn}
-\begin{thm}
-Let $X\subseteq\PP^4$ be a smooth quintic 3-fold. Then
- \[
-  \sum_{d\geq 0} q^d\prod_{i=0}^{5d}(X+iz)I^{\PP^4}_d= XP(q)I^X
- \]
-where
-\[
- P(q)=1+\sum_{d>0}dq^d\langle H^4,\mathbbm 1_{\PP^4}\rangle_{\Q{0}{\{5d,0\}}{\PP^4|X}{d}}=1+\sum_{d>0}q^d\frac{(5d)!}{(d!)^5}\sum_{i=d+1}^{5d-1}\frac{1}{i}.
-\]
-\end{thm}
-\begin{proof}
- We'll write it for a general CY hypersurface in $i\colon X_a\hookrightarrow\PP^r$, so the degree of $X$ is $a=r+1$. Notice that dual bases for $H^*(\PP^r)$ are given by $T^i=H^i$ and $T_i=H^{r-i}$, while (induced) dual bases for $i^*H^*(\PP^r)$ are $S^i=H^i$ and $S_i=\frac{1}{a}H^{r-i-1}$; the restriction of $H^r$ is 0.
- 
- Define
- \[
-  I^{\PP^r|X}_{d,(m)}=(\ev_1)_*\left(\frac{1}{z-\psi_1}[\Q{0}{\{m,0\}}{\PP^r|X}{d}]^\text{vir}\right),
- \]
-which coincides with the absolute $I$-function defined above for $m=0$, and
-\[
- J^{\PP^r|X}_{d,(m)}=(\ev_1)_*\left(m[\Q{0}{\{m,0\}}{\PP^r|X}{d}]^\text{vir}+\frac{1}{z-\psi_1}[D_m^{\mathcal Q}(\PP^r|X,d)]^\text{vir}\right).
-\]
-Then, by Gathmann's formula, we can prove that
-\begin{equation}\label{eqn:G}
- (X+mz) I^{\PP^r|X}_{d,(m)}= I^{\PP^r|X}_{d,(m+1)}+ J^{\PP^r|X}_{d,(m)},
-\end{equation}
-from which it follows that
-\[
- \prod_{i=0}^{ad}(X+iz) I^{\PP^r}_d=\sum_{m=0}^{ad}\prod_{i=m+1}^{ad}(X+iz)J^{\PP^r|X}_{d,(m)}.
-\]
-It is now a matter of evaluating the RHS. Notice that $J^{\PP^r|X}_{d,(m)}$ is made of two parts:
-\begin{itemize}
- \item the boundary terms: the strong stability condition for quasimaps and the choice of working with only two markings makes these boundary contributions particularly simple to compute. The shape of the source curve is that of a snake which the hypersurface cuts into two pieces, the internal one of degree $d^{(0)}$, and the external one of degree $d^{(1)}$ and multiplicity $m^{(1)}$ of contact with $X$, with the first marking point belonging to the internal component and the second to the external one.
- 
- The invariants which we need to consider will hence be of the form
- \[
-  \langle T^i\psi_1^j,S_i\rangle_{\Q{0}{2}{X}{d^{(0)}}}\langle S^i,\mathbbm 1_{\PP^r}\rangle_{\Q{0}{\{m^{(1)},0\}}{\PP^r|X}.{d^{(1)}}}
- \]
- A dimensional computation
-\begin{align*}
- 0\leq \codim S_i &= \dim X-\codim S^i \\
- &= \dim X-\vdim \Q{0}{\{m^{(1)},0\}}{\PP^r|X}{d^{(1)}} \\
- &= \dim X-(\dim\PP^r-3+2-m^{(1)}-K_{\PP^r}\cdot d^{(1)}\ell)\\
- &= m^{(1)}-X\cdot d^{(1)}\ell+K_{X}\cdot d^{(1)}\ell \\
- &= m^{(1)}-X\cdot d^{(1)}\ell\leq 0
-\end{align*}
-forces $S_1=\mathbbm 1_X$ and $S^1=\frac{1}{a}H^{r-1}$, $m^{(1)}=ad^{(1)}$ hence
-\[
- m=\alpha_1=X\cdot d^{(0)}\ell+m^{(1)}=ad,
-\]
-so this doesn't show up but at the very end of the ``increasing the multiplicity'' process.
-
-\item The other term in $J^{\PP^r|X}_{d,(m)}$ is $m(\ev_1)_*[\Q{0}{\{m,0\}}{\PP^r|X}{d}]^\text{vir}$; notice that it only gets insertions from the cohomology of $\PP^r$ (restricted to $X$). On the other hand
-\[
- \vdim \Q{0}{\{m,0\}}{\PP^r|X}{d}=r-3+2-m+d(r+1)\geq r-1
-\]
-because $m\leq ad$; since the restriction of $H^r$ to $X$ vanishes, the only insertion that contributes is $H^{r-1}$, forcing the equality $m=ad$.
-\end{itemize}
-So, in the end, we see that equation \ref{eqn:G} reduces to
-\begin{align*}
- \prod_{i=0}^{ad}(X+iz) I^{\PP^r}_d &=J^{\PP^r|X}_{d,(ad)} \\
- &= \sum_{i=0,\ldots,r-1;j\geq 0}(da)\langle H^{r-1},\mathbbm 1_{\PP^r}\rangle_{\Q{0}{\{ad,0\}}{\PP^r|X}{d}} H \\
- &+\sum_{\substack{0<d^{(0)}<d \\ d^{(0)}+d^{(1)}=d}}z^{j+1}H^{r-i}\langle H^i\psi_1^j,\mathbbm 1_{X}\rangle_{\Q{0}{2}{X}{d^{(0)}}}(ad^{(1)})\langle \frac{1}{a}H^{r-1},\mathbbm 1_{\PP^r}\rangle_{\Q{0}{\{ad^{(1)},0\}}{\PP^r|X}{d^{(1)}}}\\
- &+z^{j+1}H^{r-i}\langle H^i\psi_1^j,\mathbbm 1_{X}\rangle_{\Q{0}{2}{X}{d}}
-\end{align*}
-from which the first claim of the theorem is now evident (with a bit of rearranging, using $X=aH$ and $i^*(H^r)=0$, so in the last line everything is divisible by $H$).
-
-\smallskip
-
-In order to evaluate $P(q)$, we use again Gathmann's algorithm, this time in the other direction, to go all the way back to $\PP^r$; then we make use of our assumption that quasimap invariants and ordinary GW coincide for the projective space. So it starts:
-\[
- [\Q{0}{\{ad,0\}}{\PP^r|X}{d}]^\text{vir}=(X+(ad-1)\psi_1)[\Q{0}{\{ad-1,0\}}{\PP^r|X}{d}]^\text{vir}-[D_{ad}^{\mathcal Q}(\PP^r|X,d)]^\text{vir}
-\]
-When looking at the boundary, the invariants that come into play are of the form
-\[
- \langle H^{r-1},S_i\rangle_{\Q{0}{2}{X}{d^{(0)}}}\langle S^i,\mathbbm 1_{\PP^r}\rangle_{\Q{0}{\{a(d-d^{(0)})-1,0\}}{\PP^r|X}{d-d^{(0)}}}
-\]
-but notice that they must vanish by dimensional reasons, since
-\[
- \codim(S_i)=\dim X-3+2-K_X\cdot d^{(0)}\ell-(r-1)=-1.
-\]
-So
-\begin{align*}
- d\langle H^{r-1},\mathbbm 1_{\PP^r}\rangle_{\Q{0}{\{ad,0\}}{\PP^r|X}{d}} \\
- = d[\Q{0}{2}{\PP^r}{d}]\cap\ev_1^*(H^{r-1})\prod_{i=0}^{ad-1}(\ev_1^*X+i\psi_1) \\
- = d[\Q{0}{2}{\PP^r}{d}]\cap\left((da-1)!\psi_1^{ad}\ev_1^*(H^{r-1})+a\left(\sum_{j=1}^{ad-1}\frac{(ad-1)!}{j}\right)\psi_1^{ad-1}\ev_1^*(H^{r})\right) \\
- = d\left((da-1)!\langle \psi_1^{ad-1}H^{r-1}\rangle_{0,1,d}+a\left(\sum_{j=1}^{ad-1}\frac{(ad-1)!}{j}\right)\langle\psi_1^{ad-2}H^{r}\rangle_{0,1,d}\right)
-\end{align*}
-using the equality of quasimap and GW invariants and the string equation for the latter. These numbers can be extracted from the $J$-function for $\PP^r$
-\[
- I^{\PP^r}_d=\prod_{i=1}^d\frac{1}{H+i}
-\]
-from which
-\begin{align*}
- \langle \psi_1^{ad-2}\ev_1^*(H^{r})\rangle_{0,1,d} &=\frac{1}{(d!)^{r+1}} \\
- \langle \psi_1^{ad-1}\ev_1^*(H^{r-1}\rangle_{0,1,d} &=-(r+1)\frac{1}{(d!)^{r+1}}\sum_{j=1}^d\frac{1}{j}
-\end{align*}
-and the second claim of the theorem follows.
-\end{proof}
 
 \bibliographystyle{alpha}
 \bibliography{relqm}
