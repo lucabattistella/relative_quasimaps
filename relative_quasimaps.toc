@@ -4,7 +4,7 @@
 \contentsline {section}{\tocsection {}{3}{The Recursion Formula for $\mathbb P^N$ Relative $H$}}{1}
 \contentsline {section}{\tocsection {}{4}{Comparison with the GIT Construction}}{5}
 \contentsline {section}{\tocsection {}{5}{Recursion Formula in the General Case}}{6}
-\contentsline {section}{\tocsection {}{6}{The Quasimap Mirror Theorem}}{20}
-\contentsline {section}{\tocsection {Appendix}{A}{Functoriality of Quasimap Spaces}}{22}
-\contentsline {section}{\tocsection {Appendix}{B}{The Quasimap String Equation for $\mathbb P^r$}}{28}
-\contentsline {section}{\tocsection {Appendix}{}{References}}{30}
+\contentsline {section}{\tocsection {}{6}{The Quasimap Mirror Theorem}}{22}
+\contentsline {section}{\tocsection {Appendix}{A}{Functoriality of Quasimap Spaces}}{24}
+\contentsline {section}{\tocsection {Appendix}{B}{The Quasimap String Equation for $\mathbb P^r$}}{30}
+\contentsline {section}{\tocsection {Appendix}{}{References}}{32}
