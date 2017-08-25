@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  24 AUG 2017 18:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  25 AUG 2017 17:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -105,6 +105,25 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 \thm@headsep=\skip50
 \dth@everypar=\toks24
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count99
+\c@@ppsavesec=\count100
+\c@@ppsaveapp=\count101
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/marginnote/marginnote.sty
+Package: marginnote 2012/03/29 v1.1i non floating margin notes for LaTeX
+\c@mn@abspage=\count102
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/stmaryrd/stmaryrd.sty
+Package: stmaryrd 1994/03/03 St Mary's Road symbol package
+\symstmry=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
+(Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
+)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2016/04/23 3.9r The Babel package
 
@@ -113,20 +132,13 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2016/04/23 3.9r Babel common definitions
-\babel@savecnt=\count99
+\babel@savecnt=\count103
 \U@D=\dimen114
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/marginnote/marginnote.sty
-Package: marginnote 2012/03/29 v1.1i non floating margin notes for LaTeX
-\c@mn@abspage=\count100
-)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/yfonts/yfonts.sty
 Package: yfonts 2003/01/08 v1.3 (WaS)
 )
@@ -151,7 +163,7 @@ Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ucs/data/uni-global.def
 File: uni-global.def 2013/05/13 UCS: Unicode global data
 )
-\uc@secondtry=\count101
+\uc@secondtry=\count104
 \uc@combtoks=\toks27
 \uc@combtoksb=\toks28
 \uc@temptokena=\toks29
@@ -193,7 +205,7 @@ Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count102
+\Gread@gobject=\count105
 ))
 \Gin@req@height=\dimen115
 \Gin@req@width=\dimen116
@@ -234,24 +246,24 @@ L3 Module: l3tl 2016/03/26 v6465 L3 Token lists
 L3 Module: l3str 2016/03/24 v6441 L3 Strings
 L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
 L3 Module: l3int 2016/03/24 v6441 L3 Integers
-\c_max_int=\count103
-\l_tmpa_int=\count104
-\l_tmpb_int=\count105
-\g_tmpa_int=\count106
-\g_tmpb_int=\count107
+\c_max_int=\count106
+\l_tmpa_int=\count107
+\l_tmpb_int=\count108
+\g_tmpa_int=\count109
+\g_tmpb_int=\count110
 L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
 L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
-\g__prg_map_int=\count108
+\g__prg_map_int=\count111
 L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
 L3 Module: l3token 2016/04/03 v6470 L3 Experimental token manipulation
 L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
 L3 Module: l3msg 2016/03/26 v6464 L3 Messages
 L3 Module: l3file 2016/03/25 v6458 L3 File and I/O operations
-\l_iow_line_count_int=\count109
-\l__iow_target_count_int=\count110
-\l__iow_current_line_int=\count111
-\l__iow_current_word_int=\count112
-\l__iow_current_indentation_int=\count113
+\l_iow_line_count_int=\count112
+\l__iow_target_count_int=\count113
+\l__iow_current_line_int=\count114
+\l__iow_current_word_int=\count115
+\l__iow_current_indentation_int=\count116
 L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \c_zero_dim=\dimen117
 \c_max_dim=\dimen118
@@ -272,18 +284,18 @@ L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
 L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
-\g__keyval_level_int=\count114
-\l_keys_choice_int=\count115
+\g__keyval_level_int=\count117
+\l_keys_choice_int=\count118
 L3 Module: l3fp 2016/03/26 v6465 L3 Floating points
-\c__fp_leading_shift_int=\count116
-\c__fp_middle_shift_int=\count117
-\c__fp_trailing_shift_int=\count118
-\c__fp_big_leading_shift_int=\count119
-\c__fp_big_middle_shift_int=\count120
-\c__fp_big_trailing_shift_int=\count121
-\c__fp_Bigg_leading_shift_int=\count122
-\c__fp_Bigg_middle_shift_int=\count123
-\c__fp_Bigg_trailing_shift_int=\count124
+\c__fp_leading_shift_int=\count119
+\c__fp_middle_shift_int=\count120
+\c__fp_trailing_shift_int=\count121
+\c__fp_big_leading_shift_int=\count122
+\c__fp_big_middle_shift_int=\count123
+\c__fp_big_trailing_shift_int=\count124
+\c__fp_Bigg_leading_shift_int=\count125
+\c__fp_Bigg_middle_shift_int=\count126
+\c__fp_Bigg_trailing_shift_int=\count127
 L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \c_empty_box=\box29
 \l_tmpa_box=\box30
@@ -333,7 +345,7 @@ L3 Module: l3luatex 2016/03/26 v6465 L3 Experimental LuaTeX-specific functions
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2016/03/26 v6465 L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count125
+\l__driver_color_stack_int=\count128
 \l__driver_tmp_box=\box44
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
@@ -422,18 +434,18 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2016/05/18 v6512 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count126
-\l__xparse_m_args_int=\count127
-\l__xparse_mandatory_args_int=\count128
-\l__xparse_processor_int=\count129
-\l__xparse_v_nesting_int=\count130
+\l__xparse_current_arg_int=\count129
+\l__xparse_m_args_int=\count130
+\l__xparse_mandatory_args_int=\count131
+\l__xparse_processor_int=\count132
+\l__xparse_v_nesting_int=\count133
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.st
 y
 Package: xtemplate 2016/05/18 v6512 L3 Experimental prototype document function
 s
 \l__xtemplate_tmp_dim=\dimen148
-\l__xtemplate_tmp_int=\count131
+\l__xtemplate_tmp_int=\count134
 \l__xtemplate_tmp_muskip=\muskip17
 \l__xtemplate_tmp_skip=\skip59
 )
@@ -499,10 +511,10 @@ ode.tex
 \pgf@yc=\dimen163
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count132
-\c@pgf@countb=\count133
-\c@pgf@countc=\count134
-\c@pgf@countd=\count135
+\c@pgf@counta=\count135
+\c@pgf@countb=\count136
+\c@pgf@countc=\count137
+\c@pgf@countd=\count138
 \t@pgf@toka=\toks38
 \t@pgf@tokb=\toks39
 \t@pgf@tokc=\toks40
@@ -523,8 +535,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count136
-\pgfsyssoftpath@bigbuffer@items=\count137
+\pgfsyssoftpath@smallbuffer@items=\count139
+\pgfsyssoftpath@bigbuffer@items=\count140
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -537,7 +549,7 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen164
-\pgfmath@count=\count138
+\pgfmath@count=\count141
 \pgfmath@box=\box48
 \pgfmath@toks=\toks41
 \pgfmath@stack@operand=\toks42
@@ -562,7 +574,7 @@ code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count139
+\c@pgfmathroundto@lastzeros=\count142
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
@@ -600,7 +612,7 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box49
 \pgf@hbox=\box50
 \pgf@layerbox@main=\box51
-\pgf@picture@serial@count=\count140
+\pgf@picture@serial@count=\count143
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
@@ -635,7 +647,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 e.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen188
-\pgf@sys@shading@range@num=\count141
+\pgf@sys@shading@range@num=\count144
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -698,7 +710,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count142
+\pgf@plot@mark@count=\count145
 \pgfplotmarksize=\dimen193
 )
 \tikz@lastx=\dimen194
@@ -711,19 +723,19 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@figbox@bg=\box55
 \tikz@tempbox=\box56
 \tikz@tempbox@bg=\box57
-\tikztreelevel=\count143
-\tikznumberofchildren=\count144
-\tikznumberofcurrentchild=\count145
-\tikz@fig@count=\count146
+\tikztreelevel=\count146
+\tikznumberofchildren=\count147
+\tikznumberofcurrentchild=\count148
+\tikz@fig@count=\count149
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count147
-\pgfmatrixcurrentcolumn=\count148
-\pgf@matrix@numberofcolumns=\count149
+\pgfmatrixcurrentrow=\count150
+\pgfmatrixcurrentcolumn=\count151
+\pgf@matrix@numberofcolumns=\count152
 )
-\tikz@expandcount=\count150
+\tikz@expandcount=\count153
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -789,14 +801,14 @@ Loading kernel: messages; fonts; allocations: state,
  direction,
 \d@X=\dimen284
 \d@Y=\dimen285
-\K@=\count151
-\KK@=\count152
-\Direction=\count153
+\K@=\count154
+\KK@=\count155
+\Direction=\count156
 \K@dXdY=\dimen286
 \K@dYdX=\dimen287
 \xyread@=\read3
 \xywrite@=\write4
-\csp@=\count154
+\csp@=\count157
 \quotPTK@=\dimen288
 
 utility macros; pictures: \xy, positions,
@@ -816,7 +828,7 @@ Package: xy 2013/10/06 Xy-pic version 3.8.9
  Xy-pic option: All features v.3.8
 (/usr/local/texlive/2016/texmf-dist/tex/generic/xypic/xycurve.tex
  Xy-pic option: Curve and Spline extension v.3.12 curve,
-\crv@cnt@=\count155
+\crv@cnt@=\count158
 \crvpts@=\toks50
 \splinebox@=\box61
 \splineval@=\dimen289
@@ -842,13 +854,13 @@ Package: xy 2013/10/06 Xy-pic version 3.8.9
  Xy-pic option: Colour extension v.3.11 loaded)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/xypic/xymatrix.tex
  Xy-pic option: Matrix feature v.3.14
-\Row=\count156
-\Col=\count157
+\Row=\count159
+\Col=\count160
 \queue@=\toks51
 \queue@@=\toks52
-\qcount@=\count158
-\qcount@@=\count159
-\matrixsize@=\count160
+\qcount@=\count161
+\qcount@@=\count162
+\matrixsize@=\count163
  loaded)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/xypic/xyarrow.tex
  Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded)
@@ -872,10 +884,10 @@ LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
 (Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
 )
-\c@thm=\count161
-\c@ipotesi=\count162
-\c@claim=\count163
-\c@num=\count164
+\c@thm=\count164
+\c@ipotesi=\count165
+\c@claim=\count166
+\c@num=\count167
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
@@ -904,12 +916,12 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks53
 \XKV@tempa@toks=\toks54
 )
-\XKV@depth=\count165
+\XKV@depth=\count168
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count166
+\etb@tempcnta=\count169
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
@@ -932,7 +944,7 @@ Package: newpxmath 2016/02/11 v1.295
 
 `newpxmath' v1.295, 2016/02/11 Math macros based on pxfonts (msharpe)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/kastrup/binhex.tex)
-\px@Isdigit=\count167
+\px@Isdigit=\count170
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 63.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/zpltlf/m/n on input line 63.
@@ -973,7 +985,7 @@ LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
 (Font)                  OML/cmm/b/it --> OML/npxmi/m/it on input line 86.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
 (Font)                  OML/npxmi/m/it --> OML/npxmi/b/it on input line 87.
-\symlettersA=\mathgroup6
+\symlettersA=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
 (Font)                  U/npxmia/m/it --> U/npxmia/b/it on input line 94.
 LaTeX Font Info:    Redeclaring math alphabet \mathfrak on input line 96.
@@ -984,10 +996,10 @@ LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> OMS/npxsy/m/n on input line 103.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/npxsy/m/n --> OMS/npxsy/b/n on input line 104.
-\symAMSm=\mathgroup7
+\symAMSm=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `AMSm' in version `bold'
 (Font)                  U/npxsym/m/n --> U/npxsym/b/n on input line 123.
-\symsymbolsC=\mathgroup8
+\symsymbolsC=\mathgroup9
 LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `bold'
 (Font)                  U/npxsyc/m/n --> U/npxsyc/b/n on input line 145.
 LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 165.
@@ -1003,7 +1015,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> LMX/npxexx/m/n on input line 165.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  LMX/npxexx/m/n --> LMX/npxexx/b/n on input line 166.
-\symlargesymbolsPXA=\mathgroup9
+\symlargesymbolsPXA=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `largesymbolsPXA' in version `bold'
 
 (Font)                  U/npxexa/m/n --> U/npxexa/b/n on input line 181.
@@ -1014,87 +1026,94 @@ LaTeX Info: Redefining \openbox on input line 1503.
 (./relative_quasimaps.aux)
 \openout1 = `relative_quasimaps.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 126.
-LaTeX Font Info:    Try loading font information for OML+npxmi on input line 12
-6.
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 131.
+LaTeX Font Info:    Try loading font information for OML+npxmi on input line 13
+1.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for OMS/npxsy/m/n on input line 126.
-LaTeX Font Info:    Try loading font information for OMS+npxsy on input line 12
-6.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OMS/npxsy/m/n on input line 131.
+LaTeX Font Info:    Try loading font information for OMS+npxsy on input line 13
+1.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/omsnpxsy.fd
 File: omsnpxsy.fd 2013/03/24 Fontinst v1.933 font definitions for OMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 126.
-LaTeX Font Info:    Try loading font information for U+npxexa on input line 126
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 131.
+LaTeX Font Info:    Try loading font information for U+npxexa on input line 131
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 126.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 126.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 131.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 131.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 126.
+(Font)              scaled to size 9.0pt on input line 131.
 LaTeX Font Info:    Try loading font information for OT1+zpltlf on input line 1
-26.
+31.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/ot1zpltlf.fd
 File: ot1zpltlf.fd 2015/01/17 v1.0 font definition file for OT1/zpl/tlf
 )
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 126.
+(Font)              scaled to size 9.0pt on input line 131.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 126.
+(Font)              scaled to size 7.3pt on input line 131.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 126.
-LaTeX Font Info:    Try loading font information for U+msa on input line 126.
+(Font)              scaled to size 5.5pt on input line 131.
+LaTeX Font Info:    Try loading font information for U+msa on input line 131.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 126.
+LaTeX Font Info:    Try loading font information for U+msb on input line 131.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+npxmia on input line 126
-.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 131.
 
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
+
+LaTeX Font Warning: Font shape `U/stmry/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 131.
+
+LaTeX Font Info:    Try loading font information for U+npxmia on input line 131
+.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/unpxmia.fd
 File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
 )
-LaTeX Font Info:    Try loading font information for U+npxsym on input line 126
+LaTeX Font Info:    Try loading font information for U+npxsym on input line 131
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/unpxsym.fd
 File: unpxsym.fd 2015/03/21 Fontinst v1.933 font definitions for U/npxsym.
 )
-LaTeX Font Info:    Try loading font information for U+npxsyc on input line 126
+LaTeX Font Info:    Try loading font information for U+npxsyc on input line 131
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/unpxsyc.fd
@@ -1108,16 +1127,16 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count168
+\scratchcounter=\count171
 \scratchdimen=\dimen295
 \scratchbox=\box62
-\nofMPsegments=\count169
-\nofMParguments=\count170
+\nofMPsegments=\count172
+\nofMParguments=\count173
 \everyMPshowfont=\toks55
-\MPscratchCnt=\count171
+\MPscratchCnt=\count174
 \MPscratchDim=\dimen296
-\MPnumerator=\count172
-\makeMPintoPDFobject=\count173
+\MPnumerator=\count175
+\makeMPintoPDFobject=\count176
 \everyMPtoPDFconversion=\toks56
 ) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
@@ -1165,29 +1184,29 @@ e
 ))
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 126.
+(Font)              scaled to size 10.95pt on input line 131.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 126.
+(Font)              scaled to size 8.0pt on input line 131.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 6.1pt on input line 126.
-Package xypdf Info: Line width: 0.64604pt on input line 126.
-\c@mv@tabular=\count174
-\c@mv@boldtabular=\count175
+(Font)              scaled to size 6.1pt on input line 131.
+Package xypdf Info: Line width: 0.64604pt on input line 131.
+\c@mv@tabular=\count177
+\c@mv@boldtabular=\count178
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sc' will be
-(Font)              scaled to size 9.0pt on input line 128.
+(Font)              scaled to size 9.0pt on input line 133.
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 132.
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 136.
 
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 132.
+(Font)              scaled to size 10.95pt on input line 136.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 133.
+(Font)              scaled to size 10.95pt on input line 138.
  (./relative_quasimaps.toc)
 \tf@toc=\write5
 \openout5 = `relative_quasimaps.toc'.
 
 
-Overfull \hbox (25.83867pt too wide) in paragraph at lines 143--144
+Overfull \hbox (25.83867pt too wide) in paragraph at lines 150--151
 \T1/zpltlf/m/n/10.95 lo-cus $[]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OM
 S/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it/10.95 ~$ \T1/zpltlf
 /m/n/10.95 in-side $[][]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OML/npxmi
@@ -1197,103 +1216,127 @@ pxmia/m/it/10.95 ~$
  []
 
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 147.
+(Font)              scaled to size 8.0pt on input line 154.
 [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 10.95pt on input line 147.
+(Font)              scaled to size 10.95pt on input line 154.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 153.
+(Font)              scaled to size 10.95pt on input line 160.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 153.
+(Font)              scaled to size 8.0pt on input line 160.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 6.1pt on input line 153.
+(Font)              scaled to size 6.1pt on input line 160.
 
-
-LaTeX Warning: Citation `Ga' on page 2 undefined on input line 153.
-
-
-LaTeX Warning: Citation `Ga' on page 2 undefined on input line 153.
-
-
-Overfull \hbox (42.22516pt too wide) in paragraph at lines 156--157
+Overfull \hbox (42.22516pt too wide) in paragraph at lines 163--164
 []\T1/zpltlf/b/n/10.95 Lemma 3.1. []\T1/zpltlf/m/it/10.95 The com-par-i-son mor
 -phism re-stricts to a bi-ra-tional mor-phism $[][]\U/npxmia/m/it/10.95 }\U/npx
 sym/m/n/10.95 P[]\OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it
 /10.95 ~ \OMS/npxsy/m/n/10.95 !
  []
 
-
-LaTeX Warning: Citation `Ga' on page 2 undefined on input line 168.
-
-
-LaTeX Warning: Citation `Ga' on page 2 undefined on input line 168.
-
 [2]
-
-LaTeX Warning: Citation `Ga' on page 3 undefined on input line 180.
-
-
-LaTeX Warning: Citation `Ga-MF' on page 3 undefined on input line 194.
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
 
 [3]
-
-LaTeX Warning: Citation `Ga' on page 4 undefined on input line 232.
+Overfull \hbox (12.88531pt too wide) in paragraph at lines 239--240
+[]\T1/zpltlf/m/n/10.95 Follows from [[], Thm. 2.6] by push-for-ward along $\OML
+/npxmi/m/it/10.95 ^^_ [] [] [][]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\O
+ML/npxmi/m/it/10.95 ; d\U/npxmia/m/it/10.95 ~ \OMS/npxsy/m/n/10.95 !
+ []
 
 [4]
-
-Package amsmath Warning: Foreign command \atopwithdelims;
-(amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 243.
-
-
-LaTeX Warning: Citation `CFKM' on page 5 undefined on input line 245.
-
-LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 6.1pt on input line 245.
-[5]
-
-LaTeX Warning: Citation `FUL' on page 6 undefined on input line 290.
-
-
-LaTeX Warning: Citation `Manolache-Pull' on page 6 undefined on input line 292.
-
-
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/sc' in size <10.95> not available
-(Font)              Font shape `T1/zpltlf/b/sc' tried instead on input line 292
+(Font)              Font shape `T1/zpltlf/b/sc' tried instead on input line 262
 .
 LaTeX Font Info:    Font shape `T1/zpltlf/b/sc' will be
-(Font)              scaled to size 10.95pt on input line 292.
-LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 8.0pt on input line 296.
-LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 6.1pt on input line 296.
-[6] [7] [8] [9] [10] [11] [12]
+(Font)              scaled to size 10.95pt on input line 262.
 
-LaTeX Warning: Citation `BF' on page 13 undefined on input line 474.
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
 
-[13]
-Overfull \hbox (3.48206pt too wide) in paragraph at lines 495--496
+[5]
+LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
+(Font)              scaled to size 8.0pt on input line 266.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
+(Font)              scaled to size 6.1pt on input line 266.
+ [6]
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[7]
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 6.1pt on input line 326.
+ [8]
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[9] [10]
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[11] [12]
+Overfull \hbox (3.48206pt too wide) in paragraph at lines 465--466
 []\T1/zpltlf/m/n/10.95 Compose $\OML/npxmi/m/it/10.95 E[] \OMS/npxsy/m/n/10.95 
 ! \OML/npxmi/m/it/10.95 L[]$ \T1/zpltlf/m/n/10.95 with the con-nect-ing ho-mo-m
 or-phism $\OML/npxmi/m/it/10.95 L[] \OMS/npxsy/m/n/10.95 ! \OML/npxmi/m/it/10.9
 5 ^^Z[]L[]\OT1/zpltlf/m/n/10.95 [1]$
  []
 
-[14] [15] [16] [17]
+
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[13] [14]
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[15] [16]
 Underfull \vbox (badness 1097) has occurred while \output is active []
 
- [18]
-[19] [20] [21]
-LaTeX Font Info:    Try loading font information for U+bbm on input line 718.
+
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[17] [18]
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[19] [20]
+LaTeX Font Info:    Try loading font information for U+bbm on input line 697.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [22]
-Overfull \hbox (70.17993pt too wide) in paragraph at lines 783--783
+)
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[21]
+Overfull \hbox (70.17993pt too wide) in paragraph at lines 762--762
 [] 
  []
 
-[23]
-Overfull \hbox (15.29062pt too wide) detected at line 791
+[22]
+Overfull \hbox (15.29062pt too wide) detected at line 770
 \OT1/zpltlf/m/n/10.95 [[][]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OMS/np
 xsy/m/n/10.95 j\OML/npxmi/m/it/10.95 X; d\U/npxmia/m/it/10.95 ~\OT1/zpltlf/m/n/
 10.95 ][] \U/npxmia/m/it/10.95 5 }\OML/npxmi/m/it/10.95 X \U/npxmia/m/it/10.95 
@@ -1307,60 +1350,46 @@ S/npxsy/m/n/10.95 ^^@ \OT1/zpltlf/m/n/10.95 [\OML/npxmi/m/it/10.95 D[]\U/npxmia
  []
 
 
-Overfull \hbox (10.84416pt too wide) in paragraph at lines 806--806
+Overfull \hbox (10.84416pt too wide) in paragraph at lines 785--785
 [] 
  []
 
-[24]
 
-LaTeX Warning: Citation `CF-K-wallcrossing' on page 25 undefined on input line 
-826.
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
 
+[23]
 LaTeX Font Info:    Try loading font information for T1+zplsups on input line 8
-28.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/t1zplsups.fd
+07.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/t1zplsups.fd
 File: t1zplsups.fd 2015/01/17 v1.0
 )
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
-(Font)              scaled to size 10.95pt on input line 828.
+(Font)              scaled to size 10.95pt on input line 807.
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
-(Font)              scaled to size 9.0pt on input line 828.
+(Font)              scaled to size 9.0pt on input line 807.
+ [24]
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
 
+[25] [26]
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
 
-LaTeX Warning: Citation `CoxRing' on page 25 undefined on input line 830.
-
-
-LaTeX Warning: Citation `CoxFunctor' on page 25 undefined on input line 830.
-
-
-LaTeX Warning: Citation `CoxFunctor' on page 25 undefined on input line 832.
-
-
-LaTeX Warning: Citation `CoxRing' on page 25 undefined on input line 834.
-
-
-LaTeX Warning: Citation `CoxFunctor' on page 25 undefined on input line 836.
-
-[25] [26] [27] [28]
-
-LaTeX Warning: Citation `CF-K' on page 29 undefined on input line 919.
+[27] [28]
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
 
 [29]
-
-LaTeX Warning: Citation `MOP' on page 30 undefined on input line 950.
-
-
-LaTeX Warning: Citation `Manolache-Push' on page 30 undefined on input line 950
-.
-
-
-LaTeX Warning: Citation `Bertram' on page 30 undefined on input line 950.
-
-
-LaTeX Warning: Citation `Popa-Roth' on page 30 undefined on input line 950.
-
-[30]
-Overfull \hbox (23.12883pt too wide) in paragraph at lines 971--972
+Overfull \hbox (23.12883pt too wide) in paragraph at lines 950--951
 []\T1/zpltlf/m/n/10.95 Notice that re-strict-ing $[][] \OMS/npxsy/m/n/10.95 O[]
 \U/npxmia/m/it/10.95 }}\OML/npxmi/m/it/10.95 ^^N \OMS/npxsy/m/n/10.95 ^^@ \OT1/
 zpltlf/m/n/10.95 1\U/npxmia/m/it/10.95 ~\OML/npxmi/m/it/10.95 T[]\U/npxmia/m/it
@@ -1372,29 +1401,19 @@ U/npxmia/m/it/10.95 }[][] \OML/npxmi/m/it/10.95 ^^O[]T[]\U/npxmia/m/it/10.95 ~$
 
 Underfull \vbox (badness 1430) has occurred while \output is active []
 
- [31]
+ [30]
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
 
-LaTeX Warning: Citation `HAR' on page 32 undefined on input line 990.
-
-
-LaTeX Warning: Citation `Knudsen' on page 32 undefined on input line 990.
-
-
-LaTeX Warning: Citation `Manolache-Push' on page 32 undefined on input line 100
-6.
-
-[32]
-
-LaTeX Warning: Citation `Manolache-Push' on page 33 undefined on input line 102
-0.
-
-[33]
-Overfull \hbox (10.26819pt too wide) in paragraph at lines 1042--1042
+[31] [32]
+Overfull \hbox (10.26819pt too wide) in paragraph at lines 1021--1021
 [] 
  []
 
 
-Overfull \hbox (68.65169pt too wide) in paragraph at lines 1046--1048
+Overfull \hbox (68.65169pt too wide) in paragraph at lines 1025--1027
 \T1/zpltlf/m/n/10.95 under $\OML/npxmi/m/it/10.95 h[]\U/npxmia/m/it/10.95 }\OML
 /npxmi/m/it/10.95 ^^^[]\U/npxmia/m/it/10.95 ~$\T1/zpltlf/m/n/10.95 . If we can 
 show that $\OML/npxmi/m/it/10.95 h[]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95
@@ -1405,7 +1424,7 @@ xsy/m/n/10.95 ^^@ [] \OML/npxmi/m/it/10.95 p[]\U/npxmia/m/it/10.95 ~~$
  []
 
 
-Overfull \hbox (45.43962pt too wide) detected at line 1055
+Overfull \hbox (45.43962pt too wide) detected at line 1034
 [][]\U/npxmia/m/it/10.95 }
 []\OML/npxmi/m/it/10.95 ; \OMS/npxsy/m/n/10.95 O[]\U/npxmia/m/it/10.95 }\OMS/np
 xsy/m/n/10.95 ^^@\OML/npxmi/m/it/10.95 q \OMS/npxsy/m/n/10.95 ^^@ [] \OML/npxmi
@@ -1420,36 +1439,63 @@ pxsy/m/n/10.95 ' \OML/npxmi/m/it/10.95 H[]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it
  []
 
 
-LaTeX Warning: Citation `Manolache-Push' on page 34 undefined on input line 106
-8.
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[33] [34]
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[35] [36]
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 1180.
 
 
-LaTeX Warning: Citation `KP' on page 34 undefined on input line 1072.
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[37] (./relative_quasimaps.bbl
+LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
+(Font)              scaled to size 9.0pt on input line 6.
+LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
+(Font)              scaled to size 9.0pt on input line 66.
+LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
+(Font)              scaled to size 7.3pt on input line 66.
+LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
+(Font)              scaled to size 5.5pt on input line 66.
 
 
-LaTeX Warning: Citation `Manolache-Push' on page 34 undefined on input line 107
-2.
+LaTeX Font Warning: Font shape `U/bbm/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 66.
 
-[34] [35]
+[38])
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
 
-LaTeX Warning: Citation `Manolache-Push' on page 36 undefined on input line 113
-7.
+[39] (./relative_quasimaps.aux)
 
-[36] [37]
-No file relative_quasimaps.bbl.
-[38] (./relative_quasimaps.aux)
-
-LaTeX Warning: There were undefined references.
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.5pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 29287 strings out of 493014
- 570644 string characters out of 6133351
- 620347 words of memory out of 5000000
- 32109 multiletter control sequences out of 15000+600000
- 89209 words of font info for 169 fonts, out of 8000000 for 9000
+ 29598 strings out of 493014
+ 575222 string characters out of 6133351
+ 620615 words of memory out of 5000000
+ 32392 multiletter control sequences out of 15000+600000
+ 98673 words of font info for 188 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 56i,16n,99p,10394b,1003s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,99p,10394b,1032s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newpx/ecsups.enc} </Users
 /navid/Library/texlive/2016/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk>{/
 usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-sc.enc}{/usr
@@ -1459,22 +1505,23 @@ ive/2016/texmf-dist/fonts/enc/dvips/newpx/tgpdiff.enc}{/usr/local/texlive/2016/
 texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/font
 s/type1/public/pxfonts/pxmia.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 1/public/pxfonts/pxsy.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
-c/pxfonts/rpxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newt
-x/txex-bar.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/t
-xex.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txmia.pf
-b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/20
-16/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts
-/type1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
-blic/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/new
-px/zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (38 pages, 304184 bytes).
+c/pxfonts/rpxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/stma
+ryrd/stmary10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/
+txex-bar.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txe
+x.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txmia.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dis
+t/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
+ic/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx
+/zplx-regular.pfb>
+Output written on relative_quasimaps.pdf (39 pages, 314098 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
+ 220 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
