@@ -8,12 +8,12 @@
 \usepackage{amsthm}
 \usepackage{marginnote}
 \usepackage{stmaryrd}
-
+\usepackage{enumitem}
 \usepackage[english]{babel}
 \usepackage{yfonts}
 \usepackage[T1]{fontenc}
 \usepackage[utf8x]{inputenc}
-\usepackage{enumerate}
+%\usepackage{enumerate}
 \usepackage{verbatim}
 \usepackage{graphicx}
 \usepackage{verbatim}
@@ -686,114 +686,150 @@ in the Chow group of $\Q{0}{n}{X}{\beta}$. \end{thm}
 \begin{proof} Pull-back the equation for $\PP^N$ relative $H$ using the map $k_{\text{v}}^!$, applying Lemmas \ref{Relative spaces pull back} and \ref{Comb loci pull back}. \end{proof}
 
 \section{The Quasimap Mirror Theorem}
-Assuming that quasimap invariants for $\PP^r$ coincide with Gromov-Witten invariants on the nose, we get the following result.
+
+We are going to reproduce Gathmann's proof of the Mirror Theorem with relative stable maps \cite{Ga-MF} in the context of quasimaps, thanks to the extension of his formula to this setting that we have proved in the previous sections. We have chosen to work with unparametrised quasimaps, hence the minimum number of markings is two; this minimal choice turns out to be extremely convenient because it determines the shape of the source curve to a high degree, so to grant a great level of control on degenerate contributions appearing in Gathmann's algorithm. The absence of rational tails in the quasimap moduli space makes the recursion much simpler, even in the CY case.
+
+We would like to think of this as a Lefschetz-type theorem, in that it expresses certain (restricted) quasimap invariants of a hypersurface $Y$ in terms of those of the ambient space $X$. As it turns out, we have also retrieved a formula of Ciocan-Fontanine and Kim \cite[Corollary 5.5.1]{CF-K-wallcrossing} (but with more restrictive assumptions on the target); under this new light, the formula can be simply interpreted as a relation between some residues for the $\Gm$-action on the space of 0-pointed and 1-pointed \emph{parametrised} quasimap invariants of the hypersurface $Y$. It is remarkable how, knowing only about a small sector (i.e. invariants with few insertions), it is possible to formally reconstruct the full quasimap potential; a point which was greatly clarified to us by the discussion in \cite[Section 5.5]{CF-K-wallcrossing}.
+
+We are going to be interested in the following \textbf{setup}: $X$ is a smooth projective toric variety and $Y$ is a smooth \emph{very ample} hypersurface in it, satisfying the following \emph{semi-positivity assumption}, that $-K_Y$ is nef. Notice that, by adjunction, it follows from our hypotheses that $-K_X$ is positive (at least) on every effective curve class \emph{coming from $Y$}; in fact we are going to assume (in addition) that \emph{$X$ is Fano}. Let us denote by $r$ the dimension of $X$ and assume it is \emph{at least 3}.
+
+Denote dual bases for $H^*(X;\mathbb Q)$ by $\eta^i$ and $\eta_i$ ($i=0,\ldots,k$), with $\eta^0=\mathbbm 1_X$ and $\eta^1=Y$, which induce bases $\rho_i=i^*\eta_i$ for $i^*H^*(X)$ (extend it to a basis of $H^*(Y)$ by adding $\rho_{k+1}\ldots,\rho_{k'}$) and dually $\rho^i, i=1,\ldots,k'$; notice that the class of a point on $Y$ is given by restricting the dual of $\eta^1$, i.e. it is $\rho_1$, while the class of a point on $X$ is annihilated when restricted to $Y$, i.e. $\rho_0=0$. Furthermore, remark that, everytime we look at a relative space $\Q{0}{\{m,0\}}{X|Y}{\beta}$ with $m>0$, the evaluation map $\ev_1\colon \Q{0}{\{m,0\}}{X|Y}{\beta}\to X$ factors through $Y$ (so all the insertions can be first pulled back to $Y$).
+
+
 \begin{dfn}
- For a complete intersection $X$ in $\PP^r$ and $d>0$, let
+ Let $X$ be a smooth projective toric variety (or a complete intersection in a toric variety, or more generally any GIT quotient for which the quasimap spaces are defined), and consider 
  \[
-  I^X_d=(\ev_1)_*\left(\frac{1}{z-\psi_1}[\Q{0}{2}{X}{d}]^\text{vir}\right)
+  S_0^X(z,\beta)=(\ev_1)_*\left(\frac{1}{z-\psi_1}[\Q{0}{2}{X}{\beta}]^\text{vir}\right)
  \]
- where $\ev_1$ is always thought of as landing in $\PP^r$.
- 
- Set also $I^X_0=\mathbbm 1_{\PP^r}$ and $I^X=\sum_{d\geq 0}I^X_d q^d$.
-\end{dfn}
-\begin{thm}
-Let $X\subseteq\PP^4$ be a smooth quintic 3-fold. Then
+ %where $\ev_1$ is always thought of as landing in $\PP^r$.
+ for every effective curve class $\beta\in H_2^+(X,\mathbb Z)$. Set $S_0^X(z,0)= \mathbbm 1_X$ and
  \[
-  \sum_{d\geq 0} q^d\prod_{i=0}^{5d}(X+iz)I^{\PP^4}_d= XP(q)I^X
+  S_0^X(z,q)=\sum_{\beta\geq 0}S_0^X(z,\beta) q^\beta.
+ \]
+\end{dfn}
+
+\begin{thm}
+Let $X$ be a toric Fano variety of dimension at least 3, and $i\colon Y\subseteq X$ a very ample hypersurface such that $-K_Y$ is nef. Then
+ \[
+  \frac{\sum_{\beta\geq 0} q^\beta\prod_{i=0}^{Y.\beta}(Y+iz)S_0^X(z,\beta)}{P_0(q)}= i_*S_0^Y(z,q)
  \]
 where
-\[
- P(q)=1+\sum_{d>0}dq^d\langle H^4,\mathbbm 1_{\PP^4}\rangle_{\Q{0}{\{5d,0\}}{\PP^4|X}{d}}=1+\sum_{d>0}q^d\frac{(5d)!}{(d!)^5}\sum_{i=d+1}^{5d-1}\frac{1}{i}.
-\]
+\begin{align*}
+ P_0(q)= & 1+\sum_{\substack{\beta>0\colon \\ K_Y.\beta=0}} (Y.\beta)q^\beta\langle [pt_Y],\mathbbm 1_{X}\rangle_{\Q{0}{\{Y.\beta,0\}}{X|Y}{\beta}} \\
+ = & 1+\sum_{\substack{\beta>0\colon \\ K_Y.\beta=0}} q^\beta(Y.\beta)!\langle\psi_1^{Y.\beta-1}[pt_X],\mathbbm 1_{X}\rangle_{\Q{0}{2}{X}{\beta}}.
+\end{align*}
 \end{thm}
+
 \begin{proof}
- We'll write it for a general CY hypersurface in $i\colon X_a\hookrightarrow\PP^r$, so the degree of $X$ is $a=r+1$. Notice that dual bases for $H^*(\PP^r)$ are given by $T^i=H^i$ and $T_i=H^{r-i}$, while (induced) dual bases for $i^*H^*(\PP^r)$ are $S^i=H^i$ and $S_i=\frac{1}{a}H^{r-i-1}$; the restriction of $H^r$ is 0.
- 
- Define
+
+Define
  \[
-  I^{\PP^r|X}_{d,(m)}=(\ev_1)_*\left(\frac{1}{z-\psi_1}[\Q{0}{\{m,0\}}{\PP^r|X}{d}]^\text{vir}\right),
+  S_{0,(m)}^{X|Y}(z,\beta)=(\ev_1)_*\left(\frac{1}{z-\psi_1}[\Q{0}{\{m,0\}}{X|Y}{\beta}]^\text{vir}\right),
  \]
-which coincides with the absolute $I$-function defined above for $m=0$, and
+which coincides with the absolute $S_0$-function defined above for $m=0$, and
 \[
- J^{\PP^r|X}_{d,(m)}=(\ev_1)_*\left(m[\Q{0}{\{m,0\}}{\PP^r|X}{d}]^\text{vir}+\frac{1}{z-\psi_1}[D_m^{\mathcal Q}(\PP^r|X,d)]^\text{vir}\right).
+ T_{(m)}^{X|Y}(z,\beta)=(\ev_1)_*\left(m[\Q{0}{\{m,0\}}{X|Y}{\beta}]^\text{vir}+\frac{1}{z-\psi_1}[D_m^{\mathcal Q}(X|Y,\beta)]^\text{vir}\right).
 \]
 Then, by Gathmann's formula, we can prove that
 \begin{equation}\label{eqn:G}
- (X+mz) I^{\PP^r|X}_{d,(m)}= I^{\PP^r|X}_{d,(m+1)}+ J^{\PP^r|X}_{d,(m)},
+ (Y+mz) S_{0,(m)}^{X|Y}(z,\beta) = S_{0,(m+1)}^{X|Y}(z,\beta)+ T_{(m)}^{X|Y}(z,\beta),
 \end{equation}
 from which it follows that
 \[
- \prod_{i=0}^{ad}(X+iz) I^{\PP^r}_d=\sum_{m=0}^{ad}\prod_{i=m+1}^{ad}(X+iz)J^{\PP^r|X}_{d,(m)}.
+ \prod_{i=0}^{Y.\beta}(Y+iz) S_0^X(z,\beta) = \sum_{m=0}^{Y.\beta}\prod_{i=m+1}^{Y.\beta}(Y+iz)T_{(m)}^{X|Y}(z,\beta).
 \]
-It is now a matter of evaluating the RHS. Notice that $J^{\PP^r|X}_{d,(m)}$ is made of two parts:
-\begin{itemize}
- \item the boundary terms: the strong stability condition for quasimaps and the choice of working with only two markings makes these boundary contributions particularly simple to compute. The shape of the source curve is that of a snake which the hypersurface cuts into two pieces, the internal one of degree $d^{(0)}$, and the external one of degree $d^{(1)}$ and multiplicity $m^{(1)}$ of contact with $X$, with the first marking point belonging to the internal component and the second to the external one.
+It is now a matter of evaluating the RHS. Notice that $T_{(m)}^{X|Y}(z,\beta)$ is made of two parts:
+\begin{itemize}[leftmargin=*]
+ \item the \emph{boundary terms}: since there are only two markings and the first one is required to lie in $Y$, the strong stability condition for quasimaps forces the shape of the source curve to be that of a snake which the hypersurface cuts into two pieces, the internal one of degree $\beta^{(0)}$, and the external one of degree $\beta^{(1)}$ and multiplicity $m^{(1)}$ of contact with $Y$, with the first marked point belonging to the internal component and the second to the external one.
  
  The invariants which we need to consider will hence be of the form
  \[
-  \langle T^i\psi_1^j,S_i\rangle_{\Q{0}{2}{X}{d^{(0)}}}\langle S^i,\mathbbm 1_{\PP^r}\rangle_{\Q{0}{\{m^{(1)},0\}}{\PP^r|X}.{d^{(1)}}}
+  \langle i^*\eta_i\psi_1^j,\rho^h\rangle_{\Q{0}{2}{Y}{\beta^{(0)}}}\langle \rho_h,\mathbbm 1_{X}\rangle_{\Q{0}{\{m^{(1)},0\}}{X|Y}{\beta^{(1)}}}, \quad h\in\{1,\ldots,k'\}
  \]
- A dimensional computation
+ 
+ Consider the following dimensional computation:
 \begin{align*}
- 0\leq \codim S_i &= \dim X-\codim S^i \\
- &= \dim X-\vdim \Q{0}{\{m^{(1)},0\}}{\PP^r|X}{d^{(1)}} \\
- &= \dim X-(\dim\PP^r-3+2-m^{(1)}-K_{\PP^r}\cdot d^{(1)}\ell)\\
- &= m^{(1)}-X\cdot d^{(1)}\ell+K_{X}\cdot d^{(1)}\ell \\
- &= m^{(1)}-X\cdot d^{(1)}\ell\leq 0
+ 0\leq \codim \rho^h &= \dim Y-\codim \rho_h \\
+ &= \dim Y-\vdim \Q{0}{\{m^{(1)},0\}}{X|Y}{\beta^{(1)}} \\
+ &= \dim Y-(\dim X-3-K_{X}\cdot \beta^{(1)}+2-m^{(1)})\\
+ &= K_Y.\beta^{(1)}-Y.\beta^{(1)}+m^{(1)}\leq 0
 \end{align*}
-forces $S_1=\mathbbm 1_X$ and $S^1=\frac{1}{a}H^{r-1}$, $m^{(1)}=ad^{(1)}$ hence
+ where the last equality follows from adjunction, and the inequality follows from $K_Y\leq 0$ and $m^{(1)}\leq Y.\beta^{(1)}$.
+This shows that the only non-trivial contributions are due to the classes $\beta^{(1)}$ such that $K_Y.\beta^{(1)}=0$, and the order of tangency is forced to be maximal, i.e. $m^{(1)}=Y.\beta^{(1)}$. Furthermore, the only relevant insertions are $\rho^1=\mathbbm 1_Y$ and $\rho_1=[pt_Y]$. Finally, $m^{(1)}=Y.\beta^{(1)}$ implies that
 \[
- m=\alpha_1=X\cdot d^{(0)}\ell+m^{(1)}=ad,
+ m=\alpha_1=Y.\beta^{(0)}+m^{(1)}=Y.\beta,
 \]
-so this doesn't show up but at the very end of the ``increasing the multiplicity'' process.
+hence the boundary contributions do not show up until the very end of the process of ``increasing the multiplicity''.
 
-\item The other term in $J^{\PP^r|X}_{d,(m)}$ is $m(\ev_1)_*[\Q{0}{\{m,0\}}{\PP^r|X}{d}]^\text{vir}$; notice that it only gets insertions from the cohomology of $\PP^r$ (restricted to $X$). On the other hand
+\item The remaining term in $T_{(m)}^{X|Y}(z,\beta)$ is $m(\ev_1)_*[\Q{0}{\{m,0\}}{X|Y}{\beta}]^\text{vir}$; notice that it only gets insertions from the cohomology of $X$ (restricted to $Y$). On the other hand
 \[
- \vdim \Q{0}{\{m,0\}}{\PP^r|X}{d}=r-3+2-m+d(r+1)\geq r-1
+ \vdim \Q{0}{\{m,0\}}{X|Y}{\beta}=\dim X-3 -K_X.\beta +2-m \geq r-1
 \]
-because $m\leq ad$; since the restriction of $H^r$ to $X$ vanishes, the only insertion that contributes is $H^{r-1}$, forcing the equality $m=ad$.
+because $m\leq Y.\beta$ and $-(K_X+Y).\beta\geq 0$, by adjunction, projection formula, and for every effective curve class $\beta$ \emph{coming from $Y$} (here Lefschetz's hyperplane theorem comes to our help, since by assumption $Y$ is a hyperplane section of $X$ and $X$ is not a surface); since the restriction of the class $[pt_X]$ to $Y$ vanishes, the only insertion that contributes is $\eta_1$ (by definition of a dual basis, all other dimension 1 classes vanish when restricted to $Y$), forcing the equality $m=Y.\beta$, so that again this correction term is non-trivial only in the last step of the algorithm.
 \end{itemize}
 So, in the end, we see that equation \ref{eqn:G} reduces to
 \begin{align*}
- \prod_{i=0}^{ad}(X+iz) I^{\PP^r}_d &=J^{\PP^r|X}_{d,(ad)} \\
- &= \sum_{i=0,\ldots,r-1;j\geq 0}(da)\langle H^{r-1},\mathbbm 1_{\PP^r}\rangle_{\Q{0}{\{ad,0\}}{\PP^r|X}{d}} H \\
- &+\sum_{\substack{0<d^{(0)}<d \\ d^{(0)}+d^{(1)}=d}}z^{j+1}H^{r-i}\langle H^i\psi_1^j,\mathbbm 1_{X}\rangle_{\Q{0}{2}{X}{d^{(0)}}}(ad^{(1)})\langle \frac{1}{a}H^{r-1},\mathbbm 1_{\PP^r}\rangle_{\Q{0}{\{ad^{(1)},0\}}{\PP^r|X}{d^{(1)}}}\\
- &+z^{j+1}H^{r-i}\langle H^i\psi_1^j,\mathbbm 1_{X}\rangle_{\Q{0}{2}{X}{d}}
+ &\prod_{i=0}^{Y.\beta}(Y+iz) S_0^X(z,\beta) = T_{(Y.\beta)}^{X|Y}(z,\beta) \\
+ &= \sum_{i=1,\ldots,k;j\geq 0}z^{j+1}\eta^i\langle \rho_i\psi_1^j,\mathbbm 1_{Y}\rangle_{\Q{0}{2}{Y}{\beta}} \\
+ &+\sum_{\substack{0<\beta^{(0)}<\beta \\ \beta^{(0)}+\beta^{(1)}=\beta}}z^{j+1}\eta^i\langle \rho_i\psi_1^j,\mathbbm 1_{Y}\rangle_{\Q{0}{2}{Y}{\beta^{(0)}}}(Y.\beta^{(1)})\langle [pt_Y],\mathbbm 1_{X}\rangle_{\Q{0}{\{Y.\beta^{(1)},0\}}{X|Y}{\beta^{(1)}}}\\
+ &+\eta^1(Y.\beta)\langle [pt_Y],\mathbbm 1_{X}\rangle_{\Q{0}{\{Y.\beta,0\}}{X|Y}{\beta}}
 \end{align*}
-from which the first claim of the theorem is now evident (with a bit of rearranging, using $X=aH$ and $i^*(H^r)=0$, so in the last line everything is divisible by $H$).
-
-\smallskip
-
-In order to evaluate $P(q)$, we use again Gathmann's algorithm, this time in the other direction, to go all the way back to $\PP^r$; then we make use of our assumption that quasimap invariants and ordinary GW coincide for the projective space. So it starts:
+if $\beta$ is such that $K_Y.\beta=0$ (which implies $K_Y.\beta^{(1)}=0$ as well, for every effective decomposition $\beta=\beta^{(0)}+\beta^{(1)}$, due to the semi-positivity assumption on $Y$); while, if $K_Y.\beta<0$, it simply reduces to
 \[
- [\Q{0}{\{ad,0\}}{\PP^r|X}{d}]^\text{vir}=(X+(ad-1)\psi_1)[\Q{0}{\{ad-1,0\}}{\PP^r|X}{d}]^\text{vir}-[D_{ad}^{\mathcal Q}(\PP^r|X,d)]^\text{vir}
+ \prod_{i=0}^{Y.\beta}(Y+iz) S_0^X(z,\beta)= \sum_{i=1,\ldots,k;j\geq 0}z^{j+1}\eta^i\langle \rho_i\psi_1^j,\mathbbm 1_{Y}\rangle_{\Q{0}{2}{Y}{\beta}} = i_*S_0^Y(z,\beta).
+\]
+
+
+The proof of the first claim is now evident. We are left with evaluating $P(q)$.
+
+In order to do that, we use again Gathmann's algorithm, this time in the opposite direction, to go all the way back to $X$; so it starts:
+\[
+ [\Q{0}{\{Y.\beta,0\}}{X|Y}{\beta}]^\text{vir}=(Y+(Y.\beta-1)\psi_1)[\Q{0}{\{Y.\beta-1,0\}}{X|Y}{\beta}]^\text{vir}-[D_{Y.\beta}^{\mathcal Q}(X|Y,\beta)]^\text{vir}
 \]
 When looking at the boundary, the invariants that come into play are of the form
 \[
- \langle H^{r-1},S_i\rangle_{\Q{0}{2}{X}{d^{(0)}}}\langle S^i,\mathbbm 1_{\PP^r}\rangle_{\Q{0}{\{a(d-d^{(0)})-1,0\}}{\PP^r|X}{d-d^{(0)}}}
+ \langle [pt_y],\rho^h\rangle_{\Q{0}{2}{Y}{\beta^{(0)}}}\langle \rho_h,\mathbbm 1_{X}\rangle_{\Q{0}{\{Y.(\beta-\beta^{(0)})-1,0\}}{X|Y}{\beta-\beta^{(0)}}}
 \]
 but notice that they must vanish by dimensional reasons, since
 \[
- \codim(S_i)=\dim X-3+2-K_X\cdot d^{(0)}\ell-(r-1)=-1.
+ \codim(\rho^h)=\dim Y-3+2-K_Y.\beta^{(0)}-\dim Y=-1.
 \]
 So
 \begin{align*}
- d\langle H^{r-1},\mathbbm 1_{\PP^r}\rangle_{\Q{0}{\{ad,0\}}{\PP^r|X}{d}} \\
- = d[\Q{0}{2}{\PP^r}{d}]\cap\ev_1^*(H^{r-1})\prod_{i=0}^{ad-1}(\ev_1^*X+i\psi_1) \\
- = d[\Q{0}{2}{\PP^r}{d}]\cap\left((da-1)!\psi_1^{ad}\ev_1^*(H^{r-1})+a\left(\sum_{j=1}^{ad-1}\frac{(ad-1)!}{j}\right)\psi_1^{ad-1}\ev_1^*(H^{r})\right) \\
- = d\left((da-1)!\langle \psi_1^{ad-1}H^{r-1}\rangle_{0,1,d}+a\left(\sum_{j=1}^{ad-1}\frac{(ad-1)!}{j}\right)\langle\psi_1^{ad-2}H^{r}\rangle_{0,1,d}\right)
+ & (Y.\beta)\langle [pt_Y],\mathbbm 1_{X}\rangle_{\Q{0}{\{Y.\beta,0\}}{X|Y}{\beta}} = \\
+ & (Y.\beta)\int_{[\Q{0}{2}{X}{\beta}]^{\text{vir}}}\ev_1^*(\eta_1)\prod_{j=0}^{Y.\beta-1}(\ev_1^*Y+j\psi_1) = \\
+ & (Y.\beta)!\langle[pt_X]\psi_1^{Y.\beta-1},\mathbbm 1_X\rangle_{\Q{0}{2}{X}{\beta}}.
 \end{align*}
-using the equality of quasimap and GW invariants and the string equation for the latter. These numbers can be extracted from the $J$-function for $\PP^r$
-\[
- I^{\PP^r}_d=\prod_{i=1}^d\frac{1}{H+i}
-\]
-from which
-\begin{align*}
- \langle \psi_1^{ad-2}\ev_1^*(H^{r})\rangle_{0,1,d} &=\frac{1}{(d!)^{r+1}} \\
- \langle \psi_1^{ad-1}\ev_1^*(H^{r-1}\rangle_{0,1,d} &=-(r+1)\frac{1}{(d!)^{r+1}}\sum_{j=1}^d\frac{1}{j}
-\end{align*}
-and the second claim of the theorem follows.
+the second equality because $Y.\eta_1=[pt_X]$ and $Y^2.\eta_1=0$.
 \end{proof}
+
+\begin{cor}
+ If $Y$ is itself Fano, then there is no correction term
+ \[
+  \sum_{\beta\geq 0} q^\beta\prod_{i=0}^{Y.\beta}(Y+iz)S_0^X(z,\beta) = i_*S_0^Y(z,q)
+ \]
+\end{cor}
+
+\begin{cor}
+ Let $Y_5$ be the quintic three-fold in $\PP^4$. Then
+ \[
+  i_*S_0^{Y_5}(z,q)=\frac{I_{\text{small}}^{Y_5}(z,q)}{P^{Y_5}(q)},
+ \]
+where
+\[
+ I_{\text{small}}^{Y_5}(z,q)=5H+\sum_{d>0}\frac{\prod_{i=0}^{5d}(H+iz)}{\prod_{i=0}^{d}(H+iz)^5}q^d
+\]
+and
+\[
+ P^{Y_5}(q)=1+\sum_{d>0}\frac{(5d)!}{(d!)^5}q^d.
+\]
+\end{cor}
+
+\begin{remark}
+ This formula (and, more generally, formulae for concavex bundles over products of projective spaces) was already obtained in \cite[Theorem 1]{CZ-mirror} via equivariant localisation.
+\end{remark}
+
+\newpage
 
 \appendix
 \section{Functoriality of Quasimap Spaces} \label{Functoriality of Quasimap Spaces Section}

@@ -470,3 +470,19 @@
 	year = "2003"
 }
 
+@article{CFKM,
+	author = "Ciocan-Fontanine, Ionu\c t and Kim, Bumsig and Maulik, Davesh",
+	doi = "10.1016/j.geomphys.2013.08.019",
+	fjournal = "Journal of Geometry and Physics",
+	issn = "0393-0440",
+	journal = "J. Geom. Phys.",
+	mrclass = "14D23 (14L24 14M25)",
+	mrnumber = "3126932",
+	mrreviewer = "Yu-Jong Tzeng",
+	pages = "17--47",
+	title = "{Stable quasimaps to {GIT} quotients}",
+	url = "http://dx.doi.org/10.1016/j.geomphys.2013.08.019",
+	volume = "75",
+	year = "2014"
+}
+

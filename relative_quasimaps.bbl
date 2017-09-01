@@ -7,7 +7,7 @@ Aaron Bertram.
 
 \bibitem[BF97]{BF}
 K.~Behrend and B.~Fantechi.
-\newblock The intrinsic normal cone.
+\newblock {The intrinsic normal cone}.
 \newblock {\em Invent. Math.}, 128(1):45--88, 1997.
 
 \bibitem[CFK10]{CF-K}
@@ -34,6 +34,11 @@ David~A. Cox.
 David~A. Cox.
 \newblock {The homogeneous coordinate ring of a toric variety}.
 \newblock {\em J. Algebraic Geom.}, 4(1):17--50, 1995.
+
+\bibitem[CZ14]{CZ-mirror}
+Yaim Cooper and Aleksey Zinger.
+\newblock {Mirror symmetry for stable quotients invariants}.
+\newblock {\em Michigan Math. J.}, 63(3):571--621, 2014.
 
 \bibitem[Ful98]{FUL}
 William Fulton.
@@ -75,7 +80,7 @@ B.~Kim and R.~Pandharipande.
 
 \bibitem[Man12a]{Manolache-Pull}
 Cristina Manolache.
-\newblock Virtual pull-backs.
+\newblock {Virtual pull-backs}.
 \newblock {\em J. Algebraic Geom.}, 21(2):201--245, 2012.
 
 \bibitem[Man12b]{Manolache-Push}
