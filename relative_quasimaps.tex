@@ -259,81 +259,7 @@ which is equivalent to the previous one. The morphism $\Delta$ is a regular embe
 \begin{equation*} \virt{\Q{0}{\alpha}{X|Y}{\beta}} := \Delta^! \left( \virt{\Q{0}{n}{X}{\beta}} \times [\Q{0}{\alpha}{\PP^N|H}{d}] \right) \end{equation*}
 The idea is to prove the recursion formula for $(X,Y)$ by pulling back the formula for $(\PP^N,H)$ along $k = i_*$. In order to do this, we need to understand how the various virtual classes involved in the formula pull back along this map. This is the technical heart of the proof.
 
-\subsection{Relative spaces pull back}
-But before getting into any of this, we need to explain what we mean by ``pulling back along $k$.'' Indeed, $k$ is not necessarily a regular embedding, so the Gysin map in the sense of \cite{FUL} does not necessarily exist.
 
-In \cite{Manolache-Pull} a generalisation of the Gysin map (called the \ildef{virtual pull-back}) is defined for morphisms endowed with a relative perfect obstruction theory. Moreover, a sufficient condition is given (Corollary 4.9) for this map to respect the virtual classes.
-
-\begin{lem} \label{Exists relative POT} There exists a relative perfect obstruction theory $E_k$ for the morphism
-\begin{equation*} k : \Q{0}{n}{X}{\beta} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
-and hence there exists a virtual pull-back morphism $k^!_{\text{v}}$. Moreover, $E_k$ fits into a compatible triple with the standard obstruction theories for the quasimap spaces over $\MM_{0,n}$, so that:
-\begin{equation*} k^!_{\text{v}} [ \Q{0}{n}{\PP^N}{d} ] = \virt{\Q{0}{n}{X}{\beta}} \end{equation*} \end{lem}
-
-\begin{proof} Note first that since $k$ does not change the source curve of a quasimap we indeed have a commuting triangle:
-\bcd
-\Q{0}{n}{X}{\beta} \ar[rr,"k"] \ar[rd] & & \Q{0}{n}{\PP^N}{d} \ar[ld] \\
-& \MM_{0,n} & 
-\ecd
-We have perfect obstruction theories $E_{\overline{\mathcal{Q}}(X)/\MM}$ and $E_{\overline{\mathcal{Q}}(\PP^N)/\MM}$ and we want to find a perfect obstruction theory $E_k$. Consider the diagram of universal curves
-\bcd
-\mathcal{C}_X \ar[r,"\alpha"] \ar[d,"\pi"] \ar[rd,phantom,"\square" right] & \mathcal{C}_{\PP^N} \ar[d,"\rho"] \\
-\Q{0}{n}{X}{\beta} \ar[r,"k"] & \Q{0}{n}{\PP^N}{d}
-\ecd
-which is cartesian because $k$ does not alter the source curve of any quasimap. We have sheaves $\mathcal{F}_X$ and $\mathcal{F}_{\PP^N}$ on $\mathcal{C}_X$ and $\mathcal{C}_{\PP^N}$ respectively such that:
-\begin{align*} E_{\overline{\mathcal{Q}}(X)/\MM}^\vee & = \R \pi_* \mathcal{F}_X \\
-E_{\overline{\mathcal{Q}}(\PP^N)/\MM}^\vee & = \R \rho_* \mathcal{F}_{\PP^N} \end{align*}
-It follows that when we pull back the latter obstruction theory to $\om{Q}(X)$ we obtain:
-\begin{equation*} k^* E_{\overline{\mathcal{Q}}(\PP^N)/\MM}^\vee = \R \pi_* \alpha^* \mathcal{F}_{\PP^N} \end{equation*}
-To construct a compatible triple, we require a morphism $k^* E_{\om{Q}(\PP^N)/\MM} \to E_{\om{Q}(X)/\MM}$. It is therefore enough to construct a morphism of sheaves on $\mathcal{C}_X$
-\begin{equation*} \mathcal{F}_X \to \alpha^* \mathcal{F}_{\PP^N} \end{equation*}
-and then apply $\R \pi_*$. This is analogous to the morphism $f^* T_X \to f^* T_{\PP^N}|_X$ which is used in the stable maps setting. However the construction for quasimaps requires a little more ingenuity, because we do not have acess to a universal map $f$.
-
-The sheaf $\mathcal{F}_X$ is defined on $\mathcal{C}_X$ by the short exact sequence
-\begin{equation*} 0 \to \OO_{\mathcal{C}_X}^{\oplus r} \to \oplus_{\rho} \mathcal{L}_\rho \to \mathcal{F}_X \to 0 \end{equation*}
-where $r = \operatorname{rk} \Pic X$ (implicitly we have chosen a basis for this $\Z$-module). Similarly $\mathcal{F}_{\PP^N}$ is defined on $\mathcal{C}_{\PP^N}$ by:
-\begin{equation*} 0 \to \OO_{\mathcal{C}_{\PP^N}} \to \mathcal{L}^{\oplus (N+1)} \to \mathcal{F}_{\PP^N} \to 0 \end{equation*}
-We will construct our morphism by first constructing a morhism:
-\begin{equation*} \oplus_{\rho} \mathcal{L}_\rho \to \alpha^* \mathcal{L}^{\oplus(N+1)} \end{equation*}
-Recall that $i : X \hookrightarrow \PP^N$ is given by homogeneous polynomials
-\begin{equation*} P_0 , \ldots, P_N \in S^X_\gamma \subset S^X = k[z_\rho : \rho \in \Sigma_X(1)] \end{equation*}
-in the Cox ring of $X$, where $\gamma \in \Pic X$ is some divisor class. We can write this (non-uniquely) as:
-\begin{equation*} \gamma = \sum_\rho c_\rho D_\rho \end{equation*}
-Then given $i \in \{0,\ldots,N\}$ and sections $v_\rho$ of $\mathcal{L}_\rho$ for all $\rho \in \Sigma_X(1)$ we can use the same trick as in the proof of functoriality (see Appendix \ref{Functoriality of Quasimap Spaces Section}) to view $P_i(v_\rho)$ as a section of:
-\begin{equation*} \otimes_\rho \mathcal{L}_\rho^{\otimes c_\rho} = \alpha^* \mathcal{L} \end{equation*}
-Thus we obtain a morphism
-\begin{equation*} (P_0, \ldots, P_N) : \oplus_\rho \mathcal{L}_\rho \to \alpha^* \mathcal{L}^{\oplus (N+1)} \end{equation*}
-as required. On the other hand if we let $M_1, \ldots, M_r$ denote the chosen generators for $\Pic X$ then there exist unique numbers $b_1, \ldots, b_r$ such that:
-\begin{equation*} i^* \OO_{\PP^N}(1) = \otimes_{i=1}^r M_i^{\otimes b_i} \end{equation*}
-These define a map $\OO_{C_X}^{\oplus r} \to \OO_{C_X}$ and so we obtain a digram
-\bcd
-0 \ar[r] & \OO_{C_X}^{\oplus r} \ar[r] \ar[d] & \oplus_\rho \mathcal{L}_\rho \ar[r] \ar[d] & \mathcal{F}_X \ar[r] & 0 \\
-& \OO_{C_X} \ar[r] & \alpha^* \mathcal{L}^{\oplus (N+1)} \ar[r] & \alpha^* \mathcal{F}_{\PP^N} \ar[r] & 0
-\ecd
-which one can check is commutative. By exactness of the first row, our morphism descends to a morphism $\mathcal{F}_X \to \alpha^* \mathcal{F}_{\PP^N}$ if the composition
-\begin{equation*} \OO_{C_X}^{\oplus r} \to \oplus_\rho \mathcal{L}_\rho \to \alpha^* \mathcal{L}^{\oplus (N+1)} \to \alpha^* \mathcal{F}_{\PP^N} \end{equation*}
-is zero. But this follows from the commutativity of the left square and the fact that the bottom row is a complex. Hence we obtain a morphism:
-\begin{equation*} \mathcal{F}_X \to \alpha^* \mathcal{F}_{\PP^N} \end{equation*}
-Applying $\R \pi_*$ and dualising we obtain a morphism between the obstruction theories for the quasimap spaces, and we can complete this to obtain an exact triangle
-\begin{equation*} k^* E_{\om{Q}{\PP^N}/\MM} \to E_{\om{Q}(X)/\MM} \to E_k  \xrightarrow{[1]}\end{equation*}
-on $\om{Q}(X)$. The complex $E_k$ is perfect (locally isomorphic to a bounded complex of vector bundles) because the other two are. On the other hand if we look at the long exact sequence in cohomology we find
-\begin{equation*} 0 \to \h^{-2}(E_k) \to \h^{-1}(k^* E_{\om{Q}(\PP^N)/\MM}) = 0\end{equation*}
-where the last term is zero because $\om{Q}(\PP^N) = \Q{0}{n}{\PP^N}{d}$ is unobstructed. Hence $\h^{-2}(E_k) = 0$ and it is easy to show using similar arguments that $E_k$ is of perfect amplitude contained in $[-1,0]$.
-
-Finally the axioms of a triangulated category give a morphism of exact triangles
-\bcd
-k^* E_{\om{Q}{\PP^N}/\MM} \ar[r] \ar[d] & E_{\om{Q}(X)/\MM} \ar[r] \ar[d] & E_k  \ar[r,"{[1]}"] \ar[d] & \, \\
-k^*L_{\om{Q}(\PP^N)/\MM} \ar[r] & L_{\om{Q}(X)/\MM} \ar[r] & L_k \ar[r,"{[1]}"] & \,
-\ecd
-and it follows from a simple diagram chase that $E_k \to L_k$ is a relative perfect obstruction theory. \end{proof}
-We have thus produced a virtual pull-back morphism
-\begin{equation*} k^!_{\text{v}} : A_*(\Q{0}{n}{\PP^N}{d}) \to A_*(\Q{0}{n}{X}{\beta}) \end{equation*}
-and more generally for any cartesian diagram
-\bcd
-F \ar[r] \ar[d] \ar[rd,phantom,"\square" right] & G \ar[d] \\
-\Q{0}{n}{X}{\beta} \ar[r,"k"] & \Q{0}{n}{\PP^N}{d}
-\ecd
-we get a virtual pull-back morphism:
-\begin{equation*} k^!_{\text{v}} : A_*(G) \to A_*(F) \end{equation*}
 
 \begin{lem} \label{Relative spaces pull back} For any $\alpha$ we have:
 \begin{equation*} k^!_{\text{v}} [\Q{0}{\alpha}{\PP^N|H}{d}] = \virt{\Q{0}{\alpha}{X|Y}{\beta}} \end{equation*} \end{lem}
@@ -917,7 +843,7 @@ So we may conclude that the $i_*$ of \cite[Corollary 5.5.1]{CF-K-wallcrossing} c
 \newpage
 
 \appendix
-\section{Functoriality of Quasimap Spaces} \label{Functoriality of Quasimap Spaces Section}
+\section{Functoriality of Toric Quasimap Spaces and Relative Obstruction Theories} \label{Functoriality of Quasimap Spaces Section}
 
 In the case of stable maps, a morphism $f : X \to Y$ induces a morphism between the corresponding moduli spaces
 \begin{equation*}\M{g}{n}{X}{\beta} \rightarrow \M{g}{n}{Y}{f_* \beta} \end{equation*}
@@ -933,7 +859,7 @@ Let $X$ and $Y$ be smooth and proper toric varieties with fans $\Sigma_X \subset
 \begin{equation*} ( (L_\rho, u_\rho)_{\rho \in \Sigma_X(1)}, (\varphi_{m_x})_{m_x \in M_X} ) \end{equation*}
 In addition, \cite{CoxRing} allows us to describe line bundles on $Y$ and their global sections in terms of the homogeneous coordinates $(z_\tau)_{\tau \in \Sigma_Y(1)}$. All of these observations are combined into the following theorem, which is so useful that we will state it here in its entirety:
 
-\begin{thm} \cite[Theorem 2.2]{CoxFunctor} \label{CoxTheorem} The data of a morphism $f:Y \to X$ is the same as the data of homogeneous polynomials
+\begin{thm} \cite[Theorem 3.2]{CoxFunctor} \label{CoxTheorem} The data of a morphism $f:Y \to X$ is the same as the data of homogeneous polynomials
 \begin{equation*} P_\rho \in S^Y_{\beta_\rho} \end{equation*}
 for $\rho \in \Sigma_X(1)$, where $\beta_\rho \in \Pic Y$ and $S^Y_{\beta_\rho}$ is the corresponding graded piece of the Cox ring
 \begin{equation*}S^Y = k[z_\tau : \tau \in \Sigma_Y(1)]\end{equation*}
@@ -1032,7 +958,7 @@ Thus for $\tau \in \Sigma_Y(1)$ we have $\alpha_\tau = \sum_\rho a_\tau^\rho \ti
 We have thus proven that $\tilde{\mathcal{L}}$ has positive degree on $C^\prime$, so the pushed-forward quasimap is stable. This completes the proof of the following.
 
 \begin{thm} Let $X$ and $Y$ be smooth proper toric varieties and $f : Y \to X$ a morphism. Assume that $f$ satisfies Condition (1) above. Then there exists a natural push-forward map
-\begin{equation*} f_* : \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_* \beta} \end{equation*}
+\begin{equation*} \mathcal Q(f) \colon \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_* \beta} \end{equation*}
 which does not modify the underlying prestable curves.\end{thm}
 
 \begin{aside} We expect that such a map exists even if $f$ does not satisfy Condition (1). However, in this case we will need to modify the underlying prestable curves by contracting unstable components. The same is true in the stable maps case. \end{aside}
@@ -1043,7 +969,80 @@ where the $f_i$ are all homogeneous of degree $a$. Then given a quasimap with ta
 \begin{equation*} (C, L, u_o, \ldots, u_r) \end{equation*}
 the pushed-forward quasimap with target $\PP^N$ is:
 \begin{equation*} (C, L^{\otimes a}, f_0(u_0, \ldots, u_r) , \ldots, f_N(u_0, \ldots, u_r)) \end{equation*}
-(This is stable as long as $a > 0$, which is precisely when $f$ satsfies Condition (1) above.)
+(This is stable as long as $a > 0$, which is precisely when $f$ satisfies Condition (1) above.)
+
+\subsection{Relative obstruction theories}
+Assume now that $f\colon Y\to X$ is a morphism satisfying Condition (1) above, so that it induces $$k=\mathcal Q(f) \colon \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_* \beta}.$$ Even in the easiest possible case when $Y\subseteq X$ is an l.c.i. subscheme, $k$ is not necessarily a regular embedding, so the Gysin map in the sense of \cite{FUL} does not necessarily exist. Yet, when $\Q{g}{n}{X}{f_* \beta}$ is a smooth stack (or rather its standard obstruction theory w.r.t. the moduli stack of prestable curves is unobstructed, which happens e.g. in the cases $X=\PP^r$ and $(g,n)=(0,n)$ or $(1,0)$), we may ``pull back along $k$'', and we are going to explain why. 
+
+In \cite{Manolache-Pull} a generalisation of the Gysin map (called the \ildef{virtual pull-back}) is defined for morphisms endowed with a relative perfect obstruction theory. Moreover, a sufficient condition is given (Corollary 4.9) for this map to respect the virtual classes.
+
+\begin{lem} \label{Exists relative POT} There exists a relative obstruction theory $E_k$ for the morphism
+\begin{equation*} k : \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_*\beta} \end{equation*}
+which fits into a compatible triple with the standard obstruction theories for the quasimap spaces over $\MM_{g,n}$. Furthermore, $E_k$ is perfect as soon as $\Q{g}{n}{X}{f_*\beta}$ is unobstructed, so that:
+\begin{equation*} k^!_{\text{v}} [ \Q{g}{n}{X}{f_*\beta} ] = \virt{\Q{g}{n}{Y}{\beta}} \end{equation*} \end{lem}
+
+\begin{proof} Note first that, since $k$ does not change the source curve of a quasimap, we indeed have a commuting triangle:
+\bcd
+\Q{g}{n}{Y}{\beta} \ar[rr,"k"] \ar[rd] & & \Q{g}{n}{X}{f_*\beta} \ar[ld] \\
+& \MM_{g,n} & 
+\ecd
+We have perfect obstruction theories $E_{\overline{\mathcal{Q}}(Y)/\MM}$ and $E_{\overline{\mathcal{Q}}(X)/\MM}$ and we want to find a perfect obstruction theory $E_k$. Consider the diagram of universal curves
+\bcd
+\mathcal{C}_Y \ar[r,"\alpha"] \ar[d,"\pi"] \ar[rd,phantom,"\square" right] & \mathcal{C}_{X} \ar[d,"\rho"] \\
+\Q{g}{n}{Y}{\beta} \ar[r,"k"] & \Q{g}{n}{X}{f_*\beta}
+\ecd
+which is cartesian because $k$ does not alter the source curve of any quasimap. We have sheaves $\mathcal{F}_Y$ and $\mathcal{F}_{X}$ on $\mathcal{C}_Y$ and $\mathcal{C}_{X}$ respectively such that:
+\begin{align*} E_{\overline{\mathcal{Q}}(Y)/\MM}^\vee & = \R \pi_* \mathcal{F}_Y \\
+E_{\overline{\mathcal{Q}}(X)/\MM}^\vee & = \R \rho_* \mathcal{F}_{X} \end{align*}
+It follows (by flatness of $\rho$) that when we pull back the latter obstruction theory to $\om{Q}(Y)$ we obtain:
+\begin{equation*} k^* E_{\overline{\mathcal{Q}}(X)/\MM}^\vee = \R \pi_* \alpha^* \mathcal{F}_{X} \end{equation*}
+To construct a compatible triple, we require a morphism $k^* E_{\om{Q}(X)/\MM} \to E_{\om{Q}(Y)/\MM}$. Dually, it is therefore enough to construct a morphism of sheaves on $\mathcal{C}_Y$
+\begin{equation*} \mathcal{F}_Y \to \alpha^* \mathcal{F}_{X} \end{equation*}
+and then apply $\R \pi_*$. This is analogous to the morphism $f^* T_Y \to f^* T_{X}|_Y$ which is used in the stable maps setting. However the construction for quasimaps requires a little more ingenuity, because we do not quite have access to a universal map $f$.
+
+The sheaf $\mathcal{F}_Y$ is defined on $\mathcal{C}_Y$ by the short exact sequence
+\begin{equation*} 0 \to \OO_{\mathcal{C}_Y}^{\oplus r_Y} \to \oplus_{\tau} \mathcal{L}_\tau \to \mathcal{F}_Y \to 0 \end{equation*}
+where $r_Y = \operatorname{rk} \Pic X$ (implicitly we have chosen a basis for this $\Z$-module). Similarly $\mathcal{F}_{X}$ is defined on $\mathcal{C}_{X}$ by:
+\begin{equation*} 0 \to \OO_{\mathcal{C}_{X}}^{\oplus r_X} \to \oplus_{\rho} \mathcal{L}_\rho \to \mathcal{F}_{X} \to 0 \end{equation*}
+We will construct our morphism by first constructing a morhism:
+\begin{equation*} \oplus_{\tau} \mathcal{L}_\tau \to \alpha^* \oplus_{\rho} \mathcal{L}_\rho \end{equation*}
+Recall that $f\colon Y\to X$ is given by homogeneous polynomials
+\begin{equation*} P_\rho \in S^Y_{\beta_\rho} \subset S^Y = k[z_\tau : \tau \in \Sigma_Y(1)] \end{equation*}
+in the Cox ring of $Y$, where $\beta_{\rho}=f^*[D_\rho] \in \Pic Y$. For all monomials appearing in $P_\rho$, if we look at their exponents $(a_{\tau})_{\tau\in\Sigma_Y(1)}$, we have $\sum_{\tau\in\Sigma_Y(1)}a_\tau[D_\tau]=\beta_\rho$ by homogeneity, hence we can use the isomorphisms parametrised by $M_Y$ as above in order to interpret
+
+\begin{equation*} (P_\rho)_{\rho\in\Sigma_X(1)}\colon \bigoplus_{\tau\in\Sigma_Y(1)} L_{\tau}\to \bigoplus_{\rho\in\Sigma_X(1)} \beta_\rho=\alpha^* \left(\bigoplus_{\rho\in\Sigma_X(1)} L_\rho\right).\end{equation*}
+
+On the other hand, $f\colon Y\to X$ induces a pullback map on line bundles $\Pic(X)\to\Pic(Y)$ (for which $\mathbb Z$-modules we have implicitly chosen bases above), the dual (or transpose) to which gives us a matrix
+\[
+ Q\in\mathcal M_{r_X\times r_Y}(\mathbb Z)
+\]
+It is now clear by the very functoriality construction that the square in the following diagram is commutative, hence it induces the (dashed) map of sheaves that we were hoping for
+\bcd
+0 \ar[r] & \OO_{C_Y}^{\oplus r_Y} \ar[r] \ar[d,"Q"] & \oplus_{\tau} \mathcal{L}_\tau \ar[r] \ar[d,"{(P_\rho)}"] & \mathcal{F}_Y \ar[d,dashed]\ar[r] & 0 \\
+& \OO_{\mathcal{C}_{Y}}^{\oplus r_X} \ar[r] & \alpha^* \left(\oplus_{\rho} \mathcal{L}_\rho\right) \ar[r] & \alpha^* \mathcal{F}_{X} \ar[r] & 0
+\ecd
+
+Applying $\R \pi_*$ and dualising we obtain a morphism between the obstruction theories for the quasimap spaces, and we can complete this to obtain an exact triangle
+\begin{equation*} k^* E_{\om{Q}{X}/\MM} \to E_{\om{Q}{Y}/\MM} \to E_k \xrightarrow{[1]}\end{equation*}
+on $\om{Q}(Y)$. The complex $E_k$ is perfect (locally isomorphic to a bounded complex of vector bundles) because the other two are, and the axioms of a triangulated category give a morphism of exact triangles
+\bcd
+k^* E_{\om{Q}{X}/\MM} \ar[r] \ar[d] & E_{\om{Q}(Y)/\MM} \ar[r] \ar[d] & E_k  \ar[r,"{[1]}"] \ar[d] & \, \\
+k^*L_{\om{Q}(X)/\MM} \ar[r] & L_{\om{Q}(Y)/\MM} \ar[r] & L_k \ar[r,"{[1]}"] & \,
+\ecd
+It follows from a simple diagram chase that $E_k \to L_k$ is a relative obstruction theory. On the other hand, assuming that $\Q{g}{n}{X}{f_*\beta}$ is unobstructed, we may look at the long exact sequence in cohomology and find
+\begin{equation*} 0 \to \h^{-2}(E_k) \to \h^{-1}(k^* E_{\om{Q}(X)/\MM}) = 0\end{equation*}
+Hence $\h^{-2}(E_k) = 0$ and it is easy to show using similar arguments that $E_k$ is of perfect amplitude contained in $[-1,0]$.
+
+\end{proof}
+For every smooth projective variety $X\subseteq \PP^r$, we have thus produced a virtual pull-back morphism
+\begin{equation*} k^!_{\text{v}} : A_*(\Q{0}{n}{\PP^r}{d}) \to A_*(\Q{0}{n}{X}{\beta}) \end{equation*}
+and more generally for any cartesian diagram
+\bcd
+F \ar[r] \ar[d] \ar[rd,phantom,"\square" right] & G \ar[d] \\
+\Q{0}{n}{X}{\beta} \ar[r,"k"] & \Q{0}{n}{\PP^N}{d}
+\ecd
+we get a virtual pull-back morphism:
+\begin{equation*} k^!_{\text{v}} : A_*(G) \to A_*(F) \end{equation*}
 
 \section{The Comparison Morphism}
 

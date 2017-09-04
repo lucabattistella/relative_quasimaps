@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.10.6)  4 SEP 2017 12:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.10.6)  4 SEP 2017 18:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1227,7 +1227,7 @@ pxmia/m/it/10.95 ~$
  []
 
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 157.
+(Font)              scaled to size 8.0pt on input line 156.
 [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 10.95pt on input line 157.
@@ -1259,11 +1259,10 @@ ML/npxmi/m/it/10.95 ; d\U/npxmia/m/it/10.95 ~ \OMS/npxsy/m/n/10.95 !
  []
 
 [4]
-LaTeX Font Info:    Font shape `T1/zpltlf/bx/sc' in size <10.95> not available
-(Font)              Font shape `T1/zpltlf/b/sc' tried instead on input line 265
-.
-LaTeX Font Info:    Font shape `T1/zpltlf/b/sc' will be
-(Font)              scaled to size 10.95pt on input line 265.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
+(Font)              scaled to size 8.0pt on input line 265.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
+(Font)              scaled to size 6.1pt on input line 265.
 
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
@@ -1271,87 +1270,75 @@ IVE QUASIMAPS []
  []
 
 [5]
-LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 8.0pt on input line 269.
-LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 6.1pt on input line 269.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 6.1pt on input line 282.
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/sc' in size <10.95> not available
+(Font)              Font shape `T1/zpltlf/b/sc' tried instead on input line 289
+.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/sc' will be
+(Font)              scaled to size 10.95pt on input line 289.
  [6]
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
  []
 
-[7]
-LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 6.1pt on input line 329.
- [8]
+[7] [8]
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
  []
 
-[9] [10]
-Overfull \hbox (10.73586pt too wide) has occurred while \output is active
- \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
-IVE QUASIMAPS []
- []
-
-[11] [12]
-Overfull \hbox (3.48206pt too wide) in paragraph at lines 468--469
+[9]
+Overfull \hbox (3.48206pt too wide) in paragraph at lines 394--395
 []\T1/zpltlf/m/n/10.95 Compose $\OML/npxmi/m/it/10.95 E[] \OMS/npxsy/m/n/10.95 
 ! \OML/npxmi/m/it/10.95 L[]$ \T1/zpltlf/m/n/10.95 with the con-nect-ing ho-mo-m
 or-phism $\OML/npxmi/m/it/10.95 L[] \OMS/npxsy/m/n/10.95 ! \OML/npxmi/m/it/10.9
 5 ^^Z[]L[]\OT1/zpltlf/m/n/10.95 [1]$
  []
 
-
+[10]
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
  []
 
-[13] [14]
+[11] [12]
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[13]
+Underfull \vbox (badness 1092) has occurred while \output is active []
+
+ [14]
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
  []
 
 [15] [16]
-Underfull \vbox (badness 1092) has occurred while \output is active []
-
-
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
  []
 
-[17] [18]
+[17]
+LaTeX Font Info:    Try loading font information for U+bbm on input line 625.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
+)
+Underfull \vbox (badness 1147) has occurred while \output is active []
+
+ [18]
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
  []
 
 [19] [20]
-LaTeX Font Info:    Try loading font information for U+bbm on input line 699.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/bbm-macros/ubbm.fd
-File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-)
-Underfull \vbox (badness 1147) has occurred while \output is active []
-
-
-Overfull \hbox (10.73586pt too wide) has occurred while \output is active
- \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
-IVE QUASIMAPS []
- []
-
-[21] [22]
-Overfull \hbox (10.73586pt too wide) has occurred while \output is active
- \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
-IVE QUASIMAPS []
- []
-
-[23]
-Overfull \hbox (13.13121pt too wide) detected at line 791
+Overfull \hbox (13.13121pt too wide) detected at line 717
 \OT1/zpltlf/m/n/10.95 [[][]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 X\OMS/np
 xsy/m/n/10.95 j\OML/npxmi/m/it/10.95 Y; ^^L\U/npxmia/m/it/10.95 ~\OT1/zpltlf/m/
 n/10.95 ][] \U/npxmia/m/it/10.95 5 }\OML/npxmi/m/it/10.95 Y \U/npxmia/m/it/10.9
@@ -1364,39 +1351,51 @@ tlf/m/n/10.95 [[][]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 X\OMS/npxsy/m/n/
 t/10.95 Y; ^^L\U/npxmia/m/it/10.95 ~\OT1/zpltlf/m/n/10.95 ][]
  []
 
-[24]
+
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
  []
 
-[25]
-Overfull \hbox (3.74261pt too wide) in paragraph at lines 893--894
+[21] [22]
+Overfull \hbox (3.74261pt too wide) in paragraph at lines 819--820
  [] 
  []
 
 
-Overfull \hbox (11.60768pt too wide) detected at line 902
+Overfull \hbox (11.60768pt too wide) detected at line 828
 \U/npxmia/m/it/10.95 }[][]~[][] 5 [] [] 5 []
  []
 
-[26]
+
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
  []
 
-[27]
-LaTeX Font Info:    Try loading font information for T1+zplsups on input line 9
-28.
+[23] [24]
+LaTeX Font Info:    Try loading font information for T1+zplsups on input line 8
+54.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/newpx/t1zplsups.fd
 File: t1zplsups.fd 2015/01/17 v1.0
 )
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
-(Font)              scaled to size 10.95pt on input line 928.
+(Font)              scaled to size 10.95pt on input line 854.
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
-(Font)              scaled to size 9.0pt on input line 928.
- [28]
+(Font)              scaled to size 9.0pt on input line 854.
+
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[25] [26]
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[27] [28]
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
@@ -1415,7 +1414,7 @@ IVE QUASIMAPS []
  []
 
 [33]
-Overfull \hbox (23.12883pt too wide) in paragraph at lines 1071--1072
+Overfull \hbox (23.12883pt too wide) in paragraph at lines 1070--1071
 []\T1/zpltlf/m/n/10.95 Notice that re-strict-ing $[][] \OMS/npxsy/m/n/10.95 O[]
 \U/npxmia/m/it/10.95 }}\OML/npxmi/m/it/10.95 ^^N \OMS/npxsy/m/n/10.95 ^^@ \OT1/
 zpltlf/m/n/10.95 1\U/npxmia/m/it/10.95 ~\OML/npxmi/m/it/10.95 T[]\U/npxmia/m/it
@@ -1424,11 +1423,8 @@ U/npxmia/m/it/10.95 }[][] \OML/npxmi/m/it/10.95 ^^O[]T[]\U/npxmia/m/it/10.95 ~$
 \T1/zpltlf/m/n/10.95 .
  []
 
-
-Underfull \vbox (badness 3333) has occurred while \output is active []
-
- [34]
-Underfull \vbox (badness 2653) has occurred while \output is active []
+[34]
+Underfull \vbox (badness 2726) has occurred while \output is active []
 
 
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
@@ -1436,13 +1432,13 @@ Overfull \hbox (10.73586pt too wide) has occurred while \output is active
 IVE QUASIMAPS []
  []
 
-[35] [36]
-Overfull \hbox (10.26819pt too wide) in paragraph at lines 1142--1142
+[35]
+Overfull \hbox (10.26819pt too wide) in paragraph at lines 1141--1141
 [] 
  []
 
-
-Overfull \hbox (68.65169pt too wide) in paragraph at lines 1146--1148
+[36]
+Overfull \hbox (68.65169pt too wide) in paragraph at lines 1145--1147
 \T1/zpltlf/m/n/10.95 under $\OML/npxmi/m/it/10.95 h[]\U/npxmia/m/it/10.95 }\OML
 /npxmi/m/it/10.95 ^^^[]\U/npxmia/m/it/10.95 ~$\T1/zpltlf/m/n/10.95 . If we can 
 show that $\OML/npxmi/m/it/10.95 h[]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95
@@ -1453,7 +1449,7 @@ xsy/m/n/10.95 ^^@ [] \OML/npxmi/m/it/10.95 p[]\U/npxmia/m/it/10.95 ~~$
  []
 
 
-Overfull \hbox (45.43962pt too wide) detected at line 1155
+Overfull \hbox (45.43962pt too wide) detected at line 1154
 [][]\U/npxmia/m/it/10.95 }
 []\OML/npxmi/m/it/10.95 ; \OMS/npxsy/m/n/10.95 O[]\U/npxmia/m/it/10.95 }\OMS/np
 xsy/m/n/10.95 ^^@\OML/npxmi/m/it/10.95 q \OMS/npxsy/m/n/10.95 ^^@ [] \OML/npxmi
@@ -1473,34 +1469,27 @@ Overfull \hbox (10.73586pt too wide) has occurred while \output is active
 IVE QUASIMAPS []
  []
 
-[37]
-Underfull \vbox (badness 1163) has occurred while \output is active []
-
- [38]
-Underfull \vbox (badness 3260) has occurred while \output is active []
-
-
+[37] [38]
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
  []
 
 [39] [40]
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 1300.
+
+
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
  []
 
-[41]
-
-Package amsmath Warning: Foreign command \atopwithdelims;
-(amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 1301.
-
-(./relative_quasimaps.bbl
+[41] (./relative_quasimaps.bbl
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 9.0pt on input line 6.
- [42]
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 9.0pt on input line 76.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
@@ -1512,7 +1501,7 @@ LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 LaTeX Font Warning: Font shape `U/bbm/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 76.
 
-)
+[42])
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
@@ -1525,10 +1514,10 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 29445 strings out of 493091
- 574066 string characters out of 6134970
- 619714 words of memory out of 5000000
- 32183 multiletter control sequences out of 15000+600000
+ 29446 strings out of 493091
+ 574127 string characters out of 6134970
+ 620402 words of memory out of 5000000
+ 32184 multiletter control sequences out of 15000+600000
  98628 words of font info for 188 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  56i,16n,99p,10454b,1048s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1554,7 +1543,7 @@ pe1/public/newpx/zplb.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publi
 c/newpx/zplr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/newpx/z
 plri.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/newpx/zplx-regu
 lar.pfb>
-Output written on relative_quasimaps.pdf (43 pages, 331829 bytes).
+Output written on relative_quasimaps.pdf (43 pages, 332708 bytes).
 PDF statistics:
  233 PDF objects out of 1000 (max. 8388607)
  169 compressed objects within 2 object streams
