@@ -436,3 +436,37 @@
 	year = "2011"
 }
 
+@article{Bertram,
+	author = "Bertram, Aaron",
+	doi = "10.1007/s002220000094",
+	fjournal = "Inventiones Mathematicae",
+	issn = "0020-9910",
+	journal = "Invent. Math.",
+	mrclass = "14N35 (14D20 14J32)",
+	mrnumber = "1804158",
+	mrreviewer = "Yuan-Pin Lee",
+	number = "3",
+	pages = "487--512",
+	title = "{Another way to enumerate rational curves with torus actions}",
+	url = "http://dx.doi.org/10.1007/s002220000094",
+	volume = "142",
+	year = "2000"
+}
+
+@article{Popa-Roth,
+	author = "Popa, Mihnea and Roth, Mike",
+	doi = "10.1007/s00222-002-0279-y",
+	fjournal = "Inventiones Mathematicae",
+	issn = "0020-9910",
+	journal = "Invent. Math.",
+	mrclass = "14H60 (14C20 14D20)",
+	mrnumber = "1988296",
+	mrreviewer = "Jean-Marc Drezet",
+	number = "3",
+	pages = "625--663",
+	title = "{Stable maps and {Q}uot schemes}",
+	url = "http://dx.doi.org/10.1007/s00222-002-0279-y",
+	volume = "152",
+	year = "2003"
+}
+

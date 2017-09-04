@@ -10,8 +10,9 @@
 \contentsline {subsection}{\tocsubsection {}{4.3}{An intersection-theoretic lemma}}{16}
 \contentsline {subsection}{\tocsubsection {}{4.4}{Comb loci pull back}}{18}
 \contentsline {section}{\tocsection {}{5}{The Quasimap Mirror Theorem}}{21}
-\contentsline {section}{\tocsection {Appendix}{A}{Functoriality of Quasimap Spaces}}{26}
-\contentsline {section}{\tocsection {Appendix}{B}{The Comparison Morphism}}{31}
-\contentsline {section}{\tocsection {Appendix}{C}{The Quasimap String Equation for $\mathbb P^r$}}{38}
-\contentsline {section}{\tocsection {Appendix}{D}{Comparison with the GIT Construction}}{39}
-\contentsline {section}{\tocsection {Appendix}{}{References}}{40}
+\contentsline {subsection}{\tocsubsection {}{5.1}{Comparison with the work of Ciocan-Fontanine and Kim}}{25}
+\contentsline {section}{\tocsection {Appendix}{A}{Functoriality of Quasimap Spaces}}{28}
+\contentsline {section}{\tocsection {Appendix}{B}{The Comparison Morphism}}{33}
+\contentsline {section}{\tocsection {Appendix}{C}{The Quasimap String Equation for $\mathbb P^r$}}{40}
+\contentsline {section}{\tocsection {Appendix}{D}{Comparison with the GIT Construction}}{41}
+\contentsline {section}{\tocsection {Appendix}{}{References}}{42}

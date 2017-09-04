@@ -7,45 +7,46 @@ Repeated entry---line 201 of file relqm.bib
  : @article{Manolache-Push
  :                        ,
 I'm skipping whatever remains of this entry
-You've used 18 entries,
+Warning--there's a number but no volume in Givental-equivariantGW
+You've used 19 entries,
             2543 wiz_defined-function locations,
-            689 strings with 6679 characters,
-and the built_in function-call counts, 6971 in all, are:
-= -- 730
-> -- 244
-< -- 12
-+ -- 76
-- -- 74
-* -- 525
-:= -- 1130
-add.period$ -- 56
-call.type$ -- 18
-change.case$ -- 99
-chr.to.int$ -- 16
-cite$ -- 18
-duplicate$ -- 278
-empty$ -- 545
-format.name$ -- 102
-if$ -- 1413
+            697 strings with 6829 characters,
+and the built_in function-call counts, 7329 in all, are:
+= -- 768
+> -- 252
+< -- 13
++ -- 78
+- -- 76
+* -- 553
+:= -- 1186
+add.period$ -- 59
+call.type$ -- 19
+change.case$ -- 104
+chr.to.int$ -- 17
+cite$ -- 20
+duplicate$ -- 293
+empty$ -- 575
+format.name$ -- 106
+if$ -- 1485
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 20
-newline$ -- 94
-num.names$ -- 54
-pop$ -- 70
+missing$ -- 21
+newline$ -- 99
+num.names$ -- 57
+pop$ -- 74
 preamble$ -- 1
-purify$ -- 118
+purify$ -- 124
 quote$ -- 0
-skip$ -- 217
+skip$ -- 226
 stack$ -- 0
-substring$ -- 533
-swap$ -- 29
-text.length$ -- 12
-text.prefix$ -- 10
+substring$ -- 565
+swap$ -- 30
+text.length$ -- 13
+text.prefix$ -- 11
 top$ -- 0
-type$ -- 136
-warning$ -- 0
-while$ -- 77
-width$ -- 22
-write$ -- 239
+type$ -- 144
+warning$ -- 1
+while$ -- 81
+width$ -- 23
+write$ -- 252
 (There was 1 error message)

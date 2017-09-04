@@ -26,7 +26,10 @@
 
 \newcommand{\M}[4]{\overline{\mathcal M}_{#1,#2}(#3,#4)}
 \newcommand{\Q}[4]{\overline{\mathcal Q}_{#1,#2}(#3,#4)}
+\newcommand{\Qe}[4]{\overline{\mathcal Q}^{\epsilon}_{#1,#2}(#3,#4)}
 \newcommand{\Qt}[4]{\widetilde{\mathcal Q}_{#1,#2}(#3,#4)}
+\newcommand{\QG}[4]{\overline{\mathcal QG}_{#1,#2}(#3,#4)}
+\newcommand{\QGe}[4]{\overline{\mathcal QG}^{\epsilon}_{#1,#2}(#3,#4)}
 \newcommand{\PP}{\mathbb P}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\N}{\mathbb{N}}
@@ -140,7 +143,7 @@
 \section{Introduction}
 
 \section{Relative Stable Quasimaps}
-\subsection{Review of absolute stable quasimaps}
+\subsection{Review of absolute stable quasimaps} and graph spaces
 \subsection{Relative stable quasimaps}
 
 \section{Recursion Formula for $\PP^N$ Relative $H$}
@@ -691,7 +694,7 @@ We are going to reproduce Gathmann's proof of the Mirror Theorem with relative s
 
 We would like to think of this as a Lefschetz-type theorem, in that it expresses certain (restricted) quasimap invariants of a hypersurface $Y$ in terms of those of the ambient space $X$. As it turns out, we have also retrieved a formula of Ciocan-Fontanine and Kim \cite[Corollary 5.5.1]{CF-K-wallcrossing} (but with more restrictive assumptions on the target); under this new light, the formula can be simply interpreted as a relation between some residues for the $\Gm$-action on the space of 0-pointed and 1-pointed \emph{parametrised} quasimap invariants of the hypersurface $Y$. It is remarkable how, knowing only about a small sector (i.e. invariants with few insertions), it is possible to formally reconstruct the full quasimap potential; a point which was greatly clarified to us by the discussion in \cite[Section 5.5]{CF-K-wallcrossing}.
 
-We are going to be interested in the following \textbf{setup}: $X$ is a smooth projective toric variety and $Y$ is a smooth \emph{very ample} hypersurface in it, satisfying the following \emph{semi-positivity assumption}, that $-K_Y$ is nef. Notice that, by adjunction, it follows from our hypotheses that $-K_X$ is positive (at least) on every effective curve class \emph{coming from $Y$}; in fact we are going to assume (in addition) that \emph{$X$ is Fano}. Let us denote by $r$ the dimension of $X$ and assume it is \emph{at least 3}.
+We are going to be interested in the following \textbf{setup}: $X$ is a smooth projective toric variety and $Y$ is a smooth \emph{very ample} hypersurface in it, satisfying the following \emph{semi-positivity assumption}, that $-K_Y$ is nef. Notice that, by adjunction, it follows from our hypotheses that $-K_X$ is positive (at least) on every effective curve class \emph{coming from $Y$}. Let us denote by $r$ the dimension of $X$ and assume it is \emph{at least 3}. Then, in fact, every curve class on $X$ comes from $Y$ (by Lefschetz's hyperplane theorem) and $X$ \emph{is Fano}.
 
 Denote dual bases for $H^*(X;\mathbb Q)$ by $\eta^i$ and $\eta_i$ ($i=0,\ldots,k$), with $\eta^0=\mathbbm 1_X$ and $\eta^1=Y$, which induce bases $\rho_i=i^*\eta_i$ for $i^*H^*(X)$ (extend it to a basis of $H^*(Y)$ by adding $\rho_{k+1}\ldots,\rho_{k'}$) and dually $\rho^i, i=1,\ldots,k'$; notice that the class of a point on $Y$ is given by restricting the dual of $\eta^1$, i.e. it is $\rho_1$, while the class of a point on $X$ is annihilated when restricted to $Y$, i.e. $\rho_0=0$. Furthermore, remark that, everytime we look at a relative space $\Q{0}{\{m,0\}}{X|Y}{\beta}$ with $m>0$, the evaluation map $\ev_1\colon \Q{0}{\{m,0\}}{X|Y}{\beta}\to X$ factors through $Y$ (so all the insertions can be first pulled back to $Y$).
 
@@ -710,9 +713,9 @@ Denote dual bases for $H^*(X;\mathbb Q)$ by $\eta^i$ and $\eta_i$ ($i=0,\ldots,k
 
 \begin{thm}
 Let $X$ be a toric Fano variety of dimension at least 3, and $i\colon Y\subseteq X$ a very ample hypersurface such that $-K_Y$ is nef. Then
- \[
-  \frac{\sum_{\beta\geq 0} q^\beta\prod_{i=0}^{Y.\beta}(Y+iz)S_0^X(z,\beta)}{P_0(q)}= i_*S_0^Y(z,q)
- \]
+\begin{equation}\label{eqn:mirror}
+   \frac{\sum_{\beta\geq 0} q^\beta\prod_{j=0}^{Y.\beta}(Y+jz)S_0^X(z,\beta)}{P_0(q)}= i_*S_0^Y(z,q)
+\end{equation}
 where
 \begin{align*}
  P_0(q)= & 1+\sum_{\substack{\beta>0\colon \\ K_Y.\beta=0}} (Y.\beta)q^\beta\langle [pt_Y],\mathbbm 1_{X}\rangle_{\Q{0}{\{Y.\beta,0\}}{X|Y}{\beta}} \\
@@ -736,7 +739,7 @@ Then, by Gathmann's formula, we can prove that
 \end{equation}
 from which it follows that
 \[
- \prod_{i=0}^{Y.\beta}(Y+iz) S_0^X(z,\beta) = \sum_{m=0}^{Y.\beta}\prod_{i=m+1}^{Y.\beta}(Y+iz)T_{(m)}^{X|Y}(z,\beta).
+ \prod_{j=0}^{Y.\beta}(Y+jz) S_0^X(z,\beta) = \sum_{m=0}^{Y.\beta}\prod_{j=m+1}^{Y.\beta}(Y+jz)T_{(m)}^{X|Y}(z,\beta).
 \]
 It is now a matter of evaluating the RHS. Notice that $T_{(m)}^{X|Y}(z,\beta)$ is made of two parts:
 \begin{itemize}[leftmargin=*]
@@ -765,18 +768,18 @@ hence the boundary contributions do not show up until the very end of the proces
 \[
  \vdim \Q{0}{\{m,0\}}{X|Y}{\beta}=\dim X-3 -K_X.\beta +2-m \geq r-1
 \]
-because $m\leq Y.\beta$ and $-(K_X+Y).\beta\geq 0$, by adjunction, projection formula, and for every effective curve class $\beta$ \emph{coming from $Y$} (here Lefschetz's hyperplane theorem comes to our help, since by assumption $Y$ is a hyperplane section of $X$ and $X$ is not a surface); since the restriction of the class $[pt_X]$ to $Y$ vanishes, the only insertion that contributes is $\eta_1$ (by definition of a dual basis, all other dimension 1 classes vanish when restricted to $Y$), forcing the equality $m=Y.\beta$, so that again this correction term is non-trivial only in the last step of the algorithm.
+because $m\leq Y.\beta$ and $-(K_X+Y).\beta\geq 0$, by adjunction, projection formula, and for every effective curve class $\beta$ (coming from $Y$, but saying this is superfluous by Lefschetz's hyperplane theorem as we have already remarked); since the restriction of the class $[pt_X]$ to $Y$ vanishes, the only insertion that contributes is $\eta_1$ (by definition of a dual basis, all other dimension 1 classes vanish when restricted to $Y$), forcing the equality $m=Y.\beta$, so that again this correction term is non-trivial only in the last step of the algorithm.
 \end{itemize}
 So, in the end, we see that equation \ref{eqn:G} reduces to
 \begin{align*}
- &\prod_{i=0}^{Y.\beta}(Y+iz) S_0^X(z,\beta) = T_{(Y.\beta)}^{X|Y}(z,\beta) \\
+ &\prod_{j=0}^{Y.\beta}(Y+jz) S_0^X(z,\beta) = T_{(Y.\beta)}^{X|Y}(z,\beta) \\
  &= \sum_{i=1,\ldots,k;j\geq 0}z^{j+1}\eta^i\langle \rho_i\psi_1^j,\mathbbm 1_{Y}\rangle_{\Q{0}{2}{Y}{\beta}} \\
  &+\sum_{\substack{0<\beta^{(0)}<\beta \\ \beta^{(0)}+\beta^{(1)}=\beta}}z^{j+1}\eta^i\langle \rho_i\psi_1^j,\mathbbm 1_{Y}\rangle_{\Q{0}{2}{Y}{\beta^{(0)}}}(Y.\beta^{(1)})\langle [pt_Y],\mathbbm 1_{X}\rangle_{\Q{0}{\{Y.\beta^{(1)},0\}}{X|Y}{\beta^{(1)}}}\\
  &+\eta^1(Y.\beta)\langle [pt_Y],\mathbbm 1_{X}\rangle_{\Q{0}{\{Y.\beta,0\}}{X|Y}{\beta}}
 \end{align*}
 if $\beta$ is such that $K_Y.\beta=0$ (which implies $K_Y.\beta^{(1)}=0$ as well, for every effective decomposition $\beta=\beta^{(0)}+\beta^{(1)}$, due to the semi-positivity assumption on $Y$); while, if $K_Y.\beta<0$, it simply reduces to
 \[
- \prod_{i=0}^{Y.\beta}(Y+iz) S_0^X(z,\beta)= \sum_{i=1,\ldots,k;j\geq 0}z^{j+1}\eta^i\langle \rho_i\psi_1^j,\mathbbm 1_{Y}\rangle_{\Q{0}{2}{Y}{\beta}} = i_*S_0^Y(z,\beta).
+ \prod_{j=0}^{Y.\beta}(Y+jz) S_0^X(z,\beta)= \sum_{i=1,\ldots,k;j\geq 0}z^{j+1}\eta^i\langle \rho_i\psi_1^j,\mathbbm 1_{Y}\rangle_{\Q{0}{2}{Y}{\beta}} = i_*S_0^Y(z,\beta).
 \]
 
 
@@ -788,7 +791,7 @@ In order to do that, we use again Gathmann's algorithm, this time in the opposit
 \]
 When looking at the boundary, the invariants that come into play are of the form
 \[
- \langle [pt_y],\rho^h\rangle_{\Q{0}{2}{Y}{\beta^{(0)}}}\langle \rho_h,\mathbbm 1_{X}\rangle_{\Q{0}{\{Y.(\beta-\beta^{(0)})-1,0\}}{X|Y}{\beta-\beta^{(0)}}}
+ \langle [pt_Y],\rho^h\rangle_{\Q{0}{2}{Y}{\beta^{(0)}}}\langle \rho_h,\mathbbm 1_{X}\rangle_{\Q{0}{\{Y.(\beta-\beta^{(0)})-1,0\}}{X|Y}{\beta-\beta^{(0)}}}
 \]
 but notice that they must vanish by dimensional reasons, since
 \[
@@ -797,8 +800,8 @@ but notice that they must vanish by dimensional reasons, since
 So
 \begin{align*}
  & (Y.\beta)\langle [pt_Y],\mathbbm 1_{X}\rangle_{\Q{0}{\{Y.\beta,0\}}{X|Y}{\beta}} = \\
- & (Y.\beta)\int_{[\Q{0}{2}{X}{\beta}]^{\text{vir}}}\ev_1^*(\eta_1)\prod_{j=0}^{Y.\beta-1}(\ev_1^*Y+j\psi_1) = \\
- & (Y.\beta)!\langle[pt_X]\psi_1^{Y.\beta-1},\mathbbm 1_X\rangle_{\Q{0}{2}{X}{\beta}}.
+ & = (Y.\beta)\int_{[\Q{0}{2}{X}{\beta}]^{\text{vir}}}\ev_1^*(\eta_1)\prod_{j=0}^{Y.\beta-1}(\ev_1^*Y+j\psi_1) = \\
+ & = (Y.\beta)!\langle[pt_X]\psi_1^{Y.\beta-1},\mathbbm 1_X\rangle_{\Q{0}{2}{X}{\beta}}.
 \end{align*}
 the second equality because $Y.\eta_1=[pt_X]$ and $Y^2.\eta_1=0$.
 \end{proof}
@@ -806,7 +809,7 @@ the second equality because $Y.\eta_1=[pt_X]$ and $Y^2.\eta_1=0$.
 \begin{cor}
  If $Y$ is itself Fano, then there is no correction term
  \[
-  \sum_{\beta\geq 0} q^\beta\prod_{i=0}^{Y.\beta}(Y+iz)S_0^X(z,\beta) = i_*S_0^Y(z,q)
+  \sum_{\beta\geq 0} q^\beta\prod_{j=0}^{Y.\beta}(Y+jz)S_0^X(z,\beta) = i_*S_0^Y(z,q)
  \]
 \end{cor}
 
@@ -817,7 +820,7 @@ the second equality because $Y.\eta_1=[pt_X]$ and $Y^2.\eta_1=0$.
  \]
 where
 \[
- I_{\text{small}}^{Y_5}(z,q)=5H+\sum_{d>0}\frac{\prod_{i=0}^{5d}(H+iz)}{\prod_{i=0}^{d}(H+iz)^5}q^d
+ I_{\text{small}}^{Y_5}(z,q)=5H+\sum_{d>0}\frac{\prod_{j=0}^{5d}(H+jz)}{\prod_{j=0}^{d}(H+jz)^5}q^d
 \]
 and
 \[
@@ -828,6 +831,88 @@ and
 \begin{remark}
  This formula (and, more generally, formulae for concavex bundles over products of projective spaces) was already obtained in \cite[Theorem 1]{CZ-mirror} via equivariant localisation.
 \end{remark}
+
+\subsection{Comparison with the work of Ciocan-Fontanine and Kim}
+
+We would like to compare our formula to \cite[Corollary 5.5.1]{CF-K-wallcrossing}.
+
+In \cite[Section 5]{CF-K-wallcrossing} they introduce (in the more general context of $\epsilon$-stable quasimaps to GIT quotients)
+\begin{itemize}
+ \item the $J^{\epsilon}$-function:
+ \[
+  J^\epsilon({\bf t}, z)=\sum_{k\geq 0,\beta\geq 0}q^\beta(\ev_\bullet)_*\left(\frac{\prod_{i=1}^k ev_i^*({\bf t})}{k!}\cap\operatorname{Res}_{F_0}[\QGe{0}{k}{Y}{\beta}]^{\text{vir}}\right)
+ \]
+\item the $S^\epsilon$-operator
+\[
+ S^\epsilon(z)(\gamma)=\sum_{m\ge 0,\beta\ge 0}\frac{q^\beta}{m!} 
+(ev_1)_*\left(\frac{[\Qe{0}{2+m}{Y}{\beta}]^{\text{vir}}}{z-\psi}ev_2^*(\gamma)\prod_{j=3}^{2+m}ev_j^*({\bf t})\right)
+\]
+\item the $P^\epsilon$-series
+\[
+ P^\epsilon({\bf t}, z)=\sum_h\rho^h\sum_{m\geq 0,\beta\geq 0} \frac{q^\beta }{m!}
+[\QGe{0}{1+m}{Y}{\beta}]\cap \ev_1^*(\rho_h p_\infty)
+\]
+where $p_\infty\in H^*_{\Gm}(\PP^1)$ is defined via its restrictions to the $\Gm$-fixed points: $p_{\infty|0}=0,p_{\infty|\infty}=-z$.
+\end{itemize}
+They prove by localisation that \cite[Theorem 5.4.1]{CF-K-wallcrossing}
+\[
+ J^\epsilon(z)=S^\epsilon(z)(P^\epsilon).
+\]
+Furthermore, they prove that, restricting to ${\bf t}=0$ and semi-positive targets, the only class that matches non-trivially with $P^\epsilon_{|{\bf t}=0}$ is $[pt_Y]$, and the above formula takes the simpler form of a product \cite[Corollary 5.5.1]{CF-K-wallcrossing}
+\[
+ \frac{J^\epsilon |_{{\bf t}=0}}{\langle [pt_Y],  P^\epsilon|_{{\bf t}=0}\rangle}=\mathbbm 1_Y+\sum_h\rho^h(\sum_{\beta\neq 0}q^\beta\langle\frac{\rho_h}{z-\psi},\mathbbm 1_Y\rangle_{0,2,\beta}^\epsilon).
+\]
+Notice that the restriction of $S^\epsilon(z)(\mathbbm 1_Y)$ to ${\bf t}=0$ that appears on the RHS of this formula coincides with what we have called $S^Y_0(z,q)$ above.
+
+They also observe that, if we write the $\frac{1}{z}$-expansion of $J^{\epsilon}_{{\bf t}=0}$ as
+\[
+ J^{\epsilon}_{{\bf t}=0}=J^{\epsilon}_{0}(q)\mathbbm 1_Y+O(\frac{1}{z})
+\]
+then $\langle [pt_Y],  P^\epsilon|_{{\bf t}=0}\rangle=J^{\epsilon}_{0}(q)$.
+
+Let us look more closely at $J^{\epsilon}_{{\bf t}=0}=\sum_{\beta\geq 0}q^\beta(\ev_\bullet)_*\left(\operatorname{Res}_{F_0}[\QGe{0}{0}{Y}{\beta}]^{\text{vir}}\right)$. Recall that in our context $Y\subseteq X$ is a very ample hypersurface and $X$ is toric Fano. Furthermore, set $\epsilon=0^+$. We have the following diagram:
+
+\begin{center}
+ \begin{tikzcd}
+  \QG{0}{0}{Y}{\beta}\ar[d,hook,"\iota"]\ar[dr,phantom,"\Box"] & F_0^Y\ar[d]\ar[l,hook]\ar[r,"\ev_{\bullet}"] & Y\ar[d,hook,"i"] \\
+  \QG{0}{0}{X}{\beta} & F_0^X\ar[l,hook]\ar[r,"\ev_{\bullet}"] & X
+ \end{tikzcd}
+\end{center}
+
+\begin{itemize}[leftmargin=*]
+ \item By a slight generalisation of \cite[Propositions 6.2.2 and 6.2.3]{CFKM}, $\iota_*[\QG{0}{0}{Y}{\beta}]^{\text{vir}}=e(\pi_* E^Y_{0,0,\beta}(z))\cap[\QG{0}{0}{X}{\beta}]^{\text{vir}}$ as $\Gm$-equivariant classes, where $\pi$ is the universal curve on $\QG{0}{0}{X}{\beta}$ and $E^Y_{0,0,\beta}(z)$ is the equivariant line bundle on it associated to $\mathcal O_X(Y)$.
+ \item Since the fibers of $\pi$ are irreducible (by the stability condition and the fact that there are no markings, there can only be the parametrised component), the following splitting holds:
+ \[
+  e(\pi_* E^Y_{0,0,\beta}(z))=\prod_{j=0}^{Y.\beta} c_1(\sigma_0^* E^Y_{0,0,\beta}(z)\otimes \omega_{\pi}^{\otimes j})
+ \]
+coming from evaluating at (the $j$-th order infinitesimal thickening of) the zero section $\sigma_0$ and the jet bundles exact sequence:
+\begin{center}
+ \begin{tikzcd}
+  0\ar[r] & \pi_* (E^Y_{0,0,\beta}(-j\sigma_0))\ar[r] & \pi_* E^Y_{0,0,\beta}\ar[r] & \sigma_0^*\operatorname{P}^{j-1}(E^Y_{0,0,\beta}) \ar[r] & 0 \\
+  0\ar[r] & \Omega_\pi^{\otimes j}\otimes E^Y_{0,0,\beta}\ar[r] & \operatorname{P}^{j}(E^Y_{0,0,\beta}) \ar[r] & \operatorname{P}^{j-1}(E^Y_{0,0,\beta}) \ar[r] & 0
+ \end{tikzcd}
+\end{center}
+which, restricting to $F_0^X$, gives:
+\[
+ \iota_*[F_0^Y]^{\text{vir}}=\prod_{j=0}^{Y.\beta}(Y+iz)[F_0^X]^{\text{vir}}.
+\]
+ \item The small $J^{0^+}$-function for toric varieties has been evaluated by Givental \cite{Givental-equivariantGW}\cite[Definition 7.2.8]{CF-K}:
+ \[
+  (\ev_{\bullet})_*\frac{[F_0^X]^{\text{vir}}}{e(N_{F_0/\QG{0}{0}{X}{\beta}})}=\prod_{\rho\in\Sigma_X(1)}\frac{\prod_{j=-\infty}^0(D_{\rho}+jz)}{\prod_{j=-\infty}^{\int_{\beta}D_{\rho}}(D_\rho+jz)}=\frac{\prod_{\substack{\rho\in\Sigma_X(1)\colon D_\rho.\beta\leq 0 \\ j=\int_{\beta}D_\rho,\ldots,0}}(D_{\rho}+jz)}{\prod_{\substack{\rho\in\Sigma_X(1)\colon D_\rho.\beta> 0 \\ j=1,\ldots,\int_{\beta}D_\rho}}(D_{\rho}+jz)}
+ \]
+So, using $\sum_{\rho\in\Sigma_X(1)} D_{\rho}=-K_X$ and $(Y+K_X).\beta=0$, we see that
+\[
+ J^Y_0(q)=\sum_{\beta\geq 0}q^\beta(Y.\beta)!\frac{\prod_{\rho\in\Sigma_X(1)\colon D_\rho.\beta< 0}(-1)^{-D_{\rho}.\beta}(-D_{\rho}.\beta)!}{\prod_{\rho\in\Sigma_X(1)\colon D_\rho.\beta> 0}(D_{\rho}.\beta)!}
+\]
+\item Since $X$ is Fano, $J^X_{|{\bf t}=0}=S^X_{|{\bf t}=0}(\mathbbm 1_X)$.
+\item The coefficient $\langle[pt_X]\psi_1^{Y.\beta-1},\mathbbm 1_X\rangle_{\Q{0}{2}{X}{\beta}}$ that appears in our $P$-series (multiplied by $(Y.\beta)!$), can be deduced from the expansion of $S^X_{|{\bf t}=0}(\mathbbm 1_X)$ given above, and it turns out to be
+\[
+ \langle [pt_X],S^X_{|{\bf t}=0}(\mathbbm 1_X)\rangle[z^{Y.\beta}]=\frac{\prod_{\rho\in\Sigma_X(1)\colon D_\rho.\beta< 0}(-1)^{-D_{\rho}.\beta}(-D_{\rho}.\beta)!}{\prod_{\rho\in\Sigma_X(1)\colon D_\rho.\beta> 0}(D_{\rho}.\beta)!}.
+\]
+
+\end{itemize}
+
+So we may conclude that the $i_*$ of \cite[Corollary 5.5.1]{CF-K-wallcrossing} coincides with our Equation \ref{eqn:mirror}.
 
 \newpage
 
