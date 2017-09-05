@@ -1,6 +1,14 @@
 This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: relative_quasimaps.aux
+A level-1 auxiliary file: tex/recursion_for_Pr.aux
+A level-1 auxiliary file: tex/recursion_general.aux
+A level-1 auxiliary file: tex/mirror_theorem.aux
+A level-1 auxiliary file: tex/functoriality.aux
+A level-1 auxiliary file: tex/comparison.aux
+A level-1 auxiliary file: tex/string.aux
+A level-1 auxiliary file: tex/intersection.aux
+A level-1 auxiliary file: tex/GIT.aux
 The style file: alpha.bst
 Database file #1: relqm.bib
 Repeated entry---line 201 of file relqm.bib
@@ -10,7 +18,7 @@ I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in Givental-equivariantGW
 You've used 19 entries,
             2543 wiz_defined-function locations,
-            697 strings with 6829 characters,
+            705 strings with 6984 characters,
 and the built_in function-call counts, 7329 in all, are:
 = -- 768
 > -- 252

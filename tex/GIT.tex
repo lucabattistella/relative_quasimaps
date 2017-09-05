@@ -1,0 +1,28 @@
+\section{Comparison with the GIT Construction} \label{Section comparison with GIT construction}
+
+In this section we prove the comparison result promised in Remark \ref{GIT comparison remark}
+
+[GENERALISE TO $X$ ANY TORIC VARIETY]
+Let $X$ be a hypersurface of degree $a$ in $\PP^r$. In the preceding sections, we have put a virtual class on $\Q{g}{n}{X}{d}$ by way of the following Cartesian diagram:
+
+\bcd
+\Q{g}{n}{X}{d}\ar[d]\ar[r] & \Q{g}{n}{\PP^r}{d}\ar[d,"\nu_a"] \\
+\Q{g}{n}{H}{ad}\ar[r] & \Q{g}{n}{\PP^N}{ad}
+\ecd
+
+where $N={{r+a}\choose{a}}-1$ and $\nu_a$ is the Veronese embedding. In fact, $\Q{g}{n}{X}{d}$ is thought of as representing stable quasimaps to $\PP^r$ such that the corresponding sections satisfy the equation for $X$ inside $\PP^r$, that is a homogeneous polynomial $Q$ of degree $a$, i.e. gives a section of $L^{\otimes a}$ on the source curve $C$.
+
+We wish to compare this with the GIT approach of \cite{CFKM}. Here $X$ is seen as the GIT quotient of the affine cone $C_X\subseteq \mathbb A^{r+1}$ with respect to the diagonal $\mathbb G_m$-action. Objects of $\Q{g}{n}{X}{d}^\text{GIT}$ are diagrams of the form
+
+\bcd
+P\ar[d,"\mathbb G_m"]\ar[r] & C_X & \text{or, equivalently,} & P\times_{\mathbb G_m} C_X \ar[d,"\rho" left] \\
+C & & & C \ar[u,bend right,"u"right]
+\ecd
+and the dual perfect obstruction theory with respect to $\mathfrak{Bun}_{\mathbb G_m}$ is given by $R^\bullet\pi_*(u^*\mathbb T^\bullet_\rho$), where $\pi\colon \mathcal C_{\mathfrak{Bun}}\to\mathfrak{Bun}_{\mathbb G_m}$ is the universal curve.
+
+Notice that $\mathfrak{Bun}_{\mathbb G_m}\simeq \mathfrak{Pic}$ by taking the line bundle $L=P\times_{\mathbb G_m}\mathbb A^1\to C$ associated to the $\mathbb G_m$-torsor $P\to C$. Furthermore, the $\mathbb G_m$-equivariant embedding in a smooth stack
+\bcd
+P\times_{\mathbb G_m} C_X \ar[r,hook]\ar[d,"\rho" left] & P\times_{\mathbb G_m}\mathbb A^{r+1}\simeq L^{\oplus r+1}\ar[dl]\\
+C \ar[u,bend right,"u"right] &
+\ecd
+gives us $u^*T^\bullet_\rho\simeq[L^{\oplus r+1}\to L^{\otimes a}]$, where the arrow is induced by $Q$, and shows that both the modular interpretation and the obstruction theory coincide.
