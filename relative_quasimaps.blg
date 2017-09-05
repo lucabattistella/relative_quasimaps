@@ -1,11 +1,12 @@
-This is BibTeX, Version 0.99d (TeX Live 2016)
+This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: relative_quasimaps.aux
 A level-1 auxiliary file: tex/recursion_for_Pr.aux
 A level-1 auxiliary file: tex/recursion_general.aux
 A level-1 auxiliary file: tex/mirror_theorem.aux
-A level-1 auxiliary file: tex/functoriality.aux
 A level-1 auxiliary file: tex/comparison.aux
+A level-1 auxiliary file: tex/functoriality.aux
+A level-1 auxiliary file: tex/splitting.aux
 A level-1 auxiliary file: tex/string.aux
 A level-1 auxiliary file: tex/intersection.aux
 A level-1 auxiliary file: tex/GIT.aux
@@ -16,45 +17,45 @@ Repeated entry---line 201 of file relqm.bib
  :                        ,
 I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in Givental-equivariantGW
-You've used 19 entries,
+You've used 18 entries,
             2543 wiz_defined-function locations,
-            705 strings with 6984 characters,
-and the built_in function-call counts, 7329 in all, are:
-= -- 768
-> -- 252
+            699 strings with 6929 characters,
+and the built_in function-call counts, 6933 in all, are:
+= -- 726
+> -- 233
 < -- 13
-+ -- 78
-- -- 76
-* -- 553
-:= -- 1186
-add.period$ -- 59
-call.type$ -- 19
-change.case$ -- 104
-chr.to.int$ -- 17
-cite$ -- 20
-duplicate$ -- 293
-empty$ -- 575
-format.name$ -- 106
-if$ -- 1485
++ -- 72
+- -- 70
+* -- 522
+:= -- 1120
+add.period$ -- 56
+call.type$ -- 18
+change.case$ -- 98
+chr.to.int$ -- 16
+cite$ -- 19
+duplicate$ -- 279
+empty$ -- 547
+format.name$ -- 99
+if$ -- 1406
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 21
-newline$ -- 99
-num.names$ -- 57
-pop$ -- 74
+missing$ -- 20
+newline$ -- 94
+num.names$ -- 54
+pop$ -- 71
 preamble$ -- 1
-purify$ -- 124
+purify$ -- 117
 quote$ -- 0
-skip$ -- 226
+skip$ -- 213
 stack$ -- 0
-substring$ -- 565
-swap$ -- 30
+substring$ -- 539
+swap$ -- 29
 text.length$ -- 13
 text.prefix$ -- 11
 top$ -- 0
-type$ -- 144
+type$ -- 136
 warning$ -- 1
-while$ -- 81
-width$ -- 23
-write$ -- 252
+while$ -- 76
+width$ -- 22
+write$ -- 239
 (There was 1 error message)
