@@ -1,19 +1,19 @@
 \select@language {english}
 \contentsline {section}{\tocsection {}{1}{Introduction}}{1}
-\contentsline {section}{\tocsection {}{2}{Relative Stable Quasimaps}}{1}
+\contentsline {section}{\tocsection {}{2}{Relative stable quasimaps}}{1}
 \contentsline {subsection}{\tocsubsection {}{2.1}{Review of absolute stable quasimaps}}{1}
 \contentsline {subsection}{\tocsubsection {}{2.2}{Relative stable quasimaps}}{1}
-\contentsline {section}{\tocsection {}{3}{Recursion Formula for $\mathbb P^N$ Relative $H$}}{2}
-\contentsline {section}{\tocsection {}{4}{Recursion Formula in the General Case}}{6}
+\contentsline {section}{\tocsection {}{3}{Recursion formula for $\mathbb P^N$ relative $H$}}{2}
+\contentsline {section}{\tocsection {}{4}{Recursion formula in the general case}}{6}
 \contentsline {subsection}{\tocsubsection {}{4.1}{Centipede loci and obstruction theories}}{6}
 \contentsline {subsection}{\tocsubsection {}{4.2}{An intersection-theoretic lemma}}{14}
 \contentsline {subsection}{\tocsubsection {}{4.3}{Comb loci pull back}}{15}
-\contentsline {section}{\tocsection {}{5}{The Quasimap Mirror Theorem}}{18}
-\contentsline {subsection}{\tocsubsection {}{5.1}{Comparison with the work of Ciocan-Fontanine and Kim}}{22}
-\contentsline {section}{\tocsection {Appendix}{A}{Functoriality of Toric Quasimap Spaces and Relative Obstruction Theories}}{25}
-\contentsline {subsection}{\tocsubsection {}{A.1}{Relative obstruction theories}}{30}
-\contentsline {section}{\tocsection {Appendix}{B}{The Comparison Morphism}}{34}
-\contentsline {section}{\tocsection {Appendix}{C}{The Quasimap String Equation for $\mathbb P^r$}}{41}
-\contentsline {section}{\tocsection {Appendix}{D}{Intersection-theoretic lemmata}}{43}
-\contentsline {section}{\tocsection {Appendix}{E}{Comparison with the GIT Construction}}{45}
-\contentsline {section}{\tocsection {Appendix}{}{References}}{46}
+\contentsline {section}{\tocsection {}{5}{The quasimap mirror theorem}}{19}
+\contentsline {subsection}{\tocsubsection {}{5.1}{Comparison with the work of Ciocan-Fontanine and Kim}}{23}
+\contentsline {section}{\tocsection {Appendix}{A}{Functoriality and relative obstruction theories}}{26}
+\contentsline {subsection}{\tocsubsection {}{A.1}{Relative obstruction theories}}{31}
+\contentsline {section}{\tocsection {Appendix}{B}{The comparison morphism}}{35}
+\contentsline {section}{\tocsection {Appendix}{C}{The quasimap string equation for $\mathbb P^r$}}{42}
+\contentsline {section}{\tocsection {Appendix}{D}{Some intersection-theoretic lemmas}}{44}
+\contentsline {section}{\tocsection {Appendix}{E}{Comparison with the GIT construction}}{46}
+\contentsline {section}{\tocsection {Appendix}{}{References}}{47}

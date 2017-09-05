@@ -1,4 +1,4 @@
-\section{Recursion Formula in the General Case}
+\section{Recursion formula in the general case}
 We now move on to the general case. Let $X$ be an arbitrary toric variety (smooth and proper) and $Y \subseteq X$ a very ample hypersurface (not necessarily toric). The complete linear system associated to $\OO(Y)$ defines an embedding $i : X \hookrightarrow \PP^N$ such that $i^{-1}(H) = Y$ (for a certain hyperplane $H$). By the functoriality property of quasimap spaces (see Appendix \ref{Functoriality of Quasimap Spaces Section}) we have a map:
 \begin{equation*} k := \mathcal Q(i) : \Q{0}{n}{X}{\beta} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
 where $d=i_*\beta$. Since $i$ is a closed embedding it follows that $k$ is as well. Furthermore $k$ admits a compatible perfect obstruction theory - see Section \ref{section:rel_pot_for_qm_functoriality} -, so we have a notion of virtual pull-back along $k$ (which coincides with the \emph{diagonal} pull-back according to Lemma \ref{lem:diagonal_virtual_coincide}).
@@ -215,7 +215,11 @@ There is one other way of obtaining $\mathcal{K}(X,A,B)$ as a pullback. Recall t
 
 \begin{lemma} \label{Centipede loci pull back} $k_{\text{v}}^! [ \mathcal{K}(\PP^N,A,i_*B)] = \virt{\mathcal{K}(X,A,B)}$ \end{lemma}
 
-\begin{proof} It follows from the construction above that the obstruction theory $E_{\varphi_X} \to L_{\varphi_X}$ is equal to the pullback of $E_{\varphi_\PP^N} \to L_{\varphi_{\PP^N}}$ along $\eta$. So:
+\begin{proof} It follows from the construction above that the obstruction theory $E_{\varphi_X} \to L_{\varphi_X}$ is equal to the pullback of $E_{\varphi_\PP^N} \to L_{\varphi_{\PP^N}}$ along $\eta$.
+
+[JUSTIFY THIS!]
+
+So:
 \begin{equation*} (\varphi_X)_{\text{v}}^! = (\varphi_{\PP^N})_{\text{v}}^! : A_*(\om{Q}(X)) \to A_*(\mathcal{K}(X)) \end{equation*}
 Then commutativity of virtual pull-backs gives
 \begin{align*} k_{\text{v}}^! [\mathcal{K}(\PP^N)] & = k_{\text{v}}^! (\varphi_{\PP^N})_{\text{v}}^! [\om{Q}(\PP^N)] \\
@@ -278,7 +282,7 @@ We are finally able to prove that the third term in the recursion formula pulls 
 \begin{lem} \label{Comb loci pull back} For any $\alpha$ we have:
 \begin{equation*} k_{\text{v}}^! [D^\mathcal{Q}_{\alpha,k}(\PP^N|H,d)] = \virt{D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)} \end{equation*} \end{lem}
 
-\begin{proof} We have a cartesian diagram:
+Consider the cartesian diagram:
 \bcd
 D^\mathcal{Q}_{\alpha,k}(X|Y,\beta) \ar[r,"k"] \ar[d] \ar[rd,phantom,"\square"] & D^\mathcal{Q}_{\alpha,k}(\PP^N|H,d) \ar[d] \\
 \Q{0}{n}{X}{\beta} \ar[r,"k"] & \Q{0}{n}{\PP^N}{d}
@@ -308,7 +312,7 @@ and so we may use the more general theory of quasimaps to GIT quotients (\cite{C
 We should then check that these two definitions of $\om{Q}(Y)$ agree (i.e. that there exists an isomorphism between these moduli spaces which preserves the virtual class). This is carried out in Appendix \ref{Section comparison with GIT construction}.
 \end{remark}
 
-Having dealt with this issue, we can now continue with the proof of Lemma \ref{Comb loci pull back}. In order to make the discussion readable, we will need to introduce some shorthand notation. We suppose that the data of $A$,$B$ and $M$ has been fixed, and set:
+Having dealt with this issue, we can now move towards the proof of Lemma \ref{Comb loci pull back}. In order to make the discussion readable, we will need to introduce some shorthand notation. We suppose that the data of $A$,$B$ and $M$ has been fixed, and set:
 \begin{align*}
 \mathcal{K}(X|Y) & := D^{\mathcal{Q}}(X|Y,A,B,M) \\
 \mathcal{L}(X|Y) & := E^{\mathcal{Q}}(X|Y,A,B,M)
@@ -319,11 +323,22 @@ We then have a cartesian diagram:
 \mathcal{K}(X) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \mathcal{L}(X) \ar[r] \ar[d] & \mathcal{L}(\PP^N) \\
 X^r \ar[r,"\Delta"] & X^r \times X^r
 \ecd
-The morphism $\theta$ does not have a perfect relative obstruction theory. Nevertheless, we can define virtual pull-back morphisms in the sense of Section \ref{Intersection theory lemma subsection} above because there is a natural class on $\mathcal{L}(\PP^N|H)$. By the very definition we have
+
+The morphism $\theta$ does not have a perfect relative obstruction theory. Nevertheless, we can define virtual pull-back morphisms $\theta_{\text{v}}^!$ in the sense of \S \ref{Intersection theory lemma subsection} because there is a natural class on $\mathcal{L}(\PP^N|H)$. 
+
+\begin{lemma} \label{K(X) pulls back to K(X|Y)} $\virt{\mathcal{K}(X|Y)} = \theta_{\text{v}}^!\virt{\mathcal{K}(X)}$ \end{lemma}
+\begin{proof}
+By the very definition we have
 \begin{equation*} \virt{\mathcal{L}(X|Y)} = \theta_{\text{v}}^! \virt{\mathcal{L}(X)} \end{equation*}
 and hence we obtain:
-\begin{align*} \virt{\mathcal{K}(X|Y)} & = \Delta^! [\mathcal{L}(X|Y)] = \Delta^! \theta_{\text{v}}^! \virt{\mathcal{L}(X)} \\
-& = \theta_{\text{v}}^! \Delta^! \virt{\mathcal{L}(X)} = \theta_{\text{v}}^! \virt{\mathcal{K}(X)} \end{align*}
+\begin{align*} \virt{\mathcal{K}(X|Y)} & = \Delta^! [\mathcal{L}(X|Y)]\\
+& = \Delta^! \theta_{\text{v}}^! \virt{\mathcal{L}(X)} \\
+& = \theta_{\text{v}}^! \Delta^! \virt{\mathcal{L}(X)} \\
+& = \theta_{\text{v}}^! \virt{\mathcal{K}(X)} \end{align*}
+as required.
+\end{proof}
+
+\begin{proof}[Proof of Lemma \ref{Comb loci pull back}]
 Finally, consider the diagram:
 \bcd
 \mathcal{K}(X|Y) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \mathcal{K}(\PP^N|H) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \mathcal{L}(\PP^N|H) \ar[d,"\theta"] \\
@@ -331,10 +346,10 @@ Finally, consider the diagram:
 \om{Q}(X) \ar[r,"k"] & \om{Q}(\PP^N)
 \ecd
 Then we have:
-\begin{align*} k_{\text{v}}^! [ \mathcal{K}(\PP^N|H) ] & = k_{\text{v}}^! \theta_{\text{v}}^! [ \mathcal{K}(\PP^N) ] \\
+\begin{align*} k_{\text{v}}^! [ \mathcal{K}(\PP^N|H) ] & = k_{\text{v}}^! \theta_{\text{v}}^! [ \mathcal{K}(\PP^N) ] \text{\qquad \ by Lemma \ref{K(X) pulls back to K(X|Y)}} \\
 & = \theta_{\text{v}}^! k_{\text{v}}^! [ \mathcal{K}(\PP^N) ] \\
-& = \theta_{\text{v}}^! \virt{\mathcal{K}(X)} \text{\qquad by Lemma \ref{Centipede loci pull back}} \\
-& = \virt{\mathcal{K}(X|Y)} \text{\qquad by the formula above}
+& = \theta_{\text{v}}^! \virt{\mathcal{K}(X)} \text{\ \ \qquad by Lemma \ref{Centipede loci pull back}} \\
+& = \virt{\mathcal{K}(X|Y)} \text{\qquad \ \, by Lemma \ref{K(X) pulls back to K(X|Y)}}
 \end{align*}
 The lemma follows because $D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ and $D^\mathcal{Q}_{\alpha,k}(\PP^N|H,d)$ are the disjoint union of the $\mathcal{K}(X|Y)$ and $\mathcal{K}(\PP^N|H)$. \end{proof}
 
