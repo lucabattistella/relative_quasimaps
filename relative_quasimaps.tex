@@ -54,6 +54,9 @@
 \newcommand{\virt}[1]{[#1]^{\operatorname{virt}}}
 \newcommand{\Id}{\operatorname{Id}}
 \newcommand{\CC}{\mathbb{C}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\HH}{\operatorname{H}}
+\newcommand{\Achow}{\operatorname{A}}
 
 \newcommand{\bq}{\begin{equation}}
 \newcommand{\eq}{\end{equation}}
@@ -113,6 +116,9 @@
 \newtheorem*{rem}{Remark}
 \newtheorem*{aside*}{Aside}
 
+\newcommand{\ilemph}[1]{\textbf{\textsc{#1}}}
+
+
 \setcounter{tocdepth}{1}
 
 \newcommand{\todo}[1]{\vspace{5mm}\par \noindent
@@ -142,27 +148,25 @@
 
 \section{Introduction}
 
-\section{Relative stable quasimaps}
-\subsection{Review of absolute stable quasimaps}
-\subsection{Relative stable quasimaps}
+\input{tex/section-relative-stable-quasimaps}
 
-\include{tex/recursion_for_Pr}
+\input{tex/recursion_for_Pr}
 
-\include{tex/recursion_general}
+\input{tex/recursion_general}
 
-\include{tex/mirror_theorem}
+\input{tex/mirror_theorem}
 
 \appendix
 
-\include{tex/functoriality}
+\input{tex/functoriality}
+ 
+\input{tex/intersection}
 
-\include{tex/comparison}
+\input{tex/comparison}
 
-\include{tex/string}
+\input{tex/string}
 
-\include{tex/intersection}
-
-\include{tex/GIT}
+\input{tex/GIT}
 
 \bibliographystyle{alpha}
 \bibliography{relqm}

@@ -1,0 +1,53 @@
+\section{Relative stable quasimaps}
+
+\subsection{Review of absolute stable quasimaps}
+The moduli space of stable (toric) quasimaps is an alternative compactification of the moduli space of smooth curves in a toric variety. We will briefly recall the definition and some basic properties; see \cite{CF-K} for more details.
+\begin{definition}[{\cite[Definition 3.1.1]{CF-K}}] Let $X= X_{\Sigma}$ be a smooth and projective toric variety with fan $\Sigma \subseteq N_{\QQ}$ and let $\OO_{X_\Sigma}(1)$ be a fixed polarisation, which we can write (non-uniquely) in terms of the $T$-invariant divisors as:
+\begin{equation*} \OO_{X_\Sigma}(1) = \otimes_{\rho \in \Sigma(1)} \OO_{X_\Sigma}(D_\rho)^{\otimes \alpha_\rho} \end{equation*}
+for some $\alpha_\rho \in \Z$. Given a fixed genus $g \geq 0$, number of marked points $n \geq 0$ and curve class $\beta \in \HH_2^+(X)$ a \ilemph{stable (toric) quasimap} is given by the data
+\begin{equation*} ((C,x_1,\ldots,x_n), (L_\rho,u_\rho)_{\rho \in \Sigma(1)}, (\varphi_m)_{m \in M}) \end{equation*}
+where:
+\begin{enumerate}
+\item $(C,x_1,\ldots,x_n)$ is a prestable curve of genus $g$ with $n$ marked points;
+\item the $L_\rho$ are line bundles on $C$ of degree $d_\rho = D_\rho \cdot \beta$;
+\item the $u_\rho$ are global sections of $L_\rho$;
+\item $\varphi_m \colon \otimes_\rho L_\rho^{\otimes \langle \rho, m \rangle} \to \OO_C$ are isomorphisms, such that $\varphi_{m} \otimes \varphi_{m^\prime} = \varphi_{m + m^\prime}$ for all $m, m^\prime \in M$.
+\end{enumerate}
+These are required to satisfy the following two conditions:
+\begin{enumerate}
+\item \ilemph{nondegeneracy}: there is a finite (possibly empty) set of smooth and non-marked points $B \subseteq C$, called the \ilemph{basepoints} of the quasimap, such that for all $x \in C \setminus B$ there exists a maximal cone $\sigma \in \Sigma_{\operatorname{max}}$ with $u_\rho(x) \neq 0$ for all $\rho \not\subset \sigma$;
+\item \ilemph{stability}: if we let $L = \otimes_\rho L_\rho^{\otimes \alpha_\rho}$ then the following $\QQ$-divisor is ample
+\begin{equation*} \omega_C(x_1 + \ldots + x_n)\otimes L^{\otimes \epsilon} \end{equation*}
+for every rational $\epsilon > 0$.
+\end{enumerate}
+\end{definition}
+More generally we can define the notion of a family of quasimaps over a base scheme $S$, and what it means for two such families to be isomorphic; we thus obtain a moduli space
+\begin{equation*} \Q{g}{n}{X}{\beta} \end{equation*}
+of stable (toric) quasimaps to $X$, which is a proper Deligne--Mumford stack of finite type. It can be shown that this definition does not depend on the choice of polarisation.
+
+\begin{remark} The theory of stable toric quasimaps agrees with the theory of stable quotients \cite{MOP} when both are defined: namely for projective spaces. They admit a common generalisation in the theory of stable quasimaps to GIT quotients \cite{CFKM}. In this paper we will restrict ourselves to the toric setting. \end{remark}
+
+As with the case of stable maps, there is an alternative characterisation of stability which is much easier to check in practice; a prestable quasimap is stable if and only if the following conditions hold:
+\begin{enumerate}
+\item the line bundle $L$ defined above must have strictly positive degree on any rational component with fewer than three special points, and on any elliptic component with no special points;
+\item $C$ cannot have any rational components with fewer than two special points.
+\end{enumerate}
+Condition (1) is analogous to the ordinary stability condition for stable maps. Condition (2) is new, however, and gives quasimaps a distinctly different flavour to stable maps; we shall sometimes refer to it as the \ilemph{strong stability condition}.
+
+The moduli space $\Q{g}{n}{X}{\beta}$ admits a perfect obstruction theory relative to the moduli space $\MM_{g,n}$ of source curves, and hence one can construct a virtual class
+\begin{equation*} \virt{\Q{g}{n}{X}{\beta}} \in \Achow_{\operatorname{vdim}\Q{g}{n}{X}{\beta}} \left( \Q{g}{n}{X}{\beta} \right) \end{equation*}
+where the virtual dimension is the same as for stable maps:
+\begin{equation*} \operatorname{vdim}\Q{g}{n}{X}{\beta} = (\dim{X} - 3)(1-g) - (K_X \cdot \beta) + n \end{equation*}
+Since the markings are not basepoints there are evaluation maps
+\begin{equation*} \ev_i : \Q{g}{n}{X}{\beta} \to X \end{equation*}
+and there are $\psi$-classes defined in the usual way by pulling back the relative dualising sheaf of the universal curve:
+\begin{equation*} \psi_i = \operatorname{c}_1(\sigma_i^* \omega_{\mathcal{C}/\om{Q}}) \end{equation*}
+Putting all these pieces together, we can define \ilemph{quasimap invariants}:
+\begin{equation*} \langle \gamma_1 \psi^{a_1} , \ldots, \gamma_n \psi^{a_n} \rangle_{g,n,\beta}^X = \int_{\virt{\Q{g}{n}{X}{\beta}}} \prod_{i=1}^n \ev_i^* \gamma_i \psi_i^{a_i} \end{equation*}
+(We use the same correlator notation as in Gromov--Witten theory; since we will never talk about Gromov--Witten invariants this should not cause any confusion.)
+
+[STUFF ABOUT WHY QUASIMAPS ARE COOL. EXPECTED TO AGREE WITH GW IN SOME CASES.]
+
+\subsection{Review of relative stable maps}
+
+\subsection{Definition of relative stable quasimaps}
