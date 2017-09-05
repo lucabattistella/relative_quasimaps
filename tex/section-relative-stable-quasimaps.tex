@@ -1,7 +1,11 @@
 \section{Relative stable quasimaps}
 
 \subsection{Review of absolute stable quasimaps}
-The moduli space of stable (toric) quasimaps is an alternative compactification of the moduli space of smooth curves in a toric variety. We will briefly recall the definition and some basic properties; see \cite{CF-K} for more details.
+The moduli space of stable (toric) quasimaps is an alternative compactification of the moduli space of smooth curves in a toric variety $X$. It admits a perfect obstruction theory and hence a virtual fundamental class, which one can use to define curve-counting invariants for $X$.
+
+This theory agrees with the theory of stable quotients \cite{MOP} when both are defined, namely when $X$ is a projective spaces. They admit a common generalisation in the theory of stable quasimaps to GIT quotients \cite{CFKM}. In this paper, however, we restrict ourselves to the toric setting.
+
+We now briefly recall the definition and some basic properties; see \cite{CF-K} for more details.
 \begin{definition}[{\cite[Definition 3.1.1]{CF-K}}] Let $X= X_{\Sigma}$ be a smooth and projective toric variety with fan $\Sigma \subseteq N_{\QQ}$ and let $\OO_{X_\Sigma}(1)$ be a fixed polarisation, which we can write (non-uniquely) in terms of the $T$-invariant divisors as:
 \begin{equation*} \OO_{X_\Sigma}(1) = \otimes_{\rho \in \Sigma(1)} \OO_{X_\Sigma}(D_\rho)^{\otimes \alpha_\rho} \end{equation*}
 for some $\alpha_\rho \in \Z$. Given a fixed genus $g \geq 0$, number of marked points $n \geq 0$ and curve class $\beta \in \HH_2^+(X)$ a \ilemph{stable (toric) quasimap} is given by the data
@@ -21,11 +25,12 @@ These are required to satisfy the following two conditions:
 for every rational $\epsilon > 0$.
 \end{enumerate}
 \end{definition}
-More generally we can define the notion of a family of quasimaps over a base scheme $S$, and what it means for two such families to be isomorphic; we thus obtain a moduli space
+\begin{remark} This definition is motivated by the $\Sigma$-collections of D. Cox \cite{CoxFunctor}; see also \S \ref{Functoriality of Quasimap Spaces Section}. The point is that a (stable) quasimap without any basepoints is the same thing as a (stable) morphism $C \to X$. The basepoints thus appear in the boundary of the moduli space, in much the same way as the locus of stable maps with rational tails appears in the boundary of the moduli space of stable maps. \end{remark}
+
+More generally, we can define the notion of a family of quasimaps over a base scheme $S$, and what it means for two such families to be isomorphic; we thus obtain a moduli space
 \begin{equation*} \Q{g}{n}{X}{\beta} \end{equation*}
 of stable (toric) quasimaps to $X$, which is a proper Deligne--Mumford stack of finite type. It can be shown that this definition does not depend on the choice of polarisation.
 
-\begin{remark} The theory of stable toric quasimaps agrees with the theory of stable quotients \cite{MOP} when both are defined: namely for projective spaces. They admit a common generalisation in the theory of stable quasimaps to GIT quotients \cite{CFKM}. In this paper we will restrict ourselves to the toric setting. \end{remark}
 
 As with the case of stable maps, there is an alternative characterisation of stability which is much easier to check in practice; a prestable quasimap is stable if and only if the following conditions hold:
 \begin{enumerate}

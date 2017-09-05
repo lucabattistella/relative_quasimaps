@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  5 SEP 2017 18:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  5 SEP 2017 19:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1212,14 +1212,15 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/sc' will be
 
 
 (./tex/section-relative-stable-quasimaps.tex
-LaTeX Font Info:    Font shape `T1/zpltlf/bx/sc' in size <10.95> not available
-(Font)              Font shape `T1/zpltlf/b/sc' tried instead on input line 7.
-LaTeX Font Info:    Font shape `T1/zpltlf/b/sc' will be
-(Font)              scaled to size 10.95pt on input line 7.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 13.
- [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2])
- (./tex/recursion_for_Pr.tex
+(Font)              scaled to size 8.0pt on input line 10.
+ [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/sc' in size <10.95> not available
+(Font)              Font shape `T1/zpltlf/b/sc' tried instead on input line 11.
+
+LaTeX Font Info:    Font shape `T1/zpltlf/b/sc' will be
+(Font)              scaled to size 10.95pt on input line 11.
+ [2]) (./tex/recursion_for_Pr.tex
 Overfull \hbox (25.83867pt too wide) in paragraph at lines 5--6
 \T1/zpltlf/m/n/10.95 lo-cus $[]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OM
 S/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it/10.95 ~$ \T1/zpltlf
@@ -1229,6 +1230,13 @@ npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 C; x[]; [] ; x[]; L; u[]; [] ; u[]\U/n
 pxmia/m/it/10.95 ~$
  []
 
+
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[3]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 10.95pt on input line 9.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
@@ -1238,12 +1246,6 @@ LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 6.1pt on input line 15.
 
-Overfull \hbox (10.73586pt too wide) has occurred while \output is active
- \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
-IVE QUASIMAPS []
- []
-
-[3]
 Overfull \hbox (42.22516pt too wide) in paragraph at lines 18--19
 []\T1/zpltlf/b/n/10.95 Lemma 3.1. []\T1/zpltlf/m/it/10.95 The com-par-i-son mor
 -phism re-stricts to a bi-ra-tional mor-phism $[][]\U/npxmia/m/it/10.95 }\U/npx
@@ -1251,10 +1253,7 @@ sym/m/n/10.95 P[]\OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it
 /10.95 ~ \OMS/npxsy/m/n/10.95 !
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4]
+[4]
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
@@ -1267,7 +1266,7 @@ Overfull \hbox (12.88531pt too wide) in paragraph at lines 94--95
 ML/npxmi/m/it/10.95 ; d\U/npxmia/m/it/10.95 ~ \OMS/npxsy/m/n/10.95 !
  []
 
-) (./tex/recursion_general.tex [6]
+[6]) (./tex/recursion_general.tex
 Overfull \hbox (3.10077pt too wide) in paragraph at lines 16--17
  \T1/zpltlf/m/n/10.95 4.1.\T1/zpltlf/b/n/10.95 Centipede loci and ob-struc-tion
  the-o-ries.[] \T1/zpltlf/m/n/10.95 We wish to prove (see Lemma
@@ -1557,7 +1556,7 @@ t/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx
 /zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (45 pages, 347447 bytes).
+Output written on relative_quasimaps.pdf (45 pages, 347934 bytes).
 PDF statistics:
  239 PDF objects out of 1000 (max. 8388607)
  173 compressed objects within 2 object streams
