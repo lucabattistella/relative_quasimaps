@@ -10,14 +10,14 @@ It is easy to show that $k$ restricts to a morphism between the relative spaces,
 \ecd
 which one can show is cartesian. As such we can define a virtual class on $\Q{0}{\alpha}{X|Y}{\beta}$ by (virtual or diagonal) pullback.
 
-The idea is to prove the recursion formula for $(X,Y)$ by pulling back the formula for $(\PP^N,H)$ along $k = \mathcal Q(i)$. In order to do this, we need to understand how the various virtual classes involved in the formula pull back along this map. Note that the first two terms of the recursion formula pull back trivially along $k$, i.e. $\virt{\Q{0}{\alpha}{X|Y}{\beta}}=k_{\text{v}}^!\virt{\Q{0}{\alpha}{\PP^N|H}{d}}$ by the very definition. It remains to consider the third term, namely the virtual class of the comb locus. This is the technical heart of the proof.
+The idea is to prove the recursion formula for $(X,Y)$ by pulling back the formula for $(\PP^N,H)$ along $k = \mathcal Q(i)$. In order to do this, we need to understand how the various virtual classes involved in the formula pull back along this map. Note that the first two terms of the recursion formula pull back trivially along $k$, i.e. $\virt{\Q{0}{\alpha}{X|Y}{\beta}}=k^!\virt{\Q{0}{\alpha}{\PP^N|H}{d}}$ by the very definition. It remains to consider the third term, namely the virtual class of the comb locus. This is the technical heart of the proof.
 
 \subsection{Comb loci pull back}
-We can write $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ as the disjoint union of spaces
+Recall that we can write $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ as the disjoint union of spaces
 \begin{equation*} \mathcal D^{\mathcal{Q}}(X|Y,A,B,M) = \Q{0}{A_0 \cup \{q_1, \ldots, q_r\}}{Y}{\beta_0} \times_{Y^r} \prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta_i} \end{equation*}
-where $A$ and $B$ are partitions of the marked points and curve class as before, and $M=(m_1,\ldots,m_r)$ records the intersection multiplicities at the nodes which connect the internal component to the external components (the spine of the comb to the teeth). It is convenient to deal with each $\mathcal D^{\mathcal{Q}}(X|Y,A,B,M)$ separately.
+where $A$ and $B$ are partitions of the marked points and curve class respectively, and $M=(m_1,\ldots,m_r)$ records the intersection multiplicity with $Y$ at the nodes which connect the internal component to the external components (the spine of the comb to the teeth). It is convenient to deal with each $\mathcal D^{\mathcal{Q}}(X|Y,A,B,M)$ separately.
 
-This is going to be similar in spirit to the proof of the splitting principle in the appendix. Namely, the comb locus sits inside the full product
+The comb locus sits inside the full product
 \begin{equation*} \mathcal E^{\mathcal{Q}}(X|Y,A,B,M) = \Q{0}{A_0 \cup \{q_1, \ldots, q_r\}}{Y}{\beta_0} \times \prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta_i} \end{equation*}
 which we may endow with the product virtual class
 \begin{equation*} \virt{\mathcal E^{\mathcal{Q}}(X|Y,A,B,M)} = \virt{\Q{0}{A_0 \cup \{q_1, \ldots, q_r\}}{Y}{\beta_0}} \times \prod_{i=1}^r \virt{\Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta_i}} \end{equation*}
@@ -28,23 +28,24 @@ X^r\ar[r,"\Delta_{X^r}"] & X^r\times X^r
 \ecd
 let us define the following \emph{product} virtual class
 \[
- \vip{D^{\mathcal{Q}}(X|Y,A,B,M)}=\Delta_{X^r}^!\virt{\mathcal E^{\mathcal{Q}}(X|Y,A,B,M)}.
+ \vip{\mathcal D^{\mathcal{Q}}(X|Y,A,B,M)}=\Delta_{X^r}^!\virt{\mathcal E^{\mathcal{Q}}(X|Y,A,B,M)}.
 \]
 The same we can do at the level of $\PP^N$ relative to $H$.
 
-On the other hand, there is as well the cartesian diagram
+On the other hand, there is another cartesian diagram
 \bcd
-D^\mathcal{Q}_{\alpha,k}(X|Y,\beta) \ar[r,"k_{|D}"] \ar[d] \ar[rd,phantom,"\square"] & D^\mathcal{Q}_{\alpha,k}(\PP^N|H,d) \ar[d] \\
+\mathcal D^\mathcal{Q}(X|Y,A,B,M) \ar[r,"k_{|D}"] \ar[d] \ar[rd,phantom,"\square"] & \mathcal D^\mathcal{Q}(\PP^N|H,A,i_* B,M) \ar[d] \\
 \Q{0}{n}{X}{\beta} \ar[r,"k"] & \Q{0}{n}{\PP^N}{d}
 \ecd
 We wish to prove the following
 \begin{lem} \label{Comb loci pull back} For any $\alpha$ we have:
-\begin{equation*} k_{\text{v}}^! \vip{D^\mathcal{Q}_{\alpha,k}(\PP^N|H,d)} = \vip{D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)} \end{equation*} \end{lem}
+\begin{equation*} k^! \vip{\mathcal D^\mathcal{Q}(\PP^N|H,A,i_*B,M)} = \vip{\mathcal D^\mathcal{Q}(X|Y,A,B,M)}. \end{equation*} \end{lem}
 
-Introduce the following shorthand notation: assuming the data of $A$, $B$ and $M$ have been fixed for $X|Y$ (respectively, $A$, $i_*B$ and $M$ for $\PP^N|H$), set:
+Introduce the following shorthand notation: assuming the data of $A$ (with $n=\lvert A\rvert$), $B$ (with $\beta=\sum_{\beta_i\in B} \beta_i$) and $M$ have been fixed for $X|Y$ (respectively, $A$, $i_*B$ and $M$ for $\PP^N|H$), set:
 \begin{align*}
-\mathcal{D}(X|Y) & := \mathcal D^{\mathcal{Q}}(X|Y,A,B,M) \\
-\mathcal{E}(X|Y) & := \mathcal E^{\mathcal{Q}}(X|Y,A,B,M)
+\mathcal{D}(X|Y) & := \mathcal D^{\mathcal{Q}}(X|Y,A,B,M) & \text{and similarly for the absolute space} \\
+\mathcal{E}(X|Y) & := \mathcal E^{\mathcal{Q}}(X|Y,A,B,M) & \text{and similarly for the absolute space} \\
+\mathcal{Q}(X) & :=\Q{0}{n}{X}{\beta}
 \end{align*}
 and similarly for $\PP^N|H$.
 
@@ -53,15 +54,20 @@ Consider the cartesian diagram
 \mathcal{E}(X|Y) \ar[d]\ar[r]\ar[dr,phantom,"\Box"] & \mathcal{E}(\PP^N|H)\ar[d,"\theta"] \\
 \mathcal{E}(X)\ar[r] & \mathcal{E}(\PP^N)
 \ecd
-\begin{lemma}
- $\vip{\mathcal{E}(X|Y)}=\theta^!\vip{\mathcal{E}(X)}$, where $\theta^!$ is the diagonal pullback introduced in appendix XXX.
+\begin{lemma}\label{theta-pull}
+ $\vip{\mathcal{E}(X|Y)}=\theta^!\vip{\mathcal{E}(X)}$, where $\theta^!$ is the diagonal pullback introduced in Appendix \ref{appendix:intersection}.
 \end{lemma}
 \begin{proof}
  The only thing to check is that
  \[
+ \mathcal Q(Y)\equiv\mathcal Q(H)\times_{\mathcal Q(\PP^N)}\mathcal Q(X)
+ \] 
+ \begin{comment}
+ \[
  \Q{0}{A_0\cup\{q_1\ldots,q_r\}}{Y}{\beta_0} \equiv \Q{0}{A_0\cup\{q_1\ldots,q_r\}}{X}{\beta_0}\times_{\Q{0}{A_0\cup\{q_1\ldots,q_r\}}{\PP^N}{d_0}} \Q{0}{A_0\cup\{q_1\ldots,q_r\}}{H}{d_0}
- \]
- This is done in appendix XXX.
+ \] 
+ \end{comment}
+ This is done in Appendix \ref{Section comparison with GIT construction}.
 \end{proof}
 
 Consider the cartesian diagram
@@ -71,9 +77,9 @@ Consider the cartesian diagram
 \ecd
 from which we see that
 \[
- \psi^!\virt{\mathcal Q(X)}=k_{\text{v}}^!\psi^![\mathcal Q(\PP^N)]
+ \psi^!\virt{\mathcal Q(X)}=k^!\psi^![\mathcal Q(\PP^N)]
 \]
-by commutativity of virtual pullbacks.
+by commutativity of virtual pullbacks. Note that these classes are related to the product ones by the Splitting Principle (see Lemma \ref{Lemma product class equals pullback class}).
 
 Finally, the relevant cartesian diagram is
 \bcd
@@ -82,13 +88,19 @@ Finally, the relevant cartesian diagram is
 X^r\ar[r,"\Delta_{X^r}"] & X^r\times X^r & {}
 \ecd
 
-The proof of lemma XXX follows now from
+The proof of Lemma \ref{Comb loci pull back} now follows from
 \begin{align*} \vip{\mathcal D(X|Y)} & = \Delta_{X^r}^! \virt{\mathcal E(X|Y)} & \\
-& =  \Delta_{X^r}^! \theta^!\virt{\mathcal E(X)} & \text{by lemma XXX} \\
+& =  \Delta_{X^r}^! \theta^!\virt{\mathcal E(X)} & \text{by Lemma \ref{theta-pull}} \\
 & =  \theta^!\Delta_{X^r}^! \virt{\mathcal E(X)} & \text{by commutativity} \\
 & =  \theta^!\psi^!\virt{\mathcal Q(X)} & \text{by the splitting principle} \\
-& =  \theta^!k_{\text{v}}^!\psi^![\mathcal Q(\PP^N)] & \text{by the above} \\
-& =  \theta^!k_{\text{v}}^!\Delta_{(\PP^N)^r}^!\virt{\mathcal E(\PP^N)} & \text{by the splitting principle} \\
-& =  k_{\text{v}}^!\Delta_{(\PP^N)^r}^!\theta^!\virt{\mathcal E(\PP^N)} & \text{by commutativity} \\
-& =  k_{\text{v}}^!\vip{\mathcal D(\PP^N|H)}.
+& =  \theta^!k^!\psi^![\mathcal Q(\PP^N)] & \text{by the above} \\
+& =  \theta^!k^!\Delta_{(\PP^N)^r}^!\virt{\mathcal E(\PP^N)} & \text{by the splitting principle} \\
+& =  k^!\Delta_{(\PP^N)^r}^!\theta^!\virt{\mathcal E(\PP^N)} & \text{by commutativity} \\
+& =  k^!\vip{\mathcal D(\PP^N|H)}.
 \end{align*}
+ 
+ Since the $\psi$-classes pull back naturally slong $k$, we have all the ingredients necessary to prove the following
+ 
+\begin{thm} Let $X$ be a smooth and proper toric variety and let $Y \subseteq X$ be a very ample hypersurface (not necessarily toric). Then, with the set-up as in the preceding discussion, we have an equality
+\begin{equation*} (\alpha_k \psi_k + ev_k^* [Y]) \virt{\Q{0}{\alpha}{X|Y}{\beta}} = \virt{\Q{0}{\alpha+e_k}{X|Y}{\beta}} + \virt{\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)} \end{equation*}
+in the Chow group of $\Q{0}{n}{X}{\beta}$. \end{thm}

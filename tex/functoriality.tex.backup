@@ -1,4 +1,4 @@
-\subsection{Functoriality} \label{Functoriality of Quasimap Spaces Section}
+\subsection{Functoriality and relative obstruction theories} \label{Functoriality of Quasimap Spaces Section}
 
 In the case of stable maps, a morphism $f : X \to Y$ induces a morphism between the corresponding moduli spaces
 \begin{equation*}\M{g}{n}{X}{\beta} \rightarrow \M{g}{n}{Y}{f_* \beta} \end{equation*}
@@ -126,7 +126,7 @@ the pushed-forward quasimap with target $\PP^N$ is:
 \begin{equation*} (C, L^{\otimes a}, f_0(u_0, \ldots, u_r) , \ldots, f_N(u_0, \ldots, u_r)) \end{equation*}
 (This is stable as long as $a > 0$, which is precisely when $f$ satisfies Condition (1) above.)
 
-\subsection{Relative obstruction theories for $\mathcal Q(Y)\to\mathcal Q(X)$}\label{section:rel_pot_for_qm_functoriality}
+\subsection{Relative obstruction theories}\label{section:rel_pot_for_qm_functoriality}
 Assume now that $f\colon Y\to X$ is a morphism satisfying Condition (1) above, so that it induces $$k=\mathcal Q(f) \colon \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_* \beta}.$$ Even in the easiest possible case when $Y\subseteq X$ is an l.c.i. subscheme, $k$ is not necessarily a regular embedding, so the Gysin map in the sense of \cite{FUL} does not necessarily exist. Yet, when $\Q{g}{n}{X}{f_* \beta}$ is a smooth stack (or rather its standard obstruction theory w.r.t. the moduli stack of prestable curves is unobstructed, which happens e.g. in the cases $X=\PP^r$ and $(g,n)=(0,n)$ or $(1,0)$), we may ``pull back along $k$'', and we are going to explain why. 
 
 In \cite{Manolache-Pull} a generalisation of the Gysin map (called the \ildef{virtual pull-back}) is defined for morphisms endowed with a relative perfect obstruction theory. Moreover, a sufficient condition is given (Corollary 4.9) for this map to respect the virtual classes.

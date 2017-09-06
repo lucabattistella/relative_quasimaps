@@ -6,14 +6,14 @@
 \contentsline {section}{\tocsection {}{3}{Recursion formula for $\mathbb P^N$ relative $H$}}{1}
 \contentsline {section}{\tocsection {}{4}{Recursion formula in the general case}}{5}
 \contentsline {subsection}{\tocsubsection {}{4.1}{Comb loci pull back}}{5}
-\contentsline {section}{\tocsection {}{5}{The quasimap mirror theorem}}{7}
+\contentsline {section}{\tocsection {}{5}{The quasimap mirror theorem}}{8}
 \contentsline {subsection}{\tocsubsection {}{5.1}{Comparison with the work of Ciocan-Fontanine and Kim}}{12}
 \contentsline {section}{\tocsection {Appendix}{A}{The comparison morphism}}{14}
-\contentsline {section}{\tocsection {Appendix}{B}{Notes on quasimaps}}{20}
-\contentsline {subsection}{\tocsubsection {}{B.1}{Functoriality and relative obstruction theories}}{20}
-\contentsline {subsection}{\tocsubsection {}{B.2}{Relative obstruction theories}}{26}
+\contentsline {section}{\tocsection {Appendix}{B}{Notes on quasimaps}}{21}
+\contentsline {subsection}{\tocsubsection {}{B.1}{Functoriality}}{21}
+\contentsline {subsection}{\tocsubsection {}{B.2}{Relative obstruction theories for $\mathcal Q(Y)\rightarrow \mathcal Q(X)$}}{26}
 \contentsline {subsection}{\tocsubsection {}{B.3}{Comparison with the GIT construction}}{29}
 \contentsline {subsection}{\tocsubsection {}{B.4}{Splitting principle}}{30}
 \contentsline {subsection}{\tocsubsection {}{B.5}{The quasimap string equation for $\mathbb P^r$}}{33}
-\contentsline {section}{\tocsection {Appendix}{C}{Some intersection-theoretic lemmas}}{34}
-\contentsline {section}{\tocsection {Appendix}{}{References}}{36}
+\contentsline {section}{\tocsection {Appendix}{C}{Some intersection-theoretic lemmas}}{35}
+\contentsline {section}{\tocsection {Appendix}{}{References}}{37}
