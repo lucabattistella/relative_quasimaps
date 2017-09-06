@@ -1,8 +1,8 @@
-\section{Splitting principle}
+\subsection{Splitting principle}
 
-Consider boundary strata of the space of quasimaps, i.e. where the underlying curve is reducible and has a prescribed profile, by which we mean the dual graph decorated by the degree of the universal line bundle on each component: there are two natural virtual classes on such a stratum, namely the one induced by the splitting type of the curve and the product one. We are going to show that these virtual classes coincide; this works pretty much as in Gromov-Witten theory.
+Consider boundary strata of the space of quasimaps, i.e. where the underlying curve is reducible and has a prescribed profile, by which we mean the dual graph decorated by the degree of the universal line bundle on each component: there are two natural virtual classes on such a stratum, namely the one induced by the splitting type of the curve and the product one. We are going to show that these virtual classes coincide; this works pretty much like it does in Gromov-Witten theory.
 
-Fix a smooth projective toric variety $X$, and numerical invariants $g,n,\beta$ such that $\Q{g}{n}{X}{\beta}$ is defined. Now fix a partition $A=(A_0,\ldots,A_r)$ of the genus and marked points and a partition $B=(\beta_0, \ldots, \beta_r)$ of the curve class such that every factor in the following product makes sense, and then consider the space (which we call the \ildef{centipede locus}):
+Fix a smooth projective toric variety $X$, and numerical invariants $g,n,\beta$ such that $\Q{g}{n}{X}{\beta}$ is defined. Now fix a partition $A=(A_0,\ldots,A_r)$ of the genus and marked points, and a partition $B=(\beta_0, \ldots, \beta_r)$ of the curve class, such that every factor in the following product makes sense, and consider the space (which we call the \ildef{centipede locus}):
 \begin{equation*} \D{X}{A}{B} := \Q{g_0}{A_0 \cup \{ q_1, \ldots, q_r \}}{X}{\beta_0} \times_{X^r} \prod_{i=1}^r \Q{g_i}{A_i\cup\{q_i\}}{X}{\beta_i} \end{equation*}
 We can equip the centipede locus with the product virtual class in the following way. Set
 \begin{equation*} \E{X}{A}{B} :=  \Q{g_0}{A_0 \cup \{ q_1, \ldots, q_r \}}{X}{\beta_0} \times \prod_{i=1}^r \Q{g_i}{A_i\cup\{q_i\}}{X}{\beta_i} \end{equation*}
@@ -47,7 +47,7 @@ The first two terms are concentrated in degrees $[0,1]$, because they are the co
 and hence we must show that the first map is surjective. But this is dual to the map which takes an infinitesimal automorphism of the disconnected curve to an infinitesimal automorphism of the corresponding connected curve (obtained by glueing together the ``nodal'' marked points). The requirement of preserving the markings translates into that of fixing the node after the gluing operation, so the (infinitesimal) automorphism groups coincide. Hence $\h^1(L_\psi) = 0$ as claimed. (This also descends from the fact that the fibres of $\psi$ are Deligne--Mumford.)
 \end{remark}
 
-\begin{lemma} \label{Lemma product class equals pullback class} $(h^*E_{\E{A}{B}{X}}, \phi^*E_{\rho_Q}, \ev_q^*E_{\Delta_{X^r}})$ is a compatible triple for the triangle \ref{D-E-triangle}, hence
+\begin{lemma} \label{Lemma product class equals pullback class} $(h^*E_{\E{A}{B}{X}}, \phi^*E_{\rho_Q}, \ev_q^*E_{\Delta_{X^r}})$ is a compatible triple for the triangle (\ref{D-E-triangle}), hence
 \[
  \psi^![\Q{g}{n}{X}{\beta}]=\Delta_{X^r}^![\E{A}{B}{X}]\in A_*(\D{A}{B}{X}).
 \]
@@ -64,12 +64,12 @@ and hence we must show that the first map is surjective. But this is dual to the
 h^* \tilde{\mathcal{C}} \ar[r,"\nu"] \ar[rd,"\eta" below] & \varphi^* \mathcal{C} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \mathcal{C} \ar[d,"\pi"] \\
 & \D{X}{A}{B} \ar[r,"\varphi"] & \Q{0}{n}{X}{\beta}
 \ecd
-Here $\tilde{C}$ is the universal (disconnected) curve over $\E{X}{A}{B}$, which we have pulled back to $\D{X}{A}{B}$, while $\varphi^* \mathcal{C}$ is the universal curve over $\D{X}{A}{B}$. Therefore the map $\nu : h^* \tilde{\mathcal{C}} \to \varphi^* \mathcal{C}$ is (fiberwise) a partial normalisation map given by normalising the nodes which connect the ``trunk'' of the centipede to the ``legs.''
+Here $\tilde{C}$ is the universal (disconnected) curve over $\E{X}{A}{B}$, which we have pulled back to $\D{X}{A}{B}$, while $\varphi^* \mathcal{C}$ is the universal curve over $\D{X}{A}{B}$. Therefore the map $\nu : h^* \tilde{\mathcal{C}} \to \varphi^* \mathcal{C}$ is (fiberwise) a partial normalisation map given by detaching the nodes which connect the ``trunk'' of the centipede to the ``legs.''
 
 There are natural sheaves $\mathcal{F}$ and $\tilde{\mathcal{F}}$ on $\mathcal{C}$ and $h^* \tilde{\mathcal{C}}$ respectively, such that
 \begin{align*} \varphi^*E_{\rho_Q}^\vee & = \R \pi_* \mathcal{F} \\
 h^* E_{\rho_E}^\vee & = \R \eta_* \tilde{\mathcal{F}} \end{align*}
-Furthermore, $\nu^*\mathcal{F}=\tilde{\mathcal{F}}$, hence by tensoring the partial normalisation short exact sequence
+Furthermore $\nu^*\mathcal{F}\simeq\tilde{\mathcal{F}}$, hence by tensoring the partial normalisation short exact sequence
 \begin{equation*} 0 \to \OO_{\varphi^*{\mathcal{C}}} \to \nu_* \OO_{h^* \tilde{\mathcal{C}}} \to \OO_q \to 0 \end{equation*}
 with $\mathcal{F}$ and applying the projection formula, we obtain
 \begin{equation*} 0 \to \mathcal{F} \to \nu_* \tilde{\mathcal{F}} \to \mathcal{F}_q \to 0 \end{equation*}

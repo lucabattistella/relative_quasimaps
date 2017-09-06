@@ -1,8 +1,8 @@
 \section{Splitting principle}
 
-Consider boundary strata of the space of quasimaps, i.e. where the underlying curve is reducible and has a prescribed profile, by which we mean the dual graph decorated by the degree of the universal line bundle on each component: there are two natural virtual classes on such a stratum, namely the one induced by the splitting type of the curve and the product one. We are going to show that these virtual classes coincide; this works pretty much as in Gromov-Witten theory.
+Consider boundary strata of the space of quasimaps, i.e. where the underlying curve is reducible and has a prescribed profile, by which we mean the dual graph decorated by the degree of the universal line bundle on each component: there are two natural virtual classes on such a stratum, namely the one induced by the splitting type of the curve and the product one. We are going to show that these virtual classes coincide; this works pretty much like it does in Gromov-Witten theory.
 
-Fix a smooth projective toric variety $X$, and numerical invariants $g,n,\beta$ such that $\Q{g}{n}{X}{\beta}$ is defined. Now fix a partition $A=(A_0,\ldots,A_r)$ of the genus and marked points and a partition $B=(\beta_0, \ldots, \beta_r)$ of the curve class such that every factor in the following product makes sense, and then consider the space (which we call the \ildef{centipede locus}):
+Fix a smooth projective toric variety $X$, and numerical invariants $g,n,\beta$ such that $\Q{g}{n}{X}{\beta}$ is defined. Now fix a partition $A=(A_0,\ldots,A_r)$ of the genus and marked points, and a partition $B=(\beta_0, \ldots, \beta_r)$ of the curve class, such that every factor in the following product makes sense, and consider the space (which we call the \ildef{centipede locus}):
 \begin{equation*} \D{X}{A}{B} := \Q{g_0}{A_0 \cup \{ q_1, \ldots, q_r \}}{X}{\beta_0} \times_{X^r} \prod_{i=1}^r \Q{g_i}{A_i\cup\{q_i\}}{X}{\beta_i} \end{equation*}
 We can equip the centipede locus with the product virtual class in the following way. Set
 \begin{equation*} \E{X}{A}{B} :=  \Q{g_0}{A_0 \cup \{ q_1, \ldots, q_r \}}{X}{\beta_0} \times \prod_{i=1}^r \Q{g_i}{A_i\cup\{q_i\}}{X}{\beta_i} \end{equation*}
@@ -73,7 +73,7 @@ Furthermore, $\nu^*\mathcal{F}=\tilde{\mathcal{F}}$, hence by tensoring the part
 \begin{equation*} 0 \to \OO_{\varphi^*{\mathcal{C}}} \to \nu_* \OO_{h^* \tilde{\mathcal{C}}} \to \OO_q \to 0 \end{equation*}
 with $\mathcal{F}$ and applying the projection formula, we obtain
 \begin{equation*} 0 \to \mathcal{F} \to \nu_* \tilde{\mathcal{F}} \to \mathcal{F}_q \to 0 \end{equation*}
-where $q$ is the locus of nodes connecting the trunk to the spine. (The fact that the morphism on the left is injective follows by applying the Snake Lemma to the short exact sequence defining $\mathcal{F}$.) To this we can apply $\R \pi_*$ to obtain an exact triangle
+on $\varphi^*\mathcal{C}$, where $q$ is the locus of nodes connecting the trunk to the spine. (The fact that the morphism on the left is injective follows by applying the Snake Lemma to the short exact sequence defining $\mathcal{F}$.) To this we can apply $\R \pi_*$ to obtain an exact triangle
 \begin{equation} \label{Normalisation exact triangle} \R \pi_* \mathcal{F} \to \R \eta_* \tilde{\mathcal{F}} \to \R \pi_* \mathcal{F}_q \xrightarrow{[1]} \end{equation}
 Finally, notice that, since quasimaps are required not to have base-points at the nodes, the fibre of the sheaf $\mathcal F$ at each of the nodes $q$ can actually be identified with the tangent to the toric variety $X$ at the image of the node itself, i.e. $\R \pi_* \mathcal{F}_q\simeq \ev_q^* T_{X^r}=T_{\Delta_{X^r}}[-1]$.
 
