@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  6 SEP 2017 13:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  6 SEP 2017 16:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1031,94 +1031,94 @@ LaTeX Info: Redefining \openbox on input line 1503.
 (./relative_quasimaps.aux)
 \openout1 = `relative_quasimaps.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 140.
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 141.
 LaTeX Font Info:    Try loading font information for OML+npxmi on input line 14
-0.
+1.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OMS/npxsy/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OMS/npxsy/m/n on input line 141.
 LaTeX Font Info:    Try loading font information for OMS+npxsy on input line 14
-0.
+1.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/omsnpxsy.fd
 File: omsnpxsy.fd 2013/03/24 Fontinst v1.933 font definitions for OMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 140.
-LaTeX Font Info:    Try loading font information for U+npxexa on input line 140
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 141.
+LaTeX Font Info:    Try loading font information for U+npxexa on input line 141
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 140.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 140.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 141.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 141.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 140.
+(Font)              scaled to size 9.0pt on input line 141.
 LaTeX Font Info:    Try loading font information for OT1+zpltlf on input line 1
-40.
+41.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/ot1zpltlf.fd
 File: ot1zpltlf.fd 2015/01/17 v1.0 font definition file for OT1/zpl/tlf
 )
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 140.
+(Font)              scaled to size 9.0pt on input line 141.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 140.
+(Font)              scaled to size 7.3pt on input line 141.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 140.
-LaTeX Font Info:    Try loading font information for U+msa on input line 140.
+(Font)              scaled to size 5.5pt on input line 141.
+LaTeX Font Info:    Try loading font information for U+msa on input line 141.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 140.
+LaTeX Font Info:    Try loading font information for U+msb on input line 141.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 140.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 141.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 
 LaTeX Font Warning: Font shape `U/stmry/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 140.
+(Font)              size <5> substituted on input line 141.
 
-LaTeX Font Info:    Try loading font information for U+npxmia on input line 140
+LaTeX Font Info:    Try loading font information for U+npxmia on input line 141
 .
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/unpxmia.fd
 File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
 )
-LaTeX Font Info:    Try loading font information for U+npxsym on input line 140
+LaTeX Font Info:    Try loading font information for U+npxsym on input line 141
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/unpxsym.fd
 File: unpxsym.fd 2015/03/21 Fontinst v1.933 font definitions for U/npxsym.
 )
-LaTeX Font Info:    Try loading font information for U+npxsyc on input line 140
+LaTeX Font Info:    Try loading font information for U+npxsyc on input line 141
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/unpxsyc.fd
@@ -1189,38 +1189,55 @@ e
 ))
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 140.
+(Font)              scaled to size 10.95pt on input line 141.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 140.
+(Font)              scaled to size 8.0pt on input line 141.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 6.1pt on input line 140.
-Package xypdf Info: Line width: 0.64604pt on input line 140.
+(Font)              scaled to size 6.1pt on input line 141.
+Package xypdf Info: Line width: 0.64604pt on input line 141.
 \c@mv@tabular=\count178
 \c@mv@boldtabular=\count179
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sc' will be
-(Font)              scaled to size 9.0pt on input line 142.
+(Font)              scaled to size 9.0pt on input line 143.
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 145.
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 146.
 
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 145.
+(Font)              scaled to size 10.95pt on input line 146.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 147.
+(Font)              scaled to size 10.95pt on input line 148.
  (./relative_quasimaps.toc)
 \tf@toc=\write5
 \openout5 = `relative_quasimaps.toc'.
 
 
-(./tex/section-relative-stable-quasimaps.tex
-LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 10.
- [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./tex/section-1-introduction.tex
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/sc' in size <10.95> not available
-(Font)              Font shape `T1/zpltlf/b/sc' tried instead on input line 11.
-
+(Font)              Font shape `T1/zpltlf/b/sc' tried instead on input line 4.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/sc' will be
-(Font)              scaled to size 10.95pt on input line 11.
- [2]) (./tex/recursion_for_Pr.tex
+(Font)              scaled to size 10.95pt on input line 4.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 8.0pt on input line 12.
+ [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2])
+ (./tex/section-relative-stable-quasimaps.tex
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[3] [4]
+Overfull \hbox (4.69919pt too wide) in paragraph at lines 54--55
+\T1/zpltlf/m/n/10.95 and a smooth di-vi-sor $\OML/npxmi/m/it/10.95 Y$\T1/zpltlf
+/m/n/10.95 , the mod-uli space of rel-a-tive sta-ble maps parametrises
+ []
+
+
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[5]) (./tex/recursion_for_Pr.tex
 Overfull \hbox (25.83867pt too wide) in paragraph at lines 5--6
 \T1/zpltlf/m/n/10.95 lo-cus $[]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OM
 S/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it/10.95 ~$ \T1/zpltlf
@@ -1230,15 +1247,9 @@ npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 C; x[]; [] ; x[]; L; u[]; [] ; u[]\U/n
 pxmia/m/it/10.95 ~$
  []
 
-
-Overfull \hbox (10.73586pt too wide) has occurred while \output is active
- \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
-IVE QUASIMAPS []
- []
-
-[3]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 10.95pt on input line 9.
+[6]
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 10.95pt on input line 15.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
@@ -1253,52 +1264,38 @@ sym/m/n/10.95 P[]\OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it
 /10.95 ~ \OMS/npxsy/m/n/10.95 !
  []
 
-[4]
+
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
  []
 
-[5]
+[7] [8]
 Overfull \hbox (12.88531pt too wide) in paragraph at lines 94--95
 []\T1/zpltlf/m/n/10.95 Follows from [[], Thm. 2.6] by push-for-ward along $\OML
 /npxmi/m/it/10.95 ^^_ [] [] [][]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\O
 ML/npxmi/m/it/10.95 ; d\U/npxmia/m/it/10.95 ~ \OMS/npxsy/m/n/10.95 !
  []
 
-[6]) (./tex/recursion_general.tex
-Overfull \hbox (3.10077pt too wide) in paragraph at lines 16--17
+) (./tex/recursion_general.tex
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[9]
+Overfull \hbox (3.10077pt too wide) in paragraph at lines 17--18
  \T1/zpltlf/m/n/10.95 4.1.\T1/zpltlf/b/n/10.95 Centipede loci and ob-struc-tion
  the-o-ries.[] \T1/zpltlf/m/n/10.95 We wish to prove (see Lemma
  []
 
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 6.1pt on input line 17.
-
-Overfull \hbox (10.73586pt too wide) has occurred while \output is active
- \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
-IVE QUASIMAPS []
- []
-
-[7]
+(Font)              scaled to size 6.1pt on input line 18.
+[10]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 8.0pt on input line 48.
+(Font)              scaled to size 8.0pt on input line 49.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 6.1pt on input line 48.
- [8]
-Overfull \hbox (10.73586pt too wide) has occurred while \output is active
- \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
-IVE QUASIMAPS []
- []
-
-[9] [10]
-Overfull \hbox (3.48206pt too wide) in paragraph at lines 123--124
-[]\T1/zpltlf/m/n/10.95 Compose $\OML/npxmi/m/it/10.95 E[] \OMS/npxsy/m/n/10.95 
-! \OML/npxmi/m/it/10.95 L[]$ \T1/zpltlf/m/n/10.95 with the con-nect-ing ho-mo-m
-or-phism $\OML/npxmi/m/it/10.95 L[] \OMS/npxsy/m/n/10.95 ! \OML/npxmi/m/it/10.9
-5 ^^Z[]L[]\OT1/zpltlf/m/n/10.95 [1]$
- []
-
+(Font)              scaled to size 6.1pt on input line 49.
 
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
@@ -1311,7 +1308,15 @@ Overfull \hbox (10.73586pt too wide) has occurred while \output is active
 IVE QUASIMAPS []
  []
 
-[13] [14]
+[13]
+Overfull \hbox (3.48206pt too wide) in paragraph at lines 124--125
+[]\T1/zpltlf/m/n/10.95 Compose $\OML/npxmi/m/it/10.95 E[] \OMS/npxsy/m/n/10.95 
+! \OML/npxmi/m/it/10.95 L[]$ \T1/zpltlf/m/n/10.95 with the con-nect-ing ho-mo-m
+or-phism $\OML/npxmi/m/it/10.95 L[] \OMS/npxsy/m/n/10.95 ! \OML/npxmi/m/it/10.9
+5 ^^Z[]L[]\OT1/zpltlf/m/n/10.95 [1]$
+ []
+
+[14]
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
@@ -1324,16 +1329,6 @@ IVE QUASIMAPS []
  []
 
 [17] [18]
-
-LaTeX Warning: Reference `Relative spaces pull back' on page 19 undefined on in
-put line 359.
-
-) (./tex/mirror_theorem.tex
-LaTeX Font Info:    Try loading font information for U+bbm on input line 9.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
-File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-)
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
@@ -1346,6 +1341,22 @@ IVE QUASIMAPS []
  []
 
 [21]
+
+LaTeX Warning: Reference `Relative spaces pull back' on page 22 undefined on in
+put line 360.
+
+) (./tex/mirror_theorem.tex
+LaTeX Font Info:    Try loading font information for U+bbm on input line 9.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
+) [22]
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[23] [24]
 Overfull \hbox (13.13121pt too wide) detected at line 101
 \OT1/zpltlf/m/n/10.95 [[][]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 X\OMS/np
 xsy/m/n/10.95 j\OML/npxmi/m/it/10.95 Y; ^^L\U/npxmia/m/it/10.95 ~\OT1/zpltlf/m/
@@ -1359,18 +1370,24 @@ tlf/m/n/10.95 [[][]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 X\OMS/npxsy/m/n/
 t/10.95 Y; ^^L\U/npxmia/m/it/10.95 ~\OT1/zpltlf/m/n/10.95 ][]
  []
 
-[22]
+
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
  []
 
-[23]
+[25] [26]
 Overfull \hbox (3.74261pt too wide) in paragraph at lines 203--204
  [] 
  []
 
-[24]
+
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[27]
 Overfull \hbox (11.60768pt too wide) detected at line 212
 \U/npxmia/m/it/10.95 }[][]~[][] 5 [] [] 5 []
  []
@@ -1386,19 +1403,7 @@ LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
 (Font)              scaled to size 10.95pt on input line 9.
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
 (Font)              scaled to size 9.0pt on input line 9.
-
-Overfull \hbox (10.73586pt too wide) has occurred while \output is active
- \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
-IVE QUASIMAPS []
- []
-
-[25] [26]
-Overfull \hbox (10.73586pt too wide) has occurred while \output is active
- \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
-IVE QUASIMAPS []
- []
-
-[27] [28]
+ [28]
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
@@ -1416,13 +1421,25 @@ Overfull \hbox (10.73586pt too wide) has occurred while \output is active
 IVE QUASIMAPS []
  []
 
-[33]) (./tex/intersection.tex [34]
+[33] [34]
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
  []
 
-[35]) (./tex/comparison.tex [36]
+[35] [36]) (./tex/intersection.tex
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[37] [38]) (./tex/comparison.tex
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[39]
 Overfull \hbox (23.12883pt too wide) in paragraph at lines 24--25
 []\T1/zpltlf/m/n/10.95 Notice that re-strict-ing $[][] \OMS/npxsy/m/n/10.95 O[]
 \U/npxmia/m/it/10.95 }}\OML/npxmi/m/it/10.95 ^^N \OMS/npxsy/m/n/10.95 ^^@ \OT1/
@@ -1432,13 +1449,13 @@ U/npxmia/m/it/10.95 }[][] \OML/npxmi/m/it/10.95 ^^O[]T[]\U/npxmia/m/it/10.95 ~$
 \T1/zpltlf/m/n/10.95 .
  []
 
-
+[40]
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
  []
 
-[37] [38]
+[41]
 Overfull \hbox (10.26819pt too wide) in paragraph at lines 95--95
 [] 
  []
@@ -1469,28 +1486,22 @@ pxsy/m/n/10.95 ' \OML/npxmi/m/it/10.95 H[]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it
 /10.95 f[]T[]\U/npxmia/m/it/10.95 ~\OML/npxmi/m/it/10.95 :
  []
 
-
-Overfull \hbox (10.73586pt too wide) has occurred while \output is active
- \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
-IVE QUASIMAPS []
- []
-
-[39]
+[42]
 Underfull \vbox (badness 2134) has occurred while \output is active []
 
- [40]
+
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
  []
 
-[41]) (./tex/string.tex [42]
+[43] [44]) (./tex/string.tex
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
  []
 
-[43]) (./tex/GIT.tex
+[45] [46]) (./tex/GIT.tex
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
@@ -1499,25 +1510,25 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 ) (./relative_quasimaps.bbl
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 9.0pt on input line 6.
- [44]
-LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 9.0pt on input line 76.
-LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 7.3pt on input line 76.
-LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 5.5pt on input line 76.
 
-
-LaTeX Font Warning: Font shape `U/bbm/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 76.
-
-)
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
  []
 
-[45] (./relative_quasimaps.aux)
+[47]
+LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
+(Font)              scaled to size 9.0pt on input line 79.
+LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
+(Font)              scaled to size 7.3pt on input line 79.
+LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
+(Font)              scaled to size 5.5pt on input line 79.
+
+
+LaTeX Font Warning: Font shape `U/bbm/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 79.
+
+) [48] (./relative_quasimaps.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -1525,12 +1536,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 30264 strings out of 493014
- 589962 string characters out of 6133351
- 635242 words of memory out of 5000000
- 33029 multiletter control sequences out of 15000+600000
+ 30314 strings out of 493014
+ 591313 string characters out of 6133351
+ 636067 words of memory out of 5000000
+ 33076 multiletter control sequences out of 15000+600000
  98673 words of font info for 188 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  56i,16n,99p,10394b,1048s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1538,9 +1552,9 @@ Here is how much of TeX's memory you used:
 /navid/Library/texlive/2016/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk>{/
 usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/l
 ocal/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/t
-exlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-sc.enc}{/usr/local/texl
-ive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2016/texmf-
-dist/fonts/enc/dvips/newpx/tgpdiff.enc}</usr/local/texlive/2016/texmf-dist/font
+exlive/2016/texmf-dist/fonts/enc/dvips/newpx/tgpdiff.enc}{/usr/local/texlive/20
+16/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2016/texmf-dist/f
+onts/enc/dvips/newtx/ntx-ec-tlf-sc.enc}</usr/local/texlive/2016/texmf-dist/font
 s/type1/public/pxfonts/pxmia.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 1/public/pxfonts/pxsy.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
 c/pxfonts/rpxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/stma
@@ -1556,10 +1570,10 @@ t/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx
 /zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (45 pages, 347934 bytes).
+Output written on relative_quasimaps.pdf (48 pages, 358670 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
- 173 compressed objects within 2 object streams
+ 248 PDF objects out of 1000 (max. 8388607)
+ 179 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

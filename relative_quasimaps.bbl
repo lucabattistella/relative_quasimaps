@@ -11,19 +11,22 @@ K.~Behrend and B.~Fantechi.
 \newblock {\em Invent. Math.}, 128(1):45--88, 1997.
 
 \bibitem[CFK10]{CF-K}
-Ionu\c~t Ciocan-Fontanine and Bumsig Kim.
+Ionu\c{t} Ciocan-Fontanine and Bumsig Kim.
 \newblock {Moduli stacks of stable toric quasimaps}.
 \newblock {\em Adv. Math.}, 225(6):3022--3051, 2010.
 
 \bibitem[CFK14]{CF-K-wallcrossing}
-Ionu\c~t Ciocan-Fontanine and Bumsig Kim.
+Ionu\c{t} Ciocan-Fontanine and Bumsig Kim.
 \newblock {Wall-crossing in genus zero quasimap theory and mirror maps}.
 \newblock {\em Algebr. Geom.}, 1(4):400--448, 2014.
 
 \bibitem[CFKM14]{CFKM}
-Ionu\c~t Ciocan-Fontanine, Bumsig Kim, and Davesh Maulik.
+Ionu\c{t} Ciocan-Fontanine, Bumsig Kim, and Davesh Maulik.
 \newblock {Stable quasimaps to {GIT} quotients}.
 \newblock {\em J. Geom. Phys.}, 75:17--47, 2014.
+
+\bibitem[CM]{CM}
+
 
 \bibitem[Cox95a]{CoxFunctor}
 David~A. Cox.

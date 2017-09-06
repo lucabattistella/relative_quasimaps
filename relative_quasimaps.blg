@@ -1,60 +1,59 @@
 This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: relative_quasimaps.aux
-A level-1 auxiliary file: tex/recursion_for_Pr.aux
-A level-1 auxiliary file: tex/recursion_general.aux
-A level-1 auxiliary file: tex/mirror_theorem.aux
-A level-1 auxiliary file: tex/functoriality.aux
-A level-1 auxiliary file: tex/comparison.aux
-A level-1 auxiliary file: tex/string.aux
-A level-1 auxiliary file: tex/intersection.aux
-A level-1 auxiliary file: tex/GIT.aux
 The style file: alpha.bst
 Database file #1: relqm.bib
 Repeated entry---line 201 of file relqm.bib
  : @article{Manolache-Push
  :                        ,
 I'm skipping whatever remains of this entry
+Warning--string name "“coates" is undefined
+--line 423 of file relqm.bib
+I was expecting an "="---line 423 of file relqm.bib
+ :  author = “coates, tom 
+ :                          and Manolache, Cristina”,
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in CM
 Warning--there's a number but no volume in Givental-equivariantGW
-You've used 19 entries,
+You've used 20 entries,
             2543 wiz_defined-function locations,
-            705 strings with 6984 characters,
-and the built_in function-call counts, 7329 in all, are:
-= -- 768
-> -- 252
+            699 strings with 6835 characters,
+and the built_in function-call counts, 7516 in all, are:
+= -- 782
+> -- 253
 < -- 13
 + -- 78
 - -- 76
-* -- 553
-:= -- 1186
-add.period$ -- 59
-call.type$ -- 19
-change.case$ -- 104
-chr.to.int$ -- 17
-cite$ -- 20
-duplicate$ -- 293
-empty$ -- 575
+* -- 563
+:= -- 1202
+add.period$ -- 60
+call.type$ -- 20
+change.case$ -- 107
+chr.to.int$ -- 18
+cite$ -- 23
+duplicate$ -- 303
+empty$ -- 602
 format.name$ -- 106
-if$ -- 1485
+if$ -- 1528
 int.to.chr$ -- 3
 int.to.str$ -- 0
 missing$ -- 21
-newline$ -- 99
+newline$ -- 102
 num.names$ -- 57
-pop$ -- 74
+pop$ -- 84
 preamble$ -- 1
-purify$ -- 124
+purify$ -- 129
 quote$ -- 0
-skip$ -- 226
+skip$ -- 240
 stack$ -- 0
-substring$ -- 565
-swap$ -- 30
+substring$ -- 573
+swap$ -- 31
 text.length$ -- 13
 text.prefix$ -- 11
 top$ -- 0
-type$ -- 144
-warning$ -- 1
+type$ -- 152
+warning$ -- 2
 while$ -- 81
-width$ -- 23
-write$ -- 252
-(There was 1 error message)
+width$ -- 24
+write$ -- 258
+(There were 2 error messages)

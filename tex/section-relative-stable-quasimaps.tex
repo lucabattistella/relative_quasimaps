@@ -1,11 +1,7 @@
-\section{Relative stable quasimaps}
+\section{Relative stable quasimaps} \label{Section relative stable quasimaps}
 
-\subsection{Review of absolute stable quasimaps}
-The moduli space of stable (toric) quasimaps is an alternative compactification of the moduli space of smooth curves in a toric variety $X$. It admits a perfect obstruction theory and hence a virtual fundamental class, which one can use to define curve-counting invariants for $X$.
-
-This theory agrees with the theory of stable quotients \cite{MOP} when both are defined, namely when $X$ is a projective spaces. They admit a common generalisation in the theory of stable quasimaps to GIT quotients \cite{CFKM}. In this paper, however, we restrict ourselves to the toric setting.
-
-We now briefly recall the definition and some basic properties; see \cite{CF-K} for more details.
+\subsection{Review of absolute stable quasimaps} \label{Subsection stable quasimaps}
+We briefly recall the definition and basic properties of the moduli space of quasimaps; see \cite{CF-K} for more details.
 \begin{definition}[{\cite[Definition 3.1.1]{CF-K}}] Let $X= X_{\Sigma}$ be a smooth and projective toric variety with fan $\Sigma \subseteq N_{\QQ}$ and let $\OO_{X_\Sigma}(1)$ be a fixed polarisation, which we can write (non-uniquely) in terms of the $T$-invariant divisors as:
 \begin{equation*} \OO_{X_\Sigma}(1) = \otimes_{\rho \in \Sigma(1)} \OO_{X_\Sigma}(D_\rho)^{\otimes \alpha_\rho} \end{equation*}
 for some $\alpha_\rho \in \Z$. Given a fixed genus $g \geq 0$, number of marked points $n \geq 0$ and curve class $\beta \in \HH_2^+(X)$ a \ilemph{stable (toric) quasimap} is given by the data
@@ -55,6 +51,32 @@ Putting all these pieces together, we can define \ilemph{quasimap invariants}:
 
 [EXAMPLES.]
 
-\subsection{Review of relative stable maps}
+\subsection{Review of relative stable maps} \label{Subsection relative stable maps} Given a smooth projective variety $X$ and a smooth divisor $Y$, the moduli space of relative stable maps parametrises stable maps to $X$ with specified tangency multiplicities at the marked points.
 
-\subsection{Definition of relative stable quasimaps}
+\begin{definition}[{\cite[Definition 1.1 and Remark 1.4]{Ga}}] Let $X$ be a smooth projective variety and $Y \subseteq X$ a smooth divisor. Fix a number $n \geq 0$ of marked points, a curve class $\beta \in \HH_2^+(X)$ and an $n$-tuple $\alpha = (\alpha_1, \ldots, \alpha_n)$ of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. Then the moduli space
+\begin{equation*} \M{0}{\alpha}{X|Y}{\beta} \end{equation*}
+of relative stable maps to $(X,Y)$ is defined to be the locus in $\M{0}{n}{X}{\beta}$ of stable maps $(C,x_1, \ldots, x_n, f)$ such that, if $Z$ is a connected component of $f^{-1}(Y) \subseteq C$, then
+\begin{enumerate}
+\item if $Z$ is a point and is equal to a marked point $x_i$, then the multiplicity of $f$ to $Y$ at $x_i$ is greater than or equal to $\alpha_i$;
+\item if $Z$ is one-dimensional (hence a union of irreducible components of $C$) and if we let $C^{(i)}$ for $1 \leq i \leq r$ denote the irreducible components of $C$ adjacent to $Z$, and $m^{(i)}$ denote the multiplicity of $f|_{C^{(i)}}$ to $Y$ at the node $Z \cap C^{(i)}$, then we must have:
+\begin{equation*} Y \cdot f_* [Z] + \sum_{i=1}^r m^{(i)} \geq \sum_{x_i \in Z} \alpha_i \end{equation*}
+\end{enumerate}
+\end{definition}
+Note that in the case of maximal multiplicity $\Sigma_{i} \alpha_i = Y \cdot \beta$, all of the inequalities in the above definition must in fact be equalities.
+
+This forms a proper closed substack of $\M{0}{n}{X}{\beta}$. In the case $X=\PP^N$, $Y=H$ one can show it is irreducible of the correct dimension, and hence admits a fundamental class. More generally if $Y \subseteq X$ is very ample one can use the embedding $X \hookrightarrow \PP^N$ to obtain a cartesian diagram:
+\bcd
+\M{0}{\alpha}{X|Y}{\beta} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \M{0}{\alpha}{\PP^N|H}{d} \ar[d] \\
+\M{0}{n}{X}{\beta} \ar[r,"\varphi"] & \M{0}{n}{\PP^N}{d}
+\ecd
+Then the fact that $\M{0}{n}{\PP^N}{d}$ is smooth allows us to define a virtual class on $\M{0}{\alpha}{X|Y}{\beta}$ by virtual (or diagonal) pull-back:
+\begin{equation*} \virt{\M{0}{\alpha}{X|Y}{\beta}} = \varphi^! [\M{0}{\alpha}{\PP^N|H}{d}] \end{equation*}
+Thus one can define relative Gromov--Witten invariants. In \S\S 2-4 Gathmann proves a recursion relation inside the Chow group of $\M{0}{\alpha}{X|Y}{\beta}$
+\begin{equation*} (\alpha_k \psi_k + \ev_k^* Y) \virt{\M{0}{\alpha}{X|Y}{\beta}} = \virt{\M{0}{\alpha+e_k}{X|Y}{\beta}} + \virt{D_{\alpha,k}(X,\beta)} \end{equation*}
+where $D_{\alpha,k}(X,\beta)$ is an appropriate \ilemph{comb locus}. Repeated application of this result shows that the relative Gromov--Witten invariants and the Gromov--Witten invariants of $Y$ are completely determined by the Gromov--Witten invariants of $X$.
+
+This relation is worked out explicitly in some cases of particular interest in \cite{Ga-MF} to obtain a new proof of the mirror theorem.
+
+\subsection{Definition of relative stable quasimaps} \label{Subsection relative stable quasimaps}
+
+
