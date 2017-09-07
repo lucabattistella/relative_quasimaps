@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  7 SEP 2017 14:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  7 SEP 2017 15:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1245,41 +1245,14 @@ Overfull \hbox (10.73586pt too wide) has occurred while \output is active
 IVE QUASIMAPS []
  []
 
-[7]) (./tex/recursion_for_Pr.tex
-Overfull \hbox (25.83867pt too wide) in paragraph at lines 5--6
-\T1/zpltlf/m/n/10.95 lo-cus $[]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OM
-S/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it/10.95 ~$ \T1/zpltlf
-/m/n/10.95 in-side $[][]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OML/npxmi
-/m/it/10.95 ; d\U/npxmia/m/it/10.95 ~$\T1/zpltlf/m/n/10.95 : the quasimaps $\U/
-npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 C; x[]; [] ; x[]; L; u[]; [] ; u[]\U/n
-pxmia/m/it/10.95 ~$
- []
-
-LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 15.
-LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 15.
-LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 6.1pt on input line 15.
-
-Overfull \hbox (42.22516pt too wide) in paragraph at lines 18--19
-[]\T1/zpltlf/b/n/10.95 Lemma 3.1. []\T1/zpltlf/m/it/10.95 The com-par-i-son mor
--phism re-stricts to a bi-ra-tional mor-phism $[][]\U/npxmia/m/it/10.95 }\U/npx
-sym/m/n/10.95 P[]\OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it
-/10.95 ~ \OMS/npxsy/m/n/10.95 !
- []
-
-[8]
+[7]) (./tex/recursion_for_Pr.tex [8]
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
  []
 
-[9]
-Underfull \vbox (badness 1337) has occurred while \output is active []
-
- [10]
-Overfull \hbox (12.88531pt too wide) in paragraph at lines 94--95
+[9] [10]
+Overfull \hbox (12.88531pt too wide) in paragraph at lines 102--103
 []\T1/zpltlf/m/n/10.95 Follows from [[], Thm. 2.6] by push-for-ward along $\OML
 /npxmi/m/it/10.95 ^^_ [] [] [][]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\O
 ML/npxmi/m/it/10.95 ; d\U/npxmia/m/it/10.95 ~ \OMS/npxsy/m/n/10.95 !
@@ -1336,10 +1309,7 @@ Overfull \hbox (10.73586pt too wide) has occurred while \output is active
 IVE QUASIMAPS []
  []
 
-[19]
-Underfull \vbox (badness 1097) has occurred while \output is active []
-
- [20]
+[19] [20]
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
@@ -1387,7 +1357,14 @@ Overfull \hbox (10.73586pt too wide) has occurred while \output is active
 IVE QUASIMAPS []
  []
 
-[27] [28]
+[27]
+LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
+(Font)              scaled to size 10.95pt on input line 153.
+LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
+(Font)              scaled to size 8.0pt on input line 153.
+LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
+(Font)              scaled to size 6.1pt on input line 153.
+ [28]
 Overfull \hbox (3.74261pt too wide) in paragraph at lines 203--204
  [] 
  []
@@ -1547,21 +1524,18 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 30316 strings out of 493014
- 591372 string characters out of 6133351
- 636085 words of memory out of 5000000
- 33078 multiletter control sequences out of 15000+600000
+ 30317 strings out of 493014
+ 591421 string characters out of 6133351
+ 636094 words of memory out of 5000000
+ 33079 multiletter control sequences out of 15000+600000
  98673 words of font info for 188 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  56i,16n,99p,10394b,1048s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newpx/ecsups.enc} </Users
-/navid/Library/texlive/2016/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk>{/
-usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/l
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newpx/ecsups.enc}{/usr/lo
+cal/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc} </Users/navi
+d/Library/texlive/2016/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk>{/usr/l
 ocal/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/t
 exlive/2016/texmf-dist/fonts/enc/dvips/newpx/tgpdiff.enc}{/usr/local/texlive/20
 16/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2016/texmf-dist/f
@@ -1581,7 +1555,7 @@ t/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx
 /zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (50 pages, 365283 bytes).
+Output written on relative_quasimaps.pdf (50 pages, 366010 bytes).
 PDF statistics:
  255 PDF objects out of 1000 (max. 8388607)
  184 compressed objects within 2 object streams

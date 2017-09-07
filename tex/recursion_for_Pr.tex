@@ -1,26 +1,34 @@
 \section{Recursion formula for $\PP^N$ relative $H$} \label{Section recursion for PN}
 
-We first deal with genus 0 quasimaps to projective space, relative to a hyperplane. We give a Gathmann-like description of the space of relative quasimaps as a closed substack of the moduli space of (absolute) quasimaps to $\PP^r$; it turns out to be irreducible of the expected dimension. Finally, we retrieve a Gathmann-type formula by pushforward along the comparison morphism $\comp\colon \M{0}{n}{\PP^r}{d}\to\Q{0}{n}{\PP^r}{d}$.
+In this section we will show that the moduli space
+\begin{equation*} \Q{0}{\alpha}{\PP^N}{d} \end{equation*}
+is irreducible of the expected dimension, and thus admits a fundamental class. We then prove a recursion formula for these fundamental classes by pushing forward Gathmann's recursion formula along the comparison morphism $\chi$.
 
-Fix coordinates on $\PP^r$ such that the hyperplane $H$ is $\{x_0=0\}$. Let $\alpha=(\alpha_1,\ldots,\alpha_n)$ be an $n$-tuple of nonnegative integers. Consider the following locus $\Qt{0}{\alpha}{\PP^r|H}{d}$ inside $\Q{0}{n}{\PP^r}{d}$: the quasimaps $(C,x_1,\ldots,x_n,L,u_0,\ldots,u_r)$ such that, if $Z$ is a connected component of the vanishing locus of $u_0$ in $C$, then one of the following holds:
+We set $X=\PP^N$ and $Y=H=\{ z_0 = 0 \}$. Then given a quasimap
+\begin{equation*} (C,x_1,\ldots,x_n,L,u_0,\ldots,u_N) \in \Q{0}{n}{\PP^N}{d} \end{equation*}
+the line bundle $L_Y$ of the previous section is equal to $L$ and the section $u_Y$ is equal to $u_0$. Let us denote by
+\begin{equation*} \mathcal Q_{0,\alpha}(\PP^N|H,d) \subseteq \Q{0}{n}{\PP^N}{d} \end{equation*}
+the \ilemph{nice locus}, consisting of those quasimaps with irreducible source curve (i.e. a $\PP^1$), no basepoints (so we get an actual map), with no component of the curve mapping inside $H$ and with the map having tangency at least $\alpha_i$ to $H$ at the marking $x_i$.
 
-\begin{enumerate}
-\item $Z$ is a point, either unmarked, or one of the $x_i$'s, and in this case $u_0$ vanishes at $Z$ with multiplicity at least $\alpha_i$.
-\item $Z$ is a curve (\emph{internal}); letting $C^{(1)},\ldots,C^{(k)}$ be the (\emph{external}) irreducible components adjacent to $Z$, with nodes $q_i=Z\cap C^{(i)}$, and $m^{(i)}$ the order of vanishing of $u_{0|C^{(i)}}$ at $q_i$, we must have
-\[
-\deg(L_{|Z})+\sum_{i=1}^k m^{(i)}\geq\sum_{x_j\in Z} \alpha_j
-\]
-\end{enumerate}
-
-On the other hand, denote by $\mathcal Q_{0,\alpha}(\PP^r|H,d)$ the \emph{nice locus}, consisting of actual maps from an irreducible curve (i.e. $\PP^1$) and with specified tangency condition $\alpha$ at the markings $\mathbf x$. Notice that this is an irreducible, locally closed substack of $\Q{0}{n}{\PP^r}{d}$, by pretty much the same argument as in \cite[Lemma 1.8]{Ga}; it has codimension $\sum\alpha$. In fact it is isomorphic to the nice locus inside stable maps, that Gathmann denotes by $\mathcal M_{0,\alpha}(\PP^r|H,d)$ \cite[Def. 1.6]{Ga} (the stricter stability condition has no effect when the source curve is irreducible, of course provided $n\geq2$); hence:
+Notice that this is an irreducible, locally closed substack of $\Q{0}{n}{\PP^N}{d}$ of codimension $\Sigma_i \alpha_i$, by essentially the same argument as in \cite[Lemma 1.8]{Ga}. In fact it is isomorphic to the nice locus inside the stable map space, denoted $\mathcal M_{0,\alpha}(\PP^N|H,d)$ by Gathmann (see \cite[Def. 1.6]{Ga}; the stricter stability condition has no effect when the source curve is irreducible, provided of course that $n\geq2$). We thus obtain:
 
 \begin{lem}\label{lem:comparison}
-The comparison morphism restricts to a birational morphism $\M{0}{\alpha}{\PP^r|H}{d}\to \Qt{0}{\alpha}{\PP^r|H}{d}$.
+The comparison morphism restricts to a morphism 
+\begin{equation*} \chi: \M{0}{\alpha}{\PP^N|H}{d}\to \Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
+which is birational.
 \end{lem}
 \begin{proof}
-The contraction of a rational tail $R$ always happens far away from the markings, hence the only care we need to take is when the one component touching $R$ is internal (call it $Z$); in this case, observe that $m^{(R)}\leq\deg(f_{|R})$ and the quasimap resulting from the contraction of $R$ has $\deg(L_{|Z})=\deg(f_{|Z})+\deg(f_{|R})$, so the corresponding term only moves around the LHS of the $\alpha$-tangency condition nr. 2.
+We need to verify that a relative stable map is sent to a relative stable quasimap by $\chi$. Since the contraction of a rational tail $R$ always occurs away from the markings, we only need to examine the internal components $Z$ of the quasimap.
 
-Birationality follows from the fact that the comparison morphism restricts to give an isomorphism between the nice loci.
+Consider then $Z$; for each basepoint $x$ on $Z$ there is a rational tail $R$ of the stable map attached to $Z$ at $x$. This is either internal (mapped into $H$) or external (not mapped into $H$).
+
+If $R$ is internal then both $R$ and $Z$ live inside the same connected component $Z^\prime$ of $f^{-1}(H)$. Applying $\chi$ has the effect of contracting $R$ and adding a line bundle to $Z$ of degree equal to $H \cdot f_* [R]$. Thus the left hand side of the inequality \eqref{Relative quasimap internal component inequality} is left unchanged, and since the right hand side is also unaltered the inequality is satisfied.
+
+On the other hand if $R$ is external then the multiplicity $m^{(R)}$ of $R \cap Z$ satisfies:
+\begin{equation*} m^{(R)} \leq H \cdot f_* [R] \end{equation*}
+Since applying $\chi$ has the effect of replacing $m^{(R)}$ by $H \cdot f_* [R]$ in the left hand side of \eqref{Relative quasimap internal component inequality}, the inequality still holds for the quasimap. Thus we obtain a morphism from the relative stable map space to the relative quasimap space, as claimed.
+
+The birationality statement follows from the fact that the comparison morphism restricts to give an isomorphism between the nice loci.
 \end{proof}
 
 \begin{lem}

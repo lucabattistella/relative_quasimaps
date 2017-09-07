@@ -79,30 +79,32 @@ where $D_{\alpha,k}(X,\beta)$ is an appropriate \ilemph{comb locus}. Repeated ap
 
 We now give the main definition of the paper. From here on $X$ will denote a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. We do not require that $Y$ is toric.
 
-Consider the line bundle $\OO(Y)$ and the section $s$ cutting out $Y$. By \cite{CoxRing} we have a natural isomorphism
-\begin{equation*} \HH^0(X,\OO(Y)) = \kfield \left\langle \prod_{\rho \in \Sigma_X(1)} z_\rho^{a_\rho} : \Sigma_\rho a_\rho D_\rho = Y \right\rangle \end{equation*}
-where the $z_\rho$ are the generators of the Cox ring and the $a_\rho$ are arbitrary non-negative integers. We can therefore write $s$ as
-\begin{equation*} s = \sum_{\underline{a}=(a_\rho)} \lambda_{\underline{a}} \prod_\rho z_\rho^{a_\rho} \end{equation*}
+Consider the line bundle $\OO(Y)$ and the section $s_Y$ cutting out $Y$. By \cite{CoxRing} we have a natural isomorphism
+\begin{equation*} \HH^0(X,\OO(Y)) = \kfield \left\langle \prod_{\rho} z_\rho^{a_\rho} : \Sigma_\rho a_\rho D_\rho = Y \right\rangle \end{equation*}
+where the $z_\rho$ for $\rho \in \Sigma_X(1)$ are the generators of the Cox ring of $X$ and the $a_\rho$ are non-negative integers. We can therefore write $s_Y$ as
+\begin{equation*} s_Y = \sum_{\underline{a}=(a_\rho)} \lambda_{\underline{a}} \prod_\rho z_\rho^{a_\rho} \end{equation*}
 for some scalars $\lambda_{\underline{a}} \in \kfield$. The idea then is that a quasimap
 \begin{equation*} ((C,x_1,\ldots,x_n), (L_\rho,u_\rho)_{\rho \in \Sigma_X(1)}, (\varphi_m)_{m \in M}) \end{equation*}
 maps to $Y$ at $x \in C$ if and only if the section
-\begin{equation*} u := \sum_{\underline{a}} \lambda_{\underline{a}} \prod_\rho u_\rho^{a_\rho} \end{equation*}
+\begin{equation*} u_Y := \sum_{\underline{a}} \lambda_{\underline{a}} \prod_\rho u_\rho^{a_\rho} \end{equation*}
 vanishes at $x$. We now explain how to make sense of the expression above. For each $\underline{a}$ we have a well-defined section
 \begin{equation*} u_{\underline{a}} := \lambda_{\underline{a}} \prod_\rho u_\rho^{a_\rho} \in \HH^0(C,\otimes_\rho L_\rho^{\otimes a_\rho}) \end{equation*}
-and if we have $\underline{a}$ and $\underline{b}$ such that $\sum_\rho a_\rho D_\rho = Y = \sum_\rho b_\rho D_\rho$ then these differ by an element $m$ of $M$. Thus the isomorphism $\varphi_m$ allows us to view the sections $u_{\underline{a}}$ and $u_{\underline{b}}$ as sections of the same bundle, which we denote by $L_Y$. There is a choice involved here, but up to isomorphism it does not matter; see the proof of functoriality in Appendix \ref{Functoriality of Quasimap Spaces Section} for more details.
+and if we have $\underline{a}$ and $\underline{b}$ such that $\sum_\rho a_\rho D_\rho = Y = \sum_\rho b_\rho D_\rho$ then these differ by an element $m$ of $M$. Thus the isomorphism $\varphi_m$ allows us to view the sections $u_{\underline{a}}$ and $u_{\underline{b}}$ as sections of the same bundle, which we denote by $L_Y$. Then we can sum these together to obtain $u_Y$. There is a choice involved here, but up to isomorphism it does not matter; see the proof of functoriality in Appendix \ref{Functoriality of Quasimap Spaces Section} for more details.
 
 The upshot is that we obtain a line bundle $L_Y$ on $C$ (which plays the role of the ``pull-back'' of $\OO(Y)$) and a global section
-\begin{equation*} u \in \HH^0(C,L_Y) \end{equation*}
+\begin{equation*} u_Y \in \HH^0(C,L_Y) \end{equation*}
 which plays the role of the ``pull-back'' of $s$.
 
 \begin{definition} With notation as above, let $n \geq 0$ be number of marked points, $\beta \in \HH_2^+(X)$ be a curve class and $\alpha=(\alpha_1, \ldots, \alpha_n)$ a collection of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. Then we define the \ilemph{moduli space of relative stable quasimaps}
 \begin{equation*} \Q{0}{\alpha}{X|Y}{\beta} \subseteq \Q{0}{n}{X}{\beta} \end{equation*}
-to be the locus of quasimaps such that, if $Z$ is a connected component of the vanishing locus of $u$ in $C$, then
+to be the locus of quasimaps such that, if $Z$ is a connected component of the vanishing locus of $u_Y$ in $C$, then
 \begin{enumerate}
-\item if $Z$ is a point and is equal to a marked point $x_i$, then the order of vanishing of $u$ at $x_i$ is greater than or equal to $\alpha_i$;
-\item if $Z$ is one-dimensional (hence a union of irreducible components) and if we let $C^{(i)}$ for $1 \leq i \leq r$ denote the irreducible components of $C$ adjacent to $Z$, and $m^{(i)}$ the order of vanishing of $u$ at the node $Z \cap C^{(i)}$, then we must have:
-\begin{equation*} \deg L_Y|_Z + \sum_{i=1}^r m^{(i)} \geq \sum_{x_i \in Z} \alpha_i \end{equation*}
+\item if $Z$ is a point and is equal to a marked point $x_i$, then the order of vanishing of $u_Y$ at $x_i$ is greater than or equal to $\alpha_i$;
+\item if $Z$ is one-dimensional (hence a union of irreducible components) and if we let $C^{(i)}$ for $1 \leq i \leq r$ denote the irreducible components of $C$ adjacent to $Z$, and $m^{(i)}$ the order of vanishing of $u_Y$ at the node $Z \cap C^{(i)}$, then we must have:
+\begin{equation} \label{Relative quasimap internal component inequality} \deg L_Y|_Z + \sum_{i=1}^r m^{(i)} \geq \sum_{x_i \in Z} \alpha_i \end{equation}
 \end{enumerate}
 \end{definition}
 
-In the case where $X=\PP^N$ and $H=\{ z_0 = 0 \}$ is a hyperplane, the line bundle $L_Y$ is equal to $L$ and the section $u$ is equal to $u_0$. We will examine this case in detail in the follpwing section. 
+\begin{remark}In the second case above we call $Z$ an \ilemph{internal} component and the $C^{(i)}$ \ilemph{external} components.\end{remark}
+
+As it stands we do not know much about this locus. In the following section we will examine the case $X=\PP^N$ and $Y=H$ a hyperplane in detail. We will then apply the results obtained there to deduce facts about the general case.
