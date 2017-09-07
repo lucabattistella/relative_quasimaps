@@ -1,7 +1,7 @@
 \section{Relative stable quasimaps} \label{Section relative stable quasimaps}
 
 \subsection{Review of absolute stable quasimaps} \label{Subsection stable quasimaps}
-We briefly recall the definition and basic properties of the moduli space of quasimaps; see \cite{CF-K} for more details.
+We briefly recall the definition and basic properties of the moduli space of toric quasimaps; see \cite{CF-K} for more details.
 \begin{definition}[{\cite[Definition 3.1.1]{CF-K}}] Let $X= X_{\Sigma}$ be a smooth and projective toric variety with fan $\Sigma \subseteq N_{\QQ}$ and let $\OO_{X_\Sigma}(1)$ be a fixed polarisation, which we can write (non-uniquely) in terms of the $T$-invariant divisors as:
 \begin{equation*} \OO_{X_\Sigma}(1) = \otimes_{\rho \in \Sigma(1)} \OO_{X_\Sigma}(D_\rho)^{\otimes \alpha_\rho} \end{equation*}
 for some $\alpha_\rho \in \Z$. Given a fixed genus $g \geq 0$, number of marked points $n \geq 0$ and curve class $\beta \in \HH_2^+(X)$ a \ilemph{stable (toric) quasimap} is given by the data
@@ -21,14 +21,14 @@ These are required to satisfy the following two conditions:
 for every rational $\epsilon > 0$.
 \end{enumerate}
 \end{definition}
-\begin{remark} This definition is motivated by the $\Sigma$-collections of D. Cox \cite{CoxFunctor}; see also \S \ref{Functoriality of Quasimap Spaces Section}. The point is that a (stable) quasimap without any basepoints is the same thing as a (stable) morphism $C \to X$. The basepoints thus appear in the boundary of the moduli space, in much the same way as the locus of stable maps with rational tails appears in the boundary of the moduli space of stable maps. \end{remark}
+\begin{remark} This definition is motivated by the $\Sigma$-collections of D. Cox \cite{CoxFunctor}; see also Appendix \ref{Functoriality of Quasimap Spaces Section}. The point is that a quasimap defines a rational morphism $C \dashrightarrow X$ with base locus equal to $B$; in particular a quasimap without any basepoints defines a morphism $C \to X$. Thus the basepoints appear in the boundary of the moduli space, in much the same way as the locus of stable maps with rational tails appears in the boundary of the moduli space of stable maps (this is actually more than just a vague analogy; these loci correspond to each other under the comparison morphism; see Appendix \ref{Section comparison morphism}). \end{remark}
 
 More generally, we can define the notion of a family of quasimaps over a base scheme $S$, and what it means for two such families to be isomorphic; we thus obtain a moduli space
 \begin{equation*} \Q{g}{n}{X}{\beta} \end{equation*}
 of stable (toric) quasimaps to $X$, which is a proper Deligne--Mumford stack of finite type. It can be shown that this definition does not depend on the choice of polarisation.
 
 
-As with the case of stable maps, there is an alternative characterisation of stability which is much easier to check in practice; a prestable quasimap is stable if and only if the following conditions hold:
+As with the case of stable maps, there is a combinatorial characterisation of stability which is much easier to check in practice; a prestable quasimap is stable if and only if the following conditions hold:
 \begin{enumerate}
 \item the line bundle $L$ defined above must have strictly positive degree on any rational component with fewer than three special points, and on any elliptic component with no special points;
 \item $C$ cannot have any rational components with fewer than two special points.
@@ -39,7 +39,7 @@ The moduli space $\Q{g}{n}{X}{\beta}$ admits a perfect obstruction theory relati
 \begin{equation*} \virt{\Q{g}{n}{X}{\beta}} \in \Achow_{\operatorname{vdim}\Q{g}{n}{X}{\beta}} \left( \Q{g}{n}{X}{\beta} \right) \end{equation*}
 where the virtual dimension is the same as for stable maps:
 \begin{equation*} \operatorname{vdim}\Q{g}{n}{X}{\beta} = (\dim{X} - 3)(1-g) - (K_X \cdot \beta) + n \end{equation*}
-Since the markings are not basepoints there are evaluation maps
+Since the markings are not basepoints there exist evaluation maps
 \begin{equation*} \ev_i : \Q{g}{n}{X}{\beta} \to X \end{equation*}
 and there are $\psi$-classes defined in the usual way by pulling back the relative dualising sheaf of the universal curve:
 \begin{equation*} \psi_i = \operatorname{c}_1(\sigma_i^* \omega_{\mathcal{C}/\om{Q}}) \end{equation*}
@@ -47,11 +47,9 @@ Putting all these pieces together, we can define \ilemph{quasimap invariants}:
 \begin{equation*} \langle \gamma_1 \psi^{a_1} , \ldots, \gamma_n \psi^{a_n} \rangle_{g,n,\beta}^X = \int_{\virt{\Q{g}{n}{X}{\beta}}} \prod_{i=1}^n \ev_i^* \gamma_i \psi_i^{a_i} \end{equation*}
 (We use the same correlator notation as in Gromov--Witten theory; since we will never talk about Gromov--Witten invariants this should not cause any confusion.)
 
-[STUFF ABOUT WHY QUASIMAPS ARE COOL. EXPECTED TO AGREE WITH GW IN SOME CASES.]
-
 [EXAMPLES.]
 
-\subsection{Review of relative stable maps} \label{Subsection relative stable maps} Given a smooth projective variety $X$ and a smooth divisor $Y$, the moduli space of relative stable maps parametrises stable maps to $X$ with specified tangency multiplicities at the marked points.
+\subsection{Review of relative stable maps} \label{Subsection relative stable maps} Given a smooth projective variety $X$ and a smooth divisor $Y$, the moduli space of relative stable maps parametrises stable maps to $X$ with specified tangencies to $Y$ at the marked points; \cite{Ga} for details.
 
 \begin{definition}[{\cite[Definition 1.1 and Remark 1.4]{Ga}}] Let $X$ be a smooth projective variety and $Y \subseteq X$ a smooth divisor. Fix a number $n \geq 0$ of marked points, a curve class $\beta \in \HH_2^+(X)$ and an $n$-tuple $\alpha = (\alpha_1, \ldots, \alpha_n)$ of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. Then the moduli space
 \begin{equation*} \M{0}{\alpha}{X|Y}{\beta} \end{equation*}
@@ -62,21 +60,49 @@ of relative stable maps to $(X,Y)$ is defined to be the locus in $\M{0}{n}{X}{\b
 \begin{equation*} Y \cdot f_* [Z] + \sum_{i=1}^r m^{(i)} \geq \sum_{x_i \in Z} \alpha_i \end{equation*}
 \end{enumerate}
 \end{definition}
-Note that in the case of maximal multiplicity $\Sigma_{i} \alpha_i = Y \cdot \beta$, all of the inequalities in the above definition must in fact be equalities.
+\begin{remark} In the case of maximal multiplicity $\Sigma_{i} \alpha_i = Y \cdot \beta$, all the inequalities in the above definition must actually be equalities. \end{remark}
 
-This forms a proper closed substack of $\M{0}{n}{X}{\beta}$. In the case $X=\PP^N$, $Y=H$ one can show it is irreducible of the correct dimension, and hence admits a fundamental class. More generally if $Y \subseteq X$ is very ample one can use the embedding $X \hookrightarrow \PP^N$ to obtain a cartesian diagram:
+This forms a proper closed substack of $\M{0}{n}{X}{\beta}$. In the case $X=\PP^N$, $Y=H$ one can show that it is irreducible of the correct dimension, and hence admits a fundamental class from which one can define relative Gromov--Witten invariants.
+
+In general if $Y \subseteq X$ is very ample one can use the embedding $X \hookrightarrow \PP^N$ to obtain a cartesian diagram:
 \bcd
 \M{0}{\alpha}{X|Y}{\beta} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \M{0}{\alpha}{\PP^N|H}{d} \ar[d] \\
 \M{0}{n}{X}{\beta} \ar[r,"\varphi"] & \M{0}{n}{\PP^N}{d}
 \ecd
-Then the fact that $\M{0}{n}{\PP^N}{d}$ is smooth allows us to define a virtual class on $\M{0}{\alpha}{X|Y}{\beta}$ by virtual (or diagonal) pull-back:
+Then the fact that $\M{0}{n}{\PP^N}{d}$ is smooth allows us to define a virtual class on $\M{0}{\alpha}{X|Y}{\beta}$ by virtual (or diagonal) pull-back (see Appendix \ref{Appendix intersection theory} of the current paper):
 \begin{equation*} \virt{\M{0}{\alpha}{X|Y}{\beta}} = \varphi^! [\M{0}{\alpha}{\PP^N|H}{d}] \end{equation*}
 Thus one can define relative Gromov--Witten invariants. In \S\S 2-4 Gathmann proves a recursion relation inside the Chow group of $\M{0}{\alpha}{X|Y}{\beta}$
 \begin{equation*} (\alpha_k \psi_k + \ev_k^* Y) \virt{\M{0}{\alpha}{X|Y}{\beta}} = \virt{\M{0}{\alpha+e_k}{X|Y}{\beta}} + \virt{D_{\alpha,k}(X,\beta)} \end{equation*}
-where $D_{\alpha,k}(X,\beta)$ is an appropriate \ilemph{comb locus}. Repeated application of this result shows that the relative Gromov--Witten invariants and the Gromov--Witten invariants of $Y$ are completely determined by the Gromov--Witten invariants of $X$.
-
-This relation is worked out explicitly in some cases of particular interest in \cite{Ga-MF} to obtain a new proof of the mirror theorem.
+where $D_{\alpha,k}(X,\beta)$ is an appropriate \ilemph{comb locus}. Repeated application of this result shows that the relative Gromov--Witten invariants of $(X,Y)$ and the Gromov--Witten invariants of $Y$ are completely determined by the Gromov--Witten invariants of $X$. This relation is then worked out explicitly in cases of particular interest in \cite{Ga-MF} to obtain a new proof of the mirror theorem.
 
 \subsection{Definition of relative stable quasimaps} \label{Subsection relative stable quasimaps}
 
+We now give the main definition of the paper. From here on $X$ will denote a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. We do not require that $Y$ is toric.
 
+Consider the line bundle $\OO(Y)$ and the section $s$ cutting out $Y$. By \cite{CoxRing} we have a natural isomorphism
+\begin{equation*} \HH^0(X,\OO(Y)) = \kfield \left\langle \prod_{\rho \in \Sigma_X(1)} z_\rho^{a_\rho} : \Sigma_\rho a_\rho D_\rho = Y \right\rangle \end{equation*}
+where the $z_\rho$ are the generators of the Cox ring and the $a_\rho$ are arbitrary non-negative integers. We can therefore write $s$ as
+\begin{equation*} s = \sum_{\underline{a}=(a_\rho)} \lambda_{\underline{a}} \prod_\rho z_\rho^{a_\rho} \end{equation*}
+for some scalars $\lambda_{\underline{a}} \in \kfield$. The idea then is that a quasimap
+\begin{equation*} ((C,x_1,\ldots,x_n), (L_\rho,u_\rho)_{\rho \in \Sigma_X(1)}, (\varphi_m)_{m \in M}) \end{equation*}
+maps to $Y$ at $x \in C$ if and only if the section
+\begin{equation*} u := \sum_{\underline{a}} \lambda_{\underline{a}} \prod_\rho u_\rho^{a_\rho} \end{equation*}
+vanishes at $x$. We now explain how to make sense of the expression above. For each $\underline{a}$ we have a well-defined section
+\begin{equation*} u_{\underline{a}} := \lambda_{\underline{a}} \prod_\rho u_\rho^{a_\rho} \in \HH^0(C,\otimes_\rho L_\rho^{\otimes a_\rho}) \end{equation*}
+and if we have $\underline{a}$ and $\underline{b}$ such that $\sum_\rho a_\rho D_\rho = Y = \sum_\rho b_\rho D_\rho$ then these differ by an element $m$ of $M$. Thus the isomorphism $\varphi_m$ allows us to view the sections $u_{\underline{a}}$ and $u_{\underline{b}}$ as sections of the same bundle, which we denote by $L_Y$. There is a choice involved here, but up to isomorphism it does not matter; see the proof of functoriality in Appendix \ref{Functoriality of Quasimap Spaces Section} for more details.
+
+The upshot is that we obtain a line bundle $L_Y$ on $C$ (which plays the role of the ``pull-back'' of $\OO(Y)$) and a global section
+\begin{equation*} u \in \HH^0(C,L_Y) \end{equation*}
+which plays the role of the ``pull-back'' of $s$.
+
+\begin{definition} With notation as above, let $n \geq 0$ be number of marked points, $\beta \in \HH_2^+(X)$ be a curve class and $\alpha=(\alpha_1, \ldots, \alpha_n)$ a collection of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. Then we define the \ilemph{moduli space of relative stable quasimaps}
+\begin{equation*} \Q{0}{\alpha}{X|Y}{\beta} \subseteq \Q{0}{n}{X}{\beta} \end{equation*}
+to be the locus of quasimaps such that, if $Z$ is a connected component of the vanishing locus of $u$ in $C$, then
+\begin{enumerate}
+\item if $Z$ is a point and is equal to a marked point $x_i$, then the order of vanishing of $u$ at $x_i$ is greater than or equal to $\alpha_i$;
+\item if $Z$ is one-dimensional (hence a union of irreducible components) and if we let $C^{(i)}$ for $1 \leq i \leq r$ denote the irreducible components of $C$ adjacent to $Z$, and $m^{(i)}$ the order of vanishing of $u$ at the node $Z \cap C^{(i)}$, then we must have:
+\begin{equation*} \deg L_Y|_Z + \sum_{i=1}^r m^{(i)} \geq \sum_{x_i \in Z} \alpha_i \end{equation*}
+\end{enumerate}
+\end{definition}
+
+In the case where $X=\PP^N$ and $H=\{ z_0 = 0 \}$ is a hyperplane, the line bundle $L_Y$ is equal to $L$ and the section $u$ is equal to $u_0$. We will examine this case in detail in the follpwing section. 

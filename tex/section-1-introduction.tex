@@ -1,43 +1,44 @@
 \section{Introduction}
+The results of this paper arise from a fusion of two theories: stable quasimaps and relative stable maps. In this introductory section we briefly summarise these, providing the context for our work.
 
 \subsection{Stable quasimaps}
 The moduli space of \ilemph{stable toric quasimaps}
 \begin{equation*} \Q{g}{n}{X}{\beta} \end{equation*}
-was constructed by Ciocan-Fontanine and Kim \cite{CF-K} as an alternative compactification of the moduli space of smooth curves in a toric variety $X$. It is a Deligne--Mumford stack of finite type, and is proper if $X$ is proper. Moreover, when $X$ is smooth it admits a perfect obstruction theory and hence a virtual fundamental class, which one can use to define curve-counting invariants for $X$, called \ilemph{quasimap invariants}.
+was constructed by Ciocan-Fontanine and Kim \cite{CF-K} as an alternative compactification of the moduli space of smooth curves in a toric variety. It is a Deligne--Mumford stack of finite type, and is proper if $X$ is proper. Moreover, when $X$ is smooth it admits a perfect obstruction theory and hence a virtual fundamental class, which one can use to define curve-counting invariants for $X$, called \ilemph{quasimap invariants}.
 
-This theory agrees with the theory of stable quotients \cite{MOP} when both are defined, namely when $X$ is a projective space.  There is a common generalisation given by the theory of stable quasimaps to GIT quotients \cite{CFKM}. For simplicity we will work in the toric setting (though this restriction is probably not essential for our arguments). Thus when we say ``quasimap'' we are implicitly talking about toric quasimaps.
+This theory agrees with the theory of stable quotients \cite{MOP} when both are defined, namely when $X$ is a projective space.  There is a common generalisation given by the theory of stable quasimaps to GIT quotients \cite{CFKM}. However for simplicity we will work in the toric setting (though this restriction is probably not essential for our arguments). Thus when we say ``quasimap'' we are implicitly talking about toric quasimaps.
 
-The quasimap invariants are expected to coincide with the Gromov--Witten invariants when $X$ is a toric Fano variety \cite{CM}; this is known to hold when $X=\PP^N$ as well as in a number of other cases.
+The quasimap invariants are expected to coincide with the Gromov--Witten invariants when $X$ is a toric Fano variety \cite{CM}; this has been proven in a number of examples, including $X=\PP^N$ \cite[\S 5.4]{Manolache-Push}.
 
 In general, however, the invariants differ, the difference being encoded by certain wall-crossing formulas \cite{CF-K-wallcrossing}. The motivation for this comes from mirror symmetry: the idea is that the quasimap invariants of $X$ should correspond to the $B$-side theory of $X$ (this is in contrast to the Gromov--Witten invariants, which live on the $A$-side); see \cite[\S 7]{CF-K}.
 
 \subsection{Relative stable maps}
 In \cite{Ga} Gathmann consructs a moduli space of relative stable maps to the pair $(X,Y)$ as a closed substack of the moduli space of (absolute) stable maps to $X$:
 \begin{equation*} \M{g}{\alpha}{X|Y}{\beta} \hookrightarrow \M{g}{n}{X}{\beta} \end{equation*}
-Unfortunately this space does not admit a natural perfect obstruction theory; nevertheless in the case where $Y$ is very ample it is still possible to construct a virtual fundamental class on the moduli space, and hence to define relative Gromov--Witten invariants.
+Unfortunately this space does not admit a natural perfect obstruction theory. Nevertheless in the case where $Y$ is very ample it is still possible to construct a virtual fundamental class by intersection-theoretic methods, and hence one can define relative Gromov--Witten invariants.
 
-Gathmann then proves a recursion formula which allows one to recover the relative Gromov--Witten invariants from the absolute ones. This is  applied in \cite{Ga-MF} to obtain a quantum Lefschetz theorem for $Y \subseteq X$.
+Gathmann then proves a recursion formula which in particular allows one to recover the relative Gromov--Witten invariants from the absolute ones. This is  applied in \cite{Ga-MF} to obtain a quantum Lefschetz theorem for $Y \subseteq X$.
 
 \subsection{Relative stable quasimaps}
 In this paper we combine the two stories above, constructing moduli spaces of relative stable quasimaps. We prove a recursion relation similar to Gathmann's formula, and use this to derive a quantum Lefschetz formula for quasimap invariants.
 
 The plan of the paper is as follows. In \S\S \ref{Subsection stable quasimaps}-\ref{Subsection relative stable maps} we provide a brief review of the theories of stable quasimaps and relative stable maps mentioned above. Then in \S \ref{Subsection relative stable quasimaps} we define the moduli spaces of relative stable quasimaps
 \begin{equation*} \Q{g}{\alpha}{X|Y}{\beta} \end{equation*}
-where $X$ is a smooth toric variety and $Y$ is a smooth hypersurface. We do not require that $Y$ is toric, although we do assume it is rationally equivalent to a non-negative linear combination of toric hypersurfaces.
+where $X$ is a smooth toric variety and $Y$ is a smooth hypersurface. We \emph{do not} require that $Y$ is toric.
 
 In \S \ref{Section recursion for PN} we examine the special case of $H \subseteq \PP^N$. We find that, although the moduli space is not in general smooth, it is irreducible of the expected dimension (in fact, more than this: it is the closure of the so-called ``nice locus''). Thus it admits a fundamental class which we can use to define relative quasimap invariants.
 
-For $\PP^N$ there exists a comparison morphism from the moduli space of stable maps to the moduli space of quasimaps, which is birational. We use this morphism to push down Gathmann's recursion formula for relative stable maps to obtain a recursion formula for relative stable quasimaps. The stronger stability condition for quasimaps significantly simplifies the correction terms which appear.
+Also for $\PP^N$ there exists a comparison morphism from the moduli space of stable maps to the moduli space of quasimaps, which is birational. We use this morphism to push down Gathmann's recursion formula for relative stable maps to obtain a recursion formula for relative stable quasimaps. The stronger stability condition for quasimaps significantly simplifies the correction terms which appear.
 
-In \S \ref{Section recursion formula in general case} we extend the recursion formula to arbitrary pairs $(X,Y)$ where $Y$ is very ample, by taking the embedding $X \hookrightarrow \PP^N$ defined by $\OO(Y)$ and pulling back the formula for $(\PP^N,H)$. This of course requires some comparison theorems for virtual classes, which requires us to examine the perfect obstruction theories.
+In \S \ref{Section recursion formula in general case} we extend the recursion formula to arbitrary pairs $(X,Y)$ where $Y$ is very ample, by taking the embedding $X \hookrightarrow \PP^N$ defined by $\OO(Y)$ and pulling back the formula for $(\PP^N,H)$. This of course requires some comparison theorems for virtual classes, for which we have to examine the perfect obstruction theories.
 
 In \S \ref{Section quasimap mirror theorem} we apply the recursion formula obtained in \S \ref{Section recursion formula in general case} to obtain a quantum Lefschetz theorem for quasimap invariants. This recovers [REFERENCE] in \cite{CF-K-wallcrossing}.
 
-We also include several appendices, collecting together results which are presumably well-known to experts, but which we could not find references for in the literature.
+We also include several appendices, collecting together results which are presumably well-known to experts, but for which we could not find references in the literature.
 
 Appendix [REF] contains foundational lemmas of quasimap theory, including functoriality, the existence of relative perfect obstruction theories and the splitting theorem.
 
-Appendix [REF] discusses a well-known intersection-theoretic construction -- the so-called ``diagonal pullback'' -- and shows that it agrees with the virtual pullback of \cite{Manolache-Pull} when both are defined.
+Appendix [REF] discusses a well-known intersection-theoretic construction -- the so-called ``diagonal pull-back'' -- and shows that it agrees with the virtual pull-back of \cite{Manolache-Pull} (when both are defined) and that it commutes with Gysin maps and virtual pull-backs.
 
 Finally Appendix [REF] discusses the comparison morphism from maps to quasimaps (used in the proof of the recursion relation in \S \ref{Section recursion for PN}).
 
