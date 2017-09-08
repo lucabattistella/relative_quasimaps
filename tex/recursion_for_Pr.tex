@@ -1,6 +1,6 @@
 \section{Recursion formula for $\PP^N$ relative $H$} \label{Section recursion for PN}
 
-\subsection{Basic properties of the moduli space}
+\subsection{Basic properties of the moduli space} \label{Subsection basic properties of the moduli space}
 In this section we will show that the moduli space
 \begin{equation*} \Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
 is irreducible of the expected dimension, and thus admits a fundamental class. We then prove a recursion formula for these fundamental classes by pushing forward Gathmann's recursion formula along the comparison morphism $\chi$.
@@ -30,10 +30,10 @@ Since applying $\chi$ has the effect of replacing $m^{(R)}$ by $H \cdot f_* [R]$
 \end{proof}
 
 \begin{lem}
-$\Q{0}{\alpha}{\PP^r|H}{d}$ is equal to the closure of the nice locus $\mathcal{Q}_{0,\alpha}(\PP^r|H,d)$ inside $\Q{0}{n}{\PP^r}{d}$. 
+$\Q{0}{\alpha}{\PP^N|H}{d}$ is equal to the closure of the nice locus $\mathcal{Q}_{0,\alpha}(\PP^N|H,d)$ inside $\Q{0}{n}{\PP^N}{d}$. 
 \end{lem}
 \begin{proof}
-$\Q{0}{\alpha}{\PP^r|H}{d}\subseteq\overline{\mathcal Q_{0,\alpha}(\PP^r|H,d)}$: we show that any relative stable quasimap can be infinitesimally deformed to a relative stable quasimap with no basepoints. This is in particular a relative stable map; we then appeal to \cite[Prop. 1.14]{Ga} to deform this stable map and obtain a point in the nice locus. Since this deformation does not introduce any rational tails, this is also a deformation of quasimaps, and the statement follows.
+$\Q{0}{\alpha}{\PP^N|H}{d}\subseteq\overline{\mathcal Q_{0,\alpha}(\PP^N|H,d)}$: we show that any relative stable quasimap can be infinitesimally deformed to a relative stable quasimap with no basepoints. This is in particular a relative stable map; we then appeal to \cite[Prop. 1.14]{Ga} to deform this stable map and obtain a point in the nice locus. Since this deformation does not introduce any rational tails, this is also a deformation of quasimaps, and the statement follows.
 
 We induct on the number of components containing at least one base-point. Suppose this number is non-zero (otherwise there is nothing to prove) and pick such a component $C_0$, with base-points $y_1 ,\ldots, y_k$. Recall that this means that $u_i(y_j)=0$ for all $i$ and $j$. We will deform the section $u_N|_{C_0}$ to a new section $u_N^\prime|_{C_0}$ in such a way that $u_N^\prime|_{C_0}(y_j) \neq 0$ and in such a way that we do not introduce any new basepoints. Notice that since the relative condition only depends on $u_0$, the resulting deformed quasimap will still be a relative quasimap.
 
@@ -53,7 +53,7 @@ We can continue this process, replacing $C_0$ by $C_i$; since the genus of the c
 \begin{equation*} (C,x_1,\ldots,x_n,L,u_0, \ldots, u_{N-1}, u_N^\prime) \end{equation*}
 over $\Spec \kfield[\epsilon]/(\epsilon^2)$ which has no basepoints on $C_0$. We can repeat this process for all the components of $C$ (using higher powers of $\epsilon$ each time in order to ensure that we never introduce additional basepoints) and thus we obtain an infinitesimal deformation of our original quasimap which has no basepoints, as required.
 
-$\overline{\mathcal Q_{0,\alpha}(\PP^r|H,d)}\subseteq\Q{0}{\alpha}{\PP^r|H}{d}$: consider a family of stable quasimaps over a smooth curve $S$, such that the generic fibre lies in the nice locus. We may blow-up the source curve (a fibered surface over $S$) in the locus of basepoints (which consists of finitely many smooth points of the central fiber) in order to obtain an actual morphism to $\PP^N$. This has the effect of adding rational tails at the basepoints in the central fibre. If the morphism is constant on any of these rational tails we may contract them, and thus we obtain a family of stable maps which pushes down along $\chi$ to our original family of quasimaps.
+$\overline{\mathcal Q_{0,\alpha}(\PP^N|H,d)}\subseteq\Q{0}{\alpha}{\PP^N|H}{d}$: consider a family of stable quasimaps over a smooth curve $S$, such that the generic fibre lies in the nice locus. We may blow-up the source curve (a fibered surface over $S$) in the locus of basepoints (which consists of finitely many smooth points of the central fiber) in order to obtain an actual morphism to $\PP^N$. This has the effect of adding rational tails at the basepoints in the central fibre. If the morphism is constant on any of these rational tails we may contract them, and thus we obtain a family of stable maps which pushes down along $\chi$ to our original family of quasimaps.
 
 The general fibre is not modified at all, and so is still in the nice locus. By \cite[Lemma 1.9]{Ga} it follows that the central fibre is a relative stable map, and then by applying $\chi$ and appealing to Lemma \ref{lem:comparison} it follows that the same is true for the central fibre of the family of quasimaps.
 \end{proof}
@@ -65,12 +65,12 @@ The general fibre is not modified at all, and so is still in the nice locus. By 
 \begin{proof} This follows because the comparison morphism restricts to an isomorphism on the nice locus, which by the lemma above is a dense open subset of both spaces. \end{proof}
 
 
-\subsection{The recursion formula}
+\subsection{Proof of the recursion formula} \label{Subsection recursion formula for PN}
 We wish to obtain a recursion formula relating the quasimap invariants of multiplicity $\alpha$ with the quasimap invariants of multiplicity $\alpha + e_k$, as in \cite[Theorem 2.6]{Ga}. This process of ``increasing the multiplicities'' can be naively performed in the same way as Gathmann: for $m = \alpha_k + 1$ the following section (of the pull-back of the jet bundle of the universal line bundle)
 \[
-\sigma^m_k:=x_k^*d^m_{\mathcal C/\overline{\mathcal Q}}(u_0)\in H^0(\overline{\mathcal Q},x_k^*\mathcal P^m_{\mathcal C/\overline{\mathcal Q}}(\mathcal L))
+\sigma^m_k:=x_k^*d^m_{\mathcal C/\overline{\mathcal Q}}(u_0)\in \HH^0(\overline{\mathcal Q},x_k^*\mathcal P^m_{\mathcal C/\overline{\mathcal Q}}(\mathcal L))
 \]
-cuts out $\Q{0}{\alpha+e_k}{\PP^r|H}{d}$ inside $\Q{0}{\alpha}{\PP^r|H}{d}$, along with a number of degenerate contributions (called the \ilemph{comb loci}) parametrising quasimaps for which $x_k$ belongs to an internal component $Z \subseteq C$ (a component on which $u_0$ vanishes), such that
+cuts out $\Q{0}{\alpha+e_k}{\PP^N|H}{d}$ inside $\Q{0}{\alpha}{\PP^N|H}{d}$, along with a number of degenerate contributions (called the \ilemph{comb loci}) parametrising quasimaps for which $x_k$ belongs to an internal component $Z \subseteq C$ (a component on which $u_0$ vanishes), such that
 \begin{equation*}\deg(L|_{Z})+\sum_{i=1}^r m^{(i)}=\sum_{x_i\in Z}\alpha_i \end{equation*}
 (here by ``component'' we really mean ``connected component of the vanishing locus of $u_0$''). Quasimap stability means that these degenerate contributions cannot contain any rational tails; this is really the only difference with the case of stable maps.
 
@@ -110,17 +110,16 @@ This follows by considering the following diagram:
 where $\sst$ is the strong stabilisation map which contracts the rational tails, and so is an isomorphism near the markings.
 \end{proof}
 \begin{prop}
-Define the comb locus $D^\mathcal{Q}_{\alpha,k}(\PP^r|H,d)$ as the union of the moduli spaces
-\[
-\Q{0}{|\alpha^{(0)}| + r}{H}{d_0}\times_{H^r}\prod_{i=1}^r \Q{0}{(m^{(i)})\cup\alpha^{(i)}}{\PP^N|H}{d_i}
-\]
-where the sum runs over all splittings $d=\sum d_i$ and $\alpha=\bigcup \alpha^{(i)}$ such that the above spaces are all well-defined (in particular $|\alpha^{(0)}|+k$ and $|\alpha^{(i)}|+1$ are all $\geq 2$) and such that
+Define the \ilemph{quasimap comb locus} $\mathcal{D}^\mathcal{Q}_{\alpha,k}(\PP^N|H,d)$ as the union of the moduli spaces
+\begin{equation*}
+\mathcal{D}^{\mathcal{Q}}(\PP^N|H,A,B,M) = \Q{0}{|\alpha^{(0)}| + r}{H}{d_0}\times_{H^r}\prod_{i=1}^r \Q{0}{(m^{(i)})\cup\alpha^{(i)}}{\PP^N|H}{d_i} \end{equation*}
+where the union runs over all splittings $A = (\alpha^{(0)}, \ldots, \alpha^{(r)})$ of the markings, $B = (d_0, \ldots, d_r)$ of the degree and all valid multiplicites $M = (m^{(1)}, \ldots, m^{(r)})$ such that the above spaces are all well-defined (in particular $|\alpha^{(0)}|+k$ and $|\alpha^{(i)}|+1$ are all $\geq 2$) and such that
 \[
 d_0+\sum_{i=1}^r m^{(i)}=\sum \alpha^{(0)}
 \]
 Equip this with the sum of the (product) fundamental classes. Then the following formula holds
 \[
-(\alpha_k\psi_k+\ev_k^*H)\cdot[\Q{0}{\alpha}{\PP^r|H}{d}]=[\Q{0}{\alpha+e_k}{\PP^r|H}{d}]+[D^\mathcal{Q}_{\alpha,k}(\PP^r|H,d)].
+(\alpha_k\psi_k+\ev_k^*H)\cdot[\Q{0}{\alpha}{\PP^N|H}{d}]=[\Q{0}{\alpha+e_k}{\PP^N|H}{d}]+[\mathcal{D}^\mathcal{Q}_{\alpha,k}(\PP^N|H,d)].
 \]
 \end{prop}
 \begin{proof}
