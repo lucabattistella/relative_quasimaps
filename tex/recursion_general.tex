@@ -19,6 +19,25 @@ Recall that we can write $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ as a uni
 \begin{equation*} \mathcal D^{\mathcal{Q}}(X|Y,A,B,M) := \Q{0}{A_0 \cup \{q_1, \ldots, q_r\}}{Y}{\beta_0} \times_{Y^r} \prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta_i} \end{equation*}
 where $A$ and $B$ are partitions of the marked points and curve class respectively, and $M=(m_1,\ldots,m_r)$ records the intersection multiplicity with $Y$ at the nodes connecting the internal component to the external components (the spine of the comb to the teeth). Since the virtual class on $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ is equal to the sum of the virtual classes of the $\mathcal D^{\mathcal{Q}}(X|Y,A,B,M)$, we can deal with each of these comb loci separately.
 
+
+\begin{remark} \label{GIT comparison remark} There is a subtelty here; since $Y$ is not toric, it is not immediately obvious what we mean by the quasimap space:
+\begin{equation*} \om{Q}(Y) = \Q{0}{A_0 \cup \{ q_1, \ldots, q_n \}}{Y}{\beta_0} \end{equation*}
+There are two possibilities here: one is to \emph{define} this space as the cartesian product:
+\bcd
+\om{Q}(Y) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \om{Q}(H) \ar[d] \\
+\om{Q}(X) \ar[r] & \om{Q}(\PP^N)
+\ecd
+and equip it with the pullback virtual class (using the fact that the base is smooth).
+
+This has obvious advantages from the point of view of our computations, but is conceptually unsatisfying. On the other hand, $Y \subseteq X$ defines a $(\CC^*)^r$-invariant subvariety in the prequotient of $X$, which we refer to (by analogy with the case $X=\PP^r$) as the \ildef{cone of Y}:
+\begin{equation*} C(Y) \subseteq \Aaff_k^{\Sigma_X(1)} \end{equation*}
+Then $Y$ is equal to the GIT quotient
+\begin{equation*} Y = C(Y) \sslash (\CC^*)^r \end{equation*}
+and so we may use the more general theory of quasimaps to GIT quotients (\cite{CFKM}) to define $\om{Q}(Y)$ and its virtual class.
+
+We should then check that these two definitions of $\om{Q}(Y)$ agree (i.e. that there exists an isomorphism between these moduli spaces which preserves the virtual class). This is carried out in Appendix \ref{Section comparison with GIT construction}.
+\end{remark}
+
 The comb locus sits inside the full product
 \begin{equation*} \mathcal E^{\mathcal{Q}}(X|Y,A,B,M) := \Q{0}{A_0 \cup \{q_1, \ldots, q_r\}}{Y}{\beta_0} \times \prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta_i} \end{equation*}
 which we may endow with the product virtual class
@@ -49,7 +68,7 @@ Let us introduce the following shorthand notation: we fix the the data of $A$, $
 \mathcal{E}(X|Y) & := \mathcal E^{\mathcal{Q}}(X|Y,A,B,M) \\
 \mathcal{D}(X) & := \mathcal{D}^{\mathcal{Q}}(X,A,B) \\
 \mathcal{E}(X) & := \mathcal{E}^{\mathcal{Q}}(X,A,B) \\
-\mathcal{Q}(X) & :=\Q{0}{n}{X}{\beta}
+\om{Q}(X) & :=\Q{0}{n}{X}{\beta}
 \end{align*}
 and similarly for $(\PP^N,H)$; see Appendix \ref{Subsection splitting} for the definition of $\mathcal{D}(X)$ and $\mathcal{D}(Y)$. We have a cartesian diagram
 \bcd
@@ -61,23 +80,23 @@ and since $\mathcal{E}(\PP^N)$ is smooth and there is a natural fundamental clas
 \begin{proof}
 It suffices to check that in the following cartesian diagram
 \bcd
-\mathcal{Q}(Y) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \mathcal{Q}(H) \ar[d,"\theta"] \\
-\mathcal{Q}(X) \ar[r] & \mathcal{Q}(\PP^N)
+\om{Q}(Y) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \om{Q}(H) \ar[d,"\theta"] \\
+\om{Q}(X) \ar[r] & \om{Q}(\PP^N)
 \ecd
-we have $\theta^! \virt{\mathcal{Q}(X)} = \virt{\mathcal{Q}(Y)}$; this is carried out in Appendix \ref{Section comparison with GIT construction}.
+we have $\theta^! \virt{\om{Q}(X)} = \virt{\om{Q}(Y)}$; this is carried out in Appendix \ref{Section comparison with GIT construction}.
 \end{proof}
 
 Now consider the following cartesian diagram
 \bcd
 \mathcal D(X)\ar[r]\ar[d,"\varphi_X"]\ar[dr,phantom,"\Box"] & \mathcal D(\PP^N)\ar[r]\ar[d,"\varphi_{\PP^N}"]\ar[dr,phantom,"\Box"] & \MM_{A,B}^{\operatorname{wt}}\ar[d,"\psi"] \\
-\mathcal Q(X)\ar[r,"k"] & \mathcal Q(\PP^N)\ar[r] & \MM_{0,n}^{\operatorname{wt}}
+\om{Q}(X)\ar[r,"k"] & \om{Q}(\PP^N)\ar[r] & \MM_{0,n}^{\operatorname{wt}}
 \ecd
 from which we see that
 \[
- \psi^!\virt{\mathcal Q(X)}= \psi^! k^! [ \mathcal{Q}(\PP^N)] = k^!\psi^![\mathcal Q(\PP^N)]
+ \psi^!\virt{\om{Q}(X)}= \psi^! k^! [ \om{Q}(\PP^N)] = k^!\psi^![\om{Q}(\PP^N)]
 \]
 by commutativity of virtual pullbacks. Note that we have:
-\begin{equation*} \psi^! \virt{\mathcal{Q}(X)} = \Delta_{X^r}^! \virt{\mathcal{E}(X)} \end{equation*}
+\begin{equation*} \psi^! \virt{\om{Q}(X)} = \Delta_{X^r}^! \virt{\mathcal{E}(X)} \end{equation*}
 by the splitting axiom (see Lemma \ref{Lemma product class equals pullback class}).
 
 \begin{proof}[Proof of Lemma \ref{Comb loci pull back}] Putting all the preceding results together, we consider the cartesian digram:
@@ -90,8 +109,8 @@ We then have:
 \begin{align*} \virt{\mathcal D(X|Y)} & = \Delta_{X^r}^! \virt{\mathcal E(X|Y)} & \\
 & =  \Delta_{X^r}^! \theta^!\virt{\mathcal E(X)} & \text{by Lemma \ref{theta-pull}} \\
 & =  \theta^!\Delta_{X^r}^! \virt{\mathcal E(X)} & \text{by commutativity} \\
-& =  \theta^!\psi^!\virt{\mathcal Q(X)} & \text{by the splitting axiom} \\
-& =  \theta^!k^!\psi^![\mathcal Q(\PP^N)] & \text{by the above} \\
+& =  \theta^!\psi^!\virt{\om{Q}(X)} & \text{by the splitting axiom} \\
+& =  \theta^!k^!\psi^![\om{Q}(\PP^N)] & \text{by the above} \\
 & =  \theta^!k^!\Delta_{(\PP^N)^r}^!\virt{\mathcal E(\PP^N)} & \text{by the splitting axiom} \\
 & =  k^!\Delta_{(\PP^N)^r}^!\theta^!\virt{\mathcal E(\PP^N)} & \text{by commutativity} \\
 & =  k^!\virt{\mathcal D(\PP^N|H)}.
