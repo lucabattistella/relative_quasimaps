@@ -7,53 +7,46 @@ Repeated entry---line 201 of file relqm.bib
  : @article{Manolache-Push
  :                        ,
 I'm skipping whatever remains of this entry
-Warning--string name "“coates" is undefined
---line 423 of file relqm.bib
-I was expecting an "="---line 423 of file relqm.bib
- :  author = “coates, tom 
- :                          and Manolache, Cristina”,
-I'm skipping whatever remains of this entry
-Warning--to sort, need author or key in CM
 Warning--there's a number but no volume in Givental-equivariantGW
 You've used 20 entries,
             2543 wiz_defined-function locations,
-            699 strings with 6835 characters,
-and the built_in function-call counts, 7516 in all, are:
-= -- 782
-> -- 253
+            701 strings with 6884 characters,
+and the built_in function-call counts, 7639 in all, are:
+= -- 796
+> -- 271
 < -- 13
-+ -- 78
-- -- 76
-* -- 563
-:= -- 1202
-add.period$ -- 60
++ -- 84
+- -- 82
+* -- 569
+:= -- 1236
+add.period$ -- 61
 call.type$ -- 20
-change.case$ -- 107
+change.case$ -- 110
 chr.to.int$ -- 18
-cite$ -- 23
+cite$ -- 21
 duplicate$ -- 303
-empty$ -- 602
-format.name$ -- 106
-if$ -- 1528
+empty$ -- 600
+format.name$ -- 113
+if$ -- 1549
 int.to.chr$ -- 3
 int.to.str$ -- 0
 missing$ -- 21
-newline$ -- 102
-num.names$ -- 57
-pop$ -- 84
+newline$ -- 103
+num.names$ -- 60
+pop$ -- 85
 preamble$ -- 1
-purify$ -- 129
+purify$ -- 131
 quote$ -- 0
 skip$ -- 240
 stack$ -- 0
-substring$ -- 573
+substring$ -- 572
 swap$ -- 31
 text.length$ -- 13
 text.prefix$ -- 11
 top$ -- 0
 type$ -- 152
-warning$ -- 2
-while$ -- 81
+warning$ -- 1
+while$ -- 84
 width$ -- 24
-write$ -- 258
-(There were 2 error messages)
+write$ -- 261
+(There was 1 error message)

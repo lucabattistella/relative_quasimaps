@@ -1,21 +1,21 @@
 \section{Recursion formula for $\PP^N$ relative $H$} \label{Section recursion for PN}
 
+\subsection{Basic properties of the moduli space}
 In this section we will show that the moduli space
-\begin{equation*} \Q{0}{\alpha}{\PP^N}{d} \end{equation*}
+\begin{equation*} \Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
 is irreducible of the expected dimension, and thus admits a fundamental class. We then prove a recursion formula for these fundamental classes by pushing forward Gathmann's recursion formula along the comparison morphism $\chi$.
 
-We set $X=\PP^N$ and $Y=H=\{ z_0 = 0 \}$. Then given a quasimap
+We set $X=\PP^N$ and $Y=H=\{ z_0 = 0 \}$. Given a quasimap
 \begin{equation*} (C,x_1,\ldots,x_n,L,u_0,\ldots,u_N) \in \Q{0}{n}{\PP^N}{d} \end{equation*}
 the line bundle $L_Y$ of the previous section is equal to $L$ and the section $u_Y$ is equal to $u_0$. Let us denote by
 \begin{equation*} \mathcal Q_{0,\alpha}(\PP^N|H,d) \subseteq \Q{0}{n}{\PP^N}{d} \end{equation*}
-the \ilemph{nice locus}, consisting of those quasimaps with irreducible source curve (i.e. a $\PP^1$), no basepoints (so we get an actual map), with no component of the curve mapping inside $H$ and with the map having tangency at least $\alpha_i$ to $H$ at the marking $x_i$.
+(without the bar) the \ilemph{nice locus}, consisting of those quasimaps with irreducible source curve (i.e. a $\PP^1$), no basepoints (so we get an actual map), with no component of the curve mapping inside $H$ and with the map having tangency at least $\alpha_i$ to $H$ at the marking $x_i$.
 
-Notice that this is an irreducible, locally closed substack of $\Q{0}{n}{\PP^N}{d}$ of codimension $\Sigma_i \alpha_i$, by essentially the same argument as in \cite[Lemma 1.8]{Ga}. In fact it is isomorphic to the nice locus inside the stable map space, denoted $\mathcal M_{0,\alpha}(\PP^N|H,d)$ by Gathmann (see \cite[Def. 1.6]{Ga}; the stricter stability condition has no effect when the source curve is irreducible, provided of course that $n\geq2$). We thus obtain:
+This is an irreducible, locally closed substack of $\Q{0}{n}{\PP^N}{d}$ of codimension $\Sigma_i \alpha_i$, by essentially the same argument as in \cite[Lemma 1.8]{Ga}. In fact it is isomorphic to the nice locus inside the stable map space, denoted $\mathcal M_{0,\alpha}(\PP^N|H,d)$ by Gathmann (see \cite[Def. 1.6]{Ga}; the stricter stability condition has no effect when the source curve is irreducible, provided of course that $n\geq2$). We thus obtain:
 
 \begin{lem}\label{lem:comparison}
 The comparison morphism restricts to a morphism 
 \begin{equation*} \chi: \M{0}{\alpha}{\PP^N|H}{d}\to \Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
-which is birational.
 \end{lem}
 \begin{proof}
 We need to verify that a relative stable map is sent to a relative stable quasimap by $\chi$. Since the contraction of a rational tail $R$ always occurs away from the markings, we only need to examine the internal components $Z$ of the quasimap.
@@ -27,77 +27,102 @@ If $R$ is internal then both $R$ and $Z$ live inside the same connected componen
 On the other hand if $R$ is external then the multiplicity $m^{(R)}$ of $R \cap Z$ satisfies:
 \begin{equation*} m^{(R)} \leq H \cdot f_* [R] \end{equation*}
 Since applying $\chi$ has the effect of replacing $m^{(R)}$ by $H \cdot f_* [R]$ in the left hand side of \eqref{Relative quasimap internal component inequality}, the inequality still holds for the quasimap. Thus we obtain a morphism from the relative stable map space to the relative quasimap space, as claimed.
-
-The birationality statement follows from the fact that the comparison morphism restricts to give an isomorphism between the nice loci.
 \end{proof}
 
 \begin{lem}
-With notations as above (with $\sum\alpha\leq d$), $\Qt{0}{\alpha}{\PP^r|H}{d}$ is the closure of the nice locus $\mathcal Q_{0,\alpha}(\PP^r|H,d)$ inside $\Q{0}{n}{\PP^r}{d}$. 
+$\Q{0}{\alpha}{\PP^r|H}{d}$ is equal to the closure of the nice locus $\mathcal{Q}_{0,\alpha}(\PP^r|H,d)$ inside $\Q{0}{n}{\PP^r}{d}$. 
 \end{lem}
 \begin{proof}
-$\Qt{0}{\alpha}{\PP^r|H}{d}\subseteq\overline{\mathcal Q_{0,\alpha}(\PP^r|H,d)}$: we show that, given any quasimap satisfying the $\alpha$-tangency conditions spelled above, it can be (infinitesimally) deformed to a stable \emph{map} satisfying Gathmann's conditions \cite[Def. 1.1 and Rmk. 1.4]{Ga}, and then appeal to \cite[Prop. 1.14]{Ga}.
+$\Q{0}{\alpha}{\PP^r|H}{d}\subseteq\overline{\mathcal Q_{0,\alpha}(\PP^r|H,d)}$: we show that any relative stable quasimap can be infinitesimally deformed to a relative stable quasimap with no basepoints. This is in particular a relative stable map; we then appeal to \cite[Prop. 1.14]{Ga} to deform this stable map and obtain a point in the nice locus. Since this deformation does not introduce any rational tails, this is also a deformation of quasimaps, and the statement follows.
 
-We induct on the number of components containing at least one base-point. If this number is zero, we're done (because quasimap stability is stronger than map stability); otherwise, pick such a component $C_0$, with base-points $p_1,\ldots,p_h$ and adjacent rational trees $R_1,\ldots,R_k$, joined to $C_0$ at the nodes $q_1,\ldots,q_k$. Since there are base-points but the quasimap respects the nondegeneracy condition, $\deg(L_{|C_0})>0$, and since $C_0\simeq\PP^1$ we can find a section $w$ of $L_{|C_0}\simeq\mathcal O_{\PP^1}(d_0)$ not vanishing at any of the base-points $p_i$'s; then it is enough to deform the section $u_{r|C_0}$ to $u_{r|C_0}+\epsilon w$ (and keep the other sections the same) in order to delete the base-points belonging to $C_0$. Notice that $u_{0|C_0}$ is unchanged, so the deformation still respects $\alpha$-tangency at the markings lying on $C_0$ (whether the latter is an internal or an external component). We need to check that such a deformation can be extended to the whole curve $C$ without changing the vanishing conditions on $u_0$. Notice that the action of $PGL_{r+1}$ on $\PP^r$ extends to an action of the group on the space of quasimaps; we can apply the matrix
-\[
-\begin{bmatrix}
-1 & & \\
- & \ddots & \\
- & \epsilon \frac{w(q_i)}{u_j(q_i)} & 1
-\end{bmatrix}
-\]
-to the restriction of the original quasimap to $R_i$, where $j$ is any index s.t. $u_j(q_i)\neq 0$ (one such must exist because the node is not allowed to be a base-point), and by doing this separately to every rational tree springing from $C_0$ we get a deformation of the original quasimap that still has $\alpha$-tangency with the hyperplane $H$ ($u_0$ hasn't been touched at all), but the base-points on $C_0$ have been eliminated.
+We induct on the number of components containing at least one base-point. Suppose this number is non-zero (otherwise there is nothing to prove) and pick such a component $C_0$, with base-points $y_1 ,\ldots, y_k$. Recall that this means that $u_i(y_j)=0$ for all $i$ and $j$. We will deform the section $u_N|_{C_0}$ to a new section $u_N^\prime|_{C_0}$ in such a way that $u_N^\prime|_{C_0}(y_j) \neq 0$ and in such a way that we do not introduce any new basepoints. Notice that since the relative condition only depends on $u_0$, the resulting deformed quasimap will still be a relative quasimap.
 
-$\overline{\mathcal Q_{0,\alpha}(\PP^r|H,d)}\subseteq\Qt{0}{\alpha}{\PP^r|H}{d}$: consider a family of relative quasimaps over a smooth curve $S$, such that the generic fiber lies in the nice locus. Then we may blow-up the source curve (which is a fibered surface) in the base-points of the quasimap (that are finitely many smooth points of the central fiber) in order to get an actual morphism to $\mathbb P^r$; we may as well suppose that the central fiber of the new family is stable. Notice that the central fiber actually belongs to Gathmann's space $\M{0}{\alpha}{\PP^r|H}{d}$: we have just introduced some rational tails away from the markings, hence the only thing we have to check is, when we blow-up a base-point on an internal component, the rational tail will again be internal ($u_0\equiv 0$ in a neighborhood of the base-point), so it will contribute to the LHS of the $\alpha$-tangency condition nr. 2 in the very same way. We may now invoke \cite[Lemma 1.9]{Ga} and the quasimap case follows from Lemma \ref{lem:comparison}.
+Now, by the nondegeneracy condition we must have $\deg(L|_{C_0})>0$, and since $C_0 \cong \PP^1$ we can find a section $w_0$ of $L|_{C_0} \cong \OO_{\PP^1}(d_0)$ not vanishing at any of the base-points $p_i$.
+
+We then set
+\begin{equation*} u_N^\prime|_{C_0} := u_N|_{C_0} + \epsilon w_0 \end{equation*}
+and $u_i^\prime|_{C_0} = u_i|_{C_0}$ for all other $i$. Notice that $u_N^\prime|_{C_0}(y_j) \neq 0$ for all $j$ as claimed. It is also clear that we do not introduce any new basepoints, since $u_N^\prime|_{C_0}(y) = 0$ implies $u_N|_{C_0}(y)=0$ (put differently: being a basepoint is a close condition).
+
+It remains to extend the section $u_N^\prime|_{C_0}$ to a section $u_N^\prime$ on the whole curve. Let $C_1, \ldots, C_r$ be the components of $C$ adjacent to $C_0$ and let $q_i = C_0 \cap C_i$. We need to modify the sections $u_N|_{C_i}$ in such a way that $u_N^\prime|_{C_i}(q_i) = u_N^\prime|_{C_0}(q_i)$.
+
+By nondegeracy, we can choose a section $w_i$ of $L|_{C_i}$ such that $w(q_i) \neq 0$. Then set:
+\begin{equation*} {u_N^\prime}_{C_i} := {u_N}|_{C_i} + \epsilon \left( \frac{w_0(q_i)}{w_i(q_i)} \right) \cdot w_i \end{equation*}
+Then indeed we have:
+\begin{equation*} {u_N^\prime}|_{C_i}(q_i) = u_N(q_i) + \epsilon \left( \frac{w_0(q_i)}{w_i(q_i)} \right) \cdot w_i(q_i) = u_N(q_i) + \epsilon w_0(q_i) = {u_N^\prime}|_{C_0}(q_i) \end{equation*}
+We can continue this process, replacing $C_0$ by $C_i$; since the genus of the curve is zero, we will never come to the same curve twice. In this way we obtain a new quasimap
+\begin{equation*} (C,x_1,\ldots,x_n,L,u_0, \ldots, u_{N-1}, u_N^\prime) \end{equation*}
+over $\Spec \kfield[\epsilon]/(\epsilon^2)$ which has no basepoints on $C_0$. We can repeat this process for all the components of $C$ (using higher powers of $\epsilon$ each time in order to ensure that we never introduce additional basepoints) and thus we obtain an infinitesimal deformation of our original quasimap which has no basepoints, as required.
+
+$\overline{\mathcal Q_{0,\alpha}(\PP^r|H,d)}\subseteq\Q{0}{\alpha}{\PP^r|H}{d}$: consider a family of stable quasimaps over a smooth curve $S$, such that the generic fibre lies in the nice locus. We may blow-up the source curve (a fibered surface over $S$) in the locus of basepoints (which consists of finitely many smooth points of the central fiber) in order to obtain an actual morphism to $\PP^N$. This has the effect of adding rational tails at the basepoints in the central fibre. If the morphism is constant on any of these rational tails we may contract them, and thus we obtain a family of stable maps which pushes down along $\chi$ to our original family of quasimaps.
+
+The general fibre is not modified at all, and so is still in the nice locus. By \cite[Lemma 1.9]{Ga} it follows that the central fibre is a relative stable map, and then by applying $\chi$ and appealing to Lemma \ref{lem:comparison} it follows that the same is true for the central fibre of the family of quasimaps.
 \end{proof}
-From now on we shall denote this closed substack by $\Q{0}{\alpha}{\PP^r|H}{d}$.
 
-\medskip
+\begin{cor} The moduli space $\Q{0}{\alpha}{\PP^N|H}{d}$ is irreducible of the expected dimension. Hence it admits a fundamental class. \end{cor}
+\begin{proof} This holds because the moduli space is equal to the closure of the nice locus, which is irreducible of the expected dimension. \end{proof}
 
-Increasing the multiplicity can be naively performed in the very same way as Gathmann did:
+\begin{cor} \label{Comparison morphism birational} The comparison morphism is a birational map from the moduli space of relative stable maps to the moduli space of stable maps. In particular it sends the fundamental class to the fundamental class. \end{cor}
+\begin{proof} This follows because the comparison morphism restricts to an isomorphism on the nice locus, which by the lemma above is a dense open subset of both spaces. \end{proof}
+
+
+\subsection{The recursion formula}
+We wish to obtain a recursion formula relating the quasimap invariants of multiplicity $\alpha$ with the quasimap invariants of multiplicity $\alpha + e_k$, as in \cite[Theorem 2.6]{Ga}. This process of ``increasing the multiplicities'' can be naively performed in the same way as Gathmann: for $m = \alpha_k + 1$ the following section (of the pull-back of the jet bundle of the universal line bundle)
 \[
 \sigma^m_k:=x_k^*d^m_{\mathcal C/\overline{\mathcal Q}}(u_0)\in H^0(\overline{\mathcal Q},x_k^*\mathcal P^m_{\mathcal C/\overline{\mathcal Q}}(\mathcal L))
 \]
-with $m=\alpha_k+1$ cuts $\Q{0}{\alpha+e_k}{\PP^r|H}{d}$ inside $\Q{0}{\alpha}{\PP^r|H}{d}$, together with a bunch of degenerate contributions from quasimaps where the component on which $x_k$ lies is internal (call it $Z$) and (notice the equality sign!)
-\[
-\deg(L_{|Z})+\sum m^{(i)}=\sum_{x_j\in Z}\alpha_j.
-\]
-Of course, quasimap stability forces these degenerate contributions not to have any rational tail; this is really the only difference with the case of stable maps, and indeed we can pushforward Gathmann's formula along the comparison morphism $\comp\colon \M{0}{n}{\PP^r}{d}\to\Q{0}{n}{\PP^r}{d}$ and the only terms that are going to change are the degenerate ones with rational tails (in fact they disappear, since the restriction of the comparison map has positive dimensional fibers there). With an eye to the future, we remark that these contributions do matter when computing GW invariants of a CY hypersurface in projective space, and may well account for the divergence between GW and quasimap invariants in the CY case \cite[Rmk. 1.6]{Ga-MF}.
+cuts out $\Q{0}{\alpha+e_k}{\PP^r|H}{d}$ inside $\Q{0}{\alpha}{\PP^r|H}{d}$, along with a number of degenerate contributions (called the \ilemph{comb loci}) parametrising quasimaps for which $x_k$ belongs to an internal component $Z \subseteq C$ (a component on which $u_0$ vanishes), such that
+\begin{equation*}\deg(L|_{Z})+\sum_{i=1}^r m^{(i)}=\sum_{x_i\in Z}\alpha_i \end{equation*}
+(here by ``component'' we really mean ``connected component of the vanishing locus of $u_0$''). Quasimap stability means that these degenerate contributions cannot contain any rational tails; this is really the only difference with the case of stable maps.
 
-\begin{lem}\label{lem:compare_psi}
-$\comp^*(\psi_k)=\psi_k$ and $\comp^*(x_k^*\mathcal L)=\ev_k^*(\mathcal O_{\mathbb P^r}(H))$.
+Indeed, we can actually push forward Gathmann's formula along the comparison morphism
+\begin{equation*} \comp \colon \M{0}{\alpha}{\PP^N|H}{d}\to\Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
+and due to Corollary \ref{Comparison morphism birational} above, the only terms which change are the comb loci containing rational tails. In fact these disappear, since the restriction of the comparison map to these loci has positive-dimensional fibres:
+\begin{lem}\label{lem:posdimfiber} Consider a rational tail component in the comb locus of the moduli space of stable maps, i.e. a moduli space of the form:
+\begin{equation*} \M{0}{(m^{(i)})}{\PP^N|H}{d} \end{equation*}
+Then (assuming that $Nd > 1$) we have
+\begin{equation*} \dim \left( [\M{0}{(m^{(i)})}{\PP^N|H}{d}] \cap \ev_1^*(\pt_H) \right) > 0 \end{equation*}
+where $\pt_H \in \Achow^{N-1}(H)$ is a point class. Thus the pushforward along $\comp$ of any comb locus with a rational tail is $0$.
+\end{lem}
+\begin{proof} This is a simple dimension count. We have
+\begin{align*} \dim \left( [\M{0}{(m^{(i)})}{\PP^N|H}{d}] \cap \ev_1^*(\pt_H) \right) & =(N-3)+d(N+1)+(1-m^{(i)})-(N-1) \\
+& =(Nd-1)+(d-m^{(i)})
+\end{align*}
+from which the lemma follows because $m^{(i)} \leq d$.
+\end{proof}
+\begin{remark} With an eye to the future, we remark that these rational tail components contribute nontrivially to the Gromov--Witten invariants of a Calabi--Yau hypersurface in projective space, and so their disappearance in our recursion formula may account for the divergence between Gromov--Witten and quasimap invariants in the Calabi--Yau case \cite[Rmk. 1.6]{Ga-MF}. \end{remark}
+
+Since we wish to apply the projection formula to Gathmann's recursion relation, we should express the cohomological terms which appears as pull-backs:
+\begin{lem}\label{lem:compare_psi} We have:
+\begin{align*} \comp^*(\psi_k) & =\psi_k \\
+\comp^*(\ev_k^* H)& =\ev_k^* H
+\end{align*}
 \end{lem}
 \begin{proof}
-Recall that $\psi_k=c_1(x_k^*\omega_{\mathcal C/\mathcal M})$ and contemplate the following diagram
+We will actually show that:
+\begin{align*} \chi^* x_k^* \omega_{\mathcal{C}/\om{Q}} & = x_k^* \omega_{\mathcal{C}/\om{M}} \\
+\chi^* x_k^* \mathcal{L} & = \ev_k^* \OO_{\PP^N}(H) \end{align*}
+This follows by considering the following diagram:
 \bcd
-& & & \PP^r & \\
-\mathcal C_{\overline {\mathcal M}}\ar[rr,"\sst"]\ar[rd] \ar[urrr,"f"] & & \comp^*\mathcal C_{\overline {\mathcal Q}} \ar[ld]\ar[rr]\ar[ur,dashed] & & \mathcal C_{\overline {\mathcal Q}} \ar[d]\ar[ul,dashed] \\
-& \M{0}{n}{\PP^r}{d} \ar[rrr,"\comp"] \ar[ul,bend left,"x_k"]\ar[ur,bend right,"x_k"right=.2cm]& & & \Q{0}{n}{\PP^r}{d}\ar[u,bend right, "x_k"right]
+& & \PP^N & \\
+\mathcal C_{\overline {\mathcal M}} \ar[r,"\sst" below] \ar[rd] \ar[urr, bend left=10, "f"] & \comp^*\mathcal C_{\overline {\mathcal Q}} \ar[d] \ar[rr]\ar[ur,bend right=10,dashed] \ar[rrd,phantom,"\square" right] & & \mathcal C_{\overline {\mathcal Q}} \ar[d]\ar[ul,bend right=10,dashed] \\
+& \M{0}{\alpha}{\PP^N|H}{d} \ar[rr,"\comp"] \ar[ul,bend left,"x_k"] \ar[u,bend right,"x_k"right=.2cm] & & \Q{0}{\alpha}{\PP^N|H}{d}\ar[u,bend right, "x_k"right]
 \ecd
-where $\sst$ is the strong stabilisation map, i.e. contracting the rational tails, which is an isomorphism near the markings.
+where $\sst$ is the strong stabilisation map which contracts the rational tails, and so is an isomorphism near the markings.
 \end{proof}
-
-\begin{lem}\label{lem:posdimfiber}
-$\dim(\M{0}{(m^{(i)})}{\PP^r|H}{d}\cap \ev_1^*(p))>0$ everytime $rd>1$, where $p$ is a point of $H$, so the pushforward along $\comp$ of a degenerate locus with rational tails is 0.
-\end{lem}
-\begin{proof}
-$\dim(\M{0}{(m^{(i)})}{\PP^r|H}{d}\cap \ev_1^*(p))=(r-3)+(1-m^{(i)})+d(r+1)-(r-1)=(rd-1)+(d-m^{(i)})$.
-\end{proof}
-
 \begin{prop}
-Denote by $[D^\mathcal{Q}_{\alpha,k}(\PP^r|H,d)]$ the sum of the (product) fundamental classes of
+Define the comb locus $D^\mathcal{Q}_{\alpha,k}(\PP^r|H,d)$ as the union of the moduli spaces
 \[
-\Q{0}{\alpha^{(0)}\cup {(0,\ldots,0)}}{H}{d_0}\times_{(\PP^r)^k}\prod_{i=1}^k \Q{0}{(m^{(i)})\cup\alpha^{(i)}}{\PP^r|H}{d_i}
+\Q{0}{|\alpha^{(0)}| + r}{H}{d_0}\times_{H^r}\prod_{i=1}^r \Q{0}{(m^{(i)})\cup\alpha^{(i)}}{\PP^N|H}{d_i}
 \]
-with coefficient $\frac{m^{(1)}\ldots m^{(k)}}{k!}$, where the sum runs over all splittings $d=\sum d_i$ and $\alpha=\bigcup \alpha^{(i)}$ such that the above spaces are well-defined, in particular $|\alpha^{(0)}|+k$ and $|\alpha^{(i)}|+1$ are all $\geq 2$, and such that
+where the sum runs over all splittings $d=\sum d_i$ and $\alpha=\bigcup \alpha^{(i)}$ such that the above spaces are all well-defined (in particular $|\alpha^{(0)}|+k$ and $|\alpha^{(i)}|+1$ are all $\geq 2$) and such that
 \[
-d_0+\sum_{i=1}^k m^{(i)}=\sum \alpha^{(0)}
+d_0+\sum_{i=1}^r m^{(i)}=\sum \alpha^{(0)}
 \]
-
-The following formula holds
+Equip this with the sum of the (product) fundamental classes. Then the following formula holds
 \[
-(\alpha_k\psi_k+x_k^*\mathcal L)\cdot[\Q{0}{\alpha}{\PP^r|H}{d}]=[\Q{0}{\alpha+e_k}{\PP^r|H}{d}]+[D^\mathcal{Q}_{\alpha,k}(\PP^r|H,d)].
+(\alpha_k\psi_k+\ev_k^*H)\cdot[\Q{0}{\alpha}{\PP^r|H}{d}]=[\Q{0}{\alpha+e_k}{\PP^r|H}{d}]+[D^\mathcal{Q}_{\alpha,k}(\PP^r|H,d)].
 \]
 \end{prop}
 \begin{proof}
-Follows from \cite[Thm. 2.6]{Ga} by pushforward along $\comp\colon \M{0}{n}{\PP^r}{d}\to\Q{0}{n}{\PP^r}{d}$, using the projection fomula and Lemmas \ref{lem:comparison}, \ref{lem:compare_psi} and \ref{lem:posdimfiber}.
+This follows from \cite[Thm. 2.6]{Ga} by pushforward along $\chi$, using the projection fomula and Lemmas \label{Comparison morphism birational}, \ref{lem:posdimfiber} and \ref{lem:compare_psi} .
 \end{proof}
