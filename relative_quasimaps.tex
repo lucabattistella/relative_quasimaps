@@ -30,6 +30,8 @@
 \newcommand{\Qt}[4]{\widetilde{\mathcal Q}_{#1,#2}(#3,#4)}
 \newcommand{\QG}[4]{\overline{\mathcal QG}_{#1,#2}(#3,#4)}
 \newcommand{\QGe}[4]{\overline{\mathcal QG}^{\epsilon}_{#1,#2}(#3,#4)}
+\newcommand{\D}[3]{\mathcal{D^Q}(#1,#2,#3)}
+\newcommand{\E}[3]{\mathcal{E^Q}(#1,#2,#3)}
 \newcommand{\PP}{\mathbb P}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\N}{\mathbb{N}}
@@ -52,13 +54,13 @@
 \newcommand{\Ext}{\operatorname{Ext}}
 \newcommand{\Gm}{\mathbb{G}_m}
 \newcommand{\virt}[1]{[#1]^{\operatorname{virt}}}
+\newcommand{\vip}[1]{[#1]^{\operatorname{prod}}}
 \newcommand{\Id}{\operatorname{Id}}
 \newcommand{\CC}{\mathbb{C}}
 \newcommand{\QQ}{\mathbb{Q}}
 \newcommand{\HH}{\operatorname{H}}
 \newcommand{\Achow}{\operatorname{A}}
 \newcommand{\pt}{\operatorname{pt}}
-
 \newcommand{\bq}{\begin{equation}}
 \newcommand{\eq}{\end{equation}}
 \newcommand{\ba}{\begin{aligned}}
@@ -159,15 +161,15 @@
 
 \appendix
 
-\input{tex/functoriality}
- 
-\input{tex/intersection}
-
 \input{tex/comparison}
 
+\section{Notes on quasimaps}
+\input{tex/functoriality}
+\input{tex/GIT}
+\input{tex/splitting}
 \input{tex/string}
 
-\input{tex/GIT}
+\input{tex/intersection}
 
 \bibliographystyle{alpha}
 \bibliography{relqm}

@@ -8,45 +8,45 @@ Repeated entry---line 201 of file relqm.bib
  :                        ,
 I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in Givental-equivariantGW
-You've used 20 entries,
+You've used 19 entries,
             2543 wiz_defined-function locations,
-            701 strings with 6884 characters,
-and the built_in function-call counts, 7639 in all, are:
-= -- 796
-> -- 271
+            694 strings with 6812 characters,
+and the built_in function-call counts, 7243 in all, are:
+= -- 754
+> -- 252
 < -- 13
-+ -- 84
-- -- 82
-* -- 569
-:= -- 1236
-add.period$ -- 61
-call.type$ -- 20
-change.case$ -- 110
-chr.to.int$ -- 18
-cite$ -- 21
-duplicate$ -- 303
-empty$ -- 600
-format.name$ -- 113
-if$ -- 1549
++ -- 78
+- -- 76
+* -- 538
+:= -- 1170
+add.period$ -- 58
+call.type$ -- 19
+change.case$ -- 104
+chr.to.int$ -- 17
+cite$ -- 20
+duplicate$ -- 289
+empty$ -- 572
+format.name$ -- 106
+if$ -- 1470
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 21
-newline$ -- 103
-num.names$ -- 60
-pop$ -- 85
+missing$ -- 20
+newline$ -- 98
+num.names$ -- 57
+pop$ -- 82
 preamble$ -- 1
-purify$ -- 131
+purify$ -- 124
 quote$ -- 0
-skip$ -- 240
+skip$ -- 227
 stack$ -- 0
-substring$ -- 572
-swap$ -- 31
+substring$ -- 546
+swap$ -- 30
 text.length$ -- 13
 text.prefix$ -- 11
 top$ -- 0
-type$ -- 152
+type$ -- 144
 warning$ -- 1
-while$ -- 84
-width$ -- 24
-write$ -- 261
+while$ -- 79
+width$ -- 23
+write$ -- 248
 (There was 1 error message)
