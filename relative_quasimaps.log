@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  8 SEP 2017 18:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  8 SEP 2017 19:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1222,9 +1222,13 @@ LaTeX Font Info:    Font shape `T1/zpltlf/b/sc' will be
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 8.0pt on input line 9.
  [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+[]\T1/zpltlf/m/n/10.95 Ask Tom or
+ []
+
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 10.95pt on input line 27.
- [2]
+[2]
 
 LaTeX Warning: Reference `Section recursion formula in general case' on page 3 
 undefined on input line 33.
@@ -1233,10 +1237,16 @@ undefined on input line 33.
 LaTeX Warning: Reference `Section recursion formula in general case' on page 3 
 undefined on input line 35.
 
-LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 6.1pt on input line 72.
 
-Overfull \hbox (243.34155pt too wide) detected at line 75
+Overfull \hbox (23.72284pt too wide) in paragraph at lines 48--49
+[]\T1/zpltlf/b/n/10.95 Acknowledgements. []\T1/zpltlf/m/n/10.95 The au-thors wi
+sh to thank Tom Coates, Cristina Manolache
+ []
+
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 6.1pt on input line 75.
+
+Overfull \hbox (243.34155pt too wide) detected at line 78
 []
  []
 
@@ -1250,21 +1260,76 @@ IVE QUASIMAPS []
  []
 
 [3]) (./tex/section-relative-stable-quasimaps.tex [4]
+Underfull \hbox (badness 3049) in paragraph at lines 25--25
+\T1/zpltlf/m/n/10.95 stable quasimaps
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\T1/zpltlf/m/n/10.95 (along with an
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\T1/zpltlf/m/n/10.95 ex-tra con-di-tion)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\T1/zpltlf/m/n/10.95 In-ter-po-lates be-
+ []
+
+
+Underfull \hbox (badness 6625) in paragraph at lines 25--25
+\T1/zpltlf/m/n/10.95 tween GW and
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 41--41
+[]\T1/zpltlf/m/n/10.95 Quasimap spaces
+ []
+
+
+Underfull \hbox (badness 7907) in paragraph at lines 41--41
+\T1/zpltlf/m/n/10.95 are smaller, so
+ []
+
+
+Underfull \hbox (badness 4303) in paragraph at lines 41--41
+\T1/zpltlf/m/n/10.95 if a com-par-i-son
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\T1/zpltlf/m/n/10.95 mor-phism ex-ists
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\T1/zpltlf/m/n/10.95 sta-ble maps to
+ []
+
+
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
  []
 
 [5]
-Overfull \hbox (4.69919pt too wide) in paragraph at lines 52--53
+Overfull \hbox (4.69919pt too wide) in paragraph at lines 57--58
 \T1/zpltlf/m/n/10.95 and a smooth di-vi-sor $\OML/npxmi/m/it/10.95 Y$\T1/zpltlf
 /m/n/10.95 , the mod-uli space of rel-a-tive sta-ble maps parametrises
  []
 
 [6]
+Overfull \hbox (3.70282pt too wide) in paragraph at lines 72--74
+\T1/zpltlf/m/n/10.95 Hence it has a fun-da-men-tal class from which one can de-
+fine rel-a-tive Gromov--
+ []
+
 
 LaTeX Warning: Reference `Appendix intersection theory' on page 7 undefined on 
-input line 72.
+input line 80.
 
 
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
@@ -1272,7 +1337,12 @@ Overfull \hbox (10.73586pt too wide) has occurred while \output is active
 IVE QUASIMAPS []
  []
 
-[7] [8]) (./tex/recursion_for_Pr.tex
+[7]
+Underfull \hbox (badness 7451) in paragraph at lines 101--101
+\T1/zpltlf/m/n/10.95 chap-ter, link it
+ []
+
+[8]) (./tex/recursion_for_Pr.tex
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
@@ -1285,22 +1355,22 @@ IVE QUASIMAPS []
  []
 
 [11]
-Overfull \hbox (33.20512pt too wide) in paragraph at lines 89--89
+Overfull \hbox (33.20512pt too wide) in paragraph at lines 90--90
 [] 
  []
 
 [12]
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/zpltlf/b/it' tried instead on input line 113
+(Font)              Font shape `T1/zpltlf/b/it' tried instead on input line 114
 .
 LaTeX Font Info:    Font shape `T1/zpltlf/b/it' will be
-(Font)              scaled to size 10.95pt on input line 113.
+(Font)              scaled to size 10.95pt on input line 114.
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/scit' in size <10.95> not availabl
 e
 (Font)              Font shape `T1/zpltlf/b/scit' tried instead on input line 1
-13.
+14.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/scit' will be
-(Font)              scaled to size 10.95pt on input line 113.
+(Font)              scaled to size 10.95pt on input line 114.
 
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
@@ -1325,9 +1395,6 @@ IVE QUASIMAPS []
  []
 
 [15] [16]
-Underfull \vbox (badness 3471) has occurred while \output is active []
-
-
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
@@ -1556,7 +1623,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  29786 strings out of 493014
  577657 string characters out of 6133351
- 633212 words of memory out of 5000000
+ 634468 words of memory out of 5000000
  32543 multiletter control sequences out of 15000+600000
  103498 words of font info for 190 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
@@ -1584,7 +1651,7 @@ ype1/public/newpx/zplbi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
 lic/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx
 /zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zplx-re
 gular.pfb>
-Output written on relative_quasimaps.pdf (47 pages, 374698 bytes).
+Output written on relative_quasimaps.pdf (47 pages, 376295 bytes).
 PDF statistics:
  249 PDF objects out of 1000 (max. 8388607)
  180 compressed objects within 2 object streams

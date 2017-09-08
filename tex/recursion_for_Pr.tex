@@ -3,15 +3,16 @@
 \subsection{Basic properties of the moduli space} \label{Subsection basic properties of the moduli space}
 In this section we will show that the moduli space
 \begin{equation*} \Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
-is irreducible of the expected dimension, and thus admits a fundamental class. We then prove a recursion formula for these fundamental classes by pushing forward Gathmann's recursion formula along the comparison morphism $\chi$.
-
+is irreducible of the expected dimension, and thus admits a fundamental class. We then prove a recursion formula for these fundamental classes by pushing forward Gathmann's recursion formula along the comparison morphism:
+\begin{equation*}\chi : \M{0}{n}{\PP^N}{d} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
+\marginpar{Rearrange things}
 We set $X=\PP^N$ and $Y=H=\{ z_0 = 0 \}$. Given a quasimap
 \begin{equation*} (C,x_1,\ldots,x_n,L,u_0,\ldots,u_N) \in \Q{0}{n}{\PP^N}{d} \end{equation*}
 the line bundle $L_Y$ of the previous section is equal to $L$ and the section $u_Y$ is equal to $u_0$. Let us denote by
 \begin{equation*} \mathcal Q_{0,\alpha}(\PP^N|H,d) \subseteq \Q{0}{n}{\PP^N}{d} \end{equation*}
 (without the bar) the \ilemph{nice locus}, consisting of those quasimaps with irreducible source curve (i.e. a $\PP^1$), no basepoints (so we get an actual map), with no component of the curve mapping inside $H$ and with the map having tangency at least $\alpha_i$ to $H$ at the marking $x_i$.
 
-This is an irreducible, locally closed substack of $\Q{0}{n}{\PP^N}{d}$ of codimension $\Sigma_i \alpha_i$, by essentially the same argument as in \cite[Lemma 1.8]{Ga}. In fact it is isomorphic to the nice locus inside the stable map space, denoted $\mathcal M_{0,\alpha}(\PP^N|H,d)$ by Gathmann (see \cite[Def. 1.6]{Ga}; the stricter stability condition has no effect when the source curve is irreducible, provided of course that $n\geq2$). We thus obtain:
+This is an irreducible, locally closed substack of $\Q{0}{n}{\PP^N}{d}$ of codimension $\Sigma_i \alpha_i$, by essentially the same argument as in \cite[Lemma 1.8]{Ga}. In fact it is isomorphic to the nice locus inside the stable map space, denoted $\mathcal M_{0,\alpha}(\PP^N|H,d)$ by Gathmann (see \cite[Def. 1.6]{Ga}); the stricter stability condition has no effect when the source curve is irreducible, provided of course that $n\geq2$).
 
 \begin{lem}\label{lem:comparison}
 The comparison morphism restricts to a morphism 
@@ -22,7 +23,7 @@ We need to verify that a relative stable map is sent to a relative stable quasim
 
 Consider then $Z$; for each basepoint $x$ on $Z$ there is a rational tail $R$ of the stable map attached to $Z$ at $x$. This is either internal (mapped into $H$) or external (not mapped into $H$).
 
-If $R$ is internal then both $R$ and $Z$ live inside the same connected component $Z^\prime$ of $f^{-1}(H)$. Applying $\chi$ has the effect of contracting $R$ and adding a line bundle to $Z$ of degree equal to $H \cdot f_* [R]$. Thus the left hand side of the inequality \eqref{Relative quasimap internal component inequality} is left unchanged, and since the right hand side is also unaltered the inequality is satisfied.
+If $R$ is internal then both $R$ and $Z$ live inside the same connected component $Z^\prime$ of $f^{-1}(H)$. Applying $\chi$ has the effect of contracting $R$ and increasing the degree of the line bundle on $Z$ by $H \cdot f_* [R]$. Thus the left hand side of the inequality \eqref{Relative quasimap internal component inequality} is left unchanged, and since the right hand side is also unaltered the inequality is satisfied.
 
 On the other hand if $R$ is external then the multiplicity $m^{(R)}$ of $R \cap Z$ satisfies:
 \begin{equation*} m^{(R)} \leq H \cdot f_* [R] \end{equation*}
@@ -37,7 +38,7 @@ $\Q{0}{\alpha}{\PP^N|H}{d}\subseteq\overline{\mathcal Q_{0,\alpha}(\PP^N|H,d)}$:
 
 We induct on the number of components containing at least one base-point. Suppose this number is non-zero (otherwise there is nothing to prove) and pick such a component $C_0$, with base-points $y_1 ,\ldots, y_k$. Recall that this means that $u_i(y_j)=0$ for all $i$ and $j$. We will deform the section $u_N|_{C_0}$ to a new section $u_N^\prime|_{C_0}$ in such a way that $u_N^\prime|_{C_0}(y_j) \neq 0$ and in such a way that we do not introduce any new basepoints. Notice that since the relative condition only depends on $u_0$, the resulting deformed quasimap will still be a relative quasimap.
 
-Now, by the nondegeneracy condition we must have $\deg(L|_{C_0})>0$, and since $C_0 \cong \PP^1$ we can find a section $w_0$ of $L|_{C_0} \cong \OO_{\PP^1}(d_0)$ not vanishing at any of the base-points $p_i$.
+Now, by nondegeneracy and the fact that there exists a basepoint, we must have $\deg(L|_{C_0})>0$, and since $C_0 \cong \PP^1$ we can find a section $w_0$ of $L|_{C_0} \cong \OO_{\PP^1}(d_0)$ not vanishing at any of the base-points $p_i$.
 
 We then set
 \begin{equation*} u_N^\prime|_{C_0} := u_N|_{C_0} + \epsilon w_0 \end{equation*}
@@ -49,7 +50,7 @@ By nondegeracy, we can choose a section $w_i$ of $L|_{C_i}$ such that $w(q_i) \n
 \begin{equation*} {u_N^\prime}_{C_i} := {u_N}|_{C_i} + \epsilon \left( \frac{w_0(q_i)}{w_i(q_i)} \right) \cdot w_i \end{equation*}
 Then indeed we have:
 \begin{equation*} {u_N^\prime}|_{C_i}(q_i) = u_N(q_i) + \epsilon \left( \frac{w_0(q_i)}{w_i(q_i)} \right) \cdot w_i(q_i) = u_N(q_i) + \epsilon w_0(q_i) = {u_N^\prime}|_{C_0}(q_i) \end{equation*}
-We can continue this process, replacing $C_0$ by $C_i$; since the genus of the curve is zero, we will never come to the same curve twice. In this way we obtain a new quasimap
+We can continue this process, replacing $C_0$ by $C_i$; since the genus of the curve is zero there are no cycles in the dual intersection graph, and so we will never come to the same curve twice. In this way we obtain a new quasimap
 \begin{equation*} (C,x_1,\ldots,x_n,L,u_0, \ldots, u_{N-1}, u_N^\prime) \end{equation*}
 over $\Spec \kfield[\epsilon]/(\epsilon^2)$ which has no basepoints on $C_0$. We can repeat this process for all the components of $C$ (using higher powers of $\epsilon$ each time in order to ensure that we never introduce additional basepoints) and thus we obtain an infinitesimal deformation of our original quasimap which has no basepoints, as required.
 
@@ -58,10 +59,10 @@ $\overline{\mathcal Q_{0,\alpha}(\PP^N|H,d)}\subseteq\Q{0}{\alpha}{\PP^N|H}{d}$:
 The general fibre is not modified at all, and so is still in the nice locus. By \cite[Lemma 1.9]{Ga} it follows that the central fibre is a relative stable map, and then by applying $\chi$ and appealing to Lemma \ref{lem:comparison} it follows that the same is true for the central fibre of the family of quasimaps.
 \end{proof}
 
-\begin{cor} The moduli space $\Q{0}{\alpha}{\PP^N|H}{d}$ is irreducible of the expected dimension. Hence it admits a fundamental class. \end{cor}
+\begin{cor} The moduli space $\Q{0}{\alpha}{\PP^N|H}{d}$ is irreducible of the expected dimension. Hence it has a fundamental class. \end{cor}
 \begin{proof} This holds because the moduli space is equal to the closure of the nice locus, which is irreducible of the expected dimension. \end{proof}
 
-\begin{cor} \label{Comparison morphism birational} The comparison morphism is a birational map from the moduli space of relative stable maps to the moduli space of stable maps. In particular it sends the fundamental class to the fundamental class. \end{cor}
+\begin{cor} \label{Comparison morphism birational} The comparison morphism from relative stable maps to relative quasimaps is birational. In particular it sends the fundamental class to the fundamental class. \end{cor}
 \begin{proof} This follows because the comparison morphism restricts to an isomorphism on the nice locus, which by the lemma above is a dense open subset of both spaces. \end{proof}
 
 
@@ -113,7 +114,7 @@ where $\sst$ is the strong stabilisation map which contracts the rational tails,
 Define the \ilemph{quasimap comb locus} $\mathcal{D}^\mathcal{Q}_{\alpha,k}(\PP^N|H,d)$ as the union of the moduli spaces
 \begin{equation*}
 \mathcal{D}^{\mathcal{Q}}(\PP^N|H,A,B,M) := \Q{0}{|\alpha^{(0)}| + r}{H}{d_0}\times_{H^r}\prod_{i=1}^r \Q{0}{(m^{(i)})\cup\alpha^{(i)}}{\PP^N|H}{d_i} \end{equation*}
-where the union runs over all splittings $A = (\alpha^{(0)}, \ldots, \alpha^{(r)})$ of the markings, $B = (d_0, \ldots, d_r)$ of the degree and all valid multiplicites $M = (m^{(1)}, \ldots, m^{(r)})$ such that the above spaces are all well-defined (in particular $|\alpha^{(0)}|+k$ and $|\alpha^{(i)}|+1$ are all $\geq 2$) and such that
+where the union runs over all splittings $A = (\alpha^{(0)}, \ldots, \alpha^{(r)})$ of the markings, $B = (d_0, \ldots, d_r)$ of the degree and all valid multiplicites $M = (m^{(1)}, \ldots, m^{(r)})$ such that the above spaces are all well-defined (in particular $|\alpha^{(0)}|+r$ and $|\alpha^{(i)}|+1$ are all $\geq 2$) and such that
 \[
 d_0+\sum_{i=1}^r m^{(i)}=\sum \alpha^{(0)}
 \]
