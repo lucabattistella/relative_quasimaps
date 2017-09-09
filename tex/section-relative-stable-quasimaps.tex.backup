@@ -22,9 +22,18 @@ for every rational $\epsilon > 0$.
 \end{enumerate}
 \end{definition}
 
-\marginpar{Fixing $\epsilon$ gives $\epsilon$-stable quasimaps (along with an extra condition) Interpolates between GW and quasimaps.}
-
 \begin{remark} This definition is motivated by the $\Sigma$-collections of D. Cox \cite{CoxFunctor}; see also Appendix \ref{Functoriality of Quasimap Spaces Section}. The point is that a quasimap defines a rational morphism $C \dashrightarrow X$ with base locus equal to $B$ (more precisely it is a map to the quotient stack $[\mathbb{A}^{\Sigma(1)} / (\Gm)^r]$ such that $B$ is the preimage of the unstable locus). In particular a quasimap without any basepoints defines a morphism $C \to X$. Thus the basepoints appear in the (virtual) boundary of the moduli space, in much the same way as the locus of stable maps with rational tails appears in the boundary of the moduli space of stable maps (this is something more than just a vague analogy; these loci correspond to each other under the comparison morphism when $X\simeq\PP^N$; see Appendix \ref{Section comparison morphism}). \end{remark}
+
+\begin{remark}
+ There is a more general notion of $\epsilon$-stable quasimap \cite[\S 7.1]{CFKM}: essentially $\epsilon$ is a \emph{fixed} rational number in the above definition (and an extra condition is required, bounding the order of vanishing at the base-points); this allows only some rational tails (with degree high enough with respect to $\epsilon$). Since the degree is an integer-valued function and by boundedness, it turns out that there are only finitely many critical values of $\epsilon$ such that crossing them actually changes the resulting moduli space $\Qe{g}{n}{X}{\beta}$; also, the limiting values $\epsilon=+\infty$ and $\epsilon=0^+$ recover the moduli spaces of stable maps and (ordinary) quasimaps respectively. So the moduli spaces $\Qe{g}{n}{X}{\beta}$ are meant to interpolate between the two, and they have proven particularly successful as a tool to compare the resulting invariants \cite{CF-K-wallcrossing}.
+\end{remark}
+
+\begin{remark}
+ Here is another variant which is going to play a role in later sections: that of \emph{parametrised} quasimaps \cite[\S 7]{CF-K}. The idea is that a parametrised quasimap comes with a preferred rational component (by means of introducing as extra datum an isomorphism with $\PP^1$) and the stability condition is imposed \emph{on all but the preferred component}. This mimics the construction of graph spaces in Gromov-Witten theory and induces a $\Gm$-action on $\QG{g}{n}{X}{\beta}$ (by rotating the preferred component). The fixed loci and equivariant normal bundle are well-understood (at least in the toric setting).
+ 
+ Note that the condition $2g-2+n\geq 0$ is not required anymore, due to the modified stability. In particular, it makes sense (and turns out to be very useful) to consider unmarked parametrised quasimaps $\QG{0}{0}{X}{\beta}$. In this case the source curve needs to be irreducible. For example, $\QG{0}{0}{\PP^r}{d}\simeq\PP^N$ with $N=(r+1)(d+1)-1$: in fact, the curve and line bundle are determined (to be $(\PP^1,\mathcal O_{\PP^1}(d))$) and we are left with choosing $r+1$ (not all trivial) sections of $\mathcal O_{\PP^1}(d)$ up to scalar (automorphisms of $\mathcal O_{\PP^1}(d)$). See e.g. \cite{Bertram} for an early appearance of such spaces.
+\end{remark}
+
 
 More generally, we can define the notion of a family of quasimaps over a base scheme $S$, and what it means for two such families to be isomorphic; we thus obtain a moduli space
 \begin{equation*} \Q{g}{n}{X}{\beta} \end{equation*}
