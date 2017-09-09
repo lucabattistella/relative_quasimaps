@@ -8,7 +8,9 @@ The pointwise construction is the following: a stable map has no base points, so
 
 The construction in families requires us to find a line bundle on the universal curve that is trivial on the rational tails and relatively ample elsewhere. This can be performed at the level of Picard stacks: let $\mathfrak{Pic}_{g,n}^{d,\text{st}}$ be the open substack of $\mathfrak{Pic}(\pi\colon\mathfrak{C}_{g,n}\to\mathfrak{M}_{g,n})$ obtained by requiring that the total degree of the line bundle is $d$, the multi-degree is nonnegative and $\mathcal L\otimes\omega_{\pi}^{\text{log}}$ is ample relative to $\pi$, where $\mathcal L$ is the universal line bundle. Let $T^{\delta}$ be the locus in the universal curve over $\mathfrak{Pic}_{g,n}^{d,\text{st}}$ spanned by rational tails on which $\mathcal L$ has degree $\delta$; this is a Cartier divisor by deformation theory and smoothness of the stack $\mathfrak{C}_{\mathfrak{Pic}}$. Notice that $T^{\delta_0}$ and $T^{\delta_1}$ (say $\delta_0<\delta_1$) do intersect in a stratum of codimension 1 in both of them, where the rational tail splits into two rational components, the furthest from $C^{(0)}$ having degree $\delta_0$.
 
-[FIGURE]
+\begin{center}
+\input{fig/RandT}
+\end{center}
 
 \emph{Claim:} the line bundle $\mathcal M=\mathcal L\otimes\omega_{\pi}^{\text{log}}\otimes\bigotimes_{0<\delta\leq d}\mathcal O_{\mathfrak C}((\delta-1) T^\delta)$ on $\mathfrak{C}_{\mathfrak{Pic}}$ has degree 0 on every component of every rational tail, and is $\pi$-relatively ample elsewhere.
 
@@ -17,7 +19,9 @@ The construction in families requires us to find a line bundle on the universal 
 Consider a curve $C^{(0)}\sqcup_q R$ with a rational tail of degree $\delta$, such that $R$ consists of $n$ many components $R^{(1)
 },\ldots,R^{(n)}$, each of degree $\delta^{(1)},\ldots,\delta^{(n)}$ respectively, numbered from the closest to the farthest from $C^{(0)}$; set $T_i=\bigcup_{j=i}^n R_j$ and $\epsilon_i=\delta-1-\sum_{j=1}^{i-1}\delta_j$.
 
-[FIGURE]
+\begin{center}
+\input{fig/T_delta}
+\end{center}
 
 A general one-parameter family in $\mathfrak{Pic}_{g,n}^{d,\text{st}}$ will give us a smoothing of such a curve; the universal curve over such a family is a normal surface $S$; we can compute the degree of the restriction of $\mathcal M$ to components of the central fiber of this family by first restricting $\mathcal M$ to $S$, and then using intersection theory on this normal surface.
 
