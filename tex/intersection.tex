@@ -9,7 +9,7 @@ and every class $\alpha\in A_*(F)$, we may define
 \[
  f^!_{\Delta}(\alpha)=\Delta_X^!([Y]^\text{vir}\times\alpha)\in A_*(G)
 \]
-which we call a \emph{diagonal} virtual pull-back. We first show that it coincides with the usual virtual pull-back along $f$ in the presence of a compatible perfect obstruction theory relative to $f$.
+which we call a \emph{diagonal} virtual pull-back. We first claim that it coincides with the usual virtual pull-back along $f$ in the presence of a compatible perfect obstruction theory relative to $f$.
 
 \begin{lemma}\label{lem:diagonal_virtual_coincide}
   Assume that there exists a relative obstruction theory $E^\bullet_f$ compatible with $E^\bullet_{Y/\mathfrak M}$ and the standard (unobstructed) obstruction theory for $X$, i.e.
@@ -22,39 +22,7 @@ which we call a \emph{diagonal} virtual pull-back. We first show that it coincid
   f^!_{E}(\alpha)=f^!_\Delta(\alpha).
  \]
 \end{lemma}
-\begin{proof}
 
-Consider the following cartesian diagram:
-\bcd
-G \ar[r,"q \times g"] \ar[d,"g"] \ar[rd,phantom,"\square"] & Y\times_{\mathfrak M}F \ar[r,"\pr_1"] \ar[d,"f \times \Id"] \ar[rd,phantom,"\square"] & Y \ar[d,"f"] \\
-F \ar[r,"p \times \Id"] \ar[d,"p"] \ar[rd,phantom,"\square"] & X\times_{\mathfrak M} F \ar[r,"\pr_1"] \ar[d,"\Id \times p"] & X \\
-X \ar[r,"\Delta_X"] & X\times_{\mathfrak M}X &
-\ecd
-Then, by commutativity of virtual pull-backs, we have
-\begin{align*} \Delta_X^!([Y]^\text{vir}\times\alpha) & = \Delta^!((f^!_E[X])\times\alpha) \\
-& = \Delta_X^!(f^!_E([X]\times\alpha)) \\
-& = f^!_E(\Delta_X^!([X]\times\alpha)) \\
-& = f^!_E(\alpha)
-\end{align*}
-as required.
-\end{proof}
-
-Secondly, we show that the \emph{diagonal} virtual pull-back behaves similarly to an ordinary virtual pull-back (e.g. commutes with other virtual pull-backs) even in the absence of a compatible perfect obstruction theory.
+Secondly, we claim that the \emph{diagonal} virtual pull-back behaves similarly to an ordinary virtual pull-back (e.g. commutes with other virtual pull-backs) even in the absence of a compatible perfect obstruction theory.
 
 \begin{lemma} The \emph{diagonal} virtual pull-back morphism as defined above commutes with ordinary Gysin maps and with virtual pull-backs. \end{lemma}
-\begin{proof} First consider the case of ordinary Gysin maps. We must consider a cartesian diagram:
-\bcd
-Y^{\prime \prime} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & X^{\prime \prime} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & S \ar[d,"k"] \\
-Y^\prime \ar[r] \ar[d] \ar[rd,phantom,"\square"] & X^\prime \ar[r] \ar[d] & T \\
-Y \ar[r,"f"] & X
-\ecd
-with $k$ a regular embedding and $f\colon Y\to X$ as before. We need to show that for all $\alpha \in A_*(X^\prime)$:
-\begin{equation*} k^! f_{\Delta}^!(\alpha) = f^!_{\Delta} k^!(\alpha) \end{equation*}
-We form the cartesian diagram:
-\bcd
-Y^{\prime \prime} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & Y\times X^{\prime \prime} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & S \ar[d,"k"] \\
-Y^\prime \ar[r] \ar[d] \ar[rd,phantom,"\square"] & Y\times X^\prime \ar[r] \ar[d] & T \\
-X \ar[r,"\Delta_X"] & X\times X &
-\ecd
-And apply commutativity of usual Gysin morphisms. In the case where $k$ is not a regular embedding but rather is equipped with a relative perfect obstruction theory, the same argument works with $k^!$ replaced by $k_{\text{v}}^!$.
-\end{proof}
