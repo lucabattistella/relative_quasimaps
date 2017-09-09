@@ -3,16 +3,11 @@
 \subsection{Basic properties of the moduli space} \label{Subsection basic properties of the moduli space}
 In this section we will show that the moduli space
 \begin{equation*} \Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
-is irreducible of the expected dimension, and thus admits a fundamental class. We then prove a recursion formula for these fundamental classes by pushing forward Gathmann's recursion formula along the comparison morphism:
+is irreducible of the expected dimension, and thus admits a fundamental class. We then prove a recursion formula for these fundamental classes by pushing forward Gathmann's recursion formula along the comparison morphism
 \begin{equation*}\chi : \M{0}{n}{\PP^N}{d} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
-\marginpar{Rearrange things}
-We set $X=\PP^N$ and $Y=H=\{ z_0 = 0 \}$. Given a quasimap
+(see Appendix \ref{Section comparison morphism}). For the remainder of this section we set $X=\PP^N$ and $Y=H=\{ z_0 = 0 \}$. Given a quasimap
 \begin{equation*} (C,x_1,\ldots,x_n,L,u_0,\ldots,u_N) \in \Q{0}{n}{\PP^N}{d} \end{equation*}
-the line bundle $L_Y$ of the previous section is equal to $L$ and the section $u_Y$ is equal to $u_0$. Let us denote by
-\begin{equation*} \mathcal Q_{0,\alpha}(\PP^N|H,d) \subseteq \Q{0}{n}{\PP^N}{d} \end{equation*}
-(without the bar) the \ilemph{nice locus}, consisting of those quasimaps with irreducible source curve (i.e. a $\PP^1$), no basepoints (so we get an actual map), with no component of the curve mapping inside $H$ and with the map having tangency at least $\alpha_i$ to $H$ at the marking $x_i$.
-
-This is an irreducible, locally closed substack of $\Q{0}{n}{\PP^N}{d}$ of codimension $\Sigma_i \alpha_i$, by essentially the same argument as in \cite[Lemma 1.8]{Ga}. In fact it is isomorphic to the nice locus inside the stable map space, denoted $\mathcal M_{0,\alpha}(\PP^N|H,d)$ by Gathmann (see \cite[Def. 1.6]{Ga}); the stricter stability condition has no effect when the source curve is irreducible, provided of course that $n\geq2$).
+the line bundle $L_Y$ of the previous section is equal to $L$ and the section $u_Y$ is equal to $u_0$.
 
 \begin{lem}\label{lem:comparison}
 The comparison morphism restricts to a morphism 
@@ -29,6 +24,12 @@ On the other hand if $R$ is external then the multiplicity $m^{(R)}$ of $R \cap 
 \begin{equation*} m^{(R)} \leq H \cdot f_* [R] \end{equation*}
 Since applying $\chi$ has the effect of replacing $m^{(R)}$ by $H \cdot f_* [R]$ in the left hand side of \eqref{Relative quasimap internal component inequality}, the inequality still holds for the quasimap. Thus we obtain a morphism from the relative stable map space to the relative quasimap space, as claimed.
 \end{proof}
+Let us denote by
+\begin{equation*} \mathcal Q_{0,\alpha}(\PP^N|H,d) \subseteq \Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
+(without the bar) the \ilemph{nice locus}, consisting of those quasimaps with irreducible source curve (i.e. a $\PP^1$), no basepoints (so we get an actual map), with no component of the curve mapping inside $H$ and with the map having tangency at least $\alpha_i$ to $H$ at the marking $x_i$.
+
+This is an irreducible, locally closed substack of $\Q{0}{n}{\PP^N}{d}$ of codimension $\Sigma_i \alpha_i$, by essentially the same argument as in \cite[Lemma 1.8]{Ga}. In fact it is isomorphic to the nice locus inside the stable map space, denoted $\mathcal M_{0,\alpha}(\PP^N|H,d)$ by Gathmann (see \cite[Def. 1.6]{Ga}); the stricter stability condition has no effect when the source curve is irreducible, provided of course that $n\geq2$).
+
 
 \begin{lem}
 $\Q{0}{\alpha}{\PP^N|H}{d}$ is equal to the closure of the nice locus $\mathcal{Q}_{0,\alpha}(\PP^N|H,d)$ inside $\Q{0}{n}{\PP^N}{d}$. 
@@ -124,5 +125,5 @@ Equip this with the sum of the (product) fundamental classes. Then the following
 \]
 \end{prop}
 \begin{proof}
-This follows from \cite[Thm. 2.6]{Ga} by pushforward along $\chi$, using the projection fomula and Lemmas \label{Comparison morphism birational}, \ref{lem:posdimfiber} and \ref{lem:compare_psi} .
+This follows from \cite[Thm. 2.6]{Ga} by pushforward along $\chi$, using the projection fomula and Lemmas \ref{Comparison morphism birational}, \ref{lem:posdimfiber} and \ref{lem:compare_psi} .
 \end{proof}

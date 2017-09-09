@@ -22,7 +22,9 @@ for every rational $\epsilon > 0$.
 \end{enumerate}
 \end{definition}
 
-\begin{remark} This definition is motivated by the $\Sigma$-collections of D. Cox \cite{CoxFunctor}; see also Appendix \ref{Functoriality of Quasimap Spaces Section}. The point is that a quasimap defines a rational morphism $C \dashrightarrow X$ with base locus equal to $B$ (more precisely it is a map to the quotient stack $[\mathbb{A}^{\Sigma(1)} / (\Gm)^r]$ such that $B$ is the preimage of the unstable locus). In particular a quasimap without any basepoints defines a morphism $C \to X$. Thus the basepoints appear in the (virtual) boundary of the moduli space, in much the same way as the locus of stable maps with rational tails appears in the boundary of the moduli space of stable maps (this is something more than just a vague analogy; these loci correspond to each other under the comparison morphism when $X\simeq\PP^N$; see Appendix \ref{Section comparison morphism}). \end{remark}
+\begin{remark} This definition is motivated by the $\Sigma$-collections of D. Cox \cite{CoxFunctor}; see also Appendix \ref{Functoriality of Quasimap Spaces Section}. The point is that a quasimap defines a rational morphism $C \dashrightarrow X$ with base locus equal to $B$. (This can be expressed in a more generalisable manner as follows: a quasimap is a map to the stack quotient $[\mathbb{A}^{\Sigma(1)} / (\Gm)^r]$ such that $B$ is the preimage of the unstable locus.)
+
+In particular a quasimap without any basepoints defines a morphism $C \to X$. Thus the basepoints appear in the (virtual) boundary of the moduli space, in much the same way as the locus of stable maps with rational tails appears in the boundary of the moduli space of stable maps (this is something more than just a vague analogy; these loci correspond to each other under the comparison morphism when $X\simeq\PP^N$; see Appendix \ref{Section comparison morphism}). \end{remark}
 
 \begin{remark}
  There is a more general notion of $\epsilon$-stable quasimap \cite[\S 7.1]{CFKM}: essentially $\epsilon$ is a \emph{fixed} rational number in the above definition (and an extra condition is required, bounding the order of vanishing at the base-points); this allows only some rational tails (with degree high enough with respect to $\epsilon$). Since the degree is an integer-valued function and by boundedness, it turns out that there are only finitely many critical values of $\epsilon$ such that crossing them actually changes the resulting moduli space $\Qe{g}{n}{X}{\beta}$; also, the limiting values $\epsilon=+\infty$ and $\epsilon=0^+$ recover the moduli spaces of stable maps and (ordinary) quasimaps respectively. So the moduli spaces $\Qe{g}{n}{X}{\beta}$ are meant to interpolate between the two, and they have proven particularly successful as a tool to compare the resulting invariants \cite{CF-K-wallcrossing}.
@@ -57,21 +59,28 @@ where $\mathcal{C} \to \om{Q} = \Q{g}{n}{X}{\beta}$ is the universal curve and $
 
 [EXAMPLES.]
 
-\subsection{Review of relative stable maps} \label{Subsection relative stable maps} Given a smooth projective variety $X$ and a smooth divisor $Y$, the moduli space of relative stable maps parametrises stable maps to $X$ with specified tangencies to $Y$ at the marked points; \cite{Ga} for details.
+\subsection{Review of relative stable maps} \label{Subsection relative stable maps} Given a smooth projective variety $X$ and a smooth divisor $Y$, the moduli space of relative stable maps parametrises stable maps to $X$ with specified tangencies to $Y$ at the marked points; see \cite{Ga} for details.
 
-\begin{definition}[{\cite[Definition 1.1 and Remark 1.4]{Ga}}] Let $X$ be a smooth projective variety and $Y \subseteq X$ a smooth divisor. Fix a number $n \geq 0$ of marked points, a curve class $\beta \in \HH_2^+(X)$ and an $n$-tuple $\alpha = (\alpha_1, \ldots, \alpha_n)$ of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. Then the moduli space
+\begin{definition}[{\cite[Definition 1.1]{Ga}}] Let $X$ be a smooth projective variety and $Y \subseteq X$ a smooth divisor. Fix a number $n \geq 0$ of marked points, a curve class $\beta \in \HH_2^+(X)$ and an $n$-tuple $\alpha = (\alpha_1, \ldots, \alpha_n)$ of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. Then the moduli space
 \begin{equation*} \M{0}{\alpha}{X|Y}{\beta} \end{equation*}
-of relative stable maps to $(X,Y)$ is defined to be the locus in $\M{0}{n}{X}{\beta}$ of stable maps $(C,x_1, \ldots, x_n, f)$ such that, if $Z$ is a connected component of $f^{-1}(Y) \subseteq C$, then
+of relative stable maps to $(X,Y)$ is defined to be the locus in $\M{0}{n}{X}{\beta}$ of stable maps $(C \to S , (x_i : S \to C)_{i=1}^n , f : C \to X)$ satisfying the following two conditions:
+\begin{enumerate}
+\item if $x_i$ is a marked point such that $\alpha_i > 0$ then $f(x_i) \in Y$;
+\item if we consider $f^* [Y] \in \Achow_0(f^{-1}Y)$ then the difference $f^* [Y] - \Sigma_i \alpha_i x_i$ is an effective class.
+\end{enumerate}
+This forms a closed substack of $\M{0}{n}{X}{\beta}$. Condition (1) is required in order for the class $\Sigma_i \alpha_i x_i$ to make sense in $\Achow_0(f^{-1}Y)$.
+\end{definition}
+
+\begin{remark} The definition above works in families; however there is a more combinatorial definition for individual maps which is more useful in practice (see \cite[Remark 1.4]{Ga}): a stable map $(C,x_1, \ldots, x_n,f)$ is a relative stable map if and only if, if $Z$ is a connected component of $f^{-1}(Y) \subseteq C$, then
 \begin{enumerate}
 \item if $Z$ is a point and is equal to a marked point $x_i$, then the multiplicity of $f$ to $Y$ at $x_i$ is greater than or equal to $\alpha_i$;
 \item if $Z$ is one-dimensional (hence a union of irreducible components of $C$) and if we let $C^{(i)}$ for $1 \leq i \leq r$ denote the irreducible components of $C$ adjacent to $Z$, and $m^{(i)}$ denote the multiplicity of $f|_{C^{(i)}}$ to $Y$ at the node $Z \cap C^{(i)}$, then we must have:
-\begin{equation*} Y \cdot f_* [Z] + \sum_{i=1}^r m^{(i)} \geq \sum_{x_i \in Z} \alpha_i \end{equation*}
-\end{enumerate}
-\end{definition}
-\marginpar{$f^*Y - \alpha_i x_i$ is effective}
+\begin{equation} \label{Inequality relative stable maps} Y \cdot f_* [Z] + \sum_{i=1}^r m^{(i)} \geq \sum_{x_i \in Z} \alpha_i \end{equation}
+\end{enumerate} \end{remark}
+
 \begin{remark} In the case of maximal multiplicity $\Sigma_{i} \alpha_i = Y \cdot \beta$, all the inequalities in the above definition must actually be equalities. \end{remark}
 
-This forms a closed substack of $\M{0}{n}{X}{\beta}$. In the case $X=\PP^N$, $Y=H$ one can show that it is irreducible with dimension equal to the expected dimension:
+In the case $X=\PP^N$, $Y=H$ one can show that $\M{0}{\alpha}{\PP^N|H}{d}$ is irreducible with dimension equal to the expected dimension:
 \begin{equation*} \vdim \M{0}{\alpha}{X|Y}{\beta} = \vdim{\M{0}{n}{X}{\beta}} - \sum_i \alpha_i \end{equation*}
 Hence it has a fundamental class from which one can define relative Gromov--Witten invariants.
 
@@ -88,14 +97,14 @@ where $\mathcal{D}_{\alpha,k}(X,\beta)$ is an appropriate \ilemph{comb locus}. R
 
 \subsection{Definition of relative stable quasimaps} \label{Subsection relative stable quasimaps}
 
-We now give the main definition of the paper. From here on $X$ will denote a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. We do not require that $Y$ is toric.
+We now give the main definition of the paper. From here on $X$ will denote a smooth projective toric variety and $Y \subseteq X$ a very ample hypersurface. We do not require that $Y$ is toric.
 
 Consider the line bundle $\OO_X(Y)$ and the section $s_Y$ cutting out $Y$. By \cite{CoxRing} we have a natural isomorphism
-\begin{equation*} \HH^0(X,\OO(Y)) = \kfield \left\langle \prod_{\rho} z_\rho^{a_\rho} : \Sigma_\rho a_\rho D_\rho = Y \right\rangle \end{equation*}
-where the $z_\rho$ for $\rho \in \Sigma_X(1)$ are the generators of the Cox ring of $X$ and the $a_\rho$ are non-negative integers. We can therefore write $s_Y$ as
+\begin{equation*} \HH^0(X,\OO_X(Y)) = \kfield \left\langle \prod_{\rho} z_\rho^{a_\rho} : \Sigma_\rho a_\rho D_\rho = Y \right\rangle \end{equation*}
+where the $z_\rho$ for $\rho \in \Sigma(1)$ are the generators of the Cox ring of $X$ and the $a_\rho$ are non-negative integers. We can therefore write $s_Y$ as
 \begin{equation*} s_Y = \sum_{\underline{a}=(a_\rho)} \lambda_{\underline{a}} \prod_\rho z_\rho^{a_\rho} \end{equation*}
 for some scalars $\lambda_{\underline{a}} \in \kfield$. The idea then is that a quasimap
-\begin{equation*} ((C,x_1,\ldots,x_n), (L_\rho,u_\rho)_{\rho \in \Sigma_X(1)}, (\varphi_m)_{m \in M}) \end{equation*}
+\begin{equation*} ((C,x_1,\ldots,x_n), (L_\rho,u_\rho)_{\rho \in \Sigma(1)}, (\varphi_m)_{m \in M}) \end{equation*}
 maps to $Y$ at $x \in C$ if and only if the section
 \begin{equation*} u_Y := \sum_{\underline{a}} \lambda_{\underline{a}} \prod_\rho u_\rho^{a_\rho} \end{equation*}
 vanishes at $x$. We now explain how to make sense of the expression above. For each $\underline{a}$ we have a well-defined section
@@ -109,13 +118,22 @@ which plays the role of the ``pull-back'' of $s_Y$.
 
 \begin{definition} With notation as above, let $n \geq 0$ be a number of marked points, $\beta \in \HH_2^+(X)$ be a curve class and $\alpha=(\alpha_1, \ldots, \alpha_n)$ a collection of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. Then we define the \ilemph{moduli space of relative stable quasimaps}
 \begin{equation*} \Q{0}{\alpha}{X|Y}{\beta} \subseteq \Q{0}{n}{X}{\beta} \end{equation*}
-to be the locus of quasimaps such that, if $Z$ is a connected component of the vanishing locus of $u_Y$ in $C$, then
+to be the locus of quasimaps
+\begin{equation*} (C \to S, (x_i : S \to C)_{i=1}^n, (L_\rho,u_\rho)_{\rho \in \Sigma(1)}, (\varphi_m)_{m \in M}) \end{equation*}
+such that:
+\begin{enumerate}
+\item if $x_i$ is a marking such that $\alpha_i > 0$, then $x_i^* u_Y = 0$;
+\item if we let $u_Y^*(0) \in \Achow_0(u_Y^{-1}(0))$ denote the class defined by the Gysin map for $L_Y$, then the difference $u_Y^*(0) - \Sigma_i \alpha_i x_i$ is an effective class.
+\end{enumerate}
+\end{definition}
+
+\begin{remark} As in the case of relative stable maps (see \S \ref{Subsection relative stable maps}) there is an alternative definition which is easier to check in practice: a quasimap is a relative quasimap if and only if, if $Z$ is a connected component of $u_Y^{-1}(0)$, then:
 \begin{enumerate}
 \item if $Z$ is a point and is equal to a marked point $x_i$, then the order of vanishing of $u_Y$ at $x_i$ is greater than or equal to $\alpha_i$;
 \item if $Z$ is one-dimensional (hence a union of irreducible components) and if we let $C^{(i)}$ for $1 \leq i \leq r$ denote the irreducible components of $C$ adjacent to $Z$, and $m^{(i)}$ the order of vanishing of $u_Y$ at the node $Z \cap C^{(i)}$, then we must have:
 \begin{equation} \label{Relative quasimap internal component inequality} \deg L_Y|_Z + \sum_{i=1}^r m^{(i)} \geq \sum_{x_i \in Z} \alpha_i \end{equation}
 \end{enumerate}
-\end{definition}
+\end{remark}
 
 \begin{remark}In the second case above we call $Z$ an \ilemph{internal} component and the $C^{(i)}$ \ilemph{external} components.\end{remark}
 
