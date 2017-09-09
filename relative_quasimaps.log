@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  9 SEP 2017 13:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  9 SEP 2017 15:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1343,11 +1343,6 @@ fine rel-a-tive Gromov--
  []
 
 [8]
-
-LaTeX Warning: Reference `Appendix intersection theory' on page 9 undefined on 
-input line 100.
-
-
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
@@ -1389,14 +1384,11 @@ IVE QUASIMAPS []
  []
 
 [15]) (./tex/recursion_general.tex [16]
-Overfull \hbox (11.78236pt too wide) detected at line 44
+Overfull \hbox (100.52876pt too wide) detected at line 44
 \OT1/zpltlf/m/n/10.95 [\OMS/npxsy/m/n/10.95 E[]\U/npxmia/m/it/10.95 }\OML/npxmi
 /m/it/10.95 X\OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 Y; A; B; M\U/npxmia/m/
-it/10.95 ~\OT1/zpltlf/m/n/10.95 ][] :\U/npxmia/m/it/10.95 5 \OT1/zpltlf/m/n/10.
-95 [[][]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 Y; ^^L[]\U/npxmia/m/it/10.9
-5 ~\OT1/zpltlf/m/n/10.95 ][] \OMS/npxsy/m/n/10.95 ^^B []\OT1/zpltlf/m/n/10.95 [
-[][]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 X\OMS/npxsy/m/n/10.95 j\OML/npx
-mi/m/it/10.95 Y; ^^L[]\U/npxmia/m/it/10.95 ~\OT1/zpltlf/m/n/10.95 ][]
+it/10.95 ~\OT1/zpltlf/m/n/10.95 ][] :\U/npxmia/m/it/10.95 5 [] \OMS/npxsy/m/n/1
+0.95 ^^A []
  []
 
 
@@ -1406,9 +1398,6 @@ IVE QUASIMAPS []
  []
 
 [17] [18]
-Underfull \vbox (badness 3471) has occurred while \output is active []
-
-
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
@@ -1629,15 +1618,12 @@ LaTeX Font Warning: Font shape `U/bbm/m/n' in size <5.5> not available
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 30726 strings out of 493014
- 590542 string characters out of 6133351
- 649820 words of memory out of 5000000
- 33467 multiletter control sequences out of 15000+600000
+ 30725 strings out of 493014
+ 590512 string characters out of 6133351
+ 649808 words of memory out of 5000000
+ 33466 multiletter control sequences out of 15000+600000
  103498 words of font info for 190 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  56i,16n,99p,10394b,1048s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1664,7 +1650,7 @@ ype1/public/newpx/zplbi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
 lic/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx
 /zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zplx-re
 gular.pfb>
-Output written on relative_quasimaps.pdf (50 pages, 386313 bytes).
+Output written on relative_quasimaps.pdf (50 pages, 386452 bytes).
 PDF statistics:
  259 PDF objects out of 1000 (max. 8388607)
  187 compressed objects within 2 object streams
