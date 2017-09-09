@@ -4,13 +4,15 @@ The results of this paper arise from a fusion of two theories: stable quasimaps 
 \subsection{Stable quasimaps}
 The moduli space of \ilemph{stable toric quasimaps}
 \begin{equation*} \Q{g}{n}{X}{\beta} \end{equation*}
-was constructed by Ciocan-Fontanine and Kim \cite{CF-K} as an alternative compactification of the moduli space of smooth curves in a toric variety. It is a Deligne--Mumford stack of finite type, and is proper if $X$ is proper. Moreover, when $X$ is smooth it admits a perfect obstruction theory and hence a virtual fundamental class, which one can use to define curve-counting invariants for $X$, called \ilemph{quasimap invariants}.
+was constructed by Ciocan-Fontanine and Kim \cite{CF-K} as an alternative compactification of the moduli space of smooth curves in a toric variety. It is a Deligne--Mumford stack of finite type, and is proper if $X$ is proper. Moreover, when $X$ is smooth (and in fact more generally: see \cite[\S 4.5]{CFKM}) it admits a perfect obstruction theory and hence a virtual fundamental class, which one can use to define curve-counting invariants for $X$, called \ilemph{quasimap invariants}.
 
 This theory agrees with the theory of stable quotients \cite{MOP} when both are defined, namely when $X$ is a projective space.  There is a common generalisation given by the theory of stable quasimaps to GIT quotients \cite{CFKM}. However for simplicity we will work mostly in the toric setting (though this restriction is probably not essential for our arguments). Thus when we say ``quasimap'' we are implicitly talking about toric quasimaps.
 
-The quasimap invariants are expected to coincide with the Gromov--Witten invariants when $X$ is a toric Fano variety \cite{CM}; this has been proven for $X=\PP^N$ \cite{MOP} \cite[\S 5.4]{Manolache-Push}, and more generally the case of a very Fano complete intersection in projective space can be derived from the work of Givental on the mirror theorem \cite[Theorem 0.1]{Givental-mirror} and that of Ciocan-Fontanine and Kim on wall-crossing for $\epsilon$-stable quasimaps \cite[Conjecture 7.2.10]{CF-K}\cite[\S 5.5 and Conjecture 6.3.1]{CF-K-wallcrossing}.
+The quasimap invariants are expected to coincide with the Gromov--Witten invariants when $X$ is a toric Fano variety \cite{CM}; this has been proven for $X=\PP^N$ \cite{MOP} \cite[\S 5.4]{Manolache-Push}, and more generally the case of a very Fano complete intersection in projective space can be obtained by combining the work of Givental on the mirror theorem \cite[Theorem 0.1]{Givental-mirror} and the work of Ciocan-Fontanine and Kim on wall-crossing for $\epsilon$-stable quasimaps \cite[Conjecture 7.2.10]{CF-K}\cite[\S 5.5 and Conjecture 6.3.1]{CF-K-wallcrossing}.
 
-In general, however, the invariants differ, the difference being encoded by certain wall-crossing formulas \cite{CF-K-wallcrossing}. The motivation for this comes from mirror symmetry: the idea is that the quasimap invariants of $X$ should correspond to the $B$-side theory of $X$ (this is in contrast to the Gromov--Witten invariants, which live on the $A$-side); see \cite[\S 7]{CF-K}. \marginpar{Ask Tom or Richard} A key-point is that $\Q{g}{n+1}{X}{\beta}$ is \emph{not} the universal curve over $\Q{g}{n}{X}{\beta}$ (in general there is not even a morphism between the two), but the universal curve $\mathcal C_{g,n}^\mathcal{Q}$ is a substack of $\MM_{g,n+1}(X,\beta)$ and comparing the geometry of $\mathcal Q_{g,n+1}$ and $\mathcal C_{g,n}$ results in \emph{string transformations} that determine the difference between generating functions for $\epsilon_1$- and $\epsilon_2$-stable quasimaps \cite[\S 6 and 7]{CF-K-wallcrossing}.
+In general, however, the invariants differ, the difference being encoded by certain wall-crossing formulas \cite{CF-K-wallcrossing}. The motivation for this comes from mirror symmetry: the idea is that the quasimap invariants of $X$ should correspond to the $B$-side theory of $X$ (this is in contrast to the Gromov--Witten invariants, which live on the $A$-side); see \cite[\S 7]{CF-K}. \marginpar{Ask Tom or Richard}
+
+An important fact for understanding the difference between these two theories is the observation that $\Q{g}{n+1}{X}{\beta}$ is \emph{not} the universal curve over $\Q{g}{n}{X}{\beta}$; in fact there is not even a morphism between these spaces in general. Instead, the universal curve $\mathcal C_{g,n}^\mathcal{Q}$ is a substack of $\MM_{g,n+1}(X,\beta)$ and comparing the geometry of $\om{Q}_{g,n+1}$ and $\mathcal{C}^{\mathcal{Q}}_{g,n}$ results in \emph{string transformations} that determine the difference between generating functions for $\epsilon_1$- and $\epsilon_2$-stable quasimaps \cite[\S 6 and 7]{CF-K-wallcrossing}.
 
 \subsection{Relative stable maps}
 In \cite{Ga} Gathmann consructs a moduli space of relative stable maps to the pair $(X,Y)$ as a closed substack of the moduli space of (absolute) stable maps to $X$:
@@ -40,20 +42,21 @@ Appendix \S \ref{Section comparison morphism} discusses the comparison morphism 
 
 Appendix \S \ref{Section quasimap theory} contains foundational lemmas of quasimap theory, including:
 \begin{enumerate}
-\item functoriality of quasimap spaces: for $f\colon Y\to X$ a toric morphism (that does not contract effective curve classes) we describe the induced map $\overline{\mathcal{Q}}(f)\colon\Q{g}{n}{Y}{\beta}\to\Q{g}{n}{X}{f_*\beta}$ (in standard stable maps theory, this is just composing a stable map with $f$, on the other hand in quasimap theory one must be slightly more ingenious to cook up line bundles and sections thereof, compatible with the interpretation as composition in the case that the quasimap has no base-points; this is based on the description of the functor of a smooth toric variety and its homogeneous coordinate ring by D.A. Cox \cite{CoxFunctor}\cite{CoxRing}). Furthermore, we discuss when $\overline{\mathcal{Q}}(f)$ admits a compatible perfect obstruction theory.
-\item The splitting axiom: this compares two natural virtual classes on boundary strata (i.e. loci where the underlying curve is reducible of a prescribed type).
-\item Comparison with the GIT construction \cite{CFKM} in the case that $Y$ is a (not necessarily toric) very ample hypersurface in a toric variety $X$.
+\item \ilemph{Functoriality} of quasimap spaces: given a morphism $f\colon Y\to X$ which does not contract effective curve classes (e.g. an embedding) we describe the induced map:
+\begin{equation*} \overline{\mathcal{Q}}(f)\colon\Q{g}{n}{Y}{\beta}\to\Q{g}{n}{X}{f_*\beta} \end{equation*}
+For stable maps this is easy to define: simply compose a stable map with $f$. However for quasimaps one must be slightly more ingenious in order to cook up the structure of a quasimap which is compatible with the interpretation as composition in the case where the quasimap has no base-points. The construction we give is based on the description of the functor of a smooth toric variety and its homogeneous coordinate ring by D. Cox \cite{CoxFunctor}\cite{CoxRing}. We also discuss when $\overline{\mathcal{Q}}(f)$ admits a compatible perfect obstruction theory.
+\item \ilemph{Splitting axiom}: this gives an equality between two natural virtual classes on boundary strata (i.e. loci where the underlying curve is reducible of a prescribed type).
+\item Comparison with the \ilemph{GIT construction} \cite{CFKM} in the case where $Y$ is a (not necessarily toric) very ample hypersurface in a toric variety $X$.
 \end{enumerate}
 
-Finally Appendix \ref{appendix:intersection} discusses the (\emph{diagonal}) pull-back along a morphism whose target is unobstructed (used in \cite{Ga}) and verifies that it agrees with the virtual pull-back of \cite{Manolache-Pull} (when both are defined) and that it satisfies expected compatibility properties.
+Finally Appendix \ref{appendix:intersection} discusses the (\emph{diagonal}) pull-back along a morphism whose target is unobstructed (used in \cite{Ga}) and verifies that this agrees with the virtual pull-back of \cite{Manolache-Pull} (when both are defined) and that it satisfies expected compatibility properties.
 
 
 \begin{acknowledgements} The authors wish to thank Tom Coates, Cristina Manolache and Andrea Petracci for many helpful discussions. L.B. is supported by [REF] and N.N. is supported by [REF]
 \end{acknowledgements}
 
 \subsection{Table of notation} We will use the following notation, most of which is introduced in the main body of the paper.
-\[
-\begin{tabular}{ r c | c l }
+\begin{longtabu}{r c | c p{0.8\linewidth}}
 $X$ & & & a smooth projective toric variety \\
 $Y$ & & & a very ample hypersurface in $X$ \\
 $\Sigma$ & & & the fan of $X$ \\
@@ -63,19 +66,20 @@ $D_\rho$ & & & the toric divisor in $X$ corresponding to $\rho$ \\
 $\M{g}{n}{X}{\beta}$ & & & the moduli space of stable maps \\
 $\mathcal{M}_{0,\alpha}(X|Y,\beta)$ & & & the nice locus of relative stable maps \\
 $\M{0}{n}{X|Y}{\beta}$ & & & the moduli space of relative stable maps (\S \ref{Subsection relative stable maps}) \\
-$\MM_{g,n}$ & & & the moduli space of prestable curves \\
-$\Q{g}{n}{X}{\beta}$ & & & the moduli space of stable toric quasimaps (\S \ref{Subsection stable quasimaps}) \\
+$\Q{g}{n}{X}{\beta}$ & & & the moduli space of toric quasimaps (\S \ref{Subsection stable quasimaps}) \\
 $\mathcal{Q}_{0,\alpha}(X|Y,\beta)$ & & & the nice locus of relative quasimaps (\S \ref{Subsection basic properties of the moduli space}) \\
-$\Q{0}{\alpha}{X|Y}{\beta}$ & & & the moduli space of relative stable quasimaps (\S \ref{Subsection relative stable quasimaps}) \\
-$\om{Q}(f)$ & & & the push-forward morphism between quasimap moduli spaces (\S \ref{Functoriality of Quasimap Spaces Section}) \\
-$\chi$ & & & the comparison morphism from stable maps to quasimaps (\S \ref{Section comparison morphism}) \\
+$\Q{0}{\alpha}{X|Y}{\beta}$ & & & the moduli space of relative quasimaps (\S \ref{Subsection relative stable quasimaps}) \\
 $\mathcal{D}^{\mathcal{Q}}_{\alpha,k}(X|Y,\beta)$ & & & the quasimap comb locus (\S \ref{Subsection recursion formula for PN}) \\
-$\mathcal{D}^{\mathcal{Q}}(X|Y,A,B,M)$ & & & a component of the quasimap comb locus (\S \ref{Subsection recursion formula for PN}) \\
-$\mathcal{E}^{\mathcal{Q}}(X|Y,A,B,M)$ & & & the total product from which the virtual class of the quasimap comb locus is obtained (\S [REF]) \\
+$\mathcal{D}^{\mathcal{Q}}(X|Y,A,B,M)$ & & & (a component of) the (quasimap) comb locus (\S \ref{Subsection recursion formula for PN}) \\
+$\mathcal{E}^{\mathcal{Q}}(X|Y,A,B,M)$ & & & the total product for the comb locus (\S [REF]) \\
 $\mathcal{D}^{\mathcal{Q}}(X,A,B)$ & & & the quasimap centipede locus (\S [REF])  \\
-$\mathcal{E}^{\mathcal{Q}}(X,A,B)$ & & & the total product from which the virtual class of the quasimap centipede locus is obtained (\S [REF]) \\
-$f^!$ & & & Gysin morphism when $f$ is an l.c.i. embedding \\
-$f^!_{\text{v}}$ & & & virtual pull-back when $f$ is virtually smooth (\S [REF]) \\
+$\mathcal{E}^{\mathcal{Q}}(X,A,B)$ & & & the total product for the cenitepede locus (\S [REF]) \\
+$\MM_{g,n}$ & & & the moduli stack of prestable curves \\
+$\mathfrak{Pic}$ & & & the relative Picard stack of the universal curve over $\MM_{g,n}$ \\
+$\mathfrak{Bun}_{G}$ & & & the moduli stack of principal $G$-bundles on the universal curve over $\MM_{g,n}$ \\
+$\om{Q}(f)$ & & & the push-forward between quasimap spaces (\S \ref{Functoriality of Quasimap Spaces Section}) \\
+$\chi$ & & & the comparison map from stable maps to quasimaps (\S \ref{Section comparison morphism}) \\
+$f^!$ & & & Gysin morphism for $f$ an l.c.i. embedding \\
+$f^!_{\text{v}}$ & & & virtual pull-back for $f$ virtually smooth (\S [REF]) \\
 $f^!_{\Delta}$ & & & diagonal virtual pull-back (\S [REF])
-\end{tabular}
-\]
+\end{longtabu}
