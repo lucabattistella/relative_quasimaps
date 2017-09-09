@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  9 SEP 2017 15:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  9 SEP 2017 15:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1528,17 +1528,6 @@ IVE QUASIMAPS []
  []
 
 [31]) [32] (./tex/functoriality.tex
-LaTeX Font Info:    Try loading font information for T1+zplsups on input line 9
-.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/t1zplsups.fd
-File: t1zplsups.fd 2015/01/17 v1.0
-)
-LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
-(Font)              scaled to size 10.95pt on input line 9.
-LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
-(Font)              scaled to size 9.0pt on input line 9.
-
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
@@ -1562,19 +1551,22 @@ Overfull \hbox (10.73586pt too wide) has occurred while \output is active
 IVE QUASIMAPS []
  []
 
-[39] [40]
+[39] [40]) (./tex/GIT.tex
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
  []
 
-[41]) (./tex/GIT.tex) (./tex/splitting.tex
+[41]) (./tex/splitting.tex
 Overfull \hbox (9.92264pt too wide) in paragraph at lines 3--4
  \T1/zpltlf/m/n/10.95 B.4.\T1/zpltlf/b/n/10.95 Splitting prin-ci-ple.[] \T1/zpl
 tlf/m/n/10.95 Con-sider bound-ary strata of the space of quasimaps,
  []
 
-[42]
+
+Underfull \vbox (badness 2080) has occurred while \output is active []
+
+ [42]
 Overfull \hbox (10.73586pt too wide) has occurred while \output is active
  \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
 IVE QUASIMAPS []
@@ -1595,13 +1587,6 @@ IVE QUASIMAPS []
 [47] [48]) (./relative_quasimaps.bbl
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 9.0pt on input line 6.
-
-Overfull \hbox (10.73586pt too wide) has occurred while \output is active
- \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
-IVE QUASIMAPS []
- []
-
-[49]
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 9.0pt on input line 81.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
@@ -1613,47 +1598,52 @@ LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 LaTeX Font Warning: Font shape `U/bbm/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 81.
 
-) [50] (./relative_quasimaps.aux)
+)
+Overfull \hbox (10.73586pt too wide) has occurred while \output is active
+ \T1/zpltlf/m/n/8 A QUANTUM LEFSCHETZ THEOREM FOR QUASIMAP INVARIANTS VIA RELAT
+IVE QUASIMAPS []
+ []
+
+[49] (./relative_quasimaps.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 30725 strings out of 493014
- 590512 string characters out of 6133351
- 649808 words of memory out of 5000000
- 33466 multiletter control sequences out of 15000+600000
- 103498 words of font info for 190 fonts, out of 8000000 for 9000
+ 30691 strings out of 493014
+ 589829 string characters out of 6133351
+ 652209 words of memory out of 5000000
+ 33436 multiletter control sequences out of 15000+600000
+ 100992 words of font info for 188 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  56i,16n,99p,10394b,1048s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newpx/ecsups.enc}{/usr/lo
-cal/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc} </Users/navi
-d/Library/texlive/2016/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk>{/usr/l
-ocal/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-sc.enc}{/usr/loca
-l/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texl
-ive/2016/texmf-dist/fonts/enc/dvips/newpx/tgpdiff.enc}{/usr/local/texlive/2016/
-texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/font
-s/type1/public/pxfonts/pxmia.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
-1/public/pxfonts/pxsy.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
-c/pxfonts/rpxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/stma
-ryrd/stmary10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/
-txex-bar.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txe
-x.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txmia.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/
-local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dis
-t/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
-ype1/public/newpx/zplbi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
-lic/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx
-/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zplx-re
-gular.pfb>
-Output written on relative_quasimaps.pdf (50 pages, 386452 bytes).
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc} </
+Users/navid/Library/texlive/2016/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657
+pk>{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-sc.enc}
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/
+local/texlive/2016/texmf-dist/fonts/enc/dvips/newpx/tgpdiff.enc}{/usr/local/tex
+live/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf
+-dist/fonts/type1/public/pxfonts/pxmia.pfb></usr/local/texlive/2016/texmf-dist/
+fonts/type1/public/pxfonts/pxsy.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/public/pxfonts/rpxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
+ublic/stmaryrd/stmary10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
+lic/newtx/txex-bar.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/t
+xfonts/txex.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/
+txmia.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsya.
+pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/public/newpx/zplbi.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
+blic/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/new
+px/zplx-regular.pfb>
+Output written on relative_quasimaps.pdf (49 pages, 384788 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 187 compressed objects within 2 object streams
+ 253 PDF objects out of 1000 (max. 8388607)
+ 182 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

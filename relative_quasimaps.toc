@@ -19,8 +19,8 @@
 \contentsline {section}{\tocsection {Appendix}{B}{Notes on quasimaps}}{33}
 \contentsline {subsection}{\tocsubsection {}{B.1}{Functoriality}}{33}
 \contentsline {subsection}{\tocsubsection {}{B.2}{Relative obstruction theories for $\mathcal Q(Y)\rightarrow \mathcal Q(X)$}}{38}
-\contentsline {subsection}{\tocsubsection {}{B.3}{Comparison with the GIT construction}}{42}
-\contentsline {subsection}{\tocsubsection {}{B.4}{Splitting principle}}{43}
-\contentsline {subsection}{\tocsubsection {}{B.5}{The quasimap string equation for $\mathbb P^r$}}{46}
+\contentsline {subsection}{\tocsubsection {}{B.3}{Comparison with the GIT construction}}{41}
+\contentsline {subsection}{\tocsubsection {}{B.4}{Splitting principle}}{42}
+\contentsline {subsection}{\tocsubsection {}{B.5}{The quasimap string equation for $\mathbb P^r$}}{45}
 \contentsline {section}{\tocsection {Appendix}{C}{Some intersection-theoretic lemmas}}{47}
 \contentsline {section}{\tocsection {Appendix}{}{References}}{49}
