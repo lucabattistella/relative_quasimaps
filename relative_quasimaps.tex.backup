@@ -43,7 +43,7 @@
 \renewcommand{\L}{\mathcal L}
 \newcommand{\MM}{\mathfrak M}
 \newcommand{\Aaff}{\mathbb{A}}
-\newcommand{\kfield}{\mathbb{K}}
+\newcommand{\kfield}{\Bbbk}
 \newcommand{\comp}{\chi}
 \newcommand{\sst}{\sigma^{ss}}
 \newcommand{\Pic}{\operatorname{Pic}}
@@ -52,11 +52,15 @@
 \newcommand{\Proj}{\operatorname{Proj}}
 \newcommand{\Hom}{\operatorname{Hom}}
 \newcommand{\Ext}{\operatorname{Ext}}
-\newcommand{\Gm}{\mathbb{G}_m}
+\newcommand{\Gm}{\mathbb{G}_{\text{m}}}
 \newcommand{\virt}[1]{[#1]^{\operatorname{virt}}}
+\newcommand{\vip}[1]{[#1]^{\operatorname{prod}}}
 \newcommand{\Id}{\operatorname{Id}}
 \newcommand{\CC}{\mathbb{C}}
-
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\HH}{\operatorname{H}}
+\newcommand{\Achow}{\operatorname{A}}
+\newcommand{\pt}{\operatorname{pt}}
 \newcommand{\bq}{\begin{equation}}
 \newcommand{\eq}{\end{equation}}
 \newcommand{\ba}{\begin{aligned}}
@@ -114,6 +118,10 @@
 \newtheorem*{sketch}{Sketch}
 \newtheorem*{rem}{Remark}
 \newtheorem*{aside*}{Aside}
+\newtheorem*{acknowledgements}{Acknowledgements}
+
+\newcommand{\ilemph}[1]{\textbf{\textsc{#1}}}
+
 
 \setcounter{tocdepth}{1}
 
@@ -135,38 +143,33 @@
 \author{Luca Battistella and Navid Nabijou}
 \begin{document}
 
-\begin{abstract}
-\end{abstract}
+\begin{abstract} We define moduli spaces of relative toric quasimaps in genus $0$ in the spirit of A. Gathmann. When $X$ is a smooth toric variety and $Y$ is a very ample hypersurface we construct a virtual class on the moduli space, which is used to define relative quasimap invariants. We obtain a recursion formula which expresses each relative invariant in terms of invariants of lower multiplicity. Finally we apply this formula to derive a quantum Lefschetz theorem expressing the absolute quasimap invariants of $Y$ in terms of those of $X$. We include several appendices collecting proofs of standard results in quasimap theory. \end{abstract}
 
 \maketitle
 \appendixtitletocoff
 \tableofcontents
 
-\section{Introduction}
+\input{tex/section-1-introduction}
 
-\section{Relative stable quasimaps}
-\subsection{Review of absolute stable quasimaps}
-\subsection{Relative stable quasimaps}
+\input{tex/section-relative-stable-quasimaps}
 
-\include{tex/recursion_for_Pr}
+\input{tex/recursion_for_Pr}
 
-\include{tex/recursion_general}
+\input{tex/recursion_general}
 
-\include{tex/mirror_theorem}
+\input{tex/mirror_theorem}
 
 \appendix
 
-\include{tex/comparison}
+\input{tex/comparison}
 
-\include{tex/functoriality}
+\section{Notes on quasimaps}
+\input{tex/functoriality}
+\input{tex/GIT}
+\input{tex/splitting}
+\input{tex/string}
 
-\include{tex/splitting}
-
-\include{tex/string}
-
-\include{tex/intersection}
-
-\include{tex/GIT}
+\input{tex/intersection}
 
 \bibliographystyle{alpha}
 \bibliography{relqm}

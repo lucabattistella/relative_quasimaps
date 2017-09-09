@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2016)
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: relative_quasimaps.aux
 The style file: alpha.bst
@@ -8,45 +8,46 @@ Repeated entry---line 201 of file relqm.bib
  :                        ,
 I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in Givental-equivariantGW
-You've used 19 entries,
+Warning--can't use both author and editor fields in Givental-mirror
+You've used 20 entries,
             2543 wiz_defined-function locations,
-            694 strings with 6812 characters,
-and the built_in function-call counts, 7243 in all, are:
-= -- 754
-> -- 252
-< -- 13
-+ -- 78
-- -- 76
-* -- 538
-:= -- 1170
-add.period$ -- 58
-call.type$ -- 19
-change.case$ -- 104
-chr.to.int$ -- 17
-cite$ -- 20
-duplicate$ -- 289
-empty$ -- 572
-format.name$ -- 106
-if$ -- 1470
+            703 strings with 7080 characters,
+and the built_in function-call counts, 7710 in all, are:
+= -- 802
+> -- 260
+< -- 15
++ -- 81
+- -- 78
+* -- 566
+:= -- 1233
+add.period$ -- 61
+call.type$ -- 20
+change.case$ -- 108
+chr.to.int$ -- 18
+cite$ -- 22
+duplicate$ -- 315
+empty$ -- 613
+format.name$ -- 110
+if$ -- 1576
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 20
-newline$ -- 98
-num.names$ -- 57
-pop$ -- 82
+missing$ -- 22
+newline$ -- 103
+num.names$ -- 60
+pop$ -- 91
 preamble$ -- 1
-purify$ -- 124
+purify$ -- 130
 quote$ -- 0
-skip$ -- 227
+skip$ -- 248
 stack$ -- 0
-substring$ -- 546
-swap$ -- 30
-text.length$ -- 13
-text.prefix$ -- 11
+substring$ -- 586
+swap$ -- 41
+text.length$ -- 15
+text.prefix$ -- 12
 top$ -- 0
-type$ -- 144
-warning$ -- 1
-while$ -- 79
-width$ -- 23
-write$ -- 248
+type$ -- 148
+warning$ -- 2
+while$ -- 84
+width$ -- 24
+write$ -- 262
 (There was 1 error message)

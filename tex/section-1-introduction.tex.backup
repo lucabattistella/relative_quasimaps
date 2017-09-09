@@ -26,7 +26,7 @@ The plan of the paper is as follows. In \S\S \ref{Subsection stable quasimaps}-\
 \begin{equation*} \Q{g}{\alpha}{X|Y}{\beta} \end{equation*}
 where $X$ is a smooth toric variety and $Y$ is a smooth hypersurface. We \emph{do not} require that $Y$ is toric.
 
-In \S \ref{Section recursion for PN} we examine the special case of $H \subseteq \PP^N$. We find that, although the moduli space is not in general smooth, it is irreducible of the expected dimension (in fact, more than this: it is the closure of the so-called ``nice locus'' consisting of maps from a smooth curve which do not land inside the hypersurface). Thus it has an actual fundamental class which we can use to define relative quasimap invariants.
+In \S \ref{Section recursion for PN} we examine the special case of $H \subseteq \PP^N$. We find that, although the moduli space is not in general smooth, it is irreducible of the expected dimension (in fact, more than this: it is the closure of the so-called ``nice locus'' consisting of maps from a smooth curve which do not land inside the hypersurface). Thus it admits a fundamental class which we can use to define relative quasimap invariants.
 
 Also for $\PP^N$ there exists a comparison morphism from the moduli space of stable maps to the moduli space of quasimaps, which is birational. We use this morphism to push down Gathmann's recursion formula for relative stable maps to obtain a recursion formula for relative stable quasimaps. The stronger stability condition for quasimaps significantly simplifies the correction terms which appear.
 
@@ -38,14 +38,12 @@ We also include several appendices, collecting together results which are presum
 
 Appendix \S \ref{Section comparison morphism} discusses the comparison morphism from maps to quasimaps (used in the proof of the recursion relation in \S \ref{Section recursion for PN}).
 
-Appendix \S \ref{Section quasimap theory} contains foundational lemmas of quasimap theory, including:
+Appendix \S \ref{Section quasimap theory} contains foundational lemmas of quasimap theory, including; \marginpar{Beef this up}
 \begin{enumerate}
-\item functoriality of quasimap spaces: for $f\colon Y\to X$ a toric morphism (that does not contract effective curve classes) we describe the induced map $\overline{\mathcal{Q}}(f)\colon\Q{g}{n}{Y}{\beta}\to\Q{g}{n}{X}{f_*\beta}$ (in standard stable maps theory, this is just composing a stable map with $f$, on the other hand in quasimap theory one must be slightly more ingenious to cook up line bundles and sections thereof, compatible with the interpretation as composition in the case that the quasimap has no base-points; this is based on the description of the functor of a smooth toric variety and its homogeneous coordinate ring by D.A. Cox \cite{CoxFunctor}\cite{CoxRing}). Furthermore, we discuss when $\overline{\mathcal{Q}}(f)$ admits a compatible perfect obstruction theory.
-\item The splitting axiom: this compares two natural virtual classes on boundary strata (i.e. loci where the underlying curve is reducible of a prescribed type).
-\item Comparison with the GIT construction \cite{CFKM} in the case that $Y$ is a (not necessarily toric) very ample hypersurface in a toric variety $X$.
+\item functoriality of quasimap spaces: for $f$  and the splitting axiom
 \end{enumerate}
 
-Finally Appendix \ref{appendix:intersection} discusses the (\emph{diagonal}) pull-back along a morphism whose target is unobstructed (used in \cite{Ga}) and verifies that it agrees with the virtual pull-back of \cite{Manolache-Pull} (when both are defined) and that it satisfies expected compatibility properties.
+Finally Appendix [REF] discusses the virtual pull-back along a morphism whose target is unobstructed (used in \cite{Ga}) and verifies that it agrees with the virtual pull-back of \cite{Manolache-Pull} (when both are defined) and that it commutes with Gysin maps and virtual pull-backs.
 
 
 \begin{acknowledgements} The authors wish to thank Tom Coates, Cristina Manolache and Andrea Petracci for many helpful discussions. L.B. is supported by [REF] and N.N. is supported by [REF]
