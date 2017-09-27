@@ -1,25 +1,33 @@
 \section{Introduction}
-The results of this paper arise from a fusion of two theories: stable quasimaps and relative stable maps. In this introductory section we briefly summarise these, providing the context for our work.
+In this paper we construct moduli spaces of relative quasimaps as substacks of moduli spaces of (absolute) quasimaps. This provides a common generalisation of two theories: stable quasimaps on the one hand, and relative stable maps (in the sense of A. Gathmann) on the other. In this introductory section we briefly summarise these, providing the context for our work.
 
 \subsection{Stable quasimaps}
 The moduli space of \ilemph{stable toric quasimaps}
-\begin{equation*} \Q{g}{n}{X}{\beta} \end{equation*}
-was constructed by Ciocan-Fontanine and Kim \cite{CF-K} as an alternative compactification of the moduli space of smooth curves in a toric variety. It is a Deligne--Mumford stack of finite type, and is proper if $X$ is proper. Moreover, when $X$ is smooth (and in fact more generally: see \cite[\S 4.5]{CFKM}) it admits a perfect obstruction theory and hence a virtual fundamental class, which one can use to define curve-counting invariants for $X$, called \ilemph{quasimap invariants}.
+\begin{equation*}\Q{g}{n}{X}{\beta}\end{equation*}
+was constructed by I. Ciocan-Fontanine and B. Kim \cite{CF-K} as a compactification of the moduli space of smooth curves in a smooth and complete toric variety $X$. It is a proper Deligne--Mumford stack of finite type, and admits a virtual fundamental class, which is used to define curve-counting invariants for $X$, called \ilemph{quasimap invariants}.
 
-This theory agrees with the theory of stable quotients \cite{MOP} when both are defined, namely when $X$ is a projective space.  There is a common generalisation given by the theory of stable quasimaps to GIT quotients \cite{CFKM}. However for simplicity we will work mostly in the toric setting (though this restriction is probably not essential for our arguments). Thus when we say ``quasimap'' we are implicitly talking about toric quasimaps.
+This theory agrees with that of stable quotients \cite{MOP} when both are defined, namely when $X$ is a projective space.  There is a common generalisation given by the theory of stable quasimaps to GIT quotients \cite{CFKM}. For simplicity, however, we will work mostly in the toric setting (though this restriction is probably not essential for our arguments). Thus when we say ``quasimap'' we are implicitly talking about a toric quasimap.
 
-The quasimap invariants are expected to coincide with the Gromov--Witten invariants when $X$ is a toric Fano variety \cite{CM}; this has been proven for $X=\PP^N$ \cite{MOP} \cite[\S 5.4]{Manolache-Push}, and more generally the case of a very Fano complete intersection in projective space can be obtained by combining the work of Givental on the mirror theorem \cite[Theorem 0.1]{Givental-mirror} and the work of Ciocan-Fontanine and Kim on wall-crossing for $\epsilon$-stable quasimaps \cite[Conjecture 7.2.10]{CF-K}\cite[\S 5.5 and Conjecture 6.3.1]{CF-K-wallcrossing}.
+[GIVENTAL, MUSTATA+MUSTATA, MORISSON-PLESSER]
 
-In general, however, the invariants differ, the difference being encoded by certain wall-crossing formulas \cite{CF-K-wallcrossing}. The motivation for this comes from mirror symmetry: the idea is that the quasimap invariants of $X$ should correspond to the $B$-side theory of $X$ (this is in contrast to the Gromov--Witten invariants, which live on the $A$-side); see \cite[\S 7]{CF-K}. \marginpar{Ask Tom or Richard}
+The quasimap invariants are expected to coincide with the Gromov--Witten invariants when $X$ is a toric Fano variety \cite{CM}; this has been proven for $X=\PP^N$ \cite[Theorem 3]{MOP} \cite[\S 5.4]{Manolache-Push}. More generally, the case of a projective complete intersection of Fano index at least $2$ can be obtained by combining the work of A. Givental on the mirror theorem \cite[Theorem 0.1]{Givental-mirror} and the work of I. Ciocan-Fontanine and B. Kim on wall-crossing for $\epsilon$-stable quasimaps \cite[Conjecture 7.2.10]{CF-K}\  \cite[\S 5.5 and Conjecture 6.3.1]{CF-K-wallcrossing}.
 
-An important fact for understanding the difference between these two theories is the observation that $\Q{g}{n+1}{X}{\beta}$ is \emph{not} the universal curve over $\Q{g}{n}{X}{\beta}$; in fact there is not even a morphism between these spaces in general. Instead, the universal curve $\mathcal C_{g,n}^\mathcal{Q}$ is a substack of $\MM_{g,n+1}(X,\beta)$ and comparing the geometry of $\om{Q}_{g,n+1}$ and $\mathcal{C}^{\mathcal{Q}}_{g,n}$ results in \emph{string transformations} that determine the difference between generating functions for $\epsilon_1$- and $\epsilon_2$-stable quasimaps \cite[\S 6 and 7]{CF-K-wallcrossing}.
+In general, however, the invariants differ, the difference being encoded by certain wall-crossing formulas \cite{CF-K-wallcrossing}. The motivation for this comes from mirror symmetry: the idea is that the quasimap invariants of $X$ should correspond to the $B$-side theory of $X^\vee$ (this is in contrast to the Gromov--Witten invariants, which live on the $A$-side); see \cite[\S 7]{CF-K}.
+
+%An important fact for understanding the difference between these two theories is the observation that $\Q{g}{n+1}{X}{\beta}$ is \emph{not} the universal curve over $\Q{g}{n}{X}{\beta}$; in fact there is not even a morphism between these spaces in general. Instead, the universal curve $\mathcal C_{g,n}^\mathcal{Q}$ is a substack of $\MM_{g,n+1}(X,\beta)$ and comparing the geometry of $\om{Q}_{g,n+1}$ and $\mathcal{C}^{\mathcal{Q}}_{g,n}$ results in \emph{string transformations} that determine the difference between generating functions for $\epsilon_1$- and $\epsilon_2$-stable quasimaps \cite[\S 6 and 7]{CF-K-wallcrossing}.
 
 \subsection{Relative stable maps}
-In \cite{Ga} Gathmann consructs a moduli space of relative stable maps to the pair $(X,Y)$ as a closed substack of the moduli space of (absolute) stable maps to $X$:
+In \cite{Ga} A. Gathmann constructs a moduli space of relative stable maps to the pair $(X,Y)$ as a closed substack of the moduli space of (absolute) stable maps to $X$
 \begin{equation*} \M{0}{\alpha}{X|Y}{\beta} \hookrightarrow \M{0}{n}{X}{\beta} \end{equation*}
+parametrising stable maps with prescribed tangencies to $Y$ at the marked points.
+
 Unfortunately this space does not admit a natural perfect obstruction theory. Nevertheless in the case where $Y$ is very ample it is still possible to construct a virtual fundamental class by intersection-theoretic methods, and hence one can define relative Gromov--Witten invariants.
 
-Gathmann then proves a recursion formula which in particular allows one to recover the relative Gromov--Witten invariants from the absolute ones. This is  applied in \cite{Ga-MF} to obtain a quantum Lefschetz theorem for $Y \subseteq X$.
+There is a recursion formula for these virtual classes which allows one to express any relative invariant of $(X,Y)$ in terms of absolute invariants of $Y$ and relative invariants with lower contact multiplicities. 
+
+%In particular, when the required multiplicity is higher than is possible for degree reasons, one recovers absolute invariants of $Y$.
+
+By succesively increasing the contact multiplicites from zero to the maximum value possible, Gathmann obtains an algorithm expressing the absolute invariants of $Y$ in terms of those of $X$. This is explained in \cite[Corollary 5.7]{Ga}. In \cite{Ga-MF} this result is applied to obtain an alternative proof of the mirror theorem for projective hypersurfaces \cite{Giv} \cite{LLY}.
 
 \subsection{Relative stable quasimaps}
 In this paper we combine the two stories above, constructing moduli spaces of relative stable quasimaps in genus $0$. We prove a recursion relation similar to Gathmann's formula, and use this to derive a quantum Lefschetz formula for quasimap invariants.
@@ -56,7 +64,7 @@ Finally Appendix \ref{appendix:intersection} discusses the (\emph{diagonal}) pul
 \end{acknowledgements}
 
 \subsection{Table of notation} We will use the following notation, most of which is introduced in the main body of the paper.
-\begin{longtabu}{r c | c p{0.8\linewidth}}
+\begin{longtabu}{r c c p{0.8\linewidth}}
 $X$ & & & a smooth projective toric variety \\
 $Y$ & & & a very ample hypersurface in $X$ \\
 $\Sigma$ & & & the fan of $X$ \\

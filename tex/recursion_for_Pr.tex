@@ -39,16 +39,16 @@ $\Q{0}{\alpha}{\PP^N|H}{d}\subseteq\overline{\mathcal Q_{0,\alpha}(\PP^N|H,d)}$:
 
 We induct on the number of components containing at least one base-point. Suppose this number is non-zero (otherwise there is nothing to prove) and pick such a component $C_0$, with base-points $y_1 ,\ldots, y_k$. Recall that this means that $u_i(y_j)=0$ for all $i$ and $j$. We will deform the section $u_N|_{C_0}$ to a new section $u_N^\prime|_{C_0}$ in such a way that $u_N^\prime|_{C_0}(y_j) \neq 0$ and in such a way that we do not introduce any new basepoints. Notice that since the relative condition only depends on $u_0$, the resulting deformed quasimap will still be a relative quasimap.
 
-Now, by nondegeneracy and the fact that there exists a basepoint, we must have $\deg(L|_{C_0})>0$, and since $C_0 \cong \PP^1$ we can find a section $w_0$ of $L|_{C_0} \cong \OO_{\PP^1}(d_0)$ not vanishing at any of the base-points $p_i$.
+Now, by nondegeneracy and the fact that there exists a basepoint, we must have $\deg(L|_{C_0})>0$, and since $C_0 \cong \PP^1$ we can find a section $w_0$ of $L|_{C_0} \cong \OO_{\PP^1}(d_0)$ not vanishing at any of the base-points $y_i$.
 
 We then set
 \begin{equation*} u_N^\prime|_{C_0} := u_N|_{C_0} + \epsilon w_0 \end{equation*}
-and $u_i^\prime|_{C_0} = u_i|_{C_0}$ for all other $i$. Notice that $u_N^\prime|_{C_0}(y_j) \neq 0$ for all $j$ as claimed. It is also clear that we do not introduce any new basepoints, since $u_N^\prime|_{C_0}(y) = 0$ implies $u_N|_{C_0}(y)=0$ (put differently: being a basepoint is a close condition).
+and $u_i^\prime|_{C_0} = u_i|_{C_0}$ for all other $i$. Notice that $u_N^\prime|_{C_0}(y_j) \neq 0$ for all $j$ as claimed. It is also clear that we do not introduce any new basepoints, since $u_N^\prime|_{C_0}(y) = 0$ implies $u_N|_{C_0}(y)=0$ (put differently: being a basepoint is a closed condition).
 
 It remains to extend the section $u_N^\prime|_{C_0}$ to a section $u_N^\prime$ on the whole curve. Let $C_1, \ldots, C_r$ be the components of $C$ adjacent to $C_0$ and let $q_i = C_0 \cap C_i$. We need to modify the sections $u_N|_{C_i}$ in such a way that $u_N^\prime|_{C_i}(q_i) = u_N^\prime|_{C_0}(q_i)$.
 
-By nondegeracy, we can choose a section $w_i$ of $L|_{C_i}$ such that $w(q_i) \neq 0$. Then set:
-\begin{equation*} {u_N^\prime}_{C_i} := {u_N}|_{C_i} + \epsilon \left( \frac{w_0(q_i)}{w_i(q_i)} \right) \cdot w_i \end{equation*}
+By nondegeracy, we can choose a section $w_i$ of $L|_{C_i}$ such that $w_i(q_i) \neq 0$. Then set:
+\begin{equation*} {u_N^\prime}|_{C_i} := {u_N}|_{C_i} + \epsilon \left( \frac{w_0(q_i)}{w_i(q_i)} \right) \cdot w_i \end{equation*}
 Then indeed we have:
 \begin{equation*} {u_N^\prime}|_{C_i}(q_i) = u_N(q_i) + \epsilon \left( \frac{w_0(q_i)}{w_i(q_i)} \right) \cdot w_i(q_i) = u_N(q_i) + \epsilon w_0(q_i) = {u_N^\prime}|_{C_0}(q_i) \end{equation*}
 We can continue this process, replacing $C_0$ by $C_i$; since the genus of the curve is zero there are no cycles in the dual intersection graph, and so we will never come to the same curve twice. In this way we obtain a new quasimap
