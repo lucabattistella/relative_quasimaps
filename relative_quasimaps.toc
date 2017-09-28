@@ -18,9 +18,9 @@
 \contentsline {section}{\tocsection {Appendix}{A}{The comparison morphism}}{27}
 \contentsline {section}{\tocsection {Appendix}{B}{Notes on quasimaps}}{34}
 \contentsline {subsection}{\tocsubsection {}{B.1}{Functoriality}}{34}
-\contentsline {subsection}{\tocsubsection {}{B.2}{Relative obstruction theories for $\mathcal Q(Y)\rightarrow \mathcal Q(X)$}}{39}
-\contentsline {subsection}{\tocsubsection {}{B.3}{Comparison with the GIT construction}}{42}
-\contentsline {subsection}{\tocsubsection {}{B.4}{Splitting principle}}{43}
-\contentsline {subsection}{\tocsubsection {}{B.5}{The quasimap string equation for $\mathbb P^r$}}{46}
-\contentsline {section}{\tocsection {Appendix}{C}{Some intersection-theoretic lemmas}}{48}
+\contentsline {subsection}{\tocsubsection {}{B.2}{Relative obstruction theories for $\mathcal Q(Y)\rightarrow \mathcal Q(X)$}}{40}
+\contentsline {subsection}{\tocsubsection {}{B.3}{Comparison with the GIT construction}}{43}
+\contentsline {subsection}{\tocsubsection {}{B.4}{Splitting principle}}{44}
+\contentsline {subsection}{\tocsubsection {}{B.5}{The quasimap string equation for $\mathbb P^r$}}{47}
+\contentsline {section}{\tocsection {Appendix}{C}{Some intersection-theoretic lemmas}}{49}
 \contentsline {section}{\tocsection {Appendix}{}{References}}{50}
