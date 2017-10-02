@@ -2,16 +2,16 @@
 
 \subsection{Review of absolute stable quasimaps} \label{Subsection stable quasimaps}
 We briefly recall the definition and basic properties of the moduli space of toric quasimaps; see \cite{CF-K} for more details.
-\begin{definition}[{\cite[Definition 3.1.1]{CF-K}}] Let $X= X_{\Sigma}$ be a smooth and projective toric variety with fan $\Sigma \subseteq N_{\QQ}$ and let $\OO_{X_\Sigma}(1)$ be a fixed polarisation, which we can write (non-uniquely) in terms of the $T$-invariant divisors as:
+\begin{definition}[{\cite[Definition 3.1.1]{CF-K}}] Let $X= X_{\Sigma}$ be a smooth and projective toric variety with fan $\Sigma \subseteq N_{\QQ}$, let $M = N^\vee = \Hom(N,\Z)$ and let $\OO_{X_\Sigma}(1)$ be a fixed polarisation, which we can write (non-uniquely) in terms of the $T$-invariant divisors as:
 \begin{equation*} \OO_{X_\Sigma}(1) = \otimes_{\rho \in \Sigma(1)} \OO_{X_\Sigma}(D_\rho)^{\otimes \alpha_\rho} \end{equation*}
-for some $\alpha_\rho \in \Z$. We fix the following numerical invariants: a genus $g \geq 0$, number of marked points $n \geq 0$ and curve class $\beta \in \HH_2^+(X)$. Then a \ilemph{stable (toric) quasimap} is given by the data
+for some $\alpha_\rho \in \Z$. We fix the following numerical invariants: a genus $g \geq 0$, number of marked points $n \geq 0$ and effective curve class $\beta \in \HH_2^+(X)$. Then a \ilemph{stable (toric) quasimap} is given by the data
 \begin{equation*} ((C,x_1,\ldots,x_n), (L_\rho,u_\rho)_{\rho \in \Sigma(1)}, (\varphi_m)_{m \in M}) \end{equation*}
 where:
 \begin{enumerate}
 \item $(C,x_1,\ldots,x_n)$ is a prestable curve of genus $g$ with $n$ marked points;
 \item the $L_\rho$ are line bundles on $C$ of degree $d_\rho = D_\rho \cdot \beta$;
 \item the $u_\rho$ are global sections of $L_\rho$;
-\item $\varphi_m \colon \otimes_\rho L_\rho^{\otimes \langle \rho, m \rangle} \to \OO_C$ are isomorphisms, such that $\varphi_{m} \otimes \varphi_{m^\prime} = \varphi_{m + m^\prime}$ for all $m, m^\prime \in M$.
+\item $\varphi_m \colon \bigotimes_{\rho \in \Sigma(1)} L_\rho^{\otimes \langle \rho, m \rangle} \to \OO_C$ are isomorphisms, such that $\varphi_{m} \otimes \varphi_{m^\prime} = \varphi_{m + m^\prime}$ for all $m, m^\prime \in M$.
 \end{enumerate}
 These are required to satisfy the following two conditions:
 \begin{enumerate}
@@ -21,39 +21,30 @@ These are required to satisfy the following two conditions:
 for every rational $\epsilon > 0$.
 \end{enumerate}
 \end{definition}
+It can be shown that this definition does not depend on the choice of polarisation.
 
-\begin{remark} This definition is motivated by the $\Sigma$-collections of D. Cox \cite{CoxFunctor}; see also Appendix \ref{Functoriality of Quasimap Spaces Section}. The point is that a quasimap defines a rational morphism $C \dashrightarrow X$ with base locus equal to $B$. (This can be expressed in a more generalisable manner as follows: a quasimap is a map to the stack quotient $[\mathbb{A}^{\Sigma(1)} / (\Gm)^r]$ such that $B$ is the preimage of the unstable locus.)
+\begin{remark} This definition is motivated by D. Cox's description of the functor of points of a toric variety in terms of $\Sigma$-collections \cite{CoxFunctor}; see also Appendix \ref{Functoriality of Quasimap Spaces Section}. A quasimap defines a rational map $C \dashrightarrow X$ with base locus equal to $B$. (This can be expressed in a more generalisable manner as follows: a quasimap is a map to the stack quotient $[\mathbb{A}^{\Sigma(1)} / (\Gm)^r]$ such that $B$ is the preimage of the unstable locus.)
 
-In particular a quasimap without any basepoints defines a morphism $C \to X$. Thus the basepoints appear in the (virtual) boundary of the moduli space, in much the same way as the locus of stable maps with rational tails appears in the boundary of the moduli space of stable maps (this is something more than just a vague analogy; these loci correspond to each other under the comparison morphism when $X\simeq\PP^N$; see Appendix \ref{Section comparison morphism}). \end{remark}
-
-\begin{remark}
- There is a more general notion of $\epsilon$-stable quasimap \cite[\S 7.1]{CFKM}: essentially $\epsilon$ is a \emph{fixed} rational number in the above definition (and an extra condition is required, bounding the order of vanishing at the base-points); this allows only some rational tails (with degree high enough with respect to $\epsilon$). Since the degree is an integer-valued function and by boundedness, it turns out that there are only finitely many critical values of $\epsilon$ such that crossing them actually changes the resulting moduli space $\Qe{g}{n}{X}{\beta}$; also, the limiting values $\epsilon=+\infty$ and $\epsilon=0^+$ recover the moduli spaces of stable maps and (ordinary) quasimaps respectively. So the moduli spaces $\Qe{g}{n}{X}{\beta}$ are meant to interpolate between the two, and they have proven particularly successful as a tool to compare the resulting invariants \cite{CF-K-wallcrossing}.
-\end{remark}
-
-\begin{remark}
- Here is another variant which is going to play a role in later sections: that of \emph{parametrised} quasimaps \cite[\S 7]{CF-K}. The idea is that a parametrised quasimap comes with a preferred rational component (by means of introducing as extra datum an isomorphism with $\PP^1$) and the stability condition is imposed \emph{on all but the preferred component}. This mimics the construction of graph spaces in Gromov-Witten theory and induces a $\Gm$-action on $\QG{g}{n}{X}{\beta}$ (by rotating the preferred component). The fixed loci and equivariant normal bundle are well-understood (at least in the toric setting).
- 
- Note that the condition $2g-2+n\geq 0$ is not required anymore, due to the modified stability. In particular, it makes sense (and turns out to be very useful) to consider unmarked parametrised quasimaps $\QG{0}{0}{X}{\beta}$. In this case the source curve needs to be irreducible. For example, $\QG{0}{0}{\PP^r}{d}\simeq\PP^N$ with $N=(r+1)(d+1)-1$: in fact, the curve and line bundle are determined (to be $(\PP^1,\mathcal O_{\PP^1}(d))$) and we are left with choosing $r+1$ (not all trivial) sections of $\mathcal O_{\PP^1}(d)$ up to scalar (automorphisms of $\mathcal O_{\PP^1}(d)$). See e.g. \cite{Bertram} for an early appearance of such spaces.
-\end{remark}
-
+In particular a quasimap without any basepoints defines a morphism $C \to X$. Thus the basepoints appear in the (virtual) boundary of the moduli space, in much the same way as the locus of stable maps with rational tails appears in the boundary of the moduli space of stable maps. This is something more than just a vague analogy; these loci correspond to each other under the comparison morphism when $X\simeq\PP^N$; see Appendix \ref{Section comparison morphism}. \end{remark}
 
 More generally, we can define the notion of a family of quasimaps over a base scheme $S$, and what it means for two such families to be isomorphic; we thus obtain a moduli space
 \begin{equation*} \Q{g}{n}{X}{\beta} \end{equation*}
-of stable (toric) quasimaps to $X$, which is a proper Deligne--Mumford stack of finite type. It can be shown that this definition does not depend on the choice of polarisation.
+of stable (toric) quasimaps to $X$, which is a proper Deligne--Mumford stack of finite type.
 
 
 As with the case of stable maps, there is a combinatorial characterisation of stability which is much easier to check in practice; a prestable quasimap is stable if and only if the following conditions hold:
 \begin{enumerate}
 \item the line bundle $L$ defined above must have strictly positive degree on any rational component with fewer than three special points, and on any elliptic component with no special points;
-\item $C$ cannot have any rational components with fewer than two special points.
+\item $C$ cannot have any rational components with fewer than two special points (called \emph{rational tails}).
 \end{enumerate}
 Condition (1) is analogous to the ordinary stability condition for stable maps. Condition (2) is new, however, and gives quasimaps a distinctly different flavour to stable maps; we shall sometimes refer to it as the \ilemph{strong stability condition}. 
 
-\begin{remark}
- Notice that quasimap spaces are ``smaller'', so if a comparison morphism exists it should be from stable maps to quasimaps; in fact a morphism between the moduli spaces comes with a morphism of the universal curves, and this ought to be a contraction of the rational tails (the other way round, one could sprout a rational tail from any base points, and maybe even the degree of the line bundles would be determined, but a fundamental indeterminacy remains as to what the sections should be, i.e. where does the rational tail map).
-\end{remark}
+%\begin{remark}
+% Notice that quasimap spaces are ``smaller'', so if a comparison morphism exists it should be from stable maps to quasimaps; in fact a morphism between the moduli spaces comes with a morphism of the universal curves, and this ought to be a contraction of the rational tails (the other way round, one could sprout a rational tail from any base points, and maybe even the degree of the line bundles would be determined, but a fundamental indeterminacy remains as to what the sections should be, i.e. where does the rational tail map).
+%\end{remark}
 
-\begin{remark} An important fact for understanding the difference between these two theories is the observation that $\Q{g}{n+1}{X}{\beta}$ is \emph{not} the universal curve over $\Q{g}{n}{X}{\beta}$; in fact there is not even a morphism between these spaces in general. Instead, the universal curve $\mathcal C_{g,n}^\mathcal{Q}$ is a substack of $\MM_{g,n+1}(X,\beta)$ and comparing the geometry of $\om{Q}_{g,n+1}$ and $\mathcal{C}^{\mathcal{Q}}_{g,n}$ results in \emph{string transformations} that determine the difference between generating functions for $\epsilon_1$- and $\epsilon_2$-stable quasimaps \cite[\S 6 and 7]{CF-K-wallcrossing}. \end{remark}
+\begin{remark} Unlike in Gromov--Witten theory, $\Q{g}{n+1}{X}{\beta}$ is \emph{not} the universal curve over $\Q{g}{n}{X}{\beta}$ since markings cannot be basepoints. In fact there is not even a morphism between these spaces in general.\end{remark}
+%Instead, the universal curve $\mathcal C_{g,n}^\mathcal{Q}$ is a substack of $\MM_{g,n+1}(X,\beta)$ and comparing the geometry of $\om{Q}_{g,n+1}$ and $\mathcal{C}^{\mathcal{Q}}_{g,n}$ results in \emph{string transformations} that determine the difference between generating functions for $\epsilon_1$- and $\epsilon_2$-stable quasimaps \cite[\S 6 and 7]{CF-K-wallcrossing}.
 
 The moduli space $\Q{g}{n}{X}{\beta}$ admits a perfect obstruction theory relative to the moduli space $\MM_{g,n}$ of source curves, and hence one can construct a virtual class
 \begin{equation*} \virt{\Q{g}{n}{X}{\beta}} \in \Achow_{\operatorname{vdim}\Q{g}{n}{X}{\beta}} \left( \Q{g}{n}{X}{\beta} \right) \end{equation*}
@@ -65,9 +56,29 @@ and there are $\psi$-classes defined in the usual way by pulling back the relati
 \begin{equation*} \psi_i = \operatorname{c}_1(x_i^* \omega_{\mathcal{C}/\om{Q}}) \end{equation*}
 where $\mathcal{C} \to \om{Q} = \Q{g}{n}{X}{\beta}$ is the universal curve and $x_i : \om{Q} \to \mathcal{C}$ is the section defining the $i$th marked point. Putting all these pieces together, we can define \ilemph{quasimap invariants}:
 \begin{equation*} \langle \gamma_1 \psi^{a_1} , \ldots, \gamma_n \psi^{a_n} \rangle_{g,n,\beta}^X = \int_{\virt{\Q{g}{n}{X}{\beta}}} \prod_{i=1}^n \ev_i^* (\gamma_i) \psi_i^{a_i} \end{equation*}
-(We use the same correlator notation as in Gromov--Witten theory; since we will never talk about Gromov--Witten invariants this should not cause any confusion.)
+We use the same correlator notation as in Gromov--Witten theory; this should not cause any confusion.
 
-[EXAMPLES.]
+[EXAMPLE: $\Q{0}{2}{\PP^2}{1}$ and $\M{0}{2}{\PP^2}{1}$]
+
+\begin{remark}
+ There is a more general notion of \ilemph{$\epsilon$-stable quasimap} \cite[\S 7.1]{CFKM}. The stability condition, namely that the line bundle
+\begin{equation*} \omega_C(x_1 + \ldots + x_n)\otimes L^{\otimes \epsilon} \end{equation*} 
+is ample, is required to hold for a single fixed $\epsilon \in \QQ_{>0}$ (instead of for arbitrary $\epsilon$, as was the case for stable quasimaps).
+
+This has the effect of allowing some rational tails to appear, as long as their degree is high enough with respect to $\epsilon$. In order to keep the moduli space separated, one has to bound the multiplicity of the basepoints that can occur.
+
+By boundedness and the fact that the degree is an integer-valued function, it follows that there exist finitely many critical values of $\epsilon$ which divide $\QQ_{>0}$ into chambers inside which the moduli spaces $\Qe{g}{n}{X}{\beta}$ do not change.
+
+Furthermore, the limiting values $\epsilon=+\infty$ and $\epsilon=0^+$ recover the moduli spaces of stable maps and (ordinary) quasimaps respectively. As such the moduli spaces $\Qe{g}{n}{X}{\beta}$ are meant to interpolate between the two, and they have proven particularly successful as a tool to compare the resulting invariants \cite{CF-K-wallcrossing}.
+\end{remark}
+
+\begin{remark}
+There is another variant which is going to play a role in later sections: that of \emph{parametrised quasimaps} \cite[\S 7]{CF-K}. The idea is that a parametrised quasimap comes with a preferred rational component (by introducing the extra data of an isomorphism with $\PP^1$) and the stability condition is imposed \emph{on all but the preferred component}. This mimics the construction of graph spaces in Gromov-Witten theory and induces a $\Gm$-action on $\QG{g}{n}{X}{\beta}$ by rotating the preferred component. The fixed loci and equivariant normal bundle are well-understood, at least in the toric setting \cite[\S 7]{CF-K}.
+ 
+Note that we do not require $2g-2+n\geq 0$ anymore, due to the modified stability condition. In particular it makes sense, and turns out to be very useful, to consider unmarked parametrised quasimaps $\QG{0}{0}{X}{\beta}$. In this case the source curve needs to be irreducible. 
+\end{remark}
+
+\begin{example} $\QG{0}{0}{\PP^r}{d} = \PP^N$ with $N=(r+1)(d+1)-1$. Indeed, the curve and line bundle must be $(\PP^1,\mathcal O_{\PP^1}(d))$ and we are left with choosing $r+1$ sections of $\mathcal O_{\PP^1}(d)$ (not all zero) up to automorphisms of $\mathcal O_{\PP^1}(d)$, i.e. up to scaling. See e.g. \cite{Bertram} for an early appearance of such spaces.\end{example}
 
 \subsection{Review of relative stable maps} \label{Subsection relative stable maps} Given a smooth projective variety $X$ and a smooth divisor $Y$, the moduli space of relative stable maps parametrises stable maps to $X$ with specified tangencies to $Y$ at the marked points; see \cite{Ga} for details.
 
