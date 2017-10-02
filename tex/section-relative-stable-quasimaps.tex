@@ -80,7 +80,9 @@ Note that we do not require $2g-2+n\geq 0$ anymore, due to the modified stabilit
 
 \begin{example} $\QG{0}{0}{\PP^r}{d} = \PP^N$ with $N=(r+1)(d+1)-1$. Indeed, the curve and line bundle must be $(\PP^1,\mathcal O_{\PP^1}(d))$ and we are left with choosing $r+1$ sections of $\mathcal O_{\PP^1}(d)$ (not all zero) up to automorphisms of $\mathcal O_{\PP^1}(d)$, i.e. up to scaling. See e.g. \cite{Bertram} for an early appearance of such spaces.\end{example}
 
-\subsection{Review of relative stable maps} \label{Subsection relative stable maps} Given a smooth projective variety $X$ and a smooth divisor $Y$, the moduli space of relative stable maps parametrises stable maps to $X$ with specified tangencies to $Y$ at the marked points; see \cite{Ga} for details.
+\subsection{Review of relative stable maps} \label{Subsection relative stable maps} Given a smooth projective variety $X$ and a smooth divisor $Y$, Gathmann's moduli space of relative stable maps parametrises stable maps to $X$ with specified tangencies to $Y$ at the marked points; see \cite{Ga} for details.
+
+\begin{remark} There are many more approaches to defining relative stable maps besides Gathmann's: the moduli space of maps to expanded degenerations of J. Li \cite{Lia} \cite{Lib}, the twisted stable maps of D. Abramovich and B. Fantechi \cite{AbramovichFantechi}, the logarithmic stable maps with expansions of B. Kim \cite{KimLog} and the logarithmic stable maps (without expansions) of M. Gross and B. Siebert \cite{GrossSiebertLog} \cite{GrossSiebertIntrinsic}, Q. Chen \cite{ChenLog} and D. Abramovich and Q. Chen \cite{AbramovichChenLog}. However, the invariants defined via these theories are all known to coincide \cite{AbramovichMarcusWiseComparison}, so the choice of which variant to work with mainly depends on one's intended application. \end{remark}
 
 \begin{definition}[{\cite[Definition 1.1]{Ga}}] Let $X$ be a smooth projective variety and $Y \subseteq X$ a smooth divisor. Fix a number $n \geq 0$ of marked points, a curve class $\beta \in \HH_2^+(X)$ and an $n$-tuple $\alpha = (\alpha_1, \ldots, \alpha_n)$ of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. Then the moduli space
 \begin{equation*} \M{0}{\alpha}{X|Y}{\beta} \end{equation*}
@@ -92,12 +94,16 @@ of relative stable maps to $(X,Y)$ is defined to be the locus in $\M{0}{n}{X}{\b
 This forms a closed substack of $\M{0}{n}{X}{\beta}$. Condition (1) is required in order for the class $\Sigma_i \alpha_i x_i$ to make sense in $\Achow_0(f^{-1}Y)$.
 \end{definition}
 
-\begin{remark} The definition above works in families; however there is a more combinatorial definition for individual maps which is more useful in practice (see \cite[Remark 1.4]{Ga}): a stable map $(C,x_1, \ldots, x_n,f)$ is a relative stable map if and only if, if $Z$ is a connected component of $f^{-1}(Y) \subseteq C$, then
+\begin{remark} When $\alpha = (0, \ldots, 0)$, condition (2) becomes $Y \cdot \beta \geq 0$, so $\M{0}{(0,\ldots,0)}{X|Y}{\beta} = \M{0}{n}{X}{\beta}$ as long as $Y$ is nef.\end{remark}
+
+\begin{remark} The definition given above works in families; however there is a more combinatorial definition for individual maps which is more useful in practice (see \cite[Remark 1.4]{Ga}): a stable map $(C,x_1, \ldots, x_n,f)$ is a relative stable map if and only if for each connected component $Z$ of $f^{-1}(Y) \subseteq C$:
 \begin{enumerate}
 \item if $Z$ is a point and is equal to a marked point $x_i$, then the multiplicity of $f$ to $Y$ at $x_i$ is greater than or equal to $\alpha_i$;
 \item if $Z$ is one-dimensional (hence a union of irreducible components of $C$) and if we let $C^{(i)}$ for $1 \leq i \leq r$ denote the irreducible components of $C$ adjacent to $Z$, and $m^{(i)}$ denote the multiplicity of $f|_{C^{(i)}}$ to $Y$ at the node $Z \cap C^{(i)}$, then we must have:
 \begin{equation} \label{Inequality relative stable maps} Y \cdot f_* [Z] + \sum_{i=1}^r m^{(i)} \geq \sum_{x_i \in Z} \alpha_i \end{equation}
 \end{enumerate} \end{remark}
+
+\begin{remark}In the second case above we call $Z$ an \ilemph{internal} component and the $C^{(i)}$ \ilemph{external} components.\end{remark}
 
 \begin{remark} In the case of maximal multiplicity $\Sigma_{i} \alpha_i = Y \cdot \beta$, all the inequalities in the above definition must actually be equalities. \end{remark}
 
@@ -105,16 +111,16 @@ In the case $X=\PP^N$, $Y=H$ one can show that $\M{0}{\alpha}{\PP^N|H}{d}$ is ir
 \begin{equation*} \vdim \M{0}{\alpha}{X|Y}{\beta} = \vdim{\M{0}{n}{X}{\beta}} - \sum_i \alpha_i \end{equation*}
 Hence it has a fundamental class from which one can define relative Gromov--Witten invariants.
 
-In general if $Y \subseteq X$ is very ample one can use the embedding $X \hookrightarrow \PP^N$ to obtain a cartesian diagram:
+More generally if $Y \subseteq X$ is very ample one can use the embedding $X \hookrightarrow \PP^N$ corresponding to $|\OO_X(Y)|$ to obtain a cartesian diagram:
 \bcd
 \M{0}{\alpha}{X|Y}{\beta} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \M{0}{\alpha}{\PP^N|H}{d} \ar[d] \\
 \M{0}{n}{X}{\beta} \ar[r,"\varphi"] & \M{0}{n}{\PP^N}{d}
 \ecd
-Then the fact that $\M{0}{n}{\PP^N}{d}$ is smooth allows us to define a virtual class on $\M{0}{\alpha}{X|Y}{\beta}$ by virtual (or diagonal) pull-back (see Appendix \ref{appendix:intersection} of the current paper):
+Then the fact that $\M{0}{n}{\PP^N}{d}$ is smooth allows us to define a virtual class on $\M{0}{\alpha}{X|Y}{\beta}$ by diagonal pull-back (see Appendix \ref{appendix:intersection} of the current paper):
 \begin{equation*} \virt{\M{0}{\alpha}{X|Y}{\beta}} = \varphi^! [\M{0}{\alpha}{\PP^N|H}{d}] \end{equation*}
 Thus one can define relative Gromov--Witten invariants. In \S\S 2-4 Gathmann proves a recursion relation inside the Chow group of $\M{0}{\alpha}{X|Y}{\beta}$
 \begin{equation*} (\alpha_k \psi_k + \ev_k^* Y) \virt{\M{0}{\alpha}{X|Y}{\beta}} = \virt{\M{0}{\alpha+e_k}{X|Y}{\beta}} + \virt{\mathcal{D}_{\alpha,k}(X,\beta)} \end{equation*}
-where $\mathcal{D}_{\alpha,k}(X,\beta)$ is an appropriate \ilemph{comb locus}. Repeated application of this result shows that the relative Gromov--Witten invariants of $(X,Y)$ and the Gromov--Witten invariants of $Y$ are completely determined by the Gromov--Witten invariants of $X$. This relation is then worked out explicitly in cases of particular interest in \cite{Ga-MF} to obtain a new proof of the mirror theorem.
+where $\mathcal{D}_{\alpha,k}(X,\beta)$ is an appropriate \ilemph{comb locus}. Repeated application of this result shows that both the relative Gromov--Witten invariants of $(X,Y)$ and the Gromov--Witten invariants of $Y$ are completely determined by the Gromov--Witten invariants of $X$ \cite[Corollary 5.7]{Ga}. This relation is then applied in \cite{Ga-MF} to obtain a new proof of the mirror theorem for projective hypersurfaces.
 
 \subsection{Definition of relative stable quasimaps} \label{Subsection relative stable quasimaps}
 
@@ -154,7 +160,5 @@ such that:
 \begin{equation} \label{Relative quasimap internal component inequality} \deg L_Y|_Z + \sum_{i=1}^r m^{(i)} \geq \sum_{x_i \in Z} \alpha_i \end{equation}
 \end{enumerate}
 \end{remark}
-
-\begin{remark}In the second case above we call $Z$ an \ilemph{internal} component and the $C^{(i)}$ \ilemph{external} components.\end{remark}
 
 As it stands we do not know much about this locus. In the following section we will examine the case $X=\PP^N$ and $Y=H$ a hyperplane in detail. We will then apply the results obtained there to deduce facts about the general case.
