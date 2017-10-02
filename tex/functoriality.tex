@@ -1,10 +1,21 @@
+In this appendix we collect several foundational results in quasimap theory, including:
+\begin{enumerate}
+\item \ilemph{Functoriality}: given a morphism $f\colon Y\to X$ which does not contract effective curve classes (e.g. an embedding) we describe the induced map:
+\begin{equation*} \overline{\mathcal{Q}}(f)\colon\Q{g}{n}{Y}{\beta}\to\Q{g}{n}{X}{f_*\beta} \end{equation*}
+We also discuss when $\overline{\mathcal{Q}}(f)$ admits a compatible perfect obstruction theory.
+\item \ilemph{Splitting axiom}: this gives an equality between two natural virtual classes on boundary strata (i.e. loci where the underlying curve is reducible of a prescribed type).
+\item \ilemph{Comparison with the GIT construction} \cite{CFKM} in the case where $Y$ is a (not necessarily toric) very ample hypersurface in a toric variety $X$.
+\end{enumerate}
+
 \subsection{Functoriality} \label{Functoriality of Quasimap Spaces Section}
 
-In the case of stable maps, a morphism $f : X \to Y$ induces a morphism between the corresponding moduli spaces
-\begin{equation*}\M{g}{n}{X}{\beta} \rightarrow \M{g}{n}{Y}{f_* \beta} \end{equation*}
-given by composition with $f$ (in general this induced morphism may involve stabilisation of the source curve). Because of this, the construction of the moduli space of stable maps is said to be \ildef{functorial}.
+In the case of stable maps, a morphism $f : Y \to X$ induces a morphism between the corresponding moduli spaces
+\begin{equation*}\om{M}(f) : \M{g}{n}{Y}{\beta} \rightarrow \M{g}{n}{X}{f_* \beta} \end{equation*}
+given by composition with $f$ (in general this induced morphism may involve stabilisation of the source curve). Because of this, the construction of the moduli space of stable maps is said to be \ilemph{functorial}.
 
-It is natural to ask whether the same holds for the moduli space of quasimaps. Since here the objects of the moduli space are not maps, we cannot simply compose with $f$, and indeed it is not immediately clear how we should proceed. In \cite[Section 3.1]{CF-K-wallcrossing} a definition is given when $f$ is an embedding into a projective space; however, this uses the more general language of GIT quotients which we seek to avoid here. As such, we will provide an alternative (but entirely equivalent) construction in the setting of toric varieties, which also relaxes the conditions on the map $f$ and the target $Y$.
+It is natural to ask whether the same holds for the moduli space of quasimaps, i.e. whether we have a morphism:
+\begin{equation*} \om{Q}(f) : \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_* \beta} \end{equation*}
+Since here the objects of the moduli space are not maps, we cannot simply compose with $f$, and indeed it is not immediately clear how we should proceed. In \cite[Section 3.1]{CF-K-wallcrossing} a definition is given when $f$ is an embedding into a projective space; however, this uses the more general language of GIT quotients which we seek to avoid here. As such, we will provide an alternative (but entirely equivalent) construction in the setting of toric varieties, which also relaxes the conditions on the map $f$ and the target $Y$.
 
 Our approach uses the language of $\Sigma$--collections introduced by D. Cox. This approach is natural insofar as a quasimap is a generalisation of a $\Sigma$--collection. We will refer extensively to \cite{CoxRing} and \cite{CoxFunctor}, which we recommend as an  introduction for any readers unfamiliar with the theory.
 
