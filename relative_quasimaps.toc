@@ -6,23 +6,23 @@
 \contentsline {subsection}{\tocsubsection {}{1.4}{Table of notation}}{4}
 \contentsline {section}{\tocsection {}{2}{Relative stable quasimaps}}{5}
 \contentsline {subsection}{\tocsubsection {}{2.1}{Review of absolute stable quasimaps}}{5}
-\contentsline {subsection}{\tocsubsection {}{2.2}{Review of relative stable maps}}{8}
-\contentsline {subsection}{\tocsubsection {}{2.3}{Definition of relative stable quasimaps}}{10}
-\contentsline {section}{\tocsection {}{3}{Recursion formula for $\mathbb P^N$ relative $H$}}{12}
-\contentsline {subsection}{\tocsubsection {}{3.1}{Basic properties of the moduli space}}{12}
-\contentsline {subsection}{\tocsubsection {}{3.2}{Proof of the recursion formula}}{14}
-\contentsline {section}{\tocsection {}{4}{Recursion formula in the general case}}{17}
-\contentsline {subsection}{\tocsubsection {}{4.1}{Virtual class on the space of relative quasimaps}}{17}
-\contentsline {subsection}{\tocsubsection {}{4.2}{Relative spaces pull back}}{17}
-\contentsline {subsection}{\tocsubsection {}{4.3}{Comb loci pull back}}{17}
-\contentsline {section}{\tocsection {}{5}{The quasimap mirror formula}}{21}
-\contentsline {subsection}{\tocsubsection {}{5.1}{Comparison with the work of Ciocan-Fontanine and Kim}}{25}
-\contentsline {section}{\tocsection {Appendix}{A}{The comparison morphism}}{27}
-\contentsline {section}{\tocsection {Appendix}{B}{Notes on quasimaps}}{34}
-\contentsline {subsection}{\tocsubsection {}{B.1}{Functoriality}}{34}
-\contentsline {subsection}{\tocsubsection {}{B.2}{Relative obstruction theories for $\mathcal Q(Y)\rightarrow \mathcal Q(X)$}}{40}
-\contentsline {subsection}{\tocsubsection {}{B.3}{Comparison with the GIT construction}}{43}
-\contentsline {subsection}{\tocsubsection {}{B.4}{Splitting principle}}{44}
-\contentsline {subsection}{\tocsubsection {}{B.5}{The quasimap string equation for $\mathbb P^r$}}{47}
-\contentsline {section}{\tocsection {Appendix}{C}{Some intersection-theoretic lemmas}}{49}
-\contentsline {section}{\tocsection {Appendix}{}{References}}{51}
+\contentsline {subsection}{\tocsubsection {}{2.2}{Review of relative stable maps}}{9}
+\contentsline {subsection}{\tocsubsection {}{2.3}{Definition of relative stable quasimaps}}{11}
+\contentsline {section}{\tocsection {}{3}{Recursion formula for $\mathbb P^N$ relative $H$}}{13}
+\contentsline {subsection}{\tocsubsection {}{3.1}{Basic properties of the moduli space}}{13}
+\contentsline {subsection}{\tocsubsection {}{3.2}{Proof of the recursion formula}}{16}
+\contentsline {section}{\tocsection {}{4}{Recursion formula in the general case}}{18}
+\contentsline {subsection}{\tocsubsection {}{4.1}{Virtual class on the space of relative quasimaps}}{18}
+\contentsline {subsection}{\tocsubsection {}{4.2}{Relative spaces pull back}}{18}
+\contentsline {subsection}{\tocsubsection {}{4.3}{Comb loci pull back}}{19}
+\contentsline {section}{\tocsection {}{5}{The quasimap mirror formula}}{22}
+\contentsline {subsection}{\tocsubsection {}{5.1}{Comparison with the work of Ciocan-Fontanine and Kim}}{27}
+\contentsline {section}{\tocsection {Appendix}{A}{The comparison morphism}}{29}
+\contentsline {section}{\tocsection {Appendix}{B}{Notes on quasimaps}}{36}
+\contentsline {subsection}{\tocsubsection {}{B.1}{Functoriality}}{36}
+\contentsline {subsection}{\tocsubsection {}{B.2}{Relative obstruction theories for $\mathcal Q(Y)\rightarrow \mathcal Q(X)$}}{42}
+\contentsline {subsection}{\tocsubsection {}{B.3}{Comparison with the GIT construction}}{45}
+\contentsline {subsection}{\tocsubsection {}{B.4}{Splitting principle}}{46}
+\contentsline {subsection}{\tocsubsection {}{B.5}{The quasimap string equation for $\mathbb P^r$}}{49}
+\contentsline {section}{\tocsection {Appendix}{C}{Some intersection-theoretic lemmas}}{51}
+\contentsline {section}{\tocsection {Appendix}{}{References}}{52}
