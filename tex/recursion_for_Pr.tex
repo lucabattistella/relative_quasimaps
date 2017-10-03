@@ -1,12 +1,14 @@
-\section{Recursion formula for $\PP^N$ relative $H$} \label{Section recursion for PN}
+\section{Recursion formula for $\PP^N$ relative a hyperplane} \label{Section recursion for PN}
 
 \subsection{Basic properties of the moduli space} \label{Subsection basic properties of the moduli space}
 In this section we will show that the moduli space
 \begin{equation*} \Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
-is irreducible of the expected dimension, and thus admits a fundamental class. We then prove a recursion formula for these fundamental classes by pushing forward Gathmann's recursion formula along the comparison morphism
+is irreducible of the expected dimension, and thus admits a fundamental class. We then prove a recursion formula for these fundamental classes by pushing forward Gathmann's recursion formula along the comparison morphism:
 \begin{equation*}\chi : \M{0}{n}{\PP^N}{d} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
-(see Appendix \ref{Section comparison morphism}). For the remainder of this section we set $X=\PP^N$ and $Y=H=\{ z_0 = 0 \}$. Given a quasimap
-\begin{equation*} (C,x_1,\ldots,x_n,L,u_0,\ldots,u_N) \in \Q{0}{n}{\PP^N}{d} \end{equation*}
+Let us briefly recall what this morphism does. Every stable map defines a quasimap which is stable except for the fact that it may have rational tails. $\chi$ has the effect of contracting these rational tails and introducing a basepoint at the corresponding node, with multiplicty equal to the degree of the rational tail; see Appendix \ref{Section comparison morphism} for more details.
+
+For the remainder of this section we set $X=\PP^N_{z_0 \ldots z_N}$ and $Y=H=\{ z_0 = 0 \}$. Given a quasimap
+\begin{equation*} ((C,x_1,\ldots,x_n), L, u_0,\ldots,u_N) \in \Q{0}{n}{\PP^N}{d} \end{equation*}
 the line bundle $L_Y$ of the previous section is equal to $L$ and the section $u_Y$ is equal to $u_0$.
 
 \begin{lem}\label{lem:comparison}
@@ -14,28 +16,27 @@ The comparison morphism restricts to a morphism
 \begin{equation*} \chi: \M{0}{\alpha}{\PP^N|H}{d}\to \Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
 \end{lem}
 \begin{proof}
-We need to verify that a relative stable map is sent to a relative stable quasimap by $\chi$. Since the contraction of a rational tail $R$ always occurs away from the markings, we only need to examine the internal components $Z$ of the quasimap.
+We need to verify that a relative stable map is sent to a relative stable quasimap by $\chi$. Since the contraction of a rational tail $R$ always occurs away from the markings, we only need to examine the internal components $Z$ of the quasimap. To be more precise, we have to show that the inequality \eqref{Relative quasimap internal component inequality} is satisfied, using the fact that the inequality \eqref{Relative stable map internal component inequality} is satisfied by the stable map that we started with.
 
-Consider then $Z$; for each basepoint $x$ on $Z$ there is a rational tail $R$ of the stable map attached to $Z$ at $x$. This is either internal (mapped into $H$) or external (not mapped into $H$).
+Let us describe this stable map around $Z$. For each basepoint $x$ on $Z$ there is a rational tail $R$ of the stable map attached to $Z$ at $x$. This is either internal (mapped into $H$) or external (not mapped into $H$).
 
-If $R$ is internal then both $R$ and $Z$ live inside the same connected component $Z^\prime$ of $f^{-1}(H)$. Applying $\chi$ has the effect of contracting $R$ and increasing the degree of the line bundle on $Z$ by $H \cdot f_* [R]$. Thus the left hand side of the inequality \eqref{Relative quasimap internal component inequality} is left unchanged, and since the right hand side is also unaltered the inequality is satisfied.
+If $R$ is internal then both $R$ and $Z$ live inside the same connected component $Z^\prime$ of $f^{-1}(H)$. Applying $\chi$ has the effect of contracting $R$ and increasing the degree of the line bundle on $Z$ by $H \cdot f_* [R]$. Thus the left hand side of inequality \eqref{Relative stable map internal component inequality} is left unchanged, and since the right hand side is also unaltered we obtain inequality \eqref{Relative quasimap internal component inequality}.
 
 On the other hand if $R$ is external then the multiplicity $m^{(R)}$ of $R \cap Z$ satisfies:
 \begin{equation*} m^{(R)} \leq H \cdot f_* [R] \end{equation*}
-Since applying $\chi$ has the effect of replacing $m^{(R)}$ by $H \cdot f_* [R]$ in the left hand side of \eqref{Relative quasimap internal component inequality}, the inequality still holds for the quasimap. Thus we obtain a morphism from the relative stable map space to the relative quasimap space, as claimed.
+Since applying $\chi$ has the effect of replacing $m^{(R)}$ by $H \cdot f_* [R]$ in the left hand side of \eqref{Relative stable map internal component inequality}, inequality \eqref{Relative quasimap internal component inequality} holds for the quasimap. Thus we obtain a morphism from the relative stable map space to the relative quasimap space, as claimed.
 \end{proof}
 Let us denote by
-\begin{equation*} \mathcal Q_{0,\alpha}(\PP^N|H,d) \subseteq \Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
-(without the bar) the \ilemph{nice locus}, consisting of those quasimaps with irreducible source curve (i.e. a $\PP^1$), no basepoints (so we get an actual map), with no component of the curve mapping inside $H$ and with the map having tangency at least $\alpha_i$ to $H$ at the marking $x_i$.
+\begin{equation*} \mathcal Q^{\circ}_{0,\alpha}(\PP^N|H,d) \subseteq \Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
+the \ilemph{nice locus}, consisting of those quasimaps with irreducible source curve $C \cong \PP^1$ and no basepoints (so that we have an actual map $u : C \to \PP^N$) such that the curve is not mapped inside $H$ and $u$ has tangency at least $\alpha_i$ to $H$ at the marking $x_i$.
 
-This is an irreducible, locally closed substack of $\Q{0}{n}{\PP^N}{d}$ of codimension $\Sigma_i \alpha_i$, by essentially the same argument as in \cite[Lemma 1.8]{Ga}. In fact it is isomorphic to the nice locus inside the stable map space, denoted $\mathcal M_{0,\alpha}(\PP^N|H,d)$ by Gathmann (see \cite[Def. 1.6]{Ga}); the stricter stability condition has no effect when the source curve is irreducible, provided of course that $n\geq2$).
-
+This is an irreducible, locally closed substack of $\Q{0}{n}{\PP^N}{d}$ of codimension $\Sigma_i \alpha_i$, by essentially the same argument as in \cite[Lemma 1.8]{Ga}. In fact it is isomorphic to the nice locus inside the stable map space, denoted $\mathcal M_{0,\alpha}(\PP^N|H,d)$ by Gathmann (see \cite[Def. 1.6]{Ga}); the stricter stability condition has no effect when the source curve is irreducible).
 
 \begin{lem}
-$\Q{0}{\alpha}{\PP^N|H}{d}$ is equal to the closure of the nice locus $\mathcal{Q}_{0,\alpha}(\PP^N|H,d)$ inside $\Q{0}{n}{\PP^N}{d}$. 
+$\Q{0}{\alpha}{\PP^N|H}{d}$ is equal to the closure of the nice locus $\mathcal{Q}^{\circ}_{0,\alpha}(\PP^N|H,d)$ inside $\Q{0}{n}{\PP^N}{d}$. 
 \end{lem}
 \begin{proof}
-$\Q{0}{\alpha}{\PP^N|H}{d}\subseteq\overline{\mathcal Q_{0,\alpha}(\PP^N|H,d)}$: we show that any relative stable quasimap can be infinitesimally deformed to a relative stable quasimap with no basepoints. This is in particular a relative stable map; we then appeal to \cite[Prop. 1.14]{Ga} to deform this stable map and obtain a point in the nice locus. Since this deformation does not introduce any rational tails, this is also a deformation of quasimaps, and the statement follows.
+$\Q{0}{\alpha}{\PP^N|H}{d}\subseteq\overline{\mathcal{Q}^{\circ}_{0,\alpha}(\PP^N|H,d)}$: we show that any relative stable quasimap can be infinitesimally deformed to a relative stable quasimap with no basepoints. This is in particular a relative stable map; we then appeal to \cite[Prop. 1.14]{Ga} to deform this stable map and obtain a point in the nice locus. Since this deformation does not introduce any rational tails, this is also a deformation of quasimaps, and the statement follows.
 
 We induct on the number of components containing at least one base-point. Suppose this number is non-zero (otherwise there is nothing to prove) and pick such a component $C_0$, with base-points $y_1 ,\ldots, y_k$. Recall that this means that $u_i(y_j)=0$ for all $i$ and $j$. We will deform the section $u_N|_{C_0}$ to a new section $u_N^\prime|_{C_0}$ in such a way that $u_N^\prime|_{C_0}(y_j) \neq 0$ and in such a way that we do not introduce any new basepoints. Notice that since the relative condition only depends on $u_0$, the resulting deformed quasimap will still be a relative quasimap.
 
@@ -51,11 +52,11 @@ By nondegeracy, we can choose a section $w_i$ of $L|_{C_i}$ such that $w_i(q_i) 
 \begin{equation*} {u_N^\prime}|_{C_i} := {u_N}|_{C_i} + \epsilon \left( \frac{w_0(q_i)}{w_i(q_i)} \right) \cdot w_i \end{equation*}
 Then indeed we have:
 \begin{equation*} {u_N^\prime}|_{C_i}(q_i) = u_N(q_i) + \epsilon \left( \frac{w_0(q_i)}{w_i(q_i)} \right) \cdot w_i(q_i) = u_N(q_i) + \epsilon w_0(q_i) = {u_N^\prime}|_{C_0}(q_i) \end{equation*}
-We can continue this process, replacing $C_0$ by $C_i$; since the genus of the curve is zero there are no cycles in the dual intersection graph, and so we will never come to the same curve twice. In this way we obtain a new quasimap
+We can continue this process, replacing $C_0$ by $C_i$; since the genus of the curve is zero there are no cycles in the dual intersection graph, and so we will never come to the same component twice. In this way we obtain a new quasimap
 \begin{equation*} (C,x_1,\ldots,x_n,L,u_0, \ldots, u_{N-1}, u_N^\prime) \end{equation*}
 over $\Spec \kfield[\epsilon]/(\epsilon^2)$ which has no basepoints on $C_0$. We can repeat this process for all the components of $C$ (using higher powers of $\epsilon$ each time in order to ensure that we never introduce additional basepoints) and thus we obtain an infinitesimal deformation of our original quasimap which has no basepoints, as required.
 
-$\overline{\mathcal Q_{0,\alpha}(\PP^N|H,d)}\subseteq\Q{0}{\alpha}{\PP^N|H}{d}$: consider a family of stable quasimaps over a smooth curve $S$, such that the generic fibre lies in the nice locus. We may  blow-up the source curve (a fibered surface over $S$) in the locus of basepoints (which consists of finitely many smooth points of the central fiber) and repeat this process a finite number of times in order to obtain an actual morphism to $\PP^N$. This has the effect of adding rational tails at the basepoints in the central fibre. If the morphism is constant on any of these rational tails we may contract them, and thus we obtain a family of stable maps which pushes down along $\chi$ to our original family of quasimaps.
+$\overline{\mathcal{Q}^{\circ}_{0,\alpha}(\PP^N|H,d)}\subseteq\Q{0}{\alpha}{\PP^N|H}{d}$: consider a family of stable quasimaps over a smooth curve $S$, such that the generic fibre lies in the nice locus. We may  blow-up the source curve (a fibered surface over $S$) in the locus of basepoints (which consists of finitely many smooth points of the central fiber) and repeat this process a finite number of times in order to obtain an actual morphism to $\PP^N$. This has the effect of adding rational tails at the basepoints in the central fibre. If the morphism is constant on any of these rational tails we may contract them, and thus we obtain a family of stable maps which pushes down along $\chi$ to our original family of quasimaps.
 
 The general fibre is not modified at all, and so is still in the nice locus. By \cite[Lemma 1.9]{Ga} it follows that the central fibre is a relative stable map, and then by applying $\chi$ and appealing to Lemma \ref{lem:comparison} it follows that the same is true for the central fibre of the family of quasimaps.
 \end{proof}
@@ -91,7 +92,7 @@ where $\pt_H \in \Achow^{N-1}(H)$ is a point class. Thus the pushforward along $
 \end{align*}
 from which the lemma follows because $m^{(i)} \leq d$.
 \end{proof}
-\begin{remark} With an eye to the future, we remark that these rational tail components contribute nontrivially to the Gromov--Witten invariants of a Calabi--Yau hypersurface in projective space, and so their disappearance in our recursion formula may account for the divergence between Gromov--Witten and quasimap invariants in the Calabi--Yau case \cite[Rmk. 1.6]{Ga-MF}. \end{remark}
+\begin{remark} With an eye to the future, we remark that these rational tail components contribute nontrivially to the Gromov--Witten invariants of a Calabi--Yau hypersurface in projective space, and so their absence from the quasimap recursion formula accounts for the divergence between Gromov--Witten and quasimap invariants in the Calabi--Yau case \cite[Rmk. 1.6]{Ga-MF}. \end{remark}
 
 Since we wish to apply the projection formula to Gathmann's recursion relation, we should express the cohomological terms which appears as pull-backs:
 \begin{lem}\label{lem:compare_psi} We have:
