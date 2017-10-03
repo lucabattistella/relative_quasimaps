@@ -8,11 +8,11 @@
 \contentsline {subsection}{\tocsubsection {}{2.1}{Review of absolute stable quasimaps}}{5}
 \contentsline {subsection}{\tocsubsection {}{2.2}{Review of relative stable maps}}{9}
 \contentsline {subsection}{\tocsubsection {}{2.3}{Definition of relative stable quasimaps}}{11}
-\contentsline {section}{\tocsection {}{3}{Recursion formula for $\mathbb P^N$ relative $H$}}{13}
+\contentsline {section}{\tocsection {}{3}{Recursion formula for $\mathbb P^N$ relative a hyperplane}}{13}
 \contentsline {subsection}{\tocsubsection {}{3.1}{Basic properties of the moduli space}}{13}
 \contentsline {subsection}{\tocsubsection {}{3.2}{Proof of the recursion formula}}{16}
 \contentsline {section}{\tocsection {}{4}{Recursion formula in the general case}}{18}
-\contentsline {subsection}{\tocsubsection {}{4.1}{Virtual class on the space of relative quasimaps}}{18}
+\contentsline {subsection}{\tocsubsection {}{4.1}{The virtual class on the space of relative quasimaps}}{18}
 \contentsline {subsection}{\tocsubsection {}{4.2}{Relative spaces pull back}}{18}
 \contentsline {subsection}{\tocsubsection {}{4.3}{Comb loci pull back}}{19}
 \contentsline {section}{\tocsection {}{5}{The quasimap mirror formula}}{22}

@@ -104,7 +104,7 @@ There is another variant which is going to play a role in later sections: that o
 Note that we no longer require $2g-2+n\geq 0$, due to the modified stability condition. In particular it makes sense, and turns out to be very useful, to consider unmarked parametrised quasimaps $\QG{0}{0}{X}{\beta}$. In this case the source curve needs to be irreducible. 
 \end{remark}
 
-\begin{example} $\QG{0}{0}{\PP^r}{d} = \PP^N$ with $N=(r+1)(d+1)-1$. Indeed, the curve and line bundle must be $(\PP^1,\mathcal O_{\PP^1}(d))$ and we are left with choosing $r+1$ sections of $\mathcal O_{\PP^1}(d)$ (not all zero) up to automorphisms of $\mathcal O_{\PP^1}(d)$, i.e. up to scaling. See e.g. \cite{Bertram} for an early appearance of such spaces.\end{example}
+\begin{example} $\QG{0}{0}{\PP^r}{d} = \PP^N$ with $N=(r+1)(d+1)-1$. Indeed, the curve and line bundle must be $(\PP^1,\mathcal O_{\PP^1}(d))$ and we are left with choosing $r+1$ sections of $\mathcal O_{\PP^1}(d)$ (not all zero) up to automorphisms of $\mathcal O_{\PP^1}(d)$, i.e. up to scaling. For an early appearance of such spaces, see for instance \cite{Bertram}.\end{example}
 
 \subsection{Review of relative stable maps} \label{Subsection relative stable maps} Given a smooth projective variety $X$ and a smooth divisor $Y$, Gathmann's moduli space of relative stable maps parametrises stable maps to $X$ with specified tangencies to $Y$ at the marked points; see \cite{Ga} for details.
 
@@ -126,7 +126,7 @@ This forms a closed substack of $\M{0}{n}{X}{\beta}$. Condition (1) is required 
 \begin{enumerate}
 \item if $Z$ is a point and is equal to a marked point $x_i$, then the multiplicity of $f$ to $Y$ at $x_i$ is greater than or equal to $\alpha_i$;
 \item if $Z$ is one-dimensional (hence a union of irreducible components of $C$) and if we let $C^{(i)}$ for $1 \leq i \leq r$ denote the irreducible components of $C$ adjacent to $Z$, and $m^{(i)}$ denote the multiplicity of $f|_{C^{(i)}}$ to $Y$ at the node $Z \cap C^{(i)}$, then we must have:
-\begin{equation} \label{Inequality relative stable maps} Y \cdot f_* [Z] + \sum_{i=1}^r m^{(i)} \geq \sum_{x_i \in Z} \alpha_i \end{equation}
+\begin{equation} \label{Relative stable map internal component inequality} Y \cdot f_* [Z] + \sum_{i=1}^r m^{(i)} \geq \sum_{x_i \in Z} \alpha_i \end{equation}
 \end{enumerate} \end{remark}
 
 \begin{remark}In the second case above we call $Z$ an \ilemph{internal} component and the $C^{(i)}$ \ilemph{external} components. Note that $Z$ is not necessarily irreducible: the term ``component'' is justified by the fact that it is a \emph{connected} component of $f^{-1}(Y)$. \end{remark}
@@ -154,11 +154,11 @@ where $\mathcal{D}_{\alpha,k}(X,\beta)$ is an appropriate \ilemph{comb locus}. R
 
 We now give the main definition of the paper. From here on $X$ will denote a smooth projective toric variety and $Y \subseteq X$ a very ample hypersurface. We do not require that $Y$ is toric.
 
-Consider the line bundle $\OO_X(Y)$ and the section $s_Y$ cutting out $Y$. By \cite{CoxRing} we have a natural isomorphism of vector spaces
-\begin{equation*} \HH^0(X,\OO_X(Y)) = \left\langle \prod_{\rho} z_\rho^{a_\rho} : \Sigma_\rho a_\rho D_\rho = Y \right\rangle_{\mathbb{C}} \end{equation*}
+Consider the line bundle $\OO_X(Y)$ and the section $s_Y$ cutting out $Y$. By \cite{CoxRing} we have a natural isomorphism of $\CC$-vector spaces
+\begin{equation*} \HH^0(X,\OO_X(Y)) = \left\langle \prod_{\rho} z_\rho^{a_\rho} : \Sigma_\rho a_\rho D_\rho = Y \right\rangle_{\CC} \end{equation*}
 where the $z_\rho$ for $\rho \in \Sigma(1)$ are the generators of the Cox ring of $X$ and the $a_\rho$ are non-negative integers. We can therefore write $s_Y$ as
 \begin{equation*} s_Y = \sum_{\underline{a}=(a_\rho)} \lambda_{\underline{a}} \prod_\rho z_\rho^{a_\rho} \end{equation*}
-for some scalars $\lambda_{\underline{a}} \in \kfield$. The idea is that a quasimap
+for some scalars $\lambda_{\underline{a}} \in \CC$. The idea is that a quasimap
 \begin{equation*} ((C,x_1,\ldots,x_n), (L_\rho,u_\rho)_{\rho \in \Sigma(1)}, (\varphi_m)_{m \in M}) \end{equation*}
 should ``map'' a point $x \in C$ into $Y$ if and only if the section
 \begin{equation} \label{uY expression} u_Y := \sum_{\underline{a}} \lambda_{\underline{a}} \prod_\rho u_\rho^{a_\rho} \end{equation}
@@ -199,4 +199,4 @@ and we define $u_Y^*(0) := 0_Y^!([C])$.
 \end{enumerate}
 \end{remark}
 
-As it stands we do not know much about this space that we have defined. In the following section we will examine the case $X=\PP^N$ and $Y=H$ a hyperplane in detail. We will then apply the results obtained there to deduce facts about the general case.
+As it stands we do not know much about this moduli space. In the following section we will examine the case $X=\PP^N$ and $Y=H$ a hyperplane in detail. We will then apply the results obtained there to deduce facts about the general case.
