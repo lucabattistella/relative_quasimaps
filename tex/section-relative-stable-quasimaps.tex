@@ -57,31 +57,34 @@ where $\mathcal{C} \to \om{Q} = \Q{g}{n}{X}{\beta}$ is the universal curve and $
 \begin{equation*} \langle \gamma_1 \psi^{a_1} , \ldots, \gamma_n \psi^{a_n} \rangle_{g,n,\beta}^X = \int_{\virt{\Q{g}{n}{X}{\beta}}} \prod_{i=1}^n \ev_i^* (\gamma_i) \psi_i^{a_i} \end{equation*}
 We use the same correlator notation as in Gromov--Witten theory; this should not cause any confusion.
 
-\begin{example}
- Let us describe and compare the moduli spaces of quasimaps and stable maps in an accessible example. Consider $\Q{0}{2}{\PP^2}{1}$. What are its objects? The source curve must be irreducible, thanks to the low degree and number of markings; on the other hand the Picard rank of $\PP^2$ is one, so we may exploit the isomorphisms $\phi_m$ to reduce to one line bundle and three sections thereof; hence $(C,L)\simeq(\mathbb P^1,\OO_{\PP^1}(1))$. Pick coordinates $[s:t]$ on $\PP^1$ such that the markings correspond to the points $[1:0]$ and $[0:1]$. Now we can express the sections as $[u_0:u_1:u_2]$ where $u_i=a_is+b_it$; the requirement that the markings are not basepoints translates into the following stability condition:
+\begin{example} Consider $\Q{0}{2}{\PP^2}{1}$. What are its objects? By the strong stability condition (2) above, we see that the source curve must be irreducible. On the other hand since $\PP^2$ has Picard rank $1$ we may exploit the isomorphisms $\varphi_m$ to reduce ourselves to considering one line bundle equipped with three sections. Thus the data of the quasimap is $((C;x_1,x_2);L;u_0,u_1,u_2)$ where $(C,L)\cong(\PP^1,\OO_{\PP^1}(1))$.
+
+Pick coordinates $[s:t]$ on $\PP^1$ such that the marked points are $[1:0]$ and $[0:1]$. We can express the sections as $u_i=a_is+b_it$; the requirement that the markings are not basepoints translates into the following stability condition:
  \[
   (a_0,a_1,a_2)\neq(0,0,0)\quad \text{and}\quad (b_0,b_1,b_2)\neq(0,0,0).
  \]
-The group $\Aut(C;x_1,x_2)\simeq\Gm$ acts by rotation $\lambda\colon[s:t]\mapsto[s:\lambda t]$, while $\Aut(L)\simeq\Gm$ acts by scalar multiplication on all the coordinates, i.e. the $\Gm^2$ action on $\mathbb A^6$ is encoded by the following weight matrix:
+The group $\Aut(C;x_1,x_2)\simeq\Gm$ acts by rotation $\lambda\colon[s:t]\mapsto[s:\lambda t]$, while $\Aut(L)\simeq\Gm$ acts by scalar multiplication on all the coordinates. Thus the $\Gm^2$ action on $\mathbb A^6_{\underline{a} ,\underline{b}}$ is encoded by the following weight matrix:
 \[ \left[ \begin{array}{cccccc}
 1 & 1 & 1 & 1 & 1 & 1 \\
 0 & 0 & 0 & 1 & 1 & 1 \end{array} \right]\] 
-It is now clear that the quotient is $\PP^2\times\PP^2$; in fact, it can be seen that the evaluation map
+It is now clear that the quotient is $\PP^2\times\PP^2$; in fact, we see that the evaluation map
 \[
  (\ev_1,\ev_2)\colon\Q{0}{2}{\PP^2}{1}\to\PP^2\times\PP^2
 \]
-is an isomorphism. Notice that the locus where $(a_0,a_1,a_2)=\mu(b_0,b_1,b_2)$, namely the preimage of the diagonal of $\PP^2\times\PP^2$, corresponds precisely to quasimaps with a basepoint; the point $[a_0:a_1:a_2]=[b_0:b_1:b_2]\in\PP^2$ is the image of the underlying ``residual map'' of degree 0, obtained by dividing all sections by a local equation of the basepoint, i.e. extending the rational map $C\dashrightarrow \PP^2$.
+is an isomorphism. It is given in the above notation by:
+\begin{equation*} (\PP^1, \OO_{\PP^1}(1), u_0, u_1, u_2) \mapsto ([a_0, a_1, a_2],[b_0,b_1,b_2]) \end{equation*}
+Notice that the locus where $(a_0,a_1,a_2)=\mu(b_0,b_1,b_2)$, i.e. the diagonal in $\PP^2\times\PP^2$, is precisely the locus of quasimaps which have a basepoint. The point $[a_0:a_1:a_2]=[b_0:b_1:b_2]\in\PP^2$ is the image of the underlying ``residual map'' of degree 0, obtained by dividing all the sections by a local equation of the basepoint (equivalently, by extending the rational map $C\dashrightarrow \PP^2$ to a morphism $C \to \PP^2$).
 
-On the other hand, $(\ev_1,\ev_2)\colon\M{0}{2}{\PP^2}{1}\to\PP^2\times\PP^2$ is \emph{not} an isomorphism. Off the diagonal, the images of the two marked points determine uniquely the image of the stable map, i.e. the line through them. On the diagonal though, the following maps with rational tail make their appearance:
+On the other hand, $(\ev_1,\ev_2)\colon\M{0}{2}{\PP^2}{1}\to\PP^2\times\PP^2$ is \emph{not} an isomorphism. Off the diagonal, the images of the two marked points determine uniquely the image of the stable map, i.e. the line through them. On the diagonal however, the following maps with a rational tail appear:
 \begin{center}
-\begin{tikzpicture}[scale=.75]
- \draw[thick] (-1,0) -- (3,0) node[right]{1};
- \draw (0,-1) -- (0,3) node[above]{0};
- \draw[fill=black] (0,1) circle[radius=2pt];
- \draw[fill=black] (0,2) circle[radius=2pt];
+\begin{tikzpicture}[scale=.6]
+ \draw[thick] (-1,0) -- (3,0) node[right]{d=1};
+ \draw (0,-1) -- (0,3) node[above]{d=0};
+ \draw[fill=black] (0,1) circle[radius=3pt];
+ \draw[fill=black] (0,2) circle[radius=3pt];
 \end{tikzpicture} 
 \end{center}
-the image of the unmarked component (rational tail) can be any line through the chosen diagonal point, that is the image of the contracted component. Hence $\M{0}{2}{\PP^2}{1}\simeq\operatorname{Bl}_{\Delta}\PP^2\times\PP^2$. The comparison morphism $\comp$ (see Appendix \ref{Section comparison morphism}) can be interpreted as the blow-down map, and it induces an isomorphism of the rational tails-free with the basepoint-free locus.
+The image of the degree $1$ component under $f$ can be any line passing through the point of $\PP^2$ to which the other component is contracted. Hence $\M{0}{2}{\PP^2}{1}\simeq\operatorname{Bl}_{\Delta}(\PP^2\times\PP^2)$. The comparison morphism $\comp$ (see Appendix \ref{Section comparison morphism}) can be interpreted as the blow-down map, and it induces an isomorphism of the rational tails-free locus with the basepoint-free locus.
 \end{example}
 
 %[EXAMPLE: $\Q{0}{2}{\PP^2}{1}$ and $\M{0}{2}{\PP^2}{1}$]
