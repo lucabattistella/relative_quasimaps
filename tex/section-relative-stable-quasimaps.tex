@@ -77,7 +77,7 @@ There is another variant which is going to play a role in later sections: that o
 Note that we no longer require $2g-2+n\geq 0$, due to the modified stability condition. In particular it makes sense, and turns out to be very useful, to consider unmarked parametrised quasimaps $\QG{0}{0}{X}{\beta}$. In this case the source curve needs to be irreducible. 
 \end{remark}
 
-\begin{example} $\QG{0}{0}{\PP^r}{d} = \PP^N$ with $N=(r+1)(d+1)-1$. Indeed, the curve and line bundle must be $(\PP^1,\mathcal O_{\PP^1}(d))$ and we are left with choosing $r+1$ sections of $\mathcal O_{\PP^1}(d)$ (not all zero) up to automorphisms of $\mathcal O_{\PP^1}(d)$, i.e. up to scaling. See e.g. \cite{Bertram} for an early appearance of such spaces.\end{example}
+\begin{example} $\QG{0}{0}{\PP^r}{d} = \PP^N$ with $N=(r+1)(d+1)-1$. Indeed, the curve and line bundle must be $(\PP^1,\mathcal O_{\PP^1}(d))$ and we are left with choosing $r+1$ sections of $\mathcal O_{\PP^1}(d)$ (not all zero) up to automorphisms of $\mathcal O_{\PP^1}(d)$, i.e. up to scaling. For an early appearance of such spaces, see for instance \cite{Bertram}.\end{example}
 
 \subsection{Review of relative stable maps} \label{Subsection relative stable maps} Given a smooth projective variety $X$ and a smooth divisor $Y$, Gathmann's moduli space of relative stable maps parametrises stable maps to $X$ with specified tangencies to $Y$ at the marked points; see \cite{Ga} for details.
 
@@ -127,11 +127,11 @@ where $\mathcal{D}_{\alpha,k}(X,\beta)$ is an appropriate \ilemph{comb locus}. R
 
 We now give the main definition of the paper. From here on $X$ will denote a smooth projective toric variety and $Y \subseteq X$ a very ample hypersurface. We do not require that $Y$ is toric.
 
-Consider the line bundle $\OO_X(Y)$ and the section $s_Y$ cutting out $Y$. By \cite{CoxRing} we have a natural isomorphism of vector spaces
-\begin{equation*} \HH^0(X,\OO_X(Y)) = \left\langle \prod_{\rho} z_\rho^{a_\rho} : \Sigma_\rho a_\rho D_\rho = Y \right\rangle_{\mathbb{C}} \end{equation*}
+Consider the line bundle $\OO_X(Y)$ and the section $s_Y$ cutting out $Y$. By \cite{CoxRing} we have a natural isomorphism of $\CC$-vector spaces
+\begin{equation*} \HH^0(X,\OO_X(Y)) = \left\langle \prod_{\rho} z_\rho^{a_\rho} : \Sigma_\rho a_\rho D_\rho = Y \right\rangle_{\CC} \end{equation*}
 where the $z_\rho$ for $\rho \in \Sigma(1)$ are the generators of the Cox ring of $X$ and the $a_\rho$ are non-negative integers. We can therefore write $s_Y$ as
 \begin{equation*} s_Y = \sum_{\underline{a}=(a_\rho)} \lambda_{\underline{a}} \prod_\rho z_\rho^{a_\rho} \end{equation*}
-for some scalars $\lambda_{\underline{a}} \in \kfield$. The idea is that a quasimap
+for some scalars $\lambda_{\underline{a}} \in \CC$. The idea is that a quasimap
 \begin{equation*} ((C,x_1,\ldots,x_n), (L_\rho,u_\rho)_{\rho \in \Sigma(1)}, (\varphi_m)_{m \in M}) \end{equation*}
 should ``map'' a point $x \in C$ into $Y$ if and only if the section
 \begin{equation} \label{uY expression} u_Y := \sum_{\underline{a}} \lambda_{\underline{a}} \prod_\rho u_\rho^{a_\rho} \end{equation}

@@ -54,7 +54,7 @@ Then indeed we have:
 \begin{equation*} {u_N^\prime}|_{C_i}(q_i) = u_N(q_i) + \epsilon \left( \frac{w_0(q_i)}{w_i(q_i)} \right) \cdot w_i(q_i) = u_N(q_i) + \epsilon w_0(q_i) = {u_N^\prime}|_{C_0}(q_i) \end{equation*}
 We can continue this process, replacing $C_0$ by $C_i$; since the genus of the curve is zero there are no cycles in the dual intersection graph, and so we will never come to the same component twice. In this way we obtain a new quasimap
 \begin{equation*} (C,x_1,\ldots,x_n,L,u_0, \ldots, u_{N-1}, u_N^\prime) \end{equation*}
-over $\Spec \kfield[\epsilon]/(\epsilon^2)$ which has no basepoints on $C_0$. We can repeat this process for all the components of $C$ (using higher powers of $\epsilon$ each time in order to ensure that we never introduce additional basepoints) and thus we obtain an infinitesimal deformation of our original quasimap which has no basepoints, as required.
+over $\Spec \CC[\epsilon]/(\epsilon^2)$ which has no basepoints on $C_0$. We can repeat this process for all the components of $C$ (using higher powers of $\epsilon$ each time in order to ensure that we never introduce additional basepoints) and thus we obtain an infinitesimal deformation of our original quasimap which has no basepoints, as required.
 
 $\overline{\mathcal{Q}^{\circ}_{0,\alpha}(\PP^N|H,d)}\subseteq\Q{0}{\alpha}{\PP^N|H}{d}$: consider a family of stable quasimaps over a smooth curve $S$, such that the generic fibre lies in the nice locus. We may  blow-up the source curve (a fibered surface over $S$) in the locus of basepoints (which consists of finitely many smooth points of the central fiber) and repeat this process a finite number of times in order to obtain an actual morphism to $\PP^N$. This has the effect of adding rational tails at the basepoints in the central fibre. If the morphism is constant on any of these rational tails we may contract them, and thus we obtain a family of stable maps which pushes down along $\chi$ to our original family of quasimaps.
 
@@ -71,9 +71,9 @@ The general fibre is not modified at all, and so is still in the nice locus. By 
 \subsection{Proof of the recursion formula} \label{Subsection recursion formula for PN}
 We wish to obtain a recursion formula relating the quasimap invariants of multiplicity $\alpha$ with the quasimap invariants of multiplicity $\alpha + e_k$, as in \cite[Theorem 2.6]{Ga}. This process of ``increasing the multiplicities'' can be naively performed in the same way as Gathmann: for $m = \alpha_k + 1$ the following section (of the pull-back of the jet bundle of the universal line bundle)
 \[
-\sigma^m_k:=x_k^*d^m_{\mathcal C/\overline{\mathcal Q}}(u_0)\in \HH^0(\overline{\mathcal Q},x_k^*\mathcal P^m_{\mathcal C/\overline{\mathcal Q}}(\mathcal L))
+\sigma^m_k := x_k^*d^m_{\mathcal C/\om{Q}}(u_0)\in \HH^0(\om{Q},x_k^*\mathcal P^m_{\mathcal C/\overline{\mathcal Q}}(\mathcal L))
 \]
-cuts out $\Q{0}{\alpha+e_k}{\PP^N|H}{d}$ inside $\Q{0}{\alpha}{\PP^N|H}{d}$, along with a number of degenerate contributions (called the \ilemph{comb loci}) parametrising quasimaps for which $x_k$ belongs to an internal component $Z \subseteq C$ (a component on which $u_0$ vanishes), such that
+cuts out $\Q{0}{\alpha+e_k}{\PP^N|H}{d}$ inside $\om{Q} = \Q{0}{\alpha}{\PP^N|H}{d}$, along with a number of degenerate contributions (called the \ilemph{comb loci}) parametrising quasimaps for which $x_k$ belongs to an internal component $Z \subseteq C$ (a component on which $u_0$ vanishes), such that
 \begin{equation*}\deg(L|_{Z})+\sum_{i=1}^r m^{(i)}=\sum_{x_i\in Z}\alpha_i \end{equation*}
 (here by ``component'' we really mean ``connected component of the vanishing locus of $u_0$''). Quasimap stability means that these degenerate contributions cannot contain any rational tails; this is really the only difference with the case of stable maps.
 

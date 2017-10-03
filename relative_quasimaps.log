@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  3 OCT 2017 17:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  3 OCT 2017 18:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1493,7 +1493,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  31372 strings out of 493014
  611382 string characters out of 6133351
- 661658 words of memory out of 5000000
+ 660658 words of memory out of 5000000
  34074 multiletter control sequences out of 15000+600000
  100113 words of font info for 198 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
@@ -1519,7 +1519,7 @@ xlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016
 st/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/
 type1/public/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
 blic/newpx/zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (53 pages, 375293 bytes).
+Output written on relative_quasimaps.pdf (53 pages, 374959 bytes).
 PDF statistics:
  261 PDF objects out of 1000 (max. 8388607)
  187 compressed objects within 2 object streams
