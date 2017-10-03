@@ -1,5 +1,6 @@
 \section{Recursion formula in the general case}\label{Section recursion formula in general case}
-We now move on to the general case. Let $X$ be an arbitrary toric variety (smooth and proper) and $Y \subseteq X$ a very ample hypersurface (not necessarily toric). The complete linear system associated to $\OO_X(Y)$ defines an embedding $i : X \hookrightarrow \PP^N$ such that $i^{-1}(H) = Y$ (for a certain hyperplane $H$). By the functoriality property of quasimap spaces (see Appendix \ref{Functoriality of Quasimap Spaces Section}) we have a map:
+
+\subsection{Virtual class on the space of relative quasimaps} Let $X$ be an arbitrary toric variety (smooth and proper) and $Y \subseteq X$ a very ample hypersurface (not necessarily toric). The complete linear system associated to $\OO_X(Y)$ defines an embedding $i : X \hookrightarrow \PP^N$ such that $i^{-1}(H) = Y$ (for a certain hyperplane $H$). By the functoriality property of quasimap spaces (see Appendix \ref{Functoriality of Quasimap Spaces Section}) we have a map:
 \begin{equation*} k := \om{Q}(i) : \Q{0}{n}{X}{\beta} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
 where $d=i_*\beta$. Since $i$ is a closed embedding it follows that $k$ is as well. Furthermore $k$ admits a compatible perfect obstruction theory (see Appendix \ref{section:rel_pot_for_qm_functoriality}), so we have a notion of virtual pull-back along $k$ (which coincides with the diagonal pull-back according to Lemma \ref{lem:diagonal_virtual_coincide}).
 
@@ -10,12 +11,12 @@ It is easy to show that $k$ restricts to a morphism between the relative spaces,
 \ecd
 which one can show is cartesian. As such we can define a virtual class on $\Q{0}{\alpha}{X|Y}{\beta}$ by (virtual or diagonal) pullback.
 
+\subsection{Relative spaces pull back}
 The idea is to prove the recursion formula for $(X,Y)$ by pulling back the formula for $(\PP^N,H)$ along $k$. In order to do this, we need to understand how the various virtual classes involved in the formula pull back along this map. The first two terms of the recursion formula pull back by the very definition of the virtual class:
 \begin{lemma} \label{Relative spaces pull back} $k^! [\Q{0}{\alpha}{\PP^N|H}{d}] = \virt{\Q{0}{\alpha}{X|Y}{\beta}}$ \end{lemma}
-It remains to consider the third term, namely the virtual class of the comb locus. This is the technical heart of the proof.
 
 \subsection{Comb loci pull back} \label{Subsection comb loci pull back}
-Recall that we can write $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ as a union of comb loci
+It remains to consider the third term, namely the virtual class of the comb locus. This is the technical heart of the proof. Recall that we can write $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ as a union of comb loci
 \begin{equation*} \mathcal D^{\mathcal{Q}}(X|Y,A,B,M) := \Q{0}{A_0 \cup \{q_1, \ldots, q_r\}}{Y}{\beta_0} \times_{Y^r} \prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta_i} \end{equation*}
 where $A$ and $B$ are partitions of the marked points and curve class respectively, and $M=(m_1,\ldots,m_r)$ records the intersection multiplicity with $Y$ at the nodes connecting the internal component to the external components (the spine of the comb to the teeth). Since the virtual class on $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ is equal to the sum of the virtual classes of the $\mathcal D^{\mathcal{Q}}(X|Y,A,B,M)$, we can deal with each of these comb loci separately.
 
