@@ -3,52 +3,52 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: relative_quasimaps.aux
 The style file: alpha.bst
 Database file #1: relqm.bib
-Repeated entry---line 410 of file relqm.bib
+Repeated entry---line 428 of file relqm.bib
  : @article{Manolache-Push
  :                        ,
 I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in GiventalEquivariant
 Warning--there's a number but no volume in Givental-equivariantGW
 Warning--can't use both author and editor fields in Givental-mirror
-You've used 31 entries,
+You've used 32 entries,
             2543 wiz_defined-function locations,
-            774 strings with 8568 characters,
-and the built_in function-call counts, 12136 in all, are:
-= -- 1270
-> -- 426
-< -- 22
-+ -- 135
-- -- 130
-* -- 908
-:= -- 1940
-add.period$ -- 95
-call.type$ -- 31
-change.case$ -- 171
-chr.to.int$ -- 28
-cite$ -- 34
-duplicate$ -- 487
-empty$ -- 950
-format.name$ -- 178
-if$ -- 2476
+            781 strings with 8702 characters,
+and the built_in function-call counts, 12492 in all, are:
+= -- 1308
+> -- 434
+< -- 23
++ -- 137
+- -- 132
+* -- 935
+:= -- 1996
+add.period$ -- 98
+call.type$ -- 32
+change.case$ -- 176
+chr.to.int$ -- 29
+cite$ -- 35
+duplicate$ -- 502
+empty$ -- 980
+format.name$ -- 182
+if$ -- 2548
 int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 33
-newline$ -- 158
-num.names$ -- 93
-pop$ -- 133
+missing$ -- 34
+newline$ -- 163
+num.names$ -- 96
+pop$ -- 136
 preamble$ -- 1
-purify$ -- 204
+purify$ -- 210
 quote$ -- 0
-skip$ -- 387
+skip$ -- 398
 stack$ -- 0
-substring$ -- 927
-swap$ -- 63
-text.length$ -- 22
-text.prefix$ -- 17
+substring$ -- 959
+swap$ -- 64
+text.length$ -- 23
+text.prefix$ -- 18
 top$ -- 0
-type$ -- 236
+type$ -- 244
 warning$ -- 3
-while$ -- 133
-width$ -- 35
-write$ -- 406
+while$ -- 137
+width$ -- 36
+write$ -- 419
 (There was 1 error message)

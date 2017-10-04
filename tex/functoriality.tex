@@ -68,7 +68,7 @@ Recall that we have a short exact sequence:
 \begin{equation} \label{Pic short exact sequence for Y} 0 \longrightarrow M_Y \overset{\theta}{\longrightarrow} \Z^{\Sigma_Y(1)} \longrightarrow \Pic Y \longrightarrow 0 \end{equation}
 Let $\underline{a}$ and $\underline{b}$ be multindices appearing in the sum \eqref{Prho} above. By the homogeneity of $P_\rho$ we have
 \begin{equation*} \sum_\tau a_\tau D_\tau = \beta_\rho = \sum_\tau b_\tau D_\tau \end{equation*}
-which is precisely the statement that in the above sequence $\underline{a}$ and $\underline{b}$ map to the same element of $\Pic Y$ (namely $\beta_\rho$). Hence there exists an $m_Y \in M_Y$ such that:
+which is precisely the statement that in the above sequence $\underline{a}$ and $\underline{b}$ map to the same element of $\Pic Y$ (namely $\beta_\rho$). Hence there exists a unique $m_Y \in M_Y$ such that:
 \begin{equation*} \theta(m_Y) = \underline{a} - \underline{b} \end{equation*}
 Now, the isomorphism $\varphi_{m_Y}$ (contained in the data of our original quasimap) is a map:
 \begin{equation*} \varphi_{m_Y} : \bigotimes_\tau L_\tau^{\otimes \langle m_Y, n_\tau \rangle} \cong \OO_C \end{equation*}
@@ -77,7 +77,7 @@ By definition, $\theta(m_Y) = (\langle m_Y,n_\tau \rangle)_{\tau \in \Sigma_Y(1)
 In other words, we have well-defined canonical isomorphisms
 \begin{equation*} \tilde{L}_\rho^{\underline{a}} \cong \tilde{L}_\rho^{\underline{b}} \end{equation*}
 for all $\underline{a}$ and $\underline{b}$. Let us choose one such $\underline{a}$ (it doesn't matter which); call it $\underline{a}^\rho$. We define:
-\begin{equation*} \tilde{L}_\rho = \tilde{L}_\rho^{\underline{a}^\rho} \end{equation*}
+\begin{equation*} \tilde{L}_\rho := \tilde{L}_\rho^{\underline{a}^\rho} \end{equation*}
 Then for all $\underline{b}$ we can use the above isomorphism to view $\tilde{u}_\rho^{\underline{b}}$ as a section of $\tilde{L}_\rho$. Summing all of these together we obtain a section $\tilde{u}_\rho$ of $\tilde{L}_\rho$, which we can write (with abuse of notation) as:
 \begin{equation*} \tilde{u}_\rho = \sum_{\underline{a}} \mu_{\underline{a}} \prod_\tau u_\tau^{a_\tau} \end{equation*}
 Note that if we had made a different choice of $\underline{a}^\rho$ above the result would have been isomorphic.
@@ -136,7 +136,7 @@ the pushed-forward quasimap with target $\PP^N$ is:
 (This is stable as long as $a > 0$, which is precisely when $f$ satisfies Condition (1) above.)
 
 \subsection{Relative obstruction theories for $\mathcal Q(Y)\to\mathcal Q(X)$}\label{section:rel_pot_for_qm_functoriality}
-Assume now that $f\colon Y\to X$ is a morphism satisfying Condition (1) above, so that it induces $$k=\mathcal Q(f) \colon \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_* \beta}.$$ Even in the easiest possible case when $Y\subseteq X$ is an l.c.i. subscheme, $k$ is not necessarily a regular embedding, so the Gysin map in the sense of \cite{FUL} does not necessarily exist. Yet, when $\Q{g}{n}{X}{f_* \beta}$ is a smooth stack (or rather its standard obstruction theory w.r.t. the moduli stack of prestable curves is unobstructed, which happens e.g. in the cases $X=\PP^r$ and $(g,n)=(0,n)$ or $(1,0)$), we may ``pull back along $k$'', and we are going to explain why. 
+Assume now that $f\colon Y\to X$ is a morphism satisfying Condition (1) above, so that it induces $$k=\om{Q}(f) \colon \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_* \beta}.$$ Even in the easiest possible case when $Y\subseteq X$ is an l.c.i. subscheme, $k$ is not necessarily a regular embedding, so the Gysin map in the sense of \cite{FUL} does not necessarily exist. Yet, when $\Q{g}{n}{X}{f_* \beta}$ is a smooth stack (or rather its standard obstruction theory w.r.t. the moduli stack of prestable curves is unobstructed, which happens e.g. in the cases $X=\PP^r$ and $(g,n)=(0,n)$ or $(1,0)$), we may ``pull back along $k$'', and we are going to explain why. 
 
 In \cite{Manolache-Pull} a generalisation of the Gysin map (called the \ildef{virtual pull-back}) is defined for morphisms endowed with a relative perfect obstruction theory. Moreover, a sufficient condition is given (Corollary 4.9) for this map to respect the virtual classes.
 

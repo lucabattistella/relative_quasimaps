@@ -59,11 +59,11 @@ We use the same correlator notation as in Gromov--Witten theory; this should not
 
 \begin{example} Consider $\Q{0}{2}{\PP^2}{1}$. What are its objects? By the strong stability condition (2) above, we see that the source curve must be irreducible. On the other hand since $\PP^2$ has Picard rank $1$ we may exploit the isomorphisms $\varphi_m$ to reduce ourselves to considering one line bundle equipped with three sections. Thus the data of the quasimap is $((C;x_1,x_2);L;u_0,u_1,u_2)$ where $(C,L)\cong(\PP^1,\OO_{\PP^1}(1))$.
 
-Pick coordinates $[s:t]$ on $\PP^1$ such that the marked points are $[1:0]$ and $[0:1]$. We can express the sections as $u_i=a_is+b_it$; the requirement that the markings are not basepoints translates into the following stability condition:
+Pick coordinates $[s:t]$ on $\PP^1$ such that the marked points are $[1:0]$ and $[0:1]$. We can express the sections as $u_i=a_is+b_it$; the requirement that the markings are not basepoints then translates into the following stability condition:
  \[
   (a_0,a_1,a_2)\neq(0,0,0)\quad \text{and}\quad (b_0,b_1,b_2)\neq(0,0,0).
  \]
-The group $\Aut(C;x_1,x_2)\simeq\Gm$ acts by rotation $\lambda\colon[s:t]\mapsto[s:\lambda t]$, while $\Aut(L)\simeq\Gm$ acts by scalar multiplication on all the coordinates. Thus the $\Gm^2$ action on $\mathbb A^6_{\underline{a} ,\underline{b}}$ is encoded by the following weight matrix:
+The group $\Aut(C;x_1,x_2)\cong\Gm$ acts by rotation $\lambda\colon[s:t]\mapsto[s:\lambda t]$, while $\Aut(L)\cong\Gm$ acts by scalar multiplication on $\underline{a}$ and $\underline{b}$. Thus the $\Gm^2$ action on $\mathbb A^6_{\underline{a} ,\underline{b}}$ is encoded by the following weight matrix:
 \[ \left[ \begin{array}{cccccc}
 1 & 1 & 1 & 1 & 1 & 1 \\
 0 & 0 & 0 & 1 & 1 & 1 \end{array} \right]\] 
@@ -72,8 +72,8 @@ It is now clear that the quotient is $\PP^2\times\PP^2$; in fact, we see that th
  (\ev_1,\ev_2)\colon\Q{0}{2}{\PP^2}{1}\to\PP^2\times\PP^2
 \]
 is an isomorphism. It is given in the above notation by:
-\begin{equation*} (\PP^1, \OO_{\PP^1}(1), u_0, u_1, u_2) \mapsto ([a_0, a_1, a_2],[b_0,b_1,b_2]) \end{equation*}
-Notice that the locus where $(a_0,a_1,a_2)=\mu(b_0,b_1,b_2)$, i.e. the diagonal in $\PP^2\times\PP^2$, is precisely the locus of quasimaps which have a basepoint. The point $[a_0:a_1:a_2]=[b_0:b_1:b_2]\in\PP^2$ is the image of the underlying ``residual map'' of degree 0, obtained by dividing all the sections by a local equation of the basepoint (equivalently, by extending the rational map $C\dashrightarrow \PP^2$ to a morphism $C \to \PP^2$).
+\begin{equation*} ((\PP^1;[1:0],[0:1]); \OO_{\PP^1}(1); u_0, u_1, u_2) \mapsto ([a_0 : a_1 : a_2],[b_0 : b_1 : b_2]) \end{equation*}
+Notice that the locus where $(a_0,a_1,a_2)=\mu(b_0,b_1,b_2)$, i.e. the diagonal in $\PP^2 \times \PP^2$ is precisely the locus of quasimaps which have a basepoint. The point $[a_0:a_1:a_2]=[b_0:b_1:b_2]\in\PP^2$ is the image of the underlying ``residual map'' of degree 0, obtained by dividing all the sections by a local equation of the basepoint (equivalently, by extending the rational map $C\dashrightarrow \PP^2$ to a morphism $C \to \PP^2$).
 
 On the other hand, $(\ev_1,\ev_2)\colon\M{0}{2}{\PP^2}{1}\to\PP^2\times\PP^2$ is \emph{not} an isomorphism. Off the diagonal, the images of the two marked points determine uniquely the image of the stable map, i.e. the line through them. On the diagonal however, the following maps with a rational tail appear:
 \begin{center}

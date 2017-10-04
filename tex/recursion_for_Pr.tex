@@ -130,3 +130,18 @@ Then the following formula holds
 \begin{proof}
 This follows from \cite[Thm. 2.6]{Ga} by pushforward along $\chi$, using the projection fomula and Lemmas \ref{Comparison morphism birational}, \ref{lem:posdimfiber} and \ref{lem:compare_psi} .
 \end{proof}
+
+\begin{remark} \label{Remark on definition of comb locus} Here we have defined the quasimap comb locus as a fibre product over $H^r$ (using the evaluation maps at the marked points, which we denote $q_1, \ldots, q_r$).
+
+This plays well with Gathmann's definition of the stable map comb locus, but it is not the most obvious definition from the point of view of quasimaps. The points in this space are supposed to correspond to degenerate objects of $\Q{0}{\alpha}{\PP^N|H}{d}$; thus given $r+1$ quasimaps as above -- the internal component and the $r$ teeth of the comb -- we should be able to ``glue'' them together to obtain a bona fide quasimap to $\PP^N$.
+
+We now explain how this is done. Suppose for simplicity that $r=1$ and consider two quasimaps:
+\begin{align*} & ((C^0;x^0_1,x^0_{n_0},q);L^0;(u^0_0, \ldots, u^0_N)) \\
+&((C^1;x^1_1,x^1_{n_1},q);L^1;(u^1_0, \ldots, u^1_N)) \end{align*}
+We want to glue these quasimaps together along $q$. The definition of the curve is obvious; we simply take:
+\begin{equation*} C = C^0 \cup_q C^1 \end{equation*}
+On the other hand, in order to glue together the line bundles $L^0$ and $L^1$ to obtain a line bundle $L$ over $C$, we require a choice of scalar $\lambda \in \mathbb{G}_\text{m}$ in order to match up the fibres over $q$. Furthermore if the sections are to extend as well then this scalar must be chosen in such a way that it takes $(u^0_0(q), \ldots, u^0_N(q)) \in (L^0_q)^{\oplus (N+1)}$ to $(u^1_0(q), \ldots, u^1_N(q)) \in (L^1_q)^{\oplus (N+1)}$. Since $q$ is not a basepoint of either quasimap (being a marking) these tuples are nonzero, and so $\lambda$ is unique if it exists. Furthermore it exists if and only if these tuples belong to the same $\mathbb{G}_\text{m}$ orbit in $\CC^{N+1}$. This is precisely the statement that the node $q$ maps to the same point in $\PP^N$ on either side.
+
+This describes the glueing map
+\begin{equation*} \mathcal{D}^{\mathcal{Q}}(\PP^N|H,A,B,M) \to \Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
+and justifies the description of this spaces as a ``comb locus.'' Similar arguments apply for more general toric varieties. \end{remark}
