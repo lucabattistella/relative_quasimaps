@@ -64,6 +64,10 @@ The general fibre is not modified at all, and so is still in the nice locus. By 
 \begin{cor} The moduli space $\Q{0}{\alpha}{\PP^N|H}{d}$ is irreducible of the expected dimension. Hence it has a fundamental class. \end{cor}
 \begin{proof} This holds because the moduli space is equal to the closure of the nice locus, which is irreducible of the expected dimension. \end{proof}
 
+Since it has a fundamental class, we can define \emph{relative quasimap invariants} for the pair $(\PP^N,H)$:
+\begin{equation*} \langle \ev_1^* \gamma_1 \psi_1^{k_1} , \ldots, \ev_n^* \gamma_n \psi_n^{k_n} \rangle_{0,\alpha,d}^{\PP^N|H} := \int_{[\Q{0}{\alpha}{\PP^N|H}{\beta}]} \prod_{i=1}^n \ev_i^* \gamma_i \psi_i^{k_i} \end{equation*}
+
+We will now prove a number of properties about the fundamental class. These immediately imply corresponding properties about the relative invariants.
 \begin{cor} \label{Comparison morphism birational} The comparison morphism from relative stable maps to relative quasimaps is birational. In particular it sends the fundamental class to the fundamental class. \end{cor}
 \begin{proof} This follows because the comparison morphism restricts to an isomorphism on the nice locus, which by the lemma above is a dense open subset of both spaces. \end{proof}
 
@@ -131,17 +135,18 @@ Then the following formula holds
 This follows from \cite[Thm. 2.6]{Ga} by pushforward along $\chi$, using the projection fomula and Lemmas \ref{Comparison morphism birational}, \ref{lem:posdimfiber} and \ref{lem:compare_psi} .
 \end{proof}
 
-\begin{remark} \label{Remark on definition of comb locus} Here we have defined the quasimap comb locus as a fibre product over $H^r$ (using the evaluation maps at the marked points, which we denote $q_1, \ldots, q_r$).
+\begin{remark} \label{Remark on definition of comb locus} In the discussion above we have implicitly used the fact that there exists a commuting diagram of comb loci:
+\bcd
+\mathcal{D}^{\mathcal{M}}(\PP^N|H,A,B,M) \ar[r] \ar[d] & \M{0}{\alpha}{\PP^N|H}{d} \ar[d] \\
+\mathcal{D}^{\mathcal{Q}}(\PP^N|H,A,B,M) \ar[r] & \Q{0}{\alpha}{\PP^N|H}{d}
+\ecd
+The vertical arrow on the left is a product of comparison morphisms. The horizontal arrow at the top is the glueing morphism which glues together the various pieces of the comb to produce a single relative stable map. Here we explain how to define the corresponding glueing morphism for quasimaps (i.e. the bottom horizontal arrow).
 
-This plays well with Gathmann's definition of the stable map comb locus, but it is not the most obvious definition from the point of view of quasimaps. The points in this space are supposed to correspond to degenerate objects of $\Q{0}{\alpha}{\PP^N|H}{d}$; thus given $r+1$ quasimaps as above -- the internal component and the $r$ teeth of the comb -- we should be able to ``glue'' them together to obtain a bona fide quasimap to $\PP^N$.
-
-We now explain how this is done. Suppose for simplicity that $r=1$ and consider two quasimaps:
+Suppose for simplicity that $r=1$ and consider an element of the quasimap comb locus, consisting of two quasimaps:
 \begin{align*} & ((C^0;x^0_1,x^0_{n_0},q);L^0;(u^0_0, \ldots, u^0_N)) \\
 &((C^1;x^1_1,x^1_{n_1},q);L^1;(u^1_0, \ldots, u^1_N)) \end{align*}
-We want to glue these quasimaps together along $q$. The definition of the curve is obvious; we simply take:
+such that $u^0(q) = u^1(q)$ in $\PP^N$. We want to glue these quasimaps together along $q$. The definition of the curve is obvious; we simply take:
 \begin{equation*} C = C^0 \cup_q C^1 \end{equation*}
-On the other hand, in order to glue together the line bundles $L^0$ and $L^1$ to obtain a line bundle $L$ over $C$, we require a choice of scalar $\lambda \in \mathbb{G}_\text{m}$ in order to match up the fibres over $q$. Furthermore if the sections are to extend as well then this scalar must be chosen in such a way that it takes $(u^0_0(q), \ldots, u^0_N(q)) \in (L^0_q)^{\oplus (N+1)}$ to $(u^1_0(q), \ldots, u^1_N(q)) \in (L^1_q)^{\oplus (N+1)}$. Since $q$ is not a basepoint of either quasimap (being a marking) these tuples are nonzero, and so $\lambda$ is unique if it exists. Furthermore it exists if and only if these tuples belong to the same $\mathbb{G}_\text{m}$ orbit in $\CC^{N+1}$. This is precisely the statement that the node $q$ maps to the same point in $\PP^N$ on either side.
+On the other hand, glueing together the line bundles $L^0$ and $L^1$ to obtain a line bundle $L$ over $C$ requires a choice of scalar $\lambda \in \mathbb{G}_\text{m}$, in order to match up the fibres over $q$. Furthermore if the sections are to extend as well then this scalar must be chosen in such a way that it takes $(u^0_0(q), \ldots, u^0_N(q)) \in (L^0_q)^{\oplus (N+1)}$ to $(u^1_0(q), \ldots, u^1_N(q)) \in (L^1_q)^{\oplus (N+1)}$. Since $q$ is not a basepoint of either quasimap (being a marking) these tuples are nonzero, and so $\lambda$ is unique if it exists. Furthermore it exists if and only if these tuples belong to the same $\mathbb{G}_\text{m}$-orbit in $\CC^{N+1}$. This is precisely the statement that $u^0(q) = u^1(q) \in \PP^N$. 
 
-This describes the glueing map
-\begin{equation*} \mathcal{D}^{\mathcal{Q}}(\PP^N|H,A,B,M) \to \Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
-and justifies the description of this spaces as a ``comb locus.'' Similar arguments apply for more general toric varieties. \end{remark}
+This justifies description of this space as a ``comb locus.'' Similar arguments apply for more general toric varieties. \end{remark}

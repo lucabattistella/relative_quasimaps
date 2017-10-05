@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  4 OCT 2017 18:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  5 OCT 2017 12:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1348,26 +1348,23 @@ Overfull \hbox (3.70282pt too wide) in paragraph at lines 140--142
 fine rel-a-tive Gromov--
  []
 
-[10] [11]) (./tex/recursion_for_Pr.tex [12] [13] [14] [15]
-Overfull \hbox (33.20512pt too wide) in paragraph at lines 92--92
+[10] [11]) (./tex/recursion_for_Pr.tex [12] [13] [14] [15] [16]
+Overfull \hbox (33.20512pt too wide) in paragraph at lines 96--96
 [] 
  []
 
-[16] [17]) (./tex/recursion_general.tex [18] [19]
+[17] [18]) (./tex/recursion_general.tex [19] [20]
 Overfull \hbox (30.93896pt too wide) in paragraph at lines 52--52
 [] 
  []
 
-[20] [21] [22]) (./tex/mirror_theorem.tex [23]
+[21] [22] [23]) (./tex/mirror_theorem.tex
 LaTeX Font Info:    Try loading font information for U+bbm on input line 9.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-)
-Underfull \vbox (badness 2478) has occurred while \output is active []
-
- [24]
-(./fig/snake.tex) [25] [26]
+) [24] [25]
+(./fig/snake.tex) [26]
 Overfull \hbox (19.47063pt too wide) detected at line 105
 \OT1/zpltlf/m/n/10.95 [[][]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 X\OMS/np
 xsy/m/n/10.95 j\OML/npxmi/m/it/10.95 Y; ^^L\U/npxmia/m/it/10.95 ~\OT1/zpltlf/m/
@@ -1393,20 +1390,21 @@ LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 8.0pt on input line 157.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 6.1pt on input line 157.
- [28]
+ [28] [29]
 Overfull \hbox (3.74261pt too wide) in paragraph at lines 207--208
  [] 
  []
 
-[29]
+
 Overfull \hbox (11.60768pt too wide) detected at line 216
 \U/npxmia/m/it/10.95 }[][]~[][] 5 [] [] 5 []
  []
 
-) (./tex/comparison.tex [30] (./fig/RandT.tex) (./fig/T_delta.tex)
+) (./tex/comparison.tex [30] (./fig/RandT.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31]
+(./fig/T_delta.tex)
 Overfull \hbox (23.12883pt too wide) in paragraph at lines 28--29
 []\T1/zpltlf/m/n/10.95 Notice that re-strict-ing $[][] \OMS/npxsy/m/n/10.95 O[]
 \U/npxmia/m/it/10.95 }}\OML/npxmi/m/it/10.95 ^^N \OMS/npxsy/m/n/10.95 ^^@ \OT1/
@@ -1416,12 +1414,15 @@ U/npxmia/m/it/10.95 }[][] \OML/npxmi/m/it/10.95 ^^O[]T[]\U/npxmia/m/it/10.95 ~$
 \T1/zpltlf/m/n/10.95 .
  []
 
-[32] [33]
+[32]
+Underfull \vbox (badness 2698) has occurred while \output is active []
+
+ [33]
 Overfull \hbox (10.26819pt too wide) in paragraph at lines 99--99
 [] 
  []
 
-
+[34]
 Overfull \hbox (68.65169pt too wide) in paragraph at lines 103--105
 \T1/zpltlf/m/n/10.95 under $\OML/npxmi/m/it/10.95 h[]\U/npxmia/m/it/10.95 }\OML
 /npxmi/m/it/10.95 ^^^[]\U/npxmia/m/it/10.95 ~$\T1/zpltlf/m/n/10.95 . If we can 
@@ -1432,7 +1433,7 @@ mia/m/it/10.95 }
 xsy/m/n/10.95 ^^@ [] \OML/npxmi/m/it/10.95 p[]\U/npxmia/m/it/10.95 ~~$
  []
 
-[34]
+
 Overfull \hbox (45.43962pt too wide) detected at line 112
 [][]\U/npxmia/m/it/10.95 }
 []\OML/npxmi/m/it/10.95 ; \OMS/npxsy/m/n/10.95 O[]\U/npxmia/m/it/10.95 }\OMS/np
@@ -1481,15 +1482,12 @@ LaTeX Font Warning: Font shape `U/bbm/m/n' in size <5.5> not available
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 31376 strings out of 493014
- 611450 string characters out of 6133351
- 664577 words of memory out of 5000000
- 34078 multiletter control sequences out of 15000+600000
+ 31414 strings out of 493014
+ 612416 string characters out of 6133351
+ 666306 words of memory out of 5000000
+ 34116 multiletter control sequences out of 15000+600000
  100113 words of font info for 198 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  56i,16n,99p,10394b,1048s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1514,7 +1512,7 @@ xlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016
 st/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/
 type1/public/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
 blic/newpx/zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (55 pages, 385840 bytes).
+Output written on relative_quasimaps.pdf (55 pages, 386420 bytes).
 PDF statistics:
  268 PDF objects out of 1000 (max. 8388607)
  192 compressed objects within 2 object streams
