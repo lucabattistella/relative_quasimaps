@@ -57,7 +57,7 @@ where $\mathcal{C} \to \om{Q} = \Q{g}{n}{X}{\beta}$ is the universal curve and $
 \begin{equation*} \langle \gamma_1 \psi^{k_1} , \ldots, \gamma_n \psi^{k_n} \rangle_{g,n,\beta}^X = \int_{\virt{\Q{g}{n}{X}{\beta}}} \prod_{i=1}^n \ev_i^* (\gamma_i) \psi_i^{k_i} \end{equation*}
 We use the same correlator notation as in Gromov--Witten theory; this should not cause any confusion.
 
-\begin{example} Consider $\Q{0}{2}{\PP^2}{1}$. What are its objects? By the strong stability condition (2) above, we see that the source curve must be irreducible. On the other hand since $\PP^2$ has Picard rank $1$ we may exploit the isomorphisms $\varphi_m$ to reduce ourselves to considering one line bundle equipped with three sections. Thus the data of the quasimap is $((C;x_1,x_2);L;u_0,u_1,u_2)$ where $(C,L)\cong(\PP^1,\OO_{\PP^1}(1))$.
+\begin{example} Consider $\Q{0}{2}{\PP^2}{1}$. What are its objects? By the strong stability condition (2) above, we see that the source curve must be irreducible. On the other hand since $\PP^2$ has Picard rank $1$ we may exploit the isomorphisms $\varphi_m$ to reduce ourselves to considering one line bundle equipped with three sections. Thus the data of the quasimap is $((C,x_1,x_2),L,u_0,u_1,u_2)$ where $(C,L)\cong(\PP^1,\OO_{\PP^1}(1))$.
 
 Pick coordinates $[s:t]$ on $\PP^1$ such that the marked points are $[1:0]$ and $[0:1]$. We can express the sections as $u_i=a_is+b_it$; the requirement that the markings are not basepoints then translates into the following stability condition:
  \[
@@ -176,7 +176,7 @@ which plays the role of the ``pull-back'' of $s_Y$.
 \begin{definition} With notation as above, let $n \geq 2$ be a number of marked points, $\beta \in \HH_2^+(X)$ be an effective curve class and $\alpha=(\alpha_1, \ldots, \alpha_n)$ a collection of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. Then we define the \ilemph{moduli space of relative stable quasimaps}
 \begin{equation*} \Q{0}{\alpha}{X|Y}{\beta} \subseteq \Q{0}{n}{X}{\beta} \end{equation*}
 to be the locus of quasimaps
-\begin{equation*} (C \to S, (x_i : S \to C)_{i=1}^n, (L_\rho,u_\rho)_{\rho \in \Sigma(1)}, (\varphi_m)_{m \in M}) \end{equation*}
+\begin{equation*} ((C \to S, (x_i : S \to C)_{i=1}^n), (L_\rho,u_\rho)_{\rho \in \Sigma(1)}, (\varphi_m)_{m \in M}) \end{equation*}
 such that:
 \begin{enumerate}
 \item if $x_i$ is a marking such that $\alpha_i > 0$, then $x_i^* u_Y = 0$;

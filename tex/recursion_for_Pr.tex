@@ -53,7 +53,7 @@ By nondegeracy, we can choose a section $w_i$ of $L|_{C_i}$ such that $w_i(q_i) 
 Then indeed we have:
 \begin{equation*} {u_N^\prime}|_{C_i}(q_i) = u_N(q_i) + \epsilon \left( \frac{w_0(q_i)}{w_i(q_i)} \right) \cdot w_i(q_i) = u_N(q_i) + \epsilon w_0(q_i) = {u_N^\prime}|_{C_0}(q_i) \end{equation*}
 We can continue this process, replacing $C_0$ by $C_i$; since the genus of the curve is zero there are no cycles in the dual intersection graph, and so we will never come to the same component twice. In this way we obtain a new quasimap
-\begin{equation*} (C,x_1,\ldots,x_n,L,u_0, \ldots, u_{N-1}, u_N^\prime) \end{equation*}
+\begin{equation*} ((C,x_1,\ldots,x_n),L,u_0, \ldots, u_{N-1}, u_N^\prime) \end{equation*}
 over $\Spec \CC[\epsilon]/(\epsilon^2)$ which has no basepoints on $C_0$. We can repeat this process for all the components of $C$ (using higher powers of $\epsilon$ each time in order to ensure that we never introduce additional basepoints) and thus we obtain an infinitesimal deformation of our original quasimap which has no basepoints, as required.
 
 $\overline{\mathcal{Q}^{\circ}_{0,\alpha}(\PP^N|H,d)}\subseteq\Q{0}{\alpha}{\PP^N|H}{d}$: consider a family of stable quasimaps over a smooth curve $S$, such that the generic fibre lies in the nice locus. We may  blow-up the source curve (a fibered surface over $S$) in the locus of basepoints (which consists of finitely many smooth points of the central fiber) and repeat this process a finite number of times in order to obtain an actual morphism to $\PP^N$. This has the effect of adding rational tails at the basepoints in the central fibre. If the morphism is constant on any of these rational tails we may contract them, and thus we obtain a family of stable maps which pushes down along $\chi$ to our original family of quasimaps.
@@ -143,8 +143,8 @@ This follows from \cite[Thm. 2.6]{Ga} by pushforward along $\chi$, using the pro
 The vertical arrow on the left is a product of comparison morphisms. The horizontal arrow at the top is the glueing morphism which glues together the various pieces of the comb to produce a single relative stable map. Here we explain how to define the corresponding glueing morphism for quasimaps (i.e. the bottom horizontal arrow).
 
 Suppose for simplicity that $r=1$ and consider an element of the quasimap comb locus, consisting of two quasimaps:
-\begin{align*} & ((C^0;x^0_1,x^0_{n_0},q);L^0;(u^0_0, \ldots, u^0_N)) \\
-&((C^1;x^1_1,x^1_{n_1},q);L^1;(u^1_0, \ldots, u^1_N)) \end{align*}
+\begin{align*} & ((C^0,x^0_1,\ldots,x^0_{n_0},q),L^0,u^0_0, \ldots, u^0_N) \\
+&((C^1,x^1_1,\ldots,x^1_{n_1},q),L^1,u^1_0, \ldots, u^1_N) \end{align*}
 such that $u^0(q) = u^1(q)$ in $\PP^N$. We want to glue these quasimaps together along $q$. The definition of the curve is obvious; we simply take:
 \begin{equation*} C = C^0 \cup_q C^1 \end{equation*}
 On the other hand, glueing together the line bundles $L^0$ and $L^1$ to obtain a line bundle $L$ over $C$ requires a choice of scalar $\lambda \in \mathbb{G}_\text{m}$, in order to match up the fibres over $q$. Furthermore if the sections are to extend as well then this scalar must be chosen in such a way that it takes $(u^0_0(q), \ldots, u^0_N(q)) \in (L^0_q)^{\oplus (N+1)}$ to $(u^1_0(q), \ldots, u^1_N(q)) \in (L^1_q)^{\oplus (N+1)}$. Since $q$ is not a basepoint of either quasimap (being a marking) these tuples are nonzero, and so $\lambda$ is unique if it exists. Furthermore it exists if and only if these tuples belong to the same $\mathbb{G}_\text{m}$-orbit in $\CC^{N+1}$. This is precisely the statement that $u^0(q) = u^1(q) \in \PP^N$. 

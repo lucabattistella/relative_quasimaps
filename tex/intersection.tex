@@ -2,26 +2,26 @@
 
 In this appendix we explicitly define the \emph{diagonal pull-back} along a morphism whose target is unobstructed (used in \cite{Ga}) and verify that this agrees with the virtual pull-back of \cite{Manolache-Pull} when both are defined. We also check that it satisfies some expected compatibility properties.
 
-Consider a morphism of DM stacks $f\colon Y\to X$ over a smooth base $\mathfrak M$, such that $X$ is \emph{smooth} over $\mathfrak M$ and $Y$ carries a virtual class given by a perfect obstruction theory $E^\bullet_{Y/\mathfrak M}$. Then, for every Cartesian diagram
+Consider a morphism of DM stacks $f\colon Y\to X$ over a smooth base $\mathfrak M$, such that $X$ is smooth over $\mathfrak M$ and $Y$ carries a virtual class given by a perfect obstruction theory $\EE_{Y/\mathfrak M}$. Then, for every Cartesian diagram
  \bcd
  G\ar[r,"g"]\ar[d,"q"]\ar[rd,phantom,"\Box"] & F\ar[d,"p"] \\
  Y\ar[r,"f"] & X 
  \ecd
-and every class $\alpha\in A_*(F)$, we may define
+and every class $\alpha\in \Achow_*(F)$, we may define
 \[
- f^!_{\Delta}(\alpha)=\Delta_X^!([Y]^\text{vir}\times\alpha)\in A_*(G)
+ f^!_{\Delta}(\alpha)=\Delta_X^!([Y]^\text{vir}\times\alpha)\in \Achow_*(G)
 \]
-which we call a \emph{diagonal} virtual pull-back. We first show that it coincides with the usual virtual pull-back along $f$ in the presence of a compatible perfect obstruction theory relative to $f$.
+which we call the \emph{diagonal (virtual) pull-back}. We first show that it coincides with the usual virtual pull-back along $f$ in the presence of a compatible perfect obstruction theory for $f$.
 
 \begin{lemma}\label{lem:diagonal_virtual_coincide}
-  Assume that there exists a relative obstruction theory $E^\bullet_f$ compatible with $E^\bullet_{Y/\mathfrak M}$ and the standard (unobstructed) obstruction theory for $X$, i.e.
+Assume that there exists a relative obstruction theory $\EE_f$ compatible with $\EE_{Y/\mathfrak M}$ and the standard (unobstructed) obstruction theory for $X$, i.e:
  \bcd
- f^* L^\bullet_{X/\mathfrak M} \ar[r] \ar[d,equal] & E^\bullet_{Y/\mathfrak M} \ar[r] \ar[d] & E^\bullet_f \ar[r,"{[1]}"] \ar[d] & \, \\
- f^* L^\bullet_{X/\mathfrak M} \ar[r] & L^\bullet_{Y/\mathfrak M} \ar[r] & L^\bullet_f \ar[r,"{[1]}"] & \,
+ f^* \LL_{X/\mathfrak M} \ar[r] \ar[d,"\operatorname{Id}"] & \EE_{Y/\mathfrak M} \ar[r] \ar[d] & \EE_f \ar[r,"{[1]}"] \ar[d] & \, \\
+ f^* \LL_{X/\mathfrak M} \ar[r] & \LL_{Y/\mathfrak M} \ar[r] & \LL_f \ar[r,"{[1]}"] & \,
  \ecd
- Then for every Cartesian diagram and every class $\alpha\in A_*(F)$ as above,
+ Then for every Cartesian diagram and every class $\alpha\in \Achow_*(F)$ as above,
  \[
-  f^!_{E}(\alpha)=f^!_\Delta(\alpha).
+  f^!_{\operatorname{v}}(\alpha)=f^!_\Delta(\alpha).
  \]
 \end{lemma}
 \begin{proof}
@@ -33,10 +33,10 @@ F \ar[r,"p \times \Id"] \ar[d,"p"] \ar[rd,phantom,"\square"] & X\times_{\mathfra
 X \ar[r,"\Delta_X"] & X\times_{\mathfrak M}X &
 \ecd
 Then, by commutativity of virtual pull-backs, we have
-\begin{align*} \Delta_X^!([Y]^\text{vir}\times\alpha) & = \Delta^!((f^!_E[X])\times\alpha) \\
-& = \Delta_X^!(f^!_E([X]\times\alpha)) \\
-& = f^!_E(\Delta_X^!([X]\times\alpha)) \\
-& = f^!_E(\alpha)
+\begin{align*} \Delta_X^!([Y]^\text{vir}\times\alpha) & = \Delta^!((f^!_{\operatorname{v}}[X])\times\alpha) \\
+& = \Delta_X^!(f^!_{\operatorname{v}}([X]\times\alpha)) \\
+& = f^!_{\operatorname{v}}(\Delta_X^!([X]\times\alpha)) \\
+& = f^!_{\operatorname{v}}(\alpha)
 \end{align*}
 as required.
 \end{proof}
