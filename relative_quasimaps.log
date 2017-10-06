@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  5 OCT 2017 18:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  6 OCT 2017 16:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1142,96 +1142,97 @@ LaTeX Info: Redefining \not on input line 1480.
 LaTeX Info: Redefining \textsquare on input line 1501.
 LaTeX Info: Redefining \openbox on input line 1503.
 )
-No file relative_quasimaps.aux.
+(./relative_quasimaps.aux)
 \openout1 = `relative_quasimaps.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 154.
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 155.
 LaTeX Font Info:    Try loading font information for OML+npxmi on input line 15
-4.
+5.
+
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for OMS/npxsy/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OMS/npxsy/m/n on input line 155.
 LaTeX Font Info:    Try loading font information for OMS+npxsy on input line 15
-4.
+5.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/omsnpxsy.fd
 File: omsnpxsy.fd 2013/03/24 Fontinst v1.933 font definitions for OMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 154.
-LaTeX Font Info:    Try loading font information for U+npxexa on input line 154
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 155.
+LaTeX Font Info:    Try loading font information for U+npxexa on input line 155
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 154.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 154.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 155.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 155.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 154.
+(Font)              scaled to size 9.0pt on input line 155.
 LaTeX Font Info:    Try loading font information for OT1+zpltlf on input line 1
-54.
+55.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/ot1zpltlf.fd
 File: ot1zpltlf.fd 2015/01/17 v1.0 font definition file for OT1/zpl/tlf
 )
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 154.
+(Font)              scaled to size 9.0pt on input line 155.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 154.
+(Font)              scaled to size 7.3pt on input line 155.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 154.
-LaTeX Font Info:    Try loading font information for U+msa on input line 154.
+(Font)              scaled to size 5.5pt on input line 155.
+LaTeX Font Info:    Try loading font information for U+msa on input line 155.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 154.
+LaTeX Font Info:    Try loading font information for U+msb on input line 155.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 154.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 155.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 
 LaTeX Font Warning: Font shape `U/stmry/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 154.
+(Font)              size <5> substituted on input line 155.
 
-LaTeX Font Info:    Try loading font information for U+npxmia on input line 154
+LaTeX Font Info:    Try loading font information for U+npxmia on input line 155
 .
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/unpxmia.fd
 File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
 )
-LaTeX Font Info:    Try loading font information for U+npxsym on input line 154
+LaTeX Font Info:    Try loading font information for U+npxsym on input line 155
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/unpxsym.fd
 File: unpxsym.fd 2015/03/21 Fontinst v1.933 font definitions for U/npxsym.
 )
-LaTeX Font Info:    Try loading font information for U+npxsyc on input line 154
+LaTeX Font Info:    Try loading font information for U+npxsyc on input line 155
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/unpxsyc.fd
@@ -1302,23 +1303,23 @@ e
 ))
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 154.
+(Font)              scaled to size 10.95pt on input line 155.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 154.
+(Font)              scaled to size 8.0pt on input line 155.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 6.1pt on input line 154.
-Package xypdf Info: Line width: 0.64604pt on input line 154.
+(Font)              scaled to size 6.1pt on input line 155.
+Package xypdf Info: Line width: 0.64604pt on input line 155.
 \c@mv@tabular=\count196
 \c@mv@boldtabular=\count197
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sc' will be
-(Font)              scaled to size 9.0pt on input line 156.
+(Font)              scaled to size 9.0pt on input line 157.
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 158.
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 159.
 
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 158.
+(Font)              scaled to size 10.95pt on input line 159.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 160.
+(Font)              scaled to size 10.95pt on input line 161.
  (./relative_quasimaps.toc)
 \tf@toc=\write5
 \openout5 = `relative_quasimaps.toc'.
@@ -1327,515 +1328,43 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/sc' will be
 (./tex/section-1-introduction.tex
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 10.95pt on input line 5.
-
-
-LaTeX Warning: Citation `CF-K' on page 1 undefined on input line 7.
-
-
-LaTeX Warning: Citation `MOP' on page 1 undefined on input line 11.
-
-
-LaTeX Warning: Citation `CFKM' on page 1 undefined on input line 11.
-
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 12.
-[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: Citation `CM' on page 2 undefined on input line 15.
-
-
-LaTeX Warning: Citation `MOP' on page 2 undefined on input line 15.
-
-
-LaTeX Warning: Citation `Manolache-Push' on page 2 undefined on input line 15.
-
-
-LaTeX Warning: Citation `Givental-mirror' on page 2 undefined on input line 15.
-
-
-
-LaTeX Warning: Citation `CF-K' on page 2 undefined on input line 15.
-
-
-LaTeX Warning: Citation `CF-K-wallcrossing' on page 2 undefined on input line 1
-5.
-
-
-LaTeX Warning: Citation `CF-K-wallcrossing' on page 2 undefined on input line 1
-7.
-
-
-LaTeX Warning: Citation `CF-K' on page 2 undefined on input line 17.
-
-
-LaTeX Warning: Citation `Ga' on page 2 undefined on input line 22.
-
-
-LaTeX Warning: Citation `Ga' on page 2 undefined on input line 32.
-
-
-LaTeX Warning: Citation `Ga-MF' on page 2 undefined on input line 32.
-
-
-LaTeX Warning: Citation `GiventalEquivariant' on page 2 undefined on input line
- 32.
-
-
-LaTeX Warning: Citation `LLY1' on page 2 undefined on input line 32.
-
-[2]
-
-LaTeX Warning: Reference `Subsection stable quasimaps' on page 3 undefined on i
-nput line 39.
-
-
-LaTeX Warning: Reference `Subsection relative stable maps' on page 3 undefined 
-on input line 39.
-
-
-LaTeX Warning: Reference `Subsection relative stable quasimaps' on page 3 undef
-ined on input line 39.
-
-
-LaTeX Warning: Reference `Section recursion for PN' on page 3 undefined on inpu
-t line 43.
-
-
-LaTeX Warning: Reference `Section recursion formula in general case' on page 3 
-undefined on input line 49.
-
-
-LaTeX Warning: Reference `Section quasimap mirror theorem' on page 3 undefined 
-on input line 53.
-
-
-LaTeX Warning: Reference `Section recursion formula in general case' on page 3 
-undefined on input line 53.
-
-
-LaTeX Warning: Citation `CF-K-wallcrossing' on page 3 undefined on input line 5
-3.
-
-
-LaTeX Warning: Citation `Ga-MF' on page 3 undefined on input line 53.
-
-
-LaTeX Warning: Reference `Section comparison morphism' on page 3 undefined on i
-nput line 55.
-
-
-LaTeX Warning: Reference `Section quasimap theory' on page 3 undefined on input
- line 55.
-
-
-LaTeX Warning: Reference `appendix:intersection' on page 3 undefined on input l
-ine 55.
-
-
+(Font)              scaled to size 8.0pt on input line 8.
+ [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] 
+[3]
 Overfull \hbox (26.46033pt too wide) in paragraph at lines 57--58
 []\T1/zpltlf/b/n/10.95 Acknowledgements. []\T1/zpltlf/m/n/10.95 The au-thors wi
 sh to thank Tom Coates, Cristina Manolache,
  []
-
-[3]
-
-LaTeX Warning: Reference `Subsection relative stable maps' on page 4 undefined 
-on input line 86.
-
-
-LaTeX Warning: Reference `Subsection stable quasimaps' on page 4 undefined on i
-nput line 86.
-
-
-LaTeX Warning: Reference `Subsection basic properties of the moduli space' on p
-age 4 undefined on input line 86.
-
-
-LaTeX Warning: Reference `Subsection relative stable quasimaps' on page 4 undef
-ined on input line 86.
-
-
-LaTeX Warning: Reference `Subsection recursion formula for PN' on page 4 undefi
-ned on input line 86.
-
-
-LaTeX Warning: Reference `Subsection recursion formula for PN' on page 4 undefi
-ned on input line 86.
-
-
-LaTeX Warning: Reference `Subsection comb loci pull back' on page 4 undefined o
-n input line 86.
-
-
-LaTeX Warning: Reference `Subsection splitting' on page 4 undefined on input li
-ne 86.
-
-
-LaTeX Warning: Reference `Subsection splitting' on page 4 undefined on input li
-ne 86.
-
-
-LaTeX Warning: Reference `Subsection splitting' on page 4 undefined on input li
-ne 86.
-
-
-LaTeX Warning: Reference `Section comparison morphism' on page 4 undefined on i
-nput line 86.
-
-
-LaTeX Warning: Reference `Section comparison with GIT construction' on page 4 u
-ndefined on input line 86.
-
-
-LaTeX Warning: Reference `Functoriality of Quasimap Spaces Section' on page 4 u
-ndefined on input line 86.
-
-
-LaTeX Warning: Reference `Section comparison morphism' on page 4 undefined on i
-nput line 86.
-
-
-LaTeX Warning: Reference `appendix:intersection' on page 4 undefined on input l
-ine 86.
-
-
-LaTeX Warning: Reference `appendix:intersection' on page 4 undefined on input l
-ine 86.
 
 
 Overfull \hbox (55.00758pt too wide) in alignment at lines 86--86
  [] [] [] [] 
  []
 
-) (./tex/section-relative-stable-quasimaps.tex
-
-LaTeX Warning: Citation `CF-K' on page 4 undefined on input line 4.
-
-
-LaTeX Warning: Citation `CF-K' on page 4 undefined on input line 5.
-
-[4]
-
-LaTeX Warning: Citation `CoxFunctor' on page 5 undefined on input line 26.
-
-
-LaTeX Warning: Reference `Functoriality of Quasimap Spaces Section' on page 5 u
-ndefined on input line 26.
-
-
-LaTeX Warning: Reference `Section comparison morphism' on page 5 undefined on i
-nput line 28.
-
-
-LaTeX Warning: Citation `CF-K' on page 5 undefined on input line 32.
-
-[5]
-
-LaTeX Warning: Citation `CF-K' on page 6 undefined on input line 48.
-
-[6]
-
-LaTeX Warning: Reference `Section comparison morphism' on page 7 undefined on i
-nput line 87.
-
-[7]
-
-LaTeX Warning: Citation `CFKM' on page 8 undefined on input line 93.
-
-
-LaTeX Warning: Citation `CF-K-wallcrossing' on page 8 undefined on input line 1
-01.
-
-
-LaTeX Warning: Citation `CF-K' on page 8 undefined on input line 105.
-
-
-LaTeX Warning: Citation `CF-K' on page 8 undefined on input line 105.
-
-
-LaTeX Warning: Citation `Bertram' on page 8 undefined on input line 110.
-
-
-LaTeX Warning: Citation `Ga' on page 8 undefined on input line 112.
-
-
-LaTeX Warning: Citation `Li1' on page 8 undefined on input line 114.
-
-
-LaTeX Warning: Citation `Li2' on page 8 undefined on input line 114.
-
-
-LaTeX Warning: Citation `AbramovichFantechi' on page 8 undefined on input line 
-114.
-
-
-LaTeX Warning: Citation `KimLog' on page 8 undefined on input line 114.
-
-
-LaTeX Warning: Citation `GrossSiebertLog' on page 8 undefined on input line 114
-.
-
-
-LaTeX Warning: Citation `GrossSiebertIntrinsic' on page 8 undefined on input li
-ne 114.
-
-
-LaTeX Warning: Citation `ChenLog' on page 8 undefined on input line 114.
-
-
-LaTeX Warning: Citation `AbramovichChenLog' on page 8 undefined on input line 1
-14.
-
-
-LaTeX Warning: Citation `AbramovichMarcusWiseComparison' on page 8 undefined on
- input line 114.
-
-[8]
-
-LaTeX Warning: Citation `Ga' on page 9 undefined on input line 116.
-
-
-LaTeX Warning: Citation `Ga' on page 9 undefined on input line 128.
-
-[9]
+[4]) (./tex/section-relative-stable-quasimaps.tex [5] [6] [7] [8] [9]
 Overfull \hbox (3.70282pt too wide) in paragraph at lines 140--142
 \T1/zpltlf/m/n/10.95 Hence it has a fun-da-men-tal class from which one can de-
 fine rel-a-tive Gromov--
  []
 
-
-LaTeX Warning: Reference `appendix:intersection' on page 10 undefined on input 
-line 148.
-
-
-LaTeX Warning: Citation `Ga' on page 10 undefined on input line 152.
-
-
-LaTeX Warning: Citation `Ga' on page 10 undefined on input line 154.
-
-
-LaTeX Warning: Citation `Ga-MF' on page 10 undefined on input line 154.
-
-
-LaTeX Warning: Citation `CoxRing' on page 10 undefined on input line 160.
-
-[10]
-
-LaTeX Warning: Reference `uY expression' on page 11 undefined on input line 168
-.
-
-
-LaTeX Warning: Reference `Functoriality of Quasimap Spaces Section' on page 11 
-undefined on input line 170.
-
-[11]
-
-LaTeX Warning: Reference `Subsection relative stable maps' on page 12 undefined
- on input line 197.
-
-) (./tex/recursion_for_Pr.tex
-
-LaTeX Warning: Reference `Section comparison morphism' on page 12 undefined on 
-input line 8.
-
-[12]
-
-LaTeX Warning: Reference `Relative quasimap internal component inequality' on p
-age 13 undefined on input line 19.
-
-
-LaTeX Warning: Reference `Relative stable map internal component inequality' on
- page 13 undefined on input line 19.
-
-
-LaTeX Warning: Reference `Relative stable map internal component inequality' on
- page 13 undefined on input line 23.
-
-
-LaTeX Warning: Reference `Relative quasimap internal component inequality' on p
-age 13 undefined on input line 23.
-
-
-LaTeX Warning: Reference `Relative stable map internal component inequality' on
- page 13 undefined on input line 27.
-
-
-LaTeX Warning: Reference `Relative quasimap internal component inequality' on p
-age 13 undefined on input line 27.
-
-
-LaTeX Warning: Citation `Ga' on page 13 undefined on input line 33.
-
-
-LaTeX Warning: Citation `Ga' on page 13 undefined on input line 33.
-
-[13]
-
-LaTeX Warning: Citation `Ga' on page 14 undefined on input line 39.
-
-[14]
-
-LaTeX Warning: Citation `Ga' on page 15 undefined on input line 61.
-
-
-LaTeX Warning: Reference `lem:comparison' on page 15 undefined on input line 61
-.
-
-
-LaTeX Warning: Citation `Ga' on page 15 undefined on input line 76.
-
-[15]
-
-LaTeX Warning: Reference `Comparison morphism birational' on page 16 undefined 
-on input line 86.
-
-
+[10] [11]) (./tex/recursion_for_Pr.tex [12] [13] [14] [15] [16]
 Overfull \hbox (33.20512pt too wide) in paragraph at lines 96--96
 [] 
  []
 
-
-LaTeX Warning: Citation `Ga-MF' on page 16 undefined on input line 99.
-
-[16]
-
-LaTeX Warning: Citation `Ga' on page 17 undefined on input line 135.
-
-
-LaTeX Warning: Reference `Comparison morphism birational' on page 17 undefined 
-on input line 135.
-
-
-LaTeX Warning: Reference `lem:posdimfiber' on page 17 undefined on input line 1
-35.
-
-
-LaTeX Warning: Reference `lem:compare_psi' on page 17 undefined on input line 1
-35.
-
-[17]) (./tex/recursion_general.tex
-
-LaTeX Warning: Reference `Functoriality of Quasimap Spaces Section' on page 18 
-undefined on input line 3.
-
-
-LaTeX Warning: Reference `section:rel_pot_for_qm_functoriality' on page 18 unde
-fined on input line 5.
-
-
-LaTeX Warning: Reference `lem:diagonal_virtual_coincide' on page 18 undefined o
-n input line 5.
-
-[18]
-
-LaTeX Warning: Reference `Section quasimap mirror theorem' on page 19 undefined
- on input line 16.
-
-[19]
-
-LaTeX Warning: Citation `CFKM' on page 20 undefined on input line 43.
-
-
-LaTeX Warning: Reference `Section comparison with GIT construction' on page 20 
-undefined on input line 45.
-
-
+[17] [18]) (./tex/recursion_general.tex [19] [20]
 Overfull \hbox (30.93896pt too wide) in paragraph at lines 52--52
 [] 
  []
 
-
-LaTeX Warning: Reference `Subsection recursion formula for PN' on page 20 undef
-ined on input line 62.
-
-[20]
-
-LaTeX Warning: Reference `Subsection splitting' on page 21 undefined on input l
-ine 82.
-
-
-LaTeX Warning: Reference `appendix:intersection' on page 21 undefined on input 
-line 87.
-
-[21]
-
-LaTeX Warning: Reference `GIT comparison remark' on page 22 undefined on input 
-line 95.
-
-
-LaTeX Warning: Reference `Section comparison with GIT construction' on page 22 
-undefined on input line 95.
-
-
-LaTeX Warning: Citation `Costello' on page 22 undefined on input line 103.
-
-
-LaTeX Warning: Reference `Subsection splitting' on page 22 undefined on input l
-ine 105.
-
-
-LaTeX Warning: Reference `Lemma product class equals pullback class' on page 22
- undefined on input line 105.
-
-
-LaTeX Warning: Reference `Comb loci pull back' on page 22 undefined on input li
-ne 110.
-
-
-LaTeX Warning: Reference `theta-pull' on page 22 undefined on input line 126.
-
-
-LaTeX Warning: Reference `psishriek formula' on page 22 undefined on input line
- 126.
-
-
-LaTeX Warning: Reference `theta-pull' on page 22 undefined on input line 126.
-
-
-LaTeX Warning: Reference `theta-pull' on page 22 undefined on input line 126.
-
-
-LaTeX Warning: Reference `psishriek formula' on page 22 undefined on input line
- 126.
-
-
-LaTeX Warning: Reference `theta-pull' on page 22 undefined on input line 126.
-
-[22]
-
-LaTeX Warning: Reference `Recursion formula for PN' on page 23 undefined on inp
-ut line 132.
-
-
-LaTeX Warning: Reference `Relative spaces pull back' on page 23 undefined on in
-put line 132.
-
-
-LaTeX Warning: Reference `Comb loci pull back' on page 23 undefined on input li
-ne 132.
-
-) (./tex/mirror_theorem.tex
-
-LaTeX Warning: Citation `Ga-MF' on page 23 undefined on input line 3.
-
-
-LaTeX Warning: Citation `CF-K-wallcrossing' on page 23 undefined on input line 
-5.
-
-
-LaTeX Warning: Citation `CF-K-wallcrossing' on page 23 undefined on input line 
-5.
-
-[23]
+[21] [22] [23]) (./tex/mirror_theorem.tex
 LaTeX Font Info:    Try loading font information for U+bbm on input line 9.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [24]
-(./fig/snake.tex) [25]
-
-LaTeX Warning: Reference `eqn:G' on page 26 undefined on input line 87.
-
-
+) [24] [25]
+(./fig/snake.tex) [26]
 Overfull \hbox (19.47063pt too wide) detected at line 105
 \OT1/zpltlf/m/n/10.95 [[][]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 X\OMS/np
 xsy/m/n/10.95 j\OML/npxmi/m/it/10.95 Y; ^^L\U/npxmia/m/it/10.95 ~\OT1/zpltlf/m/
@@ -1850,92 +1379,32 @@ t/10.95 }\OML/npxmi/m/it/10.95 X\OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 Y;
 95 ~\OT1/zpltlf/m/n/10.95 ][]
  []
 
-[26]
+[27]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 8.0pt on input line 133.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 6.1pt on input line 133.
-
-
-LaTeX Warning: Citation `CZ-mirror' on page 27 undefined on input line 146.
-
-
-LaTeX Warning: Citation `CF-K-wallcrossing' on page 27 undefined on input line 
-151.
-
-
-LaTeX Warning: Citation `CF-K-wallcrossing' on page 27 undefined on input line 
-153.
-
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 10.95pt on input line 157.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 8.0pt on input line 157.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 6.1pt on input line 157.
-[27]
-
-LaTeX Warning: Citation `CF-K-wallcrossing' on page 28 undefined on input line 
-171.
-
-
-LaTeX Warning: Citation `CF-K-wallcrossing' on page 28 undefined on input line 
-175.
-
-
-LaTeX Warning: Citation `CFKM' on page 28 undefined on input line 197.
-
-
-LaTeX Warning: Reference `Subsection relative stable quasimaps' on page 28 unde
-fined on input line 197.
-
-
-Overfull \hbox (22.2082pt too wide) in paragraph at lines 197--198
-[]\T1/zpltlf/m/n/10.95 By a slight gen-er-al-i-sa-tion of [[], Propo-si-tions 6
-.2.2 and 6.2.3], $\OML/npxmi/m/it/10.95 ^^S[]\OT1/zpltlf/m/n/10.95 [[][]\U/npxm
-ia/m/it/10.95 }\OML/npxmi/m/it/10.95 Y; ^^L\U/npxmia/m/it/10.95 ~\OT1/zpltlf/m/
-n/10.95 ][] \U/npxmia/m/it/10.95 5
- []
-
-[28]
+ [28] [29]
 Overfull \hbox (3.74261pt too wide) in paragraph at lines 207--208
  [] 
  []
-
-
-LaTeX Warning: Citation `Givental-equivariantGW' on page 29 undefined on input 
-line 213.
-
-
-LaTeX Warning: Citation `CF-K' on page 29 undefined on input line 213.
 
 
 Overfull \hbox (11.60768pt too wide) detected at line 216
 \U/npxmia/m/it/10.95 }[][]~[][] 5 [] [] 5 []
  []
 
-[29]
+) (./tex/comparison.tex [30] (./fig/RandT.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Citation `CF-K-wallcrossing' on page 30 undefined on input line 
-229.
-
-
-LaTeX Warning: Reference `eqn:mirror' on page 30 undefined on input line 229.
-
-) (./tex/comparison.tex
-
-LaTeX Warning: Citation `MOP' on page 30 undefined on input line 3.
-
-
-LaTeX Warning: Citation `Manolache-Push' on page 30 undefined on input line 3.
-
-
-LaTeX Warning: Citation `Bertram' on page 30 undefined on input line 3.
-
-
-LaTeX Warning: Citation `Popa-Roth' on page 30 undefined on input line 3.
-
-(./fig/RandT.tex) [30] (./fig/T_delta.tex)
+ [31]
+(./fig/T_delta.tex)
 Overfull \hbox (23.12883pt too wide) in paragraph at lines 28--29
 []\T1/zpltlf/m/n/10.95 Notice that re-strict-ing $[][] \OMS/npxsy/m/n/10.95 O[]
 \U/npxmia/m/it/10.95 }}\OML/npxmi/m/it/10.95 ^^N \OMS/npxsy/m/n/10.95 ^^@ \OT1/
@@ -1945,28 +1414,15 @@ U/npxmia/m/it/10.95 }[][] \OML/npxmi/m/it/10.95 ^^O[]T[]\U/npxmia/m/it/10.95 ~$
 \T1/zpltlf/m/n/10.95 .
  []
 
-[31]
-
-LaTeX Warning: Citation `HAR' on page 32 undefined on input line 47.
-
-
-LaTeX Warning: Citation `Knudsen' on page 32 undefined on input line 47.
-
-
-LaTeX Warning: Citation `Manolache-Push' on page 32 undefined on input line 63.
-
-
 [32]
+Underfull \vbox (badness 2698) has occurred while \output is active []
 
-LaTeX Warning: Citation `Manolache-Push' on page 33 undefined on input line 77.
-
-
-[33]
+ [33]
 Overfull \hbox (10.26819pt too wide) in paragraph at lines 99--99
 [] 
  []
 
-
+[34]
 Overfull \hbox (68.65169pt too wide) in paragraph at lines 103--105
 \T1/zpltlf/m/n/10.95 under $\OML/npxmi/m/it/10.95 h[]\U/npxmia/m/it/10.95 }\OML
 /npxmi/m/it/10.95 ^^^[]\U/npxmia/m/it/10.95 ~$\T1/zpltlf/m/n/10.95 . If we can 
@@ -1992,62 +1448,7 @@ pxsy/m/n/10.95 ' \OML/npxmi/m/it/10.95 H[]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it
 /10.95 f[]T[]\U/npxmia/m/it/10.95 ~\OML/npxmi/m/it/10.95 :
  []
 
-
-Underfull \vbox (badness 4518) has occurred while \output is active []
-
- [34]
-
-LaTeX Warning: Citation `Manolache-Push' on page 35 undefined on input line 125
-.
-
-
-LaTeX Warning: Citation `KP' on page 35 undefined on input line 129.
-
-
-LaTeX Warning: Citation `Manolache-Push' on page 35 undefined on input line 129
-.
-
-[35]) [36] (./tex/functoriality.tex
-
-LaTeX Warning: Reference `Functoriality of Quasimap Spaces Section' on page 37 
-undefined on input line 3.
-
-
-LaTeX Warning: Reference `section:rel_pot_for_qm_functoriality' on page 37 unde
-fined on input line 5.
-
-
-LaTeX Warning: Reference `Subsection splitting' on page 37 undefined on input l
-ine 6.
-
-
-LaTeX Warning: Reference `Section comparison with GIT construction' on page 37 
-undefined on input line 7.
-
-
-LaTeX Warning: Citation `CFKM' on page 37 undefined on input line 7.
-
-
-LaTeX Warning: Citation `CF-K-wallcrossing' on page 37 undefined on input line 
-18.
-
-
-LaTeX Warning: Citation `CoxRing' on page 37 undefined on input line 20.
-
-
-LaTeX Warning: Citation `CoxFunctor' on page 37 undefined on input line 20.
-
-[37]
-
-LaTeX Warning: Citation `CoxFunctor' on page 38 undefined on input line 22.
-
-
-LaTeX Warning: Citation `CoxRing' on page 38 undefined on input line 24.
-
-
-LaTeX Warning: Citation `CoxFunctor' on page 38 undefined on input line 26.
-
-
+[35] [36]) (./tex/functoriality.tex [37] [38]
 Overfull \hbox (2.87422pt too wide) in paragraph at lines 46--48
 \T1/zpltlf/m/n/10.95 Consider there-fore a quasimap $\U/npxmia/m/it/10.95 }}\OM
 L/npxmi/m/it/10.95 C; x[]; [] ; x[]\U/npxmia/m/it/10.95 ~\OML/npxmi/m/it/10.95 
@@ -2056,95 +1457,18 @@ OML/npxmi/m/it/10.95 ; \U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 '[]\U/npxmia
 /m/it/10.95 ~[]~$
  []
 
-[38]
+[39] [40] [41] [42] [43] [44] [45]) (./tex/splitting.tex [46] [47] [48]
+[49]) (./tex/GIT.tex
+Overfull \hbox (2.63702pt too wide) in paragraph at lines 21--23
+\T1/zpltlf/m/n/10.95 which ad-mits a vir-tual class. Hence we have two mod-uli 
+spaces of quasimaps
+ []
 
-LaTeX Warning: Reference `Prho' on page 39 undefined on input line 69.
-
-[39]
-
-LaTeX Warning: Reference `Pic short exact sequence for Y' on page 40 undefined 
-on input line 91.
-
-[40]
-
-LaTeX Warning: Reference `CoxTheorem' on page 41 undefined on input line 99.
-
-
-LaTeX Warning: Reference `CoxTheorem' on page 41 undefined on input line 105.
-
-
-LaTeX Warning: Citation `CF-K' on page 41 undefined on input line 109.
-
-[41] [42]
-
-LaTeX Warning: Citation `FUL' on page 43 undefined on input line 139.
-
-
-LaTeX Warning: Citation `Manolache-Pull' on page 43 undefined on input line 143
-.
-
-
-LaTeX Warning: Citation `Manolache-Pull' on page 43 undefined on input line 143
-.
-
-[43]
-
-LaTeX Warning: Reference `functoriality proposition' on page 44 undefined on in
-put line 177.
-
-
-LaTeX Warning: Reference `Functoriality of Quasimap Spaces Section' on page 44 
-undefined on input line 180.
-
-[44] [45]
-
-LaTeX Warning: Reference `Section recursion formula in general case' on page 46
- undefined on input line 217.
-
-) (./tex/splitting.tex
-
-LaTeX Warning: Reference `Subsection recursion formula for PN' on page 46 undef
-ined on input line 3.
-
-
-LaTeX Warning: Citation `Behrend' on page 46 undefined on input line 5.
-
-
-LaTeX Warning: Reference `Remark on definition of comb locus' on page 46 undefi
-ned on input line 9.
-
-[46] [47]
-
-LaTeX Warning: Reference `Product diagram' on page 48 undefined on input line 5
-0.
-
-
-LaTeX Warning: Reference `D-E-triangle' on page 48 undefined on input line 61.
-
-[48]
-
-LaTeX Warning: Reference `Normalisation exact triangle' on page 49 undefined on
- input line 89.
-
-) (./tex/GIT.tex [49]
-
-LaTeX Warning: Reference `Subsection relative stable quasimaps' on page 50 unde
-fined on input line 8.
-
-
-LaTeX Warning: Citation `CFKM' on page 50 undefined on input line 16.
-
-[50]) (./tex/intersection.tex
-
-LaTeX Warning: Citation `Ga' on page 51 undefined on input line 3.
-
-
-LaTeX Warning: Citation `Manolache-Pull' on page 51 undefined on input line 3.
-
-[51] [52]) (./relative_quasimaps.bbl
+[50] [51]) (./tex/intersection.tex [52] [53]) (./relative_quasimaps.bbl
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 9.0pt on input line 6.
- [53]
+
+[54]
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 9.0pt on input line 135.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
@@ -2156,24 +1480,18 @@ LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 LaTeX Font Warning: Font shape `U/bbm/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 135.
 
-) [54] (./relative_quasimaps.aux)
+) [55] (./relative_quasimaps.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 31314 strings out of 493014
- 609638 string characters out of 6133351
- 662988 words of memory out of 5000000
- 34021 multiletter control sequences out of 15000+600000
- 102692 words of font info for 199 fonts, out of 8000000 for 9000
+ 31311 strings out of 493014
+ 609578 string characters out of 6133351
+ 663720 words of memory out of 5000000
+ 34016 multiletter control sequences out of 15000+600000
+ 96910 words of font info for 197 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  56i,16n,99p,10394b,1048s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc} </
@@ -2197,10 +1515,10 @@ xlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016
 st/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/
 type1/public/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
 blic/newpx/zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (54 pages, 376529 bytes).
+Output written on relative_quasimaps.pdf (55 pages, 377697 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
- 187 compressed objects within 2 object streams
+ 266 PDF objects out of 1000 (max. 8388607)
+ 190 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
