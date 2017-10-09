@@ -36,13 +36,13 @@ Furthermore, two such sets of data $(P_\rho)$ and $(P^\prime_\rho)$ correspond t
 \begin{equation*} \lambda(D_\rho) \cdot P_\rho = P^\prime_\rho \end{equation*}
 for all $\rho \in \Sigma_X(1)$. Finally, if we define $\tilde{f}(z_\tau) = (P_\rho(z_\tau))$ then this defines a lift of $f$ to the prequotients:
 \bcd
-\Aaff_k^{|\Sigma_Y(1)|} \setminus Z(\Sigma_Y) \ar[r, "\tilde{f}"] \ar[d, "q_Y"] & \Aaff_k^{|\Sigma_X(1)|} \setminus Z(\Sigma_X) \ar[d,"q_X"] \\
+\Aaff^{\Sigma_Y(1)} \setminus Z(\Sigma_Y) \ar[r, "\tilde{f}"] \ar[d, "q_Y"] & \Aaff^{\Sigma_X(1)} \setminus Z(\Sigma_X) \ar[d,"q_X"] \\
 Y \ar[r, "f"] & X
 \ecd
 \end{thm}
 \begin{aside} Throughout this section we will stick to the notation established above; in particular we will use $\rho$ to denote a ray in $\Sigma_X(1)$ and $\tau$ to denote a ray in $\Sigma_Y(1)$. \end{aside}
 
-Recall our goal: given a map $f : Y \to X$ we wish to define a ``push-forward'' map:
+Recall our goal: given a map $f \colon Y \to X$ we wish to define a ``push-forward'' map:
 \begin{equation*} \om{Q}(f) : \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_*\beta} \end{equation*}
 Consider therefore a quasimap $((C,x_1,\ldots,x_n), (L_\tau, u_\tau)_{\tau \in \Sigma_Y(1)}, (\varphi_{m_Y})_{m_Y \in M_Y})$ with target $Y$. Pick data $(P_\rho)_{\rho \in \Sigma_X(1)}$ corresponding to the map $f$, as in the theorem above; we will later see that our construction does not depend on this choice.
 
@@ -74,7 +74,7 @@ hence the stabilisation morphism is the usual $\Q{g}{n}{X}{0}\to \om{M}_{g,n}$, 
 \draw (15,0) -- (16,3) node[above]{$f_*\beta_1$} (15,1) -- (16,-2) node[below]{$f_*\beta_2$};
 \end{tikzpicture}
 
-Pick a(ny) polarisation $\OO_X(1)$ and write $f^*\OO_X(1)=\bigotimes_\tau L_\tau^{\otimes a_\tau}$, with $a_\tau\geq 0$ (because $f^*\OO_X(1)$ is nef). Notice that the line bundle $\omega_{\pi}(x_1+\ldots+x_n)\otimes \bigotimes_\tau \mathcal L_\tau^{\otimes a_\tau}$ on the universal curve of $\Q{g}{n}{Y}{\beta}$ provides the required contraction
+Pick a polarisation $\OO_X(1)$ and write $f^*\OO_X(1)=\bigotimes_\tau L_\tau^{\otimes a_\tau}$. Notice that the line bundle $\omega_{\pi}(x_1+\ldots+x_n)\otimes \bigotimes_\tau \mathcal L_\tau^{\otimes a_\tau}$ on the universal curve of $\Q{g}{n}{Y}{\beta}$ provides the required contraction
 \bcd
 \mathcal C_Y\ar[rr,"\phi"]\ar[dr,"\pi" below left] & & \overline{\mathcal C}\ar[dl,"\pi'"] \\
  & \Q{g}{n}{Y}{\beta} &
