@@ -486,3 +486,20 @@
 	year = "2014"
 }
 
+@article{Knudsen,
+	author = "Knudsen, Finn F.",
+	doi = "10.7146/math.scand.a-12001",
+	fjournal = "Mathematica Scandinavica",
+	issn = "0025-5521",
+	journal = "Math. Scand.",
+	mrclass = "14H10 (14D20 14D22)",
+	mrnumber = "702953",
+	mrreviewer = "P. E. Newstead",
+	number = "2",
+	pages = "161--199",
+	title = "{The projectivity of the moduli space of stable curves. {II}. {T}he stacks {$M_{g,n}$}}",
+	url = "http://dx.doi.org/10.7146/math.scand.a-12001",
+	volume = "52",
+	year = "1983"
+}
+

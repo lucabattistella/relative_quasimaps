@@ -1,12 +1,21 @@
-\subsection{Functoriality and relative obstruction theories} \label{Functoriality of Quasimap Spaces Section}
+In this appendix we collect several foundational results in quasimap theory, including:
+\begin{enumerate}
+\item \ilemph{Functoriality} (\S \ref{Functoriality of Quasimap Spaces Section}): given a morphism $f\colon Y\to X$ we describe the induced map:
+\begin{equation*} \overline{\mathcal{Q}}(f)\colon\Q{g}{n}{Y}{\beta}\to\Q{g}{n}{X}{f_*\beta} \end{equation*}
+We also discuss (\S \ref{section:rel_pot_for_qm_functoriality}) when $\overline{\mathcal{Q}}(f)$ admits a compatible perfect obstruction theory.
+\item \ilemph{Splitting axiom} (\S \ref{Subsection splitting}): this gives an equality between two natural virtual classes on boundary strata (i.e. loci where the underlying curve is reducible of a prescribed type).
+\item \ilemph{Comparison with the GIT construction} (\S \ref{Section comparison with GIT construction}): we show that for a (not necessarily toric) hypersurface $Y \hookrightarrow X$, our definition of $\om{Q}(Y)$ as a substack of $\om{Q}(X)$ coincides with the definition of $\om{Q}(Y)$ given by the description of $Y$ as a GIT quotient (see \cite{CFKM}).
+\end{enumerate}
 
-In the case of stable maps, a morphism $f : X \to Y$ induces a morphism between the corresponding moduli spaces
-\begin{equation*}\M{g}{n}{X}{\beta} \rightarrow \M{g}{n}{Y}{f_* \beta} \end{equation*}
-given by composition with $f$ (in general this induced morphism may involve stabilisation of the source curve). Because of this, the construction of the moduli space of stable maps is said to be \ildef{functorial}.
+\subsection{Functoriality} \label{Functoriality of Quasimap Spaces Section}
 
-It is natural to ask whether the same holds for the moduli space of quasimaps. Since here the objects of the moduli space are not maps, we cannot simply compose with $f$, and indeed it is not immediately clear how we should proceed. In \cite[Section 3.1]{CF-K-wallcrossing} a definition is given when $f$ is an embedding into a projective space; however, this uses the more general language of GIT quotients which we seek to avoid here. As such, we will provide an alternative (but entirely equivalent) construction in the setting of toric varieties, which also relaxes the conditions on the map $f$ and the target $Y$.
+In the case of stable maps, a morphism $f : Y \to X$ induces a morphism between the corresponding moduli spaces
+\begin{equation*}\om{M}(f) : \M{g}{n}{Y}{\beta} \rightarrow \M{g}{n}{X}{f_* \beta} \end{equation*}
+given by (post)composition with $f$; in general this induced morphism may involve stabilisation of the source curve. Because of this, we may say that the construction of the moduli space of stable maps is \ilemph{functorial}.
 
-\footnote{We should probably look a bit harder to see if the definition exists elsewhere.}
+It is natural to ask whether the same holds for the moduli space of quasimaps, i.e. whether we have a morphism:
+\begin{equation*} \om{Q}(f) : \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_* \beta} \end{equation*}
+Since here the objects of the moduli space are not maps, we cannot simply compose with $f$, but we should define an operation which agrees with composing with $f$ on the locus of quasimaps without basepoints. In \cite[Section 3.1]{CF-K-wallcrossing} a definition (in the GIT context) is given when $f$ is an embedding into a projective space; we shall discuss the general situation of a morphism between toric varieties $f\colon Y\to X$.
 
 Our approach uses the language of $\Sigma$--collections introduced by D. Cox. This approach is natural insofar as a quasimap is a generalisation of a $\Sigma$--collection. We will refer extensively to \cite{CoxRing} and \cite{CoxFunctor}, which we recommend as an  introduction for any readers unfamiliar with the theory.
 
@@ -34,50 +43,76 @@ Y \ar[r, "f"] & X
 \begin{aside} Throughout this section we will stick to the notation established above; in particular we will use $\rho$ to denote a ray in $\Sigma_X(1)$ and $\tau$ to denote a ray in $\Sigma_Y(1)$. \end{aside}
 
 Recall our goal: given a map $f : Y \to X$ we wish to define a ``push-forward'' map:
-\begin{equation*} f_* : \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_*\beta} \end{equation*}
-Consider therefore a quasimap $(C, (L_\tau, u_\tau)_{\tau \in \Sigma_Y(1)}, (\varphi_{m_Y})_{m_Y \in M_Y})$ with target $Y$. Pick data $(P_\rho)_{\rho \in \Sigma_X(1)}$ corresponding to the map $f$, as in the theorem above; we will later see that our construction does not depend on this choice.
+\begin{equation*} \om{Q}(f) : \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_*\beta} \end{equation*}
+Consider therefore a quasimap $((C,x_1,\ldots,x_n), (L_\tau, u_\tau)_{\tau \in \Sigma_Y(1)}, (\varphi_{m_Y})_{m_Y \in M_Y})$ with target $Y$. Pick data $(P_\rho)_{\rho \in \Sigma_X(1)}$ corresponding to the map $f$, as in the theorem above; we will later see that our construction does not depend on this choice.
 
-The idea of the construction is as follows. Let us pretend for a moment that $C$ is toric and that the quasimap is without basepoints, so that we have an actual morphism $C \to Y$. Then we can lift this morphism to the prequotient as in the following diagram
+The idea of the construction is as follows. Assume for a moment that $C\simeq\PP^1$ and that the quasimap is without basepoints, so that we have an actual morphism $C \to Y$. Then, by the theorem of Cox that we have just recalled, we can lift this morphism to the prequotient as in the following diagram
 
 \bcd
-\Aaff_k^{\Sigma_C(1)} \setminus Z(\Sigma_C) \ar[r, "(u_\tau)"] \ar[d] & \Aaff_k^{\Sigma_Y(1)} \setminus Z(\Sigma_Y) \ar[r, "(P_\rho)"] \ar[d] & \Aaff_k^{\Sigma_X(1)} \setminus Z(\Sigma_X) \ar[d] \\
+\Aaff_k^{2} \setminus \{0\} \ar[r, "(u_\tau)"] \ar[d] & \Aaff_k^{|\Sigma_Y(1)|} \setminus Z(\Sigma_Y) \ar[r, "(P_\rho)"] \ar[d] & \Aaff_k^{|\Sigma_X(1)|} \setminus Z(\Sigma_X) \ar[d] \\
 C \ar[r] & Y \ar[r] & X
 \ecd
 from which it follows that the composition $C \to Y \to X$ is given in homogeneous coordinates by:
 \begin{equation*} (P_\rho((u_\tau)_{\tau \in \Sigma_Y(1)}))_{\rho \in \Sigma_X(1)} \end{equation*}
-In general of course $C$ is not a toric variety and the quasimap is not basepoint-free. Nevertheless, as we will see, we can still make sense of the expression $P_\rho(u_\tau)$ as a section of a line bundle on $C$. This will allow us to define the pushforward of our quasimap.
+In general the quasimap to $Y$ will still be given by a bunch of line bundles and their sections on $C$, and we can still make sense of the expressions $P_\rho(u_\tau)$ as sections of line bundles on $C$ obtained from the given ones by means of the recipe encoded by $f$; morally, we can trivialise the given line bundles near a point of $C$ and treat the above polynomial expression as a function on this neighbourhood. This will allow us to define the pushforward along $f$ on the quasimap space.
 
-Let us begin. For each $\rho$, $P_\rho$ is a polynomial in the $z_\tau$; we can write it as
+Let us make this precise now. We shall first address the issue of stabilising the curve: in case $f_*\beta=0$, observe that
+\[
+ \Q{g}{n}{X}{0}\simeq \om{M}_{g,n}\times X
+\]
+hence the stabilisation morphism is the usual $\Q{g}{n}{X}{0}\to \om{M}_{g,n}$, while the map to $X$ is given by postcomposing with $f$ any of the evaluation morphisms. On the other hand it may well be that, even if $f_*\beta\neq 0$, the source curve is reducible and some of its components have a degree $\beta_0$ in $Y$ the pushforward of which is trivial in $X$.
+
+\begin{tikzpicture}[scale=0.7]
+\draw (0,0) -- (1,3) node[above]{$\beta_1$} (0,1) -- (1,-2) node[below]{$\beta_0$};
+\draw[fill=black] (0.66,-1) circle[radius=2pt];
+\draw[->,decorate,decoration=snake] (2,0.5) -- (4,0.5);
+\draw (5,0) -- (6,3) node[above]{$f_*\beta_1$};
+\draw[fill=black] (5.16,.5) circle[radius=2pt];
+
+\draw (10.33,-1.5) -- node[right]{$\beta_0$} (10.33,2.5) (10,1) -- (11,4) node[above]{$\beta_1$} (10,0) -- (11,-3) node[below]{$\beta_2$};
+\draw[->,decorate,decoration=snake] (12,0.5) -- (14,0.5);
+\draw (15,0) -- (16,3) node[above]{$f_*\beta_1$} (15,1) -- (16,-2) node[below]{$f_*\beta_2$};
+\end{tikzpicture}
+
+Pick a(ny) polarisation $\OO_X(1)$ and write $f^*\OO_X(1)=\bigotimes_\tau L_\tau^{\otimes a_\tau}$, with $a_\tau\geq 0$ (because $f^*\OO_X(1)$ is nef). Notice that the line bundle $\omega_{\pi}^{\text{log}}\otimes \bigotimes_\tau \mathcal L_\tau^{\otimes a_\tau}$ on the universal curve of $\Q{g}{n}{Y}{\beta}$ provides the required contraction
+\bcd
+\mathcal C_Y\ar[rr,"\phi"]\ar[dr,"\pi" below left] & & \overline{\mathcal C}\ar[dl,"\pi'"] \\
+ & \Q{g}{n}{Y}{\beta} &
+\ecd
+Let the sections of $\overline{\mathcal C}$ be the ones of $\mathcal C_Y$ composed with $\phi$.
+
+Resuming the notation above, for each $\rho\in\Sigma_X(1)$, $P_\rho$ is a polynomial in the $z_\tau$; we can write it as
 \begin{equation} \label{Prho} P_\rho(z_\tau) = \sum_{\underline{a}} P_\rho^{\underline{a}}(z_\tau) = \sum_{\underline{a}} \mu_{\underline{a}} \prod_{\tau} z_{\tau}^{a_{\tau}} \end{equation}
-where the sum is over a finite number of multindices $\underline{a} = (a_\tau) \in \N^{\Sigma_Y(1)}$ and the $\mu_{\underline{a}}$ are nonzero scalars. For each $\underline{a}$ consider the following line bundle on $C$:
-\begin{equation*} \tilde{L}_\rho^{\underline{a}} = \bigotimes_\tau L_\tau^{\otimes a_\tau} \end{equation*}
-Then we may take the following section of $\tilde{L}_\rho^{\underline{a}}$:
-\begin{equation*} \tilde{u}_\rho^{\underline{a}} = P_\rho^{\underline{a}}(u_\tau) = \mu_{\underline{a}} \prod_\tau u_\tau^{a_\tau} \end{equation*}
-Thus each of the terms $P_\rho^{\underline{a}}$ of $P_\rho$ defines a section $\tilde{u}_\rho^{\underline{a}}$ of a line bundle $\tilde{L}_\rho^{\underline{a}}$. But what we want is a single section $\tilde{u}_\rho$ of a single line bundle $\tilde{L}_\rho$. This is where the isomorphisms $\varphi_{m_Y}$ come in.
+where the sum is over a finite number of multindices $\underline{a} = (a_\tau) \in \N^{|\Sigma_Y(1)|}$ and the $\mu_{\underline{a}}$ are nonzero scalars. Observe that, for each $\underline{a}$, the line bundle $\bigotimes_\tau \mathcal L_\tau^{\otimes a_\tau}$ on $\mathcal C_Y$ is trivial on the $\rho$-contracted components, which are always rational curves; hence, by cohomology and base-change, the following gives a line bundle on $\mathcal{\overline C}$:
+\begin{equation*} \tilde{\mathcal L}_\rho^{\underline{a}} =\phi_* \bigotimes_\tau \mathcal L_\tau^{\otimes a_\tau} \end{equation*}
+Then we may take the following section of $\tilde{\mathcal L}_\rho^{\underline{a}}$:
+\begin{equation*} \tilde{u}_\rho^{\underline{a}} = P_\rho^{\underline{a}}(u_\tau) = \mu_{\underline{a}} \prod_\tau u_\tau^{a_\tau}; \end{equation*}
+notice that such sections must be constant on $\phi$-contracted components of $\mathcal C_Y$ and so descend to $\overline{\mathcal C}$.
+Thus each of the terms $P_\rho^{\underline{a}}$ of $P_\rho$ defines a section $\tilde{u}_\rho^{\underline{a}}$ of a line bundle $\tilde{\mathcal L}_\rho^{\underline{a}}$. But what we want is a single section $\tilde{u}_\rho$ of a single line bundle $\tilde{\mathcal L}_\rho$. This is where the isomorphisms $\varphi_{m_Y}$ come in.
 
 Recall that we have a short exact sequence:
 \begin{equation} \label{Pic short exact sequence for Y} 0 \longrightarrow M_Y \overset{\theta}{\longrightarrow} \Z^{\Sigma_Y(1)} \longrightarrow \Pic Y \longrightarrow 0 \end{equation}
 Let $\underline{a}$ and $\underline{b}$ be multindices appearing in the sum \eqref{Prho} above. By the homogeneity of $P_\rho$ we have
 \begin{equation*} \sum_\tau a_\tau D_\tau = \beta_\rho = \sum_\tau b_\tau D_\tau \end{equation*}
-which is precisely the statement that in the above sequence $\underline{a}$ and $\underline{b}$ map to the same element of $\Pic Y$ (namely $\beta_\rho$). Hence there exists an $m_Y \in M_Y$ such that:
+which is precisely the statement that in the above sequence $\underline{a}$ and $\underline{b}$ map to the same element of $\Pic Y$ (namely $\beta_\rho$). Hence there exists a unique $m_Y \in M_Y$ such that:
 \begin{equation*} \theta(m_Y) = \underline{a} - \underline{b} \end{equation*}
 Now, the isomorphism $\varphi_{m_Y}$ (contained in the data of our original quasimap) is a map:
-\begin{equation*} \varphi_{m_Y} : \bigotimes_\tau L_\tau^{\otimes \langle m_Y, n_\tau \rangle} \cong \OO_C \end{equation*}
+\begin{equation*} \varphi_{m_Y} : \bigotimes_\tau \mathcal L_\tau^{\otimes \langle m_Y, n_\tau \rangle} \cong \OO_{\mathcal C_Y} \end{equation*}
 By definition, $\theta(m_Y) = (\langle m_Y,n_\tau \rangle)_{\tau \in \Sigma_Y(1)}$. But also $\theta(m_Y) = (a_\tau - b_\tau)_{\tau \in \Sigma_Y(1)}$. Hence we have:
-\begin{equation*} \varphi_{m_Y} : \bigotimes_\tau L_\tau^{\otimes a_\tau} \cong \bigotimes_\tau L_\tau^{\otimes b_\tau} \end{equation*}
+\begin{equation*} \varphi_{m_Y} : \bigotimes_\tau \mathcal L_\tau^{\otimes a_\tau} \cong \bigotimes_\tau \mathcal L_\tau^{\otimes b_\tau} \end{equation*}
 In other words, we have well-defined canonical isomorphisms
-\begin{equation*} \tilde{L}_\rho^{\underline{a}} \cong \tilde{L}_\rho^{\underline{b}} \end{equation*}
+\begin{equation*} \tilde{\mathcal L}_\rho^{\underline{a}} \cong \tilde{\mathcal L}_\rho^{\underline{b}} \end{equation*}
 for all $\underline{a}$ and $\underline{b}$. Let us choose one such $\underline{a}$ (it doesn't matter which); call it $\underline{a}^\rho$. We define:
-\begin{equation*} \tilde{L}_\rho = \tilde{L}_\rho^{\underline{a}^\rho} \end{equation*}
-Then for all $\underline{b}$ we can use the above isomorphism to view $\tilde{u}_\rho^{\underline{b}}$ as a section of $\tilde{L}_\rho$. Summing all of these together we obtain a section $\tilde{u}_\rho$ of $\tilde{L}_\rho$, which we can write (with abuse of notation) as:
+\begin{equation*} \tilde{\mathcal L}_\rho := \tilde{\mathcal L}_\rho^{\underline{a}^\rho} \end{equation*}
+Then for all $\underline{b}$ we can use the above isomorphism to view $\tilde{u}_\rho^{\underline{b}}$ as a section of $\tilde{\mathcal L}_\rho$. Summing all of these together with the appropriate coefficients we thus obtain a section $\tilde{u}_\rho$ of $\tilde{\mathcal L}_\rho$, which we can write (with abuse of notation) as:
 \begin{equation*} \tilde{u}_\rho = \sum_{\underline{a}} \mu_{\underline{a}} \prod_\tau u_\tau^{a_\tau} \end{equation*}
 Note that if we had made a different choice of $\underline{a}^\rho$ above the result would have been isomorphic.
 
-Thus far we have constructed line bundles and sections $(\tilde{L}_\rho, \tilde{u}_\rho)_{\rho \in \Sigma_X(1)}$ on $C$. It remains to define the isomorphisms
-\begin{equation*} \tilde{\varphi}_{m_X} : \otimes_\rho \tilde{L}_\rho^{\otimes \langle m_X, n_\rho \rangle} \cong \OO_C \end{equation*}
+Thus far we have constructed line bundles and sections $(\tilde{\mathcal L}_\rho, \tilde{u}_\rho)_{\rho \in \Sigma_X(1)}$ on $\overline{\mathcal C}$. It remains to define the isomorphisms
+\begin{equation*} \tilde{\varphi}_{m_X} : \otimes_\rho \tilde{\mathcal L}_\rho^{\otimes \langle m_X, n_\rho \rangle} \cong \OO_{\overline{\mathcal C}} \end{equation*}
 for all $m_X \in M_X$. The left hand side is:
-\begin{align*} \otimes_\rho \tilde{L}_\rho^{\otimes \langle m_X, n_\rho \rangle} & = \otimes_\rho \left( \otimes_\tau L_\tau^{\otimes a_\tau^\rho} \right)^{\otimes \langle m_X, n_\rho \rangle} = \otimes_\tau L_\tau^{\otimes \left( \sum_{\rho} a_\tau^\rho  \langle m_X, n_\rho \rangle \right)} \end{align*}
-Now, for $m_Y \in M_Y$ we have isomorphisms $\varphi_{m_Y} : \otimes_\tau L_\tau^{\otimes \langle m_Y, n_\tau \rangle} \cong \OO_C$. Hence, in order to construct $\tilde{\varphi}_{m_X}$ we need to find an $m_Y$ such that
+\begin{align*} \otimes_\rho \tilde{\mathcal L}_\rho^{\otimes \langle m_X, n_\rho \rangle} & = \otimes_\rho \left( \phi_* \otimes_\tau \mathcal L_\tau^{\otimes a_\tau^\rho} \right)^{\otimes \langle m_X, n_\rho \rangle} = \phi_* \otimes_\tau \mathcal L_\tau^{\otimes \left( \sum_{\rho} a_\tau^\rho  \langle m_X, n_\rho \rangle \right)} \end{align*}
+Now, for $m_Y \in M_Y$ we have isomorphisms $\varphi_{m_Y} : \otimes_\tau \mathcal L_\tau^{\otimes \langle m_Y, n_\tau \rangle} \cong \OO_{\mathcal C_Y}$. Hence, in order to construct $\tilde{\varphi}_{m_X}$ it is tempting to look for an $m_Y$ such that
 \begin{equation*} \langle m_Y, n_\tau \rangle = \sum_\rho a_\tau^\rho \langle m_X, n_\rho \rangle \end{equation*}
 for all $\tau \in \Sigma_Y(1)$ (we will then set $\tilde{\varphi}_{m_X} = \varphi_{m_Y}$). Consider therefore the short exact sequence \eqref{Pic short exact sequence for Y}. Recall that $\theta(m_Y) = (\langle m_Y, n_\tau \rangle)_{\tau \in \Sigma_Y(1)}$. Hence we need to show that
 \begin{equation*} \left( \sum_\rho a_\tau^\rho \langle m_X, n_\rho \rangle \right)_{\tau \in \Sigma_Y(1)} \end{equation*}
@@ -88,14 +123,22 @@ Now, we have
 so that the above sum becomes
 \begin{equation*} \sum_\rho \langle m_X, n_\rho \rangle \beta_\rho = \left\langle m_X, \sum_\rho \beta_\rho \otimes n_\rho \right \rangle = \langle m_X, 0 \rangle = 0 \end{equation*}
 where $\sum_\rho \beta_\rho \otimes n_\rho = 0$ by Condition (1) in Theorem \ref{CoxTheorem}. So there does indeed exist a (unique) $m_Y \in M_Y$ such that $\langle m_Y, n_\tau \rangle = \sum_\rho a_\tau^\rho \langle m_X, n_\rho \rangle$, so that we can set:
-\begin{equation*} \tilde{\varphi}_{m_X} = \varphi_{m_Y} : \bigotimes_\rho \tilde{L}_\rho^{\otimes \langle m_X, n_\rho \rangle} \cong \OO_C \end{equation*}
-Thus, we have produced a quasimap with target $X$:
-\begin{equation*} (C, (\tilde{L}_\rho, \tilde{u}_\rho)_{\rho \in \Sigma_X(1)}, (\tilde{\varphi}_{m_X})_{m_X \in M_X}) \end{equation*}
+\begin{equation*} \tilde{\varphi}_{m_X} = \varphi_{m_Y} : \bigotimes_\rho \tilde{L}_\rho^{\otimes \langle m_X, n_\rho \rangle} \cong \OO_{\overline{\mathcal C}} \end{equation*}
+Thus, we have produced a quasimap with target $X$ and class $f_*\beta$ on the base $\Q{g}{n}{Y}{\beta}$:
+\begin{equation*} (\overline{\mathcal C}, (\tilde{\mathcal L}_\rho, \tilde{u}_\rho)_{\rho \in \Sigma_X(1)}, (\tilde{\varphi}_{m_X})_{m_X \in M_X}) \end{equation*}
 The proof that this construction does not depend on the choice of $(P_\rho)$ is straightforward and is left to the reader.
 
 It remains to demonstrate that the quasimap thus constructed is nondegenerate and stable. Nondegeneracy follows immediately from Condition (2) in Theorem \ref{CoxTheorem}. Put differently: the original quasimap defined a rational map $C \dashrightarrow Y$, whereas the new quasimap defines a rational map which is simply the composition $C \dashrightarrow Y \to X$. Therefore the set of basepoints is exactly the same.
 
-Stability is a bit more tricky: it is here that we will end up having to put some extra conditions on the map $f$. First, notice that there are no rational tails because the source curve is unchanged.
+Stability follows precisely from the construction of $\phi$: if $\OO_X(1) = \bigotimes_\rho L_\rho^{\otimes b_\rho}$, then $\omega_{\pi'}^{\text{log}}\otimes\bigotimes_\rho \tilde{\mathcal L}_\rho^{\otimes b_\rho}$ will be $\pi'$-ample on $\overline{\mathcal C}$, since we have contracted all components on which $f^*\OO_X(1)$ was trivial without introducing any rational tail.
+
+Finally, by the universal property of $\Q{g}{n}{X}{\beta}$ there is an induced diagram
+\bcd
+\mathcal C_Y\ar[r,"\phi"]\ar[dr,"\pi" below left] & \overline{\mathcal C}\ar[d,"\pi'"] \ar[rr]\ar[drr, phantom, "\Box" right] & & \mathcal C_X\ar[d,"\pi_X"] \\
+ & \Q{g}{n}{Y}{\beta}\ar[rr,"\om{Q}(f)" below] & & \Q{g}{n}{X}{f_*\beta}
+\ecd
+\begin{comment}
+is a bit more tricky: it is here that we will end up having to put some extra conditions on the map $f$. First, notice that there are no rational tails because the source curve is unchanged.
 
 Next let $C^\prime \subseteq C$ be a component with exactly $2$ special points. Then we need to show (see \cite[Definition 3.1.1]{CF-K}) that the following line bundle has positive degree on $C^\prime$:
 \begin{equation*} \tilde{\mathcal{L}} = \bigotimes_\rho \tilde{L}_\rho^{\otimes \tilde{\alpha}_\rho} \end{equation*}
@@ -110,10 +153,12 @@ This is satisfied if, for example, $f$ is an embedding (which is the only case w
 & = \bigotimes_\rho \bigotimes_\tau \OO_Y(a_\tau^\rho \tilde{\alpha}_\rho D_\tau) = \bigotimes_\tau \OO_Y(D_\tau)^{\otimes \sum_\rho a_\tau^\rho \tilde{\alpha}_\rho}\end{align*}
 Thus for $\tau \in \Sigma_Y(1)$ we have $\alpha_\tau = \sum_\rho a_\tau^\rho \tilde{\alpha}_\rho$ and by stability of the original quasimap the line bundle $\mathcal{L} = \otimes_\tau L_\tau^{\otimes \alpha_\tau}$ has positive degree on $C^\prime$. But:
 \begin{equation*} \mathcal{L} = \bigotimes_\tau L_\tau^{\otimes \alpha_\tau} = \bigotimes_\rho \bigotimes_\tau \left( L_\tau^{\otimes a_\tau^\rho} \right)^{\otimes \tilde{\alpha}_\rho} = \bigotimes_\rho \tilde{L}_\rho^{\otimes \tilde{\alpha}_\rho} = \tilde{\mathcal{L}} \end{equation*}
-We have thus proven that $\tilde{\mathcal{L}}$ has positive degree on $C^\prime$, so the pushed-forward quasimap is stable. This completes the proof of the following.
+We have thus proven that $\tilde{\mathcal{L}}$ has positive degree on $C^\prime$, so the pushed-forward quasimap is stable. 
+\end{comment}
+This completes the proof of the following.
 
-\begin{thm} Let $X$ and $Y$ be smooth proper toric varieties and $f : Y \to X$ a morphism. Assume that $f$ satisfies Condition (1) above. Then there exists a natural push-forward map
-\begin{equation*} \mathcal Q(f) \colon \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_* \beta} \end{equation*}
+\begin{thm} \label{functoriality proposition} Let $X$ and $Y$ be smooth proper toric varieties and $f : Y \to X$ a morphism. Assume that $f$ satisfies Condition (1) above. Then there exists a natural push-forward map
+\begin{equation*} \om{Q}(f) \colon \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_* \beta} \end{equation*}
 which does not modify the underlying prestable curves.\end{thm}
 
 \begin{aside} We expect that such a map exists even if $f$ does not satisfy Condition (1). However, in this case we will need to modify the underlying prestable curves by contracting unstable components. The same is true in the stable maps case. \end{aside}
@@ -126,52 +171,53 @@ the pushed-forward quasimap with target $\PP^N$ is:
 \begin{equation*} (C, L^{\otimes a}, f_0(u_0, \ldots, u_r) , \ldots, f_N(u_0, \ldots, u_r)) \end{equation*}
 (This is stable as long as $a > 0$, which is precisely when $f$ satisfies Condition (1) above.)
 
-\subsection{Relative obstruction theories}\label{section:rel_pot_for_qm_functoriality}
-Assume now that $f\colon Y\to X$ is a morphism satisfying Condition (1) above, so that it induces $$k=\mathcal Q(f) \colon \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_* \beta}.$$ Even in the easiest possible case when $Y\subseteq X$ is an l.c.i. subscheme, $k$ is not necessarily a regular embedding, so the Gysin map in the sense of \cite{FUL} does not necessarily exist. Yet, when $\Q{g}{n}{X}{f_* \beta}$ is a smooth stack (or rather its standard obstruction theory w.r.t. the moduli stack of prestable curves is unobstructed, which happens e.g. in the cases $X=\PP^r$ and $(g,n)=(0,n)$ or $(1,0)$), we may ``pull back along $k$'', and we are going to explain why. 
+\subsection{Relative obstruction theories for $\om{Q}(Y)\to\om{Q}(X)$}\label{section:rel_pot_for_qm_functoriality}
+Assume now that $f\colon Y\to X$ is a morphism satisfying condition (1) above, so that it induces $$k=\om{Q}(f) \colon \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_* \beta}.$$ Even in the easiest possible case when $Y \hookrightarrow X$ is a regular embedding, $k$ itself is not necessarily a regular embedding, and so the Gysin map in the sense of \cite{FUL} is not guaranteed to exist.
 
-In \cite{Manolache-Pull} a generalisation of the Gysin map (called the \ildef{virtual pull-back}) is defined for morphisms endowed with a relative perfect obstruction theory. Moreover, a sufficient condition is given (Corollary 4.9) for this map to respect the virtual classes.
+However, when $\Q{g}{n}{X}{f_* \beta}$ is a smooth stack (or rather, when it is unobstructed, for instance when $X=\PP^N$ and $g=0$) we may still ``pull back along $k$.''
 
-\begin{lem} \label{Exists relative POT} There exists a relative obstruction theory $E_k$ for the morphism
+In \cite{Manolache-Pull} a generalisation of the Gysin map called the \ilemph{virtual pull-back} is defined for morphisms endowed with a relative perfect obstruction theory. Moreover, a sufficient condition is given \cite[Corollary 4.9]{Manolache-Pull} for this map to respect the virtual classes.
+
+\begin{lem} \label{Exists relative POT} There exists a relative obstruction theory $\EE_k$ for the morphism
 \begin{equation*} k : \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_*\beta} \end{equation*}
-which fits into a compatible triple with the standard obstruction theories for the quasimap spaces over $\MM_{g,n}$. Furthermore, $E_k$ is perfect as soon as $\Q{g}{n}{X}{f_*\beta}$ is unobstructed, so that:
-\begin{equation*} k^!_{\text{v}} [ \Q{g}{n}{X}{f_*\beta} ] = \virt{\Q{g}{n}{Y}{\beta}} \end{equation*} \end{lem}
+which fits into a compatible triple with the standard obstruction theories for the quasimap spaces over $\MM_{g,n}$. Furthermore, $\EE_k$ is perfect if	 $\Q{g}{n}{X}{f_*\beta}$ is unobstructed, so that:
+\begin{equation*} k^!_{\operatorname{v}} [ \Q{g}{n}{X}{f_*\beta} ] = \virt{\Q{g}{n}{Y}{\beta}} \end{equation*} \end{lem}
 
 \begin{proof} Note first that, since $k$ does not change the source curve of a quasimap, we indeed have a commuting triangle:
 \bcd
 \Q{g}{n}{Y}{\beta} \ar[rr,"k"] \ar[rd] & & \Q{g}{n}{X}{f_*\beta} \ar[ld] \\
 & \MM_{g,n} & 
 \ecd
-We have perfect obstruction theories $E_{\overline{\mathcal{Q}}(Y)/\MM}$ and $E_{\overline{\mathcal{Q}}(X)/\MM}$ and we want to find a perfect obstruction theory $E_k$. Consider the diagram of universal curves
+We have perfect obstruction theories $\EE_{\overline{\mathcal{Q}}(Y)/\MM}$ and $\EE_{\overline{\mathcal{Q}}(X)/\MM}$ and we want to find a perfect obstruction theory $\EE_k$. Consider the diagram of universal curves
 \bcd
 \mathcal{C}_Y \ar[r,"\alpha"] \ar[d,"\pi"] \ar[rd,phantom,"\square" right] & \mathcal{C}_{X} \ar[d,"\rho"] \\
 \Q{g}{n}{Y}{\beta} \ar[r,"k"] & \Q{g}{n}{X}{f_*\beta}
 \ecd
 which is cartesian because $k$ does not alter the source curve of any quasimap. We have sheaves $\mathcal{F}_Y$ and $\mathcal{F}_{X}$ on $\mathcal{C}_Y$ and $\mathcal{C}_{X}$ respectively such that:
-\begin{align*} E_{\overline{\mathcal{Q}}(Y)/\MM}^\vee & = \R \pi_* \mathcal{F}_Y \\
-E_{\overline{\mathcal{Q}}(X)/\MM}^\vee & = \R \rho_* \mathcal{F}_{X} \end{align*}
+\begin{align*} \EE_{\overline{\mathcal{Q}}(Y)/\MM}^\vee & = \R \pi_* \mathcal{F}_Y \\
+\EE_{\overline{\mathcal{Q}}(X)/\MM}^\vee & = \R \rho_* \mathcal{F}_{X} \end{align*}
 It follows (by flatness of $\rho$) that when we pull back the latter obstruction theory to $\om{Q}(Y)$ we obtain:
-\begin{equation*} k^* E_{\overline{\mathcal{Q}}(X)/\MM}^\vee = \R \pi_* \alpha^* \mathcal{F}_{X} \end{equation*}
-To construct a compatible triple, we require a morphism $k^* E_{\om{Q}(X)/\MM} \to E_{\om{Q}(Y)/\MM}$. Dually, it is therefore enough to construct a morphism of sheaves on $\mathcal{C}_Y$
+\begin{equation*} k^* \EE_{\overline{\mathcal{Q}}(X)/\MM}^\vee = \R \pi_* \alpha^* \mathcal{F}_{X} \end{equation*}
+To construct a compatible triple, we require a morphism $k^* \EE_{\om{Q}(X)/\MM} \to \EE_{\om{Q}(Y)/\MM}$. Dually, it is therefore enough to construct a morphism of sheaves on $\mathcal{C}_Y$
 \begin{equation*} \mathcal{F}_Y \to \alpha^* \mathcal{F}_{X} \end{equation*}
-and then apply $\R \pi_*$. This is analogous to the morphism $f^* T_Y \to f^* T_{X}|_Y$ which is used in the stable maps setting. However the construction for quasimaps requires a little more ingenuity, because we do not quite have access to a universal map $f$.
+and then apply $\R \pi_*$. This is analogous to the morphism $f^* T_Y \to f^* T_{X}|_Y$ which is used in the stable maps setting. However the construction for quasimaps requires a little more ingenuity, because we do not have access to a universal map $f$.
 
 The sheaf $\mathcal{F}_Y$ is defined on $\mathcal{C}_Y$ by the short exact sequence
 \begin{equation*} 0 \to \OO_{\mathcal{C}_Y}^{\oplus r_Y} \to \oplus_{\tau} \mathcal{L}_\tau \to \mathcal{F}_Y \to 0 \end{equation*}
-where $r_Y = \operatorname{rk} \Pic X$ (implicitly we have chosen a basis for this $\Z$-module). Similarly $\mathcal{F}_{X}$ is defined on $\mathcal{C}_{X}$ by:
+where $r_Y = \operatorname{rk} \Pic Y$ (implicitly we have chosen a basis for this $\Z$-module). Similarly $\mathcal{F}_{X}$ is defined on $\mathcal{C}_{X}$ by:
 \begin{equation*} 0 \to \OO_{\mathcal{C}_{X}}^{\oplus r_X} \to \oplus_{\rho} \mathcal{L}_\rho \to \mathcal{F}_{X} \to 0 \end{equation*}
 We will construct our morphism by first constructing a morhism:
-\begin{equation*} \oplus_{\tau} \mathcal{L}_\tau \to \alpha^* \oplus_{\rho} \mathcal{L}_\rho \end{equation*}
+\begin{equation*} \oplus_{\tau} \mathcal{L}_\tau \to \alpha^* (\oplus_{\rho} \mathcal{L}_\rho) \end{equation*}
 Recall that $f\colon Y\to X$ is given by homogeneous polynomials
 \begin{equation*} P_\rho \in S^Y_{\beta_\rho} \subset S^Y = k[z_\tau : \tau \in \Sigma_Y(1)] \end{equation*}
-in the Cox ring of $Y$, where $\beta_{\rho}=f^*[D_\rho] \in \Pic Y$. For all monomials appearing in $P_\rho$, if we look at their exponents $(a_{\tau})_{\tau\in\Sigma_Y(1)}$, we have $\sum_{\tau\in\Sigma_Y(1)}a_\tau[D_\tau]=\beta_\rho$ by homogeneity, hence we can use the isomorphisms parametrised by $M_Y$ as above in order to interpret
+in the Cox ring of $Y$, where $\beta_{\rho}=f^*[D_\rho] \in \Pic Y$. For all monomials appearing in $P_\rho$, if we look at their exponents $(a_{\tau})_{\tau\in\Sigma_Y(1)}$, we have $\sum_{\tau\in\Sigma_Y(1)}a_\tau[D_\tau]=\beta_\rho$ by homogeneity, hence we can use the isomorphisms parametrised by $M_Y$ as in the proof of Proposition \ref{functoriality proposition} above in order to interpret the $(P_\rho)$ as a morphism
+\begin{equation*} (P_\rho)_{\rho\in\Sigma_X(1)}\colon \bigoplus_{\tau} \mathcal{L}_{\tau} \to \bigoplus_{\rho} \bigotimes_{\tau} \mathcal{L}_\tau^{\otimes a_\tau^\rho} = \bigoplus_{\rho} \tilde{\mathcal{L}}_\rho = \alpha^* \left( \bigoplus_{\rho} \mathcal{L}_\rho \right) 
+\end{equation*}
+where the notation is as in \S \ref{Functoriality of Quasimap Spaces Section}. Thus we have constructed a morphism $\oplus_{\tau} \mathcal{L}_\tau \to \alpha^* (\oplus_{\rho} \mathcal{L}_\rho)$.
 
-\begin{equation*} (P_\rho)_{\rho\in\Sigma_X(1)}\colon \bigoplus_{\tau\in\Sigma_Y(1)} L_{\tau}\to \bigoplus_{\rho\in\Sigma_X(1)} \beta_\rho=\alpha^* \left(\bigoplus_{\rho\in\Sigma_X(1)} L_\rho\right).\end{equation*}
-
-On the other hand, $f\colon Y\to X$ induces a pullback map on line bundles $\Pic(X)\to\Pic(Y)$ (for which $\mathbb Z$-modules we have implicitly chosen bases above), the dual (or transpose) to which gives us a matrix
-\[
- Q\in\mathcal M_{r_X\times r_Y}(\mathbb Z)
-\]
-It is now clear by the very functoriality construction that the square in the following diagram is commutative, hence it induces the (dashed) map of sheaves that we were hoping for
+On the other hand, $f\colon Y\to X$ induces a pullback map on line bundles $\Pic(X)\to\Pic(Y)$. Since we have implicitly chosen bases for these $\Z$-modules, this gives rise to a matrix, whose transpose we denote by:
+\begin{equation*} Q\in \operatorname{Mat}_{r_X\times r_Y}(\Z) \end{equation*}
+It is now clear by the functoriality construction that the square in the following diagram is commutative; hence it induces the (dashed) map of sheaves that we were hoping for
 \begin{equation}\label{diagram:functoriality}
 \begin{tikzcd}
 0 \ar[r] & \OO_{C_Y}^{\oplus r_Y} \ar[r] \ar[d,"Q"] & \oplus_{\tau} \mathcal{L}_\tau \ar[r] \ar[d,"{(P_\rho)}"] & \mathcal{F}_Y \ar[d,dashed]\ar[r] & 0 \\
@@ -179,29 +225,24 @@ It is now clear by the very functoriality construction that the square in the fo
 \end{tikzcd}
 \end{equation}
 Applying $\R \pi_*$ and dualising we obtain a morphism between the obstruction theories for the quasimap spaces, and we can complete this to obtain an exact triangle
-\begin{equation*} k^* E_{\om{Q}(X)/\MM} \to E_{\om{Q}(Y)/\MM} \to E_k \xrightarrow{[1]}\end{equation*}
-on $\om{Q}(Y)$. The complex $E_k$ is perfect (locally isomorphic to a bounded complex of vector bundles) because the other two are, and the axioms of a triangulated category give a morphism of exact triangles
+\begin{equation*} k^* \EE_{\om{Q}(X)/\MM} \to \EE_{\om{Q}(Y)/\MM} \to \EE_k \xrightarrow{[1]}\end{equation*}
+on $\om{Q}(Y)$. The axioms of a triangulated category then give a morphism of exact triangles:
 \bcd
-k^* E_{\om{Q}(X)/\MM} \ar[r] \ar[d] & E_{\om{Q}(Y)/\MM} \ar[r] \ar[d] & E_k  \ar[r,"{[1]}"] \ar[d] & \, \\
-k^*L_{\om{Q}(X)/\MM} \ar[r] & L_{\om{Q}(Y)/\MM} \ar[r] & L_k \ar[r,"{[1]}"] & \,
+k^* \EE_{\om{Q}(X)/\MM} \ar[r] \ar[d] & \EE_{\om{Q}(Y)/\MM} \ar[r] \ar[d] & \EE_k  \ar[r,"{[1]}"] \ar[d] & \, \\
+k^*\LL_{\om{Q}(X)/\MM} \ar[r] & \LL_{\om{Q}(Y)/\MM} \ar[r] & \LL_k \ar[r,"{[1]}"] & \,
 \ecd
-It follows from a simple diagram chase that $E_k \to L_k$ is a relative obstruction theory. On the other hand, assuming that $\Q{g}{n}{X}{f_*\beta}$ is unobstructed, we may look at the long exact sequence in cohomology and find
-\begin{equation*} 0 \to \h^{-2}(E_k) \to \h^{-1}(k^* E_{\om{Q}(X)/\MM}) = 0\end{equation*}
-Hence $\h^{-2}(E_k) = 0$ and it is easy to show using similar arguments that $E_k$ is of perfect amplitude contained in $[-1,0]$.
+It follows from a simple diagram chase that $\EE_k \to \LL_k$ is a relative obstruction theory. On the other hand, assuming that $\Q{g}{n}{X}{f_*\beta}$ is unobstructed, we may look at the long exact sequence in cohomology and find
+\begin{equation*} 0 \to \h^{-2}(\EE_k) \to \h^{-1}(k^* \EE_{\om{Q}(X)/\MM}) = 0\end{equation*}
+Hence $\h^{-2}(\EE_k) = 0$ and it is easy to show using similar arguments that $\EE_k$ is of perfect amplitude contained in $[-1,0]$.
 
 \end{proof}
 
-\begin{remark}
- The short exact sequence that defines $F$ should be thought of as the pullback of
- \[
-  0\to [V/T]\times\mathfrak t\to V\times_T V\to T_{[V/T]}\to 0
- \]
-where $T=\Hom_{\mathbb Z}(\Pic(V\!\sslash\!T),\Gm)\simeq\Gm^r$ is the torus acting on the vector space $V$, and $\mathfrak t$ its Lie algebra. Compare with \cite[Equation 5.1.1]
-{CFKM}. In fact, $F$ fails to be a vector bundle precisely at the base-points. Note also that the commutativity of the diagram \ref{diagram:functoriality} comes from the fact that the lift of $f\colon Y\to X$ to $V_Y^s\to V_X^s$ in Theorem \ref{CoxTheorem} is equivariant with respect to the action of the tori according to the homomorphism $T_Y=\Pic(Y)^\vee\to T_X=\Pic(X)^\vee$.
-\end{remark}
+\begin{remark} The short exact sequence defining $\mathcal{F}_X$ should be thought of as the pull-back of the Euler sequence
+\begin{equation*} 0 \to \OO_X^{\oplus r_X} \to \bigoplus_{\rho \in \Sigma_X(1)} \OO_X(D_\rho) \to \TT_X \to 0 \end{equation*}
+along the map $C \to X$ (if such a map existed). In particular, if we work away from the locus of basepoints then $\mathcal{F}_X = u^* \TT_X$.\end{remark}
 
-In particular, for every smooth projective variety $i\colon X\hookrightarrow\PP^r$, we have thus produced a virtual pull-back morphism
-\begin{equation*} k^!_{\text{v}} : A_*(\Q{0}{n}{\PP^r}{d}) \to A_*(\Q{0}{n}{X}{\beta}) \end{equation*}
+In particular, for every smooth projective variety $i\colon X\hookrightarrow\PP^N$, we have a virtual pull-back morphism
+\begin{equation*} k^!_{\text{v}} : A_*(\Q{0}{n}{\PP^N}{d}) \to A_*(\Q{0}{n}{X}{\beta}) \end{equation*}
 where $d=i_*\beta$, and more generally for any cartesian diagram
 \bcd
 F \ar[r] \ar[d] \ar[rd,phantom,"\square" right] & G \ar[d] \\
@@ -209,3 +250,4 @@ F \ar[r] \ar[d] \ar[rd,phantom,"\square" right] & G \ar[d] \\
 \ecd
 we get an associated virtual pull-back morphism:
 \begin{equation*} k^!_{\text{v}} : A_*(G) \to A_*(F) \end{equation*}
+This is used in \S \ref{Section recursion formula in general case} to pull-back the recursion formula for the pair $(\PP^N,H)$ and obtain a recursion formula in the general case.

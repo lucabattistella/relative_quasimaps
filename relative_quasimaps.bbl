@@ -2,23 +2,23 @@
 
 \bibitem[AC14]{AbramovichChenLog}
 Dan Abramovich and Qile Chen.
-\newblock Stable logarithmic maps to {D}eligne-{F}altings pairs {II}.
+\newblock {Stable logarithmic maps to {D}eligne-{F}altings pairs {II}}.
 \newblock {\em Asian J. Math.}, 18(3):465--488, 2014.
 
 \bibitem[AF16]{AbramovichFantechi}
 Dan Abramovich and Barbara Fantechi.
-\newblock Orbifold techniques in degeneration formulas.
+\newblock {Orbifold techniques in degeneration formulas}.
 \newblock {\em Ann. Sc. Norm. Super. Pisa Cl. Sci. (5)}, 16(2):519--579, 2016.
 
 \bibitem[AMW14]{AbramovichMarcusWiseComparison}
 Dan Abramovich, Steffen Marcus, and Jonathan Wise.
-\newblock Comparison theorems for {G}romov-{W}itten invariants of smooth pairs
-  and of degenerations.
+\newblock {Comparison theorems for {G}romov-{W}itten invariants of smooth pairs
+  and of degenerations}.
 \newblock {\em Ann. Inst. Fourier (Grenoble)}, 64(4):1611--1667, 2014.
 
 \bibitem[Beh97]{Behrend}
 K.~Behrend.
-\newblock Gromov-{W}itten invariants in algebraic geometry.
+\newblock {Gromov-{W}itten invariants in algebraic geometry}.
 \newblock {\em Invent. Math.}, 127(3):601--617, 1997.
 
 \bibitem[Ber00]{Bertram}
@@ -43,17 +43,17 @@ Ionu\c{t} Ciocan-Fontanine, Bumsig Kim, and Davesh Maulik.
 
 \bibitem[Che14]{ChenLog}
 Qile Chen.
-\newblock Stable logarithmic maps to {D}eligne-{F}altings pairs {I}.
+\newblock {Stable logarithmic maps to {D}eligne-{F}altings pairs {I}}.
 \newblock {\em Ann. of Math. (2)}, 180(2):455--521, 2014.
 
 \bibitem[CM]{CM}
 Tom Coates and Cristina Manolache.
-\newblock In preparation.
+\newblock {In preparation}.
 
 \bibitem[Cos06]{Costello}
 Kevin Costello.
-\newblock Higher genus {G}romov-{W}itten invariants as genus zero invariants of
-  symmetric products.
+\newblock {Higher genus {G}romov-{W}itten invariants as genus zero invariants
+  of symmetric products}.
 \newblock {\em Ann. of Math. (2)}, 164(2):561--601, 2006.
 
 \bibitem[Cox95a]{CoxFunctor}
@@ -90,25 +90,20 @@ Andreas Gathmann.
 \newblock {Relative {G}romov-{W}itten invariants and the mirror formula}.
 \newblock {\em Math. Ann.}, 325(2):393--412, 2003.
 
-\bibitem[Giv96a]{GiventalEquivariant}
-Alexander~B. Givental.
-\newblock Equivariant {G}romov-{W}itten invariants.
-\newblock {\em Internat. Math. Res. Notices}, (13):613--663, 1996.
-
-\bibitem[Giv96b]{Givental-equivariantGW}
+\bibitem[Giv96]{GiventalEquivariant}
 Alexander~B. Givental.
 \newblock {Equivariant {G}romov-{W}itten invariants}.
 \newblock {\em Internat. Math. Res. Notices}, (13):613--663, 1996.
 
 \bibitem[Giv98]{Givental-mirror}
 Alexander Givental.
-\newblock {\em A Mirror Theorem for Toric Complete Intersections}, pages
+\newblock {\em {A Mirror Theorem for Toric Complete Intersections}}, pages
   141--175.
 \newblock Birkh{\"a}user Boston, Boston, MA, 1998.
 
 \bibitem[GS13]{GrossSiebertLog}
 Mark Gross and Bernd Siebert.
-\newblock Logarithmic {G}romov-{W}itten invariants.
+\newblock {Logarithmic {G}romov-{W}itten invariants}.
 \newblock {\em J. Amer. Math. Soc.}, 26(2):451--510, 2013.
 
 \bibitem[GS16]{GrossSiebertIntrinsic}
@@ -124,10 +119,10 @@ Robin Hartshorne.
 
 \bibitem[Kim10]{KimLog}
 Bumsig Kim.
-\newblock Logarithmic stable maps.
-\newblock In {\em New developments in algebraic geometry, integrable systems
-  and mirror symmetry ({RIMS}, {K}yoto, 2008)}, volume~59 of {\em Adv. Stud.
-  Pure Math.}, pages 167--200. Math. Soc. Japan, Tokyo, 2010.
+\newblock {Logarithmic stable maps}.
+\newblock In {\em {New developments in algebraic geometry, integrable systems
+  and mirror symmetry ({RIMS}, {K}yoto, 2008)}}, volume~59 of {\em {Adv. Stud.
+  Pure Math.}}, pages 167--200. Math. Soc. Japan, Tokyo, 2010.
 
 \bibitem[Knu83]{Knudsen}
 Finn~F. Knudsen.
@@ -144,17 +139,17 @@ B.~Kim and R.~Pandharipande.
 
 \bibitem[Li01]{Li1}
 Jun Li.
-\newblock Stable morphisms to singular schemes and relative stable morphisms.
+\newblock {Stable morphisms to singular schemes and relative stable morphisms}.
 \newblock {\em J. Differential Geom.}, 57(3):509--578, 2001.
 
 \bibitem[Li02]{Li2}
 Jun Li.
-\newblock A degeneration formula of {GW}-invariants.
+\newblock {A degeneration formula of {GW}-invariants}.
 \newblock {\em J. Differential Geom.}, 60(2):199--293, 2002.
 
 \bibitem[LLY97]{LLY1}
 Bong~H. Lian, Kefeng Liu, and Shing-Tung Yau.
-\newblock Mirror principle. {I}.
+\newblock {Mirror principle. {I}}.
 \newblock {\em Asian J. Math.}, 1(4):729--763, 1997.
 
 \bibitem[Man12a]{Manolache-Pull}
