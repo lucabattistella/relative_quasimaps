@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  9 OCT 2017 14:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  9 OCT 2017 15:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1396,6 +1396,10 @@ Overfull \hbox (3.74261pt too wide) in paragraph at lines 207--208
  []
 
 
+LaTeX Warning: Citation `Givental-equivariantGW' on page 30 undefined on input 
+line 213.
+
+
 Overfull \hbox (11.60768pt too wide) detected at line 216
 \U/npxmia/m/it/10.95 }[][]~[][] 5 [] [] 5 []
  []
@@ -1482,7 +1486,11 @@ Overfull \hbox (2.63702pt too wide) in paragraph at lines 21--23
 spaces of quasimaps
  []
 
-[51]) [52] (./tex/intersection.tex [53]) (./relative_quasimaps.bbl
+[51]) (./tex/intersection.tex [52]
+Underfull \vbox (badness 1742) has occurred while \output is active []
+
+ [53])
+(./relative_quasimaps.bbl
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 9.0pt on input line 6.
  [54]
@@ -1507,13 +1515,16 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
  31441 strings out of 493014
  612848 string characters out of 6133351
- 661108 words of memory out of 5000000
+ 661132 words of memory out of 5000000
  34146 multiletter control sequences out of 15000+600000
  96910 words of font info for 197 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
@@ -1539,7 +1550,7 @@ xlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016
 st/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/
 type1/public/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
 blic/newpx/zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (56 pages, 384740 bytes).
+Output written on relative_quasimaps.pdf (56 pages, 384946 bytes).
 PDF statistics:
  269 PDF objects out of 1000 (max. 8388607)
  192 compressed objects within 2 object streams
