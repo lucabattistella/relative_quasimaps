@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  6 OCT 2017 16:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  9 OCT 2017 18:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1359,13 +1359,29 @@ Overfull \hbox (30.93896pt too wide) in paragraph at lines 52--52
  []
 
 [21] [22] [23]) (./tex/mirror_theorem.tex
-LaTeX Font Info:    Try loading font information for U+bbm on input line 9.
+LaTeX Font Info:    Try loading font information for T1+zplsups on input line 1
+5.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/t1zplsups.fd
+File: t1zplsups.fd 2015/01/17 v1.0
+)
+LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
+(Font)              scaled to size 10.95pt on input line 15.
+LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
+(Font)              scaled to size 9.0pt on input line 15.
+LaTeX Font Info:    Try loading font information for U+bbm on input line 17.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [24] [25]
-(./fig/snake.tex) [26]
-Overfull \hbox (19.47063pt too wide) detected at line 105
+Overfull \hbox (25.12036pt too wide) in paragraph at lines 45--46
+[]\T1/zpltlf/m/n/10.95 Furthermore, re-mark that, ev-ery-time we look at a rel-
+a-tive space $[][]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 X\OMS/npxsy/m/n/1
+0.95 j\OML/npxmi/m/it/10.95 Y; ^^L\U/npxmia/m/it/10.95 ~$
+ []
+
+[26] (./fig/snake.tex) [27]
+Overfull \hbox (19.47063pt too wide) detected at line 132
 \OT1/zpltlf/m/n/10.95 [[][]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 X\OMS/np
 xsy/m/n/10.95 j\OML/npxmi/m/it/10.95 Y; ^^L\U/npxmia/m/it/10.95 ~\OT1/zpltlf/m/
 n/10.95 ][] \U/npxmia/m/it/10.95 5 }\OML/npxmi/m/it/10.95 Y \U/npxmia/m/it/10.9
@@ -1379,31 +1395,31 @@ t/10.95 }\OML/npxmi/m/it/10.95 X\OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 Y;
 95 ~\OT1/zpltlf/m/n/10.95 ][]
  []
 
-[27]
+[28]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 8.0pt on input line 133.
+(Font)              scaled to size 8.0pt on input line 160.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 6.1pt on input line 133.
+(Font)              scaled to size 6.1pt on input line 160.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 157.
+(Font)              scaled to size 10.95pt on input line 184.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 157.
+(Font)              scaled to size 8.0pt on input line 184.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 6.1pt on input line 157.
- [28] [29]
-Overfull \hbox (3.74261pt too wide) in paragraph at lines 207--208
+(Font)              scaled to size 6.1pt on input line 184.
+ [29] [30]
+Overfull \hbox (3.74261pt too wide) in paragraph at lines 234--235
  [] 
  []
 
 
-Overfull \hbox (11.60768pt too wide) detected at line 216
+Overfull \hbox (11.60768pt too wide) detected at line 243
 \U/npxmia/m/it/10.95 }[][]~[][] 5 [] [] 5 []
  []
 
-) (./tex/comparison.tex [30] (./fig/RandT.tex)
+) (./tex/comparison.tex [31] (./fig/RandT.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31]
+ [32]
 (./fig/T_delta.tex)
 Overfull \hbox (23.12883pt too wide) in paragraph at lines 28--29
 []\T1/zpltlf/m/n/10.95 Notice that re-strict-ing $[][] \OMS/npxsy/m/n/10.95 O[]
@@ -1414,15 +1430,15 @@ U/npxmia/m/it/10.95 }[][] \OML/npxmi/m/it/10.95 ^^O[]T[]\U/npxmia/m/it/10.95 ~$
 \T1/zpltlf/m/n/10.95 .
  []
 
-[32]
+[33]
 Underfull \vbox (badness 2698) has occurred while \output is active []
 
- [33]
+ [34]
 Overfull \hbox (10.26819pt too wide) in paragraph at lines 99--99
 [] 
  []
 
-[34]
+[35]
 Overfull \hbox (68.65169pt too wide) in paragraph at lines 103--105
 \T1/zpltlf/m/n/10.95 under $\OML/npxmi/m/it/10.95 h[]\U/npxmia/m/it/10.95 }\OML
 /npxmi/m/it/10.95 ^^^[]\U/npxmia/m/it/10.95 ~$\T1/zpltlf/m/n/10.95 . If we can 
@@ -1448,7 +1464,7 @@ pxsy/m/n/10.95 ' \OML/npxmi/m/it/10.95 H[]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it
 /10.95 f[]T[]\U/npxmia/m/it/10.95 ~\OML/npxmi/m/it/10.95 :
  []
 
-[35] [36]) (./tex/functoriality.tex [37] [38]
+[36] [37]) (./tex/functoriality.tex [38] [39]
 Overfull \hbox (2.87422pt too wide) in paragraph at lines 46--48
 \T1/zpltlf/m/n/10.95 Consider there-fore a quasimap $\U/npxmia/m/it/10.95 }}\OM
 L/npxmi/m/it/10.95 C; x[]; [] ; x[]\U/npxmia/m/it/10.95 ~\OML/npxmi/m/it/10.95 
@@ -1457,18 +1473,18 @@ OML/npxmi/m/it/10.95 ; \U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 '[]\U/npxmia
 /m/it/10.95 ~[]~$
  []
 
-[39] [40] [41] [42] [43] [44] [45]) (./tex/splitting.tex [46] [47] [48]
-[49]) (./tex/GIT.tex
+[40] [41] [42] [43] [44] [45] [46]) (./tex/splitting.tex [47] [48] [49]
+[50]) (./tex/GIT.tex
 Overfull \hbox (2.63702pt too wide) in paragraph at lines 21--23
 \T1/zpltlf/m/n/10.95 which ad-mits a vir-tual class. Hence we have two mod-uli 
 spaces of quasimaps
  []
 
-[50] [51]) (./tex/intersection.tex [52] [53]) (./relative_quasimaps.bbl
+[51] [52]) (./tex/intersection.tex [53] [54]) (./relative_quasimaps.bbl
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 9.0pt on input line 6.
 
-[54]
+[55]
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 9.0pt on input line 135.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
@@ -1480,45 +1496,46 @@ LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 LaTeX Font Warning: Font shape `U/bbm/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 135.
 
-) [55] (./relative_quasimaps.aux)
+) [56] (./relative_quasimaps.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 31311 strings out of 493014
- 609578 string characters out of 6133351
- 663720 words of memory out of 5000000
- 34016 multiletter control sequences out of 15000+600000
- 96910 words of font info for 197 fonts, out of 8000000 for 9000
+ 31351 strings out of 493014
+ 610335 string characters out of 6133351
+ 663822 words of memory out of 5000000
+ 34048 multiletter control sequences out of 15000+600000
+ 100484 words of font info for 203 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  56i,16n,99p,10394b,1048s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc} </
 Users/navid/Library/texlive/2016/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657
-pk>{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newpx/tgpdiff.enc}{/usr/
-local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/
-texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2016/te
-xmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-sc.enc}</usr/local/texlive/2016/texmf
--dist/fonts/type1/public/pxfonts/pxmia.pfb></usr/local/texlive/2016/texmf-dist/
-fonts/type1/public/pxfonts/pxsy.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
-ype1/public/pxfonts/rpxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
-ublic/stmaryrd/stmary10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
-lic/newtx/txex-bar.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/t
-xfonts/txex.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/
-txmia.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsya.
-pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-di
-st/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/
-type1/public/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
-blic/newpx/zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (55 pages, 377697 bytes).
+pk>{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newpx/ecsups.enc}{/usr/l
+ocal/texlive/2016/texmf-dist/fonts/enc/dvips/newpx/tgpdiff.enc}{/usr/local/texl
+ive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/20
+16/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2016/texmf-dist/f
+onts/enc/dvips/newtx/ntx-ec-tlf-sc.enc}</usr/local/texlive/2016/texmf-dist/font
+s/type1/public/pxfonts/pxmia.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
+1/public/pxfonts/pxsy.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
+c/pxfonts/rpxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/stma
+ryrd/stmary10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/
+txex-bar.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txe
+x.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txmia.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dis
+t/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
+ic/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx
+/zplx-regular.pfb>
+Output written on relative_quasimaps.pdf (56 pages, 383169 bytes).
 PDF statistics:
- 266 PDF objects out of 1000 (max. 8388607)
- 190 compressed objects within 2 object streams
+ 272 PDF objects out of 1000 (max. 8388607)
+ 195 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
