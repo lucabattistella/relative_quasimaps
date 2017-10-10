@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  9 OCT 2017 18:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  10 OCT 2017 16:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1003,10 +1003,43 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@lastruleclass=\count182
 \@thisrulewidth=\dimen334
 )
-\c@thm=\count183
-\c@ipotesi=\count184
-\c@claim=\count185
-\c@num=\count186
+(/usr/local/texlive/2016/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count183
+\calc@Bcount=\count184
+\calc@Adimen=\dimen335
+\calc@Bdimen=\dimen336
+\calc@Askip=\skip68
+\calc@Bskip=\skip69
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count185
+\calc@Cskip=\skip70
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count186
+\l_MT_multwidth_dim=\dimen337
+\origjot=\skip71
+\l_MT_shortvdotswithinadjustabove_dim=\dimen338
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen339
+\l_MT_above_intertext_sep=\dimen340
+\l_MT_below_intertext_sep=\dimen341
+\l_MT_above_shortintertext_sep=\dimen342
+\l_MT_below_shortintertext_sep=\dimen343
+)
+\c@thm=\count187
+\c@ipotesi=\count188
+\c@claim=\count189
+\c@num=\count190
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
@@ -1035,12 +1068,12 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks59
 \XKV@tempa@toks=\toks60
 )
-\XKV@depth=\count187
+\XKV@depth=\count191
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count188
+\etb@tempcnta=\count192
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
@@ -1063,7 +1096,7 @@ Package: newpxmath 2016/02/11 v1.295
 
 `newpxmath' v1.295, 2016/02/11 Math macros based on pxfonts (msharpe)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/kastrup/binhex.tex)
-\px@Isdigit=\count189
+\px@Isdigit=\count193
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 63.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/zpltlf/m/n on input line 63.
@@ -1145,94 +1178,94 @@ LaTeX Info: Redefining \openbox on input line 1503.
 (./relative_quasimaps.aux)
 \openout1 = `relative_quasimaps.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 155.
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 156.
 LaTeX Font Info:    Try loading font information for OML+npxmi on input line 15
-5.
+6.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for OMS/npxsy/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMS/npxsy/m/n on input line 156.
 LaTeX Font Info:    Try loading font information for OMS+npxsy on input line 15
-5.
+6.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/omsnpxsy.fd
 File: omsnpxsy.fd 2013/03/24 Fontinst v1.933 font definitions for OMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 155.
-LaTeX Font Info:    Try loading font information for U+npxexa on input line 155
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 156.
+LaTeX Font Info:    Try loading font information for U+npxexa on input line 156
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 155.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 155.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 156.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 156.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 155.
+(Font)              scaled to size 9.0pt on input line 156.
 LaTeX Font Info:    Try loading font information for OT1+zpltlf on input line 1
-55.
+56.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/ot1zpltlf.fd
 File: ot1zpltlf.fd 2015/01/17 v1.0 font definition file for OT1/zpl/tlf
 )
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 155.
+(Font)              scaled to size 9.0pt on input line 156.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 155.
+(Font)              scaled to size 7.3pt on input line 156.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 155.
-LaTeX Font Info:    Try loading font information for U+msa on input line 155.
+(Font)              scaled to size 5.5pt on input line 156.
+LaTeX Font Info:    Try loading font information for U+msa on input line 156.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 155.
+LaTeX Font Info:    Try loading font information for U+msb on input line 156.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 155.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 156.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 
 LaTeX Font Warning: Font shape `U/stmry/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 155.
+(Font)              size <5> substituted on input line 156.
 
-LaTeX Font Info:    Try loading font information for U+npxmia on input line 155
+LaTeX Font Info:    Try loading font information for U+npxmia on input line 156
 .
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/unpxmia.fd
 File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
 )
-LaTeX Font Info:    Try loading font information for U+npxsym on input line 155
+LaTeX Font Info:    Try loading font information for U+npxsym on input line 156
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/unpxsym.fd
 File: unpxsym.fd 2015/03/21 Fontinst v1.933 font definitions for U/npxsym.
 )
-LaTeX Font Info:    Try loading font information for U+npxsyc on input line 155
+LaTeX Font Info:    Try loading font information for U+npxsyc on input line 156
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/unpxsyc.fd
@@ -1246,16 +1279,16 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count190
-\scratchdimen=\dimen335
+\scratchcounter=\count194
+\scratchdimen=\dimen344
 \scratchbox=\box73
-\nofMPsegments=\count191
-\nofMParguments=\count192
+\nofMPsegments=\count195
+\nofMParguments=\count196
 \everyMPshowfont=\toks61
-\MPscratchCnt=\count193
-\MPscratchDim=\dimen336
-\MPnumerator=\count194
-\makeMPintoPDFobject=\count195
+\MPscratchCnt=\count197
+\MPscratchDim=\dimen345
+\MPnumerator=\count198
+\makeMPintoPDFobject=\count266
 \everyMPtoPDFconversion=\toks62
 ) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
@@ -1303,23 +1336,23 @@ e
 ))
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 155.
+(Font)              scaled to size 10.95pt on input line 156.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 155.
+(Font)              scaled to size 8.0pt on input line 156.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 6.1pt on input line 155.
-Package xypdf Info: Line width: 0.64604pt on input line 155.
-\c@mv@tabular=\count196
-\c@mv@boldtabular=\count197
+(Font)              scaled to size 6.1pt on input line 156.
+Package xypdf Info: Line width: 0.64604pt on input line 156.
+\c@mv@tabular=\count267
+\c@mv@boldtabular=\count268
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sc' will be
-(Font)              scaled to size 9.0pt on input line 157.
+(Font)              scaled to size 9.0pt on input line 158.
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 159.
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 160.
 
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 159.
+(Font)              scaled to size 10.95pt on input line 160.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 161.
+(Font)              scaled to size 10.95pt on input line 162.
  (./relative_quasimaps.toc)
 \tf@toc=\write5
 \openout5 = `relative_quasimaps.toc'.
@@ -1348,12 +1381,29 @@ Overfull \hbox (3.70282pt too wide) in paragraph at lines 140--142
 fine rel-a-tive Gromov--
  []
 
-[10] [11]) (./tex/recursion_for_Pr.tex [12] [13] [14] [15] [16]
+[10] [11]) (./tex/recursion_for_Pr.tex [12] [13]
+Overfull \hbox (14.3351pt too wide) in paragraph at lines 36--37
+[]\T1/zpltlf/b/n/10.95 Lemma 3.2. []$[][]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10
+.95 P[]\OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it/10.95 ~$ 
+\T1/zpltlf/m/n/10.95 is equal to the clo-sure of the nice lo-cus $\OMS/npxsy/m/
+n/10.95 Q[]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OMS/npxsy/m/n/10.95 j\
+OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it/10.95 ~$
+ []
+
+[14] [15] [16]
 Overfull \hbox (33.20512pt too wide) in paragraph at lines 96--96
 [] 
  []
 
-[17] [18]) (./tex/recursion_general.tex [19] [20]
+[17]
+Overfull \hbox (1.59781pt too wide) in paragraph at lines 122--124
+\OML/npxmi/m/it/10.95 B \U/npxmia/m/it/10.95 5 }\OML/npxmi/m/it/10.95 d[]; [] ;
+ d[]\U/npxmia/m/it/10.95 ~$ \T1/zpltlf/m/n/10.95 of the de-gree and all valid m
+ul-ti-plicites $\OML/npxmi/m/it/10.95 M \U/npxmia/m/it/10.95 5 }\OML/npxmi/m/it
+/10.95 m[]; [] ; m[]\U/npxmia/m/it/10.95 ~$
+ []
+
+[18]) (./tex/recursion_general.tex [19] [20]
 Overfull \hbox (30.93896pt too wide) in paragraph at lines 52--52
 [] 
  []
@@ -1373,15 +1423,20 @@ LaTeX Font Info:    Try loading font information for U+bbm on input line 17.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [24] [25]
-Overfull \hbox (25.12036pt too wide) in paragraph at lines 45--46
-[]\T1/zpltlf/m/n/10.95 Furthermore, re-mark that, ev-ery-time we look at a rel-
-a-tive space $[][]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 X\OMS/npxsy/m/n/1
-0.95 j\OML/npxmi/m/it/10.95 Y; ^^L\U/npxmia/m/it/10.95 ~$
+) [24]
+Overfull \hbox (13.17061pt too wide) in paragraph at lines 37--38
+[]\T1/zpltlf/m/n/10.95 This es-sen-tially fol-lows by func-to-ri-al-ity of co-h
+o-mo-log-i-cal push-forwards
+ []
+
+[25]
+Overfull \hbox (14.46268pt too wide) in paragraph at lines 79--80
+[]\T1/zpltlf/m/n/10.95 Define the fol-low-ing gen-er-at-ing func-tion for $\OT1
+/zpltlf/m/n/10.95 2$\T1/zpltlf/m/n/10.95 -pointed rel-a-tive quasimap
  []
 
 [26] (./fig/snake.tex) [27]
-Overfull \hbox (19.47063pt too wide) detected at line 132
+Overfull \hbox (19.47063pt too wide) detected at line 146
 \OT1/zpltlf/m/n/10.95 [[][]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 X\OMS/np
 xsy/m/n/10.95 j\OML/npxmi/m/it/10.95 Y; ^^L\U/npxmia/m/it/10.95 ~\OT1/zpltlf/m/
 n/10.95 ][] \U/npxmia/m/it/10.95 5 }\OML/npxmi/m/it/10.95 Y \U/npxmia/m/it/10.9
@@ -1396,23 +1451,19 @@ t/10.95 }\OML/npxmi/m/it/10.95 X\OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 Y;
  []
 
 [28]
-LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 8.0pt on input line 160.
-LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 6.1pt on input line 160.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 184.
+(Font)              scaled to size 10.95pt on input line 198.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 184.
+(Font)              scaled to size 8.0pt on input line 198.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 6.1pt on input line 184.
+(Font)              scaled to size 6.1pt on input line 198.
  [29] [30]
-Overfull \hbox (3.74261pt too wide) in paragraph at lines 234--235
+Overfull \hbox (3.74261pt too wide) in paragraph at lines 248--249
  [] 
  []
 
 
-Overfull \hbox (11.60768pt too wide) detected at line 243
+Overfull \hbox (11.60768pt too wide) detected at line 257
 \U/npxmia/m/it/10.95 }[][]~[][] 5 [] [] 5 []
  []
 
@@ -1430,15 +1481,12 @@ U/npxmia/m/it/10.95 }[][] \OML/npxmi/m/it/10.95 ^^O[]T[]\U/npxmia/m/it/10.95 ~$
 \T1/zpltlf/m/n/10.95 .
  []
 
-[33]
-Underfull \vbox (badness 2698) has occurred while \output is active []
-
- [34]
+[33] [34] [35]
 Overfull \hbox (10.26819pt too wide) in paragraph at lines 99--99
 [] 
  []
 
-[35]
+
 Overfull \hbox (68.65169pt too wide) in paragraph at lines 103--105
 \T1/zpltlf/m/n/10.95 under $\OML/npxmi/m/it/10.95 h[]\U/npxmia/m/it/10.95 }\OML
 /npxmi/m/it/10.95 ^^^[]\U/npxmia/m/it/10.95 ~$\T1/zpltlf/m/n/10.95 . If we can 
@@ -1464,7 +1512,11 @@ pxsy/m/n/10.95 ' \OML/npxmi/m/it/10.95 H[]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it
 /10.95 f[]T[]\U/npxmia/m/it/10.95 ~\OML/npxmi/m/it/10.95 :
  []
 
-[36] [37]) (./tex/functoriality.tex [38] [39]
+
+Underfull \vbox (badness 4518) has occurred while \output is active []
+
+ [36]
+[37]) [38] (./tex/functoriality.tex [39]
 Overfull \hbox (2.87422pt too wide) in paragraph at lines 46--48
 \T1/zpltlf/m/n/10.95 Consider there-fore a quasimap $\U/npxmia/m/it/10.95 }}\OM
 L/npxmi/m/it/10.95 C; x[]; [] ; x[]\U/npxmia/m/it/10.95 ~\OML/npxmi/m/it/10.95 
@@ -1473,18 +1525,21 @@ OML/npxmi/m/it/10.95 ; \U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 '[]\U/npxmia
 /m/it/10.95 ~[]~$
  []
 
-[40] [41] [42] [43] [44] [45] [46]) (./tex/splitting.tex [47] [48] [49]
-[50]) (./tex/GIT.tex
+[40] [41] [42] [43] [44] [45] [46] [47]) (./tex/splitting.tex [48] [49]
+[50]) (./tex/GIT.tex [51]
 Overfull \hbox (2.63702pt too wide) in paragraph at lines 21--23
 \T1/zpltlf/m/n/10.95 which ad-mits a vir-tual class. Hence we have two mod-uli 
 spaces of quasimaps
  []
 
-[51] [52]) (./tex/intersection.tex [53] [54]) (./relative_quasimaps.bbl
+[52]) (./tex/intersection.tex [53]
+Underfull \vbox (badness 1168) has occurred while \output is active []
+
+ [54])
+(./relative_quasimaps.bbl
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 9.0pt on input line 6.
-
-[55]
+ [55]
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 9.0pt on input line 135.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
@@ -1492,24 +1547,23 @@ LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 5.5pt on input line 135.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Font Warning: Font shape `U/bbm/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 135.
-
-) [56] (./relative_quasimaps.aux)
+ [56])
+[57] (./relative_quasimaps.aux)
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.5pt have occurred.
+(Font)              up to 1.64499pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 31351 strings out of 493014
- 610335 string characters out of 6133351
- 663822 words of memory out of 5000000
- 34048 multiletter control sequences out of 15000+600000
- 100484 words of font info for 203 fonts, out of 8000000 for 9000
+ 31935 strings out of 493014
+ 621117 string characters out of 6133351
+ 669811 words of memory out of 5000000
+ 34622 multiletter control sequences out of 15000+600000
+ 106432 words of font info for 231 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 56i,16n,99p,10394b,1048s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,19n,99p,10394b,1048s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc} </
 Users/navid/Library/texlive/2016/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657
 pk>{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newpx/ecsups.enc}{/usr/l
@@ -1532,10 +1586,10 @@ t/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx
 /zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (56 pages, 383169 bytes).
+Output written on relative_quasimaps.pdf (57 pages, 382835 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 195 compressed objects within 2 object streams
+ 275 PDF objects out of 1000 (max. 8388607)
+ 197 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
