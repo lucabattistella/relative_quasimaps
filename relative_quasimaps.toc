@@ -19,7 +19,7 @@
 \contentsline {subsection}{\tocsubsection {}{5.1}{Setup}}{24}
 \contentsline {subsection}{\tocsubsection {}{5.2}{Generating functions for quasimap invariants}}{25}
 \contentsline {subsection}{\tocsubsection {}{5.3}{Quantum Lefschetz formula}}{26}
-\contentsline {subsection}{\tocsubsection {}{5.4}{Comparison with the work of Ciocan-Fontanine and Kim}}{29}
+\contentsline {subsection}{\tocsubsection {}{5.4}{Comparison with the work of Ciocan-Fontanine and Kim}}{30}
 \contentsline {section}{\tocsection {Appendix}{A}{The comparison morphism}}{32}
 \contentsline {section}{\tocsection {Appendix}{B}{Notes on quasimaps}}{39}
 \contentsline {subsection}{\tocsubsection {}{B.1}{Functoriality}}{39}
