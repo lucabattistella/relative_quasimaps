@@ -107,62 +107,60 @@ There is another variant which is going to play a role in later sections: that o
 Note that we no longer require $2g-2+n\geq 0$, due to the modified stability condition. In particular it makes sense, and turns out to be very useful, to consider unmarked parametrised quasimaps $\QG{0}{0}{X}{\beta}$. In this case the source curve needs to be irreducible. 
 \end{remark}
 
-\begin{example} $\QG{0}{0}{\PP^r}{d} = \PP^N$ with $N=(r+1)(d+1)-1$. Indeed, the curve and line bundle must be $(\PP^1,\mathcal O_{\PP^1}(d))$ and we are left with choosing $r+1$ sections of $\mathcal O_{\PP^1}(d)$ (not all zero) up to automorphisms of $\mathcal O_{\PP^1}(d)$, i.e. up to scaling. For an early appearance of such spaces, see for instance \cite{Bertram}.\end{example}
+\begin{example} $\QG{0}{0}{\PP^r}{d} = \PP^N$ with $N=(r+1)(d+1)-1$. Indeed, the curve and line bundle must be $(\PP^1,\mathcal O_{\PP^1}(d))$ and we are left with choosing $r+1$ sections of $\mathcal O_{\PP^1}(d)$, not all zero, up to automorphisms of $\mathcal O_{\PP^1}(d)$, i.e. up to scaling. For an early appearance of such spaces, see for instance \cite{Bertram}.\end{example}
 
-\subsection{Review of relative stable maps} \label{Subsection relative stable maps} Given a smooth projective variety $X$ and a smooth divisor $Y$, Gathmann's moduli space of relative stable maps parametrises stable maps to $X$ with specified tangencies to $Y$ at the marked points; see \cite{Ga} for details.
+\subsection{Review of relative stable maps} \label{Subsection relative stable maps} Given a smooth projective variety $X$ and a smooth very ample divisor $Y$, Gathmann's moduli space of relative stable maps parametrises stable maps to $X$ with specified tangencies to $Y$ at the marked points.
 
-\begin{remark} There are many other approaches to defining relative stable maps besides Gathmann's: the moduli space of maps to expanded degenerations of J. Li \cite{Li1} \cite{Li2}, the twisted stable maps of D. Abramovich and B. Fantechi \cite{AbramovichFantechi}, the logarithmic stable maps with expansions of B. Kim \cite{KimLog} and the logarithmic stable maps (without expansions) of M. Gross and B. Siebert \cite{GrossSiebertLog} \cite{GrossSiebertIntrinsic}, Q. Chen \cite{ChenLog} and D. Abramovich and Q. Chen \cite{AbramovichChenLog}. However, the invariants defined via these theories are all known to coincide \cite{AbramovichMarcusWiseComparison}, so the choice of which variant to work with mainly depends on one's intended application. \end{remark}
-
-\begin{definition}[{\cite[Definition 1.1]{Ga}}] Let $X$ be a smooth projective variety and $Y \subseteq X$ a smooth divisor. Fix a number $n \geq 0$ of marked points, an effective curve class $\beta \in \HH_2^+(X)$ and an $n$-tuple $\alpha = (\alpha_1, \ldots, \alpha_n)$ of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. Then the moduli space
+\begin{definition} {\cite[Definition 1.1]{Ga}}  Let $X$ be a smooth projective variety and $Y \subseteq X$ a smooth very ample divisor. Fix a number $n \geq 0$ of marked points, an effective curve class $\beta \in \HH_2^+(X)$ and an $n$-tuple $\alpha = (\alpha_1, \ldots, \alpha_n)$ of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. The moduli space
 \begin{equation*} \M{0}{\alpha}{X|Y}{\beta} \end{equation*}
 of relative stable maps to $(X,Y)$ is defined to be the locus in $\M{0}{n}{X}{\beta}$ of stable maps $(C \to S , (x_i : S \to C)_{i=1}^n , f : C \to X)$ satisfying the following two conditions:
 \begin{enumerate}
 \item if $x_i$ is a marked point such that $\alpha_i > 0$ then $f(x_i) \in Y$;
-\item if we consider $f^* [Y] \in \Achow_0(f^{-1}Y)$ then the difference $f^* [Y] - \Sigma_i \alpha_i x_i$ is an effective class.
+\item if we consider $f^* [Y] \in \Achow_0(f^{-1}Y)$ then the difference $f^* [Y] - \Sigma_i \alpha_i x_i$ is an effective class.\marginpar{FIX ME bivariant Chow}
 \end{enumerate}
-This forms a closed substack of $\M{0}{n}{X}{\beta}$. Condition (1) is required in order for the class $\Sigma_i \alpha_i x_i$ to make sense in $\Achow_0(f^{-1}Y)$.
+These conditions define a closed substack of $\M{0}{n}{X}{\beta}$. Condition (1) is required in order for the class $\Sigma_i \alpha_i x_i$ to make sense in $\Achow_0(f^{-1}Y)$.
 \end{definition}
 
 \begin{remark} When $\alpha = (0, \ldots, 0)$, condition (2) becomes $Y \cdot \beta \geq 0$, so $\M{0}{(0,\ldots,0)}{X|Y}{\beta} = \M{0}{n}{X}{\beta}$ as long as $Y$ is nef.\end{remark}
 
-\begin{remark} The definition given above works in families; however there is a more combinatorial definition for individual maps which is more useful in practice (see \cite[Remark 1.4]{Ga}): a stable map $(C,x_1, \ldots, x_n,f)$ is a relative stable map if and only if, for each connected component $Z$ of $f^{-1}(Y) \subseteq C$:
+\begin{remark} The definition given above works in families; however there is an equivalent, more combinatorial definition for individual maps which is more useful in practice (see \cite[Remark 1.4]{Ga}): a stable map $(C,x_1, \ldots, x_n,f)$ is a relative stable map if and only if, for each connected component $Z$ of $f^{-1}(Y) \subseteq C$:
 \begin{enumerate}
 \item if $Z$ is a point and is equal to a marked point $x_i$, then the multiplicity of $f$ to $Y$ at $x_i$ is greater than or equal to $\alpha_i$;
-\item if $Z$ is one-dimensional (hence a union of irreducible components of $C$) and if we let $C^{(i)}$ for $1 \leq i \leq r$ denote the irreducible components of $C$ adjacent to $Z$, and $m^{(i)}$ denote the multiplicity of $f|_{C^{(i)}}$ to $Y$ at the node $Z \cap C^{(i)}$, then we must have:
+\item if $Z$ is one-dimensional (hence a union of irreducible components of $C$) and if we let $C^{(i)}$ for $1 \leq i \leq r$ denote the irreducible components of $C$ adjacent to $Z$ and $m^{(i)}$ denote the multiplicity of $f|_{C^{(i)}}$ to $Y$ at the node $Z \cap C^{(i)}$, then:
 \begin{equation} \label{Relative stable map internal component inequality} Y \cdot f_* [Z] + \sum_{i=1}^r m^{(i)} \geq \sum_{x_i \in Z} \alpha_i \end{equation}
 \end{enumerate} \end{remark}
 
-\begin{remark}In the second case above we call $Z$ an \ilemph{internal} component and the $C^{(i)}$ \ilemph{external} components. Note that $Z$ is not necessarily irreducible: the term ``component'' is justified by the fact that it is a \emph{connected} component of $f^{-1}(Y)$. \end{remark}
+\begin{remark}In case (2) above we call $Z$ an \ilemph{internal} component and the $C^{(i)}$ \ilemph{external} components. Note that $Z$ is not necessarily irreducible: the term ``component'' is justified by the fact that it is a \emph{connected} component of $f^{-1}(Y)$. \end{remark}
 
 \begin{remark} In the case of maximal multiplicity $\Sigma_{i} \alpha_i = Y \cdot \beta$, all the inequalities in the above definition must actually be equalities. \end{remark}
 
-In the case where $X=\PP^N$ and $Y=H$ is a hyperplane, one can show that $\M{0}{\alpha}{\PP^N|H}{d}$ is irreducible with dimension equal to the expected dimension:
+In the case where $X=\PP^N$ and $Y=H$ is a hyperplane, Gathmann showed that $\M{0}{\alpha}{\PP^N|H}{d}$ is irreducible with dimension equal to the expected dimension:\marginpar{pinpoint cite please}
 \begin{equation*} \vdim \M{0}{\alpha}{X|Y}{\beta} = \vdim{\M{0}{n}{X}{\beta}} - \sum_{i=1}^n \alpha_i \end{equation*}
 Hence it has a fundamental class from which one can define relative Gromov--Witten invariants.
-
-More generally if $Y \subseteq X$ is very ample one can use the embedding $X \hookrightarrow \PP^N$ corresponding to $|\OO_X(Y)|$ to obtain a cartesian diagram:
+More generally if $Y \subseteq X$ is very ample one can use the embedding $X \hookrightarrow \PP^N$ given by $|\OO_X(Y)|$ to obtain a cartesian diagram:
 \bcd
 \M{0}{\alpha}{X|Y}{\beta} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \M{0}{\alpha}{\PP^N|H}{d} \ar[d] \\
 \M{0}{n}{X}{\beta} \ar[r,"\varphi"] & \M{0}{n}{\PP^N}{d}
 \ecd
-Then the fact that $\M{0}{n}{\PP^N}{d}$ is smooth allows us to define a virtual class on $\M{0}{\alpha}{X|Y}{\beta}$ by diagonal pull-back (see Appendix \ref{appendix:intersection} of the current paper):
-\begin{equation*} \virt{\M{0}{\alpha}{X|Y}{\beta}} = \varphi^! [\M{0}{\alpha}{\PP^N|H}{d}] \end{equation*}
-Thus one can define relative Gromov--Witten invariants by capping the virtual class with products of evaluation classes and psi classes.
+Then the fact that $\M{0}{n}{\PP^N}{d}$ is smooth allows one to define a virtual class on $\M{0}{\alpha}{X|Y}{\beta}$ by diagonal pull-back (see Appendix \ref{appendix:intersection} of the current paper):
+\begin{equation*} \virt{\M{0}{\alpha}{X|Y}{\beta}} := \varphi^! [\M{0}{\alpha}{\PP^N|H}{d}] \end{equation*}
+Thus one can define relative Gromov--Witten invariants in the usual way, by capping the virtual class with products of evaluation classes and psi classes.
 
-In \cite[\S\S 2-4]{Ga} Gathmann proves a recursion relation inside the Chow group of $\M{0}{\alpha}{X|Y}{\beta}$. This describes what happens when we increase the multiplicity of one of the marked points by one. Let us therefore fix a marked point $x_k \in \{ x_1, \ldots, x_n \}$ and let $e_k = (1,\ldots,0,\ldots,0)$. We then have
-\begin{equation*} (\alpha_k \psi_k + \ev_k^* [Y]) \virt{\M{0}{\alpha}{X|Y}{\beta}} = \virt{\M{0}{\alpha+e_k}{X|Y}{\beta}} + \virt{\mathcal{D}_{\alpha,k}(X,\beta)} \end{equation*}
-where $\mathcal{D}_{\alpha,k}(X,\beta)$ is an appropriate \ilemph{comb locus}. Repeated application of this result shows that both the relative Gromov--Witten invariants of $(X,Y)$ and the Gromov--Witten invariants of $Y$ are completely determined by the Gromov--Witten invariants of $X$ \cite[Corollary 5.7]{Ga}. This relation is then applied in \cite{Ga-MF} to obtain a new proof of the mirror theorem for projective hypersurfaces.
+In \cite[\S\S 2-4]{Ga} Gathmann establishes a recursion relation inside the Chow group of $\M{0}{\alpha}{X|Y}{\beta}$. This describes what happens when we increase the multiplicity at one of the marked points. Let us therefore fix a marked point $x_k \in \{ x_1, \ldots, x_n \}$ and let $e_k = (0,\ldots,1,\ldots,0)$. Then
+\begin{equation*} (\alpha_k \psi_k + \ev_k^* [Y]) \cap \virt{\M{0}{\alpha}{X|Y}{\beta}} = \virt{\M{0}{\alpha+e_k}{X|Y}{\beta}} + \virt{\mathcal{D}_{\alpha,k}(X,\beta)} \end{equation*}
+where $\mathcal{D}_{\alpha,k}(X,\beta)$ is an appropriate \ilemph{comb locus}. Repeated application of this result shows that both the relative Gromov--Witten invariants of $(X,Y)$ and the (restricted) Gromov--Witten invariants of $Y$ are completely determined by the Gromov--Witten invariants of $X$ \cite[Corollary 5.7]{Ga}. This result is then applied in \cite{Ga-MF} to obtain a new proof of the mirror theorem for projective hypersurfaces.
+
+\begin{remark} There are many other approaches to defining relative stable maps besides Gathmann's: the moduli space of maps to expanded degenerations of J.~Li \cite{Li1} \cite{Li2}, the twisted stable maps of D.~Abramovich and B.~Fantechi \cite{AbramovichFantechi}, the logarithmic stable maps with expansions of B.~Kim \cite{KimLog} and the logarithmic stable maps (without expansions) of M.~Gross and B.~Siebert \cite{GrossSiebertLog} \cite{GrossSiebertIntrinsic}, Q.~Chen \cite{ChenLog} and D.~Abramovich and Q.~Chen \cite{AbramovichChenLog}. However, the invariants defined via these theories are all known to coincide \cite{AbramovichMarcusWiseComparison}, so the choice of which moduli space to work with mainly depends on one's intended application. \end{remark}
 
 \subsection{Definition of relative stable quasimaps} \label{Subsection relative stable quasimaps}
 
-We now give the main definition of the paper. From here on $X$ will denote a smooth projective toric variety and $Y \subseteq X$ a very ample hypersurface. We do not require that $Y$ is toric.
-
+We now give the main definition of the paper. From here on $X$ will denote a smooth projective toric variety and $Y \subseteq X$ a very ample hypersurface. We \emph{do not} require that $Y$ is toric.
 Consider the line bundle $\OO_X(Y)$ and the section $s_Y$ cutting out $Y$. By \cite{CoxRing} we have a natural isomorphism of $\CC$-vector spaces
 \begin{equation*} \HH^0(X,\OO_X(Y)) = \left\langle \prod_{\rho} z_\rho^{a_\rho} : \Sigma_\rho a_\rho D_\rho = Y \right\rangle_{\CC} \end{equation*}
 where the $z_\rho$ for $\rho \in \Sigma(1)$ are the generators of the Cox ring of $X$ and the $a_\rho$ are non-negative integers. We can therefore write $s_Y$ as
 \begin{equation*} s_Y = \sum_{\underline{a}=(a_\rho)} \lambda_{\underline{a}} \prod_\rho z_\rho^{a_\rho} \end{equation*}
 for some scalars $\lambda_{\underline{a}} \in \CC$. The idea is that a quasimap
-\begin{equation*} ((C,x_1,\ldots,x_n), (L_\rho,u_\rho)_{\rho \in \Sigma(1)}, (\varphi_m)_{m \in M}) \end{equation*}
+\begin{equation*} \big((C,x_1,\ldots,x_n), (L_\rho,u_\rho)_{\rho \in \Sigma(1)}, (\varphi_m)_{m \in M}\big) \end{equation*}
 should ``map'' a point $x \in C$ into $Y$ if and only if the section
 \begin{equation} \label{uY expression} u_Y := \sum_{\underline{a}} \lambda_{\underline{a}} \prod_\rho u_\rho^{a_\rho} \end{equation}
 vanishes at $x$. We now explain how to make sense of expression \eqref{uY expression}. For each $\underline{a}$ we have a well-defined section
@@ -173,10 +171,10 @@ The upshot is that we obtain a line bundle $L_Y$ on $C$, which plays the role of
 \begin{equation*} u_Y \in \HH^0(C,L_Y) \end{equation*}
 which plays the role of the ``pull-back'' of $s_Y$.
 
-\begin{definition} With notation as above, let $n \geq 2$ be a number of marked points, $\beta \in \HH_2^+(X)$ be an effective curve class and $\alpha=(\alpha_1, \ldots, \alpha_n)$ a collection of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. Then we define the \ilemph{moduli space of relative stable quasimaps}
+\begin{definition} With notation as above, let $n \geq 2$ be a number of marked points, $\beta \in \HH_2^+(X)$ be an effective curve class and $\alpha=(\alpha_1, \ldots, \alpha_n)$ be a collection of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. The \ilemph{moduli space of relative stable quasimaps}
 \begin{equation*} \Q{0}{\alpha}{X|Y}{\beta} \subseteq \Q{0}{n}{X}{\beta} \end{equation*}
-to be the locus of quasimaps
-\begin{equation*} ((C \to S, (x_i : S \to C)_{i=1}^n), (L_\rho,u_\rho)_{\rho \in \Sigma(1)}, (\varphi_m)_{m \in M}) \end{equation*}
+is defined to be the locus of quasimaps
+\begin{equation*} \big((C \to S, (x_i : S \to C)_{i=1}^n), (L_\rho,u_\rho)_{\rho \in \Sigma(1)}, (\varphi_m)_{m \in M}\big) \end{equation*}
 such that:
 \begin{enumerate}
 \item if $x_i$ is a marking such that $\alpha_i > 0$, then $x_i^* u_Y = 0$;
@@ -184,22 +182,20 @@ such that:
 \end{enumerate}
 \end{definition}
 
-The class $u_Y^*(0)$ is defined as follows. Consider the cartesian diagram
+\noindent The class $u_Y^*(0)$ is defined as follows. Consider the cartesian diagram
 \bcd
 u_Y^{-1}(0) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & C \ar[d,"u_Y"] \\
 C \ar[r,"0_Y"] & L_Y
 \ecd
-where $0_Y$ is the zero section. We have a Gysin map
+where $0_Y$ is the zero section. There is a Gysin map
 \begin{equation*} 0_Y^! : \Achow_*(C) \to \Achow_*(u_Y^{-1}(0)) \end{equation*}
 and we define $u_Y^*(0) := 0_Y^!([C])$.
 
 
-\begin{remark} As in the case of relative stable maps (see \S \ref{Subsection relative stable maps}) there is an alternative definition which is easier to check in practice: a quasimap is a relative quasimap if and only if for every connected component $Z$ of $u_Y^{-1}(0)$ we have that:
+\begin{remark} As in the case of relative stable maps (see \S \ref{Subsection relative stable maps}) there is an equivalent definition which is more useful in practice: a quasimap is a relative quasimap if and only if for every connected component $Z$ of $u_Y^{-1}(0)$ we have that:
 \begin{enumerate}
 \item if $Z$ is a point and is equal to a marked point $x_i$, then the order of vanishing of $u_Y$ at $x_i$ is greater than or equal to $\alpha_i$;
-\item if $Z$ is one-dimensional (hence a union of irreducible components) and if we let $C^{(i)}$ for $1 \leq i \leq r$ denote the irreducible components of $C$ adjacent to $Z$, and $m^{(i)}$ the order of vanishing of $u_Y$ at the node $Z \cap C^{(i)}$, then we must have:
+\item if $Z$ is one-dimensional (hence a union of irreducible components) and if we let $C^{(i)}$ for $1 \leq i \leq r$ denote the irreducible components of $C$ adjacent to $Z$ and $m^{(i)}$ the order of vanishing of $u_Y$ at the node $Z \cap C^{(i)}$, then:
 \begin{equation} \label{Relative quasimap internal component inequality} \deg L_Y|_Z + \sum_{i=1}^r m^{(i)} \geq \sum_{x_i \in Z} \alpha_i \end{equation}
 \end{enumerate}
 \end{remark}
-
-As it stands we do not know much about this moduli space. In the following section we will examine the case $X=\PP^N$ and $Y=H$ a hyperplane in detail. We will then apply the results obtained there to deduce facts about the general case.
