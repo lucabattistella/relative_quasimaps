@@ -1,59 +1,108 @@
-\section{The quasimap mirror formula} \label{Section quasimap mirror theorem}
+\section{Quantum Lefschetz for quasimaps} \label{Section quasimap mirror theorem}
 
-We are going to reproduce Gathmann's proof of the mirror formula with relative stable maps \cite{Ga-MF} in the context of quasimaps, thanks to the extension of his formula to this setting that we have proved in the previous sections. We have chosen to work with unparametrised quasimaps, hence the minimum number of markings is two; this minimal choice turns out to be extremely convenient because it determines the shape of the source curve to a high degree, so to grant a great level of control on degenerate contributions appearing in Gathmann's algorithm. The absence of rational tails in the quasimap moduli space makes the recursion much simpler, even in the CY case.
+In \cite{Ga-MF} Gathmann applies his recursion formula for relative stable maps to obtain a new proof of the mirror theorem for hypersurfaces \cite{Givental-mirror} \cite{LLY1}. This can be viewed as a quantum Lefschetz formula, expressing the stable map invariants of $Y$ in terms of those of $X$.
 
-We would like to think of this as a Lefschetz-type theorem, in that it expresses certain (restricted) quasimap invariants of a hypersurface $Y$ in terms of those of the ambient space $X$. As it turns out, we have also retrieved a formula of Ciocan-Fontanine and Kim \cite[Corollary 5.5.1]{CF-K-wallcrossing} (but with more restrictive assumptions on the target); under this new light, the formula can be simply interpreted as a relation between some residues for the $\Gm$-action on the space of 0-pointed and 1-pointed \emph{parametrised} quasimap invariants of the hypersurface $Y$. It is remarkable how, knowing only about a small sector (i.e. invariants with few insertions), it is possible to formally reconstruct the full quasimap potential; a point which was greatly clarified to us by the discussion in \cite[Section 5.5]{CF-K-wallcrossing}.
+In this section we carry out a similar computation in the quasimap setting, using the recursion found in Theorem \ref{Theorem general recursion} above. We work with generating functions for $2$-pointed quasimap invariants (the minimal number of markings, due to the strong stability condition). The absence of rational tails in the quasimap moduli space makes the recursion much simpler than Gathmann's. We obtain a \emph{quantum Lefschetz theorem for quasimap invariants} (Theorem \ref{Theorem Quantum Lefschetz}); that is, a formula which expresses the quasimap invariants of $Y$ in terms of those of $X$.
 
-We are going to be interested in the following \textbf{setup}: $X$ is a smooth projective toric variety and $Y$ is a smooth \emph{very ample} hypersurface in it, satisfying the following \emph{semi-positivity assumption}, that $-K_Y$ is nef. Notice that, by adjunction, it follows from our hypotheses that $-K_X$ is positive (at least) on every effective curve class \emph{coming from $Y$}. Let us denote by $r$ the dimension of $X$ and assume it is \emph{at least 3}. Then, in fact, every curve class on $X$ comes from $Y$ (by Lefschetz's hyperplane theorem) and $X$ \emph{is Fano}.
+Our formula can be viewed as a special case of \cite[Corollary 5.5.1]{CF-K-wallcrossing}, and so can be interpreted as a relation between certain residues of the $\CC^*$-action on spaces of $0$-pointed and $1$-pointed parametrised quasimaps to $Y$. Some consequences of this formula are explored in \cite[Section 5.5]{CF-K-wallcrossing}; for instance, it follows in the semipositive case that all primary $\epsilon$-quasimap invariants with a fundamental class insertion can be expressed in terms of $2$-pointed invariants.
 
-Denote dual bases for $H^*(X;\mathbb Q)$ by $\eta^i$ and $\eta_i$ ($i=0,\ldots,k$), with $\eta^0=\mathbbm 1_X$ and $\eta^1=Y$, which induce bases $\rho_i=i^*\eta_i$ for $i^*H^*(X)$ (extend it to a basis of $H^*(Y)$ by adding $\rho_{k+1}\ldots,\rho_{k'}$) and dually $\rho^i, i=1,\ldots,k'$; notice that the class of a point on $Y$ is given by restricting the dual of $\eta^1$, i.e. it is $\rho_1$, while the class of a point on $X$ is annihilated when restricted to $Y$, i.e. $\rho_0=0$. Furthermore, remark that, everytime we look at a relative space $\Q{0}{(m,0)}{X|Y}{\beta}$ with $m>0$, the evaluation map $\ev_1\colon \Q{0}{(m,0)}{X|Y}{\beta}\to X$ factors through $Y$ (so all the insertions can be first pulled back to $Y$).
+\subsection{Setup}
+As before we let $X=X_{\Sigma}$ be a smooth projective toric variety and $i \colon Y \hookrightarrow X$ a smooth very ample hypersurface. We also make the following two assumptions:
+\begin{enumerate}
+\item \emph{$Y$ semi-positive}: $-K_Y$ is nef;
+\item \emph{$Y$ contains all curve classes}: the map $i_* : \Achow_1(Y) \to \Achow_1(X)$ is surjective.
+\end{enumerate}
+By adjunction, $-K_X$ pairs strictly positively with every curve class coming from $Y$, hence with every curve class by Assumption (2). Thus $-K_X$ is ample\footnote{Kleiman's criterion says that a divisor $D$ is ample if and only if $D \cdot C > 0$ for every curve class $C$ in the closure of the effective cone. But since $X$ is a toric variety the effective cone is finitely generated in $\Achow_1(X)$, hence is closed in $\Achow_1(X)_{\mathbb{R}}$ since it is a finite intersection of half-spaces. So we only need to check $D \cdot C > 0$ for every effective curve class.}. Also note that if $\dim X \geq 3$ then Assumption (2) always holds, due to the Lefschetz hyperplane theorem.
+
+We fix a homogeneous basis $\eta_0, \ldots, \eta_k$ for $\HH^*(X) = \HH^*(X,\QQ)$ and let $\eta^0, \ldots, \eta^k$ denote the dual basis. Without loss of generality we may suppose that $\eta^0=\mathbbm 1_X$ and $\eta^1=Y$. We get an induced basis $\rho_1=i^*\eta_1, \ldots, \rho_k = i^* \eta_k$ for $i^*\HH^*(X)$. Notice that $\rho_1 = i^* \eta_1$ is the class of a point on $Y$ and $\rho_0 = i^* \eta_0 = i^* [\pt_X] = 0$.
+
+We can extend the $\rho_i$ to a basis $\rho_1, \ldots, \rho_l$ for $\HH^*(Y)$ by adding $\rho_{k+1}\ldots,\rho_{l}$. Let $\rho^1, \ldots, \rho^l$ denote the dual basis; notice that $\rho^i$ is \emph{not} equal to $i^* \eta^i$ (they even have different dimensions!).
+
+\subsection{Generating functions for quasimap invariants}
+As with many results in enumerative geometry, the quantum Lefchetz formula is most naturally stated in terms of generating functions. Here we define several such generating functions for the absolute quasimap invariants of $X$ and $Y$.
+
+For $X$ any smooth projective toric variety\footnote{Or any space for which quasimap invariants are defined, for instance a smooth hypersurface in a toric variety} we define: 
+\begin{equation*} S_0^X(z,\beta)=(\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{X}{\beta}}\right) \end{equation*}
+for every effective curve class $\beta\in \Achow_1(X)$. Similarly we define
+\begin{equation*} S_0^X(z,q)=\sum_{\beta\geq 0}S_0^X(z,\beta) q^\beta \end{equation*}
+where by convention $S_0^X(z,0)= \mathbbm 1_X$. These are generating functions for quasimap invariants of $X$ which take values in $\HH^*(X)$.
+
+The same definition applies to $Y$. However, we may sometimes wish to consider only insertions of classes coming from $X$. These are the so-called \emph{restricted quasimap invariants}, and the corresponding generating function is defined as
+\begin{equation*} \tilde{S}^Y_0(z,\beta) = (\ev_1)_* \left( \dfrac{1}{z-\psi_1} \virt{\Q{0}{2}{Y}{\beta}} \right) \end{equation*}
+where crucially $\ev_1$ is viewed as \emph{mapping to $X$} instead of to $Y$. Thus $\tilde{S}^Y_0(z,\beta)$ takes values in $\HH^*(X)$ and only involves quasimap invariants of $Y$ with insertions from $i^*\HH^*(X)$; on the other hand $S^Y_0(z,\beta)$ takes values in $\HH^*(Y)$ and involves quasimap invariants of $Y$ with arbitrary insertions.
+
+Now, since $X$ and $Y$ are smooth we may use Poincar\'{e} duality to define a push-forward map on cohomology denoted $i_* \colon \HH^k(Y) \to \HH^{k+2}(X)$.
+
+\begin{lemma} $i_* S^Y_0(z,\beta) = \tilde{S}^Y_0(z,\beta)$ \end{lemma}
+\begin{proof} This essentially follows by functoriality of cohomological push-forwards and the fact that we have a commuting triangle:
+\bcd
+\Q{0}{2}{Y}{\beta} \ar[rr,"\ev_1"] \ar[rd,"\ev_1" left=0.2cm] & & Y \ar[ld,"i"] \\
+& X & 
+\ecd
+However we will give a more concrete proof, in order to help familiarise the reader with the generating functions involved. First it is easy to see from the projection formula that:
+\begin{align*} i_* \rho^i =
+\begin{cases} \eta^i \qquad \text{for $i = 1, \ldots, k$} \\
+0 \qquad \text{\ for $i = k+1, \ldots, l$} \end{cases} \end{align*}
+%-------------------------------
+\begin{comment}We start with the second case. Note that $i^* \HH^*(X) \subseteq \HH^*(Y)$ is a subspace preserved by the non-degenerate Poincar\'{e} pairing, and so we may split $\HH^*(Y)$ into orthogonal subspaces:
+\begin{equation*} \HH^*(Y) = i^*\HH^*(X) \oplus i^* \HH^*(X)^\perp \end{equation*}
+Here $i^*\HH^*(X)$ is generated by $\rho^1, \ldots, \rho^k$ and $i^*\HH^*(X)^\perp$ is generated by $\rho^{k+1},\ldots,\rho^l$. We claim that $i_* \gamma = 0$ for all $\gamma \in i^*\HH^*(X)^\perp$. We must show that $\langle \delta , i_* \gamma \rangle= 0$ for all $\delta \in \HH^*(X)$. By definition $i_* \gamma$ is the element of $\HH^*(X)$ such that:
+\begin{equation*} i_* \gamma \cap [X] = i_* (\gamma \cap [Y]) \end{equation*}
+Capping both of these with $\delta$ we obtain
+\begin{equation*} (\delta \cup i_* \gamma) \cap [X] = \delta \cap (i_* \gamma \cap [X]) = \delta \cap i_*(\gamma \cap [Y]) = i_*((i^* \delta \cup \gamma) \cap [Y]) \end{equation*}
+where the last equality follows from the projection formula. Taking degree zero parts, we see that
+\begin{equation*} \langle \delta, i_* \gamma \rangle = \int_X \delta \cup i_* \gamma = \int_Y i^* \delta \cap \gamma = 0 \end{equation*}
+where the last equality holds because $\gamma \in i^*\HH^*(X)^\perp$. So indeed $i_* \gamma = 0$ and so $i_* \rho_{k+1} = \ldots = i_* \rho_l = 0$. \end{comment}
+%--------------------------------
+Now, we can write $S_0^Y(z,\beta)$ as:
+\begin{equation*} S_0^Y(z,\beta) = \sum_{i=1}^l \left\langle \dfrac{\ev_1^* \rho_i}{z-\psi_1} \right\rangle_{0,2,\beta}^Y  \rho^i \end{equation*}
+Thus applying $i_*$ gives
+\begin{align*} i_* S_0^Y(z,\beta)  = \sum_{i=1}^l \left\langle \dfrac{\ev_1^* \rho_i}{z-\psi_1} \right\rangle_{0,2,\beta}^Y   i_* \rho^i
+= \sum_{i=1}^k \left\langle \dfrac{\ev_1^* \eta_i}{z-\psi_1} \right\rangle_{0,2,\beta}^Y   \eta^i = \tilde{S}_0^Y(z,\beta) \end{align*}
+as claimed. \end{proof}
 
 
-\begin{dfn}
- Let $X$ be a smooth projective toric variety (or a complete intersection in a toric variety, or more generally any GIT quotient for which the quasimap spaces are defined), and consider 
- \[
-  S_0^X(z,\beta)=(\ev_1)_*\left(\frac{1}{z-\psi_1}[\Q{0}{2}{X}{\beta}]^\text{vir}\right)
- \]
- %where $\ev_1$ is always thought of as landing in $\PP^r$.
- for every effective curve class $\beta\in H_2^+(X,\mathbb Z)$. Set $S_0^X(z,0)= \mathbbm 1_X$ and
- \[
-  S_0^X(z,q)=\sum_{\beta\geq 0}S_0^X(z,\beta) q^\beta.
- \]
-\end{dfn}
-
-\begin{thm}
-Let $X$ be a toric Fano variety of dimension at least 3, and $i\colon Y\subseteq X$ a very ample hypersurface such that $-K_Y$ is nef. Then
+\subsection{Quantum Lefschetz formula} We now turn to the main result of this section. It gives an equality between generating functions for absolute quasimap invariants of two spaces: those of $X$ on the left-hand-side, and those of $Y$ on the right.
+\begin{thm} \label{Theorem Quantum Lefschetz}
+Let $X$ and $Y$ be as above. Then
 \begin{equation}\label{eqn:mirror}
-   \frac{\sum_{\beta\geq 0} q^\beta\prod_{j=0}^{Y\cdot\beta}(Y+jz)S_0^X(z,\beta)}{P_0(q)}= i_*S_0^Y(z,q)
+\dfrac{\sum_{\beta\geq 0} q^\beta\prod_{j=0}^{Y\cdot\beta}(Y+jz)S_0^X(z,\beta)}{P_0(q)}= i_*S_0^Y(z,q)
 \end{equation}
 where
 \begin{align*}
- P_0(q)= & 1+\sum_{\substack{\beta>0\colon \\ K_Y\cdot\beta=0}} (Y\cdot\beta)q^\beta\langle [pt_Y],\mathbbm 1_{X}\rangle_{\Q{0}{(Y \cdot \beta,0)}{X|Y}{\beta}} \\
- = & 1+\sum_{\substack{\beta>0\colon \\ K_Y\cdot\beta=0}} q^\beta(Y\cdot\beta)!\langle\psi_1^{Y\cdot\beta-1}[pt_X],\mathbbm 1_{X}\rangle_{\Q{0}{2}{X}{\beta}}.
+ P_0(q) & = 1 + \sum_{\substack{\beta>0 \\ K_Y\cdot\beta=0}} q^\beta (Y\cdot\beta) \langle \pt_Y,\mathbbm 1_{X}\rangle_{0,(Y\cdot\beta,0),\beta}^{X|Y} \\
+& = 1 + \sum_{\substack{\beta>0 \\ K_Y\cdot\beta=0}} q^\beta(Y\cdot\beta)!\langle\psi_1^{Y\cdot\beta-1} \pt_X,\mathbbm 1_{X}\rangle_{0,2,\beta}^X
 \end{align*}
 \end{thm}
 
 \begin{proof}
-
-Define
+Define the following generating function for $2$-pointed relative quasimap invariants:
  \[
-  S_{0,(m)}^{X|Y}(z,\beta)=(\ev_1)_*\left(\frac{1}{z-\psi_1}[\Q{0}{(m,0)}{X|Y}{\beta}]^\text{vir}\right),
+  S_{0,(m)}^{X|Y}(z,\beta)=(\ev_1)_*\left(\frac{1}{z-\psi_1}\virt{\Q{0}{(m,0)}{X|Y}{\beta}}\right)
  \]
-which coincides with the absolute $S_0$-function defined above for $m=0$, and
+This coincides with the absolute $S_0^X$-function defined above when $m=0$. Also define the following generating function for ``comb loci invariants'':
 \[
- T_{(m)}^{X|Y}(z,\beta)=(\ev_1)_*\left(m[\Q{0}{(m,0)}{X|Y}{\beta}]^\text{vir}+\frac{1}{z-\psi_1}[D_m^{\mathcal Q}(X|Y,\beta)]^\text{vir}\right).
+ T_{0,(m)}^{X|Y}(z,\beta)=(\ev_1)_*\left(m \virt{\Q{0}{(m,0)}{X|Y}{\beta}}+\frac{1}{z-\psi_1} \virt{\mathcal{D}^{\mathcal{Q}}_{(m,0),1}(X|Y,\beta)} \right)
 \]
-Then, by Gathmann's formula, we can prove that
+In the same way as in \cite[Lemma 1.2]{Ga-MF}, it follows from Theorem \ref{Theorem general recursion} that:
 \begin{equation}\label{eqn:G}
- (Y+mz) S_{0,(m)}^{X|Y}(z,\beta) = S_{0,(m+1)}^{X|Y}(z,\beta)+ T_{(m)}^{X|Y}(z,\beta),
+ (Y+mz) S_{0,(m)}^{X|Y}(z,\beta) = S_{0,(m+1)}^{X|Y}(z,\beta)+ T_{0,(m)}^{X|Y}(z,\beta),
 \end{equation}
-from which it follows that
+We can apply this repeatedly to obtain:
 \[
- \prod_{j=0}^{Y\cdot\beta}(Y+jz) S_0^X(z,\beta) = \sum_{m=0}^{Y\cdot\beta}\prod_{j=m+1}^{Y\cdot\beta}(Y+jz)T_{(m)}^{X|Y}(z,\beta).
+ \prod_{j=0}^{Y\cdot\beta}(Y+jz) S_0^X(z,\beta) = \sum_{m=0}^{Y\cdot\beta}\prod_{j=m+1}^{Y\cdot\beta}(Y+jz)T_{0,(m)}^{X|Y}(z,\beta).
 \]
-It is now a matter of evaluating the RHS. Notice that $T_{(m)}^{X|Y}(z,\beta)$ is made of two parts:
-\begin{itemize}[leftmargin=*]
- \item the \emph{boundary terms}: since there are only two markings and the first one is required to lie in $Y$, the strong stability condition for quasimaps forces the shape of the source curve to be that of a snake which the hypersurface cuts into two pieces, the internal one of degree $\beta^{(0)}$, and the external one of degree $\beta^{(1)}$ and multiplicity $m^{(1)}$ of contact with $Y$, with the first marked point belonging to the internal component and the second to the external one.
+We now examine the right-hand-side in detail. $T_{0,(m)}^{X|Y}(z,\beta)$ can be split into two parts: those terms coming from the comb loci and those coming from the relative space.
+
+Let us first consider those coming from the comb loci. Since there are only two markings and the first marking is required to lie on the ``handle'' of the comb, we see from the strong stability condition that there are only two options: a comb with $0$ teeth or a comb with $1$ tooth.
+
+First consider the case of a comb with $0$ teeth. The moduli space is then
+\begin{equation*} \Q{0}{2}{Y}{\beta} \end{equation*}
+and we require that $Y \cdot \beta = m$. Thus this piece only contributes when 
+
+[UNDER CONSTRUCTION]
+
+the \emph{boundary terms}: since there are only two markings and the first one is required to lie in $Y$, the strong stability condition for quasimaps forces the shape of the source curve to be that of a snake which the hypersurface cuts into two pieces, the internal one of degree $\beta^{(0)}$, and the external one of degree $\beta^{(1)}$ and multiplicity $m^{(1)}$ of contact with $Y$, with the first marked point belonging to the internal component and the second to the external one.
 
 \begin{center}
 \input{fig/snake}
@@ -78,12 +127,12 @@ This shows that the only non-trivial contributions are due to the classes $\beta
 \]
 hence the boundary contributions do not show up until the very end of the process of ``increasing the multiplicity''.
 
-\item The remaining term in $T_{(m)}^{X|Y}(z,\beta)$ is $m(\ev_1)_*[\Q{0}{(m,0)}{X|Y}{\beta}]^\text{vir}$; notice that it only gets insertions from the cohomology of $X$ (restricted to $Y$). On the other hand
+The remaining term in $T_{(m)}^{X|Y}(z,\beta)$ is $m(\ev_1)_*[\Q{0}{(m,0)}{X|Y}{\beta}]^\text{vir}$; notice that it only gets insertions from the cohomology of $X$ (restricted to $Y$). On the other hand
 \[
  \vdim \Q{0}{(m,0)}{X|Y}{\beta}=\dim X-3 -K_X \cdot \beta +2-m \geq r-1
 \]
 because $m\leq Y\cdot\beta$ and $-(K_X+Y).\beta\geq 0$, by adjunction, projection formula, and for every effective curve class $\beta$ (coming from $Y$, but saying this is superfluous by Lefschetz's hyperplane theorem as we have already remarked); since the restriction of the class $[pt_X]$ to $Y$ vanishes, the only insertion that contributes is $\eta_1$ (by definition of a dual basis, all other dimension 1 classes vanish when restricted to $Y$), forcing the equality $m=Y\cdot\beta$, so that again this correction term is non-trivial only in the last step of the algorithm.
-\end{itemize}
+
 So, in the end, we see that equation \ref{eqn:G} reduces to
 \begin{align*}
  &\prod_{j=0}^{Y\cdot\beta}(Y+jz) S_0^X(z,\beta) = T_{(Y\cdot\beta)}^{X|Y}(z,\beta) \\
