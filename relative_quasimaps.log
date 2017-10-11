@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  11 OCT 2017 17:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  11 OCT 2017 18:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1393,25 +1393,20 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 5.5pt on input line 26.
  [5] [6] [7] [8]
-Overfull \hbox (13.73216pt too wide) in paragraph at lines 122--124
+Overfull \hbox (13.73216pt too wide) in paragraph at lines 124--126
 \T1/zpltlf/m/n/10.95 more use-ful in prac-tice (see [[], Re-mark 1.4]): a sta-b
 le map $\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 C; x[]; [] ; x[]; f\U/npxmi
 a/m/it/10.95 ~$
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
-[]\T1/zpltlf/m/n/10.95 pinpoint cite
- []
-
-
-Overfull \hbox (3.70282pt too wide) in paragraph at lines 134--137
+Overfull \hbox (3.70282pt too wide) in paragraph at lines 136--139
 \T1/zpltlf/m/n/10.95 Hence it has a fun-da-men-tal class from which one can de-
 fine rel-a-tive Gromov--
  []
 
 [10] [11]) (./tex/recursion_for_Pr.tex [12] [13]
-Overfull \hbox (14.3351pt too wide) in paragraph at lines 39--40
+Overfull \hbox (14.3351pt too wide) in paragraph at lines 37--38
 []\T1/zpltlf/b/n/10.95 Lemma 3.2. []$[][]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10
 .95 P[]\OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it/10.95 ~$ 
 \T1/zpltlf/m/n/10.95 is equal to the clo-sure of the nice lo-cus $\OMS/npxsy/m/
@@ -1420,12 +1415,12 @@ OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it/10.95 ~$
  []
 
 [14] [15]
-Overfull \hbox (33.20512pt too wide) in paragraph at lines 99--99
+Overfull \hbox (33.20512pt too wide) in paragraph at lines 97--97
 [] 
  []
 
 [16]
-Overfull \hbox (1.59781pt too wide) in paragraph at lines 125--127
+Overfull \hbox (1.59781pt too wide) in paragraph at lines 123--125
 \OML/npxmi/m/it/10.95 B \U/npxmia/m/it/10.95 5 }\OML/npxmi/m/it/10.95 d[]; [] ;
  d[]\U/npxmia/m/it/10.95 ~$ \T1/zpltlf/m/n/10.95 of the de-gree and all valid m
 ul-ti-plicites $\OML/npxmi/m/it/10.95 M \U/npxmia/m/it/10.95 5 }\OML/npxmi/m/it
@@ -1599,7 +1594,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  32084 strings out of 493014
  624480 string characters out of 6133351
- 672142 words of memory out of 5000000
+ 672116 words of memory out of 5000000
  34753 multiletter control sequences out of 15000+600000
  117823 words of font info for 251 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
@@ -1626,7 +1621,7 @@ t/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx
 /zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (58 pages, 391649 bytes).
+Output written on relative_quasimaps.pdf (58 pages, 391831 bytes).
 PDF statistics:
  278 PDF objects out of 1000 (max. 8388607)
  199 compressed objects within 2 object streams
