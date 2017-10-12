@@ -70,22 +70,22 @@ We will now establish a number of properties of the fundamental class. These imm
 
 
 \subsection{Proof of the recursion formula} \label{Subsection recursion formula for PN}
-We wish to obtain a recursion formula relating the quasimap invariants of multiplicity $\alpha$ with the quasimap invariants of multiplicity $\alpha + e_k$, as in \cite[Theorem 2.6]{Ga}. This process of ``increasing the multiplicities'' can be naively performed in the same way as Gathmann: for $m = \alpha_k + 1$ the following section (of the pull-back of the jet bundle of the universal line bundle)
+We wish to obtain a recursion formula relating the quasimap invariants of multiplicity $\alpha$ with the quasimap invariants of multiplicity $\alpha + e_k$, as in \cite[Theorem 2.6]{Ga}. For $m = \alpha_k + 1$ the following section (of the pull-back of the jet bundle of the universal line bundle)
 \[
 \sigma^m_k := x_k^*d^m_{\mathcal C/\om{Q}}(u_0)\in \HH^0(\om{Q},x_k^*\mathcal P^m_{\mathcal C/\overline{\mathcal Q}}(\mathcal L))
 \]
-cuts out $\Q{0}{\alpha+e_k}{\PP^N|H}{d}$ inside $\om{Q} = \Q{0}{\alpha}{\PP^N|H}{d}$, along with a number of degenerate contributions (called the \ilemph{comb loci}) parametrising quasimaps for which $x_k$ belongs to an internal component $Z \subseteq C$ (a component on which $u_0$ vanishes), such that
+vanishes along $\Q{0}{\alpha+e_k}{\PP^N|H}{d}$ inside $\om{Q} = \Q{0}{\alpha}{\PP^N|H}{d}$, and also along a number of \ilemph{comb loci}.  The latter parametrise quasimaps for which $x_k$ belongs to an internal component $Z \subseteq C$ (a connected component of the vanishing locus of $u_0$), such that:
 \begin{equation*}\deg(L|_{Z})+\sum_{i=1}^r m^{(i)}=\sum_{x_i\in Z}\alpha_i \end{equation*}
-(here by ``component'' we really mean ``connected component of the vanishing locus of $u_0$''). Quasimap stability means that these degenerate contributions cannot contain any rational tails; this is really the only difference with the case of stable maps.
+Quasimap stability means that quasimaps in the comb loci cannot contain any rational tails; this is really the only difference with the case of stable maps.
 
-Indeed, we can actually push forward Gathmann's formula along the comparison morphism
+Indeed, we can push forward Gathmann's recursion formula for stable maps along the comparison morphism
 \begin{equation*} \comp \colon \M{0}{\alpha}{\PP^N|H}{d}\to\Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
-and due to Corollary \ref{Comparison morphism birational} above, the only terms which change are the comb loci containing rational tails. In fact these disappear, since the restriction of the comparison map to these loci has positive-dimensional fibres:
+and, due to Corollary \ref{Comparison morphism birational} above, the only terms which change are the comb loci containing rational tails. In fact these disappear, since the restriction of the comparison map to these loci has positive-dimensional fibres:
 \begin{lem}\label{lem:posdimfiber} Consider a rational tail component in the comb locus of the moduli space of stable maps, i.e. a moduli space of the form:
 \begin{equation*} \M{0}{(m^{(i)})}{\PP^N|H}{d} \end{equation*}
-Then (assuming that $Nd > 1$) we have
+and assume that $Nd>1$.  Then
 \begin{equation*} \dim \left( [\M{0}{(m^{(i)})}{\PP^N|H}{d}] \cap \ev_1^*(\pt_H) \right) > 0 \end{equation*}
-where $\pt_H \in \Achow^{N-1}(H)$ is a point class. Thus the pushforward along $\comp$ of any comb locus with a rational tail is $0$.
+where $\pt_H \in \Achow^{N-1}(H)$ is a point class. Thus the pushforward along $\comp$ of any comb locus with a rational tail is zero.
 \end{lem}
 \begin{proof} This is a simple dimension count. We have
 \begin{align*} \dim \left( [\M{0}{(m^{(i)})}{\PP^N|H}{d}] \cap \ev_1^*(\pt_H) \right) & =(N-3)+d(N+1)+(1-m^{(i)})-(N-1) \\
@@ -102,7 +102,7 @@ Since we wish to apply the projection formula to Gathmann's recursion relation, 
 \end{align*}
 \end{lem}
 \begin{proof}
-We will actually show that:
+It suffices to show that:
 \begin{align*} \chi^* x_k^* \omega_{\mathcal{C}/\om{Q}} & = x_k^* \omega_{\mathcal{C}/\om{M}} \\
 \chi^* x_k^* \mathcal{L} & = \ev_k^* \OO_{\PP^N}(H) \end{align*}
 This follows by considering the following diagram:
@@ -111,25 +111,25 @@ This follows by considering the following diagram:
 \mathcal C_{\overline {\mathcal M}} \ar[r,"\sst" below] \ar[rd] \ar[urr, bend left=10, "f"] & \comp^*\mathcal C_{\overline {\mathcal Q}} \ar[d] \ar[rr]\ar[ur,bend right=10,dashed] \ar[rrd,phantom,"\square" right] & & \mathcal C_{\overline {\mathcal Q}} \ar[d]\ar[ul,bend right=10,dashed] \\
 & \M{0}{\alpha}{\PP^N|H}{d} \ar[rr,"\comp"] \ar[ul,bend left,"x_k"] \ar[u,bend right,"x_k"right=.2cm] & & \Q{0}{\alpha}{\PP^N|H}{d}\ar[u,bend right, "x_k"right]
 \ecd
-where $\sst$ is the strong stabilisation map which contracts the rational tails, and so is an isomorphism near the markings.
+where $\sst$ is the strong stabilisation map which contracts the rational tails.  Note that $\sst$ is an isomorphism near the markings.
 \end{proof}
 \begin{prop} \label{Recursion formula for PN}
 Define the \ilemph{quasimap comb locus} $\mathcal{D}^\mathcal{Q}_{\alpha,k}(\PP^N|H,d)$ as the union of the moduli spaces
 \begin{equation*}
 \mathcal{D}^{\mathcal{Q}}(\PP^N|H,A,B,M) := \Q{0}{|\alpha^{(0)}| + r}{H}{d_0}\times_{H^r}\prod_{i=1}^r \Q{0}{(m^{(i)})\cup\alpha^{(i)}}{\PP^N|H}{d_i} \end{equation*}
-where the union runs over all splittings $A = (\alpha^{(0)}, \ldots, \alpha^{(r)})$ of the markings, $B = (d_0, \ldots, d_r)$ of the degree and all valid multiplicites $M = (m^{(1)}, \ldots, m^{(r)})$ such that the above spaces are all well-defined (in particular $|\alpha^{(0)}|+r$ and $|\alpha^{(i)}|+1$ are all $\geq 2$) and such that
+where the union runs over all splittings $A = (\alpha^{(0)}, \ldots, \alpha^{(r)})$ of the markings, $B = (d_0, \ldots, d_r)$ of the degree and all valid multiplicites $M = (m^{(1)}, \ldots, m^{(r)})$ such that the above spaces are all well-defined (in particular we require that $|\alpha^{(0)}|+r$ and $|\alpha^{(i)}|+1$ are all $\geq 2$) and such that
 \[
 d_0+\sum_{i=1}^r m^{(i)}=\sum \alpha^{(0)}
 \]
-Equip this with the sum of the (product) fundamental classes, where each term is weighted by:
+Write $[\mathcal{D}^\mathcal{Q}_{\alpha,k}(\PP^N|H,d)]$ for the sum of the (product) fundamental classes, where each term is weighted by:
 \begin{equation*}\dfrac{m^{(1)} \cdots m^{(r)}}{r!} \end{equation*}
-Then the following formula holds
+Then
 \[
 (\alpha_k\psi_k+\ev_k^*H)\cdot[\Q{0}{\alpha}{\PP^N|H}{d}]=[\Q{0}{\alpha+e_k}{\PP^N|H}{d}]+[\mathcal{D}^\mathcal{Q}_{\alpha,k}(\PP^N|H,d)].
 \]
 \end{prop}
 \begin{proof}
-This follows from \cite[Thm. 2.6]{Ga} by pushforward along $\chi$, using the projection fomula and Lemmas \ref{Comparison morphism birational}, \ref{lem:posdimfiber} and \ref{lem:compare_psi} .
+This follows from \cite[Thm. 2.6]{Ga} by pushing forward along $\chi$, using the projection fomula and Lemmas \ref{Comparison morphism birational}, \ref{lem:posdimfiber} and \ref{lem:compare_psi} .
 \end{proof}
 
 \begin{remark} \label{Remark on definition of comb locus} In the discussion above we have implicitly used the fact that there exists a commuting diagram of comb loci:
@@ -137,13 +137,13 @@ This follows from \cite[Thm. 2.6]{Ga} by pushforward along $\chi$, using the pro
 \mathcal{D}^{\mathcal{M}}(\PP^N|H,A,B,M) \ar[r] \ar[d] & \M{0}{\alpha}{\PP^N|H}{d} \ar[d] \\
 \mathcal{D}^{\mathcal{Q}}(\PP^N|H,A,B,M) \ar[r] & \Q{0}{\alpha}{\PP^N|H}{d}
 \ecd
-The vertical arrow on the left is a product of comparison morphisms. The horizontal arrow at the top is the glueing morphism which glues together the various pieces of the comb to produce a single relative stable map. Here we explain how to define the corresponding glueing morphism for quasimaps (i.e. the bottom horizontal arrow).
+The vertical arrow on the left is a product of comparison morphisms. The horizontal arrow at the top is the glueing morphism which glues together the various pieces of the comb to produce a single relative stable map. Here we explain how to define the corresponding glueing morphism for quasimaps, that is, the bottom horizontal arrow.
 
 Suppose for simplicity that $r=1$ and consider an element of the quasimap comb locus, consisting of two quasimaps:
-\begin{align*} & ((C^0,x^0_1,\ldots,x^0_{n_0},q),L^0,u^0_0, \ldots, u^0_N) \\
-&((C^1,x^1_1,\ldots,x^1_{n_1},q),L^1,u^1_0, \ldots, u^1_N) \end{align*}
-such that $u^0(q) = u^1(q)$ in $\PP^N$. We want to glue these quasimaps together along $q$. The definition of the curve is obvious; we simply take:
-\begin{equation*} C = C^0 \cup_q C^1 \end{equation*}
-On the other hand, glueing together the line bundles $L^0$ and $L^1$ to obtain a line bundle $L$ over $C$ requires a choice of scalar $\lambda \in \mathbb{G}_\text{m}$, in order to match up the fibres over $q$. Furthermore if the sections are to extend as well then this scalar must be chosen in such a way that it takes $(u^0_0(q), \ldots, u^0_N(q)) \in (L^0_q)^{\oplus (N+1)}$ to $(u^1_0(q), \ldots, u^1_N(q)) \in (L^1_q)^{\oplus (N+1)}$. Since $q$ is not a basepoint of either quasimap (being a marking) these tuples are nonzero, and so $\lambda$ is unique if it exists. Furthermore it exists if and only if these tuples belong to the same $\mathbb{G}_\text{m}$-orbit in $\CC^{N+1}$. This is precisely the statement that $u^0(q) = u^1(q) \in \PP^N$. 
+\begin{align*} & \big((C^0,x^0_1,\ldots,x^0_{n_0},q^0),L^0,u^0_0, \ldots, u^0_N\big) \\
+&\big((C^1,x^1_1,\ldots,x^1_{n_1},q^1),L^1,u^1_0, \ldots, u^1_N\big) \end{align*}
+such that $u^0(q^0) = u^1(q^1)$ in $\PP^N$. We want to glue these quasimaps together at $q^0$,~$q^1$. The definition of the curve is obvious; we simply take:
+\begin{equation*} C = C^0 \cup_{q^0=q^1} C^1 \end{equation*}
+On the other hand, glueing together the line bundles $L^0$ and $L^1$ to obtain a line bundle $L$ over $C$ requires a choice of scalar $\lambda \in \mathbb{G}_\text{m}$, in order to match up the fibres over $q^i$. Furthermore if the sections are to extend as well then this scalar must be chosen in such a way that it takes $(u^0_0(q^0), \ldots, u^0_N(q^0)) \in (L^0_{q^0})^{\oplus (N+1)}$ to $(u^1_0(q^1), \ldots, u^1_N(q^1)) \in (L^1_{q^1})^{\oplus (N+1)}$. Since neither $q^0$ nor $q^1$ are basepoints (because they are markings), these tuples are nonzero, and so $\lambda$ is unique if it exists. Furthermore it exists if and only if these tuples belong to the same $\Gm$-orbit in $\CC^{N+1}$. This is precisely the statement that $u^0(q^0) = u^1(q^1) \in \PP^N$. 
 
-This justifies description of this space as a ``comb locus.'' Similar arguments apply for more general toric varieties. \end{remark}
+Similar arguments apply for $r>1$, and for more general toric varieties. \end{remark}
