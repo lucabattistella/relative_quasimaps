@@ -36,7 +36,7 @@ The obstruction theory on this space is defined relative to the stack $\mathfrak
 It is given by
 \begin{equation*} \EE_{\om{Q}/\mathfrak{Bun}_G}^\vee = \R \pi_* (u^*\LL_p) \end{equation*}
 where $\pi$ is the universal curve over $\om{Q} = \om{Q}^{\operatorname{GIT}}_{g,n}(Y,\beta)$. There is a natural isomorphism
-\begin{equation*} \mathfrak{Bun}_{G} \cong \times^{r_X}_{\MM_{g,n}} \mathfrak{Pic_{g,n}} \end{equation*}
+\begin{equation*} \mathfrak{Bun}_{G}^{g,n} \cong \times^{r_X}_{\MM_{g,n}} \mathfrak{Pic_{g,n}} \end{equation*}
 given by sending $P$ to the $r_X$ individual factors of the affine bundle $P\times_{G}\mathbb A^{r_X}$. Furthermore there is a $G$-equivariant embedding
 \bcd
 P\times_{G} C(Y) \ar[r,hook, "j"]\ar[d,"p" left] & P\times_{G}\mathbb A^{\Sigma_X(1)}\cong \bigoplus_{\rho\in\Sigma_X(1)} L_{\rho}\ar[dl]\\
@@ -47,5 +47,5 @@ which expresses $P \times_G C(Y)$ as the vanishing locus of $u_Y$ in $\oplus_{\r
 Finally we must compare the virtual classes. Using the normal sheaf sequence for the inclusion $j$ (relative to the base $C$) we obtain a short exact sequence on $C$:
 \begin{equation*} 0 \to u^* \TT_p \to \bigoplus_{\rho \in \Sigma_X(1)} L_\rho \to u^* \NN_{P \times_G C(Y)/\oplus_{\rho \in \Sigma_X(1)} L_\rho} \to 0 \end{equation*}
 Since $P \times_G C(Y)$ is defined by the vanishing of $u_Y$, we see that the final term is isomorphic to the line bundle $L_Y$ discussed above. Thus as elements of the derived category
-\begin{equation*} u^* \TT_p = [ \bigoplus_{\rho \in \Sigma_X(1)} L_\rho \to L_Y] \end{equation*}
-Applying $\R \pi_*$ we obtain on the left hand side the obstruction theory for the GIT moduli space relative $\mathfrak{Bun}_G$. On the other hand, the first term on the right hand side is the obstruction theory for $\om{Q}(X)$ relative the product of the Picard stacks (isomorphic to $\mathfrak{Bun}_G$ via the discussion above) whereas the second term is the relative obstruction theory for $\om{Q}(Y)$ inside $\om{Q}(X)$. Thus the virtual classes agree, as claimed.
+\begin{equation*} u^* \TT_p = \left[ \bigoplus_{\rho \in \Sigma_X(1)} L_\rho \to L_Y \right] \end{equation*}
+Applying $\R \pi_*$ we obtain on the left hand side the obstruction theory for the GIT moduli space relative $\mathfrak{Bun}_G^{g,n}$. On the other hand, the first term on the right hand side is the obstruction theory for $\om{Q}(X)$ relative the product of the Picard stacks (isomorphic to $\mathfrak{Bun}_G^{g,n}$ via the discussion above) whereas the second term is the relative obstruction theory for $\om{Q}(Y)$ inside $\om{Q}(X)$. Thus the virtual classes agree, as claimed.

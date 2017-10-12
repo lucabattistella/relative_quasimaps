@@ -29,7 +29,7 @@ where by convention $S_0^X(z,0)= \mathbbm 1_X$. These are generating functions f
 
 The same definition applies to $Y$. However, we may sometimes wish to consider only insertions of classes coming from $X$. These are the so-called \emph{restricted quasimap invariants}, and the corresponding generating function is defined as
 \begin{equation*} \tilde{S}^Y_0(z,\beta) = (\ev_1)_* \left( \dfrac{1}{z-\psi_1} \virt{\Q{0}{2}{Y}{\beta}} \right) \end{equation*}
-where crucially $\ev_1$ is viewed as \emph{mapping to $X$} instead of to $Y$. Thus $\tilde{S}^Y_0(z,\beta)$ takes values in $\HH^*(X)$ and only involves quasimap invariants of $Y$ with insertions from $i^*\HH^*(X)$; on the other hand $S^Y_0(z,\beta)$ takes values in $\HH^*(Y)$ and involves quasimap invariants of $Y$ with arbitrary insertions.
+where crucially $\ev_1$ is viewed as \emph{mapping to $X$} instead of to $Y$. Thus $\tilde{S}^Y_0(z,\beta)$ takes values in $\HH^*(X)$ and involves only quasimap invariants of $Y$ with insertions coming from $i^*\HH^*(X)$; this is in contrast to $S^Y_0(z,\beta)$, which takes values in $\HH^*(Y)$ and involves quasimap invariants of $Y$ with arbitrary insertions. As earlier, we can also define $\tilde{S}_0^Y(z,q)$.
 
 Now, since $X$ and $Y$ are smooth we may use Poincar\'{e} duality to define a push-forward map on cohomology denoted $i_* \colon \HH^k(Y) \to \HH^{k+2}(X)$.
 
@@ -55,18 +55,20 @@ where the last equality follows from the projection formula. Taking degree zero 
 where the last equality holds because $\gamma \in i^*\HH^*(X)^\perp$. So indeed $i_* \gamma = 0$ and so $i_* \rho_{k+1} = \ldots = i_* \rho_l = 0$. \end{comment}
 %--------------------------------
 Now, we can write $S_0^Y(z,\beta)$ as:
-\begin{equation*} S_0^Y(z,\beta) = \sum_{i=1}^l \left\langle \dfrac{\ev_1^* \rho_i}{z-\psi_1} \right\rangle_{0,2,\beta}^Y  \rho^i \end{equation*}
+\begin{equation*} S_0^Y(z,\beta) = \sum_{i=1}^l \left\langle \dfrac{\rho_i}{z-\psi_1} , \mathbbm{1}_Y \right\rangle_{0,2,\beta}^Y  \rho^i \end{equation*}
 Thus applying $i_*$ gives
-\begin{align*} i_* S_0^Y(z,\beta)  = \sum_{i=1}^l \left\langle \dfrac{\ev_1^* \rho_i}{z-\psi_1} \right\rangle_{0,2,\beta}^Y   i_* \rho^i
-= \sum_{i=1}^k \left\langle \dfrac{\ev_1^* \eta_i}{z-\psi_1} \right\rangle_{0,2,\beta}^Y   \eta^i = \tilde{S}_0^Y(z,\beta) \end{align*}
+\begin{align*} i_* S_0^Y(z,\beta)  = \sum_{i=1}^l \left\langle \dfrac{\rho_i}{z-\psi_1} , \mathbbm{1}_Y \right\rangle_{0,2,\beta}^Y   i_* \rho^i
+= \sum_{i=1}^k \left\langle \dfrac{\eta_i}{z-\psi_1}, \mathbbm{1}_X \right\rangle_{0,2,\beta}^Y   \eta^i = \tilde{S}_0^Y(z,\beta) \end{align*}
 as claimed. \end{proof}
 
 
-\subsection{Quantum Lefschetz formula} We now turn to the main result of this section. It gives an equality between generating functions for absolute quasimap invariants of two spaces: those of $X$ on the left-hand-side, and those of $Y$ on the right.
+\subsection{Quantum Lefschetz formula} We now turn to our main result: a formula expressing the generating function $\tilde{S}_0^Y(z,q)$ 
+
+
 \begin{thm} \label{Theorem Quantum Lefschetz}
 Let $X$ and $Y$ be as above. Then
 \begin{equation}\label{eqn:mirror}
-\dfrac{\sum_{\beta\geq 0} q^\beta\prod_{j=0}^{Y\cdot\beta}(Y+jz)S_0^X(z,\beta)}{P_0(q)}= i_*S_0^Y(z,q)
+\dfrac{\sum_{\beta\geq 0} q^\beta\prod_{j=0}^{Y\cdot\beta}(Y+jz)S_0^X(z,\beta)}{P_0(q)}= \tilde{S}_0^Y(z,q)
 \end{equation}
 where
 \begin{align*}
