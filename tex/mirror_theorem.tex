@@ -79,15 +79,15 @@ where
 \end{thm}
 
 \begin{proof}
-Define the following generating function for $2$-pointed relative quasimap invariants:
+Define the following generating function for $2$-pointed relative quasimap invariants
  \[
   S_{0,(m)}^{X|Y}(z,\beta)=(\ev_1)_*\left(\frac{1}{z-\psi_1}\virt{\Q{0}{(m,0)}{X|Y}{\beta}}\right)
  \]
-This coincides with the absolute $S_0^X$-function defined above when $m=0$. Also define the following generating function for ``comb loci invariants'':
+where we view $\ev_1$ as mapping to $X$. This coincides with the absolute $S_0^X$-function defined above when $m=0$. Also define the following generating function for ``comb loci invariants''
 \[
  T_{0,(m)}^{X|Y}(z,\beta)=(\ev_1)_*\left(m \virt{\Q{0}{(m,0)}{X|Y}{\beta}}+\frac{1}{z-\psi_1} \virt{\mathcal{D}^{\mathcal{Q}}_{(m,0),1}(X|Y,\beta)} \right)
 \]
-As in \cite[Lemma 1.2]{Ga-MF}, it follows from Theorem \ref{Theorem general recursion} that
+where again we view $\ev_1$ as mapping to $X$. As in \cite[Lemma 1.2]{Ga-MF}, it follows from Theorem \ref{Theorem general recursion} that
 \begin{equation}\label{eqn:G}
  (Y+mz) S_{0,(m)}^{X|Y}(z,\beta) = S_{0,(m+1)}^{X|Y}(z,\beta)+ T_{0,(m)}^{X|Y}(z,\beta)
 \end{equation}
@@ -101,34 +101,31 @@ Let us first consider the contribution of the comb loci. Since there are only tw
 
 First consider the case of a comb with $0$ teeth. The moduli space is then
 \begin{equation*} \Q{0}{2}{Y}{\beta} \end{equation*}
-and we require that $Y \cdot \beta = m$. Thus this piece only contributes to $T_{0,(Y\cdot\beta)}^{X|Y}(z,\beta)$, and it contributes:
-\begin{equation*} \sum_{i=1}^l \left\langle \dfrac{\rho_i}{z-\psi_1}, \mathbbm{1}_Y \right\rangle_{0,2,\beta}^Y \rho^i \end{equation*}
+and we require that $Y \cdot \beta = m$. Thus this piece only contributes to $T_{0,(Y\cdot\beta)}^{X|Y}(z,\beta)$, and the contribution is:
+\begin{equation*} \sum_{i=1}^k \left\langle \dfrac{\rho_i}{z-\psi_1}, \mathbbm{1}_Y \right\rangle_{0,2,\beta}^Y \eta^i \end{equation*}
 
-Next consider the case of a comb with $1$ tooth. Let $\beta_0$ and $\beta_1$ denote the curve classes of the internal and external components, respectively, and let $m^{(1)}$ be the contact order of the external component with $Y$. The picture is as follows
+Next consider the case of a comb with $1$ tooth. Let $\beta^{(0)}$ and $\beta^{(1)}$ denote the curve classes of the internal and external components, respectively, and let $m^{(1)}$ be the contact order of the external component with $Y$. The picture is as follows
 \begin{center}
 \input{fig/snake}
 \end{center}
 and the invariants which contribute take the form
-\begin{equation*} \langle i^*\eta_i\psi_1^j,\rho^h\rangle_{0,2,\beta_0}^Y \langle \rho_h, \mathbbm 1_{X}\rangle_{0,(m^{(1)},0),\beta_1}^{X|Y} \end{equation*}
-for $i \in \{ 1, \ldots, k \}$, $h \in \{ 1, \ldots, l \}$ and $j \geq 0$.
-By computing dimensions, we find
+\begin{equation*} \bigg\langle \dfrac{i^*\eta_i}{z-\psi_1},\rho^h\bigg\rangle_{0,2,\beta^{(0)}}^Y \bigg\langle \rho_h, \mathbbm 1_{X}\bigg\rangle_{0,(m^{(1)},0),\beta^{(1)}}^{X|Y} \end{equation*}
+for $i = 1, \ldots, k$ and $h = 1, \ldots, l$. By computing dimensions, we find
 \begin{align*}
 0\leq \codim \rho^h &= \dim Y-\codim \rho_h \\
-&= \dim Y-\vdim \Q{0}{(m^{(1)},0)}{X|Y}{\beta_1} \\
-&= \dim Y-(\dim X-3-K_{X}\cdot \beta_1+2-m^{(1)})\\
-&= K_Y \cdot \beta_1 - Y \cdot \beta_1+m^{(1)} \\
+&= \dim Y-\vdim \Q{0}{(m^{(1)},0)}{X|Y}{\beta^{(1)}} \\
+&= \dim Y-(\dim X-3-K_{X}\cdot \beta^{(1)}+2-m^{(1)})\\
+&= K_Y \cdot \beta^{(1)} - Y \cdot \beta^{(1)}+m^{(1)} \\
 &\leq 0
 \end{align*}
-where the final equality follows from adjunction and the final inequality holds because $-K_Y$ is nef and $m^{(1)}\leq Y \cdot \beta_1$. This shows that the only non-trivial contributions come from curve classes $\beta^{(1)}$ such that $K_Y \cdot \beta_1=0$, and the order of tangency is forced to be maximal, i.e. $m^{(1)}=Y \cdot \beta_1$. Furthermore, the only relevant insertions are $\rho^1=\mathbbm 1_Y$ and $\rho_1=[pt_Y]$. Finally, $m^{(1)}=Y \cdot \beta_1$ implies that
-\[
- m=\alpha_1=Y \cdot \beta^{(0)}+m^{(1)}=Y \cdot \beta,
-\]
-hence the boundary contributions do not show up until the very end of the process of ``increasing the multiplicity''.
-
-The remaining term in $T_{(m)}^{X|Y}(z,\beta)$ is $m(\ev_1)_*[\Q{0}{(m,0)}{X|Y}{\beta}]^\text{vir}$; notice that it only gets insertions from the cohomology of $X$ (restricted to $Y$). On the other hand
-\[
- \vdim \Q{0}{(m,0)}{X|Y}{\beta}=\dim X-3 -K_X \cdot \beta +2-m \geq r-1
-\]
+where the final equality follows from adjunction and the final inequality holds because $-K_Y$ is nef and $m^{(1)}\leq Y \cdot \beta_1$. This shows that the only non-trivial contributions come from curve classes $\beta^{(1)}$ such that $K_Y \cdot \beta^{(1)}=0$, and that in this case the order of tangency must be maximal, i.e. $m^{(1)}=Y \cdot \beta^{(1)}$. Furthermore we must have $\codim \rho^h = 0$ and so $\rho^h = \rho^1 = \mathbbm{1}_Y$ which implies $\rho_h = \rho_1 = \pt_Y$. Finally since $m^{(1)}=Y \cdot \beta^{(1)}$ we have
+\begin{equation*} m = Y \cdot \beta^{(0)}+m^{(1)}=Y \cdot (\beta^{(0)} + \beta^{(1)}) = Y \cdot \beta \end{equation*}
+and so again this piece only contrbutes to $T_{0,(Y\cdot\beta)}^{X|Y}(z,\beta)$, and the contribution is:
+\begin{equation*} \sum_{i = 1}^{k} \bigg\langle \dfrac{i^*\eta_i}{z-\psi_1}, \mathbbm{1}_Y \bigg\rangle_{0,2,\beta^{(0)}}^Y \bigg\langle \pt_Y, \mathbbm{1}_X \bigg\rangle_{0,(Y \cdot \beta^{(1)},0),\beta^{(1)}}^{X|Y}\eta^i\end{equation*}
+Finally, we must examine the terms of $T_{0,(m)}^{X|Y}(z,\beta)$ coming from:
+\begin{equation*}\ev_{1*}(m\virt{\Q{0}{(m,0)}{X|Y}{\beta}})\end{equation*} 
+Notice that we only have insertions from $i^*\HH^*(X) \subseteq \HH^*(Y)$. On the other hand
+\begin{equation*} \vdim \Q{0}{(m,0)}{X|Y}{\beta}=\dim X-3 -K_X \cdot \beta +2-m \geq \dim X -1 \end{equation*}
 because $m\leq Y\cdot\beta$ and $-(K_X+Y).\beta\geq 0$, by adjunction, projection formula, and for every effective curve class $\beta$ (coming from $Y$, but saying this is superfluous by Lefschetz's hyperplane theorem as we have already remarked); since the restriction of the class $[pt_X]$ to $Y$ vanishes, the only insertion that contributes is $\eta_1$ (by definition of a dual basis, all other dimension 1 classes vanish when restricted to $Y$), forcing the equality $m=Y\cdot\beta$, so that again this correction term is non-trivial only in the last step of the algorithm.
 
 So, in the end, we see that equation \ref{eqn:G} reduces to

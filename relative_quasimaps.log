@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  12 OCT 2017 18:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  12 OCT 2017 18:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1459,8 +1459,8 @@ m/it/10.95 T[]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 z; ^^L\U/npxmia/m/it/
 10.95 ~$\T1/zpltlf/m/n/10.95 ,
  []
 
-(./fig/snake.tex) [27]
-Overfull \hbox (19.47063pt too wide) detected at line 152
+(./fig/snake.tex) [27] [28]
+Overfull \hbox (19.47063pt too wide) detected at line 149
 \OT1/zpltlf/m/n/10.95 [[][]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 X\OMS/np
 xsy/m/n/10.95 j\OML/npxmi/m/it/10.95 Y; ^^L\U/npxmia/m/it/10.95 ~\OT1/zpltlf/m/
 n/10.95 ][] \U/npxmia/m/it/10.95 5 }\OML/npxmi/m/it/10.95 Y \U/npxmia/m/it/10.9
@@ -1474,32 +1474,28 @@ t/10.95 }\OML/npxmi/m/it/10.95 X\OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 Y;
 95 ~\OT1/zpltlf/m/n/10.95 ][]
  []
 
-[28]
+[29]
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 204.
+(Font)              scaled to size 10.95pt on input line 201.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 204.
+(Font)              scaled to size 8.0pt on input line 201.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 6.1pt on input line 204.
- [29] [30]
-Overfull \hbox (3.74261pt too wide) in paragraph at lines 254--255
+(Font)              scaled to size 6.1pt on input line 201.
+ [30]
+Overfull \hbox (3.74261pt too wide) in paragraph at lines 251--252
  [] 
  []
 
 
 LaTeX Warning: Citation `Givental-equivariantGW' on page 31 undefined on input 
-line 260.
+line 257.
 
 
-Overfull \hbox (11.60768pt too wide) detected at line 263
+Overfull \hbox (11.60768pt too wide) detected at line 260
 \U/npxmia/m/it/10.95 }[][]~[][] 5 [] [] 5 []
  []
 
-) (./tex/comparison.tex [31] (./fig/RandT.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [32]
-(./fig/T_delta.tex)
+[31]) (./tex/comparison.tex (./fig/RandT.tex) [32] (./fig/T_delta.tex)
 Overfull \hbox (23.12883pt too wide) in paragraph at lines 28--29
 []\T1/zpltlf/m/n/10.95 Notice that re-strict-ing $[][] \OMS/npxsy/m/n/10.95 O[]
 \U/npxmia/m/it/10.95 }}\OML/npxmi/m/it/10.95 ^^N \OMS/npxsy/m/n/10.95 ^^@ \OT1/
@@ -1639,7 +1635,7 @@ t/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx
 /zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (58 pages, 393126 bytes).
+Output written on relative_quasimaps.pdf (58 pages, 393969 bytes).
 PDF statistics:
  278 PDF objects out of 1000 (max. 8388607)
  199 compressed objects within 2 object streams
