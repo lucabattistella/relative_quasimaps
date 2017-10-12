@@ -4,36 +4,38 @@ In \cite{Ga-MF} Gathmann applies his recursion formula for relative stable maps 
 
 In this section we carry out a similar computation in the quasimap setting, using the recursion found in Theorem \ref{Theorem general recursion} above. We work with generating functions for $2$-pointed quasimap invariants (the minimal number of markings, due to the strong stability condition). The absence of rational tails in the quasimap moduli space makes the recursion much simpler than Gathmann's. We obtain a \emph{quantum Lefschetz theorem for quasimap invariants} (Theorem \ref{Theorem Quantum Lefschetz}); that is, a formula which expresses the quasimap invariants of $Y$ in terms of those of $X$.
 
-Our formula can be viewed as a special case of \cite[Corollary 5.5.1]{CF-K-wallcrossing}, and so can be interpreted as a relation between certain residues of the $\CC^*$-action on spaces of $0$-pointed and $1$-pointed parametrised quasimaps to $Y$. Some consequences of this formula are explored in \cite[Section 5.5]{CF-K-wallcrossing}; for instance, it follows in the semipositive case that all primary $\epsilon$-quasimap invariants with a fundamental class insertion can be expressed in terms of $2$-pointed invariants.
+Our formula can be viewed as a special case of \cite[Corollary 5.5.1]{CF-K-wallcrossing}, and so can be interpreted as a relation between certain residues of the $\CC^*$-action on spaces of $0$-pointed and $1$-pointed parametrised quasimaps to $Y$. Some of the consequences of this formula are explored in \cite[Section 5.5]{CF-K-wallcrossing}; for instance, it follows in the semipositive case that all primary $\epsilon$-quasimap invariants with a fundamental class insertion can be expressed in terms of $2$-pointed invariants.
 
 \subsection{Setup}
-As before we let $X=X_{\Sigma}$ be a smooth projective toric variety and $i \colon Y \hookrightarrow X$ a smooth very ample hypersurface. We also make the following two assumptions:
+As before, we let $X=X_{\Sigma}$ be a smooth projective toric variety and $i \colon Y \hookrightarrow X$ a smooth very ample hypersurface. We also make the following two assumptions:
 \begin{enumerate}
 \item \emph{$Y$ semi-positive}: $-K_Y$ is nef;
 \item \emph{$Y$ contains all curve classes}: the map $i_* : \Achow_1(Y) \to \Achow_1(X)$ is surjective.
 \end{enumerate}
-By adjunction, $-K_X$ pairs strictly positively with every curve class coming from $Y$, hence with every curve class by Assumption (2). Thus $-K_X$ is ample\footnote{Kleiman's criterion says that a divisor $D$ is ample if and only if $D \cdot C > 0$ for every curve class $C$ in the closure of the effective cone. But since $X$ is a toric variety the effective cone is finitely generated in $\Achow_1(X)$, hence is closed in $\Achow_1(X)_{\mathbb{R}}$ since it is a finite intersection of half-spaces. So we only need to check $D \cdot C > 0$ for every effective curve class.}. Also note that if $\dim X \geq 3$ then Assumption (2) always holds, due to the Lefschetz hyperplane theorem.
+By adjunction, $-K_X$ pairs strictly positively with every curve class coming from $Y$, hence with every curve class by Assumption (2). Thus $-K_X$ is ample; that is, $X$ is Fano\footnote{Kleiman's criterion says that a divisor $D$ is ample if and only if $D \cdot C > 0$ for every curve class $C$ in the closure of the effective cone. But since $X$ is a toric variety the effective cone is finitely generated in $\Achow_1(X)$, hence is closed in $\Achow_1(X)_{\mathbb{R}}$ as it is a finite intersection of half-spaces. So we only need to check $D \cdot C > 0$ for every effective curve class.}. Also note that if $\dim X \geq 3$ then Assumption (2) always holds, due to the Lefschetz hyperplane theorem.
 
-We fix a homogeneous basis $\eta_0, \ldots, \eta_k$ for $\HH^*(X) = \HH^*(X,\QQ)$ and let $\eta^0, \ldots, \eta^k$ denote the dual basis. Without loss of generality we may suppose that $\eta^0=\mathbbm 1_X$ and $\eta^1=Y$. We get an induced basis $\rho_1=i^*\eta_1, \ldots, \rho_k = i^* \eta_k$ for $i^*\HH^*(X)$. Notice that $\rho_1 = i^* \eta_1$ is the class of a point on $Y$ and $\rho_0 = i^* \eta_0 = i^* [\pt_X] = 0$.
+We fix a homogeneous basis $\eta_0, \ldots, \eta_k$ for $\HH^*(X) = \HH^*(X,\QQ)$ and let $\eta^0, \ldots, \eta^k$ denote the dual basis. Without loss of generality we may suppose that $\eta^0=\mathbbm 1_X$ and $\eta^1=Y$. We get an induced basis $\rho_1=i^*\eta_1, \ldots, \rho_k = i^* \eta_k$ for $i^*\HH^*(X)$. Notice that $\rho_0 = i^* \eta_0 = i^* \pt_X = 0$ and $\rho_1 = i^* \eta_1 = \pt_Y$.
 
-We can extend the $\rho_i$ to a basis $\rho_1, \ldots, \rho_l$ for $\HH^*(Y)$ by adding $\rho_{k+1}\ldots,\rho_{l}$. Let $\rho^1, \ldots, \rho^l$ denote the dual basis; notice that $\rho^i$ is \emph{not} equal to $i^* \eta^i$ (they even have different dimensions!).
+We can extend the $\rho_i$ to a basis $\rho_1, \ldots, \rho_l$ for $\HH^*(Y)$ by adding $\rho_{k+1}\ldots,\rho_{l}$. Let $\rho^1, \ldots, \rho^l$ denote the dual basis; notice that $\rho^i$ is \emph{not} equal to $i^* \eta^i$ (they don't even have the same dimension!).
 
 \subsection{Generating functions for quasimap invariants}
 As with many results in enumerative geometry, the quantum Lefchetz formula is most naturally stated in terms of generating functions. Here we define several such generating functions for the absolute quasimap invariants of $X$ and $Y$.
 
-For $X$ any smooth projective toric variety\footnote{Or any space for which quasimap invariants are defined, for instance a smooth hypersurface in a toric variety} we define: 
-\begin{equation*} S_0^X(z,\beta)=(\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{X}{\beta}}\right) \end{equation*}
-for every effective curve class $\beta\in \Achow_1(X)$. Similarly we define
-\begin{equation*} S_0^X(z,q)=\sum_{\beta\geq 0}S_0^X(z,\beta) q^\beta \end{equation*}
-where by convention $S_0^X(z,0)= \mathbbm 1_X$. These are generating functions for quasimap invariants of $X$ which take values in $\HH^*(X)$.
+We work with two marked points since this is the minimum number required in order for the quasimap space to be nonempty. However since we only take insertions at the first marking we would like to think of these, morally speaking, as $1$-pointed invariants (in Gromov--Witten theory the corresponding statement is literally true, due to the string equation).
 
-The same definition applies to $Y$. However, we may sometimes wish to consider only insertions of classes coming from $X$. These are the so-called \emph{restricted quasimap invariants}, and the corresponding generating function is defined as
+For $X$ any smooth projective toric variety\footnote{or any space for which quasimap invariants are defined, for instance a smooth hypersurface in a toric variety} we define: 
+\begin{equation*} S_0^X(z,\beta)=(\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{X}{\beta}}\right) \end{equation*}
+for every effective curve class $\beta\in \HH_2^+(X)$. Similarly we define
+\begin{equation*} S_0^X(z,q)=\sum_{\beta\geq 0} q^\beta S_0^X(z,\beta)\end{equation*}
+where by convention $S_0^X(z,0)= \mathbbm 1_X$. Here $q$ is a formal Novikov variable. These are generating functions for quasimap invariants of $X$ which take values in $\HH^*(X)$.
+
+The same definition applies to $Y$. However, sometimes we may wish to consider only insertions of classes coming from $X$. These are the so-called \emph{restricted quasimap invariants}, and the corresponding generating function is defined as
 \begin{equation*} \tilde{S}^Y_0(z,\beta) = (\ev_1)_* \left( \dfrac{1}{z-\psi_1} \virt{\Q{0}{2}{Y}{\beta}} \right) \end{equation*}
 where crucially $\ev_1$ is viewed as \emph{mapping to $X$} instead of to $Y$. Thus $\tilde{S}^Y_0(z,\beta)$ takes values in $\HH^*(X)$ and only involves quasimap invariants of $Y$ with insertions from $i^*\HH^*(X)$; on the other hand $S^Y_0(z,\beta)$ takes values in $\HH^*(Y)$ and involves quasimap invariants of $Y$ with arbitrary insertions.
 
 Now, since $X$ and $Y$ are smooth we may use Poincar\'{e} duality to define a push-forward map on cohomology denoted $i_* \colon \HH^k(Y) \to \HH^{k+2}(X)$.
 
-\begin{lemma} $i_* S^Y_0(z,\beta) = \tilde{S}^Y_0(z,\beta)$ \end{lemma}
+\begin{lemma} $i_* S^Y_0(z,\beta) = \tilde{S}^Y_0(z,\beta)$. \end{lemma}
 \begin{proof} This essentially follows by functoriality of cohomological push-forwards and the fact that we have a commuting triangle:
 \bcd
 \Q{0}{2}{Y}{\beta} \ar[rr,"\ev_1"] \ar[rd,"\ev_1" left=0.2cm] & & Y \ar[ld,"i"] \\

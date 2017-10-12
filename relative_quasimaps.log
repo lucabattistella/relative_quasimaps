@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  11 OCT 2017 18:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  12 OCT 2017 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1438,19 +1438,19 @@ LaTeX Font Info:    Try loading font information for U+bbm on input line 17.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [24]
-Overfull \hbox (13.17061pt too wide) in paragraph at lines 37--38
+Overfull \hbox (13.17061pt too wide) in paragraph at lines 39--40
 []\T1/zpltlf/m/n/10.95 This es-sen-tially fol-lows by func-to-ri-al-ity of co-h
 o-mo-log-i-cal push-forwards
  []
 
 [25]
-Overfull \hbox (14.46268pt too wide) in paragraph at lines 79--80
+Overfull \hbox (14.46268pt too wide) in paragraph at lines 81--82
 []\T1/zpltlf/m/n/10.95 Define the fol-low-ing gen-er-at-ing func-tion for $\OT1
 /zpltlf/m/n/10.95 2$\T1/zpltlf/m/n/10.95 -pointed rel-a-tive quasimap
  []
 
 [26] (./fig/snake.tex) [27] [28]
-Overfull \hbox (19.47063pt too wide) detected at line 154
+Overfull \hbox (19.47063pt too wide) detected at line 156
 \OT1/zpltlf/m/n/10.95 [[][]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 X\OMS/np
 xsy/m/n/10.95 j\OML/npxmi/m/it/10.95 Y; ^^L\U/npxmia/m/it/10.95 ~\OT1/zpltlf/m/
 n/10.95 ][] \U/npxmia/m/it/10.95 5 }\OML/npxmi/m/it/10.95 Y \U/npxmia/m/it/10.9
@@ -1466,22 +1466,22 @@ t/10.95 }\OML/npxmi/m/it/10.95 X\OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 Y;
 
 [29]
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 206.
+(Font)              scaled to size 10.95pt on input line 208.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 206.
+(Font)              scaled to size 8.0pt on input line 208.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 6.1pt on input line 206.
+(Font)              scaled to size 6.1pt on input line 208.
  [30]
-Overfull \hbox (3.74261pt too wide) in paragraph at lines 256--257
+Overfull \hbox (3.74261pt too wide) in paragraph at lines 258--259
  [] 
  []
 
 
 LaTeX Warning: Citation `Givental-equivariantGW' on page 31 undefined on input 
-line 262.
+line 264.
 
 
-Overfull \hbox (11.60768pt too wide) detected at line 265
+Overfull \hbox (11.60768pt too wide) detected at line 267
 \U/npxmia/m/it/10.95 }[][]~[][] 5 [] [] 5 []
  []
 
@@ -1621,7 +1621,7 @@ t/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx
 /zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (58 pages, 391831 bytes).
+Output written on relative_quasimaps.pdf (58 pages, 392200 bytes).
 PDF statistics:
  278 PDF objects out of 1000 (max. 8388607)
  199 compressed objects within 2 object streams
