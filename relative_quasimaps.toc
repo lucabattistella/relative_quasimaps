@@ -21,10 +21,10 @@
 \contentsline {subsection}{\tocsubsection {}{5.3}{Quantum Lefschetz formula}}{26}
 \contentsline {subsection}{\tocsubsection {}{5.4}{Comparison with the work of Ciocan-Fontanine and Kim}}{29}
 \contentsline {section}{\tocsection {Appendix}{A}{The comparison morphism}}{32}
-\contentsline {section}{\tocsection {Appendix}{B}{Notes on quasimaps}}{39}
-\contentsline {subsection}{\tocsubsection {}{B.1}{Functoriality}}{39}
-\contentsline {subsection}{\tocsubsection {}{B.2}{Relative obstruction theories for $\overline {\mathcal {Q}}(Y)\rightarrow \overline {\mathcal {Q}}(X)$}}{46}
-\contentsline {subsection}{\tocsubsection {}{B.3}{Splitting axiom}}{49}
-\contentsline {subsection}{\tocsubsection {}{B.4}{Comparison with the GIT construction}}{52}
-\contentsline {section}{\tocsection {Appendix}{C}{Some intersection-theoretic lemmas}}{55}
-\contentsline {section}{\tocsection {Appendix}{}{References}}{56}
+\contentsline {section}{\tocsection {Appendix}{B}{Notes on quasimaps}}{38}
+\contentsline {subsection}{\tocsubsection {}{B.1}{Functoriality}}{38}
+\contentsline {subsection}{\tocsubsection {}{B.2}{Relative obstruction theories for $\overline {\mathcal {Q}}(Y)\rightarrow \overline {\mathcal {Q}}(X)$}}{45}
+\contentsline {subsection}{\tocsubsection {}{B.3}{Splitting axiom}}{48}
+\contentsline {subsection}{\tocsubsection {}{B.4}{Comparison with the GIT construction}}{51}
+\contentsline {section}{\tocsection {Appendix}{C}{Some intersection-theoretic lemmas}}{54}
+\contentsline {section}{\tocsection {Appendix}{}{References}}{55}
