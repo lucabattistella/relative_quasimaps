@@ -64,8 +64,7 @@ Thus applying $i_*$ gives
 as claimed. \end{proof}
 
 
-\subsection{Quantum Lefschetz formula} We now turn to our main result: a formula expressing the generating function $\tilde{S}_0^Y(z,q)$ 
-
+\subsection{Quantum Lefschetz formula} We now turn to our main result: a formula expressing the generating function $\tilde{S}_0^Y(z,q)$ for the (restricted) quasimap invariants of $Y$ in terms of the quasimap invariants of $X$.
 
 \begin{thm} \label{Theorem Quantum Lefschetz}
 Let $X$ and $Y$ be as above. Then
@@ -88,29 +87,28 @@ This coincides with the absolute $S_0^X$-function defined above when $m=0$. Also
 \[
  T_{0,(m)}^{X|Y}(z,\beta)=(\ev_1)_*\left(m \virt{\Q{0}{(m,0)}{X|Y}{\beta}}+\frac{1}{z-\psi_1} \virt{\mathcal{D}^{\mathcal{Q}}_{(m,0),1}(X|Y,\beta)} \right)
 \]
-In the same way as in \cite[Lemma 1.2]{Ga-MF}, it follows from Theorem \ref{Theorem general recursion} that:
+As in \cite[Lemma 1.2]{Ga-MF}, it follows from Theorem \ref{Theorem general recursion} that
 \begin{equation}\label{eqn:G}
- (Y+mz) S_{0,(m)}^{X|Y}(z,\beta) = S_{0,(m+1)}^{X|Y}(z,\beta)+ T_{0,(m)}^{X|Y}(z,\beta),
+ (Y+mz) S_{0,(m)}^{X|Y}(z,\beta) = S_{0,(m+1)}^{X|Y}(z,\beta)+ T_{0,(m)}^{X|Y}(z,\beta)
 \end{equation}
-We can apply this repeatedly to obtain:
+and we can apply this repeatedly to obtain:
 \[
- \prod_{j=0}^{Y\cdot\beta}(Y+jz) S_0^X(z,\beta) = \sum_{m=0}^{Y\cdot\beta}\prod_{j=m+1}^{Y\cdot\beta}(Y+jz)T_{0,(m)}^{X|Y}(z,\beta).
+ \prod_{j=0}^{Y\cdot\beta}(Y+jz) S_0^X(z,\beta) = \sum_{m=0}^{Y\cdot\beta}\prod_{j=m+1}^{Y\cdot\beta}(Y+jz)T_{0,(m)}^{X|Y}(z,\beta)
 \]
-We now examine the right-hand-side in detail. $T_{0,(m)}^{X|Y}(z,\beta)$ can be split into two parts: those terms coming from the comb loci and those coming from the relative space.
+We now examine the right-hand side in detail. By definition, $T_{0,(m)}^{X|Y}(z,\beta)$ splits into two parts: those terms coming from the relative space and those terms coming from the comb loci.
 
-Let us first consider those coming from the comb loci. Since there are only two markings and the first marking is required to lie on the ``handle'' of the comb, we see from the strong stability condition that there are only two options: a comb with $0$ teeth or a comb with $1$ tooth.
+Let us first consider the contribution of the comb loci. Since there are only two marked points and the first is required to lie on the internal component of the comb, it follows from the strong stability condition that there are only two options: a comb with $0$ teeth or a comb with $1$ tooth.
 
 First consider the case of a comb with $0$ teeth. The moduli space is then
 \begin{equation*} \Q{0}{2}{Y}{\beta} \end{equation*}
-and we require that $Y \cdot \beta = m$. Thus this piece only contributes when 
+and we require that $Y \cdot \beta = m$. Thus this piece only contributes to $T_{0,(Y\cdot\beta)}^{X|Y}(z,\beta)$, and it contributes:
+\begin{equation*} \sum_{i=1}^l \left\langle \dfrac{\rho_i}{z-\psi_1}, \mathbbm{1}_Y \right\rangle_{0,2,\beta}^Y \rho^i \end{equation*}
 
-[UNDER CONSTRUCTION]
+Next consider the case of a comb with $1$ tooth. Let $\beta^{(0)}$ and $\beta^{(1)}$ denote the curve classes of the internal and external components, respectively, and let $m^{(1)}$ be the contact order of the external component with $Y$. The picture is as follows:
 
-the \emph{boundary terms}: since there are only two markings and the first one is required to lie in $Y$, the strong stability condition for quasimaps forces the shape of the source curve to be that of a snake which the hypersurface cuts into two pieces, the internal one of degree $\beta^{(0)}$, and the external one of degree $\beta^{(1)}$ and multiplicity $m^{(1)}$ of contact with $Y$, with the first marked point belonging to the internal component and the second to the external one.
-
-\begin{center}
+\begin{centering}
 \input{fig/snake}
-\end{center}
+\end{centering}
  
  The invariants which we need to consider will hence be of the form
  \[

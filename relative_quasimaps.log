@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  12 OCT 2017 15:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  12 OCT 2017 16:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1445,13 +1445,22 @@ o-mo-log-i-cal push-forwards
  []
 
 [25]
-Overfull \hbox (14.46268pt too wide) in paragraph at lines 83--84
+Overfull \hbox (14.46268pt too wide) in paragraph at lines 82--83
 []\T1/zpltlf/m/n/10.95 Define the fol-low-ing gen-er-at-ing func-tion for $\OT1
 /zpltlf/m/n/10.95 2$\T1/zpltlf/m/n/10.95 -pointed rel-a-tive quasimap
  []
 
-[26] (./fig/snake.tex) [27]
-Overfull \hbox (19.47063pt too wide) detected at line 158
+[26]
+Overfull \hbox (3.57704pt too wide) in paragraph at lines 103--105
+\T1/zpltlf/m/n/10.95 and we re-quire that $\OML/npxmi/m/it/10.95 Y \OMS/npxsy/m
+/n/10.95 ^^A \OML/npxmi/m/it/10.95 ^^L \U/npxmia/m/it/10.95 5 \OML/npxmi/m/it/1
+0.95 m$\T1/zpltlf/m/n/10.95 . Thus this piece only con-tributes to $\OML/npxmi/
+m/it/10.95 T[]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 z; ^^L\U/npxmia/m/it/
+10.95 ~$\T1/zpltlf/m/n/10.95 ,
+ []
+
+(./fig/snake.tex) [27]
+Overfull \hbox (19.47063pt too wide) detected at line 156
 \OT1/zpltlf/m/n/10.95 [[][]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 X\OMS/np
 xsy/m/n/10.95 j\OML/npxmi/m/it/10.95 Y; ^^L\U/npxmia/m/it/10.95 ~\OT1/zpltlf/m/
 n/10.95 ][] \U/npxmia/m/it/10.95 5 }\OML/npxmi/m/it/10.95 Y \U/npxmia/m/it/10.9
@@ -1467,22 +1476,22 @@ t/10.95 }\OML/npxmi/m/it/10.95 X\OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 Y;
 
 [28]
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 210.
+(Font)              scaled to size 10.95pt on input line 208.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 210.
+(Font)              scaled to size 8.0pt on input line 208.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 6.1pt on input line 210.
+(Font)              scaled to size 6.1pt on input line 208.
  [29] [30]
-Overfull \hbox (3.74261pt too wide) in paragraph at lines 260--261
+Overfull \hbox (3.74261pt too wide) in paragraph at lines 258--259
  [] 
  []
 
 
 LaTeX Warning: Citation `Givental-equivariantGW' on page 31 undefined on input 
-line 266.
+line 264.
 
 
-Overfull \hbox (11.60768pt too wide) detected at line 269
+Overfull \hbox (11.60768pt too wide) detected at line 267
 \U/npxmia/m/it/10.95 }[][]~[][] 5 [] [] 5 []
  []
 
@@ -1500,12 +1509,15 @@ U/npxmia/m/it/10.95 }[][] \OML/npxmi/m/it/10.95 ^^O[]T[]\U/npxmia/m/it/10.95 ~$
 \T1/zpltlf/m/n/10.95 .
  []
 
-[33] [34] [35]
+[33]
+Underfull \vbox (badness 2698) has occurred while \output is active []
+
+ [34]
 Overfull \hbox (10.26819pt too wide) in paragraph at lines 99--99
 [] 
  []
 
-
+[35]
 Overfull \hbox (68.65169pt too wide) in paragraph at lines 103--105
 \T1/zpltlf/m/n/10.95 under $\OML/npxmi/m/it/10.95 h[]\U/npxmia/m/it/10.95 }\OML
 /npxmi/m/it/10.95 ^^^[]\U/npxmia/m/it/10.95 ~$\T1/zpltlf/m/n/10.95 . If we can 
@@ -1531,11 +1543,7 @@ pxsy/m/n/10.95 ' \OML/npxmi/m/it/10.95 H[]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it
 /10.95 f[]T[]\U/npxmia/m/it/10.95 ~\OML/npxmi/m/it/10.95 :
  []
 
-
-Underfull \vbox (badness 4518) has occurred while \output is active []
-
- [36]
-[37]) [38] (./tex/functoriality.tex [39]
+[36] [37]) (./tex/functoriality.tex [38] [39]
 Overfull \hbox (2.87422pt too wide) in paragraph at lines 46--48
 \T1/zpltlf/m/n/10.95 Consider there-fore a quasimap $\U/npxmia/m/it/10.95 }}\OM
 L/npxmi/m/it/10.95 C; x[]; [] ; x[]\U/npxmia/m/it/10.95 ~\OML/npxmi/m/it/10.95 
@@ -1544,11 +1552,7 @@ OML/npxmi/m/it/10.95 ; \U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 '[]\U/npxmia
 /m/it/10.95 ~[]~$
  []
 
-[40]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [41]
-[42] [43]
+[40] [41] [42] [43]
 Overfull \hbox (2.1142pt too wide) in paragraph at lines 133--134
 []\T1/zpltlf/m/n/10.95 Stability fol-lows pre-cisely from the con-struc-tion of
  $\OML/npxmi/m/it/10.95 ^^^$\T1/zpltlf/m/n/10.95 : if $\OMS/npxsy/m/n/10.95 O[]
@@ -1556,7 +1560,7 @@ Overfull \hbox (2.1142pt too wide) in paragraph at lines 133--134
 /npxmi/m/it/10.95 L[]$\T1/zpltlf/m/n/10.95 ,
  []
 
-[44]
+
 Overfull \hbox (44.66335pt too wide) in paragraph at lines 170--171
 \T1/zpltlf/m/n/10.95 where the torus ho-mo-mor-phism $\OML/npxmi/m/it/10.95 G[]
  \U/npxmia/m/it/10.95 5 [][]}[]}\OML/npxmi/m/it/10.95 Y\U/npxmia/m/it/10.95 ~\O
@@ -1566,21 +1570,21 @@ m/n/10.95 ! \OML/npxmi/m/it/10.95 G[] \U/npxmia/m/it/10.95 5 [][]}[]}\OML/npxmi
 C[]\U/npxmia/m/it/10.95 ~$
  []
 
-[45] [46] [47] [48]) (./tex/splitting.tex [49] [50] [51]) (./tex/GIT.tex
-[52]
+[44] [45] [46] [47]) (./tex/splitting.tex [48] [49] [50]) (./tex/GIT.tex
+[51]
 Overfull \hbox (2.63702pt too wide) in paragraph at lines 21--23
 \T1/zpltlf/m/n/10.95 which ad-mits a vir-tual class. Hence we have two mod-uli 
 spaces of quasimaps
  []
 
-[53]) (./tex/intersection.tex [54]
+[52]) (./tex/intersection.tex [53]
 Underfull \vbox (badness 1168) has occurred while \output is active []
 
- [55])
+ [54])
 (./relative_quasimaps.bbl
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 9.0pt on input line 6.
- [56]
+ [55]
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 9.0pt on input line 130.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
@@ -1590,8 +1594,8 @@ LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [57])
-[58] (./relative_quasimaps.aux)
+ [56])
+[57] (./relative_quasimaps.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.64499pt have occurred.
@@ -1601,10 +1605,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 32085 strings out of 493014
- 624493 string characters out of 6133351
- 672128 words of memory out of 5000000
- 34754 multiletter control sequences out of 15000+600000
+ 32086 strings out of 493014
+ 624505 string characters out of 6133351
+ 673110 words of memory out of 5000000
+ 34755 multiletter control sequences out of 15000+600000
  117823 words of font info for 251 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  56i,19n,82p,10394b,1048s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1630,10 +1634,10 @@ t/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx
 /zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (58 pages, 392953 bytes).
+Output written on relative_quasimaps.pdf (57 pages, 392985 bytes).
 PDF statistics:
- 278 PDF objects out of 1000 (max. 8388607)
- 199 compressed objects within 2 object streams
+ 275 PDF objects out of 1000 (max. 8388607)
+ 197 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
