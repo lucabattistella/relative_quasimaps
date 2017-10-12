@@ -1,29 +1,42 @@
 \section{Recursion formula in the general case}\label{Section recursion formula in general case}
 
-\subsection{The virtual class on the space of relative quasimaps} Let $X$ be an arbitrary toric variety (smooth and proper) and $Y \subseteq X$ a very ample hypersurface (not necessarily toric). The complete linear system associated to $\OO_X(Y)$ defines an embedding $i : X \hookrightarrow \PP^N$ such that $i^{-1}(H) = Y$ (for a certain hyperplane $H$). By the functoriality property of quasimap spaces (see Appendix \ref{Functoriality of Quasimap Spaces Section}) we have a map:
-\begin{equation*} k := \om{Q}(i) : \Q{0}{n}{X}{\beta} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
-where $d=i_*\beta$. Since $i$ is a closed embedding it follows that $k$ is as well. Furthermore $k$ admits a compatible perfect obstruction theory (see Appendix \ref{section:rel_pot_for_qm_functoriality}), so we have a notion of virtual pull-back along $k$ (which coincides with the diagonal pull-back according to Lemma \ref{lem:diagonal_virtual_coincide}).
+In this section we prove the main result of this paper: a recursion formula for relative quasimap invariants of a general pair $(X,Y)$.  
 
-It is easy to show that $k$ restricts to a morphism between the relative spaces, and thus we have a diagram of embeddings
+\begin{thm} \label{Theorem general recursion} Let $X$ be a smooth and proper toric variety and let $Y \subseteq X$ be a very ample hypersurface (not necessarily toric). Then
+\begin{equation*} (\alpha_k \psi_k + \ev_k^* [Y]) \cap \virt{\Q{0}{\alpha}{X|Y}{\beta}} = \virt{\Q{0}{\alpha+e_k}{X|Y}{\beta}} + \virt{\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)} \end{equation*}
+in the Chow group of $\Q{0}{\alpha}{X|Y}{\beta}$. 
+\end{thm}
+
+\noindent We begin by defining the terms that appear in the statement.
+
+\subsection{The virtual class on the space of relative quasimaps} Let $X$ and $Y$ be as in the statement of Theorem~\ref{Theorem general recursion}.  The complete linear system associated to $\OO_X(Y)$ defines an embedding $i : X \hookrightarrow \PP^N$ such that $i^{-1}(H) = Y$ for a certain hyperplane $H$. By the functoriality property of quasimap spaces (see Appendix~\ref{Functoriality of Quasimap Spaces Section}) we have a map:
+\begin{equation*} k := \om{Q}(i) : \Q{0}{n}{X}{\beta} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
+where $d=i_*\beta$. Since $i$ is a closed embedding it follows that $k$ is as well. Furthermore $k$ admits a compatible perfect obstruction theory (see Appendix~\ref{section:rel_pot_for_qm_functoriality}), so we have a notion of virtual pull-back along $k$.
+
+It is easy to show that $k$ restricts to a morphism between moduli space of relative quasimaps, and thus we have a diagram of embeddings
 \bcd
 \Q{0}{\alpha}{X|Y}{\beta} \ar[d, "f", hook] \ar[r, "g", hook] \ar[dr, phantom, "\square"] & \Q{0}{\alpha}{\PP^N|H}{d} \ar[d, "j", hook] \\
 \Q{0}{n}{X}{\beta}  \ar[r, "k", hook] & \Q{0}{n}{\PP^N}{d}
 \ecd
-which one can show is cartesian. As such we can define a virtual class on $\Q{0}{\alpha}{X|Y}{\beta}$ by pullback along $k$ (virtual or diagonal):
+which one can show is cartesian. As such we can define a virtual class on $\Q{0}{\alpha}{X|Y}{\beta}$ by pullback along $k$:
 \begin{equation*} \virt{\Q{0}{\alpha}{X|Y}{\beta}} := k^! [ \Q{0}{\alpha}{\PP^N|H}{d} ] \end{equation*}
 We use this class to define relative quasimap invariants in general:
 \begin{equation*} \langle \gamma_1 \psi_1^{k_1}, \ldots, \gamma_n \psi_n^{k_n} \rangle_{0,\alpha,\beta}^{X|Y} := \int_{\virt{\Q{0}{\alpha}{X|Y}{\beta}}} \prod_{i=1}^n \ev_i^*(\gamma_i) \cdot \psi_i^{k_i} \end{equation*}
-These invariants will play a role in our proof of the mirror formula in \S \ref{Section quasimap mirror theorem}.
+These invariants will play a role in our proof of the quantum Lefschetz formula in \S \ref{Section quasimap mirror theorem}.
 
 \subsection{Relative spaces pull back}
-The idea is to prove the recursion formula for $(X,Y)$ by pulling back the formula for $(\PP^N,H)$ along $k$. In order to do this, we need to understand how the various virtual classes involved in the formula pull back along this map. The first two terms pull back by the very definition of the virtual class:
+The idea is to prove the recursion formula for general $(X,Y)$ by pulling back the formula for $(\PP^N,H)$ along $k$. In order to do this, we need to understand how the various virtual classes involved in the formula pull back along this map. The first two terms pull back by the very definition of the virtual class:
 \begin{lemma} \label{Relative spaces pull back} $k^! [\Q{0}{\alpha}{\PP^N|H}{d}] = \virt{\Q{0}{\alpha}{X|Y}{\beta}}$ \end{lemma}
-It thus remains to consider the third term, namely the virtual class of the comb locus. This is the technical heart of the proof.
 
-\subsection{Comb loci pull back} \label{Subsection comb loci pull back} Recall that we can write $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ as a union of comb loci
+\noindent It thus remains to consider the third term, namely the virtual class of the comb locus. This is the technical heart of the proof.
+
+\subsection{Comb loci pull back} \label{Subsection comb loci pull back} As in the previous section,  we define $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ to be the union of the moduli spaces
 \begin{equation*} \mathcal D^{\mathcal{Q}}(X|Y,A,B,M) := \Q{0}{A_0 \cup \{q_1, \ldots, q_r\}}{Y}{\beta_0} \times_{Y^r} \prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta_i} \end{equation*}
-where $A$ and $B$ are partitions of the marked points and curve class respectively, and $M=(m_1,\ldots,m_r)$ records the intersection multiplicity with $Y$ at the nodes connecting the internal component to the external components (the spine of the comb to the teeth). Since the virtual class on $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ is equal to the sum of the virtual classes of the $\mathcal D^{\mathcal{Q}}(X|Y,A,B,M)$, we can deal with each of these comb loci separately.
-
+where the union runs over all splittings $A = (\alpha^{(0)}, \ldots, \alpha^{(r)})$ of the markings, $B = (\beta_0, \ldots, \beta_r)$ of the curve class $\beta$ and all valid multiplicities $M = (m^{(1)}, \ldots, m^{(r)})$ such that the above spaces are non-empty and such that:
+\[
+Y \cdot \beta_0 +\sum_{i=1}^r m^{(i)}=\sum \alpha^{(0)}
+\]
+We refer to the $\mathcal D^{\mathcal{Q}}(X|Y,A,B,M)$ as \emph{comb loci}.
 
 \begin{remark} \label{GIT comparison remark} Note that $Y$ is not in general toric, and so we should clarify what we mean by:
 \begin{equation*} \om{Q}(Y) = \Q{0}{A_0 \cup \{ q_1, \ldots, q_n \}}{Y}{\beta_0} \end{equation*}
@@ -35,56 +48,57 @@ There are two possibilities here: one is to \emph{define} this space as the cart
 and equip it with the virtual class pulled back along $k$:
 \begin{equation*} \virt{\om{Q}(Y)} := k^! [ \om{Q}(H) ] \end{equation*}
 Using this definition, $\om{Q}(Y)$ consists of those quasimaps in $\om{Q}(X)$ for which $u_Y \equiv 0$.
+This has obvious advantages from the point of view of our computations, but is conceptually unsatisfying. 
 
-This has obvious advantages from the point of view of our computations, but is conceptually unsatisfying. On the other hand, $Y \subseteq X$ defines a $(\CC^*)^r$-invariant subvariety in the prequotient of $X$, which we refer to (by analogy with the case $X=\PP^N$) as the \ilemph{cone of Y}:
-\begin{equation*} C(Y) \subseteq \Aaff^{\Sigma_X(1)} \end{equation*}
+On the other hand, $X$ is a GIT quotient  $\Aaff^{\Sigma_X(1)}  \sslash (\CC^*)^r$, and $Y \subseteq X$ defines a $(\CC^*)^r$-invariant subvariety $C(Y)$ of $\Aaff^{\Sigma_X(1)}$, which we call the \ilemph{cone of Y}.
 Then $Y$ is equal to the GIT quotient
 \begin{equation*} Y = C(Y) \sslash (\CC^*)^r \end{equation*}
-and so we may use the more general theory of quasimaps to GIT quotients \cite{CFKM} to define $\om{Q}(Y)$ and its virtual class.
+and so we may use the more general theory of quasimaps to GIT quotients \cite{CFKM} to define $\om{Q}(Y)$ and its virtual class.  
 
-We should then show that these two definitions of $\om{Q}(Y)$ agree (i.e. that there exists an isomorphism between these moduli spaces which preserves the virtual class). This is carried out in Appendix \ref{Section comparison with GIT construction}.
+In fact these two definitions of $\om{Q}(Y)$ agree:  there exists an isomorphism between these moduli spaces which preserves the virtual classes. We show this in Appendix~\ref{Section comparison with GIT construction}.
 \end{remark}
 
-Now, the comb locus sits inside the full product
+We now construct a virtual class on the comb locus $\mathcal D^{\mathcal{Q}}(X|Y,A,B,M)$.  Consider the product (\emph{not} the fibre product over $Y^r$)
 \begin{equation*} \mathcal E^{\mathcal{Q}}(X|Y,A,B,M) := \Q{0}{A_0 \cup \{q_1, \ldots, q_r\}}{Y}{\beta_0} \times \prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta_i} \end{equation*}
 which we may endow with the product virtual class (with weighting as before):
 \begin{align*} \virt{\mathcal E^{\mathcal{Q}}(X|Y, & A,B,M)} := \\
 & \left( \dfrac{m^{(1)} \cdots m^{(r)}}{r!}\right) \cdot \left( \virt{\Q{0}{A_0 \cup \{q_1, \ldots, q_r\}}{Y}{\beta_0}} \times \prod_{i=1}^r \virt{\Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta_i}} \right) \end{align*}
-We have the following cartesian diagram
+We have the following cartesian diagram\marginpar{FIX ME fix the position of the square, also below}
 \bcd
 \mathcal D^{\mathcal{Q}}(X|Y,A,B,M)\ar[r]\ar[d]\ar[dr,phantom,"\Box"] & \mathcal E^{\mathcal{Q}}(X|Y,A,B,M)\ar[d] \\
 X^r\ar[r,"\Delta_{X^r}"] & X^r\times X^r
 \ecd
-and we can use this to define a \ilemph{product virtual class} on the comb locus:
+and we can use this to define a virtual class on the comb locus:
 \[
  \virt{\mathcal D^{\mathcal{Q}}(X|Y,A,B,M)} := \Delta_{X^r}^!\virt{\mathcal E^{\mathcal{Q}}(X|Y,A,B,M)}
 \]
+The virtual class on the union $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ of the comb loci is defined to be the sum of the virtual classes $\virt{\mathcal D^{\mathcal{Q}}(X|Y,A,B,M)}$.
+
+
 \begin{remark} This is the same definition of the virtual class of the comb locus that we gave in \S \ref{Subsection recursion formula for PN} in the case $(X,Y)=(\PP^N,H)$. \end{remark}
 
-On the other hand, there is another cartesian diagram defining the comb locus:
+On the other hand, there is another cartesian diagram:
 \bcd
-\mathcal D^\mathcal{Q}(X|Y,A,B,M) \ar[r,"k"] \ar[d] \ar[rd,phantom,"\square"] & \mathcal D^\mathcal{Q}(\PP^N|H,A,i_* B,M) \ar[d] \\
+{\displaystyle \coprod_{B : i_* B = B^\prime} \mathcal D^\mathcal{Q}(X|Y,A,B,M)} \ar[r] \ar[d] \ar[rd,phantom,"\square" left] & \mathcal D^\mathcal{Q}(\PP^N|H, A, B^\prime, M) \ar[d] \\
 \Q{0}{n}{X}{\beta} \ar[r,"k"] & \Q{0}{n}{\PP^N}{d}
 \ecd
-\begin{remark} Technically this is not quite correct: the fibre product is actually the union of comb loci over all partitions $B^\prime$ such that $i_* B^\prime = i_*B$. But this subtlety makes no difference to our aguments. \end{remark}
+Recall that we are trying to show that the virtual class of the comb locus pulls back nicely along $k$. The result that we need is:
+\begin{lem} \label{Comb loci pull back} $\displaystyle k^! \virt{\mathcal D^\mathcal{Q}(\PP^N|H,A,B^\prime,M)} = \sum_{B : i_* B = B^\prime} \virt{\mathcal D^\mathcal{Q}(X|Y,A,B,M)}$ \end{lem}
 
-Remember that we are trying to show that the virtual class of the comb locus pulls back nicely along $k$. The result we need is:
-\begin{lem} \label{Comb loci pull back} For any $\alpha$ we have:
-\begin{equation*} k^! \virt{\mathcal D^\mathcal{Q}(\PP^N|H,A,i_*B,M)} = \virt{\mathcal D^\mathcal{Q}(X|Y,A,B,M)} \end{equation*} \end{lem}
-Let us introduce the following shorthand notation: we fix the the data of $A$, $B$, $M$ and set:
+For the proof of Lemma~\ref{Comb loci pull back}, let us introduce the following shorthand notation.  We fix the the data of $A$, $B^\prime$, $M$ and set:
 \begin{align*}
-\mathcal{D}(X|Y) & := \mathcal D^{\mathcal{Q}}(X|Y,A,B,M) \\
-\mathcal{E}(X|Y) & := \mathcal E^{\mathcal{Q}}(X|Y,A,B,M) \\
-\mathcal{D}(X) & := \mathcal{D}^{\mathcal{Q}}(X,A,B) \\
-\mathcal{E}(X) & := \mathcal{E}^{\mathcal{Q}}(X,A,B) \\
-\om{Q}(X) & :=\Q{0}{n}{X}{\beta}
+\mathcal{D}(X|Y) & := \textstyle \coprod_{B : i_* B = B^\prime} \mathcal D^{\mathcal{Q}}(X|Y,A,B,M) &&& \mathcal{D}(\PP^N|H) & := \mathcal D^{\mathcal{Q}}(\PP^N|H,A,B^\prime,M)\\
+\mathcal{E}(X|Y) & := \textstyle \coprod_{B : i_* B = B^\prime} \mathcal E^{\mathcal{Q}}(X|Y,A,B,M) &&& \mathcal{E}(\PP^N|H) & := \mathcal E^{\mathcal{Q}}(\PP^N|H,A,B^\prime,M)\\
+\mathcal{D}(X) & := \textstyle \coprod_{B : i_* B = B^\prime} \mathcal{D}^{\mathcal{Q}}(X,A,B)  &&& \mathcal{D}(\PP^N) & := \mathcal D^{\mathcal{Q}}(\PP^N,A,B^\prime)\\
+\mathcal{E}(X) & := \textstyle \coprod_{B : i_* B = B^\prime} \mathcal{E}^{\mathcal{Q}}(X,A,B) &&& \mathcal{E}(\PP^N) & := \mathcal E^{\mathcal{Q}}(\PP^N,A,B^\prime)\\
+\om{Q}(X) & :=\Q{0}{n}{X}{\beta} &&& \om{Q}(\PP^N) & :=\Q{0}{n}{\PP^N}{i_* \beta} 
 \end{align*}
-and similarly for $(\PP^N,H)$. Here $\mathcal{D}(X)$ and $\mathcal{E}(X)$ are the centipede loci introduced in Appendix \ref{Subsection splitting}; they are defined in the same way as the comb loci, except that we replace both the quasimaps to $Y$ and the relative quasimaps to $(X,Y)$ by quasimaps to $X$. There is a cartesian diagram
+Here $\mathcal{D}(X)$ and $\mathcal{E}(X)$ are the centipede loci introduced in Appendix \ref{Subsection splitting}; they are defined in the same way as the comb loci, except that we replace both the quasimaps to $Y$ and the relative quasimaps to $(X,Y)$ by quasimaps to $X$. There is a cartesian diagram
 \bcd
 \mathcal{E}(X|Y) \ar[d]\ar[r]\ar[dr,phantom,"\Box"] & \mathcal{E}(\PP^N|H)\ar[d,"\theta"] \\
 \mathcal{E}(X)\ar[r] & \mathcal{E}(\PP^N)
 \ecd
-and since $\mathcal{E}(\PP^N)$ is smooth and there is a natural fundamental class on $\mathcal{E}(\PP^N|H)$, we have a diagonal pull-back morphism $\theta^! = \theta_{\Delta}^!$ (see Appendix \ref{appendix:intersection}).
+and, since $\mathcal{E}(\PP^N)$ is smooth and there is a natural fundamental class on $\mathcal{E}(\PP^N|H)$, we have a diagonal pull-back morphism $\theta^! = \theta_{\Delta}^!$ (see Appendix~\ref{appendix:intersection}).
 \begin{lemma}\label{theta-pull} $\virt{\mathcal{E}(X|Y)}=\theta^!\virt{\mathcal{E}(X)}$ \end{lemma}
 \begin{proof}
 It suffices to check that in the following cartesian diagram
@@ -92,7 +106,7 @@ It suffices to check that in the following cartesian diagram
 \om{Q}(Y) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \om{Q}(H) \ar[d,"\theta"] \\
 \om{Q}(X) \ar[r] & \om{Q}(\PP^N)
 \ecd
-we have $\theta^! \virt{\om{Q}(X)} = \virt{\om{Q}(Y)}$. Depending on one's definition of $\om{Q}(Y)$ (see Remark \ref{GIT comparison remark} above) this is either true by definition or is a standard result whose proof can be found in Appendix \ref{Section comparison with GIT construction}.
+we have $\theta^! \virt{\om{Q}(X)} = \virt{\om{Q}(Y)}$. Depending on one's definition of $\om{Q}(Y)$ (see Remark \ref{GIT comparison remark} above) this is either true by definition or is proved in Appendix \ref{Section comparison with GIT construction}.
 \end{proof}
 
 Now consider the following cartesian diagram
@@ -100,11 +114,11 @@ Now consider the following cartesian diagram
 \mathcal D(X)\ar[r]\ar[d,"\varphi_X"]\ar[dr,phantom,"\Box"] & \mathcal D(\PP^N)\ar[r]\ar[d,"\varphi_{\PP^N}"]\ar[dr,phantom,"\Box"] & \MM_{A,B}^{\operatorname{wt}}\ar[d,"\psi"] \\
 \om{Q}(X)\ar[r,"k"] & \om{Q}(\PP^N)\ar[r] & \MM_{0,n,\beta}^{\operatorname{wt}}
 \ecd
-where $\MM_{0,n,\beta}^{\operatorname{wt}}$ is the moduli space of prestable curves weighted by the class $\beta$ \cite[\S 2]{Costello} and:
+where $\MM_{0,n,\beta}^{\operatorname{wt}}$ is the moduli space of prestable curves weighted by the class~$\beta$ \cite[\S 2]{Costello} and:
 \begin{equation*} \MM_{A,B}^{\operatorname{wt}} := \MM_{0,A_0 \cup \{ q_1, \ldots, q_r \}, \beta_0}^{\operatorname{wt}} \times \prod_{i=1}^r \MM_{0,A_i \cup \{ q_i \},\beta_i}^{\operatorname{wt}} \end{equation*}
-The maps $\mathcal{D}(X) \to \MM_{A,B}^{\operatorname{wt}}$ and $\om{Q}(X) \to \MM_{0,n,\beta}^{\operatorname{wt}}$ admit relative perfect obstruction theories which are the same as the usual ones relative to the moduli spaces of \emph{unweighted} cureves. Furthermore the morphism $\psi$ admits a perfect obstruction theory; see Appendix \ref{Subsection splitting} for details. This induces virtual pull-back morphisms, and by the splitting axiom (see Lemma \ref{Lemma product class equals pullback class}) we have
+The maps $\mathcal{D}(X) \to \MM_{A,B}^{\operatorname{wt}}$ and $\om{Q}(X) \to \MM_{0,n,\beta}^{\operatorname{wt}}$ admit relative perfect obstruction theories which are the same as the usual perfect obstruction theories relative to the moduli spaces of \emph{unweighted} curves. Furthermore the morphism $\psi$ admits a perfect obstruction theory; see Appendix \ref{Subsection splitting} for details. Thus there are virtual pull-back morphisms $\psi^!$, and by the splitting axiom (see Lemma \ref{Lemma product class equals pullback class}) we have
 \begin{equation*} \virt{\mathcal{D}(X)} := \Delta_{X^r}^! \virt{\mathcal{E}(X)} = \psi^! \virt{\om{Q}(X)} \end{equation*}
-from which it follows by commutativity of virtual pull-backs that:
+Commutativity of virtual pull-backs then implies that:
 \begin{equation} \virt{\mathcal{D}(X)} = \label{psishriek formula} \psi^!\virt{\om{Q}(X)}= \psi^! k^! [ \om{Q}(\PP^N)] = k^!\psi^![\om{Q}(\PP^N)] = k^! [ \mathcal{D}(\PP^N) ]\end{equation}
 
 \begin{proof}[Proof of Lemma \ref{Comb loci pull back}] Putting all the preceding results together, we consider the cartesian digram:
@@ -126,7 +140,6 @@ We then have:
 \end{align*}
 Summing over all the components of $\mathcal{D}^{\mathcal{Q}}_{\alpha,k}(\PP^N|H,d)$ we obtain the result. \end{proof}
 
-\begin{thm} \label{Theorem general recursion} Let $X$ be a smooth and proper toric variety and let $Y \subseteq X$ be a very ample hypersurface (not necessarily toric). Then, with the set-up as in the preceding discussion, we have an equality
-\begin{equation*} (\alpha_k \psi_k + ev_k^* [Y]) \virt{\Q{0}{\alpha}{X|Y}{\beta}} = \virt{\Q{0}{\alpha+e_k}{X|Y}{\beta}} + \virt{\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)} \end{equation*}
-in the Chow group of $\Q{0}{\alpha}{X|Y}{\beta}$. \end{thm}
-\begin{proof} Apply $k^!$ to Proposition \ref{Recursion formula for PN}, using Lemmas \ref{Relative spaces pull back} and \ref{Comb loci pull back}. \end{proof}
+\begin{proof}[Proof of Theorem~\ref{Theorem general recursion}]
+Apply $k^!$ to Proposition~\ref{Recursion formula for PN}, using Lemmas~\ref{Relative spaces pull back} and~\ref{Comb loci pull back}. 
+\end{proof}
