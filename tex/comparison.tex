@@ -4,7 +4,7 @@ We summarise the existence of the comparison morphism for $\PP^r$ and how it imp
 
 In order to give a morphism $\comp\colon\M{g}{n}{\PP^r}{d}\to\Q{g}{n}{\PP^r}{d}$ we need to be able to canonically associate a family of quasimaps on a base $S$ to any family of stable maps on the same base.
 
-The pointwise construction is the following: a stable map has no base points, so the only thing that might prevent it from being a stable quasimap is the presence of rational tails (of positive degree, by the stable maps stability condition). Let $C=C^{(0)}\sqcup_{q_i}R_i$ be the source curve; the rational tail $R_i$ has degree $d_i$ and is joined to the permanent curve $C^{(0)}$ at the node $q_i$, which is the only special point on $R_i$; hence all the markings belong to $C^{(0)}$. The map to $\PP^r$ is equivalent to the data of a line bundle $L=f^*\mathcal O_{\PP^r}(1)$ on $C$ and $r+1$ sections $s_0,\ldots,s_r$ thereof. We associate to such a stable map the quasimap $(C^{(0)},\mathbf x; L_{|C^{(0)}}\otimes\mathcal O_{C^{(0)}}(\sum_{i}d_iq_i);\hat s_0,\ldots,\hat s_r)$, where $\hat s_j$ is the restriction of $s_j$ to $C^{(0)}$, seen as a section of $L_{|C^{(0)}}\otimes\mathcal O_{|C^{(0)}}(\sum_{i}d_iq_i)$ through the inclusion $L_{|C^{(0)}}\hookrightarrow L_{|C^{(0)}}\otimes\mathcal O_{C^{(0)}}(\sum_{i}d_iq_i)$. Notice that the resulting quasimap has a base-point of order $d_i$ at $q_i$.
+The pointwise construction is the following: a stable map has no base points, so the only thing that might prevent it from being a stable quasimap is the presence of rational tails (of positive degree, by the stable maps stability condition). Let $C=C^{(0)}\sqcup_{q_i}R_i$ be the source curve; the rational tail $R_i$ has degree $d_i$ and is joined to the permanent curve $C^{(0)}$ at the node $q_i$, which is the only special point on $R_i$; hence all the markings belong to $C^{(0)}$. The map to $\PP^r$ is equivalent to the data of a line bundle $L=f^*\mathcal O_{\PP^r}(1)$ on $C$ and $r+1$ sections $s_0,\ldots,s_r$ thereof. We associate to such a stable map the quasimap $\left(C^{(0)},\mathbf x; L_{|C^{(0)}}\otimes\mathcal O_{C^{(0)}}(\sum_{i}d_iq_i);\hat s_0,\ldots,\hat s_r\right)$, where $\hat s_j$ is the restriction of $s_j$ to $C^{(0)}$, seen as a section of $L_{|C^{(0)}}\otimes\mathcal O_{|C^{(0)}}(\sum_{i}d_iq_i)$ through the inclusion $L_{|C^{(0)}}\hookrightarrow L_{|C^{(0)}}\otimes\mathcal O_{C^{(0)}}(\sum_{i}d_iq_i)$. Notice that the resulting quasimap has a base-point of order $d_i$ at $q_i$.
 
 The construction in families requires us to find a line bundle on the universal curve that is trivial on the rational tails and relatively ample elsewhere. This can be performed at the level of Picard stacks: let $\mathfrak{Pic}_{g,n}^{d,\text{st}}$ be the open substack of $\mathfrak{Pic}(\pi\colon\mathfrak{C}_{g,n}\to\mathfrak{M}_{g,n})$ obtained by requiring that the total degree of the line bundle is $d$, the multi-degree is nonnegative and $\mathcal L\otimes\omega_{\pi}^{\text{log}}$ is ample relative to $\pi$, where $\mathcal L$ is the universal line bundle. Let $T^{\delta}$ be the locus in the universal curve over $\mathfrak{Pic}_{g,n}^{d,\text{st}}$ spanned by rational tails on which $\mathcal L$ has degree $\delta$; this is a Cartier divisor by deformation theory and smoothness of the stack $\mathfrak{C}_{\mathfrak{Pic}}$. Notice that $T^{\delta_0}$ and $T^{\delta_1}$ (say $\delta_0<\delta_1$) do intersect in a stratum of codimension 1 in both of them, where the rational tail splits into two rational components, the furthest from $C^{(0)}$ having degree $\delta_0$.
 
@@ -62,33 +62,63 @@ and, as before,
 
 The comparison between virtual fundamental classes is best outlined in the arXiv version of \cite[Remark 5.20]{Manolache-Push}. Call $\nu_{\mathcal M}'=\comp'\circ\nu_{\mathcal M}$. We may endow it with an obstruction theory by means of
 \bcd
-\nu_\mathcal M^*\mathbb L_{\comp'}\ar[d]\ar[r] & \mathbb E_{\nu'_\mathcal M} \ar[d]\ar[r] & \mathbb E_{\nu_\mathcal M} \ar[d]\ar[r,"{[1]}"] & {}\\
-\nu_\mathcal M^*\mathbb L_{\comp'}\ar[r] & \mathbb L_{\nu'_\mathcal M} \ar[r] & \mathbb L_{\nu_\mathcal M} \ar[r,"{[1]}"] & {}
+\nu_\mathcal M^*\mathbf L_{\comp'}\ar[d]\ar[r] & \mathbf E_{\nu'_\mathcal M} \ar[d]\ar[r] & \mathbf E_{\nu_\mathcal M} \ar[d]\ar[r,"{[1]}"] & {}\\
+\nu_\mathcal M^*\mathbf L_{\comp'}\ar[r] & \mathbf L_{\nu'_\mathcal M} \ar[r] & \mathbf L_{\nu_\mathcal M} \ar[r,"{[1]}"] & {}
 \ecd
 
-Notice that $\comp'$ is a morphism (not of DM type) between smooth Artin stacks, hence we can only deduce that $\mathbb L_{\comp'}$ is supported in $[-1,1]$. It is therefore easily seen that $\mathbb E_{\nu'_\mathcal M}$ is also supported in $[-1,1]$; in order to show that it is actually a perfect obstruction theory, consider the long exact sequence
+Notice that $\comp'$ is a morphism (not of DM type) between smooth Artin stacks, hence we can only deduce that $\mathbf L_{\comp'}$ is supported in $[-1,1]$. It is therefore easily seen that $\mathbf E_{\nu'_\mathcal M}$ is also supported in $[-1,1]$; in order to show that it is actually a perfect obstruction theory, consider the long exact sequence
 \begin{align*}
- 0 &\to h^{-1}\nu_\mathcal M^*\mathbb L_{\comp'}\to h^{-1}\mathbb E_{\nu'_\mathcal M} \to h^{-1}\mathbb E_{\nu_\mathcal M} \\
- &\to h^{0}\nu_\mathcal M^*\mathbb L_{\comp'}\to h^{0}\mathbb E_{\nu'_\mathcal M} \to h^{0}\mathbb E_{\nu_\mathcal M} \\
- &\to h^{1}\nu_\mathcal M^*\mathbb L_{\comp'}\to h^{1}\mathbb E_{\nu'_\mathcal M} \to 0
+ 0 &\to h^{-1}\nu_\mathcal M^*\mathbf L_{\comp'}\to h^{-1}\mathbf E_{\nu'_\mathcal M} \to h^{-1}\mathbf E_{\nu_\mathcal M} \\
+ &\to h^{0}\nu_\mathcal M^*\mathbf L_{\comp'}\to h^{0}\mathbf E_{\nu'_\mathcal M} \to h^{0}\mathbf E_{\nu_\mathcal M} \\
+ &\to h^{1}\nu_\mathcal M^*\mathbf L_{\comp'}\to h^{1}\mathbf E_{\nu'_\mathcal M} \to 0
 \end{align*}
-and observe that, dually, $h^{-1}\nu_\mathcal M^*\mathbb T_{\comp'}$ injects into $h^{0}\mathbb E^\vee_{\nu_\mathcal M}\simeq h^{0}\mathbb T_{\nu_\mathcal M}$, because every infinitesimal automorphism of the rational tail induces a nontrivial deformation of the stable map (since the degree of the latter is positive on every component of the rational tail); we conclude that $h^{1}\mathbb E_{\nu'_\mathcal M}=0$.
+and observe that, dually, $h^{-1}\nu_\mathcal M^*\mathbf T_{\comp'}$ injects into $h^{0}\mathbf E^\vee_{\nu_\mathcal M}\simeq h^{0}\mathbf T_{\nu_\mathcal M}$, because every infinitesimal automorphism of the rational tail induces a nontrivial deformation of the stable map (since the degree of the latter is positive on every component of the rational tail); we conclude that $h^{1}\mathbf E_{\nu'_\mathcal M}=0$.
 
-\emph{Claim:} there is a morphism of obstruction theories $\comp^*\mathbb E_{\nu_\mathcal Q}\to\mathbb E_{\nu_\mathcal M}$ \cite[Lemma 4.19]{Manolache-Push}.
+\emph{Claim:} there is a morphism of obstruction theories $\comp^*\mathbf E_{\nu_\mathcal Q}\to\mathbf E_{\nu_\mathcal M}$ \cite[Lemma 4.19]{Manolache-Push}.
 
-Dually, $\mathbb E^\vee_{\nu_\mathcal M}=R^\bullet\pi_{\mathcal{M}*}\mathcal L^{\oplus r+1}=R^\bullet\hat\pi_*(\rho_*\mathcal L^{\oplus r+1})$, while, by cohomology and base-change, $\comp^*\mathbb E^\vee_{\nu_\mathcal Q}=R^\bullet\hat\pi_*(\hat{\mathcal L}^{\oplus r+1})$, where $\hat{\mathcal L}=\rho_*\left(\mathcal L\otimes \bigotimes_{0<\delta\leq d}\mathcal O_{\mathfrak C}(\delta T^\delta)\right)$, so $\mathbb E^\vee_{\nu_\mathcal M}\to\comp^*\mathbb E^\vee_{\nu_\mathcal Q}$ comes from the inclusion of line bundles on $\mathcal C_\mathcal M$
+Dually, $\mathbf E^\vee_{\nu_\mathcal M}=R^\bullet\pi_{\mathcal{M}*}\mathcal L^{\oplus r+1}=R^\bullet\hat\pi_*(\rho_*\mathcal L^{\oplus r+1})$, while, by cohomology and base-change, $\comp^*\mathbf E^\vee_{\nu_\mathcal Q}=R^\bullet\hat\pi_*(\hat{\mathcal L}^{\oplus r+1})$, where $\hat{\mathcal L}=\rho_*\left(\mathcal L\otimes \bigotimes_{0<\delta\leq d}\mathcal O_{\mathfrak C}(\delta T^\delta)\right)$, so $\mathbf E^\vee_{\nu_\mathcal M}\to\comp^*\mathbf E^\vee_{\nu_\mathcal Q}$ comes from the inclusion of line bundles on $\mathcal C_\mathcal M$
 \[
 \mathcal L\hookrightarrow \mathcal L\otimes \bigotimes_{0<\delta\leq d}\mathcal O_{\mathfrak C}(\delta T^\delta).
 \]
 
-\emph{Claim:} this morphism factors through $\mathbb E_{\nu'_\mathcal M}$.
+\emph{Claim:} this morphism factors through $\mathbf E_{\nu'_\mathcal M}$.
 
 \bcd
-& \comp^*\mathbb E_{\nu_\mathcal Q}\ar[dl,dashed,"\exists ?"]\ar[d]\ar[dr,"\phi"] & \\
-\mathbb E_{\nu'_\mathcal M} \ar[r] & \mathbb E_{\nu_\mathcal M}\ar[r] & \nu_\mathcal M^*\mathbb L_{\comp'}[1]
+& \comp^*\mathbf E_{\nu_\mathcal Q}\ar[dl,dashed,"\exists ?"]\ar[d]\ar[dr,"\phi"] & \\
+\mathbf E_{\nu'_\mathcal M} \ar[r] & \mathbf E_{\nu_\mathcal M}\ar[r] & \nu_\mathcal M^*\mathbf L_{\comp'}[1]
 \ecd
 
-In order to prove that the dashed arrow exists, we need to show that $\phi$ is the zero map. Dually, we look at $\nu_\mathcal M^*\mathbb T_{\comp'}[-1]\xrightarrow{\phi^\vee} R^\bullet\hat\pi_*(\hat{\mathcal L}^{\oplus r+1})$. Notation: call $R$ the rational tail, joined at the rest of the curve (which we denote by $(C^{(0)},\mathbf p)$ as a marked curve), at the node $q$, which we may occasionally think of as a (smooth) point on $C^{(0)}$. We claim that:
+In order to prove that the dashed arrow exists, we need to show that $\phi$ is the zero map. 
+
+This follows formally from the following factorisation:
+
+\bcd
+ & & \mathbf L_\comp \ar[ld,"{[1]}" swap] & & \\
+\comp^* \mathbf E_{\nu_\mathcal Q}\ar[dd]\ar[r] & \comp^*\mathbf L_{\nu_\mathcal Q}\ar[rr] &  & \mathbf L_{\nu'_\mathcal M}\ar[ul]\ar[dd] & \\
+ & & & & \nu_{\mathcal M}^*\mathbf L_{\comp '}[1]\ar[ul,"{[1]}" swap] \\
+\mathbf E_{\nu_\mathcal M} \ar[rrr] & & & \mathbf L_{\nu_\mathcal M}\ar[ur] & {}
+\ecd
+
+\begin{comment}
+
+\begin{center}
+
+\begin{tikzcd}[execute at end picture={
+    \begin{scope}[on background layer]
+    \fill[pattern=north east lines, pattern color=gray!20] (a.north west) -- (b.north east) -- (b.south east) -- (a.south west) -- cycle;
+    \fill[pattern=north west lines, pattern color=gray!20] (c.north west) -- (c.north east) -- (d.south east) -- (d.south west) -- cycle;
+    \end{scope}
+  }]
+\comp^* \mathbb E_{\nu_\mathcal Q}\ar[d]\ar[r] & |[alias=a]| \comp^*\mathbb L_{\nu_\mathcal Q}\ar[r] & |[alias=c]|\mathbb L_{\nu'_\mathcal M}\ar[r]\ar[d] & |[alias=b]| \mathbb L_\comp \\
+\mathbb E_{\nu_\mathcal M} \ar[rr] & & \mathbb L_{\nu_\mathcal M}\ar[d] & \\
+ & & |[alias=d]| \nu_{\mathcal M}^*\mathbb L_{\comp '}[1]
+\end{tikzcd}
+
+\end{center} 
+\end{comment}
+
+\begin{comment}
+Dually, we look at $\nu_\mathcal M^*\mathbb T_{\comp'}[-1]\xrightarrow{\phi^\vee} R^\bullet\hat\pi_*(\hat{\mathcal L}^{\oplus r+1})$. Notation: call $R$ the rational tail, joined at the rest of the curve (which we denote by $(C^{(0)},\mathbf p)$ as a marked curve), at the node $q$, which we may occasionally think of as a (smooth) point on $C^{(0)}$. We claim that:
 \begin{itemize}
  \item $h^0(\phi^\vee)$ is zero because: the LHS involves automorphisms of the rational tail that leave $C^{(0)}$ fixed, while the RHS involves deformations of $C^{(0)}$, so there is no possible interference.
  \item $h^1(\phi^\vee)$ is zero because: \textcolor{red}{this is slightly awkward.} There are two types of possible contributions to the LHS. They correspond to either moving the node $q$ along $C^{(0)}$, or smoothing it. The former appears in the relative tangent of $\chi'$ only if the marked curve $(C^{(0)},\mathbf p)$ has no automorphisms that may ``move $q$ back'', i.e. $(C^{(0)},\mathbf p)$ is a stable pointed curve. The latter matters only if $(C^{(0)},q,\mathbf p)$ has no moduli, i.e. $(C^{(0)},\mathbf p)$ is a rational tail with less than 3 markings. \textcolor{red}{I will try to justify why the first type vanishes under $h^1(\phi^\vee)$, and leave the second type because I do not understand it as yet.} Look at the long exact sequence
@@ -112,17 +142,18 @@ show that $h^1(\phi^\vee)$ factors through
 \]
  \item $h^2(\phi^\vee)$ is zero because: $\mathbb E^\vee_{\nu'_\mathcal M}$ is supported in $[0,1]$.
 \end{itemize}
+\end{comment}
 Now the cone $C(\phi)$ gives an obstruction theory relative to $\comp$. A priori, it is supported in $[-2,0]$. By the octahedral axiom
 \begin{center}
  \begin{tikzcd}%[cramped]
-  \comp^*\mathbb E_{\nu_\mathcal{Q}} \ar[dd,"\phi"]\ar[rrdd,"\phi'"] & & & & & & \\
+  \comp^*\mathbf E_{\nu_\mathcal{Q}} \ar[dd,"\phi"]\ar[rrdd,"\phi'"] & & & & & & \\
 & & & & & & \\
-\mathbb E_{\nu'_\mathcal{M}}\ar[dd]\ar[rr] & & \mathbb E_{\nu_\mathcal{M}} \ar[rrrr]\ar[dr] & & & & \nu_{\mathcal M}^*\mathbb L_{\comp'}{[1]} \\
+\mathbf E_{\nu'_\mathcal{M}}\ar[dd]\ar[rr] & & \mathbf E_{\nu_\mathcal{M}} \ar[rrrr]\ar[dr] & & & & \nu_{\mathcal M}^*\mathbf L_{\comp'}{[1]} \\
 & & & C(\phi')\ar[urrr] & & & \\
 C(\phi) \ar[urrr] & & & & & & 
  \end{tikzcd}
 \end{center}
-it is enough to observe that $C(\phi')$ is supported in $[-1,0]$ \cite[Lemma 4.20]{Manolache-Push} and that $\nu_{\mathcal M}^*\mathbb L_{\comp'}{[1]}$ is supported in degrees $[-2,0]$, in order to conclude that $C(\phi)=\mathbb E_{\comp}$ is a perfect obstruction theory. The conclusion that
+it is enough to observe that $C(\phi')$ is supported in $[-1,0]$ \cite[Lemma 4.20]{Manolache-Push} and that $\nu_{\mathcal M}^*\mathbf L_{\comp'}{[1]}$ is supported in degrees $[-2,0]$, in order to conclude that $C(\phi)=\mathbf E_{\comp}$ is a perfect obstruction theory. The conclusion that
 \[
  \comp_*[\M{g}{n}{\PP^r}{d}]^{\text{vir}}=[\Q{g}{n}{\PP^r}{d}]^{\text{vir}}
 \]
@@ -184,4 +215,9 @@ When thinking of $\mathbb F_1$ as a $\PP^1$-bundle over $\PP^1$, $C_1$ and $C_3$
 
 Let us look at $\M{0}{2}{\mathbb F_1}{[C_4]}$. Since $[C_4]=[C_2]+[C_3]$, there are going to be maps of the following sort: the source curve is reducible $R_1\sqcup_q R_2$, $R_1$ is mapped isomorphically to a fiber (i.e. in class $[C_3]$) and $R_2$ is mapped isomorphically to $C_2$, all the markings belong to $R_1$. So $R_2$ is a rational tail and deserves to be contracted. Notice that the line bundle $\mathcal O(D_2)$ has degree $-1$ on $R_2$ (and $1$ on $R_1$). In this case everything works well because the corresponding section $u_{2|R_1}$ must vanish at the node, so we can divide it by a chosen (once for all toric line bundles) section of $\mathcal O_{R_1}(q)$.
 
-Consider now $\M{0}{2}{\mathbb F_1}{2[C_2]+[C_3]}$. Certainly there are going to be maps similar to the ones described above, with $R_2$ now covering $C_2$ $2\colon 1$. The point is that $\mathcal O(D_2)$ has degree $-2$ on $R_2$, but $u_{2|R_1}$ doesn't have to vanish at the node of order $2$, so we are in trouble. \textcolor{blue}{Something is going on here: in this case there is a boundary component where the map is of the type that we have just described, and the requirement that $u_{2|R_1}$ vanishes of order $2$ at the node defines precisely the intersection with the main component. Check this. Could we possibly exploit this phenomenon to define a smaller compactification, possibly even smaller than quasimaps?}
+Consider now $\M{0}{2}{\mathbb F_1}{2[C_2]+[C_3]}$. Certainly there are going to be maps similar to the ones described above, with $R_2$ now covering $C_2$ $2\colon 1$. The point is that $\mathcal O(D_2)$ has degree $-2$ on $R_2$, but $u_{2|R_1}$ doesn't have to vanish at the node of order $2$, so we are in trouble. 
+\begin{comment}
+
+\textcolor{blue}{Something is going on here: in this case there is a boundary component where the map is of the type that we have just described, and the requirement that $u_{2|R_1}$ vanishes of order $2$ at the node defines precisely the intersection with the main component. Check this. Could we possibly exploit this phenomenon to define a smaller compactification, possibly even smaller than quasimaps?} 
+
+\end{comment}

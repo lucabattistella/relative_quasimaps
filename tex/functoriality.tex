@@ -30,7 +30,7 @@ for $\rho \in \Sigma_X(1)$, where $\beta_\rho \in \Pic Y$ and $S^Y_{\beta_\rho}$
 This data is required to satisfy the following two conditions:
 \begin{enumerate}
 \item $\sum_{\rho \in \Sigma_X(1)} \beta_\rho \otimes n_\rho = 0$ in $\Pic Y \otimes N_X$.
-\item $(P_\rho(z_\tau)) \notin Z(\Sigma_X) \subseteq \Aaff_k^{\Sigma_X(1)}$ whenever $(z_\tau) \notin Z(\Sigma_Y) \subseteq \Aaff_k^{\Sigma_Y(1)}$.
+\item $(P_\rho(z_\tau)) \notin Z(\Sigma_X) \subseteq \Aaff^{\Sigma_X(1)}$ whenever $(z_\tau) \notin Z(\Sigma_Y) \subseteq \Aaff^{\Sigma_Y(1)}$.
 \end{enumerate}
 Furthermore, two such sets of data $(P_\rho)$ and $(P^\prime_\rho)$ correspond to the same morphism if and only if there exists a $\lambda \in \Hom_\Z(\Pic X, \Gm)$ such that
 \begin{equation*} \lambda(D_\rho) \cdot P_\rho = P^\prime_\rho \end{equation*}
@@ -49,7 +49,7 @@ Consider therefore a quasimap $((C,x_1,\ldots,x_n), (L_\tau, u_\tau)_{\tau \in \
 The idea of the construction is as follows. Assume for a moment that $C\simeq\PP^1$ and that the quasimap is without basepoints, so that we have an actual morphism $C \to Y$. Then, by the theorem of Cox that we have just recalled, we can lift this morphism to the prequotient as in the following diagram
 
 \bcd
-\Aaff_k^{2} \setminus \{0\} \ar[r, "(u_\tau)"] \ar[d] & \Aaff_k^{|\Sigma_Y(1)|} \setminus Z(\Sigma_Y) \ar[r, "(P_\rho)"] \ar[d] & \Aaff_k^{|\Sigma_X(1)|} \setminus Z(\Sigma_X) \ar[d] \\
+\Aaff^{2} \setminus \{0\} \ar[r, "(u_\tau)"] \ar[d] & \Aaff^{|\Sigma_Y(1)|} \setminus Z(\Sigma_Y) \ar[r, "(P_\rho)"] \ar[d] & \Aaff^{|\Sigma_X(1)|} \setminus Z(\Sigma_X) \ar[d] \\
 C \ar[r] & Y \ar[r] & X
 \ecd
 from which it follows that the composition $C \to Y \to X$ is given in homogeneous coordinates by:
@@ -164,7 +164,7 @@ which does not modify the underlying prestable curves.\end{thm}
 \begin{remark}
  Theorem \ref{CoxTheorem} tells us that we can lift any morphism between toric varieties to an equivariant morphism between the prequotients
 \bcd
- \Aaff_k^{\Sigma_Y(1)} \setminus Z(\Sigma_Y) \ar[r, "\tilde{f}"] \ar[d, "q_Y"] & \Aaff_k^{\Sigma_X(1)} \setminus Z(\Sigma_X) \ar[d,"q_X"] \\
+ \Aaff^{\Sigma_Y(1)} \setminus Z(\Sigma_Y) \ar[r, "\tilde{f}"] \ar[d, "q_Y"] & \Aaff^{\Sigma_X(1)} \setminus Z(\Sigma_X) \ar[d,"q_X"] \\
  Y \ar[r, "f"] & X
 \ecd
  where the torus homomorphism $G_Y=\Hom_{\mathbb Z}(\Pic(Y),\mathbb C^*)\to G_X=\Hom_{\mathbb Z}(\Pic(Y),\mathbb C^*)$ is induced in the obvious way by $f\colon Y\to X$. Now, thinking of quasimaps as maps to the quotient stack, functoriality is again clear by postcomposition with $\tilde{f}$ (notice that the preimage of the unstable locus of $X$ is the unstable locus of $Y$).
