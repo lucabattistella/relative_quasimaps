@@ -22,7 +22,7 @@
 \contentsline {subsection}{\tocsubsection {}{5.4}{Comparison with the work of Ciocan-Fontanine and Kim}}{30}
 \contentsline {section}{\tocsection {Appendix}{A}{The comparison morphism}}{32}
 \contentsline {section}{\tocsection {Appendix}{B}{Notes on quasimaps}}{39}
-\contentsline {subsection}{\tocsubsection {}{B.1}{Functoriality}}{39}
+\contentsline {subsection}{\tocsubsection {}{B.1}{Functoriality}}{40}
 \contentsline {subsection}{\tocsubsection {}{B.2}{Relative obstruction theories for $\overline {\mathcal {Q}}(Y)\rightarrow \overline {\mathcal {Q}}(X)$}}{46}
 \contentsline {subsection}{\tocsubsection {}{B.3}{Splitting axiom}}{49}
 \contentsline {subsection}{\tocsubsection {}{B.4}{Comparison with the GIT construction}}{52}

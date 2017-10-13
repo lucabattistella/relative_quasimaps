@@ -88,13 +88,13 @@ where we view $\ev_1$ as mapping to $X$. This coincides with the absolute $S_0^X
  T_{0,(m)}^{X|Y}(z,\beta)=(\ev_1)_*\left(m \virt{\Q{0}{(m,0)}{X|Y}{\beta}}+\frac{1}{z-\psi_1} \virt{\mathcal{D}^{\mathcal{Q}}_{(m,0),1}(X|Y,\beta)} \right)
 \]
 where again we view $\ev_1$ as mapping to $X$. As in \cite[Lemma 1.2]{Ga-MF}, it follows from Theorem \ref{Theorem general recursion} that
-\begin{equation}\label{eqn:G}
+\begin{equation}
  (Y+mz) S_{0,(m)}^{X|Y}(z,\beta) = S_{0,(m+1)}^{X|Y}(z,\beta)+ T_{0,(m)}^{X|Y}(z,\beta)
 \end{equation}
 and we can apply this repeatedly to obtain:
-\[
- \prod_{j=0}^{Y\cdot\beta}(Y+jz) S_0^X(z,\beta) = \sum_{m=0}^{Y\cdot\beta}\prod_{j=m+1}^{Y\cdot\beta}(Y+jz)T_{0,(m)}^{X|Y}(z,\beta)
-\]
+\begin{equation} \label{eqn:G}
+\prod_{j=0}^{Y\cdot\beta}(Y+jz) S_0^X(z,\beta) = \sum_{m=0}^{Y\cdot\beta}\prod_{j=m+1}^{Y\cdot\beta}(Y+jz)T_{0,(m)}^{X|Y}(z,\beta)
+\end{equation}
 We now examine the right-hand side in detail. By definition, $T_{0,(m)}^{X|Y}(z,\beta)$ splits into two parts: those terms coming from the relative space and those terms coming from the comb loci.
 
 Let us first consider the contribution of the comb loci. Since there are only two marked points and the first is required to lie on the internal component of the comb, it follows from the strong stability condition that there are only two options: a comb with $0$ teeth or a comb with $1$ tooth.
@@ -109,7 +109,7 @@ Next consider the case of a comb with $1$ tooth. Let $\beta^{(0)}$ and $\beta^{(
 \input{fig/snake}
 \end{center}
 and the invariants which contribute take the form
-\begin{equation*} \bigg\langle \dfrac{i^*\eta_i}{z-\psi_1},\rho^h\bigg\rangle_{0,2,\beta^{(0)}}^Y \bigg\langle \rho_h, \mathbbm 1_{X}\bigg\rangle_{0,(m^{(1)},0),\beta^{(1)}}^{X|Y} \end{equation*}
+\begin{equation*} \bigg\langle \dfrac{\rho_i}{z-\psi_1},\rho^h\bigg\rangle_{0,2,\beta^{(0)}}^Y \bigg\langle \rho_h, \mathbbm 1_{X}\bigg\rangle_{0,(m^{(1)},0),\beta^{(1)}}^{X|Y} \end{equation*}
 for $i = 1, \ldots, k$ and $h = 1, \ldots, l$. By computing dimensions, we find
 \begin{align*}
 0\leq \codim \rho^h &= \dim Y-\codim \rho_h \\
@@ -121,41 +121,37 @@ for $i = 1, \ldots, k$ and $h = 1, \ldots, l$. By computing dimensions, we find
 where the final equality follows from adjunction and the final inequality holds because $-K_Y$ is nef and $m^{(1)}\leq Y \cdot \beta_1$. This shows that the only non-trivial contributions come from curve classes $\beta^{(1)}$ such that $K_Y \cdot \beta^{(1)}=0$, and that in this case the order of tangency must be maximal, i.e. $m^{(1)}=Y \cdot \beta^{(1)}$. Furthermore we must have $\codim \rho^h = 0$ and so $\rho^h = \rho^1 = \mathbbm{1}_Y$ which implies $\rho_h = \rho_1 = \pt_Y$. Finally since $m^{(1)}=Y \cdot \beta^{(1)}$ we have
 \begin{equation*} m = Y \cdot \beta^{(0)}+m^{(1)}=Y \cdot (\beta^{(0)} + \beta^{(1)}) = Y \cdot \beta \end{equation*}
 and so again this piece only contrbutes to $T_{0,(Y\cdot\beta)}^{X|Y}(z,\beta)$, and the contribution is:
-\begin{equation*} \sum_{i = 1}^{k} \bigg\langle \dfrac{i^*\eta_i}{z-\psi_1}, \mathbbm{1}_Y \bigg\rangle_{0,2,\beta^{(0)}}^Y \bigg\langle \pt_Y, \mathbbm{1}_X \bigg\rangle_{0,(Y \cdot \beta^{(1)},0),\beta^{(1)}}^{X|Y}\eta^i\end{equation*}
-Finally, we must examine the terms of $T_{0,(m)}^{X|Y}(z,\beta)$ coming from:
+\begin{equation*} \sum_{i=1}^k \left( \sum_{\substack{0 < \beta^{(1)} < \beta \\ K_Y \cdot \beta^{(1)}=0}} (Y \cdot \beta^{(1)}) \bigg\langle \dfrac{\rho_i}{z-\psi_1}, \mathbbm{1}_Y \bigg\rangle_{0,2,\beta-\beta^{(1)}}^Y \bigg\langle \pt_Y, \mathbbm{1}_X \bigg\rangle_{0,(Y \cdot \beta^{(1)},0),\beta^{(1)}}^{X|Y} \right) \eta^i \end{equation*}
+where the $Y \cdot \beta^{(1)}$ factor comes from the weighting on the virtual class of the comb locus. Finally, we must examine the terms of $T_{0,(m)}^{X|Y}(z,\beta)$ coming from:
 \begin{equation*}\ev_{1*}(m\virt{\Q{0}{(m,0)}{X|Y}{\beta}})\end{equation*} 
-Notice that we only have insertions from $i^*\HH^*(X) \subseteq \HH^*(Y)$ since $\ev_1$ is viewed as mapping to $X$. On the other hand
+Notice that we only have insertions from $i^*\HH^*(X) \subseteq \HH^*(Y)$, since $\ev_1$ is viewed as mapping to $X$. On the other hand
 \begin{align*} \vdim \Q{0}{(m,0)}{X|Y}{\beta} & = \dim X-3 -K_X \cdot \beta +2-m & \\
 & = \dim X - 1 -K_Y \cdot \beta + Y \cdot \beta - m \ \ & \text{by adjunction} \\
 & \geq \dim X - 1 + Y\cdot\beta - m \ \ & \text{since $-K_Y$ is nef} \\
 & \geq \dim X - 1 \ \ & \text{since $m \leq Y \cdot \beta$} \end{align*}
 where in the second line we have applied the projection formula to $i$, and thus have implicity used Assumption (2), discussed in \S \ref{Subsection setup}; namely that every curve class on $X$ comes from a class on $Y$.
 
-Consequently the only insertions that can appear are those of dimension $0$ and $1$. However, the restriction of the $0$-dimensional class $\eta_0 = \pt_X$ to $Y$ vanishes, as do the restrictions of all $1$-dimensional classes except for $\eta_1$ (by the definition of the dual basis, since $\eta^1 = Y$). Thus the only insertion is $i^*\eta_1$, and since this has dimension $1$ all the inequalities above must actually be equalities. This means that $-K_Y \cdot \beta = 0$ and $m = Y \cdot \beta$.
+Consequently the only insertions that can appear are those of dimension $0$ and $1$. However, the restriction of the $0$-dimensional class $\eta_0 = \pt_X$ to $Y$ vanishes, as do the restrictions of all $1$-dimensional classes except for $\eta_1$ (by the definition of the dual basis, since $\eta^1 = Y$). Thus the only insertion is $i^*\eta_1=\rho_1=\pt_Y$, and since $\eta^1$ has dimension $1$ all the inequalities above must actually be equalities. Thus we only have a contribution if $-K_Y \cdot \beta = 0$ and $m = Y \cdot \beta$. The contribution to $T_{0,(Y\cdot\beta)}^{X|Y}(z,\beta)$ in this case is:
+\begin{equation*} (Y \cdot \beta) \langle \pt_Y , \mathbbm{1}_Y \rangle_{0,(Y \cdot \beta,0),\beta}^{X|Y} \eta^1 \end{equation*}
 
-Once again, we see that there is only a contribution to $T_{0,(Y\cdot\beta)}^{X|Y}(z,\beta)$; this contribtion is:
-\begin{equation*} m \left\langle \dfrac{i^* \eta_1}{z-\psi_1} , \mathbbm{1}_Y \right\rangle_{0,(Y \cdot \beta,0),\beta}^{X|Y} \eta^1 \end{equation*}
-
-We have thus calculated $T_{0,(m)}^{X|Y}(z,\beta)$ for all $m$. We can thus write equation \eqref{eqn:G} as [UNDER CONSTRUCTION]
-
-
-
-
-\begin{comment}
-\begin{align*}
-\prod_{j=0}^{Y\cdot\beta}(Y+jz) S_0^X(z,\beta) = T_{(Y\cdot\beta)}^{X|Y}(z,\beta) & = \sum_{i=1,\ldots,k;j\geq 0}z^{j+1}\eta^i\langle \rho_i\psi_1^j,\mathbbm 1_{Y}\rangle_{\Q{0}{2}{Y}{\beta}} \\
- &+\sum_{\substack{0<\beta^{(0)}<\beta \\ \beta^{(0)}+\beta^{(1)}=\beta}}z^{j+1}\eta^i\langle \rho_i\psi_1^j,\mathbbm 1_{Y}\rangle_{\Q{0}{2}{Y}{\beta^{(0)}}}(Y\cdot\beta^{(1)})\langle [pt_Y],\mathbbm 1_{X}\rangle_{\Q{0}{(Y\cdot\beta^{(1)},0)}{X|Y}{\beta^{(1)}}}\\
- &+\eta^1(Y\cdot\beta)\langle [pt_Y],\mathbbm 1_{X}\rangle_{\Q{0}{(Y\cdot\beta,0)}{X|Y}{\beta}}
+Thus, we calculated $T_{0,(m)}^{X|Y}(z,\beta)$ for all $m$; substituting into equation \eqref{eqn:G} we obtain
+\begin{align*} \prod_{j=0}^{Y \cdot \beta} (Y + jz) & S_0^X(z,\beta) = T_{0,(Y\cdot\beta)}^{X|Y}(z,\beta) \\
+= \ & \sum_{i=1}^k \left\langle \dfrac{\rho_i}{z-\psi_1}, \mathbbm{1}_Y \right\rangle_{0,2,\beta}^Y \eta^i + \\
+& \sum_{i=1}^k \left( \sum_{\substack{0 < \beta^{(1)} < \beta \\ K_Y \cdot \beta^{(1)}=0}} (Y \cdot \beta^{(1)}) \bigg\langle \dfrac{\rho_i}{z-\psi_1}, \mathbbm{1}_Y \bigg\rangle_{0,2,\beta-\beta^{(1)}}^Y \bigg\langle \pt_Y, \mathbbm{1}_X \bigg\rangle_{0,(Y \cdot \beta^{(1)},0),\beta^{(1)}}^{X|Y} \right) \eta^i + \\
+& (Y \cdot \beta) \langle \pt_Y , \mathbbm{1}_Y \rangle_{0,(Y \cdot \beta,0),\beta}^{X|Y} \eta^1
 \end{align*}
-\end{comment}
-if $\beta$ is such that $K_Y\cdot\beta=0$ (which implies $K_Y\cdot\beta^{(1)}=0$ as well, for every effective decomposition $\beta=\beta^{(0)}+\beta^{(1)}$, due to the semi-positivity assumption on $Y$); while, if $K_Y\cdot\beta<0$, it simply reduces to
-\[
- \prod_{j=0}^{Y\cdot\beta}(Y+jz) S_0^X(z,\beta)= \sum_{i=1,\ldots,k;j\geq 0}z^{j+1}\eta^i\langle \rho_i\psi_1^j,\mathbbm 1_{Y}\rangle_{\Q{0}{2}{Y}{\beta}} = i_*S_0^Y(z,\beta).
-\]
+where the third term only appears if $K_Y \cdot \beta=0$. In particular when $Y$ is Fano only the first term occurs, and we have
+\begin{equation*}
+ \prod_{j=0}^{Y\cdot\beta}(Y+jz) S_0^X(z,\beta)= \sum_{i=1}^k \left\langle\dfrac{\rho_i}{z-\psi_1}, \mathbbm 1_{Y} \right\rangle_{0,2,\beta}^Y \eta^i = i_*S_0^Y(z,\beta)
+\end{equation*}
+in which case it is clear that Theorem \ref{Theorem Quantum Lefschetz} holds with $P_0^X(q)=1$.
 
+More generally it is clear from the expression above that equation \eqref{eqn:mirror} in the statement of Theorem \ref{Theorem Quantum Lefschetz} holds with:
+\begin{equation*} P_0^X(q) = 1 + \sum_{\substack{\beta>0 \\ K_Y\cdot\beta=0}} q^\beta (Y\cdot\beta) \langle \pt_Y,\mathbbm 1_{X}\rangle_{0,(Y\cdot\beta,0),\beta}^{X|Y} \end{equation*}
+To prove the theorem it thus remains to show that:
+\begin{equation*} P_0^X(q) = 1 + \sum_{\substack{\beta>0 \\ K_Y\cdot\beta=0}} q^\beta(Y\cdot\beta)!\langle\psi_1^{Y\cdot\beta-1} \pt_X,\mathbbm 1_{X}\rangle_{0,2,\beta}^X \end{equation*}
 
-The proof of the first claim is now evident. We are left with evaluating $P(q)$.
-
+[GOT TO HERE: NAVID]
 In order to do that, we use again Gathmann's algorithm, this time in the opposite direction, to go all the way back to $X$; so it starts:
 \[
  [\Q{0}{(Y \cdot \beta,0)}{X|Y}{\beta}]^\text{vir}=(Y+(Y\cdot\beta-1)\psi_1)[\Q{0}{(Y\cdot\beta-1,0)}{X|Y}{\beta}]^\text{vir}-[D_{Y\cdot\beta}^{\mathcal Q}(X|Y,\beta)]^\text{vir}
