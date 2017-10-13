@@ -21,12 +21,12 @@ The idea is to prove the recursion formula for $(X,Y)$ by pulling back the formu
 It thus remains to consider the third term, namely the virtual class of the comb locus. This is the technical heart of the proof.
 
 \subsection{Comb loci pull back} \label{Subsection comb loci pull back} Recall that we can write $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ as a union of comb loci
-\begin{equation*} \mathcal D^{\mathcal{Q}}(X|Y,A,B,M) := \Q{0}{A_0 \cup \{q_1, \ldots, q_r\}}{Y}{\beta_0} \times_{Y^r} \prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta_i} \end{equation*}
+\begin{equation*} \mathcal D^{\mathcal{Q}}(X|Y,A,B,M) := \Q{0}{A^{(0)} \cup \{q_1, \ldots, q_r\}}{Y}{\beta^{(0)}} \times_{Y^r} \prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta^{(i)}} \end{equation*}
 where $A$ and $B$ are partitions of the marked points and curve class respectively, and $M=(m_1,\ldots,m_r)$ records the intersection multiplicity with $Y$ at the nodes connecting the internal component to the external components (the spine of the comb to the teeth). Since the virtual class on $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ is equal to the sum of the virtual classes of the $\mathcal D^{\mathcal{Q}}(X|Y,A,B,M)$, we can deal with each of these comb loci separately.
 
 
 \begin{remark} \label{GIT comparison remark} Note that $Y$ is not in general toric, and so we should clarify what we mean by:
-\begin{equation*} \om{Q}(Y) = \Q{0}{A_0 \cup \{ q_1, \ldots, q_n \}}{Y}{\beta_0} \end{equation*}
+\begin{equation*} \om{Q}(Y) = \Q{0}{A^{(0)} \cup \{ q_1, \ldots, q_n \}}{Y}{\beta^{(0)}} \end{equation*}
 There are two possibilities here: one is to \emph{define} this space as the cartesian product
 \bcd
 \om{Q}(Y) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \om{Q}(H) \ar[d] \\
@@ -36,20 +36,20 @@ and equip it with the virtual class pulled back along $k$:
 \begin{equation*} \virt{\om{Q}(Y)} := k^! [ \om{Q}(H) ] \end{equation*}
 Using this definition, $\om{Q}(Y)$ consists of those quasimaps in $\om{Q}(X)$ for which $u_Y \equiv 0$.
 
-This has obvious advantages from the point of view of our computations, but is conceptually unsatisfying. On the other hand, $Y \subseteq X$ defines a $(\CC^*)^r$-invariant subvariety in the prequotient of $X$, which we refer to (by analogy with the case $X=\PP^N$) as the \ilemph{cone of Y}:
+This has obvious advantages from the point of view of our computations, but is conceptually unsatisfying. On the other hand, $Y \subseteq X$ defines a $\Gm^r$-invariant subvariety in the prequotient of $X$, which we refer to (by analogy with the case $X=\PP^N$) as the \ilemph{cone of Y}:
 \begin{equation*} C(Y) \subseteq \Aaff^{\Sigma_X(1)} \end{equation*}
 Then $Y$ is equal to the GIT quotient
-\begin{equation*} Y = C(Y) \sslash (\CC^*)^r \end{equation*}
+\begin{equation*} Y = C(Y) \sslash \Gm^r \end{equation*}
 and so we may use the more general theory of quasimaps to GIT quotients \cite{CFKM} to define $\om{Q}(Y)$ and its virtual class.
 
 We should then show that these two definitions of $\om{Q}(Y)$ agree (i.e. that there exists an isomorphism between these moduli spaces which preserves the virtual class). This is carried out in Appendix \ref{Section comparison with GIT construction}.
 \end{remark}
 
 Now, the comb locus sits inside the full product
-\begin{equation*} \mathcal E^{\mathcal{Q}}(X|Y,A,B,M) := \Q{0}{A_0 \cup \{q_1, \ldots, q_r\}}{Y}{\beta_0} \times \prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta_i} \end{equation*}
+\begin{equation*} \mathcal E^{\mathcal{Q}}(X|Y,A,B,M) := \Q{0}{A^{(0)} \cup \{q_1, \ldots, q_r\}}{Y}{\beta^{(0)}} \times \prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta^{(i)}} \end{equation*}
 which we may endow with the product virtual class (with weighting as before):
 \begin{align*} \virt{\mathcal E^{\mathcal{Q}}(X|Y, & A,B,M)} := \\
-& \left( \dfrac{m^{(1)} \cdots m^{(r)}}{r!}\right) \cdot \left( \virt{\Q{0}{A_0 \cup \{q_1, \ldots, q_r\}}{Y}{\beta_0}} \times \prod_{i=1}^r \virt{\Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta_i}} \right) \end{align*}
+& \left( \dfrac{m^{(1)} \cdots m^{(r)}}{r!}\right) \cdot \left( \virt{\Q{0}{A^{(0)} \cup \{q_1, \ldots, q_r\}}{Y}{\beta^{(0)}}} \times \prod_{i=1}^r \virt{\Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta^{(i)}}} \right) \end{align*}
 We have the following cartesian diagram
 \bcd
 \mathcal D^{\mathcal{Q}}(X|Y,A,B,M)\ar[r]\ar[d]\ar[dr,phantom,"\Box"] & \mathcal E^{\mathcal{Q}}(X|Y,A,B,M)\ar[d] \\
@@ -101,8 +101,8 @@ Now consider the following cartesian diagram
 \om{Q}(X)\ar[r,"k"] & \om{Q}(\PP^N)\ar[r] & \MM_{0,n,\beta}^{\operatorname{wt}}
 \ecd
 where $\MM_{0,n,\beta}^{\operatorname{wt}}$ is the moduli space of prestable curves weighted by the class $\beta$ \cite[\S 2]{Costello} and:
-\begin{equation*} \MM_{A,B}^{\operatorname{wt}} := \MM_{0,A_0 \cup \{ q_1, \ldots, q_r \}, \beta_0}^{\operatorname{wt}} \times \prod_{i=1}^r \MM_{0,A_i \cup \{ q_i \},\beta_i}^{\operatorname{wt}} \end{equation*}
-The maps $\mathcal{D}(X) \to \MM_{A,B}^{\operatorname{wt}}$ and $\om{Q}(X) \to \MM_{0,n,\beta}^{\operatorname{wt}}$ admit relative perfect obstruction theories which are the same as the usual ones relative to the moduli spaces of \emph{unweighted} cureves. Furthermore the morphism $\psi$ admits a perfect obstruction theory; see Appendix \ref{Subsection splitting} for details. This induces virtual pull-back morphisms, and by the splitting axiom (see Lemma \ref{Lemma product class equals pullback class}) we have
+\begin{equation*} \MM_{A,B}^{\operatorname{wt}} := \MM_{0,A^{(0)} \cup \{ q_1^0, \ldots, q_r^0 \}, \beta^{(0)}}^{\operatorname{wt}} \times \prod_{i=1}^r \MM_{0,A^{(i)} \cup \{ q_i^1 \},\beta^{(i)}}^{\operatorname{wt}} \end{equation*}
+The maps $\mathcal{D}(X) \to \MM_{A,B}^{\operatorname{wt}}$ and $\om{Q}(X) \to \MM_{0,n,\beta}^{\operatorname{wt}}$ admit relative perfect obstruction theories which are the same as the usual ones relative to the moduli spaces of \emph{unweighted} curves. Furthermore the morphism $\psi$ admits a perfect obstruction theory; see Appendix \ref{Subsection splitting} for details. This induces virtual pull-back morphisms, and by the splitting axiom (see Lemma \ref{Lemma product class equals pullback class}) we have
 \begin{equation*} \virt{\mathcal{D}(X)} := \Delta_{X^r}^! \virt{\mathcal{E}(X)} = \psi^! \virt{\om{Q}(X)} \end{equation*}
 from which it follows by commutativity of virtual pull-backs that:
 \begin{equation} \virt{\mathcal{D}(X)} = \label{psishriek formula} \psi^!\virt{\om{Q}(X)}= \psi^! k^! [ \om{Q}(\PP^N)] = k^!\psi^![\om{Q}(\PP^N)] = k^! [ \mathcal{D}(\PP^N) ]\end{equation}

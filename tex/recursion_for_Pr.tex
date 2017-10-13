@@ -116,8 +116,8 @@ where $\sst$ is the strong stabilisation map which contracts the rational tails.
 \begin{prop} \label{Recursion formula for PN}
 Define the \ilemph{quasimap comb locus} $\mathcal{D}^\mathcal{Q}_{\alpha,k}(\PP^N|H,d)$ as the union of the moduli spaces
 \begin{equation*}
-\mathcal{D}^{\mathcal{Q}}(\PP^N|H,A,B,M) := \Q{0}{|\alpha^{(0)}| + r}{H}{d_0}\times_{H^r}\prod_{i=1}^r \Q{0}{(m^{(i)})\cup\alpha^{(i)}}{\PP^N|H}{d_i} \end{equation*}
-where the union runs over all splittings $A = (\alpha^{(0)}, \ldots, \alpha^{(r)})$ of the markings, $B = (d_0, \ldots, d_r)$ of the degree and all valid multiplicites $M = (m^{(1)}, \ldots, m^{(r)})$ such that the above spaces are all well-defined (in particular we require that $|\alpha^{(0)}|+r$ and $|\alpha^{(i)}|+1$ are all $\geq 2$) and such that
+\mathcal{D}^{\mathcal{Q}}(\PP^N|H,A,B,M) := \Q{0}{A^{(0)} \cup \{q_1,\ldots,q_r\}}{H}{d_0}\times_{H^r}\prod_{i=1}^r \Q{0}{(m^{(i)})\cup\alpha^{(i)}}{\PP^N|H}{d_i} \end{equation*}
+where the union runs over all splittings $A =(A^{(0)},\ldots,A^{(r)})$ of the markings (inducing a splitting $(\alpha^{(0)}, \ldots, \alpha^{(r)})$ of the corresponding tangency conditions), $B = (d_0, \ldots, d_r)$ of the degree and all valid multiplicites $M = (m^{(1)}, \ldots, m^{(r)})$ such that the above spaces are all well-defined (in particular we require that $|A^{(0)}|+r$ and $|A^{(i)}|+1$ are all $\geq 2$) and such that
 \[
 d_0+\sum_{i=1}^r m^{(i)}=\sum \alpha^{(0)}
 \]
@@ -137,13 +137,13 @@ This follows from \cite[Thm. 2.6]{Ga} by pushing forward along $\chi$, using the
 \mathcal{D}^{\mathcal{M}}(\PP^N|H,A,B,M) \ar[r] \ar[d] & \M{0}{\alpha}{\PP^N|H}{d} \ar[d] \\
 \mathcal{D}^{\mathcal{Q}}(\PP^N|H,A,B,M) \ar[r] & \Q{0}{\alpha}{\PP^N|H}{d}
 \ecd
-The vertical arrow on the left is a product of comparison morphisms. The horizontal arrow at the top is the glueing morphism which glues together the various pieces of the comb to produce a single relative stable map. Here we explain how to define the corresponding glueing morphism for quasimaps, that is, the bottom horizontal arrow.
+The vertical arrow on the left is a product of comparison morphisms (notice that $H\simeq\PP^{r-1}$). The horizontal arrow at the top is the glueing morphism which glues together the various pieces of the comb to produce a single relative stable map. Here we explain how to define the corresponding glueing morphism for quasimaps, that is, the bottom horizontal arrow.
 
 Suppose for simplicity that $r=1$ and consider an element of the quasimap comb locus, consisting of two quasimaps:
 \begin{align*} & \big((C^0,x^0_1,\ldots,x^0_{n_0},q^0),L^0,u^0_0, \ldots, u^0_N\big) \\
 &\big((C^1,x^1_1,\ldots,x^1_{n_1},q^1),L^1,u^1_0, \ldots, u^1_N\big) \end{align*}
 such that $u^0(q^0) = u^1(q^1)$ in $\PP^N$. We want to glue these quasimaps together at $q^0$,~$q^1$. The definition of the curve is obvious; we simply take:
 \begin{equation*} C = C^0 \,_{q^0}\!\sqcup_{q^1} C^1 \end{equation*}
-On the other hand, glueing together the line bundles $L^0$ and $L^1$ to obtain a line bundle $L$ over $C$ requires a choice of scalar $\lambda \in \Gm$, in order to match up the fibres over $q^i$. Furthermore if the sections are to extend as well then this scalar must be chosen in such a way that it takes $(u^0_0(q^0), \ldots, u^0_N(q^0)) \in (L^0_{q^0})^{\oplus (N+1)}$ to $(u^1_0(q^1), \ldots, u^1_N(q^1)) \in (L^1_{q^1})^{\oplus (N+1)}$. Since neither $q^0$ nor $q^1$ are basepoints (because they are markings), these tuples are nonzero, and so $\lambda$ is unique if it exists. Furthermore it exists if and only if these tuples belong to the same $\Gm$-orbit in $\Aaff_{\CC}^{N+1}$. This is precisely the statement that $u^0(q^0) = u^1(q^1) \in \PP^N$. 
+On the other hand, glueing together the line bundles $L^0$ and $L^1$ to obtain a line bundle $L$ over $C$ requires a choice of scalar $\lambda \in \Gm$, in order to match up the fibres over $q^i$. Furthermore if the sections are to extend as well then this scalar must be chosen in such a way that it takes $(u^0_0(q^0), \ldots, u^0_N(q^0)) \in (L^0_{q^0})^{\oplus (N+1)}$ to $(u^1_0(q^1), \ldots, u^1_N(q^1)) \in (L^1_{q^1})^{\oplus (N+1)}$. Since neither $q^0$ nor $q^1$ are basepoints (because they are markings), these tuples are nonzero, and so $\lambda$ is unique if it exists. Furthermore it exists if and only if these tuples belong to the same $\Gm$-orbit in $\Aaff^{N+1}$. This is precisely the statement that $u^0(q^0) = u^1(q^1) \in \PP^N$. 
 
 Similar arguments apply for $r>1$, and for more general toric varieties. \end{remark}

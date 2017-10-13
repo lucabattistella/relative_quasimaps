@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.10.6)  12 OCT 2017 18:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.10.6)  13 OCT 2017 16:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1428,16 +1428,8 @@ Overfull \hbox (33.20512pt too wide) in paragraph at lines 93--93
 [] 
  []
 
-[16]
-Overfull \hbox (1.59781pt too wide) in paragraph at lines 119--121
-\OML/npxmi/m/it/10.95 B \U/npxmia/m/it/10.95 5 }\OML/npxmi/m/it/10.95 d[]; [] ;
- d[]\U/npxmia/m/it/10.95 ~$ \T1/zpltlf/m/n/10.95 of the de-gree and all valid m
-ul-ti-plicites $\OML/npxmi/m/it/10.95 M \U/npxmia/m/it/10.95 5 }\OML/npxmi/m/it
-/10.95 m[]; [] ; m[]\U/npxmia/m/it/10.95 ~$
- []
-
-[17]) (./tex/recursion_general.tex [18] [19]
-Overfull \hbox (30.93896pt too wide) in paragraph at lines 52--52
+[16] [17]) (./tex/recursion_general.tex [18] [19]
+Overfull \hbox (49.23773pt too wide) in paragraph at lines 52--52
 [] 
  []
 
@@ -1569,7 +1561,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  31626 strings out of 493091
  618773 string characters out of 6134970
- 668226 words of memory out of 5000000
+ 668232 words of memory out of 5000000
  34235 multiletter control sequences out of 15000+600000
  117781 words of font info for 251 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
@@ -1596,7 +1588,7 @@ pe1/public/newpx/zplb.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publi
 c/newpx/zplr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/newpx/z
 plri.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/newpx/zplx-regu
 lar.pfb>
-Output written on relative_quasimaps.pdf (57 pages, 388582 bytes).
+Output written on relative_quasimaps.pdf (57 pages, 388840 bytes).
 PDF statistics:
  275 PDF objects out of 1000 (max. 8388607)
  197 compressed objects within 2 object streams
