@@ -6,7 +6,7 @@ In this section we carry out a similar computation in the quasimap setting, usin
 
 Our formula can be viewed as a special case of \cite[Corollary 5.5.1]{CF-K-wallcrossing}, and so can be interpreted as a relation between certain residues of the $\CC^*$-action on spaces of $0$-pointed and $1$-pointed parametrised quasimaps to $Y$. Some of the consequences of this formula are explored in \cite[Section 5.5]{CF-K-wallcrossing}; for instance, it follows in the semipositive case that all primary $\epsilon$-quasimap invariants with a fundamental class insertion can be expressed in terms of $2$-pointed invariants.
 
-\subsection{Setup}
+\subsection{Setup} \label{Subsection setup}
 As before, we let $X=X_{\Sigma}$ be a smooth projective toric variety and $i \colon Y \hookrightarrow X$ a smooth very ample hypersurface. We also make the following two assumptions:
 \begin{enumerate}
 \item \emph{$Y$ semi-positive}: $-K_Y$ is nef;
@@ -64,22 +64,22 @@ Thus applying $i_*$ gives
 as claimed. \end{proof}
 
 
-\subsection{Quantum Lefschetz formula} We now turn to our main result: a formula expressing the generating function $\tilde{S}_0^Y(z,q)$ for the (restricted) quasimap invariants of $Y$ in terms of the quasimap invariants of $X$.
+\subsection{Quantum Lefschetz formula} We now turn to our main result: a formula expressing the generating function $\tilde{S}_0^Y(z,q)$ for (restricted) quasimap invariants of $Y$ in terms of the quasimap invariants of $X$.
 
 \begin{thm} \label{Theorem Quantum Lefschetz}
 Let $X$ and $Y$ be as above. Then
 \begin{equation}\label{eqn:mirror}
-\dfrac{\sum_{\beta\geq 0} q^\beta\prod_{j=0}^{Y\cdot\beta}(Y+jz)S_0^X(z,\beta)}{P_0(q)}= \tilde{S}_0^Y(z,q)
+\dfrac{\sum_{\beta\geq 0} q^\beta\prod_{j=0}^{Y\cdot\beta}(Y+jz)S_0^X(z,\beta)}{P_0^X(q)}= \tilde{S}_0^Y(z,q)
 \end{equation}
 where
 \begin{align*}
- P_0(q) & = 1 + \sum_{\substack{\beta>0 \\ K_Y\cdot\beta=0}} q^\beta (Y\cdot\beta) \langle \pt_Y,\mathbbm 1_{X}\rangle_{0,(Y\cdot\beta,0),\beta}^{X|Y} \\
+ P_0^X(q) & = 1 + \sum_{\substack{\beta>0 \\ K_Y\cdot\beta=0}} q^\beta (Y\cdot\beta) \langle \pt_Y,\mathbbm 1_{X}\rangle_{0,(Y\cdot\beta,0),\beta}^{X|Y} \\
 & = 1 + \sum_{\substack{\beta>0 \\ K_Y\cdot\beta=0}} q^\beta(Y\cdot\beta)!\langle\psi_1^{Y\cdot\beta-1} \pt_X,\mathbbm 1_{X}\rangle_{0,2,\beta}^X
 \end{align*}
 \end{thm}
 
 \begin{proof}
-Define the following generating function for $2$-pointed relative quasimap invariants
+Define for $m = 0, \ldots, Y \cdot \beta$ the following generating function for $2$-pointed relative quasimap invariants
  \[
   S_{0,(m)}^{X|Y}(z,\beta)=(\ev_1)_*\left(\frac{1}{z-\psi_1}\virt{\Q{0}{(m,0)}{X|Y}{\beta}}\right)
  \]
@@ -124,17 +124,30 @@ and so again this piece only contrbutes to $T_{0,(Y\cdot\beta)}^{X|Y}(z,\beta)$,
 \begin{equation*} \sum_{i = 1}^{k} \bigg\langle \dfrac{i^*\eta_i}{z-\psi_1}, \mathbbm{1}_Y \bigg\rangle_{0,2,\beta^{(0)}}^Y \bigg\langle \pt_Y, \mathbbm{1}_X \bigg\rangle_{0,(Y \cdot \beta^{(1)},0),\beta^{(1)}}^{X|Y}\eta^i\end{equation*}
 Finally, we must examine the terms of $T_{0,(m)}^{X|Y}(z,\beta)$ coming from:
 \begin{equation*}\ev_{1*}(m\virt{\Q{0}{(m,0)}{X|Y}{\beta}})\end{equation*} 
-Notice that we only have insertions from $i^*\HH^*(X) \subseteq \HH^*(Y)$. On the other hand
-\begin{equation*} \vdim \Q{0}{(m,0)}{X|Y}{\beta}=\dim X-3 -K_X \cdot \beta +2-m \geq \dim X -1 \end{equation*}
-because $m\leq Y\cdot\beta$ and $-(K_X+Y).\beta\geq 0$, by adjunction, projection formula, and for every effective curve class $\beta$ (coming from $Y$, but saying this is superfluous by Lefschetz's hyperplane theorem as we have already remarked); since the restriction of the class $[pt_X]$ to $Y$ vanishes, the only insertion that contributes is $\eta_1$ (by definition of a dual basis, all other dimension 1 classes vanish when restricted to $Y$), forcing the equality $m=Y\cdot\beta$, so that again this correction term is non-trivial only in the last step of the algorithm.
+Notice that we only have insertions from $i^*\HH^*(X) \subseteq \HH^*(Y)$ since $\ev_1$ is viewed as mapping to $X$. On the other hand
+\begin{align*} \vdim \Q{0}{(m,0)}{X|Y}{\beta} & = \dim X-3 -K_X \cdot \beta +2-m & \\
+& = \dim X - 1 -K_Y \cdot \beta + Y \cdot \beta - m \ \ & \text{by adjunction} \\
+& \geq \dim X - 1 + Y\cdot\beta - m \ \ & \text{since $-K_Y$ is nef} \\
+& \geq \dim X - 1 \ \ & \text{since $m \leq Y \cdot \beta$} \end{align*}
+where in the second line we have applied the projection formula to $i$, and thus have implicity used Assumption (2), discussed in \S \ref{Subsection setup}; namely that every curve class on $X$ comes from a class on $Y$.
 
-So, in the end, we see that equation \ref{eqn:G} reduces to
+Consequently the only insertions that can appear are those of dimension $0$ and $1$. However, the restriction of the $0$-dimensional class $\eta_0 = \pt_X$ to $Y$ vanishes, as do the restrictions of all $1$-dimensional classes except for $\eta_1$ (by the definition of the dual basis, since $\eta^1 = Y$). Thus the only insertion is $i^*\eta_1$, and since this has dimension $1$ all the inequalities above must actually be equalities. This means that $-K_Y \cdot \beta = 0$ and $m = Y \cdot \beta$.
+
+Once again, we see that there is only a contribution to $T_{0,(Y\cdot\beta)}^{X|Y}(z,\beta)$; this contribtion is:
+\begin{equation*} m \left\langle \dfrac{i^* \eta_1}{z-\psi_1} , \mathbbm{1}_Y \right\rangle_{0,(Y \cdot \beta,0),\beta}^{X|Y} \eta^1 \end{equation*}
+
+We have thus calculated $T_{0,(m)}^{X|Y}(z,\beta)$ for all $m$. We can thus write equation \eqref{eqn:G} as [UNDER CONSTRUCTION]
+
+
+
+
+\begin{comment}
 \begin{align*}
- &\prod_{j=0}^{Y\cdot\beta}(Y+jz) S_0^X(z,\beta) = T_{(Y\cdot\beta)}^{X|Y}(z,\beta) \\
- &= \sum_{i=1,\ldots,k;j\geq 0}z^{j+1}\eta^i\langle \rho_i\psi_1^j,\mathbbm 1_{Y}\rangle_{\Q{0}{2}{Y}{\beta}} \\
+\prod_{j=0}^{Y\cdot\beta}(Y+jz) S_0^X(z,\beta) = T_{(Y\cdot\beta)}^{X|Y}(z,\beta) & = \sum_{i=1,\ldots,k;j\geq 0}z^{j+1}\eta^i\langle \rho_i\psi_1^j,\mathbbm 1_{Y}\rangle_{\Q{0}{2}{Y}{\beta}} \\
  &+\sum_{\substack{0<\beta^{(0)}<\beta \\ \beta^{(0)}+\beta^{(1)}=\beta}}z^{j+1}\eta^i\langle \rho_i\psi_1^j,\mathbbm 1_{Y}\rangle_{\Q{0}{2}{Y}{\beta^{(0)}}}(Y\cdot\beta^{(1)})\langle [pt_Y],\mathbbm 1_{X}\rangle_{\Q{0}{(Y\cdot\beta^{(1)},0)}{X|Y}{\beta^{(1)}}}\\
  &+\eta^1(Y\cdot\beta)\langle [pt_Y],\mathbbm 1_{X}\rangle_{\Q{0}{(Y\cdot\beta,0)}{X|Y}{\beta}}
 \end{align*}
+\end{comment}
 if $\beta$ is such that $K_Y\cdot\beta=0$ (which implies $K_Y\cdot\beta^{(1)}=0$ as well, for every effective decomposition $\beta=\beta^{(0)}+\beta^{(1)}$, due to the semi-positivity assumption on $Y$); while, if $K_Y\cdot\beta<0$, it simply reduces to
 \[
  \prod_{j=0}^{Y\cdot\beta}(Y+jz) S_0^X(z,\beta)= \sum_{i=1,\ldots,k;j\geq 0}z^{j+1}\eta^i\langle \rho_i\psi_1^j,\mathbbm 1_{Y}\rangle_{\Q{0}{2}{Y}{\beta}} = i_*S_0^Y(z,\beta).
