@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  16 OCT 2017 19:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  16 OCT 2017 21:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1468,26 +1468,14 @@ Overfull \hbox (50.37354pt too wide) in paragraph at lines 262--262
 [] 
  []
 
-) (./tex/comparison.tex [34] (./fig/RandT.tex) (./fig/T_delta.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [35]
-Overfull \hbox (23.12883pt too wide) in paragraph at lines 28--29
-[]\T1/zpltlf/m/n/10.95 Notice that re-strict-ing $[][] \OMS/npxsy/m/n/10.95 O[]
-\U/npxmia/m/it/10.95 }}\OML/npxmi/m/it/10.95 ^^N \OMS/npxsy/m/n/10.95 ^^@ \OT1/
-zpltlf/m/n/10.95 1\U/npxmia/m/it/10.95 ~\OML/npxmi/m/it/10.95 T[]\U/npxmia/m/it
-/10.95 ~$ \T1/zpltlf/m/n/10.95 to this fam-ily gives $\OMS/npxsy/m/n/10.95 O[]\
-U/npxmia/m/it/10.95 }[][] \OML/npxmi/m/it/10.95 ^^O[]T[]\U/npxmia/m/it/10.95 ~$
-\T1/zpltlf/m/n/10.95 .
- []
-
-[36] [37]
-Overfull \hbox (10.26819pt too wide) in paragraph at lines 99--99
+) (./tex/comparison.tex [34] (./fig/T_delta.tex) [35] (./fig/RandT.tex)
+[36] [37] [38]
+Overfull \hbox (10.26819pt too wide) in paragraph at lines 106--106
 [] 
  []
 
 
-Overfull \hbox (68.65169pt too wide) in paragraph at lines 103--105
+Overfull \hbox (68.65169pt too wide) in paragraph at lines 110--112
 \T1/zpltlf/m/n/10.95 under $\OML/npxmi/m/it/10.95 h[]\U/npxmia/m/it/10.95 }\OML
 /npxmi/m/it/10.95 ^^^[]\U/npxmia/m/it/10.95 ~$\T1/zpltlf/m/n/10.95 . If we can 
 show that $\OML/npxmi/m/it/10.95 h[]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95
@@ -1497,8 +1485,8 @@ mia/m/it/10.95 }
 xsy/m/n/10.95 ^^@ [] \OML/npxmi/m/it/10.95 p[]\U/npxmia/m/it/10.95 ~~$
  []
 
-[38]
-Overfull \hbox (50.38063pt too wide) detected at line 112
+
+Overfull \hbox (50.38063pt too wide) detected at line 119
 [][]\U/npxmia/m/it/10.95 }
 []\OML/npxmi/m/it/10.95 ; \OMS/npxsy/m/n/10.95 O[]\U/npxmia/m/it/10.95 }\OMS/np
 xsy/m/n/10.95 ^^@\OML/npxmi/m/it/10.95 q \OMS/npxsy/m/n/10.95 ^^@ [] \OML/npxmi
@@ -1513,7 +1501,7 @@ pxsy/m/n/10.95 ' \OML/npxmi/m/it/10.95 H[]\U/npxmia/m/it/10.95 }\OML/npxmi/m/it
  []
 
 
-Overfull \hbox (2.72716pt too wide) in paragraph at lines 128--130
+Overfull \hbox (2.72716pt too wide) in paragraph at lines 135--137
 \T1/zpltlf/m/n/10.95 follows from the con-nect-ed-ness of $\OMS/npxsy/m/n/10.95
  M[]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OML/npxmi/m/it/10.95 ; d\U/np
 xmia/m/it/10.95 ~$ \T1/zpltlf/m/n/10.95 [[]] (hence of $\OMS/npxsy/m/n/10.95 Q[
@@ -1530,7 +1518,7 @@ OML/npxmi/m/it/10.95 ; \U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 '[]\U/npxmia
 /m/it/10.95 ~[]~$
  []
 
-[43] [44] [45]
+[43] [44] [45] [46]
 Overfull \hbox (2.1142pt too wide) in paragraph at lines 133--134
 []\T1/zpltlf/m/n/10.95 Stability fol-lows pre-cisely from the con-struc-tion of
  $\OML/npxmi/m/it/10.95 ^^^$\T1/zpltlf/m/n/10.95 : if $\OMS/npxsy/m/n/10.95 O[]
@@ -1538,7 +1526,7 @@ Overfull \hbox (2.1142pt too wide) in paragraph at lines 133--134
 /npxmi/m/it/10.95 L[]$\T1/zpltlf/m/n/10.95 ,
  []
 
-[46]
+
 Overfull \hbox (44.66335pt too wide) in paragraph at lines 170--171
 \T1/zpltlf/m/n/10.95 where the torus ho-mo-mor-phism $\OML/npxmi/m/it/10.95 G[]
  \U/npxmia/m/it/10.95 5 [][]}[]}\OML/npxmi/m/it/10.95 Y\U/npxmia/m/it/10.95 ~\O
@@ -1555,11 +1543,7 @@ Overfull \hbox (2.63702pt too wide) in paragraph at lines 21--23
 spaces of quasimaps
  []
 
-[55]) (./tex/intersection.tex [56]
-Underfull \vbox (badness 1168) has occurred while \output is active []
-
- [57])
-(./relative_quasimaps.bbl
+[55]) (./tex/intersection.tex [56] [57]) (./relative_quasimaps.bbl
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 9.0pt on input line 6.
  [58]
@@ -1575,7 +1559,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  32003 strings out of 493014
  622333 string characters out of 6133351
- 671502 words of memory out of 5000000
+ 672512 words of memory out of 5000000
  34672 multiletter control sequences out of 15000+600000
  117823 words of font info for 251 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
@@ -1602,7 +1586,7 @@ t/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx
 /zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (60 pages, 397424 bytes).
+Output written on relative_quasimaps.pdf (60 pages, 397723 bytes).
 PDF statistics:
  286 PDF objects out of 1000 (max. 8388607)
  203 compressed objects within 3 object streams
