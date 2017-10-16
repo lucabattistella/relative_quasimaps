@@ -23,13 +23,13 @@ As with many results in enumerative geometry, the quantum Lefchetz formula is mo
 
 We work with two marked points since this is the minimum number required in order for the quasimap space to be nonempty. However since we only take insertions at the first marking we would like to think of these, morally speaking, as $1$-pointed invariants (in Gromov--Witten theory the corresponding statement is literally true, due to the string equation).
 
-For $X$ any smooth projective toric variety\footnote{or any space for which quasimap invariants are defined, for instance a smooth hypersurface in a toric variety} we define: 
+For $X$ any smooth projective toric variety\footnote{or more generally any space for which the quasimap invariants are defined, for instance a smooth hypersurface in a toric variety.} we define: 
 \begin{equation*} S_0^X(z,\beta)=(\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{X}{\beta}}\right) \end{equation*}
 for every effective curve class $\beta\in \HH_2^+(X)$. Similarly we define
 \begin{equation*} S_0^X(z,q)=\sum_{\beta\geq 0} q^\beta S_0^X(z,\beta)\end{equation*}
 where by convention $S_0^X(z,0)= \mathbbm 1_X$. Here $q$ is a formal Novikov variable. These are generating functions for quasimap invariants of $X$ which take values in $\HH^*(X)$.
 
-The same definition applies to $Y$. However, sometimes we may wish to consider only insertions of classes coming from $X$. These are the so-called \emph{restricted quasimap invariants}, and the corresponding generating function is defined as
+The same definition applies to $Y$. However, sometimes we may wish to consider only insertions of cohomology classes coming from $X$. These are the so-called \emph{restricted quasimap invariants}, and the corresponding generating function is defined as
 \begin{equation*} \tilde{S}^Y_0(z,\beta) = (\ev_1)_* \left( \dfrac{1}{z-\psi_1} \virt{\Q{0}{2}{Y}{\beta}} \right) \end{equation*}
 where crucially $\ev_1$ is viewed as \emph{mapping to $X$} instead of to $Y$. Thus $\tilde{S}^Y_0(z,\beta)$ takes values in $\HH^*(X)$ and involves only quasimap invariants of $Y$ with insertions coming from $i^*\HH^*(X)$; this is in contrast to $S^Y_0(z,\beta)$, which takes values in $\HH^*(Y)$ and involves quasimap invariants of $Y$ with arbitrary insertions. As earlier, we can also define $\tilde{S}_0^Y(z,q)$.
 
@@ -76,7 +76,7 @@ where:
  P_0^X(q) & = 1 + \sum_{\substack{\beta>0 \\ K_Y\cdot\beta=0}} q^\beta (Y\cdot\beta) \langle [\pt_Y],\mathbbm 1_{X}\rangle_{0,(Y\cdot\beta,0),\beta}^{X|Y} \\
 & = 1 + \sum_{\substack{\beta>0 \\ K_Y\cdot\beta=0}} q^\beta(Y\cdot\beta)!\langle [\pt_X] \psi_1^{Y\cdot\beta-1} ,\mathbbm 1_{X}\rangle_{0,2,\beta}^X
 \end{align*}
-Notice that $P_0^X(q)$ depends on the divisor class of $Y$; the superscript is supposed to indicate that the definition only involves quasimap invariants of $X$.
+Notice that $P_0^X(q)$ depends not only on $X$ but also on the divisor class of $Y$ in $X$; the superscript is supposed to indicate that the definition only involves quasimap invariants of $X$.
 \end{thm}
 
 \begin{proof}
@@ -100,9 +100,7 @@ We now examine the right-hand side in detail. By definition, $T_{0,(m)}^{X|Y}(z,
 
 Let us first consider the contribution of the comb loci. Since there are only two marked points and the first is required to lie on the internal component of the comb, it follows from the strong stability condition that there are only two options: a comb with $0$ teeth or a comb with $1$ tooth.
 
-First consider the case of a comb with $0$ teeth. The moduli space is then
-\begin{equation*} \Q{0}{2}{Y}{\beta} \end{equation*}
-and we require that $Y \cdot \beta = m$. Thus this piece only contributes to $T_{0,(Y\cdot\beta)}^{X|Y}(z,\beta)$, and the contribution is:
+First consider the case of a comb with $0$ teeth. The moduli space is then $\Q{0}{2}{Y}{\beta}$ and we require that $Y \cdot \beta = m$. Thus this piece only contributes to $T_{0,(Y\cdot\beta)}^{X|Y}(z,\beta)$, and the contribution is:
 \begin{equation*} \sum_{i=1}^k \left\langle \dfrac{\rho_i}{z-\psi_1}, \mathbbm{1}_Y \right\rangle_{0,2,\beta}^Y \eta^i \end{equation*}
 
 Next consider the case of a comb with $1$ tooth. Let $\beta^{(0)}$ and $\beta^{(1)}$ denote the curve classes of the internal and external components, respectively, and let $m^{(1)}$ be the contact order of the external component with $Y$. The picture is as follows
@@ -194,30 +192,31 @@ Theorem \ref{Theorem Quantum Lefschetz} agrees with \cite[Theorem~1]{CZ-mirror} 
 \end{remark}
 
 \subsection{Comparison with the work of Ciocan-Fontanine and Kim}
-Here we briefly explain how to compare Theorem \ref{Theorem Quantum Lefschetz} to a genus zero wall-crossing formula obtained by Ciocan-Fontanine and Kim. In \cite[Section 5]{CF-K-wallcrossing} they introduce (in the more general context of $\epsilon$-stable quasimaps) the following generating functions for quasimap invariants of $Y$.
+Here we briefly explain how to compare Theorem \ref{Theorem Quantum Lefschetz} to a formula obtained by Ciocan-Fontanine and Kim. In \cite[Section 5]{CF-K-wallcrossing} they introduce (in the more general context of $\epsilon$-stable quasimaps) the following generating functions for quasimap invariants of $Y$.
 \begin{enumerate}
 \item The \emph{$J^{\epsilon}$-function}
 \begin{equation*} J^\epsilon({\bf t}, z)=\sum_{m\geq 0,\beta\geq 0} \dfrac{q^\beta}{m!} (\ev_\bullet)_*\left( \prod_{i=1}^m \ev_i^*({\bf t}) \cap\operatorname{Res}_{F_0} \virt{\QGe{0}{m}{Y}{\beta}} \right) \end{equation*}
-where $\QGe{0}{m}{Y}{\beta}$ is the moduli space of $\epsilon$-stable parametrised quasimaps, $F_0$ is a certain fixed locus of the natural $\Gm$-action on this space, and $\ev_\bullet$ is the evaluation at the point $\infty$ on the parametrised component. $\operatorname{Res}_{F_0}$ is the residue of the virtual class, i.e. the induced virtual class on the fixed locus divided by the Euler class of the virtual normal bundle (see \cite{GraberPandharipande} for details on virtual localisation).
-\item The \emph{$S^\epsilon$-operator}:
+where $\mathbf{t} \in \HH^*(X)$ and $z$ is a formal variable. $\QGe{0}{m}{Y}{\beta}$ is the moduli space of $\epsilon$-stable  quasimaps with one parametrised component, $F_0$ is a certain fixed locus of the natural $\Gm$-action on this space, and $\ev_\bullet$ is the evaluation at the point $\infty$ on the parametrised component. $\operatorname{Res}_{F_0}$ is the residue of the virtual class, i.e. the virtual class of the fixed locus divided by the Euler class of the virtual normal bundle (see \cite{GraberPandharipande} for details on virtual localisation).
+\item The \emph{$S^\epsilon$-operator}
 \begin{equation*}
- S^\epsilon(z)(\gamma)=\sum_{m\ge 0,\beta\ge 0}\frac{q^\beta}{m!} 
+ S^\epsilon(\mathbf{t},z)(\gamma)=\sum_{m\ge 0,\beta\ge 0}\frac{q^\beta}{m!} 
 (\ev_1)_*\left( \dfrac{\ev_2^*(\gamma) \cdot \prod_{j=3}^{2+m} \ev_j^*({\bf t})}{z-\psi_1} \cap\virt{\Qe{0}{2+m}{Y}{\beta}} \right)
 \end{equation*}
+where $\mathbf{t}, \gamma \in \HH^*(X)$ and $z$ is a formal variable.
 \item The \emph{$P^\epsilon$-series}
 \begin{equation*}
- P^\epsilon({\bf t}, z)=\sum_{h=1}^k \rho^h \sum_{m\geq 0,\beta\geq 0} \frac{q^\beta }{m!} \left( \ev_1^*(\rho_h \cdot p_\infty) \cap \virt{\QGe{0}{1+m}{Y}{\beta}} \right) \end{equation*}
+ P^\epsilon({\bf t}, z)=\sum_{h=1}^k \rho^h \sum_{m\geq 0,\beta\geq 0} \frac{q^\beta }{m!} \left( \ev_1^*(\rho_h \boxtimes p_\infty) \cap \virt{\QGe{0}{1+m}{Y}{\beta}} \right) \end{equation*}
 where $p_\infty\in \HH^*_{\Gm}(\PP^1)$ is the equivariant cohomology class defined by the setting $p_{\infty}|_0 =0$ and $p_{\infty}|_{\infty}=-z$ (where $0$ and $\infty$ are the $\Gm$-fixed points of $\PP^1$). Thus $\ev_1^* p_\infty$ should be thought of as a Kronecker delta function: it is zero if the first marked point lies over $0$, and $-z$ if it lies over $\infty$.
 \end{enumerate}
-Given these definitions, they use localisation to prove the following formula \cite[Theorem 5.4.1]{CF-K-wallcrossing}:
+Given these definitions, Ciocan-Fontanine and Kim use localisation with respect to the $\Gm$-action on the parametrised space to prove the following formula \cite[Theorem 5.4.1]{CF-K-wallcrossing}:
 \[
- J^\epsilon(z)=S^\epsilon(z)(P^\epsilon).
+ J^\epsilon(\mathbf{t},z)=S^\epsilon(\mathbf{t},z)(P^\epsilon(\mathbf{t},z)).
 \]
 They then show that if we set ${\bf t}=0$ and restrict to semi-positive targets, then the only class that matches non-trivially with ${P^\epsilon}|_{\mathbf{t}=0}$ is $[\pt_Y]$. The above formula then takes the simple form
 \begin{equation*}
  \frac{J^\epsilon |_{{\bf t}=0}}{\langle [\pt_Y],  P^\epsilon|_{{\bf t}=0}\rangle}=\mathbbm 1_Y+\sum_{h=1}^k \rho^h \left(\sum_{\beta> 0}q^\beta\left\langle\frac{\rho_h}{z-\psi},\mathbbm 1_Y\right\rangle_{0,2,\beta}^{Y,\epsilon} \right)
 \]
-see \cite[Corollary 5.5.1]{CF-K-wallcrossing}. Notice that the restriction ${S^\epsilon(z)(\mathbbm 1_Y)}|_{\mathbf{t}=0}$ that appears on the right-hand side of this formula coincides with what we have called $\tilde{S}^Y_0(z,q)$ above.
+see \cite[Corollary 5.5.1]{CF-K-wallcrossing}. Notice that the restriction ${S^\epsilon(\mathbf{t},z)(\mathbbm 1_Y)}|_{\mathbf{t}=0}$ that appears on the right-hand side of this formula coincides with what we have called $\tilde{S}^Y_0(z,q)$ above.
 
 They also observe that if we write the $1/z$-expansion of ${J^{\epsilon}}|_{\bf{t}=0}$ as
 \begin{equation*} {J^{\epsilon}}|_{\mathbf{t}=0}=J^{\epsilon}_{0}(q)\mathbbm 1_Y+O(1/z) \end{equation*}
@@ -225,48 +224,46 @@ then $\langle [\pt_Y],  P^\epsilon|_{{\bf t}=0}\rangle=J^{\epsilon}_{0}(q)$.
 
 Let us look more closely at:
 \begin{equation*} {J^{\epsilon}}|_{{\mathbf{t}=0}} = \sum_{\beta\geq 0}q^\beta(\ev_\bullet)_* \left( \operatorname{Res}_{F_0}\virt{\QGe{0}{0}{Y}{\beta}} \right) \end{equation*}
-Recall that in our context $Y \hookrightarrow X$ is a very ample hypersurface and $X$ is a toric Fano variety; furthermore $\epsilon=0^+$. We have the following diagram:
+Recall that in our context $Y \hookrightarrow X$ is a very ample hypersurface, $X$ is a toric Fano variety and $\epsilon=0^+$. We have the following diagram:
 
 \bcd
-\QG{0}{0}{Y}{\beta}\ar[d,hook,"\iota"]\ar[dr,phantom,"\Box"] & F_0^Y\ar[d]\ar[l,hook']\ar[r,"\ev_{\bullet}"] & Y\ar[d,hook,"i"] \\
+\QG{0}{0}{Y}{\beta}\ar[d,hook,"i"]\ar[dr,phantom,"\Box"] & F_0^Y\ar[d]\ar[l,hook']\ar[r,"\ev_{\bullet}"] & Y\ar[d,hook,"i"] \\
 \QG{0}{0}{X}{\beta} & F_0^X\ar[l,hook']\ar[r,"\ev_{\bullet}"] & X
 \ecd
 
 By a slight generalisation of \cite[Propositions 6.2.2 and 6.2.3]{CFKM}, we have that
-\begin{equation*} \iota_*\virt{\QG{0}{0}{Y}{\beta}}=e(\pi_* E^Y_{0,0,\beta})\cap \virt{\QG{0}{0}{X}{\beta}} \end{equation*} 
-as $\Gm$-equivariant classes, where $\pi$ is the universal curve on $\QG{0}{0}{X}{\beta}$ and $E^Y_{0,0,\beta}$ is the equivariant line bundle associated to $\mathcal O_X(Y)$\footnote{This is analogous to the bundle $L_Y$ constructed in the definition of relative quasimaps; see \S \ref{Subsection relative stable quasimaps}.}.
-
-Since there are no markings, stability implies that the source curve of any parametrised quasimap is irreducible. Thus the fibres of $\pi$ are irreducible and so we have the following splitting:
-\begin{equation*}
-  e(\pi_* E^Y_{0,0,\beta})=\prod_{j=0}^{Y\cdot\beta} c_1(\sigma_0^* E^Y_{0,0,\beta}\otimes \omega_{\pi}^{\otimes j})
+\begin{equation*} i_*\virt{\QG{0}{0}{Y}{\beta}}=e(\pi_* E^Y_{0,0,\beta})\cap \virt{\QG{0}{0}{X}{\beta}} \end{equation*} 
+as $\Gm$-equivariant classes, where $\pi$ is the universal curve on $\QG{0}{0}{X}{\beta}$ and $E^Y_{0,0,\beta}$ is the equivariant line bundle on this curve associated to $\mathcal O_X(Y)$\footnote{This is analogous to the bundle $L_Y$ constructed in the definition of relative quasimaps; see \S \ref{Subsection relative stable quasimaps}.}.
+ 
+We would like to calculate this Euler class. Since there are no markings, stability implies that the source curve of any parametrised quasimap is irreducible. Thus the fibres of $\pi$ are irreducible and so for any $j \geq 0$ we have an exact sequence
+\begin{equation*} 0 \to \pi_* (E^Y_{0,0,\beta}(-j\sigma_0)) \to \pi_* E^Y_{0,0,\beta} \to \sigma_0^*\mathcal{P}^{j-1}(E^Y_{0,0,\beta}) \to 0 \end{equation*}
+where $\mathcal{P}^{j-1}$ denotes bundle of $(j-1)$-jets, and $\sigma_0$ is the section given by the point $0 \in \PP^1$ of the parametrised component. The last map is defined by evaluating a section of $E_{0,0,\beta}^Y$ at the point $0$ (as well as its derivatives up to order $j-1$). On the other hand we have
+\begin{equation*} 0 \to \omega_\pi^{\otimes j}\otimes E^Y_{0,0,\beta} \to \mathcal{P}^{j}(E^Y_{0,0,\beta}) \to \mathcal{P}^{j-1}(E^Y_{0,0,\beta}) \to 0
 \end{equation*}
-coming from evaluating at (the $j$-th order infinitesimal thickening of) the zero section $\sigma_0$ and the jet bundles exact sequence:
-\begin{center}
- \begin{tikzcd}
-  0\ar[r] & \pi_* (E^Y_{0,0,\beta}(-j\sigma_0))\ar[r] & \pi_* E^Y_{0,0,\beta}\ar[r] & \sigma_0^*\operatorname{P}^{j-1}(E^Y_{0,0,\beta}) \ar[r] & 0 \\
-  0\ar[r] & \Omega_\pi^{\otimes j}\otimes E^Y_{0,0,\beta}\ar[r] & \operatorname{P}^{j}(E^Y_{0,0,\beta}) \ar[r] & \operatorname{P}^{j-1}(E^Y_{0,0,\beta}) \ar[r] & 0
- \end{tikzcd}
-\end{center}
-which, restricting to $F_0^X$, gives:
-\[
- \iota_*[F_0^Y]^{\text{vir}}=\prod_{j=0}^{Y\cdot\beta}(Y+iz)[F_0^X]^{\text{vir}}.
-\]
-
-The small $J^{0^+}$-function for toric varieties has been evaluated by Givental \cite{Givental-equivariantGW}\cite[Definition 7.2.8]{CF-K}:
- \[
-  (\ev_{\bullet})_*\frac{[F_0^X]^{\text{vir}}}{e(N_{F_0/\QG{0}{0}{X}{\beta}})}=\prod_{\rho\in\Sigma_X(1)}\frac{\prod_{j=-\infty}^0(D_{\rho}+jz)}{\prod_{j=-\infty}^{\int_{\beta}D_{\rho}}(D_\rho+jz)}=\frac{\prod_{\substack{\rho\in\Sigma_X(1)\colon D_\rho.\beta\leq 0 \\ j=\int_{\beta}D_\rho,\ldots,0}}(D_{\rho}+jz)}{\prod_{\substack{\rho\in\Sigma_X(1)\colon D_\rho.\beta> 0 \\ j=1,\ldots,\int_{\beta}D_\rho}}(D_{\rho}+jz)}
- \]
+see \cite[\S 2]{Ga}. Taking Euler classes and working recursively from $j=0$ to $Y \cdot \beta$ we obtain the splitting:
+\begin{equation*}
+e(\pi_* E^Y_{0,0,\beta})=\prod_{j=0}^{Y\cdot\beta} c_1(\sigma_0^* E^Y_{0,0,\beta}\otimes \omega_{0}^{\otimes j})
+\end{equation*}
+Restricting this to $F_0^X$ we obtain:
+\begin{equation*} i_*\virt{F_0^Y}=\prod_{j=0}^{Y\cdot\beta}(\ev_\bullet^* Y+jz)\virt{F_0^X} \end{equation*}
+Now, the small $J = J^{0^+}$-function for toric varieties has been evaluated by Givental \cite{Givental-equivariantGW} (see also \cite[Definition 7.2.8]{CF-K}):
+\begin{align*}
+(\ev_{\bullet})_* \operatorname{Res}_{F_0}\virt{\QGe{0}{0}{Y}{\beta}} =\prod_{\rho\in\Sigma_X(1)}\dfrac{\prod_{j=-\infty}^0(D_{\rho}+jz)}{\prod_{j=-\infty}^{D_{\rho}\cdot \beta}(D_\rho+jz)}
+=\dfrac{\prod_{\substack{\rho \colon D_\rho \cdot \beta\leq 0}} \prod_{j=D_\rho \cdot \beta}^0 (D_{\rho}+jz)}{\prod_{\substack{\rho\colon D_\rho \cdot\beta > 0}} \prod_{j=1}^{D_\rho\cdot\beta} (D_{\rho}+jz)}
+\end{align*}
 So, using $\sum_{\rho\in\Sigma_X(1)} D_{\rho}=-K_X$ and $(Y+K_X).\beta=0$, we see that
-\[
+\begin{equation*}
  J^Y_0(q)=\sum_{\beta\geq 0}q^\beta(Y\cdot\beta)!\frac{\prod_{\rho\in\Sigma_X(1)\colon D_\rho.\beta< 0}(-1)^{-D_{\rho}.\beta}(-D_{\rho}.\beta)!}{\prod_{\rho\in\Sigma_X(1)\colon D_\rho.\beta> 0}(D_{\rho}.\beta)!}
-\]
+\end{equation*}
 
-Since $X$ is Fano, $J^X_{|{\bf t}=0}=S^X_{|{\bf t}=0}(\mathbbm 1_X)$.
+Since $X$ is Fano, $J^X|_{{\bf t}=0}=S^X|_{{\bf t}=0}(\mathbbm 1_X)$.
 
-The coefficient $\langle[pt_X]\psi_1^{Y\cdot\beta-1},\mathbbm 1_X\rangle_{\Q{0}{2}{X}{\beta}}$ that appears in our $P$-series (multiplied by $(Y\cdot\beta)!$), can be deduced from the expansion of $S^X_{|{\bf t}=0}(\mathbbm 1_X)$ given above, and it turns out to be
-\[
- \langle [pt_X],S^X_{|{\bf t}=0}(\mathbbm 1_X)\rangle[z^{Y\cdot\beta}]=\frac{\prod_{\rho\in\Sigma_X(1)\colon D_\rho.\beta< 0}(-1)^{-D_{\rho}.\beta}(-D_{\rho}.\beta)!}{\prod_{\rho\in\Sigma_X(1)\colon D_\rho.\beta> 0}(D_{\rho}.\beta)!}.
-\]
+The coefficient
+\begin{equation*} \langle[\pt_X]\psi_1^{Y\cdot\beta-1},\mathbbm 1_X\rangle_{0,2,\beta}^X\end{equation*}
+that appears in our $P_0^X(q)$-series can be deduced from the expansion of $S^X|_{{\bf t}=0}(\mathbbm 1_X)$ given above, and it turns out to be
+\begin{equation*}
+\langle [\pt_X],S^X_{|{\bf t}=0}(\mathbbm 1_X)\rangle[z^{Y\cdot\beta}]=\frac{\prod_{\rho\in\Sigma_X(1)\colon D_\rho.\beta< 0}(-1)^{-D_{\rho}.\beta}(-D_{\rho}.\beta)!}{\prod_{\rho\in\Sigma_X(1)\colon D_\rho.\beta> 0}(D_{\rho}.\beta)!}
+\end{equation*}
 
 
 So we may conclude that the $i_*$ of \cite[Corollary 5.5.1]{CF-K-wallcrossing} coincides with our Equation \ref{eqn:mirror}.
