@@ -216,13 +216,13 @@ They then show that if we set ${\bf t}=0$ and restrict to semi-positive targets,
 \begin{equation*}
  \frac{J^\epsilon |_{{\bf t}=0}}{\langle [\pt_Y],  P^\epsilon|_{{\bf t}=0}\rangle}=\mathbbm 1_Y+\sum_{h=1}^k \rho^h \left(\sum_{\beta> 0}q^\beta\left\langle\frac{\rho_h}{z-\psi},\mathbbm 1_Y\right\rangle_{0,2,\beta}^{Y,\epsilon} \right)
 \]
-see \cite[Corollary 5.5.1]{CF-K-wallcrossing}. Notice that the restriction ${S^\epsilon(\mathbf{t},z)(\mathbbm 1_Y)}|_{\mathbf{t}=0}$ that appears on the right-hand side of this formula coincides with what we have called $\tilde{S}^Y_0(z,q)$ above.
-
-They also observe that if we write the $1/z$-expansion of ${J^{\epsilon}}|_{\bf{t}=0}$ as
-\begin{equation*} {J^{\epsilon}}|_{\mathbf{t}=0}=J^{\epsilon}_{0}(q)\mathbbm 1_Y+O(1/z) \end{equation*}
-then $\langle [\pt_Y],  P^\epsilon|_{{\bf t}=0}\rangle=J^{\epsilon}_{0}(q)$.
-
-Let us look more closely at:
+see \cite[Corollary 5.5.1]{CF-K-wallcrossing}. We claim that this is equivalent to Theorem \ref{Theorem Quantum Lefschetz}. More precisely:
+\begin{itemize}
+\item $S^{\epsilon}(\mathbf{t},z)(\mathbbm{1}_Y)|_{\mathbf{t}=0} = \tilde{S}^Y_0(z,q)$
+\item $J^{\epsilon}|_{\mathbf{t}=0} = \sum_{\beta \geq 0} \prod_{j=0}^{Y \cdot \beta} (Y + jz) S_0^X(z,\beta)$
+\item $\langle [\pt_Y], P^{\epsilon}_{\mathbf{t}=0} \rangle = P_0^X(q)$
+\end{itemize}
+Equation (1) is clear from the definition of $\tilde{S}^Y_0(z,q)$. To show equation (2), let us look more closely at:
 \begin{equation*} {J^{\epsilon}}|_{{\mathbf{t}=0}} = \sum_{\beta\geq 0}q^\beta(\ev_\bullet)_* \left( \operatorname{Res}_{F_0}\virt{\QGe{0}{0}{Y}{\beta}} \right) \end{equation*}
 Recall that in our context $Y \hookrightarrow X$ is a very ample hypersurface, $X$ is a toric Fano variety and $\epsilon=0^+$. We have the following diagram:
 
@@ -235,17 +235,26 @@ By a slight generalisation of \cite[Propositions 6.2.2 and 6.2.3]{CFKM}, we have
 \begin{equation*} i_*\virt{\QG{0}{0}{Y}{\beta}}=e(\pi_* E^Y_{0,0,\beta})\cap \virt{\QG{0}{0}{X}{\beta}} \end{equation*} 
 as $\Gm$-equivariant classes, where $\pi$ is the universal curve on $\QG{0}{0}{X}{\beta}$ and $E^Y_{0,0,\beta}$ is the equivariant line bundle on this curve associated to $\mathcal O_X(Y)$\footnote{This is analogous to the bundle $L_Y$ constructed in the definition of relative quasimaps; see \S \ref{Subsection relative stable quasimaps}.}.
  
-We would like to calculate this Euler class. Since there are no markings, stability implies that the source curve of any parametrised quasimap is irreducible. Thus the fibres of $\pi$ are irreducible and so for any $j \geq 0$ we have an exact sequence
-\begin{equation*} 0 \to \pi_* (E^Y_{0,0,\beta}(-j\sigma_0)) \to \pi_* E^Y_{0,0,\beta} \to \sigma_0^*\mathcal{P}^{j-1}(E^Y_{0,0,\beta}) \to 0 \end{equation*}
-where $\mathcal{P}^{j-1}$ denotes bundle of $(j-1)$-jets, and $\sigma_0$ is the section given by the point $0 \in \PP^1$ of the parametrised component. The last map is defined by evaluating a section of $E_{0,0,\beta}^Y$ at the point $0$ (as well as its derivatives up to order $j-1$). On the other hand we have
+We would like to pull-back this  this Euler class. Since there are no markings, stability implies that the source curve of any parametrised quasimap is irreducible. Thus the fibres of $\pi$ are irreducible and so for any $j \geq 0$ we have an exact sequence
+\begin{equation*} 0 \to \pi_* (E^Y_{0,0,\beta}(-j\sigma_{\bullet})) \to \pi_* E^Y_{0,0,\beta} \to \sigma_{\bullet}^*\mathcal{P}^{j-1}(E^Y_{0,0,\beta}) \to 0 \end{equation*}
+where $\mathcal{P}^{j-1}$ denotes bundle of $(j-1)$-jets, and $\sigma_{\bullet}$ is the section given by the point $\infty \in \PP^1$ of the parametrised component. The last map is defined by evaluating a section of $E_{0,0,\beta}^Y$ at the point $\infty$ (as well as its derivatives up to order $j-1$). On the other hand we have
 \begin{equation*} 0 \to \omega_\pi^{\otimes j}\otimes E^Y_{0,0,\beta} \to \mathcal{P}^{j}(E^Y_{0,0,\beta}) \to \mathcal{P}^{j-1}(E^Y_{0,0,\beta}) \to 0
 \end{equation*}
 see \cite[\S 2]{Ga}. Taking Euler classes and working recursively from $j=0$ to $Y \cdot \beta$ we obtain the splitting:
 \begin{equation*}
-e(\pi_* E^Y_{0,0,\beta})=\prod_{j=0}^{Y\cdot\beta} c_1(\sigma_0^* E^Y_{0,0,\beta}\otimes \omega_{0}^{\otimes j})
+e(\pi_* E^Y_{0,0,\beta})=\prod_{j=0}^{Y\cdot\beta} c_1(\sigma_{\bullet}^* E^Y_{0,0,\beta}\otimes \omega_{0}^{\otimes j})
 \end{equation*}
-Restricting this to $F_0^X$ we obtain:
+Let us describe the points of $F_0^X$. The source curve is irreducible with no nodes and markings. The fact that it is $\Gm$-fixed means that the degree must be absorbed by the basepoints, i.e. that the residual is map is constant. Furthermore we can only have basepoints at $0$ and $\infty$. Then $F_0^X$ is the fixed locus at which all the degree is concentrated at $\infty$, i.e. $\infty$ is a big basepoint and $0$ is not. So we have $\ev_{\bullet} = \ev_0$.
+
+Restricting this to $F_0^X$ and using the fact that $\omega_0$ is trivial but with weight $z$, we obtain 
 \begin{equation*} i_*\virt{F_0^Y}=\prod_{j=0}^{Y\cdot\beta}(\ev_\bullet^* Y+jz)\virt{F_0^X} \end{equation*}
+
+----
+
+They also observe that if we write the $1/z$-expansion of ${J^{\epsilon}}|_{\bf{t}=0}$ as
+\begin{equation*} {J^{\epsilon}}|_{\mathbf{t}=0}=J^{\epsilon}_{0}(q)\mathbbm 1_Y+O(1/z) \end{equation*}
+then $\langle [\pt_Y],  P^\epsilon|_{{\bf t}=0}\rangle=J^{\epsilon}_{0}(q)$.
+
 Now, the small $J = J^{0^+}$-function for toric varieties has been evaluated by Givental \cite{Givental-equivariantGW} (see also \cite[Definition 7.2.8]{CF-K}):
 \begin{align*}
 (\ev_{\bullet})_* \operatorname{Res}_{F_0}\virt{\QGe{0}{0}{Y}{\beta}} =\prod_{\rho\in\Sigma_X(1)}\dfrac{\prod_{j=-\infty}^0(D_{\rho}+jz)}{\prod_{j=-\infty}^{D_{\rho}\cdot \beta}(D_\rho+jz)}
