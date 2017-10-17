@@ -1,43 +1,64 @@
 \section{The comparison morphism} \label{Section comparison morphism}
+In this appendix we recall the construction of the comparison morphism for $\PP^N$ and how it can be used to show that the stable map and the quasimap invariants of projective space coincide. This has been proven in \cite[Theorem 3]{MOP} and \cite[Section 4.3]{Manolache-Push} (but see also \cite[Proposition 4.1]{Bertram} and \cite[Theorem 7.1]{Popa-Roth} for inspiration). We will aim to provide as many details as possible, for our own benefit and, hopefully, that of the novice reader.
 
-We summarise the existence of the comparison morphism for $\PP^r$ and how it implies that GW and quasimap invariants of projective space coincide. This has been proven in \cite[Theorem 3]{MOP} and \cite[Section 4.3]{Manolache-Push} (but see also \cite[Proposition 4.1]{Bertram} and \cite[Theorem 7.1]{Popa-Roth} for inspiration). We shall try to clarify as many details as possible, for our own benefit and, hopefully, that of the novice reader.
+\subsection{Construction of the comparison morphism}
+In order to give a morphism $\chi\colon\M{g}{n}{\PP^N}{d}\to\Q{g}{n}{\PP^N}{d}$ we need to be able to associate, to a family of stable maps on a base $T$, a family of quasimaps on the same base.
 
-In order to give a morphism $\comp\colon\M{g}{n}{\PP^r}{d}\to\Q{g}{n}{\PP^r}{d}$ we need to be able to canonically associate a family of quasimaps on a base $S$ to any family of stable maps on the same base.
+The pointwise construction is as follows: any stable map defines a quasimap with no basepoints. The only thing that might prevent this quasimap from being stable is the presence of rational tails (of positive degree, by the stability condition for stable maps). Let $C=C^{(0)}\sqcup_{q_i}R_i$ be the source curve; there is a ``permanent'' subcurve $C^{(0)}$ which is joined to a number of rational tails $R_i$ each of which has degree $d_i>0$. We let $q_i$ be the node connecting $C^{(0)}$ and $R_i$; note that it is the only special point of $R_i$, and hence all the marked points belong to $C^{(0)}$. We obtain a stable quasimap by collapsing the rational tails and introducing basepoints of length $d_i$ at each of the (former) nodes $q_i$.
 
-The pointwise construction is the following: a stable map has no base points, so the only thing that might prevent it from being a stable quasimap is the presence of rational tails (of positive degree, by the stable maps stability condition). Let $C=C^{(0)}\sqcup_{q_i}R_i$ be the source curve; the rational tail $R_i$ has degree $d_i$ and is joined to the permanent curve $C^{(0)}$ at the node $q_i$, which is the only special point on $R_i$; hence all the markings belong to $C^{(0)}$. The map to $\PP^r$ is equivalent to the data of a line bundle $L=f^*\mathcal O_{\PP^r}(1)$ on $C$ and $r+1$ sections $s_0,\ldots,s_r$ thereof. We associate to such a stable map the quasimap $\left(C^{(0)},\mathbf x; L_{|C^{(0)}}\otimes\mathcal O_{C^{(0)}}(\sum_{i}d_iq_i);\hat s_0,\ldots,\hat s_r\right)$, where $\hat s_j$ is the restriction of $s_j$ to $C^{(0)}$, seen as a section of $L_{|C^{(0)}}\otimes\mathcal O_{|C^{(0)}}(\sum_{i}d_iq_i)$ through the inclusion $L_{|C^{(0)}}\hookrightarrow L_{|C^{(0)}}\otimes\mathcal O_{C^{(0)}}(\sum_{i}d_iq_i)$. Notice that the resulting quasimap has a base-point of order $d_i$ at $q_i$.
+In other words, the comparison map is given by sending the quasimap $((C,x_1,\ldots,x_n),L,u_0,\ldots,u_N))$ to 
+\begin{equation*}((C^{(0)},x_1,\ldots,x_n),L|_{C^{(0)}}(\Sigma_i d_i q_i),\hat{u_0},\ldots,\hat{u_N}) \end{equation*}
+where $\hat{u_i}$ is obtained from $u_i|_{C^{(0)}}$ via the natural inclusion:
+\begin{equation*} L|_{C^{(0)}}\to L|_{C^{(0)}}(\Sigma_i d_i q_i) \end{equation*}
+Locally around $q_j$ this has the effect of multiplying each $u_i$ by the $d_j$th power of the equation defining $q_j$, thus introducing a basepoint of length $d_j$.
 
-The construction in families requires us to find a line bundle on the universal curve that is trivial on the rational tails and relatively ample elsewhere. This can be performed at the level of Picard stacks: let $\mathfrak{Pic}_{g,n}^{d,\text{st}}$ be the open substack of $\mathfrak{Pic}(\pi\colon\mathfrak{C}_{g,n}\to\mathfrak{M}_{g,n})$ obtained by requiring that the total degree of the line bundle is $d$, the multi-degree is nonnegative and $\mathcal L\otimes\omega_{\pi}^{\text{log}}$ is ample relative to $\pi$, where $\mathcal L$ is the universal line bundle. Let $T^{\delta}$ be the locus in the universal curve over $\mathfrak{Pic}_{g,n}^{d,\text{st}}$ spanned by rational tails on which $\mathcal L$ has degree $\delta$; this is a Cartier divisor by deformation theory and smoothness of the stack $\mathfrak{C}_{\mathfrak{Pic}}$. Notice that $T^{\delta_0}$ and $T^{\delta_1}$ (say $\delta_0<\delta_1$) do intersect in a stratum of codimension 1 in both of them, where the rational tail splits into two rational components, the furthest from $C^{(0)}$ having degree $\delta_0$.
+The construction in families requires us to find a line bundle on the universal curve that is trivial on the rational tails (which we wish to contract) and relatively ample elsewhere. This can be performed at the level of Picard stacks: let $\mathfrak{Pic}_{g,n}^{d,\text{st}}$ be the open substack of $\mathfrak{Pic}(\pi\colon\mathfrak{C}_{g,n}\to\mathfrak{M}_{g,n})$ obtained by requiring that the total degree of the line bundle is $d$, the degree on each component is nonnegative and $\mathcal L\otimes\omega_{\pi}(\Sigma_i x_i)$ is ample relative to $\pi$, where $\mathcal L$ is the universal line bundle.
+
+Let $T^{\delta}$ be the locus in the universal curve $\mathfrak{C}_{\mathfrak{Pic}}$ over $\mathfrak{Pic}_{g,n}^{d,\text{st}}$ spanned by rational tails on which $\mathcal L$ has degree $\delta$; this is a Cartier divisor by the smoothness of the stack $\mathfrak{C}_{\mathfrak{Pic}}$. Notice that $T^{\delta_0}$ and $T^{\delta_1}$ (say with $\delta_0<\delta_1$) intersect in a stratum of codimension $1$, where the rational tail splits into two rational components, the furthest from $C^{(0)}$ having degree $\delta_0$:
+
+\begin{center}
+\input{fig/T_delta}
+\end{center}
+\medskip
+
+Define the following line bundle on $\mathfrak{C}_{\mathfrak{Pic}}$:
+\begin{equation*} \mathcal M=\mathcal L\otimes\omega_{\pi}(\Sigma_i x_i)\otimes\bigotimes_{0<\delta\leq d}\mathcal O_{\mathfrak{C}_{\mathfrak{Pic}}}((\delta-1) T^\delta) \end{equation*}
+
+We claim that $\mathcal{M}$ is trivial on every component of every rational tail, and $\pi$-relatively ample elsewhere. Consider a curve $C^{(0)}\sqcup_q R$ with a rational tail of degree $e$. We first consider the simple case where $R$ is isomorphic to a chain of $\PP^1$s. We label the components $R^{(1)},\ldots,R^{(n)}$, numbered from the closest to the farthest from $C^{(0)}$. We let $e_i$ denote the degree of $R^{(i)}$. We set $T_i=\bigcup_{j=i}^n R_j$ and $\epsilon_i=\deg \mathcal{L}|_{T_i} - 1 = e-1-\sum_{j=1}^{i-1} e_j$. The picture is as follows:
 
 \begin{center}
 \input{fig/RandT}
 \end{center}
 
-\emph{Claim:} the line bundle $\mathcal M=\mathcal L\otimes\omega_{\pi}^{\text{log}}\otimes\bigotimes_{0<\delta\leq d}\mathcal O_{\mathfrak C}((\delta-1) T^\delta)$ on $\mathfrak{C}_{\mathfrak{Pic}}$ has degree 0 on every component of every rational tail, and is $\pi$-relatively ample elsewhere.
+Because the stack $\mathfrak{Pic}_{g,n}^{d,\text{st}}$ is smooth, a general one-parameter family inside this stack will give us a smoothing of our curve. The universal curve over such a family is a normal surface $S$; thus we can compute the degree of the restriction of $\mathcal M$ to the irreducible components of the central fiber of this family by first restricting $\mathcal M$ to $S$, and then using intersection theory on the normal surface $S$.
 
-\begin{proof}
-
-Consider a curve $C^{(0)}\sqcup_q R$ with a rational tail of degree $\delta$, such that $R$ consists of $n$ many components $R^{(1)
-},\ldots,R^{(n)}$, each of degree $\delta^{(1)},\ldots,\delta^{(n)}$ respectively, numbered from the closest to the farthest from $C^{(0)}$; set $T_i=\bigcup_{j=i}^n R_j$ and $\epsilon_i=\delta-1-\sum_{j=1}^{i-1}\delta_j$.
-
-\begin{center}
-\input{fig/T_delta}
-\end{center}
-
-A general one-parameter family in $\mathfrak{Pic}_{g,n}^{d,\text{st}}$ will give us a smoothing of such a curve; the universal curve over such a family is a normal surface $S$; we can compute the degree of the restriction of $\mathcal M$ to components of the central fiber of this family by first restricting $\mathcal M$ to $S$, and then using intersection theory on this normal surface.
-
-Notice that restricting $\bigotimes_{0<\delta\leq d}\mathcal O_{\mathfrak C}((\delta-1) T^\delta)$ to this family gives $\mathcal O_S(\sum_{j=1}^n\epsilon_jT_j)$. Since $R^{(i)}$ is a $(-2)$-curve for $i=1,\ldots,n-1$, and $R^{(n)}$ is a $(-1)$-curve, we get
-
-\[
-  R^{(i)}.T_j =
+Notice that $T^\delta|_S = T_{i_\delta}$ where $i_\delta$ is the unique value of $i$ such that $\delta = \sum_{j=i_{\delta}}^n e_i$ (if no such $i$ exists then $T^\delta|_S = 0$). Thus the restriction of $\bigotimes_{0<\delta\leq d}\mathcal{O}_{\mathfrak{C}_{\mathfrak{Pic}}}((\delta-1) T^\delta)$ to $S$ gives:
+\begin{equation*} \mathcal{O}_S(\Sigma_{j=1}^n \epsilon_j T_j) \end{equation*}
+Now, $R^{(i)}$ is a $(-2)$-curve for $i=1,\ldots,n-1$, and so we have:
+\begin{equation*}
+R^{(i)}\cdot T_j =
   \begin{cases}
-    0, & \text{for } j<i \\
-    -1, & \text{for } j=i \\
-    1, & \text{for } j=i+1 \\
-    0 & \text{for } j>i+1 \\
+    0 & \text{for } j<i \\
+    -1 & \text{for } j=i \\
+    1 & \text{for } j=i+1 \\
+    0 & \text{for } j>i+1
   \end{cases}
-\]
-hence $\deg(\mathcal M_{|R^{(i)}})=\delta^{(i)}-\epsilon_i+\epsilon_{i+1}=0$ for $i=1\ldots,n-1$, while for $i=n$ it is $\delta^{(n)}-1-\epsilon_n=0$, as $\omega^{\text{log}}$ is trivial on the $(-2)$ curves and has degree $-1$ on $R^{(n)}$. The last assertion of the claim follows from the stability condition and the fact that $O_{\mathfrak C}(T^\delta)$ is effective when restricted to $C^{(0)}$.
-\end{proof}
+\end{equation*}
+whereas for $R^{(n)}$ (which is a $(-1)$-curve) we have:
+\begin{equation*}
+R^{(n)} \cdot T_j =
+\begin{cases}
+0 & \text{for } j < n \\
+-1 & \text{for } j = n
+\end{cases}
+\end{equation*}
+It follows that for $i=1,\ldots,n-1$ we have
+\begin{equation*} \deg \mathcal{M}|_{R^{(i)}} = \deg \mathcal{L}|_{R^{(i)}} - \epsilon_i + \epsilon_{i+1} = e_i - e_i = 0 \end{equation*}
+whereas for $i=n$ we have:
+\begin{equation*} \deg \mathcal{M}|_{R^{(n)}} = \deg \mathcal{L}|_{R^{(n)}} - 1 - \epsilon_n = e_n - 1 - (e_n-1) = 0\end{equation*}
+Here we have used the fact that $\omega_\pi(\Sigma_i x_i)$ has degree $0$ on $R^{(i)}$ for $i=1,\ldots,n-1$ and degree $-1$ on $R^{(n)}$. Thus $\mathcal{M}$ is trivial on every component on every rational tail, as claimed. The fact that it is $\pi$-relatively ample on the rest of the curve follows from the stability condition and the fact that $\OO_{\mathfrak{C}_{\mathfrak{Pic}}}(T^\delta)$ is effective when restricted to $C^{(0)}$.
+
+[GENERAL CASE: UNDER CONSTRUCTION]
 
 By taking the relative Proj construction we obtain another curve $\hat{\mathfrak C}=\underline\Proj_{\mathfrak{Pic}}\left(\bigoplus_{k\geq 0}\pi_*\mathcal M^{\otimes k}\right)$ over $\mathfrak{Pic}_{g,n}^{d,\text{st}}$, with a map $\rho$ that contracts the rational tails
 \bcd
@@ -49,15 +70,15 @@ It is flat because it is a family of genus $g$ curves over a reduced base. Furth
 \mathfrak C_{\mathfrak{Pic}}\ar[r,"\rho"]\ar[dr,"\pi"] & \hat{\mathfrak C} \ar[d,"\pi'"]\ar[dr,phantom,"\square"]\ar[r] & \mathfrak C_{\mathfrak{Pic}}\ar[d,"\pi"] \\
  & \mathfrak{Pic}_{g,n}^{d,\text{st}}\ar[r,"\comp '"] & \mathfrak{Pic}_{g,n}^{d,\text{st}}
 \ecd
-The very same construction, with the line bundles pulled back from the Picard stack, and the sections of $\mathcal L$ seen as sections of $\mathcal L\otimes \bigotimes_{0<\delta\leq d}\mathcal O_{\mathfrak C}(\delta T^\delta)$ through the inclusion of line bundles ($\mathcal O_{\mathfrak C}(T^\delta)$ is effective), and descended to sections of $\hat{\mathcal L}$ on $\hat{\mathfrak C}$ gives us the comparison morphism $\comp\colon \M{g}{n}{\PP^r}{d}\to\Q{g}{n}{\PP^r}{d}$, fitting in a commutative diagram
+The very same construction, with the line bundles pulled back from the Picard stack, and the sections of $\mathcal L$ seen as sections of $\mathcal L\otimes \bigotimes_{0<\delta\leq d}\mathcal O_{\mathfrak C}(\delta T^\delta)$ through the inclusion of line bundles ($\mathcal O_{\mathfrak C}(T^\delta)$ is effective), and descended to sections of $\hat{\mathcal L}$ on $\hat{\mathfrak C}$ gives us the comparison morphism $\comp\colon \M{g}{n}{\PP^N}{d}\to\Q{g}{n}{\PP^N}{d}$, fitting in a commutative diagram
 \bcd
-\M{g}{n}{\PP^r}{d} \ar[d,"\nu_{\mathcal M}"]\ar[r,"\comp"] & \Q{g}{n}{\PP^r}{d}\ar[d,"\nu_{\mathcal Q}"] \\
+\M{g}{n}{\PP^N}{d} \ar[d,"\nu_{\mathcal M}"]\ar[r,"\comp"] & \Q{g}{n}{\PP^N}{d}\ar[d,"\nu_{\mathcal Q}"] \\
 \mathfrak{Pic}_{g,n}^{d,\text{st}}\ar[r,"\comp '"] & \mathfrak{Pic}_{g,n}^{d,\text{st}}
 \ecd
 and, as before,
 \bcd
 \mathcal C_{\mathcal M}\ar[r,"\rho"]\ar[dr,"\pi_{\mathcal M}"] & \hat{\mathcal C}=\comp^*\mathcal C_{\mathcal Q} \ar[d,"\hat\pi"]\ar[dr,phantom,"\square"]\ar[r] & \mathcal C_{\mathcal Q}\ar[d,"\pi_{\mathcal Q}"] \\
- & \M{g}{n}{\PP^r}{d}\ar[r,"\comp"] & \Q{g}{n}{\PP^r}{d}
+ & \M{g}{n}{\PP^N}{d}\ar[r,"\comp"] & \Q{g}{n}{\PP^N}{d}
 \ecd
 
 The comparison between virtual fundamental classes is best outlined in the arXiv version of \cite[Remark 5.20]{Manolache-Push}. Call $\nu_{\mathcal M}'=\comp'\circ\nu_{\mathcal M}$. We may endow it with an obstruction theory by means of
@@ -134,11 +155,11 @@ We are interested in what happens to
 under $h^1(\phi^\vee)$. If we can show that $h^1(\phi^\vee)$ factors through $\Ext^1(\Omega_{C^{(0)}},\mathcal O_{C^{(0)}}(-\sum p_i))$ we are in business. Indeed the natural maps
 \bcd
 \Def_L\ar[d]\ar[r] & \Def_{(C,L)}\ar[d]\ar[r] & \Def_C\ar[d] \\
-H^1(\mathcal O_C)\ar[r] & H^1(L^{\oplus r+1})\ar[r] & H^1(f^*T_{\PP^r})
+H^1(\mathcal O_C)\ar[r] & H^1(L^{\oplus r+1})\ar[r] & H^1(f^*T_{\PP^N})
 \ecd
 show that $h^1(\phi^\vee)$ factors through
 \[
-\Ext^1(\Omega_{C^{(0)}},\mathcal O_{C^{(0)}}(-q-\sum p_i))\to \Ext^1(\Omega_{C^{(0)}},\mathcal O_{C^{(0)}})\to \Ext^1(f^*\Omega_{\PP^r},\mathcal O_{C^{(0)}})\simeq H^1(f^*T_{\PP^r}).
+\Ext^1(\Omega_{C^{(0)}},\mathcal O_{C^{(0)}}(-q-\sum p_i))\to \Ext^1(\Omega_{C^{(0)}},\mathcal O_{C^{(0)}})\to \Ext^1(f^*\Omega_{\PP^N},\mathcal O_{C^{(0)}})\simeq H^1(f^*T_{\PP^N}).
 \]
  \item $h^2(\phi^\vee)$ is zero because: $\mathbb E^\vee_{\nu'_\mathcal M}$ is supported in $[0,1]$.
 \end{itemize}
@@ -155,9 +176,9 @@ C(\phi) \ar[urrr] & & & & & &
 \end{center}
 it is enough to observe that $C(\phi')$ is supported in $[-1,0]$ \cite[Lemma 4.20]{Manolache-Push} and that $\nu_{\mathcal M}^*\mathbf L_{\comp'}{[1]}$ is supported in degrees $[-2,0]$, in order to conclude that $C(\phi)=\mathbf E_{\comp}$ is a perfect obstruction theory. The conclusion that
 \[
- \comp_*[\M{g}{n}{\PP^r}{d}]^{\text{vir}}=[\Q{g}{n}{\PP^r}{d}]^{\text{vir}}
+ \comp_*[\M{g}{n}{\PP^N}{d}]^{\text{vir}}=[\Q{g}{n}{\PP^N}{d}]^{\text{vir}}
 \]
-follows from the connectedness of $\M{g}{n}{\PP^r}{d}$ \cite{KP} (hence of $\Q{g}{n}{\PP^r}{d}$) and an application of the virtual push-forward theorem \cite[Proposition 4.21]{Manolache-Push}.
+follows from the connectedness of $\M{g}{n}{\PP^N}{d}$ \cite{KP} (hence of $\Q{g}{n}{\PP^N}{d}$) and an application of the virtual push-forward theorem \cite[Proposition 4.21]{Manolache-Push}.
 
 We shall now explain with an example the reason why a naive attempt to extend the comparison morphism to a general toric variety fails. The problem in a nutshell is that not all toric divisors are nef: a rational tail contained in a divisor which is not nef may have negative degree $-d$ with respect to the corresponding line bundle; when contracting such a rational tail, we shall take the line bundle $L(-dq)$, but what to do with the sections? We would like to divide them by $z^d$, where $z$ is a local coordinate around $q$, but no condition forces such a divisibility to happen. Otherwise said, there is now an inclusion $L_{|C^{(0)}}(-dq)\hookrightarrow L_{|C^{(0)}}$, but the (restriction of the) given sections of $L$ do not necessarily live in the image of $H^0(C^{(0)},L_{|C^{(0)}}(-dq))\hookrightarrow H^0(C^{(0)},L_{|C^{(0)}})$.
 
