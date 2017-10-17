@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  17 OCT 2017 12:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  17 OCT 2017 13:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1463,18 +1463,8 @@ LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 7.3pt on input line 236.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 5.5pt on input line 236.
- [32] [33]
-Overfull \hbox (29.95706pt too wide) detected at line 280
-\OMS/npxsy/m/n/10.95 h\OT1/zpltlf/m/n/10.95 [[][]]\OML/npxmi/m/it/10.95  []; \U
-/bbm/m/n/10.95 1[]\OMS/npxsy/m/n/10.95 i[] \U/npxmia/m/it/10.95 5 \OMS/npxsy/m/
-n/10.95 h\OT1/zpltlf/m/n/10.95 [[][]]\OML/npxmi/m/it/10.95 ; S[]\U/npxmia/m/it/
-10.95 }\U/bbm/m/n/10.95 1[]\U/npxmia/m/it/10.95 ~\OMS/npxsy/m/n/10.95 j[]i\OT1/
-zpltlf/m/n/10.95 [\OML/npxmi/m/it/10.95 z[]\OT1/zpltlf/m/n/10.95 ] \U/npxmia/m/
-it/10.95 5 []
- []
-
-) (./tex/comparison.tex [34] (./fig/T_delta.tex) [35] (./fig/RandT.tex)
-[36] [37] [38]
+ [32] [33] [34]) (./tex/comparison.tex [35] (./fig/T_delta.tex)
+(./fig/RandT.tex) [36] [37] [38]
 Overfull \hbox (10.26819pt too wide) in paragraph at lines 120--120
 [] 
  []
@@ -1595,7 +1585,7 @@ t/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx
 /zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (61 pages, 399616 bytes).
+Output written on relative_quasimaps.pdf (61 pages, 399880 bytes).
 PDF statistics:
  290 PDF objects out of 1000 (max. 8388607)
  206 compressed objects within 3 object streams
