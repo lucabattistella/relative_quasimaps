@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  17 OCT 2017 16:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  17 OCT 2017 16:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1466,12 +1466,12 @@ o-mo-log-i-cal push-forwards
  []
 
 [26] [27] (./fig/snake.tex) [28] [29]
-Overfull \hbox (21.67554pt too wide) in paragraph at lines 141--141
+Overfull \hbox (27.14326pt too wide) in paragraph at lines 141--141
 [] 
  []
 
 
-Overfull \hbox (24.06232pt too wide) in paragraph at lines 145--145
+Overfull \hbox (29.53004pt too wide) in paragraph at lines 145--145
 [] 
  []
 
@@ -1587,7 +1587,7 @@ t/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx
 /zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (63 pages, 401886 bytes).
+Output written on relative_quasimaps.pdf (63 pages, 401817 bytes).
 PDF statistics:
  296 PDF objects out of 1000 (max. 8388607)
  210 compressed objects within 3 object streams
