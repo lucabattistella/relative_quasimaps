@@ -30,11 +30,13 @@ We claim that $\mathcal{M}$ is trivial on every component of every rational tail
 \input{fig/RandT}
 \end{center}
 
-Because the stack $\mathfrak{Pic}_{g,n}^{d,\text{st}}$ is smooth, a general one-parameter family inside this stack will give us a smoothing of our curve. The universal curve over such a family is a normal surface $S$; thus we can compute the degree of the restriction of $\mathcal M$ to the irreducible components of the central fiber of this family by first restricting $\mathcal M$ to $S$, and then using intersection theory on the normal surface $S$.
+Because the moduli space $\mathfrak{Pic}_{g,n}^{d,\text{st}}$ is smooth, a general one-parameter family inside this stack will give us a smoothing of our curve. The total space of such a family is a normal surface $S$; thus we can compute the degree of the restriction of $\mathcal M$ to the irreducible components of the central fiber of this family by first restricting $\mathcal M$ to $S$, and then using the intersection theory of the normal surface $S$.
 
-Notice that $T^\delta|_S = T_{i_\delta}$ where $i_\delta$ is the unique value of $i$ such that $\delta = \sum_{j=i_{\delta}}^n e_i$ (if no such $i$ exists then $T^\delta|_S = 0$). Thus the restriction of $\bigotimes_{0<\delta\leq d}\mathcal{O}_{\mathfrak{C}_{\mathfrak{Pic}}}((\delta-1) T^\delta)$ to $S$ gives:
-\begin{equation*} \mathcal{O}_S(\Sigma_{j=1}^n \epsilon_j T_j) \end{equation*}
-Now, $R^{(i)}$ is a $(-2)$-curve for $i=1,\ldots,n-1$, and so we have:
+Notice first that $T^\delta|_S = T_{i_\delta}$ where $i_\delta$ is the unique value of $i$ such that
+\begin{equation*} \delta = \sum_{j=i_{\delta}}^n e_i \end{equation*}
+and if no such $i_\delta$ exists then $T^\delta|_S = 0$. Thus we obtain:
+\begin{equation*} \otimes_{0<\delta\leq d}\mathcal{O}_{\mathfrak{C}_{\mathfrak{Pic}}}((\delta-1) T^\delta)|_S = \mathcal{O}_S(\Sigma_{j=1}^n \epsilon_j T_j) \end{equation*}
+Now, $R^{(i)}$ has self-intersection $-2$ for $i=1,\ldots,n-1$, and so we have
 \begin{equation*}
 R^{(i)}\cdot T_j =
   \begin{cases}
@@ -44,7 +46,9 @@ R^{(i)}\cdot T_j =
     0 & \text{for } j>i+1
   \end{cases}
 \end{equation*}
-whereas for $R^{(n)}$ (which is a $(-1)$-curve) we have:
+from which it follows that:
+\begin{equation*} \deg \mathcal{M}|_{R^{(i)}} = \deg \mathcal{L}|_{R^{(i)}} - \epsilon_i + \epsilon_{i+1} = e_i - e_i = 0 \end{equation*}
+On the other hand $R^{(n)}$ has self-intersection $-1$ and so we have
 \begin{equation*}
 R^{(n)} \cdot T_j =
 \begin{cases}
@@ -52,98 +56,125 @@ R^{(n)} \cdot T_j =
 -1 & \text{for } j = n
 \end{cases}
 \end{equation*}
-It follows that for $i=1,\ldots,n-1$ we have
-\begin{equation*} \deg \mathcal{M}|_{R^{(i)}} = \deg \mathcal{L}|_{R^{(i)}} - \epsilon_i + \epsilon_{i+1} = e_i - e_i = 0 \end{equation*}
-whereas for $i=n$ we have:
+which implies:
 \begin{equation*} \deg \mathcal{M}|_{R^{(n)}} = \deg \mathcal{L}|_{R^{(n)}} - 1 - \epsilon_n = e_n - 1 - (e_n-1) = 0\end{equation*}
 Here we have used the fact that $\omega_\pi(\Sigma_i x_i)$ has degree $0$ on $R^{(i)}$ for $i=1,\ldots,n-1$ and degree $-1$ on $R^{(n)}$. Thus $\mathcal{M}$ is trivial on every component on every rational tail, as claimed. The fact that it is $\pi$-relatively ample on the rest of the curve follows from the stability condition and the fact that $\OO_{\mathfrak{C}_{\mathfrak{Pic}}}(T^\delta)$ is effective when restricted to $C^{(0)}$.
 
-[GENERAL CASE: UNDER CONSTRUCTION]
+In the above discussion we restricted ourselves to the simple case where $R$ is a chain of $\PP^1$s. In general $R$ can be an arbitrary tree of $\PP^1$s. The argument is similar, though combinatorially more complex. For brevity we will discuss one example:
 
-By taking the relative Proj construction we obtain another curve $\hat{\mathfrak C}=\underline\Proj_{\mathfrak{Pic}}\left(\bigoplus_{k\geq 0}\pi_*\mathcal M^{\otimes k}\right)$ over $\mathfrak{Pic}_{g,n}^{d,\text{st}}$, with a map $\rho$ that contracts the rational tails
+[FIGURE]
+
+Here $R$ has $3$ irreducible components $R^{(0)},R^{(1)},R^{(2)}$ with degrees $e_0,e_1,e_2$ respectively. Let $e = e_0+e_1+e_2$ be the total degree of the rational tail.
+
+Of the divisors $T^{\delta}$ for $0<\delta\leq d$, the total space $S$ only intersects\footnote{Notice in particular that $S$ does not intersect $T^{e_0}$ or $T^{e_0+e_1}$ (unless $e_0=0$).} $T^{e_1}, T^{e_2}$ and $T^e$. We have:
+\begin{align*}
+T^{e_1}|_S & = R^{(1)} \\
+T^{e_2}|_S & = R^{(2)} \\
+T^e|_S & = R = R^{(0)} + R^{(1)} + R^{(2)}
+\end{align*}
+Let us first look at $R^{(1)}$. This has self-intersection $-1$ and so:
+\begin{equation*} R^{(1)} \cdot T^{e_1}|_S = -1 \qquad R^{(1)} \cdot T^{e_2}|_S = 0 \qquad R^{(1)} \cdot T^e|_S = 1-1 = 0 \end{equation*}
+Thus we obtain
+\begin{equation*} \deg \mathcal{M}|_{R^{(1)}} = \deg \mathcal{L}|_{R^{(1)}} - 1 - (e_1 - 1) = 0 \end{equation*}
+and same argument applies to $R^{(2)}$. On the other hand, $R^{(0)}$ has self-intersection $-3$ (in general, a component that appears with $n$ adjacent components will have self-intersection $-n$). We have
+\begin{equation*} R^{(0)} \cdot T^{e_1}|_S = 1 \qquad R^{(0)} \cdot T^{e_2}|_S = 1 \qquad R^{(0)} \cdot T^e|_S = -3 + 1 + 1 = -1 \end{equation*}
+and thus we obtain
+\begin{align*} \deg \mathcal{M}|_{R^{(0)}} & = \deg \mathcal{L}|_{R^{(0)}} + 1 + (e_1 - 1) + (e_2 - 1) - (e-1) \\
+& = e_0 + e_1 + e_2 - e = 0 \end{align*}
+as required.
+
+To summarise, then: we have constructed a line bundle $\mathcal{M}$ on $\mathfrak{C}_{\mathfrak{Pic}}$ which is trivial on the components that we wish to contract and $\pi$-relatively ample elsewhere. By taking the relative Proj construction we therefore obtain another curve
+\begin{equation*} \hat{\mathfrak{C}}_{\mathfrak{Pic}}:=\underline{\operatorname{Proj}}_{\mathfrak{Pic}_{g,n}^{d,\operatorname{st}}} \left(\bigoplus_{k\geq 0}\pi_*\mathcal M^{\otimes k}\right) \end{equation*}
+over $\mathfrak{Pic}_{g,n}^{d,\text{st}}$, and a map $\rho$ which contracts the rational tails
 \bcd
-\mathfrak C_{\mathfrak{Pic}}\ar[r,"\rho"]\ar[dr,"\pi"] & \hat{\mathfrak C} \ar[d,"\pi'"]\\
+\mathfrak C_{\mathfrak{Pic}}\ar[r,"\rho"]\ar[dr,"\pi" left=3pt] & \hat{\mathfrak{C}}_{\mathfrak{Pic}} \ar[d,"\hat{\pi}"]\\
  & \mathfrak{Pic}_{g,n}^{d,\text{st}}
 \ecd
-It is flat because it is a family of genus $g$ curves over a reduced base. Furthermore, it can be checked by cohomology and base-change \cite[Theorem 12.11]{HAR}\cite[Corollary 1.5]{Knudsen} (notice that the fibers of $\rho$ are either points or rational curves) that $\hat{\mathcal L}=\rho_*\left(\mathcal L\otimes \bigotimes_{0<\delta\leq d}\mathcal O_{\mathfrak C}(\delta T^\delta)\right)$ is a line bundle on $\hat{\mathfrak C}$ of degree $d$ relative to $\pi'$ (such that $\rho^*\hat{\mathcal L}\simeq\mathcal L\otimes \bigotimes_{0<\delta\leq d}\mathcal O_{\mathfrak C}(\delta T^\delta)$), hence the universal property gives us a commutative diagram (with Cartesian square)
+The map $\hat{\pi}$ is flat since it is a family of genus $g$ curves over a reduced base. Furthermore, it can be checked using cohomology and base-change \cite[Theorem 12.11]{HAR} \cite[Corollary 1.5]{Knudsen} (notice that the fibers of $\rho$ are either points or rational curves) that
+\begin{equation*}\hat{\mathcal L}:=\rho_*\left(\mathcal L\otimes \bigotimes_{0<\delta\leq d}\mathcal{O}_{\hat{\mathfrak{C}}_{\mathfrak{Pic}}}(\delta T^\delta)\right) \end{equation*}
+is a line bundle on $\hat{\mathfrak{C}}_{\mathfrak{Pic}}$ of degree $d$ relative to $\hat{\pi}$. By the Yoneda lemma we thus obtain a comparison morphism $\tilde{\comp}$ fitting into a commutative diagram:
 \bcd
-\mathfrak C_{\mathfrak{Pic}}\ar[r,"\rho"]\ar[dr,"\pi"] & \hat{\mathfrak C} \ar[d,"\pi'"]\ar[dr,phantom,"\square"]\ar[r] & \mathfrak C_{\mathfrak{Pic}}\ar[d,"\pi"] \\
- & \mathfrak{Pic}_{g,n}^{d,\text{st}}\ar[r,"\comp '"] & \mathfrak{Pic}_{g,n}^{d,\text{st}}
+\mathfrak C_{\mathfrak{Pic}}\ar[r,"\rho"]\ar[dr,"\pi" left=3pt] & \hat{\mathfrak{C}}_{\mathfrak{Pic}} \ar[d,"\hat{\pi}"]\ar[dr,phantom,"\square" right=-0.5pt]\ar[r] & \mathfrak C_{\mathfrak{Pic}}\ar[d,"\pi"] \\
+ & \mathfrak{Pic}_{g,n}^{d,\text{st}}\ar[r,"\tilde{\comp}"] & \mathfrak{Pic}_{g,n}^{d,\text{st}}
 \ecd
-The very same construction, with the line bundles pulled back from the Picard stack, and the sections of $\mathcal L$ seen as sections of $\mathcal L\otimes \bigotimes_{0<\delta\leq d}\mathcal O_{\mathfrak C}(\delta T^\delta)$ through the inclusion of line bundles ($\mathcal O_{\mathfrak C}(T^\delta)$ is effective), and descended to sections of $\hat{\mathcal L}$ on $\hat{\mathfrak C}$ gives us the comparison morphism $\comp\colon \M{g}{n}{\PP^N}{d}\to\Q{g}{n}{\PP^N}{d}$, fitting in a commutative diagram
+This discussion all took place at the level of Picard stacks. However the same arguments carry through to give the comparison morphism:
+\begin{equation*} \comp\colon \M{g}{n}{\PP^N}{d}\to\Q{g}{n}{\PP^N}{d} \end{equation*}
+We have a commutative diagram
 \bcd
 \M{g}{n}{\PP^N}{d} \ar[d,"\nu_{\mathcal M}"]\ar[r,"\comp"] & \Q{g}{n}{\PP^N}{d}\ar[d,"\nu_{\mathcal Q}"] \\
-\mathfrak{Pic}_{g,n}^{d,\text{st}}\ar[r,"\comp '"] & \mathfrak{Pic}_{g,n}^{d,\text{st}}
+\mathfrak{Pic}_{g,n}^{d,\text{st}}\ar[r,"\tilde{\comp}"] & \mathfrak{Pic}_{g,n}^{d,\text{st}}
 \ecd
-and, as before,
+and, as before, a diagram of universal curves:
 \bcd
-\mathcal C_{\mathcal M}\ar[r,"\rho"]\ar[dr,"\pi_{\mathcal M}"] & \hat{\mathcal C}=\comp^*\mathcal C_{\mathcal Q} \ar[d,"\hat\pi"]\ar[dr,phantom,"\square"]\ar[r] & \mathcal C_{\mathcal Q}\ar[d,"\pi_{\mathcal Q}"] \\
+\mathcal C_{\mathcal M}\ar[r,"\rho"] \ar[rd,"\pi_{\mathcal M}" left=3pt] & \hat{\mathcal{C}}_{\mathcal{M}}=\comp^*\mathcal C_{\mathcal Q} \ar[d,"\hat{\pi}_{\mathcal{M}}"]\ar[dr,phantom,"\square"]\ar[r] & \mathcal C_{\mathcal Q}\ar[d,"\pi_{\mathcal Q}"] \\
  & \M{g}{n}{\PP^N}{d}\ar[r,"\comp"] & \Q{g}{n}{\PP^N}{d}
 \ecd
 
-The comparison between virtual fundamental classes is best outlined in the arXiv version of \cite[Remark 5.20]{Manolache-Push}. Call $\nu_{\mathcal M}'=\comp'\circ\nu_{\mathcal M}$. We may endow it with an obstruction theory by means of
+\subsection{The comparison morphism preserves the virtual classes}
+The virtual classes are preserved by the comparison morphism, that is:
+\begin{equation*} \comp_* \virt{\M{g}{n}{\PP^N}{d}} = \virt{\Q{g}{n}{\PP^N}{d}} \end{equation*}
+The idea, following \cite{Manolache-Push}, is to construct a relative perfect obstruction theory
+\begin{equation*} \mathbf{E}_{\comp} \to \mathbf{L}_{\comp} \end{equation*}
+for the morphism $\comp$. The construction is best outlined in the arXiv version of \cite[Remark 5.20]{Manolache-Push}. Let $\tilde{\nu}_{\mathcal{M}}$ denote the composition:
 \bcd
-\nu_\mathcal M^*\mathbf L_{\comp'}\ar[d]\ar[r] & \mathbf E_{\nu'_\mathcal M} \ar[d]\ar[r] & \mathbf E_{\nu_\mathcal M} \ar[d]\ar[r,"{[1]}"] & {}\\
-\nu_\mathcal M^*\mathbf L_{\comp'}\ar[r] & \mathbf L_{\nu'_\mathcal M} \ar[r] & \mathbf L_{\nu_\mathcal M} \ar[r,"{[1]}"] & {}
+\M{g}{n}{\PP^N}{d} \ar[r,"\nu_{\mathcal{M}}"] \ar[rr,"{\tilde{\nu}}_{\mathcal{M}}", bend right] & \mathfrak{Pic}_{g,n}^{d,\operatorname{st}} \ar[r,"\tilde{\comp}"] & \mathfrak{Pic}_{g,n}^{d,\operatorname{st}}
 \ecd
+We may endow this morphism with a relative perfect obstruction theory via the following morphism of exact triangles:
+\bcd
+\nu_\mathcal M^*\mathbf L_{\tilde{\comp}}\ar[d]\ar[r] & \mathbf E_{\tilde{\nu}_{\mathcal{M}}} \ar[d]\ar[r] & \mathbf E_{\nu_\mathcal M} \ar[d]\ar[r,"{[1]}"] & {}\\
+\nu_\mathcal M^*\mathbf L_{\tilde{\comp}}\ar[r] & \mathbf L_{\tilde{\nu}_{\mathcal{M}}} \ar[r] & \mathbf L_{\nu_\mathcal M} \ar[r,"{[1]}"] & {}
+\ecd
+Notice that $\tilde{\comp}$ is a morphism between smooth Artin stacks. As such we can examine the exact triangle of cotangent complexes induced by $\tilde{\comp}$ and conclude that $\mathbf{L}_{\tilde{\comp}}$ is supported in $[-1,1]$. It then follows easily  that $\mathbf E_{\tilde{\nu}_{\mathcal{M}}}$ is also supported in $[-1,1]$; in order to show that it is perfect, we consider the long exact cohomology sequence near $\h^1(\mathbf E_{\tilde{\nu}_{\mathcal{M}}})$:
+\begin{equation*} \h^{0}(\mathbf E_{\nu_\mathcal M}) \to \h^{1}(\nu_\mathcal M^*\mathbf L_{\tilde{\comp}}) \to \h^{1} (\mathbf E_{\tilde{\nu}_{\mathcal{M}}}) \to 0 \end{equation*}
+We must show that the morphism $\h^0 (\mathbf{E}_{\nu_{\mathcal{M}}}) \to \h^1(\nu_{\mathcal{M}}^* \mathbf{L}_{\tilde{\comp}})$ is surjective. Looking at the dual picture, we see that the map
+\begin{equation*} \h^{1}(\nu_\mathcal M^*\mathbf{L}_{\tilde{\comp}})^\vee \to \h^{0}(\mathbf E_{\nu_\mathcal M})^\vee \cong \h^{0}(\mathbf{L}_{\nu_\mathcal M})^\vee \end{equation*}
+is injective, because every infinitesimal automorphism of the rational tail induces a nontrivial deformation of the stable map, since the degree of the stable map is positive on every component of the rational tail. We conclude that $\h^{1}\mathbf E_{\tilde{\nu}_{\mathcal{M}}}=0$ and so indeed $\mathbf{E}_{\tilde{\nu}_{\mathcal{M}}}$ is a perfect obstruction theory for $\tilde{\nu}_{\mathcal{M}}$. It induces the usual virtual fundamental class on the moduli space of stable maps.
 
-Notice that $\comp'$ is a morphism (not of DM type) between smooth Artin stacks, hence we can only deduce that $\mathbf L_{\comp'}$ is supported in $[-1,1]$. It is therefore easily seen that $\mathbf E_{\nu'_\mathcal M}$ is also supported in $[-1,1]$; in order to show that it is actually a perfect obstruction theory, consider the long exact sequence
-\begin{align*}
- 0 &\to h^{-1}\nu_\mathcal M^*\mathbf L_{\comp'}\to h^{-1}\mathbf E_{\nu'_\mathcal M} \to h^{-1}\mathbf E_{\nu_\mathcal M} \\
- &\to h^{0}\nu_\mathcal M^*\mathbf L_{\comp'}\to h^{0}\mathbf E_{\nu'_\mathcal M} \to h^{0}\mathbf E_{\nu_\mathcal M} \\
- &\to h^{1}\nu_\mathcal M^*\mathbf L_{\comp'}\to h^{1}\mathbf E_{\nu'_\mathcal M} \to 0
-\end{align*}
-and observe that, dually, $h^{-1}\nu_\mathcal M^*\mathbf T_{\comp'}$ injects into $h^{0}\mathbf E^\vee_{\nu_\mathcal M}\simeq h^{0}\mathbf T_{\nu_\mathcal M}$, because every infinitesimal automorphism of the rational tail induces a nontrivial deformation of the stable map (since the degree of the latter is positive on every component of the rational tail); we conclude that $h^{1}\mathbf E_{\nu'_\mathcal M}=0$.
-
-\emph{Claim:} there is a morphism of obstruction theories $\comp^*\mathbf E_{\nu_\mathcal Q}\to\mathbf E_{\nu_\mathcal M}$ \cite[Lemma 4.19]{Manolache-Push}.
-
-Dually, $\mathbf E^\vee_{\nu_\mathcal M}=R^\bullet\pi_{\mathcal{M}*}\mathcal L^{\oplus r+1}=R^\bullet\hat\pi_*(\rho_*\mathcal L^{\oplus r+1})$, while, by cohomology and base-change, $\comp^*\mathbf E^\vee_{\nu_\mathcal Q}=R^\bullet\hat\pi_*(\hat{\mathcal L}^{\oplus r+1})$, where $\hat{\mathcal L}=\rho_*\left(\mathcal L\otimes \bigotimes_{0<\delta\leq d}\mathcal O_{\mathfrak C}(\delta T^\delta)\right)$, so $\mathbf E^\vee_{\nu_\mathcal M}\to\comp^*\mathbf E^\vee_{\nu_\mathcal Q}$ comes from the inclusion of line bundles on $\mathcal C_\mathcal M$
+Now, we can construct a morphism of obstruction theories (see 
+\cite[Lemma 4.19]{Manolache-Push})
+\begin{equation*} \comp^*\mathbf E_{\nu_\mathcal Q}\to\mathbf E_{\nu_\mathcal M} \end{equation*}
+as follows. We have
+\begin{align*} \mathbf E^\vee_{\nu_\mathcal M}& =\R\pi_{\mathcal{M}*}\mathcal L^{\oplus N+1}=\R\hat\pi_* \rho_*\mathcal L^{\oplus N+1} \\
+\comp^*\mathbf E^\vee_{\nu_\mathcal Q} & = \chi^* \R \pi_{\mathcal{Q}} \hat{\mathcal{L}}^{\oplus{N+1}} = \R {\hat{\pi}}_{\mathcal{M}*}\hat{\mathcal L}^{\oplus N+1}\end{align*}
+where $\hat{\mathcal L}=\rho_*\left(\mathcal L\otimes \bigotimes_{0<\delta\leq d}\mathcal O_{\mathfrak C}(\delta T^\delta)\right)$. Thus $\mathbf E^\vee_{\nu_\mathcal M}\to\comp^*\mathbf E^\vee_{\nu_\mathcal Q}$ comes from the following inclusion of line bundles on $\mathcal C_\mathcal M$:
 \[
 \mathcal L\hookrightarrow \mathcal L\otimes \bigotimes_{0<\delta\leq d}\mathcal O_{\mathfrak C}(\delta T^\delta).
 \]
-
-\emph{Claim:} this morphism factors through $\mathbf E_{\nu'_\mathcal M}$.
-
+We now claim that this morphism factors through $\mathbf E_{\tilde{\nu}_{\mathcal{M}}}$. Examining the diagram:
 \bcd
 & \comp^*\mathbf E_{\nu_\mathcal Q}\ar[dl,dashed,"\exists ?"]\ar[d]\ar[dr,"\phi"] & \\
-\mathbf E_{\nu'_\mathcal M} \ar[r] & \mathbf E_{\nu_\mathcal M}\ar[r] & \nu_\mathcal M^*\mathbf L_{\comp'}[1]
+\mathbf E_{\tilde{\nu}_{\mathcal{M}}} \ar[r] & \mathbf E_{\nu_\mathcal M}\ar[r] & \nu_\mathcal M^*\mathbf L_{\tilde{\comp}}[1] \ar[r,"{[1]}"] & \,
 \ecd
-
-In order to prove that the dashed arrow exists, we need to show that $\phi$ is the zero map. 
-
-This follows formally from the following factorisation:
-
+we see that it is equivalent to show that $\phi$ is the zero map. This follows formally from the following factorisation:
 \bcd
  & & \mathbf L_\comp \ar[ld,"{[1]}" swap] & & \\
-\comp^* \mathbf E_{\nu_\mathcal Q}\ar[dd]\ar[r] & \comp^*\mathbf L_{\nu_\mathcal Q}\ar[rr] &  & \mathbf L_{\nu'_\mathcal M}\ar[ul]\ar[dd] & \\
- & & & & \nu_{\mathcal M}^*\mathbf L_{\comp '}[1]\ar[ul,"{[1]}" swap] \\
+\comp^* \mathbf E_{\nu_\mathcal Q}\ar[dd]\ar[r] & \comp^*\mathbf L_{\nu_\mathcal Q}\ar[rr] &  & \mathbf L_{\tilde{\nu}_{\mathcal{M}}}\ar[ul]\ar[dd] & \\
+ & & & & \nu_{\mathcal M}^*\mathbf L_{\tilde{\comp}}[1]\ar[ul,"{[1]}" swap] \\
 \mathbf E_{\nu_\mathcal M} \ar[rrr] & & & \mathbf L_{\nu_\mathcal M}\ar[ur] & {}
 \ecd
-
+We thus obtain a morphism
+\begin{equation*} \psi \colon \comp^* \mathbf{E}_{\nu_{\mathcal{Q}}} \to \mathbf{E}_{\tilde{\nu}_{\mathcal{M}}} \end{equation*}
+and the cone $C(\psi)$ gives a relative obstruction theory for the comparison morphism $\chi$. A priori, it is supported in $[-2,0]$. By the octahedral axiom we have:
+%-------------
 \begin{comment}
-
 \begin{center}
-
 \begin{tikzcd}[execute at end picture={
     \begin{scope}[on background layer]
     \fill[pattern=north east lines, pattern color=gray!20] (a.north west) -- (b.north east) -- (b.south east) -- (a.south west) -- cycle;
     \fill[pattern=north west lines, pattern color=gray!20] (c.north west) -- (c.north east) -- (d.south east) -- (d.south west) -- cycle;
     \end{scope}
   }]
-\comp^* \mathbb E_{\nu_\mathcal Q}\ar[d]\ar[r] & |[alias=a]| \comp^*\mathbb L_{\nu_\mathcal Q}\ar[r] & |[alias=c]|\mathbb L_{\nu'_\mathcal M}\ar[r]\ar[d] & |[alias=b]| \mathbb L_\comp \\
+\comp^* \mathbb E_{\nu_\mathcal Q}\ar[d]\ar[r] & |[alias=a]| \comp^*\mathbb L_{\nu_\mathcal Q}\ar[r] & |[alias=c]|\mathbb L_{\tilde{\nu}_{\mathcal{M}}}\ar[r]\ar[d] & |[alias=b]| \mathbb L_\comp \\
 \mathbb E_{\nu_\mathcal M} \ar[rr] & & \mathbb L_{\nu_\mathcal M}\ar[d] & \\
  & & |[alias=d]| \nu_{\mathcal M}^*\mathbb L_{\comp '}[1]
 \end{tikzcd}
-
 \end{center} 
 \end{comment}
-
 \begin{comment}
-Dually, we look at $\nu_\mathcal M^*\mathbb T_{\comp'}[-1]\xrightarrow{\phi^\vee} R^\bullet\hat\pi_*(\hat{\mathcal L}^{\oplus r+1})$. Notation: call $R$ the rational tail, joined at the rest of the curve (which we denote by $(C^{(0)},\mathbf p)$ as a marked curve), at the node $q$, which we may occasionally think of as a (smooth) point on $C^{(0)}$. We claim that:
+Dually, we look at $\nu_\mathcal M^*\mathbb T_{\tilde{\comp}}[-1]\xrightarrow{\phi^\vee} \R\hat\pi_*(\hat{\mathcal L}^{\oplus r+1})$. Notation: call $R$ the rational tail, joined at the rest of the curve (which we denote by $(C^{(0)},\mathbf p)$ as a marked curve), at the node $q$, which we may occasionally think of as a (smooth) point on $C^{(0)}$. We claim that:
 \begin{itemize}
  \item $h^0(\phi^\vee)$ is zero because: the LHS involves automorphisms of the rational tail that leave $C^{(0)}$ fixed, while the RHS involves deformations of $C^{(0)}$, so there is no possible interference.
  \item $h^1(\phi^\vee)$ is zero because: \textcolor{red}{this is slightly awkward.} There are two types of possible contributions to the LHS. They correspond to either moving the node $q$ along $C^{(0)}$, or smoothing it. The former appears in the relative tangent of $\chi'$ only if the marked curve $(C^{(0)},\mathbf p)$ has no automorphisms that may ``move $q$ back'', i.e. $(C^{(0)},\mathbf p)$ is a stable pointed curve. The latter matters only if $(C^{(0)},q,\mathbf p)$ has no moduli, i.e. $(C^{(0)},\mathbf p)$ is a rational tail with less than 3 markings. \textcolor{red}{I will try to justify why the first type vanishes under $h^1(\phi^\vee)$, and leave the second type because I do not understand it as yet.} Look at the long exact sequence
- 
 \begin{align*}
   0 &\to \Hom(\Omega_{C^{(0)}},\mathcal O_{C^{(0)}}(-q-\sum p_i)) &\to \Hom(\Omega_{C^{(0)}},\mathcal O_{C^{(0)}}(-\sum p_i)) &\to \\
   T_{C^{(0)},q} &\to \Ext^1(\Omega_{C^{(0)}},\mathcal O_{C^{(0)}}(-q-\sum p_i)) &\to \Ext^1(\Omega_{C^{(0)}},\mathcal O_{C^{(0)}}(-\sum p_i)) &\to 0
@@ -161,29 +192,29 @@ show that $h^1(\phi^\vee)$ factors through
 \[
 \Ext^1(\Omega_{C^{(0)}},\mathcal O_{C^{(0)}}(-q-\sum p_i))\to \Ext^1(\Omega_{C^{(0)}},\mathcal O_{C^{(0)}})\to \Ext^1(f^*\Omega_{\PP^N},\mathcal O_{C^{(0)}})\simeq H^1(f^*T_{\PP^N}).
 \]
- \item $h^2(\phi^\vee)$ is zero because: $\mathbb E^\vee_{\nu'_\mathcal M}$ is supported in $[0,1]$.
+ \item $h^2(\phi^\vee)$ is zero because: $\mathbb E^\vee_{\tilde{\nu}_{\mathcal{M}}}$ is supported in $[0,1]$.
 \end{itemize}
 \end{comment}
-Now the cone $C(\phi)$ gives an obstruction theory relative to $\comp$. A priori, it is supported in $[-2,0]$. By the octahedral axiom
+%----------------------
 \begin{center}
- \begin{tikzcd}%[cramped]
-  \comp^*\mathbf E_{\nu_\mathcal{Q}} \ar[dd,"\phi"]\ar[rrdd,"\phi'"] & & & & & & \\
+ \begin{tikzcd}[cramped]
+  \comp^*\mathbf E_{\nu_\mathcal{Q}} \ar[dd,"\psi"]\ar[rrdd,"\tilde{\psi}"] & & & & & & \\
 & & & & & & \\
-\mathbf E_{\nu'_\mathcal{M}}\ar[dd]\ar[rr] & & \mathbf E_{\nu_\mathcal{M}} \ar[rrrr]\ar[dr] & & & & \nu_{\mathcal M}^*\mathbf L_{\comp'}{[1]} \\
-& & & C(\phi')\ar[urrr] & & & \\
-C(\phi) \ar[urrr] & & & & & & 
+\mathbf E_{\tilde{\nu}_\mathcal{M}}\ar[dd]\ar[rr] & & \mathbf E_{\nu_\mathcal{M}} \ar[rrrr]\ar[dr] & & & & \nu_{\mathcal M}^*\mathbf L_{\tilde{\comp}}{[1]} \\
+& & & C(\tilde{\psi})\ar[urrr] & & & \\
+C(\psi) \ar[urrr] & & & & & & 
  \end{tikzcd}
 \end{center}
-it is enough to observe that $C(\phi')$ is supported in $[-1,0]$ \cite[Lemma 4.20]{Manolache-Push} and that $\nu_{\mathcal M}^*\mathbf L_{\comp'}{[1]}$ is supported in degrees $[-2,0]$, in order to conclude that $C(\phi)=\mathbf E_{\comp}$ is a perfect obstruction theory. The conclusion that
-\[
- \comp_*[\M{g}{n}{\PP^N}{d}]^{\text{vir}}=[\Q{g}{n}{\PP^N}{d}]^{\text{vir}}
-\]
-follows from the connectedness of $\M{g}{n}{\PP^N}{d}$ \cite{KP} (hence of $\Q{g}{n}{\PP^N}{d}$) and an application of the virtual push-forward theorem \cite[Proposition 4.21]{Manolache-Push}.
 
-We shall now explain with an example the reason why a naive attempt to extend the comparison morphism to a general toric variety fails. The problem in a nutshell is that not all toric divisors are nef: a rational tail contained in a divisor which is not nef may have negative degree $-d$ with respect to the corresponding line bundle; when contracting such a rational tail, we shall take the line bundle $L(-dq)$, but what to do with the sections? We would like to divide them by $z^d$, where $z$ is a local coordinate around $q$, but no condition forces such a divisibility to happen. Otherwise said, there is now an inclusion $L_{|C^{(0)}}(-dq)\hookrightarrow L_{|C^{(0)}}$, but the (restriction of the) given sections of $L$ do not necessarily live in the image of $H^0(C^{(0)},L_{|C^{(0)}}(-dq))\hookrightarrow H^0(C^{(0)},L_{|C^{(0)}})$.
+Now, $C(\psi)$ is supported in $[-1,0]$ \cite[Lemma 4.20]{Manolache-Push} and $\nu_{\mathcal M}^*\mathbf L_{\tilde{\comp}}{[1]}$ is supported in degrees $[-2,0]$, from which it follows that $C(\psi)=\mathbf E_{\comp}$ is a perfect obstruction theory. The conclusion, that
+\begin{equation*} \comp_*\virt{\M{g}{n}{\PP^N}{d}}=\virt{\Q{g}{n}{\PP^N}{d}} \end{equation*}
+follows from the connectedness of $\M{g}{n}{\PP^N}{d}$ \cite{KP}, hence of $\Q{g}{n}{\PP^N}{d}$, and an application of the virtual push-forward theorem \cite[Proposition 4.21]{Manolache-Push}.
 
-A concrete example is found when looking at the Hirzebruch surface $\mathbb F_1=\operatorname{Bl}_{p}\PP^1$.
-\begin{figure}
+\subsection{An example where the comparison morphism fails to exist}
+We will now explain with an example the reason why a naive attempt to extend the comparison morphism to a general toric variety fails. The problem boils down to the fact that not all toric divisors are nef: a rational tail contained in a such divisor may have a corresponding line bundle with negative degree $-d$; when contracting such a rational tail, we take the line bundle $L(-dq)$, but it is not clear what to do with the sections. We would like to divide them by $z^d$, where $z$ is a local coordinate around $q$, but we are by no means guaranteed that this is possible. Put differently, we now have an inclusion $L|_{C^{(0)}}(-dq)\hookrightarrow L|_{C^{(0)}}$, but the given sections of $L$ do not necessarily live in the image of $H^0(C^{(0)},L|_{C^{(0)}}(-dq))\to H^0(C^{(0)},L|_{C^{(0)}})$.
+
+A concrete example can be found by looking at the Hirzebruch surface $\mathbb F_1=\operatorname{Bl}_{p}\PP^2$. Since we may choose the point $p$ to be a torus-fixed point of $\PP^2$, $\mathbb{F}_1$ is a toric variety; see Figures \ref{Figure toric fan}, \ref{Figure nef cone} and \ref{Figure Mori cone}.
+\begin{figure}[h]
 \begin{tikzpicture}
 \path [fill=black!10!white] (0,0) -- (2,0) -- (2,2) -- (0,2) -- (0,0);
 \path [fill=black!15!white] (0,0) -- (-2,2) -- (0,2) -- (0,0);
@@ -196,6 +227,7 @@ A concrete example is found when looking at the Hirzebruch surface $\mathbb F_1=
 \draw [->,very thick] (0,0) -- (0,-1) node[below]{$u_4$};
 \end{tikzpicture}
 \caption{Toric fan for $\mathbb F_1$.}
+\label{Figure toric fan}
 \end{figure}
 
 \begin{figure}
@@ -208,6 +240,7 @@ A concrete example is found when looking at the Hirzebruch surface $\mathbb F_1=
 \draw [thick] (0,-1) -- (0,2);
 \end{tikzpicture}
 \caption{Nef cone $\operatorname{Nef}(\mathbb F_1)$.}
+\label{Figure nef cone}
 \end{figure}
 
 \begin{figure}
@@ -221,22 +254,28 @@ A concrete example is found when looking at the Hirzebruch surface $\mathbb F_1=
 \draw [thick] (0,-2) -- (0,2);
 \end{tikzpicture}
 \caption{Mori cone $\overline{\operatorname{NE}}(\mathbb F_1)$.}
+\label{Figure Mori cone}
 \end{figure}
 
-$\Pic(\mathbb F_1)$ is generated by $[D_3]$ and $[D_4]$, with relations $[D_1]=[D_3]$ and $[D_2]=[D_4]-[D_3]$, and the intersection table is given by
+The group $\Pic(\mathbb F_1)$ is generated by $[D_3]$ and $[D_4]$, with relations $[D_1]=[D_3]$ and $[D_2]=[D_4]-[D_3]$; the intersection form is given by:
 \[
 {}
 \begin{cases}
- D_3^2=0 \\
- D_3.D_4=0 \\
- D_4^2=1
+ [D_3]^2=0 \\
+ [D_3]\cdot [D_4]=1 \\
+ [D_4]^2=1
 \end{cases} 
 \]
-When thinking of $\mathbb F_1$ as a $\PP^1$-bundle over $\PP^1$, $C_1$ and $C_3$ represent the fibers of the bundle (over the toric points of $\PP^1$), while $C_4$ (resp. $C_2$) is the zero/positive (resp. infinity/negative) section; when thinking of $\mathbb F_1$ as $\operatorname{Bl}_{p}\PP^1$, $C_2$ is the exceptional divisor, $C_4$ is the toric line not passing through $p$, and $C_1,C_3$ are the strict transforms of the toric lines through $p$.
+When we are thinking of the $D_i$ as curves instead of as divisors, we will denote them by $C_i$. The space $\mathbb F_1$ can be viewed as a $\PP^1$-bundle over $\PP^1$, in which case $C_1$ and $C_3$ represent the fibers of the bundle (over the torus-fixed points of $\PP^1$), while $C_4$ and $C_2$ are the zero and infinity sections, respectively. When thinking of $\mathbb F_1$ as $\operatorname{Bl}_{p}\PP^2$, $C_2$ is the exceptional divisor, $C_4$ is the toric line not passing through $p$, and $C_1,C_3$ are the strict transforms of the toric lines through $p$.
 
-Let us look at $\M{0}{2}{\mathbb F_1}{[C_4]}$. Since $[C_4]=[C_2]+[C_3]$, there are going to be maps of the following sort: the source curve is reducible $R_1\sqcup_q R_2$, $R_1$ is mapped isomorphically to a fiber (i.e. in class $[C_3]$) and $R_2$ is mapped isomorphically to $C_2$, all the markings belong to $R_1$. So $R_2$ is a rational tail and deserves to be contracted. Notice that the line bundle $\mathcal O(D_2)$ has degree $-1$ on $R_2$ (and $1$ on $R_1$). In this case everything works well because the corresponding section $u_{2|R_1}$ must vanish at the node, so we can divide it by a chosen (once for all toric line bundles) section of $\mathcal O_{R_1}(q)$.
+Let us examine the moduli space $\M{0}{2}{\mathbb F_1}{[C_2]+[C_4]}$. Since $[C_4] = [C_2]+[C_3]$ we have $[C_2]+[C_4] = 2[C_2] + [C_3]$. We can thus consider the locus of stable maps inside this moduli space such that:
+\begin{enumerate}
+\item the source curve splits up as $C=R_1 \sqcup_q R_2$, with all of the marked points belonging to $R_1$;
+\item $R_1$ is mapped isomorphically to a fibre (hence $f_*[R_1] = [C_3]$);
+\item $R_2$ is a degree-$2$ covering of $C_2 \cong \PP^1$ (hence $f_*[R_2]=2[C_2]$).
+\end{enumerate}
+The component $R_2$ is a rational tail and so should be contracted by the comparison morphism. However, the line bundle $L_2$ on $C$ corresponding to the divisor $D_2$ has degree $-2$ when restricted to $R_2$ (the degree is equal to $[D_2] \cdot f_*[R_2]=2[D_2]^2 = -2$). Thus when we contract $R_2$ we should replace $L_2|_{R_1}$ by $L_2|_{R_1}(-2q)$. However, the section $u_2|_{R_1}$ only comes from a section of $L_2|_{R_1}(-2q)$ if it vanishes to order $2$ at $q$, which is certainly not the case in general. Thus we see that in this example the comparison morphism does not exist.
 
-Consider now $\M{0}{2}{\mathbb F_1}{2[C_2]+[C_3]}$. Certainly there are going to be maps similar to the ones described above, with $R_2$ now covering $C_2$ $2\colon 1$. The point is that $\mathcal O(D_2)$ has degree $-2$ on $R_2$, but $u_{2|R_1}$ doesn't have to vanish at the node of order $2$, so we are in trouble. 
 \begin{comment}
 
 \textcolor{blue}{Something is going on here: in this case there is a boundary component where the map is of the type that we have just described, and the requirement that $u_{2|R_1}$ vanishes of order $2$ at the node defines precisely the intersection with the main component. Check this. Could we possibly exploit this phenomenon to define a smaller compactification, possibly even smaller than quasimaps?} 
