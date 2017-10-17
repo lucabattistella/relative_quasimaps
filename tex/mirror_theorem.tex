@@ -192,11 +192,11 @@ Theorem \ref{Theorem Quantum Lefschetz} agrees with \cite[Theorem~1]{CZ-mirror} 
 \end{remark}
 
 \subsection{Comparison with the work of Ciocan-Fontanine and Kim}
-Here we briefly explain how to compare Theorem \ref{Theorem Quantum Lefschetz} to a formula obtained by Ciocan-Fontanine and Kim. In \cite[Section 5]{CF-K-wallcrossing} they introduce (in the more general context of $\epsilon$-stable quasimaps) the following generating functions for quasimap invariants of $Y$.
+Here we briefly explain how to compare our Theorem \ref{Theorem Quantum Lefschetz} to a formula obtained by Ciocan-Fontanine and Kim. We assume that the reader is familiar with the paper \cite{CF-K-wallcrossing}, in particular \S4 and \S5. \cite[\S 5]{CF-K-wallcrossing} introduces (in the more general context of $\epsilon$-stable quasimaps) the following generating functions for quasimap invariants of $Y$:
 \begin{enumerate}
 \item The \emph{$J^{\epsilon}$-function}
 \begin{equation*} J^\epsilon({\bf t}, z)=\sum_{m\geq 0,\beta\geq 0} \dfrac{q^\beta}{m!} (\ev_\bullet)_*\left( \prod_{i=1}^m \ev_i^*({\bf t}) \cap\operatorname{Res}_{F_0} \virt{\QGe{0}{m}{Y}{\beta}} \right) \end{equation*}
-where $\mathbf{t} \in \HH^*(X)$ and $z$ is a formal variable. $\QGe{0}{m}{Y}{\beta}$ is the moduli space of $\epsilon$-stable  quasimaps with one parametrised component, $F_0$ is a certain fixed locus of the natural $\Gm$-action on this space, and $\ev_\bullet$ is the evaluation at the point $0 \in \PP^1$ on the parametrised component. $\operatorname{Res}_{F_0}$ is the residue of the virtual class, i.e. the virtual class of the fixed locus divided by the Euler class of the virtual normal bundle (see \cite{GraberPandharipande} for details on virtual localisation). We denote  by $z$ the standard character of $\Gm$.
+where $\mathbf{t} \in \HH^*(X)$ and $z$ is a formal variable. $\QGe{0}{m}{Y}{\beta}$ is the moduli space of $\epsilon$-stable  quasimaps with one parametrised component, $F_0$ is a certain fixed locus of the natural $\Gm$-action on this space, and $\ev_\bullet$ is the evaluation at the point $0 \in \PP^1$ on the parametrised component. $\operatorname{Res}_{F_0}$ is the residue of the virtual class, i.e. the virtual class of the fixed locus divided by the Euler class of the virtual normal bundle (see \cite{GraberPandharipande} for details on virtual localisation). We denote  by $z$ the $\Gm$-equivariant parameter.
 \item The \emph{$S^\epsilon$-operator}
 \begin{equation*}
  S^\epsilon(\mathbf{t},z)(\gamma)=\sum_{m\ge 0,\beta\ge 0}\frac{q^\beta}{m!} 
@@ -210,18 +210,21 @@ where $p_\infty\in \HH^*_{\Gm}(\PP^1)$ is the equivariant cohomology class defin
 \end{enumerate}
 Given these definitions, Ciocan-Fontanine and Kim use localisation with respect to the $\Gm$-action on the parametrised space to prove the following formula \cite[Theorem 5.4.1]{CF-K-wallcrossing}:
 \[
- J^\epsilon(\mathbf{t},z)=S^\epsilon(\mathbf{t},z)(P^\epsilon(\mathbf{t},z)).
+ J^\epsilon(\mathbf{t},z)=S^\epsilon(\mathbf{t},z)(P^\epsilon(\mathbf{t},z))
 \]
 They then show that if we set ${\bf t}=0$ and restrict to semi-positive targets, then the only class that matches non-trivially with ${P^\epsilon}|_{\mathbf{t}=0}$ is $[\pt_Y]$. The above formula then takes the simple form
 \begin{equation} \label{Ciocan-Fontanine Theorem t zero}
  \frac{J^\epsilon |_{{\bf t}=0}}{\langle [\pt_Y],  P^\epsilon|_{{\bf t}=0}\rangle}=S^\epsilon(\mathbbm{1}_Y)|_{\mathbf{t}=0} = \mathbbm 1_Y+\sum_{h=1}^k \rho^h \left(\sum_{\beta> 0}q^\beta\left\langle\frac{\rho_h}{z-\psi},\mathbbm 1_Y\right\rangle_{0,2,\beta}^{Y,\epsilon} \right)\end{equation}
-see \cite[Corollary 5.5.1]{CF-K-wallcrossing}. In our case $\epsilon=0+$ and $Y$ embeds as a very ample hypersurface in a toric Fano variety $X$. We claim that in this case the formula above is equivalent to Theorem \ref{Theorem Quantum Lefschetz}. More precisely, we claim that:
+see \cite[Corollary 5.5.1]{CF-K-wallcrossing}. In our case $\epsilon=0+$ and $Y$ embeds as a very ample hypersurface in a toric Fano variety $X$. We claim that in this case the formula above is equivalent to Theorem \ref{Theorem Quantum Lefschetz}. More precisely:
+\begin{lem} We have the following relations between our generating functions and the generating functions of Ciocan-Fontanine and Kim:
 \begin{align}
 \label{J epsilon equation} J^{0+}|_{\mathbf{t}=0} & = \sum_{\beta \geq 0} q^\beta \prod_{j=0}^{Y \cdot \beta} (Y + jz) S_0^X(z,\beta) \\
 \label{P epsilon equation} \langle [\pt_Y], P^{0+}|_{\mathbf{t}=0} \rangle & = P_0^X(q) \\
 \label{S epsilon equation} S^{0+}(\mathbbm{1}_Y)|_{\mathbf{t}=0} & = \tilde{S}^Y_0(z,q)
 \end{align}
-Now, \eqref{S epsilon equation} is clear from \eqref{Ciocan-Fontanine Theorem t zero} and the definition of $\tilde{S}^Y_0(z,q)$. To show  \eqref{J epsilon equation}, let us look more closely at the left-hand side:
+\end{lem}
+\begin{proof}
+\eqref{S epsilon equation} is clear from the second equality of \eqref{Ciocan-Fontanine Theorem t zero} and the definition of $\tilde{S}^Y_0(z,q)$. To show  \eqref{J epsilon equation}, let us look more closely at the left-hand side:
 \begin{equation*} {J^{0+}}|_{{\mathbf{t}=0}} = \sum_{\beta\geq 0}q^\beta(\ev_\bullet)_* \left( \operatorname{Res}_{F_0}\virt{\QG{0}{0}{Y}{\beta}} \right) \end{equation*}
 We have a diagram
 \bcd
@@ -232,42 +235,47 @@ and by a mild generalisation of \cite[Propositions 6.2.2 and 6.2.3]{CFKM}, we ha
 \begin{equation*} i_*\virt{\QG{0}{0}{Y}{\beta}}=e(\pi_* E^Y_{0,0,\beta})\cap \virt{\QG{0}{0}{X}{\beta}} \end{equation*} 
 where $\pi$ is the universal curve on $\QG{0}{0}{X}{\beta}$ and $E^Y_{0,0,\beta}$ is the equivariant line bundle on this curve associated to $\mathcal O_X(Y)$\footnote{This is the parametrised analogue of the bundle $L_Y$ constructed in the definition of relative quasimaps; see \S \ref{Subsection relative stable quasimaps}.}.
  
-We would like to pull-back this equation to the fixed locus $F_0^X$ in order to obtain an equation involving the residues. Since there are no markings any quasimap in $\QG{0}{0}{X}{\beta}$ has irreducible source curve. For such a quasimap to be $\Gm$-fixed we need that the degree of the quasimap is concentrated at the basepoints (i.e. the sum of the lengths of the basepoints should be equal to the degree); this is equivalent to requiring that the induced rational map is constant. Furthermore only the points $0$ and $\infty$ of the parametrised component are allowed to be basepoints. The fixed loci are thus indexed by ordered partitions of the degree which record the length of the basepoints at $0$ and $\infty$. $F_0^X$ is the locus on which all the degree is concentrated at $\infty$. This means that $0$ is not a basepoint and we have an evaluation map $\ev_0$ (which we denoted $\ev_{\bullet}$ earlier).
+We would like to pull-back this equation to the fixed locus $F_0^X$ in order to obtain an equation involving the residues. We begin by describing the points of $F_0^X$. Since there are no markings, any quasimap in $\QG{0}{0}{X}{\beta}$ has irreducible source curve. For such a quasimap to be $\Gm$-fixed we need that the degree of the quasimap is concentrated at the basepoints (i.e. the sum of the lengths of the basepoints should be equal to the degree); this is equivalent to requiring that the induced rational map is constant. Furthermore only the points $0$ and $\infty$ of the parametrised component are allowed to be basepoints. The fixed loci are thus indexed by ordered partitions of the degree which record the length of the basepoints at $0$ and $\infty$. $F_0^X$ is the locus on which all the degree is concentrated at $\infty$. This means that $0$ is not a basepoint and we have an evaluation map $\ev_0$ (which we denoted $\ev_{\bullet}$ earlier). See \cite[\S 4]{CF-K-wallcrossing} for more details: $F_0^X$ is the locus denoted $F^{0,0,0}_{0,0,\beta}$ there.
 
 Since the fibres of $\pi$ are irreducible, we have for $j \geq 0$ an exact sequence:
 \begin{equation*} 0 \to \pi_* (E^Y_{0,0,\beta}(-j\sigma_0)) \to \pi_* E^Y_{0,0,\beta} \to \sigma_0^*\mathcal{P}^{j-1}(E^Y_{0,0,\beta}) \to 0 \end{equation*}
-where $\mathcal{P}^{j-1}$ denotes bundle of $(j-1)$-jets, and $\sigma_{0}$ is the section given by the point $0 \in \PP^1$ of the parametrised component. The right-hand map is given by evaluating a section of $E_{0,0,\beta}^Y$ at the point $0$ (as well as its derivatives up to order $j$). The left-hand term consists of sections of $E_{0,0,\beta}^Y$ which vanish at $\sigma_0$ to order $j+1$. If we set $j=Y\cdot\beta+1$ then this term vanishes and we have:
+where $\mathcal{P}^{j-1}$ denotes bundle of $(j-1)$-jets, and $\sigma_{0}$ is the section given by the point $0 \in \PP^1$ of the parametrised component. The right-hand map is given by evaluating a section of $E_{0,0,\beta}^Y$ at the point $0$ (as well as its derivatives up to order $j-1$). The left-hand term consists of sections of $E_{0,0,\beta}^Y$ which vanish at $\sigma_0$ to order $j$. If we set $j=Y\cdot\beta+1$ then this term vanishes and we have:
 \begin{equation*} \pi_* E_{0,0,\beta}^Y = \sigma_0^* \mathcal{P}^{Y\cdot\beta}(E_{0,0,\beta}^Y) \end{equation*}
 On the other hand we have
 \begin{equation*} 0 \to E^Y_{0,0,\beta} \otimes \omega_\pi^{\otimes j} \to \mathcal{P}^{j}(E^Y_{0,0,\beta}) \to \mathcal{P}^{j-1}(E^Y_{0,0,\beta}) \to 0
 \end{equation*}
-see \cite[\S 2]{Ga}. Pulling back along $\sigma_0$ and taking Euler classes, we can compute recursively from $j = Y \cdot \beta$ to $0$ and obtain a splitting:
+see \cite[\S 2]{Ga}. Pulling back along $\sigma_0$ and taking Euler classes, we can compute recursively from $j = Y \cdot \beta$ to $0$ and obtain a splitting
 \begin{equation*}
 e(\pi_* E^Y_{0,0,\beta})=\prod_{j=0}^{Y\cdot\beta} c_1(\sigma_0^* E^Y_{0,0,\beta}\otimes \omega_{0}^{\otimes j})
 \end{equation*}
-Now, $\omega_0$ is (non-equivariantly) trivial since the source curves in $F_0^X$ are rigid. On the other hand the weight of the $\Gm$-action is $z$. Thus we obtain:
+where $\omega_0=\sigma_0^*\omega_\pi$ gives the cotangent space at the point $0$. The bundle $\omega_0$ is (non-equivariantly) trivial since the source curves in $F_0^X$ are rigid; on the other hand the weight of the $\Gm$-action on the cotangent space at $0$ is $z$. Thus we obtain:
 \begin{equation*} i_*\virt{F_0^Y}=\prod_{j=0}^{Y\cdot\beta}(\ev_0^* Y+jz)\cap \virt{F_0^X} \end{equation*}
 Substituting this into $J^{0+}|_{\mathbf{t}=0}$ we find that:
 \begin{align*} {J^{0+}}|_{{\mathbf{t}=0}} & = \sum_{\beta\geq 0}q^\beta(\ev_\bullet)_* \left( \operatorname{Res}_{F_0^Y}\virt{\QG{0}{0}{Y}{\beta}} \right) \\
-& = \sum_{\beta \geq 0} q^\beta \prod_{j=0}^{Y \cdot \beta} (Y + jz) (\ev_{\bullet})_* \left( \operatorname{Res}_{F_0^X}\virt{\QG{0}{0}{X}{\beta}} \right) \\
-& = \sum_{\beta \geq 0} q^\beta \prod_{j=0}^{Y \cdot \beta} (Y + jz) S^X_0(z,q) \end{align*}
-where the last equality follows from \eqref{Ciocan-Fontanine Theorem t zero} with $Y$ replaced by $X$ (since $X$ is Fano the denominator does not appear). This proves \eqref{S epsilon equation}.
+& = \sum_{\beta \geq 0} q^\beta \prod_{j=0}^{Y \cdot \beta} (Y + jz) (\ev_{\bullet})_* \left( \operatorname{Res}_{F_0^X}\virt{\QG{0}{0}{X}{\beta}} \right) \end{align*}
+On the other hand, if we apply \eqref{Ciocan-Fontanine Theorem t zero} with $X$ instead of $Y$, then the denominator on the left-hand side vanishes since $X$ is Fano. Comparing coefficients of $q^\beta$ we thus obtain
+\begin{equation*} (\ev_{\bullet})_* \operatorname{Res}_{F_0^X}\virt{\QG{0}{0}{X}{\beta}} = S_0^X(z,\beta) \end{equation*}
+from which it follows that
+\begin{equation*} J^{0+}|_{\mathbf{t}=0} = \sum_{\beta \geq 0} q^\beta \prod_{j=0}^{Y\cdot\beta}(Y+jz) S_0^X(z,\beta)\end{equation*}
+which proves \eqref{S epsilon equation}.
 
 It remains to show \eqref{P epsilon equation}. Ciocan-Fontanine and Kim  observe that if we write the $1/z$-expansion of ${J^{\epsilon}}|_{\mathbf{t}=0}$ as
 \begin{equation*} {J^{\epsilon}}|_{\mathbf{t}=0}=J^{\epsilon}_{0}(q)\mathbbm 1_Y+O(1/z) \end{equation*}
-then $\langle [\pt_Y],  P^\epsilon|_{{\bf t}=0}\rangle=J^{\epsilon}_{0}(q)$. It thus remains to show that $J^{0+}_0(q)=P^0_X(q)$. For toric varieties this has been calculated by Givental \cite{Givental-equivariantGW} (see also \cite[Definition 7.2.8]{CF-K}):
+then $\langle [\pt_Y],  P^\epsilon|_{{\bf t}=0}\rangle=J^{\epsilon}_{0}(q)$. It thus remains to show that $J^{0+}_0(q)=P_0^X(q)$.
+
+Since $X$ is a toric Fano variety, we have the following mirror symmetry calculation due to Givental \cite{Givental-equivariantGW} (see also \cite[Definition 7.2.8]{CF-K}):
 \begin{align*}
-(\ev_{\bullet})_* \operatorname{Res}_{F_0^Y}\virt{\QGe{0}{0}{Y}{\beta}} =\prod_{\rho\in\Sigma_X(1)}\dfrac{\prod_{j=-\infty}^0(D_{\rho}+jz)}{\prod_{j=-\infty}^{D_{\rho}\cdot \beta}(D_\rho+jz)}
+S_0^X(z,\beta) =\prod_{\rho\in\Sigma_X(1)}\dfrac{\prod_{j=-\infty}^0(D_{\rho}+jz)}{\prod_{j=-\infty}^{D_{\rho}\cdot \beta}(D_\rho+jz)}
 =\dfrac{\prod_{\substack{\rho \colon D_\rho \cdot \beta\leq 0}} \prod_{j=D_\rho \cdot \beta}^0 (D_{\rho}+jz)}{\prod_{\substack{\rho\colon D_\rho \cdot\beta > 0}} \prod_{j=1}^{D_\rho\cdot\beta} (D_{\rho}+jz)}
 \end{align*}
-Since $\sum_{\rho} D_{\rho}=-K_X$ and $(Y+K_X) \cdot \beta = K_Y \cdot \beta =0$, we see that
+We can then apply \eqref{S epsilon equation} to find $J^{0+}|_{\mathbf{t}=0}$, and hence also to find $J^{0+}_0(q)$. In the end we obtain:
 \begin{equation*}
- J^Y_0(q)=\sum_{\beta\geq 0}q^\beta(Y\cdot\beta)!\frac{\prod_{\rho\colon D_\rho\cdot\beta< 0}(-1)^{-D_{\rho}\cdot\beta}(-D_{\rho}\cdot\beta)!}{\prod_{\rho\colon D_\rho\cdot\beta> 0}(D_{\rho}\cdot\beta)!}
+ J^{0+}_0(q)=\sum_{\beta\geq 0}q^\beta(Y\cdot\beta)!\frac{\prod_{\rho\colon D_\rho\cdot\beta< 0}(-1)^{-D_{\rho}\cdot\beta}(-D_{\rho}\cdot\beta)!}{\prod_{\rho\colon D_\rho\cdot\beta> 0}(D_{\rho}\cdot\beta)!}
 \end{equation*}
 On the other hand the coefficient
 \begin{equation*} \langle[\pt_X]\psi_1^{Y\cdot\beta-1},\mathbbm 1_X\rangle_{0,2,\beta}^X\end{equation*}
-which appears in our $P_0^X(q)$-series can be deduced from the expansion of $S^X|_{{\bf t}=0}(\mathbbm 1_X)$ given above \marginpar{How?}, and it turns out to be
+which appears in our $P_0^X(q)$-series also appears in $S_0^X(q,\beta)$. So again we can find it by appealing to Givental's calculation of $S_0^X(z,\beta)$.
 \begin{equation*}
-\langle [\pt_X],S^X|_{{\bf t}=0}(\mathbbm 1_X)\rangle[z^{Y\cdot\beta}]=\frac{\prod_{\rho\colon D_\rho\cdot\beta< 0}(-1)^{-D_{\rho}\cdot\beta}(-D_{\rho}\cdot\beta)!}{\prod_{\rho\colon D_\rho\cdot\beta> 0}(D_{\rho}\cdot\beta)!}
+ \langle[\pt_X]\psi_1^{Y\cdot\beta-1},\mathbbm 1_X\rangle_{0,2,\beta}^X=\langle [\pt_X],S^{0+}(\mathbbm 1_X)|_{{\bf t}=0} \rangle[z^{Y\cdot\beta}]=\frac{\prod_{\rho\colon D_\rho\cdot\beta< 0}(-1)^{-D_{\rho}\cdot\beta}(-D_{\rho}\cdot\beta)!}{\prod_{\rho\colon D_\rho\cdot\beta> 0}(D_{\rho}\cdot\beta)!}
 \end{equation*}
-which proves \eqref{P epsilon equation}. We may thus conclude that \eqref{Ciocan-Fontanine Theorem t zero} coincides with our Theorem \ref{Theorem Quantum Lefschetz}.
+which proves \eqref{P epsilon equation}. We may thus conclude that \eqref{Ciocan-Fontanine Theorem t zero} coincides with our Theorem \ref{Theorem Quantum Lefschetz}. \end{proof}

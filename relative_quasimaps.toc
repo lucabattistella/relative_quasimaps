@@ -20,12 +20,12 @@
 \contentsline {subsection}{\tocsubsection {}{5.2}{Generating functions for quasimap invariants}}{24}
 \contentsline {subsection}{\tocsubsection {}{5.3}{Quantum Lefschetz formula}}{26}
 \contentsline {subsection}{\tocsubsection {}{5.4}{Comparison with the work of Ciocan-Fontanine and Kim}}{31}
-\contentsline {section}{\tocsection {Appendix}{A}{The comparison morphism}}{34}
-\contentsline {subsection}{\tocsubsection {}{A.1}{Construction of the comparison morphism}}{34}
-\contentsline {section}{\tocsection {Appendix}{B}{Notes on quasimaps}}{41}
+\contentsline {section}{\tocsection {Appendix}{A}{The comparison morphism}}{35}
+\contentsline {subsection}{\tocsubsection {}{A.1}{Construction of the comparison morphism}}{35}
+\contentsline {section}{\tocsection {Appendix}{B}{Notes on quasimaps}}{42}
 \contentsline {subsection}{\tocsubsection {}{B.1}{Functoriality}}{42}
-\contentsline {subsection}{\tocsubsection {}{B.2}{Relative obstruction theories for $\mathcal {Q}(Y)\rightarrow \mathcal {Q}(X)$}}{48}
-\contentsline {subsection}{\tocsubsection {}{B.3}{Splitting axiom}}{51}
+\contentsline {subsection}{\tocsubsection {}{B.2}{Relative obstruction theories for $\mathcal {Q}(Y)\rightarrow \mathcal {Q}(X)$}}{49}
+\contentsline {subsection}{\tocsubsection {}{B.3}{Splitting axiom}}{52}
 \contentsline {subsection}{\tocsubsection {}{B.4}{Comparison with the GIT construction}}{55}
-\contentsline {section}{\tocsection {Appendix}{C}{Some intersection-theoretic lemmas}}{57}
-\contentsline {section}{\tocsection {Appendix}{}{References}}{58}
+\contentsline {section}{\tocsection {Appendix}{C}{Some intersection-theoretic lemmas}}{58}
+\contentsline {section}{\tocsection {Appendix}{}{References}}{59}
