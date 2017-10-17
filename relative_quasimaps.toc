@@ -26,8 +26,8 @@
 \contentsline {subsection}{\tocsubsection {}{A.3}{An example where the comparison morphism fails to exist}}{42}
 \contentsline {section}{\tocsection {Appendix}{B}{Notes on quasimaps}}{44}
 \contentsline {subsection}{\tocsubsection {}{B.1}{Functoriality}}{44}
-\contentsline {subsection}{\tocsubsection {}{B.2}{Relative obstruction theories for $\mathcal {Q}(Y)\rightarrow \mathcal {Q}(X)$}}{51}
-\contentsline {subsection}{\tocsubsection {}{B.3}{Splitting axiom}}{54}
+\contentsline {subsection}{\tocsubsection {}{B.2}{Relative obstruction theories for $\mathcal {Q}(Y)\rightarrow \mathcal {Q}(X)$}}{50}
+\contentsline {subsection}{\tocsubsection {}{B.3}{Splitting axiom}}{53}
 \contentsline {subsection}{\tocsubsection {}{B.4}{Comparison with the GIT construction}}{57}
-\contentsline {section}{\tocsection {Appendix}{C}{Some intersection-theoretic lemmas}}{60}
+\contentsline {section}{\tocsection {Appendix}{C}{Some intersection-theoretic lemmas}}{59}
 \contentsline {section}{\tocsection {Appendix}{}{References}}{61}

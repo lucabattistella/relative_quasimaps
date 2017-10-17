@@ -63,8 +63,7 @@ We now construct a virtual class on the comb locus $\mathcal D^{\mathcal{Q}}(X|Y
 which we may endow with the product virtual class (with weighting as before):
 \begin{align*} \virt{\mathcal E^{\mathcal{Q}}(X|Y, & A,B,M)} := \\
 & \left( \dfrac{m^{(1)} \cdots m^{(r)}}{r!}\right) \cdot \left( \virt{\Q{0}{A^{(0)} \cup \{q_1, \ldots, q_r\}}{Y}{\beta^{(0)}}} \times \prod_{i=1}^r \virt{\Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta^{(i)}}} \right) \end{align*}
-We have the following cartesian diagram\marginpar{FIX ME fix the position of the square, also below}
-
+We have the following cartesian diagram
 \bcd
 \mathcal D^{\mathcal{Q}}(X|Y,A,B,M)\ar[r]\ar[d]\ar[dr,phantom,"\Box"] & \mathcal E^{\mathcal{Q}}(X|Y,A,B,M)\ar[d] \\
 X^r\ar[r,"\Delta_{X^r}"] & X^r\times X^r
@@ -80,7 +79,7 @@ The virtual class on the union $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ of
 
 On the other hand, there is another cartesian diagram:
 \bcd
-{\displaystyle \coprod_{B : i_* B = B^\prime} \mathcal D^\mathcal{Q}(X|Y,A,B,M)} \ar[r] \ar[d] \ar[rd,phantom,"\square" left] & \mathcal D^\mathcal{Q}(\PP^N|H, A, B^\prime, M) \ar[d] \\
+{\displaystyle \coprod_{B \colon i_* B = B^\prime} \mathcal D^\mathcal{Q}(X|Y,A,B,M)} \ar[r] \ar[d] & \mathcal D^\mathcal{Q}(\PP^N|H, A, B^\prime, M) \ar[d] \ar[ld,phantom,"\square"]  \\
 \Q{0}{n}{X}{\beta} \ar[r,"k"] & \Q{0}{n}{\PP^N}{d}
 \ecd
 Recall that we are trying to show that the virtual class of the comb locus pulls back nicely along $k$. The result that we need is:
@@ -88,10 +87,10 @@ Recall that we are trying to show that the virtual class of the comb locus pulls
 
 For the proof of Lemma~\ref{Comb loci pull back}, let us introduce the following shorthand notation.  We fix the the data of $A$, $B^\prime$, $M$ and set:
 \begin{align*}
-\mathcal{D}(X|Y) & := \textstyle \coprod_{B : i_* B = B^\prime} \mathcal D^{\mathcal{Q}}(X|Y,A,B,M) &&& \mathcal{D}(\PP^N|H) & := \mathcal D^{\mathcal{Q}}(\PP^N|H,A,B^\prime,M)\\
-\mathcal{E}(X|Y) & := \textstyle \coprod_{B : i_* B = B^\prime} \mathcal E^{\mathcal{Q}}(X|Y,A,B,M) &&& \mathcal{E}(\PP^N|H) & := \mathcal E^{\mathcal{Q}}(\PP^N|H,A,B^\prime,M)\\
-\mathcal{D}(X) & := \textstyle \coprod_{B : i_* B = B^\prime} \mathcal{D}^{\mathcal{Q}}(X,A,B)  &&& \mathcal{D}(\PP^N) & := \mathcal D^{\mathcal{Q}}(\PP^N,A,B^\prime)\\
-\mathcal{E}(X) & := \textstyle \coprod_{B : i_* B = B^\prime} \mathcal{E}^{\mathcal{Q}}(X,A,B) &&& \mathcal{E}(\PP^N) & := \mathcal E^{\mathcal{Q}}(\PP^N,A,B^\prime)\\
+\mathcal{D}(X|Y) & := \textstyle \coprod_{B \colon i_* B = B^\prime} \mathcal D^{\mathcal{Q}}(X|Y,A,B,M) &&& \mathcal{D}(\PP^N|H) & := \mathcal D^{\mathcal{Q}}(\PP^N|H,A,B^\prime,M)\\
+\mathcal{E}(X|Y) & := \textstyle \coprod_{B \colon i_* B = B^\prime} \mathcal E^{\mathcal{Q}}(X|Y,A,B,M) &&& \mathcal{E}(\PP^N|H) & := \mathcal E^{\mathcal{Q}}(\PP^N|H,A,B^\prime,M)\\
+\mathcal{D}(X) & := \textstyle \coprod_{B \colon i_* B = B^\prime} \mathcal{D}^{\mathcal{Q}}(X,A,B)  &&& \mathcal{D}(\PP^N) & := \mathcal D^{\mathcal{Q}}(\PP^N,A,B^\prime)\\
+\mathcal{E}(X) & := \textstyle \coprod_{B \colon i_* B = B^\prime} \mathcal{E}^{\mathcal{Q}}(X,A,B) &&& \mathcal{E}(\PP^N) & := \mathcal E^{\mathcal{Q}}(\PP^N,A,B^\prime)\\
 \om{Q}(X) & :=\Q{0}{n}{X}{\beta} &&& \om{Q}(\PP^N) & :=\Q{0}{n}{\PP^N}{i_* \beta} 
 \end{align*}
 Here $\mathcal{D}(X)$ and $\mathcal{E}(X)$ are the centipede loci introduced in Appendix \ref{Subsection splitting}; they are defined in the same way as the comb loci, except that we replace both the quasimaps to $Y$ and the relative quasimaps to $(X,Y)$ by quasimaps to $X$. There is a cartesian diagram
