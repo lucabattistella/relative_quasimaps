@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  17 OCT 2017 15:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  17 OCT 2017 16:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1398,4 +1398,199 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
  [6] [7] [8] [9]
 Overfull \hbox (13.73216pt too wide) in paragraph at lines 124--126
 \T1/zpltlf/m/n/10.95 more use-ful in prac-tice (see [[], Re-mark 1.4]): a sta-b
-le map $\
+le map $\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 C; x[]; [] ; x[]; f\U/npxmi
+a/m/it/10.95 ~$
+ []
+
+[10]
+Overfull \hbox (3.70282pt too wide) in paragraph at lines 136--139
+\T1/zpltlf/m/n/10.95 Hence it has a fun-da-men-tal class from which one can de-
+fine rel-a-tive Gromov--
+ []
+
+[11] [12]) (./tex/recursion_for_Pr.tex [13] [14]
+Overfull \hbox (13.88615pt too wide) in paragraph at lines 35--36
+[]\T1/zpltlf/b/n/10.95 Lemma 3.2. []$\OMS/npxsy/m/n/10.95 Q[]\U/npxmia/m/it/10.
+95 }\U/npxsym/m/n/10.95 P[]\OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/n
+pxmia/m/it/10.95 ~$ \T1/zpltlf/m/n/10.95 is equal to the clo-sure of the nice l
+o-cus $\OMS/npxsy/m/n/10.95 Q[]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OM
+S/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it/10.95 ~$
+ []
+
+[15] [16]
+Overfull \hbox (32.82188pt too wide) in paragraph at lines 93--93
+[] 
+ []
+
+[17] [18]) (./tex/recursion_general.tex [19] [20]
+Overfull \hbox (2.18661pt too wide) in paragraph at lines 33--34
+ \T1/zpltlf/m/n/10.95 4.3.\T1/zpltlf/b/n/10.95 Comb loci pull back.[] \T1/zpltl
+f/m/n/10.95 As in the pre-vi-ous sec-tion, we de-fine $\OMS/npxsy/m/n/10.95 D[]
+\U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 X\OMS/npxsy/m/n/10.95 j\OML/npxmi/m
+/it/10.95 Y; ^^L\U/npxmia/m/it/10.95 ~$
+ []
+
+[21]
+Overfull \hbox (48.33984pt too wide) in paragraph at lines 65--65
+[] 
+ []
+
+
+Underfull \hbox (badness 2837) in paragraph at lines 66--66
+[]\T1/zpltlf/m/n/10.95 FIX ME fix the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
+\T1/zpltlf/m/n/10.95 po-si-tion of the
+ []
+
+
+Overfull \hbox (8.08232pt too wide) in paragraph at lines 96--96
+[] 
+ []
+
+
+Underfull \vbox (badness 1043) has occurred while \output is active []
+
+ [22]
+[23]) (./tex/mirror_theorem.tex [24]
+LaTeX Font Info:    Try loading font information for U+bbm on input line 17.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
+) [25]
+Overfull \hbox (13.17061pt too wide) in paragraph at lines 39--40
+[]\T1/zpltlf/m/n/10.95 This es-sen-tially fol-lows by func-to-ri-al-ity of co-h
+o-mo-log-i-cal push-forwards
+ []
+
+[26] [27] (./fig/snake.tex) [28] [29]
+Overfull \hbox (21.67554pt too wide) in paragraph at lines 141--141
+[] 
+ []
+
+
+Overfull \hbox (24.06232pt too wide) in paragraph at lines 145--145
+[] 
+ []
+
+[30] [31]
+LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
+(Font)              scaled to size 10.95pt on input line 198.
+LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
+(Font)              scaled to size 8.0pt on input line 198.
+LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
+(Font)              scaled to size 6.1pt on input line 198.
+ [32]
+LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
+(Font)              scaled to size 9.0pt on input line 236.
+LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
+(Font)              scaled to size 7.3pt on input line 236.
+LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
+(Font)              scaled to size 5.5pt on input line 236.
+ [33] [34] [35]) (./tex/comparison.tex [36] (./fig/T_delta.tex)
+(./fig/RandT.tex) [37] [38] [39] [40] [41]
+Overfull \hbox (1.12846pt too wide) in paragraph at lines 210--212
+\T1/zpltlf/m/n/10.95 follows from the con-nect-ed-ness of $\OMS/npxsy/m/n/10.95
+ M[]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OML/npxmi/m/it/10.95 ; d\U/np
+xmia/m/it/10.95 ~$ \T1/zpltlf/m/n/10.95 [[]], hence of $\OMS/npxsy/m/n/10.95 Q[
+]\U/npxmia/m/it/10.95 }\U/npxsym/m/n/10.95 P[]\OML/npxmi/m/it/10.95 ; d\U/npxmi
+a/m/it/10.95 ~$\T1/zpltlf/m/n/10.95 ,
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[42] [43]) (./tex/functoriality.tex [44]
+Overfull \hbox (2.87422pt too wide) in paragraph at lines 46--48
+\T1/zpltlf/m/n/10.95 Consider there-fore a quasimap $\U/npxmia/m/it/10.95 }}\OM
+L/npxmi/m/it/10.95 C; x[]; [] ; x[]\U/npxmia/m/it/10.95 ~\OML/npxmi/m/it/10.95 
+; \U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 L[]; u[]\U/npxmia/m/it/10.95 ~[]\
+OML/npxmi/m/it/10.95 ; \U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 '[]\U/npxmia
+/m/it/10.95 ~[]~$
+ []
+
+[45]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46]
+[47] [48]
+Overfull \hbox (2.1142pt too wide) in paragraph at lines 133--134
+[]\T1/zpltlf/m/n/10.95 Stability fol-lows pre-cisely from the con-struc-tion of
+ $\OML/npxmi/m/it/10.95 ^^^$\T1/zpltlf/m/n/10.95 : if $\OMS/npxsy/m/n/10.95 O[]
+\U/npxmia/m/it/10.95 }\OT1/zpltlf/m/n/10.95 1\U/npxmia/m/it/10.95 ~ 5 [][] \OML
+/npxmi/m/it/10.95 L[]$\T1/zpltlf/m/n/10.95 ,
+ []
+
+[49]
+Overfull \hbox (44.66335pt too wide) in paragraph at lines 170--171
+\T1/zpltlf/m/n/10.95 where the torus ho-mo-mor-phism $\OML/npxmi/m/it/10.95 G[]
+ \U/npxmia/m/it/10.95 5 [][]}[]}\OML/npxmi/m/it/10.95 Y\U/npxmia/m/it/10.95 ~\O
+ML/npxmi/m/it/10.95 ; \U/npxsym/m/n/10.95 C[]\U/npxmia/m/it/10.95 ~ \OMS/npxsy/
+m/n/10.95 ! \OML/npxmi/m/it/10.95 G[] \U/npxmia/m/it/10.95 5 [][]}[]}\OML/npxmi
+/m/it/10.95 Y\U/npxmia/m/it/10.95 ~\OML/npxmi/m/it/10.95 ; \U/npxsym/m/n/10.95 
+C[]\U/npxmia/m/it/10.95 ~$
+ []
+
+[50] [51] [52] [53]) (./tex/splitting.tex [54] [55] [56]) (./tex/GIT.tex
+[57]
+Overfull \hbox (2.63702pt too wide) in paragraph at lines 21--23
+\T1/zpltlf/m/n/10.95 which ad-mits a vir-tual class. Hence we have two mod-uli 
+spaces of quasimaps
+ []
+
+[58]) (./tex/intersection.tex [59]
+Underfull \vbox (badness 1168) has occurred while \output is active []
+
+ [60])
+(./relative_quasimaps.bbl
+LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
+(Font)              scaled to size 9.0pt on input line 6.
+ [61]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [62])
+[63] (./relative_quasimaps.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.64499pt have occurred.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 32151 strings out of 493014
+ 627126 string characters out of 6133351
+ 678310 words of memory out of 5000000
+ 34814 multiletter control sequences out of 15000+600000
+ 117823 words of font info for 251 fonts, out of 8000000 for 9000
+ 1302 hyphenation exceptions out of 8191
+ 56i,19n,99p,10394b,998s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc} </
+Users/navid/Library/texlive/2016/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657
+pk>{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newpx/tgpdiff.enc}{/usr/
+local/texlive/2016/texmf-dist/fonts/enc/dvips/newpx/ecsups.enc}{/usr/local/texl
+ive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/20
+16/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2016/texmf-dist/f
+onts/enc/dvips/newtx/ntx-ec-tlf-sc.enc}</usr/local/texlive/2016/texmf-dist/font
+s/type1/public/pxfonts/pxmia.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
+1/public/pxfonts/pxsy.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
+c/pxfonts/rpxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/stma
+ryrd/stmary10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/
+txex-bar.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txe
+x.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txmia.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dis
+t/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
+ic/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx
+/zplx-regular.pfb>
+Output written on relative_quasimaps.pdf (63 pages, 401886 bytes).
+PDF statistics:
+ 296 PDF objects out of 1000 (max. 8388607)
+ 210 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+
