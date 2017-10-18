@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  18 OCT 2017 15:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  18 OCT 2017 16:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1489,17 +1489,8 @@ pltlf/m/n/10.95 ,
 Underfull \vbox (badness 1127) has occurred while \output is active []
 
  [42])
-(./tex/functoriality.tex [43] [44]
-Overfull \hbox (2.87422pt too wide) in paragraph at lines 46--48
-\T1/zpltlf/m/n/10.95 Consider there-fore a quasimap $\U/npxmia/m/it/10.95 }}\OM
-L/npxmi/m/it/10.95 C; x[]; [] ; x[]\U/npxmia/m/it/10.95 ~\OML/npxmi/m/it/10.95 
-; \U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 L[]; u[]\U/npxmia/m/it/10.95 ~[]\
-OML/npxmi/m/it/10.95 ; \U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 '[]\U/npxmia
-/m/it/10.95 ~[]~$
- []
-
-[45] [46] [47]
-Overfull \hbox (2.1142pt too wide) in paragraph at lines 132--133
+(./tex/functoriality.tex [43] [44] [45] [46] [47]
+Overfull \hbox (2.1142pt too wide) in paragraph at lines 134--135
 []\T1/zpltlf/m/n/10.95 Stability fol-lows pre-cisely from the con-struc-tion of
  $\OML/npxmi/m/it/10.95 ^^^$\T1/zpltlf/m/n/10.95 : if $\OMS/npxsy/m/n/10.95 O[]
 \U/npxmia/m/it/10.95 }\OT1/zpltlf/m/n/10.95 1\U/npxmia/m/it/10.95 ~ 5 [][] \OML
@@ -1507,7 +1498,7 @@ Overfull \hbox (2.1142pt too wide) in paragraph at lines 132--133
  []
 
 [48]
-Overfull \hbox (44.66335pt too wide) in paragraph at lines 169--170
+Overfull \hbox (44.66335pt too wide) in paragraph at lines 171--172
 \T1/zpltlf/m/n/10.95 where the torus ho-mo-mor-phism $\OML/npxmi/m/it/10.95 G[]
  \U/npxmia/m/it/10.95 5 [][]}[]}\OML/npxmi/m/it/10.95 Y\U/npxmia/m/it/10.95 ~\O
 ML/npxmi/m/it/10.95 ; \U/npxsym/m/n/10.95 C[]\U/npxmia/m/it/10.95 ~ \OMS/npxsy/
@@ -1570,7 +1561,7 @@ t/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/newpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/newpx/zplri.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx
 /zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (62 pages, 402346 bytes).
+Output written on relative_quasimaps.pdf (62 pages, 402541 bytes).
 PDF statistics:
  292 PDF objects out of 1000 (max. 8388607)
  208 compressed objects within 3 object streams

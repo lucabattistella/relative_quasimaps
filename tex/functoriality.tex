@@ -17,7 +17,7 @@ It is natural to ask whether the same holds for the moduli space of quasimaps, i
 \begin{equation*} \om{Q}(f) : \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_* \beta} \end{equation*}
 Since here the objects of the moduli space are not maps, we cannot simply compose with $f$. Nevertheless, our definition should be equivalent to composing with $f$ when applied to a quasimap without any basepoints. In \cite[Section 3.1]{CF-K-wallcrossing} a definition (in the GIT context) is given when $f$ is an embedding into a projective space; we shall discuss the general situation of a morphism between toric varieties $f\colon Y\to X$.
 
-Our approach uses the language of $\Sigma$--collections introduced by D. Cox. This approach is natural insofar as a quasimap is a generalisation of a $\Sigma$--collection. We will refer extensively to \cite{CoxRing} and \cite{CoxFunctor}, which we recommend as an  introduction for any readers unfamiliar with the theory.
+Our approach uses the language of $\Sigma$--collections introduced by D. Cox. This approach is natural insofar as a quasimap is a generalisation of a $\Sigma$--collection. We will refer extensively to \cite{CoxRing} and \cite{CoxFunctor}.
 
 Let $X$ and $Y$ be smooth and proper toric varieties with fans $\Sigma_X \subseteq N_X$ and $\Sigma_Y \subseteq N_Y$. Suppose we are given $f : Y \to X$ (which we do not assume to be a toric morphism). By \cite[Theorem 1.1]{CoxFunctor} the data of such a map is equivalent to a $\Sigma_X$--collection on $Y$:
 \begin{equation*} ( (L_\rho, u_\rho)_{\rho \in \Sigma_X(1)}, (\varphi_{m_x})_{m_x \in M_X} ) \end{equation*}
@@ -25,11 +25,11 @@ In addition, \cite{CoxRing} allows us to describe line bundles on $Y$ and their 
 
 \begin{thm} \cite[Theorem 3.2]{CoxFunctor} \label{CoxTheorem} The data of a morphism $f:Y \to X$ is the same as the data of homogeneous polynomials
 \begin{equation*} P_\rho \in S^Y_{\beta_\rho} \end{equation*}
-for $\rho \in \Sigma_X(1)$, where $\beta_\rho \in \Pic Y$ and $S^Y_{\beta_\rho}$ is the corresponding graded piece of the Cox ring
-\begin{equation*}S^Y = k[z_\tau : \tau \in \Sigma_Y(1)]\end{equation*}
+for $\rho = f^* \OO_X(D_\rho) \in \Sigma_X(1)$, where $\beta_\rho \in \Pic Y$ and $S^Y_{\beta_\rho}$ is the corresponding graded piece of the Cox ring:
+\begin{equation*}S^Y = \CC[z_\tau : \tau \in \Sigma_Y(1)]\end{equation*}
 This data is required to satisfy the following two conditions:
 \begin{enumerate}
-\item $\sum_{\rho \in \Sigma_X(1)} \beta_\rho \otimes n_\rho = 0$ in $\Pic Y \otimes N_X$.
+\item $\sum_{\rho \in \Sigma_X(1)} \beta_\rho \otimes n_\rho = 0$ in $\Pic Y \otimes N_X$, where $n_\rho$ is the principal generator of the ray $\rho$.
 \item $(P_\rho(z_\tau)) \notin Z(\Sigma_X) \subseteq \Aaff^{\Sigma_X(1)}$ whenever $(z_\tau) \notin Z(\Sigma_Y) \subseteq \Aaff^{\Sigma_Y(1)}$.
 \end{enumerate}
 Furthermore, two such sets of data $(P_\rho)$ and $(P^\prime_\rho)$ correspond to the same morphism if and only if there exists a $\lambda \in \Hom_\Z(\Pic X, \Gm)$ such that
@@ -44,17 +44,19 @@ Y \ar[r, "f"] & X
 
 Recall our goal: given a map $f \colon Y \to X$ we wish to define a ``push-forward'' map:
 \begin{equation*} \om{Q}(f) : \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_*\beta} \end{equation*}
-Consider therefore a quasimap $((C,x_1,\ldots,x_n), (L_\tau, u_\tau)_{\tau \in \Sigma_Y(1)}, (\varphi_{m_Y})_{m_Y \in M_Y})$ (over an arbitrary base) with target $Y$. Pick data $(P_\rho)_{\rho \in \Sigma_X(1)}$ corresponding to the map $f$, as in the theorem above; we will later see that our construction does not depend on this choice.
+Consider therefore a quasimap
+\begin{equation*} ((C,x_1,\ldots,x_n), (L_\tau, u_\tau)_{\tau \in \Sigma_Y(1)}, (\varphi_{m_Y})_{m_Y \in M_Y}) \in \Q{g}{n}{Y}{\beta} \end{equation*}
+over an arbitrary base. Pick data $(P_\rho)_{\rho \in \Sigma_X(1)}$ corresponding to the map $f$, as in the theorem above; we will later see that our construction does not depend on this choice.
 
 The idea of the construction is as follows. Locally around a point $x~\in~U_x \subseteq C$ we can trivialise the $L_\tau$ to obtain a morphism to the prequotient
 \begin{equation*} (u_\tau)_\tau \colon U_x \to \Aaff^{\Sigma_Y(1)} \end{equation*}
-which lifts the induced rational map to $Y$. The data of $(P_\rho)_\rho$ gives a lifting of $f\colon Y\to X$ to a morphism between the prequotients
+which lifts the induced rational map to $Y$. On the other hand the data of $(P_\rho)_\rho$ gives a lifting of $f\colon Y\to X$ to a morphism between the prequotients
 \begin{equation*}(P_\rho)_\rho \colon \Aaff^{\Sigma_Y(1)} \to \Aaff^{\Sigma_X(1)}\end{equation*}
 and so the composed map to the prequotient of $X$ is given by:
 \begin{equation*} (P_\rho((u_\tau)_\tau))_\rho : U_x \to \Aaff^{\Sigma_X(1)} \end{equation*}
 In order to define the pushed-forward quasimap, we thus need to make sense of $P_\rho((u_\tau)_\tau)$ as a section of a certain line bundle $\tilde{L}_\rho$ on the curve.
 
-We now make this precise. The first issue to address is the stabilisation of the source curve. If $C_0 \subseteq C$ is a rational component with $2$ special points (hence with curve class $\beta_0 > 0$) and such that $f_* \beta_0 = 0$, then $C_0$ should be contracted when we pass to $X$. The possibilities are:
+We now make this precise. The first issue to address is the stabilisation of the source curve. The procedure is the same as in the case of stable maps: if $C_0 \subseteq C$ is a rational component with $2$ special points (hence with curve class $\beta_0 > 0$) and such that $f_* \beta_0 = 0$, then $C_0$ should be contracted when we pass to $X$. The possibilities are:
 
 \begin{center}
 \begin{tikzpicture}[scale=0.5]
@@ -72,18 +74,18 @@ We now make this precise. The first issue to address is the stabilisation of the
 To perform the contraction we need to construct a line bundle on $C$ which is trivial on the components which we wish to contract and ample (relative to the base) on all the other components.
 
 Fix a polarisation $\OO_X(1)$ on $X$ and express $f^*\OO_X(1)$ in terms of the toric divisors of $Y$:
-\begin{equation*} f^*\OO_X(1) = \bigotimes_\tau L_\tau^{\otimes a_\tau} \end{equation*}
+\begin{equation*} f^*\OO_X(1) = \bigotimes_\tau \OO_Y(D_\tau)^{\otimes c_\tau} \end{equation*}
 Then the line bundle
 \begin{equation*} \omega_{\pi}(x_1+\ldots+x_n)\otimes \bigotimes_\tau L_\tau^{\otimes a_\tau} \end{equation*}
-gives the required contraction. We obtain a curve $\tilde{C}$ and a morphism $\varphi : C \to \tilde{C}$ which contracts the unstable components.
+gives the required contraction by taking relative Proj. We thus obtain a curve $\tilde{C}$ and a morphism $\phi : C \to \tilde{C}$ which contracts the unstable components.
 
 Recall that for $\rho \in \Sigma_X(1)$, $P_\rho$ is a polynomial in the $z_\tau$. We can thus write it as
 \begin{equation} \label{Prho} P_\rho(z_\tau) = \sum_{\underline{a}} P_\rho^{\underline{a}}(z_\tau) = \sum_{\underline{a}} \mu_{\underline{a}} \prod_{\tau} z_{\tau}^{a_{\tau}} \end{equation}
-where the sum is over a finite number of multindices $\underline{a} = (a_\tau) \in \N^{\Sigma_Y(1)}$ and the $\mu_{\underline{a}}$ are nonzero scalars. Observe that, for each $\underline{a}$, the line bundle $\otimes_\tau  L_\tau^{\otimes a_\tau}$ on $C$ is trivial on the components contracted by $\varphi$ (which are always rational). Hence, by cohomology and base-change, it descends to a line bundle on $\tilde{C}$:
-\begin{equation*} \tilde{L}_\rho^{\underline{a}} =\varphi_* \bigotimes_\tau L_\tau^{\otimes a_\tau} \end{equation*}
+where the sum is over a finite number of multindices $\underline{a} = (a_\tau) \in \N^{\Sigma_Y(1)}$ and the $\mu_{\underline{a}}$ are nonzero scalars. Observe that, for each $\underline{a}$, the line bundle $\otimes_\tau  L_\tau^{\otimes a_\tau}$ on $C$ is trivial on the components contracted by $\phi$ (which are always rational). Hence, by cohomology and base-change, it descends to a line bundle on $\tilde{C}$:
+\begin{equation*} \tilde{L}_\rho^{\underline{a}} =\phi_* \bigotimes_\tau L_\tau^{\otimes a_\tau} \end{equation*}
 We may then take the following section of $\tilde{L}_\rho^{\underline{a}}$:
 \begin{equation*} \tilde{u}_\rho^{\underline{a}} = P_\rho^{\underline{a}}(u_\tau) = \mu_{\underline{a}} \prod_\tau u_\tau^{a_\tau}; \end{equation*}
-A priori this is really a section of $\otimes_\tau L_\tau^{\otimes a_\tau}$; but since it is constant on the components contracted by $\varphi$, it descends to a section of $\tilde{L}_\rho^{\underline{a}}$.
+A priori this is really a section of $\otimes_\tau L_\tau^{\otimes a_\tau}$; but since it is constant on the components contracted by $\phi$, it descends to a section of $\tilde{L}_\rho^{\underline{a}}$.
 
 Thus, each of the terms $P_\rho^{\underline{a}}$ of $P_\rho$ defines a section $\tilde{u}_\rho^{\underline{a}}$ of a line bundle $\tilde{L}_\rho^{\underline{a}}$ on $\tilde{C}$. What we want, however is a single section $\tilde{u}_\rho$ of a single line bundle $\tilde{L}_\rho$. This is where the isomorphisms $\varphi_{m_Y}$ come in.
 
