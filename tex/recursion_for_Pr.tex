@@ -2,7 +2,7 @@
 At this stage we do not know much about the moduli space of relative quasimaps. In this section we will examine the case $X=\PP^N$ and $Y=H$ a hyperplane in detail.
 
 \subsection{Basic properties of the moduli space} \label{Subsection basic properties of the moduli space}
-We will now show that the moduli space
+We now show that the moduli space
 \begin{equation*} \Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
 is irreducible of the expected dimension, and thus admits a fundamental class. We then prove a recursion formula for these fundamental classes by pushing forward Gathmann's recursion formula along the comparison morphism:
 \begin{equation*}\chi : \M{0}{n}{\PP^N}{d} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
@@ -23,7 +23,7 @@ If $R$ is internal then both $R$ and $Z$ live inside the same connected componen
 
 On the other hand if $R$ is external then the multiplicity $m^{(R)}$ of $R \cap Z$ satisfies:
 \begin{equation*} m^{(R)} \leq H \cdot f_* [R] \end{equation*}
-Since applying $\chi$ has the effect of replacing $m^{(R)}$ by $H \cdot f_* [R]$ in the left hand side of \eqref{Relative stable map internal component inequality}, inequality \eqref{Relative quasimap internal component inequality} holds for the quasimap. Thus we obtain a morphism from the relative stable map space to the relative quasimap space, as claimed.
+Since applying $\chi$ has the effect of replacing $m^{(R)}$ by $H \cdot f_* [R]$ in the left hand side of \eqref{Relative stable map internal component inequality}, inequality \eqref{Relative quasimap internal component inequality} holds a fortiori for the quasimap. Thus we obtain a morphism from the relative stable map space to the relative quasimap space, as claimed.
 \end{proof}
 Let us denote by
 \begin{equation*} \mathcal Q^{\circ}_{0,\alpha}(\PP^N|H,d) \subseteq \Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
@@ -63,9 +63,9 @@ The general fibre is not modified at all, and so is still in the nice locus. By 
 \begin{proof} This holds because the moduli space is equal to the closure of the nice locus, which is irreducible of the expected dimension. \end{proof}
 
 Since the moduli space of relative quasimaps has a fundamental class, we can define \emph{relative quasimap invariants} for the pair $(\PP^N,H)$:
-\begin{equation*} \left\langle \gamma_1 \psi_1^{k_1} , \ldots, \gamma_n \psi_n^{k_n} \right\rangle_{0,\alpha,d}^{\PP^N|H} := \int_{[\Q{0}{\alpha}{\PP^N|H}{\beta}]} \prod_{i=1}^n \ev_i^* \gamma_i \cdot \psi_i^{k_i} \end{equation*}
-We will now establish a number of properties of the fundamental class. These immediately imply corresponding properties of the relative invariants.
-\begin{cor} \label{Comparison morphism birational} The comparison morphism from relative stable maps to relative quasimaps is birational. In particular it sends the fundamental class to the fundamental class. \end{cor}
+\begin{equation*} \left\langle \gamma_1 \psi_1^{k_1} , \ldots, \gamma_n \psi_n^{k_n} \right\rangle_{0,\alpha,d}^{\PP^N|H} := \int_{[\Q{0}{\alpha}{\PP^N|H}{d}]} \prod_{i=1}^n \ev_i^* \gamma_i \cdot \psi_i^{k_i} \end{equation*}
+We will now establish a number of properties of the fundamental class.
+\begin{cor} \label{Comparison morphism birational} The comparison morphism from relative stable maps to relative quasimaps is birational. In particular it sends the fundamental class to the fundamental class, and thus the invariants coincide. \end{cor}
 \begin{proof} This follows because the comparison morphism restricts to an isomorphism on the nice locus, which by Lemma~\ref{lem:closure} is a dense open subset of both spaces. \end{proof}
 
 
@@ -76,7 +76,7 @@ We wish to obtain a recursion formula relating the quasimap invariants of multip
 \]
 vanishes along $\Q{0}{\alpha+e_k}{\PP^N|H}{d}$ inside $\om{Q} = \Q{0}{\alpha}{\PP^N|H}{d}$, and also along a number of \ilemph{comb loci}.  The latter parametrise quasimaps for which $x_k$ belongs to an internal component $Z \subseteq C$ (a connected component of the vanishing locus of $u_0$), such that:
 \begin{equation*}\deg(L|_{Z})+\sum_{i=1}^r m^{(i)}=\sum_{x_i\in Z}\alpha_i \end{equation*}
-Quasimap stability means that quasimaps in the comb loci cannot contain any rational tails; this is really the only difference with the case of stable maps.
+The strong stability condition means that quasimaps in the comb loci cannot contain any rational tails; this is really the only difference with the case of stable maps.
 
 Indeed, we can push forward Gathmann's recursion formula for stable maps along the comparison morphism
 \begin{equation*} \comp \colon \M{0}{\alpha}{\PP^N|H}{d}\to\Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
@@ -95,7 +95,7 @@ from which the lemma follows because $m^{(i)} \leq d$.
 \end{proof}
 \begin{remark} With an eye to the future, we remark that these rational tail components contribute nontrivially to the Gromov--Witten invariants of a Calabi--Yau hypersurface in projective space, and so their absence from the quasimap recursion formula accounts for the divergence between Gromov--Witten and quasimap invariants in the Calabi--Yau case \cite[Rmk. 1.6]{Ga-MF}. \end{remark}
 
-Since we wish to apply the projection formula to Gathmann's recursion relation, we should express the cohomological terms which appears as pull-backs:
+Since we wish to apply the projection formula to Gathmann's recursion relation, we should express the cohomological terms which appear as pull-backs:
 \begin{lem}\label{lem:compare_psi} We have:
 \begin{align*} \comp^*(\psi_k) & =\psi_k \\
 \comp^*(\ev_k^* H)& =\ev_k^* H
@@ -116,7 +116,7 @@ where $\sst$ is the strong stabilisation map which contracts the rational tails.
 \begin{prop} \label{Recursion formula for PN}
 Define the \ilemph{quasimap comb locus} $\mathcal{D}^\mathcal{Q}_{\alpha,k}(\PP^N|H,d)$ as the union of the moduli spaces
 \begin{equation*}
-\mathcal{D}^{\mathcal{Q}}(\PP^N|H,A,B,M) := \Q{0}{A^{(0)} \cup \{q_1,\ldots,q_r\}}{H}{d_0}\times_{H^r}\prod_{i=1}^r \Q{0}{(m^{(i)})\cup\alpha^{(i)}}{\PP^N|H}{d_i}
+\mathcal{D}^{\mathcal{Q}}(\PP^N|H,A,B,M) := \Q{0}{A^{(0)} \cup \{q_1,\ldots,q_r\}}{H}{d_0}\times_{H^r}\prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m^{(i)})}{\PP^N|H}{d_i}
 \end{equation*}
 where the union runs over all splittings $A =(A^{(0)},\ldots,A^{(r)})$ of the markings (inducing a splitting $(\alpha^{(0)}, \ldots, \alpha^{(r)})$ of the corresponding tangency conditions), $B = (d_0, \ldots, d_r)$ of the degree and all valid multiplicites $M = (m^{(1)}, \ldots, m^{(r)})$ such that the above spaces are all well-defined (in particular we require that $|A^{(0)}|+r$ and $|A^{(i)}|+1$ are all $\geq 2$) and such that
 

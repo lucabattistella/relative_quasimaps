@@ -11,7 +11,7 @@ in the Chow group of $\Q{0}{\alpha}{X|Y}{\beta}$.
 
 \subsection{The virtual class on the space of relative quasimaps} Let $X$ and $Y$ be as in the statement of Theorem~\ref{Theorem general recursion}.  The complete linear system associated to $\OO_X(Y)$ defines an embedding $i : X \hookrightarrow \PP^N$ such that $i^{-1}(H) = Y$ for a certain hyperplane $H$. By the functoriality property of quasimap spaces (see Appendix~\ref{Functoriality of Quasimap Spaces Section}) we have a map:
 \begin{equation*} k := \om{Q}(i) : \Q{0}{n}{X}{\beta} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
-where $d=i_*\beta$. Since $i$ is a closed embedding it follows that $k$ is as well. Furthermore $k$ admits a compatible perfect obstruction theory (see Appendix~\ref{section:rel_pot_for_qm_functoriality}), so we have a notion of virtual pull-back along $k$.
+where $d=i_*\beta$. Since $i$ is a closed embedding it follows that $k$ is as well. Because $\Q{0}{n}{\PP^N}{d}$ is smooth, $k$ admits a compatible perfect obstruction theory (see Appendix~\ref{section:rel_pot_for_qm_functoriality}), so we have a notion of virtual pull-back along $k$.
 
 It is easy to show that $k$ restricts to a morphism between moduli space of relative quasimaps, and thus we have a diagram of embeddings
 \bcd
@@ -50,7 +50,7 @@ and equip it with the virtual class pulled back along $k$:
 Using this definition, $\om{Q}(Y)$ consists of those quasimaps in $\om{Q}(X)$ for which $u_Y \equiv 0$.
 This has obvious advantages from the point of view of our computations, but is conceptually unsatisfying. 
 
-On the other hand, $X$ is a GIT quotient  $\Aaff^{\Sigma_X(1)}  \sslash \Gm^r$, and $Y \subseteq X$ defines a $\Gm^r$-invariant subvariety $C(Y)$ of $\Aaff^{\Sigma_X(1)}$, which we call the \ilemph{cone of Y}.
+On the other hand, $X$ is a GIT quotient  $\Aaff^{\Sigma_X(1)}  \sslash \Gm^r$, and $Y \subseteq X$ defines a $\Gm^r$-invariant subvariety $C(Y)$ of $\Aaff^{\Sigma_X(1)}$, which we call the \ilemph{cone over Y}.
 Then $Y$ is equal to the GIT quotient
 \begin{equation*} Y = C(Y) \sslash \Gm^r \end{equation*}
 and so we may use the more general theory of quasimaps to GIT quotients \cite{CFKM} to define $\om{Q}(Y)$ and its virtual class.  
@@ -123,7 +123,7 @@ The maps $\mathcal{D}(X) \to \MM_{A,B}^{\operatorname{wt}}$ and $\om{Q}(X) \to \
 Commutativity of virtual pull-backs then implies that:
 \begin{equation} \virt{\mathcal{D}(X)} = \label{psishriek formula} \psi^!\virt{\om{Q}(X)}= \psi^! k^! [ \om{Q}(\PP^N)] = k^!\psi^![\om{Q}(\PP^N)] = k^! [ \mathcal{D}(\PP^N) ]\end{equation}
 
-\begin{proof}[Proof of Lemma \ref{Comb loci pull back}] Putting all the preceding results together, we consider the cartesian digram:
+\begin{proof}[Proof of Lemma \ref{Comb loci pull back}] Putting all the preceding results together, we consider the cartesian diagram:
 \bcd
 \mathcal D(X|Y)\ar[d]\ar[r]\ar[dr,phantom,"\Box"] & \mathcal E(X|Y)\ar[d]\ar[r]\ar[dr,phantom,"\Box"] & \mathcal E(\PP^N|H)\ar[d,"\theta"] \\
 \mathcal D(X)\ar[d]\ar[r]\ar[dr,phantom,"\Box"] & \mathcal E(X)\ar[d]\ar[r] & \mathcal E(\PP^N) \\
