@@ -1,6 +1,6 @@
 \subsection{Comparison with the GIT construction} \label{Section comparison with GIT construction}
 
-Let $X$ be a smooth projective toric variety and $Y \hookrightarrow X$ a smooth very ample hypersurface. The complete linear system $|\OO_X(Y)|$ gives an embedding $i : X \hookrightarrow \PP^N$ which expresses $Y$ as the intersection inside $\PP^N$ of $X$ and a certain hyperplane $H$: $Y=i^{-1}(H)$. We can \ilemph{define} the moduli space of quasimaps to $Y$ via the following cartesian diagram:
+Let $X$ be a smooth projective toric variety and $Y \hookrightarrow X$ a smooth very ample hypersurface. The complete linear system $|\OO_X(Y)|$ gives an embedding $i : X \hookrightarrow \PP^N$ which expresses $Y$ as the intersection inside $\PP^N$ of $X$ and a certain hyperplane $H$: $Y=X\cap H = i^{-1}(H)$. We can \ilemph{define} the moduli space of quasimaps to $Y$ via the following cartesian diagram:
 \bcd
 \Q{g}{n}{Y}{\beta}\ar[d, hook] \ar[r, hook]\ar[rd,phantom,"\square"] & \Q{g}{n}{H}{d} \ar[d, hook] \\
 \Q{g}{n}{X}{\beta}\ar[r,hook, "k"] & \Q{g}{n}{\PP^N}{d}
@@ -23,7 +23,7 @@ which admits a virtual class. Hence we have two moduli spaces of quasimaps to $Y
 
 Objects of $\om{Q}^{\operatorname{GIT}}_{g,n}(Y,\beta)$ are diagrams of the form
 \bcd
-P \ar[d] \ar[r] & C(Y) \\ 
+P \ar[d,"G"] \ar[r] & C(Y) \\ 
 C & \,
 \ecd
 where $C$ is a prestable curve, $P$ is a principal $G$-bundle and the map $P \to C(Y)$ is $G$-equivariant. Equivalently, an object consists of a prestable curve $C$, a principal $G$-bundle $P$ and a section $u$ of the associated $C(Y)$-bundle:
@@ -34,8 +34,8 @@ C \ar[u,bend right,"u"right]
 The obstruction theory on this space is defined relative to the stack $\mathfrak{Bun}_{G}$ parametrising principal $G$-bundles on the universal curve:
 \begin{equation*} \mathcal{C}_{\MM_{g,n}} \to \MM_{g,n} \end{equation*}
 It is given by
-\begin{equation*} \EE_{\om{Q}/\mathfrak{Bun}_G}^\vee = \R \pi_* (u^*\LL_p) \end{equation*}
-where $\pi$ is the universal curve over $\om{Q} = \om{Q}^{\operatorname{GIT}}_{g,n}(Y,\beta)$. There is a natural isomorphism
+\begin{equation*} \EE_{\om{Q}/\mathfrak{Bun}_G}^\vee = \R \pi_* (u^*\TT_p) \end{equation*}
+where $\pi$ is the universal curve over $\om{Q} = \om{Q}^{\operatorname{GIT}}_{g,n}(Y,\beta)$ and $\TT_p$ is the relative tangent complex. There is a natural isomorphism
 \begin{equation*} \mathfrak{Bun}_{G}^{g,n} \cong \times^{r_X}_{\MM_{g,n}} \mathfrak{Pic_{g,n}} \end{equation*}
 given by sending $P$ to the $r_X$ individual factors of the affine bundle $P\times_{G}\mathbb A^{r_X}$. Furthermore there is a $G$-equivariant embedding
 \bcd
