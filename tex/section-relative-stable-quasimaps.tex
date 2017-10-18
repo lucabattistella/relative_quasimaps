@@ -4,7 +4,7 @@
 We briefly recall the definition and basic properties of the moduli space of toric quasimaps; see \cite{CF-K} for more details.
 \begin{definition}[{\cite[Definition 3.1.1]{CF-K}}] Let $N$ be a lattice, let $\Sigma \subseteq N_{\QQ}$ be a fan, and let $X= X_{\Sigma}$ be the corresponding toric variety.  Suppose that $X$ is smooth and projective.   Let $M = N^\vee = \Hom(N,\Z)$ and let $\OO_{X_\Sigma}(1)$ be a fixed polarisation, which we can write (non-uniquely) in terms of the torus-invariant divisors as:
 \begin{equation*} \OO_{X_\Sigma}(1) = \otimes_{\rho \in \Sigma(1)} \OO_{X_\Sigma}(D_\rho)^{\otimes \alpha_\rho} \end{equation*}
-for some $\alpha_\rho \in \Z$. We fix the following numerical invariants: a genus $g \geq 0$, number of marked points $n \geq 0$ and an effective curve class $\beta \in \HH_2^+(X)$. A \ilemph{stable (toric) quasimap} is given by the data
+for some $\alpha_\rho \in \Z$. We fix the following numerical invariants: a genus $g \geq 0$, a number of marked points $n \geq 0$, and an effective curve class $\beta \in \HH_2^+(X)$. A \ilemph{stable (toric) quasimap} is given by the data
 \begin{equation*} \Big((C,x_1,\ldots,x_n), (L_\rho,u_\rho)_{\rho \in \Sigma(1)}, (\varphi_m)_{m \in M}\Big) \end{equation*}
 where:
 \begin{enumerate}
@@ -18,12 +18,11 @@ These are required to satisfy the following two conditions:
 \item \ilemph{nondegeneracy}: there is a finite (possibly empty) set of smooth and non-marked points $B \subseteq C$, called the \ilemph{basepoints} of the quasimap, such that for all $x \in C \setminus B$ there exists a maximal cone $\sigma \in \Sigma_{\operatorname{max}}$ with $u_\rho(x) \neq 0$ for all $\rho \not\subset \sigma$;
 \item \ilemph{stability}: if we let $L = \otimes_\rho L_\rho^{\otimes \alpha_\rho}$ then the following $\QQ$-divisor is ample
 \begin{equation*} \omega_C(x_1 + \ldots + x_n)\otimes L^{\otimes \epsilon} \end{equation*}
-for every rational $\epsilon > 0$.  Note that this does not depend on the choice of polarisation.
+for every rational $\epsilon > 0$.  This does not depend on the choice of polarisation. Note that necessarily $2g-2+n \geq 0$.
 \end{enumerate}
 \end{definition}
 
-
-\begin{remark} This definition is motivated by D. A. Cox's description of the functor of points of a toric variety in terms of $\Sigma$-collections \cite{CoxFunctor}; see also Appendix \ref{Functoriality of Quasimap Spaces Section}. A quasimap defines\footnote{This can be expressed in a more generalisable manner as follows: a quasimap is a map to the stack quotient $\big[\mathbb{A}^{\Sigma(1)} / (\Gm)^r\big]$ such that $B$ is the preimage of the unstable locus.} a rational map $C \dashrightarrow X$ with base locus equal to $B$.
+\begin{remark} This definition is motivated by D. A. Cox's description of the functor of points of a toric variety in terms of $\Sigma$-collections \cite{CoxFunctor}; see also Appendix \ref{Functoriality of Quasimap Spaces Section}. A quasimap defines\footnote{This can be expressed in a more generalisable manner as follows: a quasimap is a map to the stack quotient $\big[\mathbb{A}^{\Sigma(1)} / \Gm^r\big]$ such that $B$ is the preimage of the unstable locus.} a rational map $C \dashrightarrow X$ with base locus equal to $B$.
 In particular a quasimap without any basepoints defines a morphism $C \to X$. Thus maps with basepoints appear in the (virtual) boundary of the moduli space of quasimaps, in much the same way as maps with rational tails appear in the boundary of the moduli space of stable maps. This is something more than just a vague analogy; these loci correspond to each other under the comparison morphism when $X\cong\PP^N$; see Appendix \ref{Section comparison morphism}. \end{remark}
 
 More generally, one can define the notion of a family of quasimaps over a base scheme $S$, and what it means for two such families to be isomorphic; one thus obtains a moduli stack
@@ -85,7 +84,7 @@ On the other hand, $(\ev_1,\ev_2)\colon\M{0}{2}{\PP^2}{1}\to\PP^2\times\PP^2$ is
  \draw[fill=black] (0,2) circle[radius=3pt];
 \end{tikzpicture} 
 \end{center}
-The image of the degree $1$ component under $f$ can be any line passing through the point of $\PP^2$ to which the other component is contracted. Hence $\M{0}{2}{\PP^2}{1}\simeq\operatorname{Bl}_{\Delta}(\PP^2\times\PP^2)$. The comparison morphism $\comp$ (see Appendix \ref{Section comparison morphism}) can be interpreted as the blow-down map, and it induces an isomorphism of the rational tails-free locus with the basepoint-free locus.
+The image of the degree $1$ component under $f$ can be any line passing through the point of $\PP^2$ to which the other component is contracted. Hence $\M{0}{2}{\PP^2}{1}\cong\operatorname{Bl}_{\Delta}(\PP^2\times\PP^2)$. The comparison morphism $\comp$ (see Appendix \ref{Section comparison morphism}) can be interpreted as the blow-down map, and it induces an isomorphism of the rational tail-free locus with the basepoint-free locus.
 \end{example}
 
 %[EXAMPLE: $\Q{0}{2}{\PP^2}{1}$ and $\M{0}{2}{\PP^2}{1}$]
@@ -95,15 +94,15 @@ The image of the degree $1$ component under $f$ can be any line passing through 
 \begin{equation*} \omega_C(x_1 + \ldots + x_n)\otimes L^{\otimes \epsilon} \end{equation*} 
 is ample, is only required to hold for a fixed $\epsilon \in \QQ_{>0}$ (instead of for arbitrary $\epsilon$, as was the case with ordinary quasimaps).
 
-This has the effect of allowing some rational tails to appear, as long as their degree is high enough with respect to $\epsilon$. In order to keep the moduli space separated, one also has to bound the multiplicity of the basepoints that can occur.
+This has the effect of allowing some rational tails to appear, as long as their degree is high enough with respect to $\epsilon$. In order to keep the moduli space Deligne--Mumford and seperated, one also has to bound the multiplicity of the basepoints that can occur.
 
 By boundedness and the fact that the degree is an integer-valued function, there exist finitely many critical values of $\epsilon$ which divide $\QQ_{>0}$ into chambers inside which the moduli spaces $\Qe{g}{n}{X}{\beta}$ do not change.
-For $\epsilon$ sufficiently small we recover the space of (ordinary) quasimaps, and for $\epsilon$ sufficiently large we obtain the moduli space of stable maps. Thus one can view the spaces of $\epsilon$-stable quasimaps as interpolating between these two extremes, and they have proven  successful as a tool for comparing quasimap invariants to stable map invariants \cite{CF-K-wallcrossing}.
+For $\epsilon$ sufficiently small we recover the space of (ordinary) quasimaps, and for $\epsilon$ sufficiently large we obtain the moduli space of stable maps. Thus one can view the spaces of $\epsilon$-stable quasimaps as interpolating between these two extremes, and they have proven  successful as a tool for comparing quasimap invariants to stable map invariants \cite{TodaStableQuotient} \cite{CF-K-wallcrossing}.
 \end{remark}
 
-Another variant of the theory, which will play a role in later sections, is that of \emph{parametrised quasimaps} \cite[\S 7]{CF-K}. A parametrised quasimap comes with a preferred rational component, which is equipped with the extra data of an isomorphism with $\PP^1$, and the stability condition is imposed \emph{on all but the preferred component}. This mimics the construction of graph spaces in Gromov-Witten theory -- for example, there is a $\Gm$-action on $\QG{g}{n}{X}{\beta}$ by rotating the preferred component, which plays the role of the $\Gm$-action that rotates the graph. The fixed loci and their equivariant normal bundles are well-understood, at least in the toric setting \cite[\S 7]{CF-K}.  In the parameterised case we no longer require $2g-2+n\geq 0$, due to the modified stability condition. In particular it makes sense, and turns out to be very useful, to consider unmarked parametrised quasimaps $\QG{0}{0}{X}{\beta}$. In this case the source curve is necessarily irreducible. 
+Another variant of the theory, which will play a role in later sections, is that of \emph{parametrised quasimaps} \cite[\S 7]{CF-K}. A parametrised quasimap comes with a preferred rational component, which is equipped with the extra data of an isomorphism with $\PP^1$, and the stability condition is imposed \emph{on all but the preferred component}. This mimics the construction of graph spaces in Gromov-Witten theory -- for example, there is a $\Gm$-action on $\QG{g}{n}{X}{\beta}$ by rotating the preferred component, which plays the role of the $\Gm$-action that rotates the graph. The fixed loci and their equivariant normal bundles are well-understood, at least in the toric setting \cite[\S 7]{CF-K}.  In the parametrised case we no longer require $2g-2+n\geq 0$, due to the modified stability condition. In particular it makes sense, and turns out to be very useful, to consider unmarked parametrised quasimaps $\QG{0}{0}{X}{\beta}$. In this case the source curve is necessarily irreducible. 
 
-\begin{example} $\QG{0}{0}{\PP^N}{d} = \PP^k$ with $k=(N+1)(d+1)-1$. Indeed, the curve and line bundle must be $(\PP^1,\mathcal O_{\PP^1}(d))$ and we are left with choosing $N+1$ sections of $\mathcal O_{\PP^1}(d)$ (not all zero) up to automorphisms of $\mathcal O_{\PP^1}(d)$, i.e. up to scaling. For an early appearance of such spaces, see for instance \cite{Bertram}.\end{example}
+\begin{example} $\QG{0}{0}{\PP^N}{d} = \PP^k$ with $k=(N+1)(d+1)-1$. Indeed, the curve and line bundle must be $(\PP^1,\mathcal O_{\PP^1}(d))$ and we are left with choosing $N+1$ sections of $\mathcal O_{\PP^1}(d)$ (not all zero) up to automorphisms of $\mathcal O_{\PP^1}(d)$, i.e. up to scaling. For early appearances of such spaces, see for instance \cite{Givental-mirror} \cite{MorrisonPlesser} \cite{Bertram}.\end{example}
 
 \subsection{Review of relative stable maps} \label{Subsection relative stable maps} Given a smooth projective variety $X$ and a smooth very ample divisor $Y$, Gathmann's moduli space of relative stable maps parametrises stable maps to $X$ with specified tangencies to $Y$ at the marked points.
 
@@ -112,25 +111,25 @@ Another variant of the theory, which will play a role in later sections, is that
 of relative stable maps to $(X,Y)$ is defined to be the locus in $\M{0}{n}{X}{\beta}$ of stable maps $(C \to S , (x_i : S \to C)_{i=1}^n , f : C \to X)$ satisfying the following two conditions:
 \begin{enumerate}
 \item if $x_i$ is a marked point such that $\alpha_i > 0$ then $f(x_i) \in Y$;
-\item if we consider the class $f^* [Y] \in \Achow^0(f^{-1}Y \to S)$ then the difference $f^* [Y] - \sum_i \alpha_i x_i$ is an effective class.
+\item if we consider the class $f^* [Y] \in \Achow^0(f^{-1}Y \to S)$ then the difference $f^* [Y] - \sum_i \alpha_i [x_i]$ is an effective class.
 \end{enumerate}
-These conditions define a closed substack of $\M{0}{n}{X}{\beta}$. Condition (1) is required in order for the class $\sum_i \alpha_i x_i$ to make sense in $\Achow^0(f^{-1}Y \to S)$.
+These conditions define a closed substack of $\M{0}{n}{X}{\beta}$. Condition (1) is required in order for the class $\sum_i \alpha_i [x_i]$ to make sense in $\Achow^0(f^{-1}Y \to S)$.
 \end{definition}
 
-\begin{remark} The notation in (2) comes from bivariant intersection theory: see \cite[\S 17]{FUL}. Fibrewise, the condition is that the class $f^*[Y] - \sum_i \alpha_i x_i \in A_0(f^{-1}Y)$ is required to be effective.\end{remark}
+\begin{remark} The notation in (2) comes from bivariant intersection theory: see \cite[\S 17]{FUL}. Fibrewise, the condition is that the class $f^*[Y] - \sum_i \alpha_i [x_i] \in A_0(f^{-1}Y)$ is required to be effective.\end{remark}
 
-\begin{remark} When $\alpha = (0, \ldots, 0)$, condition (2) becomes $Y \cdot \beta \geq 0$, so $\M{0}{(0,\ldots,0)}{X|Y}{\beta} = \M{0}{n}{X}{\beta}$ as long as $Y$ is nef.\end{remark}
-
-\begin{remark} The definition given above works in families; however there is an equivalent, more combinatorial definition for individual maps which is more useful in practice (see \cite[Remark 1.4]{Ga}): a stable map $(C,x_1, \ldots, x_n,f)$ is a relative stable map if and only if, for each connected component $Z$ of $f^{-1}(Y) \subseteq C$:
+The definition given above works in families; however there is an equivalent, more combinatorial definition for individual maps which is more useful in practice (see \cite[Remark 1.4]{Ga}): a stable map $(C,x_1, \ldots, x_n,f)$ is a relative stable map if and only if, for each connected component $Z$ of $f^{-1}(Y) \subseteq C$:
 \begin{enumerate}
 \item if $Z$ is a point and is equal to a marked point $x_i$, then the multiplicity of $f$ to $Y$ at $x_i$ is greater than or equal to $\alpha_i$;
 \item if $Z$ is one-dimensional (hence a union of irreducible components of $C$) and if we let $C^{(i)}$ for $1 \leq i \leq r$ denote the irreducible components of $C$ adjacent to $Z$ and $m^{(i)}$ denote the multiplicity of $f|_{C^{(i)}}$ to $Y$ at the node $Z \cap C^{(i)}$, then:
 \begin{equation} \label{Relative stable map internal component inequality} Y \cdot f_* [Z] + \sum_{i=1}^r m^{(i)} \geq \sum_{x_i \in Z} \alpha_i \end{equation}
-\end{enumerate} \end{remark}
+\end{enumerate}
 
-\begin{remark}In case (2) above we call $Z$ an \ilemph{internal} component and the $C^{(i)}$ \ilemph{external} components. Note that $Z$ is not necessarily irreducible: the term ``component'' is justified by the fact that it is a \emph{connected} component of $f^{-1}(Y)$. \end{remark}
+\begin{remark}In case (2) above we call $Z$ an \ilemph{internal} component and the $C^{(i)}$ \ilemph{external} components. Note that $Z$ is not necessarily irreducible. \end{remark}
 
-\begin{remark} In the case of maximal multiplicity $\Sigma_{i} \alpha_i = Y \cdot \beta$, all the inequalities in the above definition must actually be equalities. \end{remark}
+\begin{remark} When $\alpha = (0, \ldots, 0)$, condition (2) becomes $Y \cdot \beta \geq 0$, so $\M{0}{(0,\ldots,0)}{X|Y}{\beta} = \M{0}{n}{X}{\beta}$ as long as $Y$ is nef.\end{remark}
+
+\begin{remark} In the case of maximal multiplicity $\Sigma_{i} \alpha_i = Y \cdot \beta$, all the inequalities in the above definition must be equalities. \end{remark}
 
 In the case $X=\PP^N$ and $Y=H$ a hyperplane, Gathmann showed \cite[Proposition 1.14]{Ga} that $\M{0}{\alpha}{\PP^N|H}{d}$ is irreducible with dimension equal to the expected dimension:
 \begin{equation*} \vdim \M{0}{\alpha}{X|Y}{\beta} = \vdim{\M{0}{n}{X}{\beta}} - \sum_{i=1}^n \alpha_i \end{equation*}
@@ -156,7 +155,7 @@ Repeated application of this result shows that both the relative Gromov--Witten 
 
 We now give the main definition of the paper. From here on $X$ will denote a smooth projective toric variety and $Y \subseteq X$ a very ample hypersurface. We \emph{do not} require that $Y$ is toric.
 Consider the line bundle $\OO_X(Y)$ and the section $s_Y$ cutting out $Y$. By \cite{CoxRing} we have a natural isomorphism of $\CC$-vector spaces
-\begin{equation*} \HH^0(X,\OO_X(Y)) = \left\langle \prod_{\rho} z_\rho^{a_\rho} : \Sigma_\rho a_\rho D_\rho = Y \right\rangle_{\CC} \end{equation*}
+\begin{equation*} \HH^0(X,\OO_X(Y)) = \left\langle \prod_{\rho} z_\rho^{a_\rho} : \Sigma_\rho a_\rho [D_\rho] = [Y] \right\rangle_{\CC} \end{equation*}
 where the $z_\rho$ for $\rho \in \Sigma(1)$ are the generators of the Cox ring of $X$ and the $a_\rho$ are non-negative integers. We can therefore write $s_Y$ as
 \begin{equation*} s_Y = \sum_{\underline{a}=(a_\rho)} \lambda_{\underline{a}} \prod_\rho z_\rho^{a_\rho} \end{equation*}
 for some scalars $\lambda_{\underline{a}} \in \CC$. The idea is that a quasimap
@@ -165,7 +164,7 @@ should ``map'' a point $x \in C$ into $Y$ if and only if the section
 \begin{equation} \label{uY expression} u_Y := \sum_{\underline{a}} \lambda_{\underline{a}} \prod_\rho u_\rho^{a_\rho} \end{equation}
 vanishes at $x$. We now explain how to make sense of expression \eqref{uY expression}. For each $\underline{a}$ we have a well-defined section
 \begin{equation*} u_{\underline{a}} := \lambda_{\underline{a}} \prod_\rho u_\rho^{a_\rho} \in \HH^0(C,\otimes_\rho L_\rho^{\otimes a_\rho}) \end{equation*}
-and if we have $\underline{a}$ and $\underline{b}$ such that $\sum_\rho a_\rho D_\rho = Y = \sum_\rho b_\rho D_\rho$ then these differ by an element $m$ of $M$. Thus the isomorphism $\varphi_m$ allows us to view the sections $u_{\underline{a}}$ and $u_{\underline{b}}$ as sections of the same bundle, which we denote by $L_Y$. Then we can sum these together to obtain $u_Y$. There is a choice involved here, but up to isomorphism it does not matter; see the proof of functoriality in Appendix \ref{Functoriality of Quasimap Spaces Section} for more details.
+and if we have $\underline{a}$ and $\underline{b}$ such that $\sum_\rho a_\rho [D_\rho] = [Y] = \sum_\rho b_\rho [D_\rho]$ then these divisors differ by an element $m$ of $M$. Thus the isomorphism $\varphi_m$ allows us to view the sections $u_{\underline{a}}$ and $u_{\underline{b}}$ as sections of the same bundle, which we denote by $L_Y$. Then we can sum these together to obtain $u_Y$. There is a choice involved here, but up to isomorphism it does not matter; see the proof of functoriality in Appendix \ref{Functoriality of Quasimap Spaces Section} for more details.
 
 The upshot is that we obtain a line bundle $L_Y$ on $C$, which plays the role of the ``pull-back'' of $\OO_X(Y)$ along the ``map'' $C \to X$, and a global section
 \begin{equation*} u_Y \in \HH^0(C,L_Y) \end{equation*}
@@ -178,7 +177,7 @@ is defined to be the locus of quasimaps
 such that:
 \begin{enumerate}
 \item if $x_i$ is a marking such that $\alpha_i > 0$, then $x_i^* u_Y = 0$;
-\item if we let $u_Y^*(0) \in \Achow_0(u_Y^{-1}(0))$ denote the class defined by the Gysin map for $L_Y$, then the difference $u_Y^*(0) - \Sigma_i \alpha_i x_i$ is an effective class.
+\item if we let $u_Y^*(0) \in \Achow^0(u_Y^{-1}(0)\to S)$ denote the class defined by the Gysin map for $L_Y$, then the difference $u_Y^*(0) - \Sigma_i \alpha_i [x_i]$ is an effective class.
 \end{enumerate}
 \end{definition}
 
@@ -187,7 +186,7 @@ such that:
 u_Y^{-1}(0) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & C \ar[d,"u_Y"] \\
 C \ar[r,"0_Y"] & L_Y
 \ecd
-where $0_Y$ is the zero section. There is a Gysin map
+where $0_Y$ is the zero section. There is a Gysin map \cite[\S 2.6]{FUL}
 \begin{equation*} 0_Y^! : \Achow_*(C) \to \Achow_*(u_Y^{-1}(0)) \end{equation*}
 and we define $u_Y^*(0) := 0_Y^!([C])$.
 
