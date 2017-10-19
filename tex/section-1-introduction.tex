@@ -31,12 +31,36 @@ Here $X$ is a smooth toric variety, $Y$ is a smooth very ample hypersurface and 
 In \S \ref{Section recursion for PN} we examine the special case of a hyperplane $H \subseteq \PP^N$. We find that the moduli space is irreducible of the expected dimension (in fact, more than this: it is the closure of the so-called ``nice locus'' consisting of maps from a $\PP^1$ whose image is not contained in $H$). Thus it has an actual fundamental class, which we can use to define relative quasimap invariants.
 Another useful fact about this special case is that there exists a birational comparison morphism:
 \begin{equation*} \comp : \M{0}{n}{\PP^N}{d} \to \Q{0}{n}{\PP^N}{d} \end{equation*} 
-This restricts to a birational morphism between the relative spaces, which we use to push down Gathmann's formula to obtain a recursion formula for relative stable quasimaps. The stronger stability condition for quasimaps significantly simplifies the form of this recursion.
+This restricts to a birational morphism between the relative spaces, which we use to push down Gathmann's formula to obtain a recursion formula for relative stable quasimaps.
 
 In \S \ref{Section recursion formula in general case} we turn to the case of an arbitrary pair $(X,Y)$ with $Y$ very ample. We use the embedding $X \hookrightarrow \PP^N$ defined by $\OO_X(Y)$ to construct a virtual class $\virt{\Q{0}{\alpha}{X|Y}{\beta}}$.
-We then prove the recursion formula for $(X,Y)$ by pulling back the formula for $(\PP^N,H)$. This requires several comparison theorems for virtual classes, extending results in Gromov--Witten theory to the setting of quasimaps.
+We then prove the recursion formula for $(X,Y)$ by pulling back the formula for $(\PP^N,H)$. This requires several comparison theorems for virtual classes, extending results in Gromov--Witten theory to the setting of quasimaps. The full statement of the recursion formula is:
 
-Finally in \S \ref{Section quasimap mirror theorem} we apply the recursion formula of \S \ref{Section recursion formula in general case} to obtain a Lefschetz-type formula for quasimap invariants, that is, a formula expressing quasimap invariants of $Y$ in terms of those of $X$. This recovers Corollary~5.5.1 in \cite{CF-K-wallcrossing}, and can be interpreted as a mirror theorem for $Y$. The argument is similar in spirit to the one given in \cite{Ga-MF}, however the stronger stability condition considerably simplifies both the proof and the final result.
+\begin{customthm}{\ref{Theorem general recursion}} Let $X$ be a smooth and proper toric variety and let $Y \subseteq X$ be a very ample hypersurface (not necessarily toric). Then
+\begin{equation*} (\alpha_k \psi_k + \ev_k^* [Y]) \cap \virt{\Q{0}{\alpha}{X|Y}{\beta}} = \virt{\Q{0}{\alpha+e_k}{X|Y}{\beta}} + \virt{\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)} \end{equation*}
+in the Chow group of $\Q{0}{\alpha}{X|Y}{\beta}$. 
+\end{customthm}
+\noindent Here $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ is a certain \emph{quasimap comb locus} sitting inside the boundary of the relative space (see \S \ref{Subsection comb loci pull back}); its virtual class should be thought of as a correction term. Such terms also appear in Gathmann's stable map recursion formula; however, in our setting the stronger stability condition for quasimaps considerably reduces the number of contributions.
+
+Finally in \S \ref{Section quasimap mirror theorem} we apply the recursion formula of \S \ref{Section recursion formula in general case} to obtain a Lefschetz-type formula for quasimap invariants, that is, a formula expressing quasimap invariants of $Y$ in terms of those of $X$. 
+
+\begin{customthm}{\ref{Theorem Quantum Lefschetz}}
+Let $X$ be a smooth toric Fano variety and let $i\colon Y \hookrightarrow X$ be a very ample hypersurface. Assume that $-K_Y$ is nef and that $Y$ contains all curve classes (see \S \ref{Subsection setup}). Then
+\begin{equation*}
+\dfrac{\sum_{\beta\geq 0} q^\beta\prod_{j=0}^{Y\cdot\beta}(Y+jz)S_0^X(z,\beta)}{P_0^X(q)}= \tilde{S}_0^Y(z,q)
+\end{equation*}
+where $S_0^X(z,\beta)$ and $\tilde{S}_0^Y(z,q)$ are the following generating functions for $2$-pointed quasimap invariants
+\begin{align*}
+S_0^X(z,\beta)&=(\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{X}{\beta}}\right) \\
+\tilde{S}_0^Y(z,q)&=i_* \sum_{\beta \geq 0} q^\beta (\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{Y}{\beta}}\right)
+\end{align*}
+and $P_0^X(q)$ is given by:
+\begin{equation*}
+P_0^X(q) = 1 + \sum_{\substack{\beta>0 \\ K_Y\cdot\beta=0}} q^\beta(Y\cdot\beta)!\langle [\pt_X] \psi_1^{Y\cdot\beta-1} ,\mathbbm 1_{X}\rangle_{0,2,\beta}^X
+\end{equation*}
+\end{customthm}
+
+This recovers Corollary~5.5.1 in \cite{CF-K-wallcrossing}, and can be interpreted as a mirror theorem for $Y$. The argument is similar in spirit to the one given in \cite{Ga-MF}, however the stronger stability condition considerably simplifies both the proof and the final result.
 
 We also include several appendices, collecting together results which are well-known to experts but absent from the literature. Appendix \ref{Section comparison morphism} discusses the comparison morphism; Appendix \ref{Section quasimap theory} contains foundational results in quasimap theory, including functoriality and the splitting axiom; Appendix \ref{appendix:intersection} contains a number of intersection-theoretic lemmas.
 

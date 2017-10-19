@@ -5,6 +5,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 %\usepackage{showlabels}
+\usepackage{hyperref}
 \usepackage{amsthm}
 \usepackage{marginnote}
 \usepackage{stmaryrd}
@@ -117,6 +118,11 @@
 \newtheorem{claim}{Claim}
 \newtheorem{question}[thm]{Question}
 \newtheorem{conj}[thm]{Conjecture}
+
+\newtheorem{innercustomthm}{Theorem}
+\newenvironment{customthm}[1]
+  {\renewcommand\theinnercustomthm{#1}\innercustomthm}
+  {\endinnercustomthm}
 
 \theoremstyle{definition}
 \newtheorem{example}[thm]{Example}
