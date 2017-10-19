@@ -119,6 +119,11 @@
 \newtheorem{question}[thm]{Question}
 \newtheorem{conj}[thm]{Conjecture}
 
+\newtheorem{innercustomthm}{Theorem}
+\newenvironment{customthm}[1]
+  {\renewcommand\theinnercustomthm{#1}\innercustomthm}
+  {\endinnercustomthm}
+
 \theoremstyle{definition}
 \newtheorem{example}[thm]{Example}
 \newtheorem{ex}[thm]{Example}
