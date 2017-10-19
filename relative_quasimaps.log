@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  19 OCT 2017 12:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  19 OCT 2017 12:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1676,7 +1676,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 193.
 Here is how much of TeX's memory you used:
  35720 strings out of 493014
  679391 string characters out of 6133351
- 758870 words of memory out of 5000000
+ 757870 words of memory out of 5000000
  38116 multiletter control sequences out of 15000+600000
  118200 words of font info for 252 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
@@ -1705,7 +1705,7 @@ public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ne
 wpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zplri
 .pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zplx-regular.
 pfb>
-Output written on relative_quasimaps.pdf (63 pages, 427578 bytes).
+Output written on relative_quasimaps.pdf (63 pages, 427590 bytes).
 PDF statistics:
  896 PDF objects out of 1000 (max. 8388607)
  768 compressed objects within 8 object streams
