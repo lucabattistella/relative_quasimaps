@@ -195,7 +195,7 @@ Given these definitions, Ciocan-Fontanine and Kim use localisation with respect 
 \[
  J^\epsilon(\mathbf{t},z)=S^\epsilon(\mathbf{t},z)(P^\epsilon(\mathbf{t},z))
 \]
-They then observe that if we set ${\bf t}=0$ and restrict to semi-positive targets, then the only class that matches non-trivially with ${P^\epsilon}|_{\mathbf{t}=0}$ is $[\pt_Y]$. The above formula then takes the simple form
+They observe that if we set ${\bf t}=0$ and restrict to semi-positive targets, then the only class that matches non-trivially with ${P^\epsilon}|_{\mathbf{t}=0}$ is $[\pt_Y]$. Hence the above formula takes the simple form
 \begin{equation} \label{Ciocan-Fontanine Theorem t zero}
  \frac{J^\epsilon |_{{\bf t}=0}}{\langle [\pt_Y],  P^\epsilon|_{{\bf t}=0}\rangle}=S^\epsilon(\mathbbm{1}_Y)|_{\mathbf{t}=0} = \mathbbm 1_Y+\sum_{h=1}^k \rho^h \left(\sum_{\beta> 0}q^\beta\left\langle\frac{\rho_h}{z-\psi},\mathbbm 1_Y\right\rangle_{0,2,\beta}^{Y,\epsilon} \right)\end{equation}
 see \cite[Corollary 5.5.1]{CF-K-wallcrossing}. In our setting, $\epsilon=0+$ and $Y$ embeds as a very ample hypersurface in a toric Fano variety $X$. We claim that in this case the formula above is equivalent to Theorem \ref{Theorem Quantum Lefschetz}. More precisely:
@@ -240,18 +240,18 @@ On the other hand, if we apply \eqref{Ciocan-Fontanine Theorem t zero} with $X$ 
 \begin{equation*} (\ev_{\bullet})_* \operatorname{Res}_{F_0^X}\virt{\QG{0}{0}{X}{\beta}} = S_0^X(z,\beta) \end{equation*}
 from which it follows that:
 \begin{equation*} J^{0+}|_{\mathbf{t}=0} = \sum_{\beta \geq 0} q^\beta \prod_{j=0}^{Y\cdot\beta}(Y+jz) S_0^X(z,\beta)\end{equation*}
-This proves \eqref{S epsilon equation}.
+This proves \eqref{J epsilon equation}.
 
-It remains to show \eqref{P epsilon equation}. Ciocan-Fontanine and Kim  show that if we write the $1/z$-expansion of ${J^{\epsilon}}|_{\mathbf{t}=0}$ as
+It remains to show \eqref{P epsilon equation}. According to Ciocan-Fontanine and Kim, if we write the $1/z$-expansion of ${J^{\epsilon}}|_{\mathbf{t}=0}$ as
 \begin{equation*} {J^{\epsilon}}|_{\mathbf{t}=0}=J^{\epsilon}_{0}(q)\mathbbm 1_Y+O(1/z) \end{equation*}
-then $\langle [\pt_Y],  P^\epsilon|_{{\bf t}=0}\rangle=J^{\epsilon}_{0}(q)$. It thus remains to show that $J^{0+}_0(q)=P_0^X(q)$.
+then $\langle [\pt_Y],  P^\epsilon|_{{\bf t}=0}\rangle=J^{\epsilon}_{0}(q)$. It thus remains to prove that $J^{0+}_0(q)=P_0^X(q)$.
 
 Since $X$ is a toric Fano variety, we have the following mirror symmetry calculation due to Givental \cite{Givental-equivariantGW} (see also \cite[Definition 7.2.8]{CF-K}):
 \begin{align*}
 S_0^X(z,\beta) =\prod_{\rho\in\Sigma_X(1)}\dfrac{\prod_{j=-\infty}^0(D_{\rho}+jz)}{\prod_{j=-\infty}^{D_{\rho}\cdot \beta}(D_\rho+jz)}
 =\dfrac{\prod_{\substack{\rho \colon D_\rho \cdot \beta\leq 0}} \prod_{j=D_\rho \cdot \beta}^0 (D_{\rho}+jz)}{\prod_{\substack{\rho\colon D_\rho \cdot\beta > 0}} \prod_{j=1}^{D_\rho\cdot\beta} (D_{\rho}+jz)}
 \end{align*}
-We can then apply equation \eqref{S epsilon equation} to find $J^{0+}|_{\mathbf{t}=0}$, and hence also to find $J^{0+}_0(q)$. In the end we obtain:
+We can then apply equation \eqref{J epsilon equation} to find $J^{0+}|_{\mathbf{t}=0}$, and hence also to find $J^{0+}_0(q)$. In the end we obtain:
 \begin{equation*}
  J^{0+}_0(q)=\sum_{\beta\geq 0}q^\beta(Y\cdot\beta)!\frac{\prod_{\rho\colon D_\rho\cdot\beta< 0}(-1)^{-D_{\rho}\cdot\beta}(-D_{\rho}\cdot\beta)!}{\prod_{\rho\colon D_\rho\cdot\beta> 0}(D_{\rho}\cdot\beta)!}
 \end{equation*}
