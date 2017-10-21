@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  19 OCT 2017 14:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  21 OCT 2017 12:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1487,7 +1487,7 @@ LaTeX Font Info:    Try loading font information for U+bbm on input line 59.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
-Overfull \hbox (55.0076pt too wide) in alignment at lines 100--100
+Overfull \hbox (55.0076pt too wide) in alignment at lines 99--99
  [] [] [] [] 
  []
 
@@ -1588,13 +1588,8 @@ Overfull \hbox (11.63786pt too wide) in paragraph at lines 95--95
 Underfull \vbox (badness 1043) has occurred while \output is active []
 
  [22]
-[23]) (./tex/mirror_theorem.tex [24] [25]
-Overfull \hbox (13.17061pt too wide) in paragraph at lines 35--36
-[]\T1/zpltlf/m/n/10.95 This es-sen-tially fol-lows by func-to-ri-al-ity of co-h
-o-mo-log-i-cal push-forwards
- []
-
-[26] [27] (./fig/snake.tex) [28] [29]
+[23]) (./tex/mirror_theorem.tex [24] [25] [26] [27] (./fig/snake.tex) [28]
+[29]
 Overfull \hbox (14.98462pt too wide) in paragraph at lines 125--125
 [] 
  []
@@ -1635,13 +1630,9 @@ T1/zpltlf/m/n/10.95 [[]], hence of $\OMS/npxsy/m/n/10.95 Q[]\U/npxmia/m/it/10.9
 pltlf/m/n/10.95 ,
  []
 
-[42]
-Underfull \vbox (badness 1127) has occurred while \output is active []
-
- [43])
-(./tex/functoriality.tex [44] [45] [46] [47] [48] [49] [50] [51] [52] [53])
-(./tex/splitting.tex [54] (./fig/different_splittings.tex) [55] [56])
-(./tex/GIT.tex [57]
+[42] [43]) (./tex/functoriality.tex [44] [45] [46] [47] [48] [49] [50] [51]
+[52] [53]) (./tex/splitting.tex [54] (./fig/different_splittings.tex) [55]
+[56]) (./tex/GIT.tex [57]
 Overfull \hbox (2.63702pt too wide) in paragraph at lines 21--23
 \T1/zpltlf/m/n/10.95 which ad-mits a vir-tual class. Hence we have two mod-uli 
 spaces of quasimaps
@@ -1658,12 +1649,25 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [62])
+LaTeX Font Info:    Try loading font information for T1+npxtt on input line 197
+.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/t1npxtt.fd
+File: t1npxtt.fd 2000/12/14 v1.0
+)
+LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
+(Font)              scaled to size 10.95pt on input line 197.
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--198
+
+ []
+
 [63]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 193.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 193.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 205.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 205.
  (./relative_quasimaps.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 193.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 193.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 205.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 205.
 Package rerunfilecheck Info: File `relative_quasimaps.out' has not changed.
 (rerunfilecheck)             Checksum: B291AD9830B56F2FF9EA1ED500EB2267;608.
 
@@ -1671,16 +1675,16 @@ Package rerunfilecheck Info: File `relative_quasimaps.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.64499pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 193.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 205.
  ) 
 Here is how much of TeX's memory you used:
- 35720 strings out of 493014
- 679391 string characters out of 6133351
+ 35751 strings out of 493014
+ 679901 string characters out of 6133351
  757870 words of memory out of 5000000
- 38116 multiletter control sequences out of 15000+600000
- 118200 words of font info for 252 fonts, out of 8000000 for 9000
+ 38143 multiletter control sequences out of 15000+600000
+ 118522 words of font info for 253 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 56i,19n,99p,10394b,1015s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,19n,82p,10394b,1015s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/u
 sr/local/texlive/2016/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc} </Users/na
 vid/Library/texlive/2016/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk>{/usr
@@ -1693,22 +1697,22 @@ public/pxfonts/pxmia.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
 /pxfonts/pxsy.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/tex-gy
 re/qplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/pxfonts/rpxm
 i.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/stmaryrd/stmary10.
-pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/txex-bar.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txmia.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/
-2016/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2016/t
-exmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2016/texmf-dist/fo
-nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
-public/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ne
-wpx/zplr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zplri
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zplx-regular.
-pfb>
-Output written on relative_quasimaps.pdf (63 pages, 427604 bytes).
+pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/txex-bar.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/txfonts/txmia.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2016/t
+exmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texlive/2016/texmf-dist/fo
+nts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
+pe1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
+/newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zp
+lr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zplri.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zplx-regular.pfb>
+Output written on relative_quasimaps.pdf (63 pages, 431747 bytes).
 PDF statistics:
- 896 PDF objects out of 1000 (max. 8388607)
- 768 compressed objects within 8 object streams
+ 900 PDF objects out of 1000 (max. 8388607)
+ 771 compressed objects within 8 object streams
  240 named destinations out of 1000 (max. 500000)
  85 words of extra memory for PDF output out of 10000 (max. 10000000)
 
