@@ -32,10 +32,10 @@ These two quasimaps are non-isomorphic, but they both map to the same object und
 Notice that this only happens on the locus of quasimaps with basepoints.
 \end{remark}
 
-It is easy to show that $k$ restricts to a morphism between moduli space of relative quasimaps, and thus we have a diagram of embeddings
+It is easy to show that $k$ restricts to a morphism between moduli space of relative quasimaps, and thus we have a diagram
 \bcd
-\Q{0}{\alpha}{X|Y}{\beta} \ar[d, "f", hook] \ar[r, "g", hook] \ar[dr, phantom, "\square"] & \Q{0}{\alpha}{\PP^N|H}{d} \ar[d, "j", hook] \\
-\Q{0}{n}{X}{\beta}  \ar[r, "k", hook] & \Q{0}{n}{\PP^N}{d}
+\Q{0}{\alpha}{X|Y}{\beta} \ar[d, "f", hook] \ar[r, "g"] \ar[dr, phantom, "\square"] & \Q{0}{\alpha}{\PP^N|H}{d} \ar[d, "j", hook] \\
+\Q{0}{n}{X}{\beta}  \ar[r, "k"] & \Q{0}{n}{\PP^N}{d}
 \ecd
 which one can show is cartesian. As such we can define a virtual class on $\Q{0}{\alpha}{X|Y}{\beta}$ by pullback along $k$:
 \begin{equation*} \virt{\Q{0}{\alpha}{X|Y}{\beta}} := k^! [ \Q{0}{\alpha}{\PP^N|H}{d} ] \end{equation*}
@@ -133,7 +133,6 @@ Now consider the following cartesian diagram
 \mathcal D(X)\ar[r]\ar[d,"\varphi_X"]\ar[dr,phantom,"\Box"] & \mathcal D(\PP^N)\ar[r]\ar[d,"\varphi_{\PP^N}"]\ar[dr,phantom,"\Box"] & \MM_{A,B}^{\operatorname{wt}}\ar[d,"\psi"] \\
 \om{Q}(X)\ar[r,"k"] & \om{Q}(\PP^N)\ar[r] & \MM_{0,n,\beta}^{\operatorname{wt}}
 \ecd
-
 where $\MM_{0,n,\beta}^{\operatorname{wt}}$ is the moduli space of prestable curves weighted by the class~$\beta$ \cite[\S 2]{Costello} and:
 \begin{equation*} \MM_{A,B}^{\operatorname{wt}} := \MM_{0,A^{(0)} \cup \{ q_1^0, \ldots, q_r^0 \}, \beta^{(0)}}^{\operatorname{wt}} \times \prod_{i=1}^r \MM_{0,A^{(i)} \cup \{ q_i^1 \},\beta^{(i)}}^{\operatorname{wt}} \end{equation*}
 The maps $\mathcal{D}(X) \to \MM_{A,B}^{\operatorname{wt}}$ and $\om{Q}(X) \to \MM_{0,n,\beta}^{\operatorname{wt}}$ admit relative perfect obstruction theories which are the same as the usual perfect obstruction theories relative to the moduli spaces of \emph{unweighted} curves. Furthermore the morphism $\psi$ admits a perfect obstruction theory; see Appendix \ref{Subsection splitting} for details. Thus there are virtual pull-back morphisms $\psi^!$, and by the splitting axiom (see Lemma \ref{Lemma product class equals pullback class}) we have

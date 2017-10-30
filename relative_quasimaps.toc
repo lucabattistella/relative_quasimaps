@@ -28,6 +28,6 @@
 \contentsline {subsection}{\tocsubsection {}{B.1}{Functoriality}}{46}{subsection.B.1}
 \contentsline {subsection}{\tocsubsection {}{B.2}{Relative obstruction theories for $\mathcal {Q}(Y)\rightarrow \mathcal {Q}(X)$}}{51}{subsection.B.2}
 \contentsline {subsection}{\tocsubsection {}{B.3}{Splitting axiom}}{55}{subsection.B.3}
-\contentsline {subsection}{\tocsubsection {}{B.4}{Comparison with the GIT construction}}{58}{subsection.B.4}
+\contentsline {subsection}{\tocsubsection {}{B.4}{Comparison with the GIT construction}}{59}{subsection.B.4}
 \contentsline {section}{\tocsection {Appendix}{C}{Intersection-theoretic lemmas}}{61}{appendix.C}
 \contentsline {section}{\tocsection {Appendix}{}{References}}{62}{section*.4}
