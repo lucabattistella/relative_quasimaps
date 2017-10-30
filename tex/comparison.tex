@@ -14,7 +14,7 @@ Locally around $q_j$ this has the effect of multiplying each $u_i$ by the $d_j$t
 
 The construction in families requires us to find a line bundle on the universal curve that is trivial on the rational tails (which we wish to contract) and relatively ample elsewhere. This can be performed at the level of Picard stacks: let $\mathfrak{Pic}_{g,n}^{d,\text{st}}$ be the open substack of $\mathfrak{Pic}(\pi\colon\mathfrak{C}_{g,n}\to\mathfrak{M}_{g,n})$ obtained by requiring that the total degree of the line bundle is $d$, the degree on each component is nonnegative and $\mathcal L\otimes\omega_{\pi}(\Sigma_i x_i)$ is ample relative to $\pi$, where $\mathcal L$ is the universal line bundle.
 
-Let $T^{\delta}$ be the locus in the universal curve $\mathfrak{C}_{\mathfrak{Pic}}$ over $\mathfrak{Pic}_{g,n}^{d,\text{st}}$ spanned by rational tails on which $\mathcal L$ has degree $\delta$; this is a Cartier divisor by the smoothness of the stack $\mathfrak{C}_{\mathfrak{Pic}}$. Notice that $T^{\delta_0}$ and $T^{\delta_1}$ (say with $\delta_0<\delta_1$) intersect in a stratum of codimension $1$, where the rational tail splits into two rational components, the furthest from $C^{(0)}$ having degree $\delta_0$:
+Let $T^{\delta}$ be the locus in the universal curve $\mathfrak{C}_{\mathfrak{Pic}}$ over $\mathfrak{Pic}_{g,n}^{d,\text{st}}$ consisting of rational tails on which $\mathcal L$ has degree $\delta$; since the stack $\mathfrak{C}_{\mathfrak{Pic}}$ is smooth, $T^{\delta}$ is a Cartier divisor. Notice that $T^{\delta_0}$ and $T^{\delta_1}$ (say with $\delta_0<\delta_1$) intersect in a stratum of codimension $1$, where the rational tail splits into two rational components, the furthest from $C^{(0)}$ having degree $\delta_0$:
 
 \begin{center}
 \input{fig/T_delta}
@@ -23,19 +23,18 @@ Let $T^{\delta}$ be the locus in the universal curve $\mathfrak{C}_{\mathfrak{Pi
 
 Define the following line bundle on $\mathfrak{C}_{\mathfrak{Pic}}$:
 \begin{equation*} \mathcal N=\mathcal L\otimes\omega_{\pi}(\Sigma_i x_i)\otimes\bigotimes_{0<\delta\leq d}\mathcal O_{\mathfrak{C}_{\mathfrak{Pic}}}((\delta-1) T^\delta) \end{equation*}
-
-We claim that $\mathcal{N}$ is trivial on every component of every rational tail, and $\pi$-relatively ample elsewhere. Consider a curve $C^{(0)}\sqcup_q R$ with a rational tail of degree $e$. We first consider the simple case where $R$ is isomorphic to a chain of $\PP^1$s. We label the components $R^{(1)},\ldots,R^{(n)}$, numbered from the closest to the farthest from $C^{(0)}$. We let $e_i$ denote the degree of $R^{(i)}$. We set $T_i=\bigcup_{j=i}^n R_j$ and $\epsilon_i=\deg \mathcal{L}|_{T_i} - 1 = e-1-\sum_{j=1}^{i-1} e_j$. The picture is as follows:
+We claim that $\mathcal{N}$ is trivial on every component of every rational tail, and $\pi$-relatively ample elsewhere. Consider a curve $C^{(0)}\sqcup_q R$ with a rational tail of degree $e$. We first consider the simple case where $R$ is isomorphic to a chain of $\PP^1$s. We label the components $R^{(1)},\ldots,R^{(n)}$, numbered from the closest to the farthest from $C^{(0)}$. We let $e_i$ denote the degree of $R^{(i)}$. We set $T_i=\bigcup_{j=i}^n R_j$ and $\epsilon_i=\deg \mathcal{L}|_{T_i} - 1 = e-1-\sum_{j=1}^{i-1} e_j$. The picture is as follows:\marginpar{FIX ME drawing some of the components as dashed lines is confusing}
 
 \begin{center}
 \input{fig/RandT}
 \end{center}
 
-The local structure of $\mathfrak{Pic}_{g,n}^{d,\text{st}}$ means that a general one-parameter family inside this stack will give us a smoothing of our curve. The total space of such a family is a normal surface $S$; thus we can compute the degree of the restriction of $\mathcal{N}$ to the irreducible components of the central fiber of this family by first restricting $\mathcal{N}$ to $S$, and then using the intersection theory of the normal surface $S$.
+The local structure of $\mathfrak{Pic}_{g,n}^{d,\text{st}}$ means that a general one-parameter family inside this stack will give us a smoothing of our curve. The total space of such a family is a normal surface $S$; thus we can compute the degree of the restriction of $\mathcal{N}$ to the irreducible components of the central fiber of this family by first restricting $\mathcal{N}$ to $S$, and then using intersection theory on $S$.
 
 Notice first that $T^\delta|_S = T_{i_\delta}$ where $i_\delta$ is the unique value of $i$ such that
 \begin{equation*} \delta = \sum_{j=i_{\delta}}^n e_i \end{equation*}
 and if no such $i_\delta$ exists then $T^\delta|_S = 0$. Thus we obtain:
-\begin{equation*} \otimes_{0<\delta\leq d}\mathcal{O}_{\mathfrak{C}_{\mathfrak{Pic}}}((\delta-1) T^\delta)|_S = \mathcal{O}_S(\Sigma_{j=1}^n \epsilon_j T_j) \end{equation*}
+\begin{equation*} \bigotimes_{0<\delta\leq d}\mathcal{O}_{\mathfrak{C}_{\mathfrak{Pic}}}((\delta-1) T^\delta)|_S = \mathcal{O}_S(\Sigma_{j=1}^n \epsilon_j T_j) \end{equation*}
 Now, $R^{(i)}$ has self-intersection $-2$ for $i=1,\ldots,n-1$, and so we have
 \begin{equation*}
 R^{(i)}\cdot T_j =
@@ -58,7 +57,7 @@ R^{(n)} \cdot T_j =
 \end{equation*}
 which implies:
 \begin{equation*} \deg \mathcal{N}|_{R^{(n)}} = \deg \mathcal{L}|_{R^{(n)}} - 1 - \epsilon_n = e_n - 1 - (e_n-1) = 0\end{equation*}
-Here we have used the fact that $\omega_\pi(\Sigma_i x_i)$ has degree $0$ on $R^{(i)}$ for $i=1,\ldots,n-1$ and degree $-1$ on $R^{(n)}$. Thus $\mathcal{N}$ is trivial on every component on every rational tail, as claimed. The fact that it is $\pi$-relatively ample on the rest of the curve follows from the stability condition and the fact that $\OO_{\mathfrak{C}_{\mathfrak{Pic}}}(T^\delta)$ is effective when restricted to $C^{(0)}$.
+Here we have used the fact that $\omega_\pi(\Sigma_i x_i)$ has degree $0$ on $R^{(i)}$ for $i=1,\ldots,n-1$ and has degree $-1$ on $R^{(n)}$. Thus $\mathcal{N}$ is trivial on every component on every rational tail, as claimed. The fact that it is $\pi$-relatively ample on the rest of the curve follows from the stability condition and the fact that $\OO_{\mathfrak{C}_{\mathfrak{Pic}}}(T^\delta)$ is effective when restricted to $C^{(0)}$.
 
 In the above discussion we restricted ourselves to the simple case where $R$ is a chain of $\PP^1$s. In general, however, $R$ can be an arbitrary tree of $\PP^1$s. The argument in this case is similar, though combinatorially more complex. For brevity we will discuss one example:
 
@@ -147,7 +146,7 @@ We now claim that this morphism factors through $\mathbf E_{\tilde{\nu}_{\mathca
 & \comp^*\mathbf E_{\nu_\mathcal Q}\ar[dl,dashed,"\exists ?"]\ar[d]\ar[dr,"\phi"] & \\
 \mathbf E_{\tilde{\nu}_{\mathcal{N}}} \ar[r] & \mathbf E_{\nu_\mathcal{N}}\ar[r] & \nu_\mathcal{N}^*\mathbf L_{\tilde{\comp}}[1] \ar[r,"{[1]}"] & \,
 \ecd
-we see that it is equivalent to show that $\phi$ is the zero map. This follows formally from the following factorisation:
+we see that it is equivalent to show that $\phi$ is the zero map. This follows formally from the factorisation:
 \bcd
  & & \mathbf L_\comp \ar[ld,"{[1]}" swap] & & \\
 \comp^* \mathbf E_{\nu_\mathcal Q}\ar[dd]\ar[r] & \comp^*\mathbf L_{\nu_\mathcal Q}\ar[rr] &  & \mathbf L_{\tilde{\nu}_{\mathcal{N}}}\ar[ul]\ar[dd] & \\
@@ -207,8 +206,7 @@ show that $h^1(\phi^\vee)$ factors through
 C(\psi) \ar[urrr] & & & & & & 
  \end{tikzcd}
 \end{center}
-
-Now, $C(\psi)$ is supported in $[-1,0]$ \cite[Lemma 4.20]{Manolache-Push} and $\nu_{\mathcal{N}}^*\mathbf L_{\tilde{\comp}}{[1]}$ is supported in degrees $[-2,0]$, from which it follows that $C(\psi)=\mathbf E_{\comp}$ is a perfect obstruction theory. The conclusion, that
+Now $C(\psi)$ is supported in $[-1,0]$ \cite[Lemma 4.20]{Manolache-Push} and $\nu_{\mathcal{N}}^*\mathbf L_{\tilde{\comp}}{[1]}$ is supported in degrees $[-2,0]$, from which it follows that $C(\psi)=\mathbf E_{\comp}$ is a perfect obstruction theory. The conclusion, that
 \begin{equation*} \comp_*\virt{\M{g}{n}{\PP^N}{d}}=\virt{\Q{g}{n}{\PP^N}{d}} \end{equation*}
 follows from the connectedness of $\M{g}{n}{\PP^N}{d}$ \cite{KP}, hence of $\Q{g}{n}{\PP^N}{d}$, and an application of the virtual push-forward theorem \cite[Proposition 4.21]{Manolache-Push}.
 
