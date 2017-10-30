@@ -11,7 +11,7 @@ We also discuss (\S \ref{section:rel_pot_for_qm_functoriality}) when $\om{Q}(f)$
 
 In the case of stable maps, a morphism $f : Y \to X$ induces a morphism between the corresponding moduli spaces
 \begin{equation*}\om{M}(f) : \M{g}{n}{Y}{\beta} \rightarrow \M{g}{n}{X}{f_* \beta} \end{equation*}
-given by post-composition with $f$ (in general we may have to stabilise the source curve). Because of this, we may say that the construction of the moduli space of stable maps is \ilemph{functorial}.
+given by post-composition with $f$ and (if necessary) stabilisation of the source curve. Because of this, we may say that the construction of the moduli space of stable maps is \ilemph{functorial}.
 
 It is natural to ask whether the same holds for the moduli space of quasimaps, i.e. whether we have a morphism:
 \begin{equation*} \om{Q}(f) : \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_* \beta} \end{equation*}
@@ -19,7 +19,7 @@ Since here the objects of the moduli space are not maps, we cannot simply compos
 
 Our approach uses the language of $\Sigma$--collections introduced by D. A. Cox. This approach is natural insofar as a quasimap is a generalisation of a $\Sigma$--collection. We will refer extensively to \cite{CoxRing} and \cite{CoxFunctor}.
 
-Let $X$ and $Y$ be smooth and proper toric varieties with fans $\Sigma_X \subseteq N_X$ and $\Sigma_Y \subseteq N_Y$. Suppose we are given $f : Y \to X$ (which we do not assume to be a toric morphism). By \cite[Theorem 1.1]{CoxFunctor} the data of such a map is equivalent to a $\Sigma_X$--collection on $Y$:
+Let $X$ and $Y$ be smooth and proper toric varieties with fans $\Sigma_X \subseteq N_X$ and $\Sigma_Y \subseteq N_Y$. Suppose we are given $f : Y \to X$, which we do not assume to be a toric morphism. By \cite[Theorem 1.1]{CoxFunctor} the data of such a map is equivalent to a $\Sigma_X$--collection on $Y$:
 \begin{equation*} ( (L_\rho, u_\rho)_{\rho \in \Sigma_X(1)}, (\varphi_{m_x})_{m_x \in M_X} ) \end{equation*}
 In addition, \cite{CoxRing} allows us to describe line bundles on $Y$ and their global sections in terms of the homogeneous coordinates $(z_\tau)_{\tau \in \Sigma_Y(1)}$. All of these observations are combined into the following theorem, which is so useful that we will state it here in its entirety:
 
@@ -27,7 +27,7 @@ In addition, \cite{CoxRing} allows us to describe line bundles on $Y$ and their 
 \begin{equation*} P_\rho \in S^Y_{\beta_\rho} \end{equation*}
 for $\rho = f^* \OO_X(D_\rho) \in \Sigma_X(1)$, where $\beta_\rho \in \Pic Y$ and $S^Y_{\beta_\rho}$ is the corresponding graded piece of the Cox ring:
 \begin{equation*}S^Y = \CC[z_\tau : \tau \in \Sigma_Y(1)]\end{equation*}
-This data is required to satisfy the following two conditions:
+These data are required to satisfy the following two conditions:
 \begin{enumerate}
 \item $\sum_{\rho \in \Sigma_X(1)} \beta_\rho \otimes n_\rho = 0$ in $\Pic Y \otimes N_X$, where $n_\rho$ is the principal generator of the ray $\rho$.
 \item $(P_\rho(z_\tau)) \notin Z(\Sigma_X) \subseteq \Aaff^{\Sigma_X(1)}$ whenever $(z_\tau) \notin Z(\Sigma_Y) \subseteq \Aaff^{\Sigma_Y(1)}$.
@@ -71,7 +71,7 @@ We now make this precise. The first issue to address is the stabilisation of the
 \draw (15,0) -- (16,3) node[above]{$f_*\beta_1$} (15,1) -- (16,-2) node[below]{$f_*\beta_2$};
 \end{tikzpicture}
 \end{center}
-To perform the contraction we need to construct a line bundle on $C$ which is trivial on the components which we wish to contract and ample (relative to the base) on all the other components.
+To perform the contraction we need to construct a line bundle on $C$ that is trivial on the components which we wish to contract and ample (relative to the base) on all the other components.
 
 Fix a polarisation $\OO_X(1)$ on $X$ and express $f^*\OO_X(1)$ in terms of the toric divisors of $Y$:
 \begin{equation*} f^*\OO_X(1) = \bigotimes_\tau \OO_Y(D_\tau)^{\otimes c_\tau} \end{equation*}
@@ -121,9 +121,9 @@ Now, we have
 \begin{equation*} \sum_\tau a_\tau^\rho [D_\tau] = \beta_\rho \end{equation*}
 so that the above sum becomes
 \begin{equation*} \sum_\rho \langle m_X, n_\rho \rangle \beta_\rho = \left\langle m_X, \sum_\rho \beta_\rho \otimes n_\rho \right \rangle = \langle m_X, 0 \rangle = 0 \end{equation*}
-where $\sum_\rho \beta_\rho \otimes n_\rho = 0$ by Condition (1) in Theorem \ref{CoxTheorem}. So there does indeed exist a (unique) $m_Y \in M_Y$ such that $\langle m_Y, n_\tau \rangle = \sum_\rho a_\tau^\rho \langle m_X, n_\rho \rangle$, so that we can set:
+where $\sum_\rho \beta_\rho \otimes n_\rho = 0$ by Condition (1) in Theorem \ref{CoxTheorem}. So there does indeed exist a (unique) $m_Y \in M_Y$ such that $\langle m_Y, n_\tau \rangle = \sum_\rho a_\tau^\rho \langle m_X, n_\rho \rangle$, and we can set:
 \begin{equation*} \tilde{\varphi}_{m_X} = \varphi_{m_Y} : \bigotimes_\rho \tilde{L}_\rho^{\otimes \langle m_X, n_\rho \rangle} \cong \OO_{\overline{\mathcal C}} \end{equation*}
-Thus, we have produced a quasimap with target $X$ and class $f_*\beta$ on the base $\Q{g}{n}{Y}{\beta}$:
+Thus we have produced a quasimap with target $X$ and class $f_*\beta$ on the base $\Q{g}{n}{Y}{\beta}$:
 \begin{equation*} ((\tilde{C},\tilde{x_1},\ldots,\tilde{x_n}), (\tilde{L}_\rho, \tilde{u}_\rho)_{\rho \in \Sigma_X(1)}, (\tilde{\varphi}_{m_X})_{m_X \in M_X}) \end{equation*}
 The proof that this construction does not depend on the choice of $(P_\rho)$ is straightforward and is left to the reader.
 
@@ -165,7 +165,7 @@ Assume now that $f\colon Y\to X$ is a morphism (between projective varieties) sa
 \end{enumerate}
 These conditions are in particular satisfied when $f$ is a closed embedding, which is the case of most interest to us.
 
-Observe then that the induced morphism $$k=\om{Q}(f) \colon \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_* \beta}$$ commutes with the projections to $\mathfrak M_{g,n}$, i.e. there is no need to stabilise the underlying curve. We would like to have a pull-back morphism $k^!$ for the Chow groups. However, even in the easiest possible case when $f \colon Y \hookrightarrow X$ is a regular embedding, $k$ itself is not necessarily a regular embedding, and so the Gysin map in the sense of \cite{FUL} is not guaranteed to exist.
+Observe then that the induced morphism $$k=\om{Q}(f) \colon \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_* \beta}$$ commutes with the projections to $\mathfrak M_{g,n}$, i.e. there is no need to stabilise the underlying curve. We would like to have a pull-back morphism $k^!$ between Chow groups. However, even in the easiest possible case when $f \colon Y \hookrightarrow X$ is a regular embedding, $k$ itself is not necessarily a regular embedding, and so the Gysin map in the sense of \cite{FUL} is not guaranteed to exist.
 
 However, when $\Q{g}{n}{X}{f_* \beta}$ is unobstructed (for instance when $X=\PP^N$ and $g=0$ or $(g,n)=(1,0)$) there is a way around this. In \cite{Manolache-Pull} a generalisation of the Gysin map called the \ilemph{virtual pull-back} is defined for morphisms endowed with a relative perfect obstruction theory. Moreover, a sufficient condition is given \cite[Corollary 4.9]{Manolache-Pull} for this map to respect the virtual classes.
 
@@ -228,7 +228,7 @@ Hence $\h^{-2}(\EE_k) = 0$ and so $\EE_k$ is perfect. \end{proof}
 
 \begin{remark} The short exact sequence defining $\mathcal{F}_X$ should be thought of as the pull-back of the Euler sequence
 \begin{equation*} 0 \to \OO_X^{\oplus r_X} \to \bigoplus_{\rho \in \Sigma_X(1)} \OO_X(D_\rho) \to \TT_X \to 0 \end{equation*}
-along the map $C \to X$ (if such a map existed). In particular, if we work away from the locus of basepoints then $\mathcal{F}_X = u^* \TT_X$.\end{remark}
+along the map $C \to X$, if such a map existed. In particular, if we work away from the locus of basepoints then $\mathcal{F}_X = u^* \TT_X$.\end{remark}
 
 In particular, for every smooth projective variety $i\colon X\hookrightarrow\PP^N$, we have a virtual pull-back morphism
 \begin{equation*} k^!_{\text{v}} : \Achow_*(\Q{0}{n}{\PP^N}{d}) \to \Achow_*(\Q{0}{n}{X}{\beta}) \end{equation*}
