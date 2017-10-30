@@ -11,7 +11,23 @@ in the Chow group of $\Q{0}{\alpha}{X|Y}{\beta}$.
 
 \subsection{The virtual class on the space of relative quasimaps} Let $X$ and $Y$ be as in the statement of Theorem~\ref{Theorem general recursion}.  The complete linear system associated to $\OO_X(Y)$ defines an embedding $i : X \hookrightarrow \PP^N$ such that $i^{-1}(H) = Y$ for a certain hyperplane $H$. By the functoriality property of quasimap spaces (see Appendix~\ref{Functoriality of Quasimap Spaces Section}) we have a map:
 \begin{equation*} k := \om{Q}(i) : \Q{0}{n}{X}{\beta} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
-where $d=i_*\beta$. Since $i$ is a closed embedding it follows that $k$ is as well. Because $\Q{0}{n}{\PP^N}{d}$ is smooth, $k$ admits a compatible perfect obstruction theory (see Appendix~\ref{section:rel_pot_for_qm_functoriality}), so we have a notion of virtual pull-back along $k$.
+where $d=i_*\beta$. Because $\Q{0}{n}{\PP^N}{d}$ is smooth, $k$ admits a compatible perfect obstruction theory (see Appendix~\ref{section:rel_pot_for_qm_functoriality}), so we have a notion of virtual pull-back along $k$.
+
+\begin{remark}
+ I. Ciocan-Fontanine has kindly pointed out to us that, contrary to the stable maps case, even though $i$ is a closed embedding, $k$ may well not be. Consider the following example: let $i\colon X=\PP^1\times\PP^1 \hookrightarrow \PP^3$ be the Segre embedding, mapping the point of homogeneous coordinates $([x:y],[z:w])$ to $[xz:xw:yz:yw]$. The corresponding morphism between quasimap spaces $k\colon \Q{0}{3}{\PP^1\times\PP^1}{(2,2)}\to\Q{0}{3}{\PP^3}{4}$ maps both
+ \[
+  \left(\PP^1_{[s:t]},\{0,1,\infty\},L_1=\OO_{\PP^1}(2),L_2=\OO_{\PP^1}(2), u_1=s^2,u_2=st,v_1=st,v_2=t^2\right)
+ \]
+and
+\[
+  \left(\PP^1_{[s:t]},\{0,1,\infty\},L_1=\OO_{\PP^1}(2),L_2=\OO_{\PP^1}(2),u_1=st,u_2=t^2, v_1=s^2,v_2=st\right)
+ \]
+ to the same quasimap to projective space
+ \[
+   \left(\PP^1_{[s:t]},\{0,1,\infty\},L=\OO_{\PP^1}(4),z_0=s^3t,z_1=s^2t^2,z_2=s^2t^2,z_3=st^3\right)
+ \]
+Notice that this may happen only on the locus of quasimaps with basepoints.
+\end{remark}
 
 It is easy to show that $k$ restricts to a morphism between moduli space of relative quasimaps, and thus we have a diagram of embeddings
 \bcd
