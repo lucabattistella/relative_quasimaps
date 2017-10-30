@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  30 OCT 2017 15:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  30 OCT 2017 16:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1477,21 +1477,27 @@ LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
 (Font)              scaled to size 10.95pt on input line 7.
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
 (Font)              scaled to size 9.0pt on input line 7.
- [2] [3]
-Overfull \hbox (3.30869pt too wide) in paragraph at lines 45--46
+
+Overfull \hbox (2.35469pt too wide) in paragraph at lines 12--13
+[]$\OML/npxmi/m/it/10.95 X$ \T1/zpltlf/m/n/10.95 a pro-jec-tive space or a Gras
+s-man-nian: see [[], The-o-rems  3 and 4],
+ []
+
+[2] [3]
+Overfull \hbox (3.30869pt too wide) in paragraph at lines 50--51
 \T1/zpltlf/m/n/10.95 type for-mula for quasimap in-vari-ants, that is, a for-mu
 la ex-press-ing quasimap
  []
 
-LaTeX Font Info:    Try loading font information for U+bbm on input line 59.
+LaTeX Font Info:    Try loading font information for U+bbm on input line 64.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-)
-Overfull \hbox (55.0076pt too wide) in alignment at lines 99--99
+) [4]
+Overfull \hbox (55.0076pt too wide) in alignment at lines 104--104
  [] [] [] [] 
  []
 
-[4]) (./tex/section-relative-stable-quasimaps.tex [5]
+) (./tex/section-relative-stable-quasimaps.tex [5]
 
 LaTeX Font Warning: Font shape `U/bbm/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 25.
@@ -1656,11 +1662,16 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
  [62]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63])
+ [63]
+Underfull \hbox (badness 2126) in paragraph at lines 183--186
+[]\T1/zpltlf/m/n/9 Cristina Manolache. Sta-ble maps and sta-ble quo-tients. \T1
+/zpltlf/m/it/9 Com-pos. Math.\T1/zpltlf/m/n/9 ,
+ []
+
+)
 LaTeX Font Info:    Try loading font information for T1+npxtt on input line 197
 .
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/t1npxtt.fd
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/t1npxtt.fd
 File: t1npxtt.fd 2000/12/14 v1.0
 )
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
@@ -1686,10 +1697,10 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 205.
  ) 
 Here is how much of TeX's memory you used:
- 35753 strings out of 493014
- 679915 string characters out of 6133351
- 757869 words of memory out of 5000000
- 38143 multiletter control sequences out of 15000+600000
+ 35765 strings out of 493014
+ 680155 string characters out of 6133351
+ 758018 words of memory out of 5000000
+ 38152 multiletter control sequences out of 15000+600000
  118522 words of font info for 253 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  56i,19n,82p,10394b,1015s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1717,10 +1728,10 @@ pe1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
 /newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zp
 lr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zplri.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (64 pages, 434401 bytes).
+Output written on relative_quasimaps.pdf (64 pages, 435001 bytes).
 PDF statistics:
- 906 PDF objects out of 1000 (max. 8388607)
- 776 compressed objects within 8 object streams
- 242 named destinations out of 1000 (max. 500000)
+ 909 PDF objects out of 1000 (max. 8388607)
+ 779 compressed objects within 8 object streams
+ 245 named destinations out of 1000 (max. 500000)
  85 words of extra memory for PDF output out of 10000 (max. 10000000)
 
