@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  30 OCT 2017 17:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  10 JAN 2018 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1460,63 +1460,61 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/sc' will be
 \tf@toc=\write6
 \openout6 = `relative_quasimaps.toc'.
 
-
-(./tex/section-1-introduction.tex
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 10.95pt on input line 5.
+(Font)              scaled to size 10.95pt on input line 173.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 6.
+(Font)              scaled to size 8.0pt on input line 174.
  [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for T1+zplsups on input line 7
-.
+LaTeX Font Info:    Try loading font information for T1+zplsups on input line 1
+75.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/t1zplsups.fd
 File: t1zplsups.fd 2015/01/17 v1.0
 )
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
-(Font)              scaled to size 10.95pt on input line 7.
+(Font)              scaled to size 10.95pt on input line 175.
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
-(Font)              scaled to size 9.0pt on input line 7.
+(Font)              scaled to size 9.0pt on input line 175.
 
-Overfull \hbox (2.35469pt too wide) in paragraph at lines 12--13
+Overfull \hbox (2.35469pt too wide) in paragraph at lines 180--181
 []$\OML/npxmi/m/it/10.95 X$ \T1/zpltlf/m/n/10.95 a pro-jec-tive space or a Gras
 s-man-nian: see [[], The-o-rems  3 and 4],
  []
 
 [2] [3]
-Overfull \hbox (3.30869pt too wide) in paragraph at lines 50--51
+Overfull \hbox (3.30869pt too wide) in paragraph at lines 218--219
 \T1/zpltlf/m/n/10.95 type for-mula for quasimap in-vari-ants, that is, a for-mu
 la ex-press-ing quasimap
  []
 
-LaTeX Font Info:    Try loading font information for U+bbm on input line 64.
+LaTeX Font Info:    Try loading font information for U+bbm on input line 232.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [4]
-Overfull \hbox (55.0076pt too wide) in alignment at lines 104--104
+Overfull \hbox (55.0076pt too wide) in alignment at lines 272--272
  [] [] [] [] 
  []
 
-) (./tex/section-relative-stable-quasimaps.tex [5]
+[5]
 
 LaTeX Font Warning: Font shape `U/bbm/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 25.
+(Font)              size <5> substituted on input line 298.
 
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 25.
+(Font)              scaled to size 7.3pt on input line 298.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 25.
+(Font)              scaled to size 5.5pt on input line 298.
 [6] [7] [8] [9]
-LaTeX Font Info:    Try loading font information for TS1+zpltlf on input line 1
-25.
+LaTeX Font Info:    Try loading font information for TS1+zpltlf on input line 3
+98.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
 File: ts1zpltlf.fd 2015/01/18 v1.0 fd file for TS1/zpltlf
 )
 LaTeX Font Info:    Font shape `TS1/zpltlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 125.
+(Font)              scaled to size 10.95pt on input line 398.
 
-Overfull \hbox (3.70282pt too wide) in paragraph at lines 135--138
+Overfull \hbox (3.70282pt too wide) in paragraph at lines 408--411
 \T1/zpltlf/m/n/10.95 Hence it has a fun-da-men-tal class from which one can de-
 fine rel-a-tive Gromov--
  []
@@ -1525,41 +1523,41 @@ fine rel-a-tive Gromov--
 tion.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.164 \begin{equation}
+l.437 \begin{equation}
                        \label{uY expression} u_Y := \sum_{\underline{a}} \la...
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.164 \begin{equation}
+l.437 \begin{equation}
                        \label{uY expression} u_Y := \sum_{\underline{a}} \la...
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.164 \begin{equation}
+l.437 \begin{equation}
                        \label{uY expression} u_Y := \sum_{\underline{a}} \la...
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.164 \begin{equation}
+l.437 \begin{equation}
                        \label{uY expression} u_Y := \sum_{\underline{a}} \la...
-[12]) (./tex/recursion_for_Pr.tex
+[12]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 1.
+(hyperref)                removing `math shift' on input line 480.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
+(hyperref)                removing `superscript' on input line 480.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 480.
 
 [13] [14]
-Overfull \hbox (13.88615pt too wide) in paragraph at lines 35--36
+Overfull \hbox (13.88615pt too wide) in paragraph at lines 514--515
 [][]\T1/zpltlf/b/n/10.95 Lemma 3.2. []$\OMS/npxsy/m/n/10.95 Q[]\U/npxmia/m/it/1
 0.95 }\U/npxsym/m/n/10.95 P[]\OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U
 /npxmia/m/it/10.95 ~$ \T1/zpltlf/m/n/10.95 is equal to the clo-sure of the nice
@@ -1568,17 +1566,17 @@ OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it/10.95 ~$
  []
 
 [15] [16]
-Overfull \hbox (33.20512pt too wide) in paragraph at lines 93--93
+Overfull \hbox (33.20512pt too wide) in paragraph at lines 572--572
 [] 
  []
 
-[17] [18]) (./tex/recursion_general.tex [19]
-Overfull \hbox (22.10658pt too wide) in paragraph at lines 27--27
+[17] [18] [19]
+Overfull \hbox (22.10658pt too wide) in paragraph at lines 658--658
 [] 
  []
 
 [20]
-Overfull \hbox (2.18661pt too wide) in paragraph at lines 52--53
+Overfull \hbox (2.18661pt too wide) in paragraph at lines 683--684
  \T1/zpltlf/m/n/10.95 4.3.\T1/zpltlf/b/n/10.95 Comb loci pull back.[] \T1/zpltl
 f/m/n/10.95 As in the pre-vi-ous sec-tion, we de-fine $\OMS/npxsy/m/n/10.95 D[]
 \U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 X\OMS/npxsy/m/n/10.95 j\OML/npxmi/m
@@ -1586,23 +1584,22 @@ f/m/n/10.95 As in the pre-vi-ous sec-tion, we de-fine $\OMS/npxsy/m/n/10.95 D[]
  []
 
 [21]
-Overfull \hbox (48.33984pt too wide) in paragraph at lines 84--84
+Overfull \hbox (48.33984pt too wide) in paragraph at lines 715--715
 [] 
  []
 
 [22]
-Overfull \hbox (11.63786pt too wide) in paragraph at lines 114--114
+Overfull \hbox (11.63786pt too wide) in paragraph at lines 745--745
 [] 
  []
 
-[23] [24]) (./tex/mirror_theorem.tex [25] [26] [27] [28] (./fig/snake.tex)
-[29]
-Overfull \hbox (14.98462pt too wide) in paragraph at lines 125--125
+[23] [24] [25] [26] [27] [28] [29]
+Overfull \hbox (14.98462pt too wide) in paragraph at lines 931--931
 [] 
  []
 
 
-Overfull \hbox (17.3714pt too wide) in paragraph at lines 129--129
+Overfull \hbox (17.3714pt too wide) in paragraph at lines 935--935
 [] 
  []
 
@@ -1612,31 +1609,30 @@ Underfull \vbox (badness 2538) has occurred while \output is active []
  [30]
 [31] [32]
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 181.
+(Font)              scaled to size 10.95pt on input line 987.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 181.
+(Font)              scaled to size 8.0pt on input line 987.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 6.1pt on input line 181.
+(Font)              scaled to size 6.1pt on input line 987.
  [33]
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 9.0pt on input line 219.
+(Font)              scaled to size 9.0pt on input line 1025.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 7.3pt on input line 219.
+(Font)              scaled to size 7.3pt on input line 1025.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 5.5pt on input line 219.
- [34] [35]) (./tex/comparison.tex [36] (./fig/T_delta.tex)
+(Font)              scaled to size 5.5pt on input line 1025.
+ [34] [35] [36]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [37]
-(./fig/RandT.tex)
 Underfull \vbox (badness 1377) has occurred while \output is active []
 
  [38]
-(./fig/tree.tex) [39] [40]
+[39] [40]
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
  [41] [42]
-Overfull \hbox (1.5117pt too wide) in paragraph at lines 210--212
+Overfull \hbox (1.5117pt too wide) in paragraph at lines 1319--1321
 \T1/zpltlf/m/n/10.95 follows from the con-nect-ed-ness of $[][]\U/npxmia/m/it/1
 0.95 }\U/npxsym/m/n/10.95 P[]\OML/npxmi/m/it/10.95 ; d\U/npxmia/m/it/10.95 ~$ \
 T1/zpltlf/m/n/10.95 [[]], hence of $\OMS/npxsy/m/n/10.95 Q[]\U/npxmia/m/it/10.9
@@ -1647,16 +1643,14 @@ pltlf/m/n/10.95 ,
 [43]
 Underfull \vbox (badness 1127) has occurred while \output is active []
 
- [44])
-(./tex/functoriality.tex [45] [46] [47] [48] [49] [50] [51] [52] [53] [54])
-(./tex/splitting.tex [55] (./fig/different_splittings.tex) [56] [57])
-(./tex/GIT.tex [58]
-Overfull \hbox (2.63702pt too wide) in paragraph at lines 21--23
+ [44]
+[45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57] [58]
+Overfull \hbox (2.63702pt too wide) in paragraph at lines 1769--1771
 \T1/zpltlf/m/n/10.95 which ad-mits a vir-tual class. Hence we have two mod-uli 
 spaces of quasimaps
  []
 
-[59]) (./tex/intersection.tex [60] [61]) (./relative_quasimaps.bbl
+[59] [60] [61] (./relative_quasimaps.bbl
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 9.0pt on input line 6.
  [62]
@@ -1669,24 +1663,25 @@ Underfull \hbox (badness 2126) in paragraph at lines 178--181
  []
 
 )
-LaTeX Font Info:    Try loading font information for T1+npxtt on input line 197
-.
+LaTeX Font Info:    Try loading font information for T1+npxtt on input line 187
+1.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/t1npxtt.fd
 File: t1npxtt.fd 2000/12/14 v1.0
 )
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 10.95pt on input line 197.
+(Font)              scaled to size 10.95pt on input line 1871.
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--198
+Underfull \hbox (badness 10000) in paragraph at lines 1869--1872
 
  []
 
 [64]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 205.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 205.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1879.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1879.
  (./relative_quasimaps.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 205.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 205.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1879.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1879.
+
 Package rerunfilecheck Info: File `relative_quasimaps.out' has not changed.
 (rerunfilecheck)             Checksum: B291AD9830B56F2FF9EA1ED500EB2267;608.
 
@@ -1694,12 +1689,12 @@ Package rerunfilecheck Info: File `relative_quasimaps.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.64499pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 205.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1879.
  ) 
 Here is how much of TeX's memory you used:
- 35764 strings out of 493014
- 680176 string characters out of 6133351
- 758055 words of memory out of 5000000
+ 35717 strings out of 493014
+ 679328 string characters out of 6133351
+ 758089 words of memory out of 5000000
  38152 multiletter control sequences out of 15000+600000
  118522 words of font info for 253 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
