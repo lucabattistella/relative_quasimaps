@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  10 JAN 2018 17:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  11 JAN 2018 11:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1490,7 +1490,21 @@ la ex-press-ing quasimap
 LaTeX Font Info:    Try loading font information for U+bbm on input line 232.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [4]
+)
+
+LaTeX Warning: Reference `Section comparison morphism' on page 4 undefined on i
+nput line 238.
+
+[4]
+
+LaTeX Warning: Reference `Section comparison morphism' on page 5 undefined on i
+nput line 272.
+
+
+LaTeX Warning: Reference `Section comparison morphism' on page 5 undefined on i
+nput line 272.
+
+
 Overfull \hbox (55.0076pt too wide) in alignment at lines 272--272
  [] [] [] [] 
  []
@@ -1546,18 +1560,18 @@ l.437 \begin{equation}
 [12]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 480.
+(hyperref)                removing `math shift' on input line 482.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 480.
+(hyperref)                removing `superscript' on input line 482.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 480.
+(hyperref)                removing `math shift' on input line 482.
 
 [13] [14]
-Overfull \hbox (13.88615pt too wide) in paragraph at lines 514--515
+Overfull \hbox (13.88615pt too wide) in paragraph at lines 520--521
 [][]\T1/zpltlf/b/n/10.95 Lemma 3.2. []$\OMS/npxsy/m/n/10.95 Q[]\U/npxmia/m/it/1
 0.95 }\U/npxsym/m/n/10.95 P[]\OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U
 /npxmia/m/it/10.95 ~$ \T1/zpltlf/m/n/10.95 is equal to the clo-sure of the nice
@@ -1566,17 +1580,17 @@ OMS/npxsy/m/n/10.95 j\OML/npxmi/m/it/10.95 H; d\U/npxmia/m/it/10.95 ~$
  []
 
 [15] [16]
-Overfull \hbox (33.20512pt too wide) in paragraph at lines 572--572
+Overfull \hbox (33.20512pt too wide) in paragraph at lines 578--578
 [] 
  []
 
 [17] [18] [19]
-Overfull \hbox (22.10658pt too wide) in paragraph at lines 658--658
+Overfull \hbox (22.10658pt too wide) in paragraph at lines 664--664
 [] 
  []
 
 [20]
-Overfull \hbox (2.18661pt too wide) in paragraph at lines 683--684
+Overfull \hbox (2.18661pt too wide) in paragraph at lines 689--690
  \T1/zpltlf/m/n/10.95 4.3.\T1/zpltlf/b/n/10.95 Comb loci pull back.[] \T1/zpltl
 f/m/n/10.95 As in the pre-vi-ous sec-tion, we de-fine $\OMS/npxsy/m/n/10.95 D[]
 \U/npxmia/m/it/10.95 }\OML/npxmi/m/it/10.95 X\OMS/npxsy/m/n/10.95 j\OML/npxmi/m
@@ -1584,22 +1598,22 @@ f/m/n/10.95 As in the pre-vi-ous sec-tion, we de-fine $\OMS/npxsy/m/n/10.95 D[]
  []
 
 [21]
-Overfull \hbox (48.33984pt too wide) in paragraph at lines 715--715
+Overfull \hbox (48.33984pt too wide) in paragraph at lines 721--721
 [] 
  []
 
 [22]
-Overfull \hbox (11.63786pt too wide) in paragraph at lines 745--745
+Overfull \hbox (11.63786pt too wide) in paragraph at lines 751--751
 [] 
  []
 
 [23] [24] [25] [26] [27] [28] [29]
-Overfull \hbox (14.98462pt too wide) in paragraph at lines 931--931
+Overfull \hbox (14.98462pt too wide) in paragraph at lines 937--937
 [] 
  []
 
 
-Overfull \hbox (17.3714pt too wide) in paragraph at lines 935--935
+Overfull \hbox (17.3714pt too wide) in paragraph at lines 941--941
 [] 
  []
 
@@ -1609,96 +1623,77 @@ Underfull \vbox (badness 2538) has occurred while \output is active []
  [30]
 [31] [32]
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 987.
+(Font)              scaled to size 10.95pt on input line 993.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 987.
+(Font)              scaled to size 8.0pt on input line 993.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 6.1pt on input line 987.
+(Font)              scaled to size 6.1pt on input line 993.
  [33]
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 9.0pt on input line 1025.
+(Font)              scaled to size 9.0pt on input line 1031.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 7.3pt on input line 1025.
+(Font)              scaled to size 7.3pt on input line 1031.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 5.5pt on input line 1025.
- [34] [35] [36]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [37]
-Underfull \vbox (badness 1377) has occurred while \output is active []
-
- [38]
-[39] [40]
-Missing character: There is no p in font nullfont!
-Missing character: There is no t in font nullfont!
- [41] [42]
-Overfull \hbox (1.5117pt too wide) in paragraph at lines 1319--1321
-\T1/zpltlf/m/n/10.95 follows from the con-nect-ed-ness of $[][]\U/npxmia/m/it/1
-0.95 }\U/npxsym/m/n/10.95 P[]\OML/npxmi/m/it/10.95 ; d\U/npxmia/m/it/10.95 ~$ \
-T1/zpltlf/m/n/10.95 [[]], hence of $\OMS/npxsy/m/n/10.95 Q[]\U/npxmia/m/it/10.9
-5 }\U/npxsym/m/n/10.95 P[]\OML/npxmi/m/it/10.95 ; d\U/npxmia/m/it/10.95 ~$\T1/z
-pltlf/m/n/10.95 ,
- []
-
-[43]
-Underfull \vbox (badness 1127) has occurred while \output is active []
-
- [44]
-[45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57] [58]
-Overfull \hbox (2.63702pt too wide) in paragraph at lines 1769--1771
+(Font)              scaled to size 5.5pt on input line 1031.
+ [34] [35] [36] [37] [38] [39] [40] [41] [42] [43] [44] [45]
+[46] [47] [48] [49]
+Overfull \hbox (2.63702pt too wide) in paragraph at lines 1457--1459
 \T1/zpltlf/m/n/10.95 which ad-mits a vir-tual class. Hence we have two mod-uli 
 spaces of quasimaps
  []
 
-[59] [60] [61] (./relative_quasimaps.bbl
+[50] [51] [52] (./relative_quasimaps.bbl
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 9.0pt on input line 6.
- [62]
+ [53]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63]
-Underfull \hbox (badness 2126) in paragraph at lines 178--181
+ [54]
+Underfull \hbox (badness 2126) in paragraph at lines 159--162
 []\T1/zpltlf/m/n/9 Cristina Manolache. Sta-ble maps and sta-ble quo-tients. \T1
 /zpltlf/m/it/9 Com-pos. Math.\T1/zpltlf/m/n/9 ,
  []
 
 )
-LaTeX Font Info:    Try loading font information for T1+npxtt on input line 187
-1.
+LaTeX Font Info:    Try loading font information for T1+npxtt on input line 155
+9.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/t1npxtt.fd
 File: t1npxtt.fd 2000/12/14 v1.0
 )
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 10.95pt on input line 1871.
+(Font)              scaled to size 10.95pt on input line 1559.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1869--1872
+Underfull \hbox (badness 10000) in paragraph at lines 1557--1560
 
  []
 
-[64]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1879.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1879.
+[55]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1567.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1567.
  (./relative_quasimaps.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1879.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1879.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1567.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1567.
 
 Package rerunfilecheck Info: File `relative_quasimaps.out' has not changed.
-(rerunfilecheck)             Checksum: B291AD9830B56F2FF9EA1ED500EB2267;608.
+(rerunfilecheck)             Checksum: 7679C58154E23CAE79FC5A8A95C788A3;537.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.64499pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1879.
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1567.
  ) 
 Here is how much of TeX's memory you used:
- 35717 strings out of 493014
- 679328 string characters out of 6133351
- 758089 words of memory out of 5000000
- 38152 multiletter control sequences out of 15000+600000
+ 35186 strings out of 493014
+ 666462 string characters out of 6133351
+ 749222 words of memory out of 5000000
+ 37644 multiletter control sequences out of 15000+600000
  118522 words of font info for 253 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 56i,19n,99p,10394b,1015s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,19n,82p,10394b,1017s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/u
 sr/local/texlive/2016/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc} </Users/na
 vid/Library/texlive/2016/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk>{/usr
@@ -1723,10 +1718,10 @@ pe1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
 /newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zp
 lr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zplri.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (64 pages, 434539 bytes).
+Output written on relative_quasimaps.pdf (55 pages, 396430 bytes).
 PDF statistics:
- 910 PDF objects out of 1000 (max. 8388607)
- 780 compressed objects within 8 object streams
- 244 named destinations out of 1000 (max. 500000)
- 85 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 831 PDF objects out of 1000 (max. 8388607)
+ 712 compressed objects within 8 object streams
+ 221 named destinations out of 1000 (max. 500000)
+ 77 words of extra memory for PDF output out of 10000 (max. 10000000)
 
