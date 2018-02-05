@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  11 JAN 2018 11:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  5 FEB 2018 20:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1637,17 +1637,14 @@ LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
 (Font)              scaled to size 5.5pt on input line 1031.
  [34] [35] [36] [37] [38] [39] [40] [41] [42] [43] [44] [45]
 [46] [47] [48] [49]
-Overfull \hbox (2.63702pt too wide) in paragraph at lines 1457--1459
+Overfull \hbox (2.63702pt too wide) in paragraph at lines 1459--1461
 \T1/zpltlf/m/n/10.95 which ad-mits a vir-tual class. Hence we have two mod-uli 
 spaces of quasimaps
  []
 
-[50] [51] [52] (./relative_quasimaps.bbl
+[50] [51] [52] [53] (./relative_quasimaps.bbl
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 9.0pt on input line 6.
- [53]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [54]
 Underfull \hbox (badness 2126) in paragraph at lines 159--162
 []\T1/zpltlf/m/n/9 Cristina Manolache. Sta-ble maps and sta-ble quo-tients. \T1
@@ -1655,24 +1652,24 @@ Underfull \hbox (badness 2126) in paragraph at lines 159--162
  []
 
 )
-LaTeX Font Info:    Try loading font information for T1+npxtt on input line 155
-9.
+LaTeX Font Info:    Try loading font information for T1+npxtt on input line 156
+1.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/newpx/t1npxtt.fd
 File: t1npxtt.fd 2000/12/14 v1.0
 )
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 10.95pt on input line 1559.
+(Font)              scaled to size 10.95pt on input line 1561.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1557--1560
+Underfull \hbox (badness 10000) in paragraph at lines 1559--1562
 
  []
 
 [55]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1567.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1567.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1569.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1569.
  (./relative_quasimaps.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1567.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1567.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1569.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1569.
 
 Package rerunfilecheck Info: File `relative_quasimaps.out' has not changed.
 (rerunfilecheck)             Checksum: 7679C58154E23CAE79FC5A8A95C788A3;537.
@@ -1684,12 +1681,12 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1567.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1569.
  ) 
 Here is how much of TeX's memory you used:
  35186 strings out of 493014
  666462 string characters out of 6133351
- 749222 words of memory out of 5000000
+ 754111 words of memory out of 5000000
  37644 multiletter control sequences out of 15000+600000
  118522 words of font info for 253 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
@@ -1718,7 +1715,7 @@ pe1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
 /newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zp
 lr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zplri.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (55 pages, 396430 bytes).
+Output written on relative_quasimaps.pdf (55 pages, 396550 bytes).
 PDF statistics:
  831 PDF objects out of 1000 (max. 8388607)
  712 compressed objects within 8 object streams

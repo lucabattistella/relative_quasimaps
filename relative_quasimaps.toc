@@ -26,4 +26,4 @@
 \contentsline {subsection}{\tocsubsection {}{A.3}{Splitting axiom}}{46}{subsection.A.3}
 \contentsline {subsection}{\tocsubsection {}{A.4}{Comparison with the GIT construction}}{50}{subsection.A.4}
 \contentsline {section}{\tocsection {Appendix}{B}{Intersection-theoretic lemmas}}{52}{appendix.B}
-\contentsline {section}{\tocsection {Appendix}{}{References}}{53}{section*.4}
+\contentsline {section}{\tocsection {Appendix}{}{References}}{54}{section*.4}
