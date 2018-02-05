@@ -16,14 +16,10 @@
 \contentsline {subsection}{\tocsubsection {}{4.2}{Relative spaces pull back}}{21}{subsection.4.2}
 \contentsline {subsection}{\tocsubsection {}{4.3}{Comb loci pull back}}{21}{subsection.4.3}
 \contentsline {section}{\tocsection {}{5}{A Lefschetz-type theorem for quasimaps}}{25}{section.5}
-\contentsline {subsection}{\tocsubsection {}{5.1}{Setup}}{25}{subsection.5.1}
+\contentsline {subsection}{\tocsubsection {}{5.1}{Setup}}{26}{subsection.5.1}
 \contentsline {subsection}{\tocsubsection {}{5.2}{Generating functions for quasimap invariants}}{26}{subsection.5.2}
-\contentsline {subsection}{\tocsubsection {}{5.3}{Quasimap Lefschetz formula}}{27}{subsection.5.3}
+\contentsline {subsection}{\tocsubsection {}{5.3}{Quasimap Lefschetz formula}}{28}{subsection.5.3}
 \contentsline {subsection}{\tocsubsection {}{5.4}{Comparison with the work of Ciocan-Fontanine and Kim}}{33}{subsection.5.4}
-\contentsline {section}{\tocsection {Appendix}{A}{Notes on quasimaps}}{36}{appendix.A}
-\contentsline {subsection}{\tocsubsection {}{A.1}{Functoriality}}{37}{subsection.A.1}
-\contentsline {subsection}{\tocsubsection {}{A.2}{Relative obstruction theories for $\mathcal {Q}(Y)\rightarrow \mathcal {Q}(X)$}}{42}{subsection.A.2}
-\contentsline {subsection}{\tocsubsection {}{A.3}{Splitting axiom}}{46}{subsection.A.3}
-\contentsline {subsection}{\tocsubsection {}{A.4}{Comparison with the GIT construction}}{50}{subsection.A.4}
-\contentsline {section}{\tocsection {Appendix}{B}{Intersection-theoretic lemmas}}{52}{appendix.B}
-\contentsline {section}{\tocsection {Appendix}{}{References}}{54}{section*.4}
+\contentsline {section}{\tocsection {Appendix}{A}{Comparison with the GIT construction}}{37}{appendix.A}
+\contentsline {section}{\tocsection {Appendix}{B}{Intersection-theoretic lemmas}}{39}{appendix.B}
+\contentsline {section}{\tocsection {Appendix}{}{References}}{41}{section*.4}

@@ -160,7 +160,7 @@
 \author{Luca Battistella and Navid Nabijou}
 \begin{document}
 
-\begin{abstract} We define moduli spaces of relative toric quasimaps in genus zero, in the spirit of A. Gathmann. When $X$ is a smooth toric variety and $Y$ is a very ample hypersurface in $X$ we construct a virtual class on the moduli space of relative quasimaps to $(X,Y)$ which can be used to define relative quasimap invariants of the pair. We obtain a recursion formula which expresses each relative invariant in terms of invariants of lower multiplicity. Finally we apply this formula to derive a Lefschetz-type theorem expressing the restricted quasimap invariants of $Y$ in terms of those of $X$. We include several appendices collecting proofs of standard results in quasimap theory. \end{abstract}
+\begin{abstract} We define moduli spaces of relative toric quasimaps in genus zero, in the spirit of A. Gathmann. When $X$ is a smooth toric variety and $Y$ is a very ample hypersurface in $X$ we construct a virtual class on the moduli space of relative quasimaps to $(X,Y)$ which can be used to define relative quasimap invariants of the pair. We obtain a recursion formula which expresses each relative invariant in terms of invariants of lower multiplicity. Finally we apply this formula to derive a Lefschetz-type theorem expressing the restricted quasimap invariants of $Y$ in terms of those of $X$. \end{abstract}
 
 \maketitle
 \appendixtitletocoff
@@ -235,7 +235,7 @@ P_0^X(q) = 1 + \sum_{\substack{\beta>0 \\ K_Y\cdot\beta=0}} q^\beta(Y\cdot\beta)
 
 The argument is similar in spirit to the one given in \cite{Ga-MF}, however the stronger stability condition considerably simplifies both the proof and the final result. This formula can also be obtained as a consequence of \cite[Corollary~5.5.1]{CF-K-wallcrossing}; see \S \ref{Subsection CFK comparison}. 
 
-We also include several appendices, collecting together results which are well-known to experts but absent from the literature. Appendix \ref{Section comparison morphism} discusses the comparison morphism; Appendix \ref{Section quasimap theory} contains foundational results in quasimap theory, including functoriality and the splitting axiom; Appendix \ref{appendix:intersection} contains a number of intersection-theoretic lemmas.
+We also include two short appendices, dedicated to important but slightly technical lemmas. In Appendix~\ref{Section comparison with GIT construction} we show that the moduli space $\Q{g}{n}{Y}{\beta}$, defined in \S \ref{Section recursion formula in general case} as a closed substack of $\Q{g}{n}{X}{\beta}$, is in fact virtually isomorphic to the moduli space $\om{Q}^{\operatorname{GIT}}_{g,n}(Y,\beta)$ of stable quasimaps to the GIT quotient $C(Y)\sslash \Gm^r=Y$, as defined in \cite{CFKM}. In Appendix~\ref{appendix:intersection} we define the \emph{diagonal pull-back} along a morphism whose target is smooth (used implicitly in \cite{Ga}), and verify that it agrees with the virtual pull-back \cite{Manolache-Pull} when both are defined.
 
 \begin{acknowledgements} We thank Tom Coates and Cristina Manolache for carefully reading this manuscript and for their helpful advice with both exposition and subject matter. We are grateful to Ionu\c{t} Ciocan-Fontanine for thoroughly examining a preliminary version of this manuscript and providing several clarifications and corrections. We would also like to thank Fabio Bernasconi, Andrea Petracci and Richard Thomas for useful conversations. 
 
@@ -259,13 +259,13 @@ $\Q{0}{\alpha}{X|Y}{\beta}$ & & & the moduli space of relative quasimaps to $(X,
 $\mathcal{D}^{\mathcal{Q}}_{\alpha,k}(X|Y,\beta)$ & & & the quasimap comb locus; see \S \ref{Subsection recursion formula for PN} \\
 $\mathcal{D}^{\mathcal{Q}}(X|Y,A,B,M)$ & & & (a component of) the comb locus; see \S \ref{Subsection recursion formula for PN} \\
 $\mathcal{E}^{\mathcal{Q}}(X|Y,A,B,M)$ & & & the total product for the comb locus; see \S \ref{Subsection comb loci pull back} \\
-$\mathcal{D}^{\mathcal{Q}}(X,A,B)$ & & & the quasimap centipede locus; see Appendix \ref{Subsection splitting} \\
-$\mathcal{E}^{\mathcal{Q}}(X,A,B)$ & & & the total product for the centipede locus; see Appendix \ref{Subsection splitting} \\
-$\MM^{\operatorname{wt}}_{g,n}$ & & & the moduli stack of weighted prestable curves; see Appendix \ref{Subsection splitting} \\
-$\mathfrak{Pic}_{g,n}^{d,\operatorname{st}}$ & & & an open substack of the relative Picard stack of the universal curve over $\MM_{g,n}$; see Appendix  \ref{Section comparison morphism} \\
+$\mathcal{D}^{\mathcal{Q}}(X,A,B)$ & & & the quasimap centipede locus; see \S \ref{Subsection comb loci pull back} \\
+$\mathcal{E}^{\mathcal{Q}}(X,A,B)$ & & & the total product for the centipede locus; see \S \ref{Subsection comb loci pull back} \\
+$\MM^{\operatorname{wt}}_{g,n}$ & & & the moduli stack of weighted prestable curves; see \S \ref{Subsection comb loci pull back} \\
+$\mathfrak{Pic}_{g,n}^{d,\operatorname{st}}$ & & & an open substack of the relative Picard stack of the universal curve over $\MM_{g,n}$; see Appendix \ref{Section comparison with GIT construction} \\
 $\mathfrak{Bun}^{G}_{g,n}$ & & & the moduli stack of principal $G$-bundles on the universal curve over $\MM_{g,n}$; see Appendix \ref{Section comparison with GIT construction} \\
-$\om{Q}(f)$ & & & the push-forward morphism between quasimap spaces; see Appendix \ref{Functoriality of Quasimap Spaces Section} \\
-$\chi$ & & & the comparison morphism from stable maps to quasimaps; see Appendix \ref{Section comparison morphism} \\
+$\om{Q}(f)$ & & & the push-forward morphism between quasimap spaces; see \S \ref{Subsection virtual class in general} \\
+$\chi$ & & & the comparison morphism from stable maps to quasimaps; see \S \ref{Subsection basic properties of the moduli space} \\
 $f^!$ & & & Gysin morphism for $f$ a regular embedding \\
 $f^!_{\text{v}}$ & & & virtual pull-back for $f$ virtually smooth; see Appendix \ref{appendix:intersection} \\
 $f^!_{\Delta}$ & & & diagonal pull-back; see Appendix \ref{appendix:intersection}
@@ -437,7 +437,7 @@ should ``map'' a point $x \in C$ into $Y$ if and only if the section
 \begin{equation} \label{uY expression} u_Y := \sum_{\underline{a}} \lambda_{\underline{a}} \prod_\rho u_\rho^{a_\rho} \end{equation}
 vanishes at $x$. We now explain how to make sense of expression \eqref{uY expression}. For each exponent $\underline{a}$ appearing in $s_Y$ we have a well-defined section:
 \begin{equation*} u_{\underline{a}} := \lambda_{\underline{a}} \prod_\rho u_\rho^{a_\rho} \in \HH^0(C,\otimes_\rho L_\rho^{\otimes a_\rho}) \end{equation*}
-Furthermore, for two such $\underline{a}$ and $\underline{b}$, since $\sum_\rho a_\rho [D_\rho] = [Y] = \sum_\rho b_\rho [D_\rho]$ in $\Pic{X}$ it follows from the exact sequence
+Furthermore given two such $\underline{a}$ and $\underline{b}$, since $\sum_\rho a_\rho [D_\rho] = [Y] = \sum_\rho b_\rho [D_\rho]$ in $\Pic{X}$ it follows from the exact sequence
 \begin{equation*} 0 \to M \to \Z^{\Sigma(1)} \to \Pic{X} \to 0 \end{equation*}
 that $\underline{a}$ and $\underline{b}$ differ by an element $m$ of $M$. Thus the isomorphism $\varphi_m$ allows us to view the sections $u_{\underline{a}}$ and $u_{\underline{b}}$ as sections of the same bundle, which we denote by $L_Y$ (there is a choice for $L_Y$ here, but up to isomorphism it does not matter). We can thus sum the $u_{\underline{a}}$ together to obtain $u_Y$.
 
@@ -557,7 +557,7 @@ We will now establish a number of properties of the fundamental class.
 \subsection{Proof of the recursion formula} \label{Subsection recursion formula for PN}
 We wish to obtain a recursion formula relating the quasimap invariants of multiplicity $\alpha$ with the quasimap invariants of multiplicity $\alpha + e_k$, as in \cite[Theorem 2.6]{Ga}. For $m = \alpha_k + 1$ the following section (of the pull-back of the jet bundle of the universal line bundle)
 \[
-\sigma^m_k := x_k^*d^m_{\mathcal C/\om{Q}}(u_0)\in \HH^0(\om{Q},x_k^*\mathcal P^m_{\mathcal C/\overline{\mathcal Q}}(\mathcal L))
+\sigma^m_k := x_k^*d^m_{\mathcal C/\om{Q}}(u_0)\in \HH^0(\om{Q},x_k^*\mathcal P^m_{\mathcal C/\mathcal Q}(\mathcal L))
 \]
 vanishes along $\Q{0}{\alpha+e_k}{\PP^N|H}{d}$ inside $\om{Q} = \Q{0}{\alpha}{\PP^N|H}{d}$, and also along a number of \ilemph{comb loci}.  The latter parametrise quasimaps for which $x_k$ belongs to an internal component $Z \subseteq C$ (a connected component of the vanishing locus of $u_0$), such that:
 \begin{equation*}\deg(L|_{Z})+\sum_{i=1}^r m^{(i)}=\sum_{x_i\in Z}\alpha_i \end{equation*}
@@ -587,13 +587,13 @@ Since we wish to apply the projection formula to Gathmann's recursion relation, 
 \end{align*}
 \end{lem}
 \begin{proof}
-It suffices to show that:
+It suffices to show that
 \begin{align*} \chi^* x_k^* \omega_{\mathcal{C}/\om{Q}} & = x_k^* \omega_{\mathcal{C}/\om{M}} \\
 \chi^* x_k^* \mathcal{L} & = \ev_k^* \OO_{\PP^N}(H) \end{align*}
-This follows by considering the following diagram:
+where $\mathcal{L}$ is the universal line bundle on $\mathcal{C}_{\mathcal{Q}}$. This follows by considering the following diagram:
 \bcd
 & & \PP^N & \\
-\mathcal C_{\overline {\mathcal M}} \ar[r,"\sst" below] \ar[rd] \ar[urr, bend left=10, "f"] & \comp^*\mathcal C_{\overline {\mathcal Q}} \ar[d] \ar[rr]\ar[ur,bend right=10,dashed] \ar[rrd,phantom,"\square" right] & & \mathcal C_{\overline {\mathcal Q}} \ar[d]\ar[ul,bend right=10,dashed] \\
+\mathcal C_{\overline {\mathcal M}} \ar[r,"\sst" below] \ar[rd] \ar[urr, bend left=10, "f"] & \comp^*\mathcal C_{\mathcal{Q}} \ar[d] \ar[rr]\ar[ur,bend right=10,dashed] \ar[rrd,phantom,"\square" right] & & \mathcal C_{\mathcal{Q}} \ar[d]\ar[ul,bend right=10,dashed] \\
 & \M{0}{\alpha}{\PP^N|H}{d} \ar[rr,"\comp"] \ar[ul,bend left,"x_k"] \ar[u,bend right,"x_k"right=.2cm] & & \Q{0}{\alpha}{\PP^N|H}{d}\ar[u,bend right, "x_k"right]
 \ecd
 where $\sst$ is the strong stabilisation map which contracts the rational tails.  Note that $\sst$ is an isomorphism near the markings.
@@ -624,14 +624,14 @@ This follows from \cite[Thm. 2.6]{Ga} by pushing forward along $\chi$, using the
 \mathcal{D}^{\mathcal{M}}(\PP^N|H,A,B,M) \ar[r] \ar[d] & \M{0}{\alpha}{\PP^N|H}{d} \ar[d] \\
 \mathcal{D}^{\mathcal{Q}}(\PP^N|H,A,B,M) \ar[r] & \Q{0}{\alpha}{\PP^N|H}{d}
 \ecd
-The vertical arrow on the left is a product of comparison morphisms (notice that $H\simeq\PP^{r-1}$). The horizontal arrow at the top is the glueing morphism which glues together the various pieces of the comb to produce a single relative stable map. Here we explain how to define the corresponding glueing morphism for quasimaps, that is, the bottom horizontal arrow.
+The vertical arrow on the left is a product of comparison morphisms (notice that $H\cong\PP^{N-1}$). The horizontal arrow at the top is the gluing morphism which glues together the various pieces of the comb to produce a single relative stable map. Here we explain how to define the corresponding gluing morphism for quasimaps, that is, the bottom horizontal arrow.
 
-Suppose for simplicity that $r=1$ and consider an element of the quasimap comb locus, consisting of two quasimaps:
+Suppose for simplicity that $r$, the number of teeth of the comb, is equal to $1$. Consider an element of the quasimap comb locus, consisting of two quasimaps:
 \begin{align*} & \big((C^0,x^0_1,\ldots,x^0_{n_0},q^0),L^0,u^0_0, \ldots, u^0_N\big) \\
 &\big((C^1,x^1_1,\ldots,x^1_{n_1},q^1),L^1,u^1_0, \ldots, u^1_N\big) \end{align*}
 such that $u^0(q^0) = u^1(q^1)$ in $\PP^N$. We want to glue these quasimaps together at $q^0$,~$q^1$. The definition of the curve is obvious; we simply take:
 \begin{equation*} C = C^0 \,_{q^0}\!\sqcup_{q^1} C^1 \end{equation*}
-On the other hand, glueing together the line bundles $L^0$ and $L^1$ to obtain a line bundle $L$ over $C$ requires a choice of scalar $\lambda \in \Gm$, in order to match up the fibres over $q^i$. Furthermore if the sections are to extend as well then this scalar must be chosen in such a way that it takes $(u^0_0(q^0), \ldots, u^0_N(q^0)) \in (L^0_{q^0})^{\oplus (N+1)}$ to $(u^1_0(q^1), \ldots, u^1_N(q^1)) \in (L^1_{q^1})^{\oplus (N+1)}$. Since neither $q^0$ nor $q^1$ are basepoints (because they are markings), these tuples are nonzero, and so $\lambda$ is unique if it exists. Furthermore it exists if and only if these tuples belong to the same $\Gm$-orbit in $\Aaff^{N+1}$. This is precisely the statement that $u^0(q^0) = u^1(q^1) \in \PP^N$. 
+On the other hand, gluing together the line bundles $L^0$ and $L^1$ to obtain a line bundle $L$ over $C$ requires a choice of scalar $\lambda \in \Gm$, in order to match up the fibres over $q^i$. Furthermore if the sections are to extend as well then this scalar must be chosen in such a way that it takes $(u^0_0(q^0), \ldots, u^0_N(q^0)) \in (L^0_{q^0})^{\oplus (N+1)}$ to $(u^1_0(q^1), \ldots, u^1_N(q^1)) \in (L^1_{q^1})^{\oplus (N+1)}$. Since neither $q^0$ nor $q^1$ are basepoints (because they are markings), these tuples are nonzero, and so $\lambda$ is unique if it exists. Furthermore it exists if and only if these tuples belong to the same $\Gm$-orbit in $\Aaff^{N+1}$. This is precisely the statement that $u^0(q^0) = u^1(q^1) \in \PP^N$. 
 
 Similar arguments apply for $r>1$, and for more general toric varieties. \end{remark}
 
@@ -646,7 +646,7 @@ in the Chow group of $\Q{0}{\alpha}{X|Y}{\beta}$.
 
 \noindent We begin by defining the terms that appear in the statement.
 
-\subsection{The virtual class on the space of relative quasimaps} Let $X$ and $Y$ be as in the statement of Theorem~\ref{Theorem general recursion}.  The complete linear system associated to $\OO_X(Y)$ defines an embedding $i : X \hookrightarrow \PP^N$ such that $i^{-1}(H) = Y$ for a certain hyperplane $H$. By the functoriality property of quasimap spaces (see \cite[\S 3.1]{CF-K-wallcrossing}) we have a map:
+\subsection{The virtual class on the space of relative quasimaps}\label{Subsection virtual class in general} Let $X$ and $Y$ be as in the statement of Theorem~\ref{Theorem general recursion}.  The complete linear system associated to $\OO_X(Y)$ defines an embedding $i : X \hookrightarrow \PP^N$ such that $i^{-1}(H) = Y$ for a certain hyperplane $H$. By the functoriality property of quasimap spaces (see \cite[\S 3.1]{CF-K-wallcrossing}) we have a map:
 \begin{equation*} k := \om{Q}(i) : \Q{0}{n}{X}{\beta} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
 where $d=i_*\beta$. Because $\Q{0}{n}{\PP^N}{d}$ is smooth, $k$ admits a compatible perfect obstruction theory, so we have a notion of virtual pull-back along $k$.
 
@@ -669,14 +669,16 @@ These two quasimaps are non-isomorphic, but they both map to the same object und
 Notice that this only happens on the locus of quasimaps with basepoints.
 \end{remark}
 
-It is easy to show that $k$ restricts to a morphism between moduli space of relative quasimaps, and thus we have a diagram
+It is easy to see that $k$ restricts to a morphism between moduli space of relative quasimaps, and thus we have a diagram
 \bcd
 \Q{0}{\alpha}{X|Y}{\beta} \ar[d, "f", hook] \ar[r, "g"] \ar[dr, phantom, "\square"] & \Q{0}{\alpha}{\PP^N|H}{d} \ar[d, "j", hook] \\
 \Q{0}{n}{X}{\beta}  \ar[r, "k"] & \Q{0}{n}{\PP^N}{d}
 \ecd
-which one can show is cartesian. As such we can define a virtual class on $\Q{0}{\alpha}{X|Y}{\beta}$ by pullback along $k$:
+which one can show is cartesian. Since $\Q{0}{n}{\PP^N}{d}$ is unobstructed, the morphism $k$ admits a natural perfect obstruction theory, and so there is a virtual pull-back morphism $k^!_{\operatorname{v}}$. Alternatively, we may use the presence of a virtual class on $\Q{0}{n}{X}{\beta}$ to define a diagonal pull-back morphism $k^!_{\Delta}$. The arguments in Appendix \ref{appendix:intersection} show that these two maps coincide, and from now on we will denote them both by $k^!$.
+
+We now define the virtual class on $\Q{0}{\alpha}{X|Y}{\beta}$ by pull-back along $k$
 \begin{equation*} \virt{\Q{0}{\alpha}{X|Y}{\beta}} := k^! [ \Q{0}{\alpha}{\PP^N|H}{d} ] \end{equation*}
-We use this class to define relative quasimap invariants in general:
+and use this class to define relative quasimap invariants in general:
 \begin{equation*} \langle \gamma_1 \psi_1^{k_1}, \ldots, \gamma_n \psi_n^{k_n} \rangle_{0,\alpha,\beta}^{X|Y} := \int_{\virt{\Q{0}{\alpha}{X|Y}{\beta}}} \prod_{i=1}^n \ev_i^*(\gamma_i) \cdot \psi_i^{k_i} \end{equation*}
 These invariants will play a role in our proof of the quasimap Lefschetz formula in \S \ref{Section quasimap mirror theorem}.
 
@@ -741,7 +743,7 @@ On the other hand, there is another cartesian diagram:
 Recall that we are trying to show that the virtual class of the comb locus pulls back nicely along $k$. The result that we need is:
 \begin{lem} \label{Comb loci pull back} $\displaystyle k^! \virt{\mathcal D^\mathcal{Q}(\PP^N|H,A,B^\prime,M)} = \sum_{B : i_* B = B^\prime} \virt{\mathcal D^\mathcal{Q}(X|Y,A,B,M)}$ \end{lem}
 
-For the proof of Lemma~\ref{Comb loci pull back}, let us introduce the following shorthand notation.  We fix the the data of $A$, $B^\prime$, $M$ and set:
+For the proof of Lemma~\ref{Comb loci pull back}, let us introduce the following shorthand notation.  We fix the the data of $A$, $B^\prime$, $M$ for a comb locus of $(\PP^N,H)$, and set:
 \begin{align*}
 \mathcal{D}(X|Y) & := \textstyle \coprod_{B \colon i_* B = B^\prime} \mathcal D^{\mathcal{Q}}(X|Y,A,B,M) &&& \mathcal{D}(\PP^N|H) & := \mathcal D^{\mathcal{Q}}(\PP^N|H,A,B^\prime,M)\\
 \mathcal{E}(X|Y) & := \textstyle \coprod_{B \colon i_* B = B^\prime} \mathcal E^{\mathcal{Q}}(X|Y,A,B,M) &&& \mathcal{E}(\PP^N|H) & := \mathcal E^{\mathcal{Q}}(\PP^N|H,A,B^\prime,M)\\
@@ -749,12 +751,12 @@ For the proof of Lemma~\ref{Comb loci pull back}, let us introduce the following
 \mathcal{E}(X) & := \textstyle \coprod_{B \colon i_* B = B^\prime} \mathcal{E}^{\mathcal{Q}}(X,A,B) &&& \mathcal{E}(\PP^N) & := \mathcal E^{\mathcal{Q}}(\PP^N,A,B^\prime)\\
 \om{Q}(X) & :=\Q{0}{n}{X}{\beta} &&& \om{Q}(\PP^N) & :=\Q{0}{n}{\PP^N}{i_* \beta} 
 \end{align*}
-Here $\mathcal{D}(X)$ and $\mathcal{E}(X)$ are the centipede loci introduced in Appendix \ref{Subsection splitting}; they are defined in the same way as the comb loci, except that we replace both the quasimaps to $Y$ and the relative quasimaps to $(X,Y)$ by quasimaps to $X$. There is a cartesian diagram
+Here $\mathcal{D}(X)$ and $\mathcal{E}(X)$ are the so-called centipede loci; they are defined in the same way as the comb loci, except that we replace both the quasimaps to $Y$ and the relative quasimaps to $(X,Y)$ by quasimaps to $X$. There is a cartesian diagram:
 \bcd
 \mathcal{E}(X|Y) \ar[d]\ar[r]\ar[dr,phantom,"\Box"] & \mathcal{E}(\PP^N|H)\ar[d,"\theta"] \\
 \mathcal{E}(X)\ar[r] & \mathcal{E}(\PP^N)
 \ecd
-and, since $\mathcal{E}(\PP^N)$ is smooth and there is a natural fundamental class on $\mathcal{E}(\PP^N|H)$, we have a diagonal pull-back morphism $\theta^! = \theta_{\Delta}^!$ (see Appendix~\ref{appendix:intersection}).
+Since $\mathcal{E}(\PP^N)$ is smooth (being a product of spaces of quasimaps to $\PP^N$) and there is a natural fundamental class on $\mathcal{E}(\PP^N|H)$, we have a diagonal pull-back morphism $\theta^! = \theta_{\Delta}^!$ (see Appendix~\ref{appendix:intersection}).
 \begin{lemma}\label{theta-pull} $\virt{\mathcal{E}(X|Y)}=\theta^!\virt{\mathcal{E}(X)}$ \end{lemma}
 \begin{proof}
 It suffices to check that in the following cartesian diagram
@@ -772,7 +774,7 @@ Now consider the following cartesian diagram
 \ecd
 where $\MM_{0,n,\beta}^{\operatorname{wt}}$ is the moduli space of prestable curves weighted by the class~$\beta$ \cite[\S 2]{Costello} and:
 \begin{equation*} \MM_{A,B}^{\operatorname{wt}} := \MM_{0,A^{(0)} \cup \{ q_1^0, \ldots, q_r^0 \}, \beta^{(0)}}^{\operatorname{wt}} \times \prod_{i=1}^r \MM_{0,A^{(i)} \cup \{ q_i^1 \},\beta^{(i)}}^{\operatorname{wt}} \end{equation*}
-The maps $\mathcal{D}(X) \to \MM_{A,B}^{\operatorname{wt}}$ and $\om{Q}(X) \to \MM_{0,n,\beta}^{\operatorname{wt}}$ admit relative perfect obstruction theories which are the same as the usual perfect obstruction theories relative to the moduli spaces of \emph{unweighted} curves. Furthermore the morphism $\psi$ admits a perfect obstruction theory; see Appendix \ref{Subsection splitting} for details. Thus there are virtual pull-back morphisms $\psi^!$, and by the splitting axiom (see Lemma \ref{Lemma product class equals pullback class}) we have
+The vertical maps in the above diagram are given by gluing together curves (in the case of $\psi$) and quasimaps (in the case of $\varphi_X$ and $\varphi_{\PP^N}$). The maps $\mathcal{D}(X) \to \MM_{A,B}^{\operatorname{wt}}$ and $\om{Q}(X) \to \MM_{0,n,\beta}^{\operatorname{wt}}$ admit relative perfect obstruction theories which are the same as the usual perfect obstruction theories relative to the moduli spaces of \emph{unweighted} curves. Furthermore the morphism $\psi$ admits a perfect obstruction theory. Thus there are virtual pull-back morphisms $\psi^!$, and by the splitting axiom (see Lemma \ref{Lemma product class equals pullback class}) we have
 
 \begin{equation*} \virt{\mathcal{D}(X)} := \Delta_{X^r}^! \virt{\mathcal{E}(X)} = \psi^! \virt{\om{Q}(X)} \end{equation*}
 Commutativity of virtual pull-backs then implies that:
@@ -792,7 +794,7 @@ We then have:
 & =  \theta^!k^! [\mathcal{D}(\PP^N)] & \text{by formula \eqref{psishriek formula} above} \\
 & =  \theta^!k^!\Delta_{(\PP^N)^r}^! [\mathcal E(\PP^N)] & \text{by definition} \\
 & =  k^!\Delta_{(\PP^N)^r}^!\theta^! [\mathcal E(\PP^N)] & \text{by commutativity} \\
-& = k^! \Delta_{{\PP^N}^r}^! [\mathcal{E}(\PP^N|H)] & \text{by Lemma \ref{theta-pull}} \\
+& = k^! \Delta_{(\PP^N)^r}^! [\mathcal{E}(\PP^N|H)] & \text{by Lemma \ref{theta-pull}} \\
 & =  k^![\mathcal{D}(\PP^N|H)] & \text{by definition}
 \end{align*}
 Summing over all the components of $\mathcal{D}^{\mathcal{Q}}_{\alpha,k}(\PP^N|H,d)$ we obtain the result. \end{proof}
@@ -1076,365 +1078,7 @@ which proves \eqref{P epsilon equation}. We thus conclude that \eqref{Ciocan-Fon
 
 \appendix
 
-
-\section{Notes on quasimaps}\label{Section quasimap theory}
-In this appendix we collect several foundational results in quasimap theory, including:
-\begin{enumerate}
-\item \ilemph{Functoriality} (\S \ref{Functoriality of Quasimap Spaces Section}): given a morphism $f\colon Y\to X$ we describe the induced map:
-\begin{equation*} \om{Q}(f)\colon\Q{g}{n}{Y}{\beta}\to\Q{g}{n}{X}{f_*\beta} \end{equation*}
-We also discuss (\S \ref{section:rel_pot_for_qm_functoriality}) when $\om{Q}(f)$ admits a compatible perfect obstruction theory.
-\item \ilemph{Splitting axiom} (\S \ref{Subsection splitting}): this gives an equality between two natural virtual classes on boundary strata (i.e. loci where the underlying curve is reducible of a prescribed type).
-\item \ilemph{Comparison with the GIT construction} (\S \ref{Section comparison with GIT construction}): we show that for a (not necessarily toric) hypersurface $Y \hookrightarrow X$, our definition of $\om{Q}(Y)$ as a substack of $\om{Q}(X)$ coincides with the definition of $\om{Q}(Y)$ given by the description of $Y$ as a GIT quotient (see \cite{CFKM}).
-\end{enumerate}
-
-\subsection{Functoriality} \label{Functoriality of Quasimap Spaces Section}
-
-In the case of stable maps, a morphism $f : Y \to X$ induces a morphism between the corresponding moduli spaces
-\begin{equation*}\om{M}(f) : \M{g}{n}{Y}{\beta} \rightarrow \M{g}{n}{X}{f_* \beta} \end{equation*}
-given by post-composition with $f$ and (if necessary) stabilisation of the source curve. Because of this, we may say that the construction of the moduli space of stable maps is \ilemph{functorial}.
-
-It is natural to ask whether the same holds for the moduli space of quasimaps, i.e. whether we have a morphism:
-\begin{equation*} \om{Q}(f) : \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_* \beta} \end{equation*}
-Since here the objects of the moduli space are not maps, we cannot simply compose with $f$. Nevertheless, our definition should be equivalent to composing with $f$ when applied to a quasimap without any basepoints. In \cite[Section 3.1]{CF-K-wallcrossing} a definition (in the GIT context) is given when $f$ is an embedding into a projective space; we shall discuss the general situation of a morphism between toric varieties $f\colon Y\to X$.
-
-Our approach uses the language of $\Sigma$--collections introduced by D. A. Cox. This approach is natural insofar as a quasimap is a generalisation of a $\Sigma$--collection. We will refer extensively to \cite{CoxRing} and \cite{CoxFunctor}.
-
-Let $X$ and $Y$ be smooth and proper toric varieties with fans $\Sigma_X \subseteq N_X$ and $\Sigma_Y \subseteq N_Y$. Suppose we are given $f : Y \to X$, which we do not assume to be a toric morphism. By \cite[Theorem 1.1]{CoxFunctor} the data of such a map is equivalent to a $\Sigma_X$--collection on $Y$:
-\begin{equation*} ( (L_\rho, u_\rho)_{\rho \in \Sigma_X(1)}, (\varphi_{m_x})_{m_x \in M_X} ) \end{equation*}
-In addition, \cite{CoxRing} allows us to describe line bundles on $Y$ and their global sections in terms of the homogeneous coordinates $(z_\tau)_{\tau \in \Sigma_Y(1)}$. All of these observations are combined into the following theorem, which is so useful that we will state it here in its entirety:
-
-\begin{thm} \cite[Theorem 3.2]{CoxFunctor} \label{CoxTheorem} The data of a morphism $f:Y \to X$ is the same as the data of homogeneous polynomials
-\begin{equation*} P_\rho \in S^Y_{\beta_\rho} \end{equation*}
-for $\rho = f^* \OO_X(D_\rho) \in \Sigma_X(1)$, where $\beta_\rho \in \Pic Y$ and $S^Y_{\beta_\rho}$ is the corresponding graded piece of the Cox ring:
-\begin{equation*}S^Y = \CC[z_\tau : \tau \in \Sigma_Y(1)]\end{equation*}
-These data are required to satisfy the following two conditions:
-\begin{enumerate}
-\item $\sum_{\rho \in \Sigma_X(1)} \beta_\rho \otimes n_\rho = 0$ in $\Pic Y \otimes N_X$, where $n_\rho$ is the principal generator of the ray $\rho$.
-\item $(P_\rho(z_\tau)) \notin Z(\Sigma_X) \subseteq \Aaff^{\Sigma_X(1)}$ whenever $(z_\tau) \notin Z(\Sigma_Y) \subseteq \Aaff^{\Sigma_Y(1)}$.
-\end{enumerate}
-Furthermore, two such sets of data $(P_\rho)$ and $(P^\prime_\rho)$ correspond to the same morphism if and only if there exists a $\lambda \in \Hom_\Z(\Pic X, \Gm)$ such that
-\begin{equation*} \lambda(D_\rho) \cdot P_\rho = P^\prime_\rho \end{equation*}
-for all $\rho \in \Sigma_X(1)$. Finally, if we define $\tilde{f}(z_\tau) = (P_\rho(z_\tau))$ then this defines a lift of $f$ to the prequotients:
-\bcd
-\Aaff^{\Sigma_Y(1)} \setminus Z(\Sigma_Y) \ar[r, "\tilde{f}"] \ar[d, "q_Y"] & \Aaff^{\Sigma_X(1)} \setminus Z(\Sigma_X) \ar[d,"q_X"] \\
-Y \ar[r, "f"] & X
-\ecd
-\end{thm}
-\begin{aside} Throughout this section we will stick to the notation established above; in particular we will use $\rho$ to denote a ray in $\Sigma_X(1)$ and $\tau$ to denote a ray in $\Sigma_Y(1)$. \end{aside}
-
-Recall our goal: given a map $f \colon Y \to X$ we wish to define a ``push-forward'' map:
-\begin{equation*} \om{Q}(f) : \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_*\beta} \end{equation*}
-Consider therefore a quasimap
-\begin{equation*} ((C,x_1,\ldots,x_n), (L_\tau, u_\tau)_{\tau \in \Sigma_Y(1)}, (\varphi_{m_Y})_{m_Y \in M_Y}) \in \Q{g}{n}{Y}{\beta} \end{equation*}
-over an arbitrary base. Pick data $(P_\rho)_{\rho \in \Sigma_X(1)}$ corresponding to the map $f$, as in the theorem above; we will later see that our construction does not depend on this choice.
-
-The idea of the construction is as follows. Locally around a point $x~\in~U_x \subseteq C$ we can trivialise the $L_\tau$ to obtain a morphism to the prequotient
-\begin{equation*} (u_\tau)_\tau \colon U_x \to \Aaff^{\Sigma_Y(1)} \end{equation*}
-which lifts the induced rational map to $Y$. On the other hand the data of $(P_\rho)_\rho$ gives a lifting of $f\colon Y\to X$ to a morphism between the prequotients
-\begin{equation*}(P_\rho)_\rho \colon \Aaff^{\Sigma_Y(1)} \to \Aaff^{\Sigma_X(1)}\end{equation*}
-and so the composed map to the prequotient of $X$ is given by:
-\begin{equation*} (P_\rho((u_\tau)_\tau))_\rho : U_x \to \Aaff^{\Sigma_X(1)} \end{equation*}
-In order to define the pushed-forward quasimap, we thus need to make sense of $P_\rho((u_\tau)_\tau)$ as a section of a certain line bundle $\tilde{L}_\rho$ on the curve.
-
-We now make this precise. The first issue to address is the stabilisation of the source curve. The procedure is the same as in the case of stable maps: if $C_0 \subseteq C$ is a rational component with $2$ special points (hence with curve class $\beta_0 > 0$) and such that $f_* \beta_0 = 0$, then $C_0$ should be contracted when we pass to $X$. The possibilities are:
-
-\begin{center}
-\begin{tikzpicture}[scale=0.5]
-\draw (0,0) -- (1,3) node[above]{$\beta_1$} (0,1) -- (1,-2) node[below]{$\beta_0$};
-\draw[fill=black] (0.66,-1) circle[radius=2pt];
-\draw[->,decorate,decoration=snake] (2,0.5) -- (4,0.5);
-\draw (5,0) -- (6,3) node[above]{$f_*\beta_1$};
-\draw[fill=black] (5.16,.5) circle[radius=2pt];
-
-\draw (10.33,-1.5) -- node[right]{$\beta_0$} (10.33,2.5) (10,1) -- (11,4) node[above]{$\beta_1$} (10,0) -- (11,-3) node[below]{$\beta_2$};
-\draw[->,decorate,decoration=snake] (12,0.5) -- (14,0.5);
-\draw (15,0) -- (16,3) node[above]{$f_*\beta_1$} (15,1) -- (16,-2) node[below]{$f_*\beta_2$};
-\end{tikzpicture}
-\end{center}
-To perform the contraction we need to construct a line bundle on $C$ that is trivial on the components which we wish to contract and ample (relative to the base) on all the other components.
-
-Fix a polarisation $\OO_X(1)$ on $X$ and express $f^*\OO_X(1)$ in terms of the toric divisors of $Y$:
-\begin{equation*} f^*\OO_X(1) = \bigotimes_\tau \OO_Y(D_\tau)^{\otimes c_\tau} \end{equation*}
-Then the line bundle
-\begin{equation*} \omega_{\pi}(x_1+\ldots+x_n)\otimes \bigotimes_\tau L_\tau^{\otimes a_\tau} \end{equation*}
-gives the required contraction by taking relative Proj. We thus obtain a curve $\tilde{C}$ and a morphism $\phi : C \to \tilde{C}$ which contracts the unstable components.
-
-Recall that for $\rho \in \Sigma_X(1)$, $P_\rho$ is a polynomial in the $z_\tau$. We can thus write it as
-\begin{equation} \label{Prho} P_\rho(z_\tau) = \sum_{\underline{a}} P_\rho^{\underline{a}}(z_\tau) = \sum_{\underline{a}} \mu_{\underline{a}} \prod_{\tau} z_{\tau}^{a_{\tau}} \end{equation}
-where the sum is over a finite number of multindices $\underline{a} = (a_\tau) \in \N^{\Sigma_Y(1)}$ and the $\mu_{\underline{a}}$ are nonzero scalars. Observe that, for each $\underline{a}$, the line bundle $\otimes_\tau  L_\tau^{\otimes a_\tau}$ on $C$ is trivial on the components contracted by $\phi$ (which are always rational). Hence, by cohomology and base-change, it descends to a line bundle on $\tilde{C}$:
-\begin{equation*} \tilde{L}_\rho^{\underline{a}} :=\phi_* \bigotimes_\tau L_\tau^{\otimes a_\tau} \end{equation*}
-We may then take the following section of $\tilde{L}_\rho^{\underline{a}}$:
-\begin{equation*} \tilde{u}_\rho^{\underline{a}} = P_\rho^{\underline{a}}(u_\tau) := \mu_{\underline{a}} \prod_\tau u_\tau^{a_\tau}; \end{equation*}
-A priori this is really a section of $\otimes_\tau L_\tau^{\otimes a_\tau}$ on $C$; but since it is constant on the components contracted by $\phi$, it descends to a section of $\tilde{L}_\rho^{\underline{a}}$ on $\tilde{C}$.
-
-Thus, each of the terms $P_\rho^{\underline{a}}$ of $P_\rho$ defines a section $\tilde{u}_\rho^{\underline{a}}$ of a line bundle $\tilde{L}_\rho^{\underline{a}}$ on $\tilde{C}$. What we want, however is a single section $\tilde{u}_\rho$ of a single line bundle $\tilde{L}_\rho$. This is where the isomorphisms $\varphi_{m_Y}$ come in.
-
-Recall that we have a short exact sequence:
-\begin{equation} \label{Pic short exact sequence for Y} 0 \longrightarrow M_Y \overset{\theta}{\longrightarrow} \Z^{\Sigma_Y(1)} \longrightarrow \Pic Y \longrightarrow 0 \end{equation}
-Let $\underline{a}$ and $\underline{b}$ be multindices appearing in the sum \eqref{Prho} above. By the homogeneity of $P_\rho$ we have
-\begin{equation*} \sum_\tau a_\tau [D_\tau] = \beta_\rho = \sum_\tau b_\tau [D_\tau] \end{equation*}
-which is precisely the statement that in the above sequence $\underline{a}$ and $\underline{b}$ map to the same element of $\Pic Y$ (namely $\beta_\rho$). Hence there exists a unique $m_Y \in M_Y$ such that:
-\begin{equation*} \theta(m_Y) = \underline{a} - \underline{b} \end{equation*}
-Now, the isomorphism $\varphi_{m_Y}$ (contained in the data of our original quasimap) is a map:
-\begin{equation*} \varphi_{m_Y} : \bigotimes_\tau L_\tau^{\otimes \langle m_Y, n_\tau \rangle} \cong \OO_{C} \end{equation*}
-By definition, $\theta(m_Y) = (\langle m_Y,n_\tau \rangle)_{\tau \in \Sigma_Y(1)}$. But also $\theta(m_Y) = (a_\tau - b_\tau)_{\tau \in \Sigma_Y(1)}$. Hence we have:
-\begin{equation*} \varphi_{m_Y} : \bigotimes_\tau L_\tau^{\otimes a_\tau} \cong \bigotimes_\tau L_\tau^{\otimes b_\tau} \end{equation*}
-This descends to give canonical isomorphisms
-\begin{equation*} \tilde{L}_\rho^{\underline{a}} \cong \tilde{L}_\rho^{\underline{b}} \end{equation*}
-for all $\underline{a}$ and $\underline{b}$. Let us choose one such $\underline{a}$ (it doesn't matter which); call it $\underline{a}^\rho$. We define:
-\begin{equation*} \tilde{L}_\rho := \tilde{L}_\rho^{\underline{a}^\rho} \end{equation*}
-Then for all $\underline{b}$ we can use the above isomorphisms to view $\tilde{u}_\rho^{\underline{b}}$ as a section of $\tilde{L}_\rho$. Summing all of these together we thus obtain a section $\tilde{u}_\rho$ of $\tilde{L}_\rho$, which we can write (with abuse of notation) as:
-\begin{equation*} \tilde{u}_\rho = \sum_{\underline{a}} \mu_{\underline{a}} \prod_\tau u_\tau^{a_\tau} \end{equation*}
-Note that if we had made a different choice of $\underline{a}^\rho$ above the result would have been isomorphic.
-
-Thus far we have constructed line bundles and sections $(\tilde{L}_\rho, \tilde{u}_\rho)_{\rho \in \Sigma_X(1)}$ on $\overline{\mathcal C}$. It remains to define the isomorphisms
-\begin{equation*} \tilde{\varphi}_{m_X} : \otimes_\rho \tilde{L}_\rho^{\otimes \langle m_X, n_\rho \rangle} \cong \OO_{\tilde{C}} \end{equation*}
-for all $m_X \in M_X$. The left hand side is:
-\begin{align*} \otimes_\rho \tilde{L}_\rho^{\otimes \langle m_X, n_\rho \rangle} & = \otimes_\rho \left( \phi_* \otimes_\tau L_\tau^{\otimes a_\tau^\rho} \right)^{\otimes \langle m_X, n_\rho \rangle} = \phi_* \otimes_\tau L_\tau^{\otimes \left( \sum_{\rho} a_\tau^\rho  \langle m_X, n_\rho \rangle \right)} \end{align*}
-Now, for $m_Y \in M_Y$ we have isomorphisms $\varphi_{m_Y} : \otimes_\tau L_\tau^{\otimes \langle m_Y, n_\tau \rangle} \cong \OO_{C}$. In order to construct $\tilde{\varphi}_{m_X}$ it is therefore tempting to look for an $m_Y$ such that
-\begin{equation*} \langle m_Y, n_\tau \rangle = \sum_\rho a_\tau^\rho \langle m_X, n_\rho \rangle \end{equation*}
-for all $\tau \in \Sigma_Y(1)$ (we will then set $\tilde{\varphi}_{m_X} = \varphi_{m_Y}$). Consider therefore the short exact sequence \eqref{Pic short exact sequence for Y}. Recall that $\theta(m_Y) = (\langle m_Y, n_\tau \rangle)_{\tau \in \Sigma_Y(1)}$. Hence we need to show that
-\begin{equation*} \left( \sum_\rho a_\tau^\rho \langle m_X, n_\rho \rangle \right)_{\tau \in \Sigma_Y(1)} \end{equation*}
-belongs to the image of $\theta$, i.e. that it belongs to the kernel of the second map (notice that $m_Y$ is then unique because $\theta$ is injective). This is equivalent to saying that
-\begin{equation*} \sum_\tau \sum_\rho a_\tau^\rho \langle m_X, n_\rho \rangle [D_\tau] = 0 \in \Pic Y \end{equation*}
-Now, we have
-\begin{equation*} \sum_\tau a_\tau^\rho [D_\tau] = \beta_\rho \end{equation*}
-so that the above sum becomes
-\begin{equation*} \sum_\rho \langle m_X, n_\rho \rangle \beta_\rho = \left\langle m_X, \sum_\rho \beta_\rho \otimes n_\rho \right \rangle = \langle m_X, 0 \rangle = 0 \end{equation*}
-where $\sum_\rho \beta_\rho \otimes n_\rho = 0$ by Condition (1) in Theorem \ref{CoxTheorem}. So there does indeed exist a (unique) $m_Y \in M_Y$ such that $\langle m_Y, n_\tau \rangle = \sum_\rho a_\tau^\rho \langle m_X, n_\rho \rangle$, and we can set:
-\begin{equation*} \tilde{\varphi}_{m_X} = \varphi_{m_Y} : \bigotimes_\rho \tilde{L}_\rho^{\otimes \langle m_X, n_\rho \rangle} \cong \OO_{\overline{\mathcal C}} \end{equation*}
-Thus we have produced a quasimap with target $X$ and class $f_*\beta$ on the base $\Q{g}{n}{Y}{\beta}$:
-\begin{equation*} ((\tilde{C},\tilde{x_1},\ldots,\tilde{x_n}), (\tilde{L}_\rho, \tilde{u}_\rho)_{\rho \in \Sigma_X(1)}, (\tilde{\varphi}_{m_X})_{m_X \in M_X}) \end{equation*}
-The proof that this construction does not depend on the choice of $(P_\rho)$ is straightforward and is left to the reader.
-
-It remains to demonstrate that the quasimap thus constructed is nondegenerate and stable. Nondegeneracy follows immediately from Condition (2) in Theorem \ref{CoxTheorem}. Put differently: the original quasimap defined a rational map $C \dashrightarrow Y$, whereas the new quasimap defines a rational map which is simply the composition $C \dashrightarrow Y \to X$ (up to contracting unstable components). Therefore the set of basepoints is exactly the same.
-
-Stability follows precisely from the construction of $\phi$: if we write the polarisation of $X$ as $\OO_X(1) = \bigotimes_\rho \OO(D_\rho)^{\otimes b_\rho}$ then 
-\begin{equation*} \omega_{\tilde{\pi}}(\bar x_1+\ldots \bar x_n)\otimes\bigotimes_\rho \tilde{L}_\rho^{\otimes b_\rho} \end{equation*}
-will be $\tilde\pi$-ample on $\tilde{C}$, since we have contracted all the components on which $f^*\OO_X(1)$ was trivial without introducing any rational tail.
-
-To summarise, we have explained how to canonically associate, to any family of quasimaps with target $Y$, a family of quasimaps with target $X$. This completes the proof of the following:
-
-\begin{thm} \label{functoriality proposition} Let $X$ and $Y$ be smooth proper toric varieties and $f : Y \to X$ a morphism. Then there exists a natural push-forward map:
-\begin{equation*} \om{Q}(f) \colon \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_* \beta} \end{equation*}\end{thm}
- 	
-\begin{remark}
- Theorem \ref{CoxTheorem} tells us that we can lift any morphism between toric varieties to an equivariant morphism between the prequotients
-\bcd
- \Aaff^{\Sigma_Y(1)} \setminus Z(\Sigma_Y) \ar[r, "\tilde{f}"] \ar[d, "q_Y"] & \Aaff^{\Sigma_X(1)} \setminus Z(\Sigma_X) \ar[d,"q_X"] \\
- Y \ar[r, "f"] & X
-\ecd
-where the torus homomorphism
-\begin{equation*} G_Y=\Hom_{\mathbb Z}(\Pic(Y), \Gm)\to G_X=\Hom_{\mathbb Z}(\Pic(Y),\Gm) \end{equation*}
-is induced in the obvious way by $f\colon Y\to X$. Now, thinking of quasimaps as maps to the quotient stack, functoriality is again clear by postcomposition with $\tilde{f}$ (notice that the preimage of the unstable locus of $X$ is the unstable locus of $Y$).
-\end{remark}
-
-Finally, let us describe how this push-forward morphism behaves when $f$ is a nonconstant map $\PP^r \to \PP^N$. Write $f$ in homogeneous coordinates as:
-\begin{equation*} f[z_0, \ldots, z_r] = [f_0(z_0, \ldots, z_r), \ldots, f_N(z_0, \ldots, z_r)] \end{equation*}
-where the $f_i$ are all homogeneous of degree $a>0$. Then given a quasimap with target $\PP^r$
-\begin{equation*} (C, L, u_o, \ldots, u_r) \end{equation*}
-the pushed-forward quasimap with target $\PP^N$ is:
-\begin{equation*} (C, L^{\otimes a}, f_0(u_0, \ldots, u_r) , \ldots, f_N(u_0, \ldots, u_r)) \end{equation*}
-
-\subsection{Relative obstruction theories for $\om{Q}(Y)\to\om{Q}(X)$}\label{section:rel_pot_for_qm_functoriality}
-Assume now that $f\colon Y\to X$ is a morphism (between projective varieties) satisfying any of the following three equivalent conditions:
-\begin{enumerate}
- \item $f$ is finite;
- \item for any ample line bundle $\OO_X(1)$ on $X$, $f^*\OO_X(1)$ is ample on $Y$;
- \item for every effective curve class $\beta\in \HH_2^+(Y)$, $f_*\beta\neq 0$.
-\end{enumerate}
-These conditions are in particular satisfied when $f$ is a closed embedding, which is the case of most interest to us.
-
-Observe then that the induced morphism $$k=\om{Q}(f) \colon \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_* \beta}$$ commutes with the projections to $\mathfrak M_{g,n}$, i.e. there is no need to stabilise the underlying curve. We would like to have a pull-back morphism $k^!$ between Chow groups. However, even in the easiest possible case when $f \colon Y \hookrightarrow X$ is a regular embedding, $k$ itself is not necessarily a regular embedding, and so the Gysin map in the sense of \cite{FUL} is not guaranteed to exist.
-
-However, when $\Q{g}{n}{X}{f_* \beta}$ is unobstructed (for instance when $X=\PP^N$ and $g=0$ or $(g,n)=(1,0)$) there is a way around this. In \cite{Manolache-Pull} a generalisation of the Gysin map called the \ilemph{virtual pull-back} is defined for morphisms endowed with a relative perfect obstruction theory. Moreover, a sufficient condition is given \cite[Corollary 4.9]{Manolache-Pull} for this map to respect the virtual classes.
-
-\begin{lem} \label{Exists relative POT} For a \emph{finite} morphism of smooth toric varieties $f\colon Y\to X$, there exists a relative obstruction theory $\EE_k$ for the morphism
-\begin{equation*} k : \Q{g}{n}{Y}{\beta} \to \Q{g}{n}{X}{f_*\beta} \end{equation*}
-which fits into a compatible triple with the standard obstruction theories for the quasimap spaces over $\MM_{g,n}$. Furthermore, $\EE_k$ is perfect \emph{if $\Q{g}{n}{X}{f_*\beta}$ is unobstructed}, so that:
-\begin{equation*} k^!_{\operatorname{v}} [ \Q{g}{n}{X}{f_*\beta} ] = \virt{\Q{g}{n}{Y}{\beta}} \end{equation*} \end{lem}
-
-\begin{proof} Note first that, since $k$ does not change the source curve of a quasimap, we indeed have a commuting triangle:
-\bcd
-\Q{g}{n}{Y}{\beta} \ar[rr,"k"] \ar[rd] & & \Q{g}{n}{X}{f_*\beta} \ar[ld] \\
-& \MM_{g,n} & 
-\ecd
-We have perfect obstruction theories $\EE_{\om{Q}(Y)/\MM}$ and $\EE_{\om{Q}(X)/\MM}$ and we want to find a perfect obstruction theory $\EE_k$. Consider the diagram of universal curves
-\bcd
-\mathcal{C}_Y \ar[r,"\alpha"] \ar[d,"\pi"] \ar[rd,phantom,"\square" right] & \mathcal{C}_{X} \ar[d,"\rho"] \\
-\Q{g}{n}{Y}{\beta} \ar[r,"k"] & \Q{g}{n}{X}{f_*\beta}
-\ecd
-which is cartesian because $k$ does not alter the source curve of any quasimap. We have sheaves $\mathcal{F}_Y$ and $\mathcal{F}_{X}$ on $\mathcal{C}_Y$ and $\mathcal{C}_{X}$ respectively such that:
-\begin{align*} \EE_{\om{Q}(Y)/\MM}^\vee & = \R \pi_* \mathcal{F}_Y \\
-\EE_{\om{Q}(X)/\MM}^\vee & = \R \rho_* \mathcal{F}_{X} \end{align*}
-It follows (by flatness of $\rho$) that when we pull back the latter obstruction theory to $\om{Q}(Y)$ we obtain:
-\begin{equation*} k^* \EE_{\om{Q}(X)/\MM}^\vee = \R \pi_* \alpha^* \mathcal{F}_{X} \end{equation*}
-To construct a compatible triple, we require a morphism $k^* \EE_{\om{Q}(X)/\MM} \to \EE_{\om{Q}(Y)/\MM}$. Dually, it is therefore enough to construct a morphism of sheaves on $\mathcal{C}_Y$
-\begin{equation*} \mathcal{F}_Y \to \alpha^* \mathcal{F}_{X} \end{equation*}
-and then apply $\R \pi_*$. This is analogous to the morphism $f^* T_Y \to f^* T_{X}|_Y$ which is used in the stable maps setting. However the construction for quasimaps requires a little more ingenuity, because we do not have access to a universal map $f$.
-
-The sheaf $\mathcal{F}_Y$ is defined on $\mathcal{C}_Y$ by the short exact sequence
-\begin{equation*} 0 \to \OO_{\mathcal{C}_Y}^{\oplus r_Y} \to \oplus_{\tau} \mathcal{L}_\tau \to \mathcal{F}_Y \to 0 \end{equation*}
-where $r_Y = \operatorname{rk} \Pic Y$ (implicitly we have chosen a basis for $\Pic Y$). Similarly $\mathcal{F}_{X}$ is defined on $\mathcal{C}_{X}$ by:
-\begin{equation*} 0 \to \OO_{\mathcal{C}_{X}}^{\oplus r_X} \to \oplus_{\rho} \mathcal{L}_\rho \to \mathcal{F}_{X} \to 0 \end{equation*}
-We will construct the map $\mathcal{F}_Y \to \alpha^* \mathcal{F}_{X}$ by first constructing a morphism:
-\begin{equation*} \oplus_{\tau} \mathcal{L}_\tau \to \alpha^* (\oplus_{\rho} \mathcal{L}_\rho) \end{equation*}
-Recall that $f\colon Y\to X$ is given by homogeneous polynomials
-\begin{equation*} P_\rho \in S^Y_{\beta_\rho} \subset S^Y = k[z_\tau : \tau \in \Sigma_Y(1)] \end{equation*}
-in the Cox ring of $Y$, where $\beta_{\rho}=f^*[D_\rho] \in \Pic Y$. For all monomials appearing in $P_\rho$, if we look at their exponents $(a_{\tau})_{\tau\in\Sigma_Y(1)}$, we have $\sum_{\tau\in\Sigma_Y(1)}a_\tau[D_\tau]=\beta_\rho$ by homogeneity; hence we can use the isomorphisms parametrised by $M_Y$ as in the proof of Proposition \ref{functoriality proposition} above in order to interpret the $(P_\rho)$ as a morphism
-\begin{equation*} (P_\rho)_{\rho\in\Sigma_X(1)}\colon \bigoplus_{\tau} \mathcal{L}_{\tau} \to \bigoplus_{\rho} \bigotimes_{\tau} \mathcal{L}_\tau^{\otimes a_\tau^\rho} = \bigoplus_{\rho} \tilde{\mathcal{L}}_\rho = \alpha^* \left( \bigoplus_{\rho} \mathcal{L}_\rho \right) 
-\end{equation*}
-where the notation is as in the proof of functoriality in \S \ref{Functoriality of Quasimap Spaces Section}. Thus we have constructed a morphism $\oplus_{\tau} \mathcal{L}_\tau \to \alpha^* (\oplus_{\rho} \mathcal{L}_\rho)$.
-
-On the other hand, $f\colon Y\to X$ induces a pullback map on line bundles $\Pic(X)\to\Pic(Y)$. Since we have implicitly chosen bases for these $\Z$-modules, this gives rise to a matrix, whose transpose we denote by:
-\begin{equation*} Q\in \operatorname{Mat}_{r_X\times r_Y}(\Z) \end{equation*}
-It is now clear by the functoriality construction that the left-hand square in the following diagram is commutative; hence it induces the (dashed) map of sheaves that we were after:
-\begin{equation}\label{diagram:functoriality}
-\begin{tikzcd}
-0 \ar[r] & \OO_{C_Y}^{\oplus r_Y} \ar[r] \ar[d,"Q"] & \oplus_{\tau} \mathcal{L}_\tau \ar[r] \ar[d,"{(P_\rho)}"] & \mathcal{F}_Y \ar[d,dashed]\ar[r] & 0 \\
-0 \ar[r] & \OO_{\mathcal{C}_{Y}}^{\oplus r_X} \ar[r] & \alpha^* \left(\oplus_{\rho} \mathcal{L}_\rho\right) \ar[r] & \alpha^* \mathcal{F}_{X} \ar[r] & 0
-\end{tikzcd}
-\end{equation}
-Applying $\R \pi_*$ and dualising we obtain a morphism between the obstruction theories for the quasimap spaces, and we can complete this to obtain an exact triangle
-\begin{equation*} k^* \EE_{\om{Q}(X)/\MM} \to \EE_{\om{Q}(Y)/\MM} \to \EE_k \xrightarrow{[1]}\end{equation*}
-on $\om{Q}(Y)$. The axioms of a triangulated category then give a morphism of exact triangles:
-\bcd
-k^* \EE_{\om{Q}(X)/\MM} \ar[r] \ar[d] & \EE_{\om{Q}(Y)/\MM} \ar[r] \ar[d] & \EE_k  \ar[r,"{[1]}"] \ar[d] & \, \\
-k^*\LL_{\om{Q}(X)/\MM} \ar[r] & \LL_{\om{Q}(Y)/\MM} \ar[r] & \LL_k \ar[r,"{[1]}"] & \,
-\ecd
-It follows from a simple diagram chase that $\EE_k \to \LL_k$ is a relative obstruction theory supported in $[-2,0]$. On the other hand, assuming that $\Q{g}{n}{X}{f_*\beta}$ is unobstructed, we may look at the long exact sequence in cohomology and find:
-\begin{equation*} 0 \to \h^{-2}(\EE_k) \to \h^{-1}(k^* \EE_{\om{Q}(X)/\MM}) = 0\end{equation*}
-Hence $\h^{-2}(\EE_k) = 0$ and so $\EE_k$ is perfect. \end{proof}
-
-\begin{remark} The short exact sequence defining $\mathcal{F}_X$ should be thought of as the pull-back of the Euler sequence
-\begin{equation*} 0 \to \OO_X^{\oplus r_X} \to \bigoplus_{\rho \in \Sigma_X(1)} \OO_X(D_\rho) \to \TT_X \to 0 \end{equation*}
-along the map $C \to X$, if such a map existed. In particular, if we work away from the locus of basepoints then $\mathcal{F}_X = u^* \TT_X$.\end{remark}
-
-In particular, for every smooth projective variety $i\colon X\hookrightarrow\PP^N$, we have a virtual pull-back morphism
-\begin{equation*} k^!_{\text{v}} : \Achow_*(\Q{0}{n}{\PP^N}{d}) \to \Achow_*(\Q{0}{n}{X}{\beta}) \end{equation*}
-where $d=i_*\beta$, and more generally for any cartesian diagram
-\bcd
-F \ar[r] \ar[d] \ar[rd,phantom,"\square" right] & G \ar[d] \\
-\Q{0}{n}{X}{\beta} \ar[r,"k"] & \Q{0}{n}{\PP^N}{d}
-\ecd
-we get an associated virtual pull-back morphism:
-\begin{equation*} k^!_{\text{v}} : \Achow_*(G) \to \Achow_*(F) \end{equation*}
-This is used in \S \ref{Section recursion formula in general case} to pull-back the recursion formula for the pair $(\PP^N,H)$ and obtain a recursion formula in the general case.
-\subsection{Splitting axiom} \label{Subsection splitting}
-
-In this section we consider certain boundary strata of the moduli space of quasimaps, called \ilemph{centipede loci}. These are the analogues in the absolute setting of the comb loci which appear in the relative setting (\S \ref{Subsection recursion formula for PN}). The general element of such a locus has a source curve with $r+1$ irreducible components, one ``trunk'' of the centipede and $r$ ``legs.'' Each of these components has a prescribed genus, curve class and set of marked points.
-
-Given such a locus, there are two natural virtual classes with which it can be equipped. One is the product virtual class induced by the absolute product of the $r+1$ quasimap spaces, and the other is the class pulled back from the ambient moduli space. In this section we show that these classes coincide. This is the quasimap version of the \emph{splitting axiom} from Gromov--Witten theory, called the \emph{cutting edges axiom} in \cite{Behrend}. The fact that this extends to the quasimap setting has been discussed in \cite[\S 2.3.3]{CF-K-higher-genus}; here we spell out the details.
-
-We first establish notation. Fix a smooth projective toric variety $X$ and numerical invariants $g,n,\beta$ such that the corresponding quasimap space is defined. Now fix partitions $G=(g_0,\ldots,g_r)$ of the genus, $A=(A_0,\ldots,A_r)$ of the marked points and $B=(\beta_0, \ldots, \beta_r)$ of the curve class and consider the following space (which we call the \ildef{centipede locus}):
-\begin{equation*} \D{X}{G,A}{B} := \Q{g_0}{A_0 \cup \{ q_1^0, \ldots, q_r^0 \}}{X}{\beta_0} \times_{X^r} \prod_{i=1}^r \Q{g_i}{A_i\cup\{q_i^1 \}}{X}{\beta_i} \end{equation*}
-Of course we assume that every element of the partition is in the stable range, so that every factor in the above product makes sense. See Remark \ref{Remark on definition of comb locus} for a justification of why these are the correct boundary strata to consider. We can equip the centipede locus with the product virtual class in the following way. Set
-\begin{equation*} \E{X}{G,A}{B} :=  \Q{g_0}{A_0 \cup \{ q_1^0, \ldots, q_r^0 \}}{X}{\beta_0} \times \prod_{i=1}^r \Q{g_i}{A_i\cup\{q_i^1\}}{X}{\beta_i} \end{equation*}
-which we endow with the product class:
-\begin{equation*} \virt{\E{X}{G,A}{B}} := \virt{\Q{g_0}{A_0 \cup \{ q_1^0, \ldots, q_r^0 \}}{X}{\beta_0}} \times \prod_{i=1}^r \virt{\Q{g_i}{A_i\cup\{q_i^1\}}{X}{\beta_i}} \end{equation*}
-We then consider the cartesian diagram:
-\begin{equation} \label{Product diagram}
-\begin{tikzcd}
-\D{X}{G,A}{B} \ar[r,"h"] \ar[d,"\ev_q"] \ar[rd,phantom,"\square"] & \E{X}{G,A}{B} \ar[d,"\ev_q"] \\
-X^r \ar[r,"\Delta_{X^r}"] & X^r \times X^r
-\end{tikzcd}
-\end{equation}
-Since $X$ is smooth $\Delta_{X^r}$ is a regular embedding, so we have a Gysin map which we use to define:
-\begin{equation*} \virt{\D{X}{G,A}{B}} := \Delta_{X^r}^! \virt{\E{X}{G,A}{B}} \end{equation*}
-Notice that if we set
-\begin{equation*} \MM_{G,A,B}^{\operatorname{wt}} := \MM_{g_0,A_0\cup\{q_1^0,\ldots,q_r^0\},\beta_0}^{\operatorname{wt}} \times \prod_{i=1}^r \MM_{g_i,A_i\cup\{q_i^1\},\beta_i}^{\operatorname{wt}} \end{equation*}
-then there is a morphism given by forgetting everything except the source curves and their classes
-\begin{equation*} \rho_E : \E{X}{G,A}{B} \to \MM_{G,A,B}^{\operatorname{wt}} \end{equation*}
-and the virtual class on $\E{X}{G,A}{B}$ is induced by a perfect obstruction theory $\EE_{\rho_E} \to \LL_{\rho_E}$ given by the product of the standard obstruction theories for each factor:
-\begin{equation*} \Q{g_i}{A_i\cup\{q_i\}}{X}{\beta_i}\to \MM_{g_i,A_i,\beta_i}^{\operatorname{wt}} \end{equation*}
-On the other hand, we have the following cartesian diagram
-\begin{equation} \label{Full quasimap diagram}
-\begin{tikzcd}
-\D{X}{G,A}{B} \ar[r,"\varphi"] \ar[d,"\rho_D"] \ar[rd,phantom,"\square"] & \Q{g}{n}{X}{\beta} \ar[d,"\rho_Q"] \\
-\MM_{G,A,B}^{\operatorname{wt}} \ar[r,"\psi"] & \MM_{g,n,\beta}^{\operatorname{wt}}
-\end{tikzcd}
-\end{equation}
-
-The bottom horizontal map is not a closed immersion: due to the existence of degree--$0$ rational components, there may be many possible equally valid ways of breaking up a nodal curve. For instance, consider the following example of two elements which map to the same curve under $\psi$.
-
-\begin{center}
-\begin{tikzpicture}[scale=.75,every node/.style={transform shape}]
-  \draw (0,0) -- node[left]{$(g_1,d_1)$} (2,2);
-  \draw[thick] (1,2) -- node[right]{\begin{tabular}{c} $(g,d)=$ \\ $(0,0)$ \end{tabular}} (3,0);
-  \draw[fill=black] (.5,.5) circle[radius=2pt] (2.5,.5) circle[radius=2pt];
-  \draw (4,0) -- node[right]{$(g_2,d_2)$}(6,2);
-  \draw[fill=black] (4.5,.5) circle[radius=2pt] (5.5,1.5) circle[radius=2pt];
-  
-  \draw (7,1) node{and};
-  
-  \draw (8,0) -- node[left]{$(g_1,d_1)$} (10,2);
-  \draw[fill=black] (8.5,.5) circle[radius=2pt] (9.5,1.5) circle[radius=2pt];
-  \draw[thick] (11,2) -- node[left]{\begin{tabular}{c} $(g,d)=$ \\ $(0,0)$ \end{tabular}} (13,0);
-  \draw (12,0) -- node[right]{$(g_2,d_2)$} (14,2);
-  \draw[fill=black] (11.5,1.5) circle[radius=2pt] (13.5,1.5) circle[radius=2pt];
-
-  \draw (7,-.5) node{both glue to};
-  
-  \draw (5,-1) -- node[left]{$(g_1,d_1)$}(7,-3) (7,-1) -- node[right]{$(g_2,d_2)$} (9,-3);
-  \draw[thick] (6,-3) -- node[above left=-.1cm]{$(0,0)$} (8,-1);
-  \draw[fill=black] (5.5,-1.5) circle[radius=2pt] (8.5,-2.5) circle[radius=2pt];
-\end{tikzpicture}
-\end{center}
-Nevertheless $\psi$ has a natural perfect obstruction theory, given by $\LL_{\psi}$: we only need to show that it is supported in $[-1,0]$. Consider the exact triangle:
-\begin{equation*} \psi^* \LL_{\MM_{g,n,\beta}^{\operatorname{wt}}} \to \LL_{\MM_{G,A,B}^{\operatorname{wt}}} \to \LL_\psi \xrightarrow{[1]} \end{equation*}
-The first two terms are concentrated in degrees $[0,1]$, because they are the cotangent complexes of smooth Artin stacks. Therefore $\LL_\psi$ is concentrated in degrees $[-1,1]$. Furthermore, if we examine the long exact cohomology sequence near $\h^1(\LL_\psi)$ we find
-\begin{equation*} \h^1(\psi^* \LL_{\MM_{g,n,\beta}^{\operatorname{wt}}}) \to \h^1(\LL_{\MM_{G,A,B}^{\operatorname{wt}}}) \to \h^1(\LL_\psi) \to 0 \end{equation*}
-and hence we must show that the first map is surjective. But this is dual to the map which takes an infinitesimal automorphism of the disconnected curve to an infinitesimal automorphism of the corresponding connected curve (obtained by glueing together the ``nodal'' marked points). The space of infinitesimal automorphisms of a nodal curve splits into a direct sum of infinitesimal automorphisms of each component; since the glueing does not affect the components, we see that this map is an isomorphism. Hence $\h^1(\LL_\psi) = 0$ as claimed; morally this follows from the fact that the fibres of $\psi$ are Deligne--Mumford.
-
-Hence there is a virtual pull-back map $\psi^!$ which defines a class
-\begin{equation*}\psi^! \virt{\Q{g}{n}{X}{\beta}} \end{equation*}
-on $\mathcal{D}^{\mathcal{Q}}(X,G,A,B)$. This is the same class as the one induced by the following perfect obstruction theory
-\begin{equation*} \varphi^* \EE_{\rho_Q} \to \LL_{\rho_D} \end{equation*}
-by functoriality of virtual pull-backs.
-
-Finally if we look at \eqref{Product diagram} we see that $\ev_q^* \LL_{\Delta_{X^r}} \to \LL_h$ is a perfect obstruction theory for the map $h$. To summarise, we have a triangle
-\begin{equation}\label{D-E-triangle}
- \begin{tikzcd}
-  \D{X}{G,A}{B} \ar[dr,"\rho_D" below=0.1cm] \ar[rr,"h"] & & \E{X}{G,A}{B}\ar[dl,"\rho_E"] \\
-& \MM_{G,A,B}^{\operatorname{wt}} &
- \end{tikzcd}
-\end{equation}
-where all three morphisms are equipped with perfect obstruction theories. We simply need to check that these fit together in a compatible triple.
-
-\begin{lemma} \label{Lemma product class equals pullback class} There is a compatible triple
-\begin{equation*}(h^* \EE_{\rho_E}, \varphi^*\EE_{\rho_Q}, \ev_q^*\LL_{\Delta_{X^r}}) \end{equation*}
-for the triangle \eqref{D-E-triangle}. Hence by functoriality of virtual pull-backs we have:
-\[
- \psi^!\virt{\Q{g}{n}{X}{\beta}}=\Delta_{X^r}^!\virt{\E{X}{G,A}{B}} = \virt{\D{X}{G,A}{B}}
-\]
-\end{lemma}
-\begin{proof}
- We need to construct a morphism of triangles
- \bcd
- h^*\EE_{\rho_E}\ar[r]\ar[d] & \varphi^*\EE_{\rho_Q}\ar[r]\ar[d] & \ev_q^*\LL_{\Delta_{X^r}}\ar[r,"{[1]}"]\ar[d] & {} \\
- h^* \LL_{\rho_E}\ar[r] & \LL_{\rho_D}\ar[r] & \LL_h\ar[r,"{[1]}"] & {}
- \ecd
- 
- Consider the following diagram:
-\bcd
-h^* \tilde{\mathcal{C}} \ar[r,"\nu"] \ar[rd,"\eta" below] & \varphi^* \mathcal{C} \ar[r] \ar[d] \ar[rd,phantom,"\square" right] & \mathcal{C} \ar[d,"\pi"] \\
-& \D{X}{G,A}{B} \ar[r,"\varphi"] & \Q{g}{n}{X}{\beta}
-\ecd
-Here $\tilde{C}$ is the universal (disconnected) curve over $\E{X}{G,A}{B}$, which we have pulled back to $\D{X}{G,A}{B}$, while $\varphi^* \mathcal{C}$ is the universal curve over $\D{X}{G,A}{B}$. Therefore the map $\nu : h^* \tilde{\mathcal{C}} \to \varphi^* \mathcal{C}$ is (fiberwise) a partial normalisation map given by normalising the nodes which connect the ``trunk'' of the centipede to the ``legs.''
-
-There are natural sheaves $\mathcal{F}$ and $\tilde{\mathcal{F}}$ on $\mathcal{C}$ and $h^* \tilde{\mathcal{C}}$ respectively, such that
-\begin{align*} \varphi^*\EE_{\rho_Q}^\vee & = \R \pi_* \mathcal{F} \\
-h^* \EE_{\rho_E}^\vee & = \R \eta_* \tilde{\mathcal{F}} \end{align*}
-Furthermore $\nu^*\mathcal{F}\simeq\tilde{\mathcal{F}}$, hence by tensoring the partial normalisation short exact sequence
-\begin{equation*} 0 \to \OO_{\varphi^*{\mathcal{C}}} \to \nu_* \OO_{h^* \tilde{\mathcal{C}}} \to \OO_q \to 0 \end{equation*}
-with $\mathcal{F}$ and applying the projection formula, we obtain
-\begin{equation*} 0 \to \mathcal{F} \to \nu_* \tilde{\mathcal{F}} \to \mathcal{F}_q \to 0 \end{equation*}
-on $\varphi^*\mathcal{C}$, where $q$ is the locus of nodes connecting the trunk to the spine. (The fact that the morphism on the left is injective follows by applying the Snake Lemma to the short exact sequence defining $\mathcal{F}$.) To this we can apply $\R \pi_*$ to obtain an exact triangle
-\begin{equation} \label{Normalisation exact triangle} \R \pi_* \mathcal{F} \to \R \eta_* \tilde{\mathcal{F}} \to \R \pi_* \mathcal{F}_q \xrightarrow{[1]} \end{equation}
-Finally, notice that, since quasimaps are required not to have base-points at the nodes, the fibre of the sheaf $\mathcal F$ at each of the nodes $q$ can actually be identified with the tangent to the toric variety $X$ at the image of the node itself, i.e. $\R \pi_* \mathcal{F}_q \cong \ev_q^* \TT_{X^r}= \ev_q^* \mathbf{\operatorname{T}}_{\Delta_{X^r}}[-1]$. Dualising sequence \eqref{Normalisation exact triangle} we obtain
-\begin{equation*} h^* \EE_{\rho_E} \to \varphi^* \EE_{\rho_Q} \to \ev_q^* \EE_{\Delta_{X^r}} \xrightarrow{[1]} \end{equation*}
-as required. \end{proof}
-\subsection{Comparison with the GIT construction} \label{Section comparison with GIT construction}
+\section{Comparison with the GIT construction} \label{Section comparison with GIT construction}
 
 Let $X$ be a smooth projective toric variety and $Y \hookrightarrow X$ a smooth very ample hypersurface. The complete linear system $|\OO_X(Y)|$ gives an embedding $i : X \hookrightarrow \PP^N$ which expresses $Y$ as the intersection inside $\PP^N$ of $X$ and a certain hyperplane $H$:
 \begin{equation*} Y=X\cap H = i^{-1}(H)\end{equation*}
