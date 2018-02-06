@@ -31,6 +31,15 @@
 \usepackage{booktabs}
 \usepackage{mathtools}
 
+\usepackage[]{textcomp}
+\usepackage[sups]{Baskervaldx}
+\usepackage{cabin}
+\usepackage[varqu,varl]{inconsolata}
+\usepackage[cal=cm]{mathalfa}
+
+%I removed this guy because he was messing up the tildes
+%\usepackage[baskervaldx,bigdelims,vvarbb]{newtxmath}
+
 \newcommand{\TT}{\operatorname{T}}
 \newcommand{\M}[4]{\overline{\mathcal{M}}_{#1,#2}(#3,#4)}
 \newcommand{\Q}[4]{\mathcal{Q}_{#1,#2}(#3,#4)}
@@ -541,11 +550,10 @@ over $\Spec \CC[\epsilon]/(\epsilon^2)$ which has no basepoints on $C_0$. We can
 
 $\overline{\mathcal{Q}^{\circ}_{0,\alpha}(\PP^N|H,d)}\subseteq\Q{0}{\alpha}{\PP^N|H}{d}$: consider a family of stable quasimaps over a smooth curve $S$, such that the generic fibre lies in the nice locus. We may  blow-up the source curve (a fibered surface over $S$) in the locus of basepoints (which consists of finitely many smooth points of the central fiber) and repeat this process a finite number of times in order to obtain an actual morphism to $\PP^N$. This has the effect of adding rational tails at the basepoints in the central fibre. If the morphism is constant on any of these rational tails we may contract them, and thus we obtain a family of stable maps which pushes down along $\chi$ to our original family of quasimaps.
 
-The general fibre is not modified at all, and so is still in the nice locus. By \cite[Lemma 1.9]{Ga} it follows that the central fibre is a relative stable map, and then by applying $\chi$ and appealing to Lemma \ref{lem:comparison} it follows that the same is true for the central fibre of the family of quasimaps.
-\end{proof}
+The general fibre is not modified at all, and so is still in the nice locus. By \cite[Lemma 1.9]{Ga} it follows that the central fibre is a relative stable map, and then by applying $\chi$ and appealing to Lemma \ref{lem:comparison} it follows that the same is true for the central fibre of the family of quasimaps. \end{proof}
 
 \begin{cor} The moduli space $\Q{0}{\alpha}{\PP^N|H}{d}$ is irreducible of the expected dimension. Hence it has a fundamental class. \end{cor}
-\begin{proof} This holds because the moduli space is equal to the closure of the nice locus, which is irreducible of the expected dimension. \end{proof}
+\begin{proof} This holds because the moduli space is equal to the closure of the nice locus, which is irreducible of the expected dimension.\end{proof}
 
 Since the moduli space of relative quasimaps has a fundamental class, we can define \emph{relative quasimap invariants} for the pair $(\PP^N,H)$:
 \begin{equation*} \left\langle \gamma_1 \psi_1^{k_1} , \ldots, \gamma_n \psi_n^{k_n} \right\rangle_{0,\alpha,d}^{\PP^N|H} := \int_{[\Q{0}{\alpha}{\PP^N|H}{d}]} \prod_{i=1}^n \ev_i^* \gamma_i \cdot \psi_i^{k_i} \end{equation*}
