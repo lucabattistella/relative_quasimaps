@@ -7,7 +7,7 @@
 \contentsline {section}{\tocsection {}{2}{Relative stable quasimaps}}{5}{section.2}
 \contentsline {subsection}{\tocsubsection {}{2.1}{Review of absolute stable quasimaps}}{5}{subsection.2.1}
 \contentsline {subsection}{\tocsubsection {}{2.2}{Review of relative stable maps}}{9}{subsection.2.2}
-\contentsline {subsection}{\tocsubsection {}{2.3}{Definition of relative stable quasimaps}}{11}{subsection.2.3}
+\contentsline {subsection}{\tocsubsection {}{2.3}{Definition of relative stable quasimaps}}{12}{subsection.2.3}
 \contentsline {section}{\tocsection {}{3}{Recursion formula for $\mathbb P^N$ relative a hyperplane}}{13}{section.3}
 \contentsline {subsection}{\tocsubsection {}{3.1}{Basic properties of the moduli space}}{14}{subsection.3.1}
 \contentsline {subsection}{\tocsubsection {}{3.2}{Proof of the recursion formula}}{17}{subsection.3.2}
@@ -25,7 +25,7 @@
 \contentsline {subsection}{\tocsubsection {}{A.2}{The comparison morphism preserves the virtual classes}}{41}{subsection.A.2}
 \contentsline {subsection}{\tocsubsection {}{A.3}{An example where the comparison morphism fails to exist}}{43}{subsection.A.3}
 \contentsline {section}{\tocsection {Appendix}{B}{Notes on quasimaps}}{45}{appendix.B}
-\contentsline {subsection}{\tocsubsection {}{B.1}{Functoriality}}{46}{subsection.B.1}
+\contentsline {subsection}{\tocsubsection {}{B.1}{Functoriality}}{45}{subsection.B.1}
 \contentsline {subsection}{\tocsubsection {}{B.2}{Relative obstruction theories for $\mathcal {Q}(Y)\rightarrow \mathcal {Q}(X)$}}{51}{subsection.B.2}
 \contentsline {subsection}{\tocsubsection {}{B.3}{Splitting axiom}}{55}{subsection.B.3}
 \contentsline {subsection}{\tocsubsection {}{B.4}{Comparison with the GIT construction}}{59}{subsection.B.4}
