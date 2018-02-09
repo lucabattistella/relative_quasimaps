@@ -658,7 +658,7 @@ in the Chow group of $\Q{0}{\alpha}{X|Y}{\beta}$.
 \begin{equation*} k := \om{Q}(i) : \Q{0}{n}{X}{\beta} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
 where $d=i_*\beta$. Because $\Q{0}{n}{\PP^N}{d}$ is smooth, $k$ admits a compatible perfect obstruction theory, so we have a notion of virtual pull-back along $k$.
 
-\begin{remark}
+\begin{remark}\label{Example of non-injectivity}
 I. Ciocan-Fontanine has kindly pointed out that, contrary to the case of stable maps, $k$ might not be a closed embedding, even though $i$ is. Consider the Segre embedding:
 \begin{align*}
 \PP^1\times\PP^1 & \xhookrightarrow{i} \PP^3\\ 
@@ -1100,7 +1100,9 @@ we can construct a section $u_Y$ of a line bundle $L_Y$ on $C$, which plays the 
 \begin{equation*} \Q{g}{n}{Y}{\beta} \subseteq \Q{g}{n}{X}{\beta} \end{equation*}
 consists of those quasimaps such that $u_Y \equiv 0$.
 
-The cartesian diagram above can also be used to endow $\Q{g}{n}{Y}{\beta}$ with a virtual class via virtual (or diagonal) pull-back along $k$. Thus we can define quasimap invariants for $Y$.
+When $g=0$, the moduli space $\Q{0}{n}{\PP^N}{d}$ is smooth and so there exists a natural perfect obstruction theory for the morphism $k$. Thus we have a virtual pull-back map $k^!$ (which also coincides with the diagonal pull-back: see Appendix \ref{appendix:intersection}). We use this to endow $\Q{0}{n}{Y}{\beta}$ with a virtual class:
+\begin{equation*} \virt{\Q{0}{n}{Y}{\beta}} := k^! [\Q{0}{n}{H}{d}] \end{equation*}
+Thus we can define quasimap invariants for $Y$.
 
 On the other hand, $Y$ has the natural structure of a GIT quotient
 \begin{equation*} Y = C(Y) \sslash G \end{equation*}
@@ -1125,7 +1127,7 @@ The obstruction theory on this space is defined relative to the stack $\mathfrak
 It is given by
 \begin{equation*} \EE_{\om{Q}/\mathfrak{Bun}^G_{g,n}}^\vee = \R \pi_* (u^*\TT_p) \end{equation*}
 where $\pi$ is the universal curve over $\om{Q} = \om{Q}^{\operatorname{GIT}}_{g,n}(Y,\beta)$ and $\TT_p$ is the relative tangent complex. There is a natural isomorphism
-\begin{equation*} \mathfrak{Bun}^{G}_{g,n} \cong \times^{r_X}_{\MM_{g,n}} \mathfrak{Pic_{g,n}} \end{equation*}
+\begin{equation*} \mathfrak{Bun}^{G}_{g,n} = \underbrace{\mathfrak{Pic_{g,n}} \times_{\MM_{g,n}} \ldots \times_{\MM_{g,n}} \mathfrak{Pic_{g,n}}}_{r_X} \end{equation*}
 given by sending $P$ to the $r_X$ individual factors of the affine bundle $P\times_{G}\mathbb A^{r_X}$. Furthermore there is a $G$-equivariant embedding
 \bcd
 P\times_{G} C(Y) \ar[r,hook, "j"]\ar[d,"p" left] & P\times_{G}\mathbb A^{\Sigma_X(1)}= \bigoplus_{\rho\in\Sigma_X(1)} L_{\rho}\ar[dl]\\
@@ -1133,7 +1135,19 @@ C \ar[u,bend right,"u"right] &
 \ecd
 which expresses $P \times_G C(Y)$ as the vanishing locus of $u_Y$ in $\oplus_{\rho \in \Sigma_X(1)} L_\rho$. This shows that the two definitions of the moduli space agree.
 
-Finally we must compare the virtual classes. Using the normal sheaf sequence for the inclusion $j$ (relative to the base $C$) we obtain a short exact sequence on $C$:
+\begin{remark} In Remark \ref{Example of non-injectivity} we saw that if $Y=\PP^1 \times \PP^1$ and $X=\PP^3$, with $Y \hookrightarrow X$ given by the Segre embedding, then the induced map
+\begin{equation*} \mathcal{Q}^{\operatorname{GIT}}_{0,3}(Y,(2,2)) \to \mathcal{Q}^{\operatorname{GIT}}_{0,3}(X,4)\end{equation*}
+is not injective.
+
+However, there is no contradiction between this and the discussion above. The somewhat subtle point is that the definition of the quasimap space depends on the presentation of the target as a GIT quotient \cite[\S 4.6]{CFKM}. In Remark \ref{Example of non-injectivity} we expressed $Y$ as a toric GIT quotient
+\begin{equation*} Y \cong \Aaff^4 \sslash \Gm^2 \end{equation*}
+whereas in the context of this appendix, $Y$ would be expressed as a more parsimonious quotient:
+\begin{equation*} Y \cong C(Y) \sslash \Gm \end{equation*}
+We saw before that the map $\mathcal{Q}^{\operatorname{GIT}}(\Aaff^4\sslash\Gm^2) \to \mathcal{Q}^{\operatorname{GIT}}(X)$ is not an embedding; however the map $\mathcal{Q}^{\operatorname{GIT}}(C(Y)\sslash\Gm) \to \mathcal{Q}^{\operatorname{GIT}}(X)$ is.
+
+This is quite easy to see: it is clear that $\mathcal{Q}^{\operatorname{GIT}}(H) \to \mathcal{Q}^{\operatorname{GIT}}(\PP^N)$ is a closed embedding, so the corresponding fact about $\mathcal{Q}^{\operatorname{GIT}}(Y) \to \mathcal{Q}^{\operatorname{GIT}}(X)$ follows by pull-back and the identification $\mathcal{Q}(Y) \cong \mathcal{Q}^{\operatorname{GIT}}(Y)$ established above.\end{remark}
+
+Finally, we must compare the virtual classes. Using the normal sheaf sequence for the inclusion $j$ (relative to the base $C$) we obtain a short exact sequence on $C$:
 \begin{equation*} 0 \to u^* \TT_p \to \bigoplus_{\rho \in \Sigma_X(1)} L_\rho \to u^* \NN_{P \times_G C(Y)/\oplus_{\rho \in \Sigma_X(1)} L_\rho} \to 0 \end{equation*}
 Since $P \times_G C(Y)$ is defined by the vanishing of $u_Y$, we see that the final term is isomorphic to the line bundle $L_Y$ discussed above. Thus we have a natural isomorphism of objects of the derived category:
 \begin{equation*} u^* \TT_p = \left[ \bigoplus_{\rho \in \Sigma_X(1)} L_\rho \to L_Y \right] \end{equation*}
