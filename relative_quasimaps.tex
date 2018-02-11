@@ -218,7 +218,7 @@ This restricts to a birational morphism between the relative spaces, which we us
 In \S \ref{Section recursion formula in general case} we turn to the case of an arbitrary pair $(X,Y)$ with $Y$ very ample. We use the embedding $X \hookrightarrow \PP^N$ defined by $\OO_X(Y)$ to construct a virtual class $\virt{\Q{0}{\alpha}{X|Y}{\beta}}$.
 We then prove the recursion formula for $(X,Y)$ by pulling back the formula for $(\PP^N,H)$. This requires several comparison theorems for virtual classes, extending results in Gromov--Witten theory to the setting of quasimaps. The full statement of the recursion formula is:
 
-\begin{customthm}{\ref{Theorem general recursion}} Let $X$ be a smooth and proper toric variety and let $Y \subseteq X$ be a very ample hypersurface (not necessarily toric). Then
+\begin{customthm}{\ref{Theorem general recursion}} Let $X$ be a smooth projective toric variety and let $Y \subseteq X$ be a very ample hypersurface (not necessarily toric). Then
 \begin{equation*} (\alpha_k \psi_k + \ev_k^* [Y]) \cap \virt{\Q{0}{\alpha}{X|Y}{\beta}} = \virt{\Q{0}{\alpha+e_k}{X|Y}{\beta}} + \virt{\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)} \end{equation*}
 in the Chow group of $\Q{0}{\alpha}{X|Y}{\beta}$. 
 \end{customthm}
@@ -227,7 +227,7 @@ in the Chow group of $\Q{0}{\alpha}{X|Y}{\beta}$.
 Finally in \S \ref{Section quasimap mirror theorem} we apply the recursion formula of \S \ref{Section recursion formula in general case} to obtain a Lefschetz-type formula for quasimap invariants, that is, a formula expressing quasimap invariants of $Y$ in terms of those of $X$. 
 
 \begin{customthm}{\ref{Theorem Quantum Lefschetz}}
-Let $X$ be a smooth toric Fano variety and let $i\colon Y \hookrightarrow X$ be a very ample hypersurface. Assume that $-K_Y$ is nef and that $Y$ contains all curve classes (see \S \ref{Subsection setup}). Then
+Let $X$ be a smooth projective toric Fano variety and let $i\colon Y \hookrightarrow X$ be a very ample hypersurface. Assume that $-K_Y$ is nef and that $Y$ contains all curve classes (see \S \ref{Subsection setup}). Then
 \begin{equation*}
 \dfrac{\sum_{\beta\geq 0} q^\beta\prod_{j=0}^{Y\cdot\beta}(Y+jz)S_0^X(z,\beta)}{P_0^X(q)}= \tilde{S}_0^Y(z,q)
 \end{equation*}
@@ -244,22 +244,23 @@ P_0^X(q) = 1 + \sum_{\substack{\beta>0 \\ K_Y\cdot\beta=0}} q^\beta(Y\cdot\beta)
 
 The argument is similar in spirit to the one given in \cite{Ga-MF}, however the stronger stability condition considerably simplifies both the proof and the final result. This formula can also be obtained as a consequence of \cite[Corollary~5.5.1]{CF-K-wallcrossing}; see \S \ref{Subsection CFK comparison}. 
 
-We also include two short appendices, dedicated to important but slightly technical lemmas. In Appendix~\ref{Section comparison with GIT construction} we show that the moduli space $\Q{g}{n}{Y}{\beta}$, defined in \S \ref{Section recursion formula in general case} as a closed substack of $\Q{g}{n}{X}{\beta}$, is in fact virtually isomorphic to the moduli space $\om{Q}^{\operatorname{GIT}}_{g,n}(Y,\beta)$ of stable quasimaps to the GIT quotient $C(Y)\sslash \Gm^r=Y$, as defined in \cite{CFKM}. In Appendix~\ref{appendix:intersection} we define the \emph{diagonal pull-back} along a morphism whose target is smooth (used implicitly in \cite{Ga}), and verify that it agrees with the virtual pull-back \cite{Manolache-Pull} when both are defined.
+%We also include a short appendix, dedicated to important but slightly technical lemmas. In Appendix~\ref{Section comparison with GIT construction} we show that the moduli space $\Q{g}{n}{Y}{\beta}$, defined in \S \ref{Section recursion formula in general case} as a closed substack of $\Q{g}{n}{X}{\beta}$, is in fact virtually isomorphic to the moduli space $\om{Q}^{\operatorname{GIT}}_{g,n}(Y,\beta)$ of stable quasimaps to the GIT quotient $C(Y)\sslash \Gm^r=Y$, as defined in \cite{CFKM}.
+In Appendix~\ref{appendix:intersection} we define the \emph{diagonal pull-back} along a morphism whose target is smooth, and verify that it agrees with the more modern concept of virtual pull-back \cite{Manolache-Pull} when both are defined. This has a historical motivation, since the diagonal pull-back was implicitly employed in \cite{Ga}.
 
 \begin{acknowledgements} We thank Tom Coates and Cristina Manolache for carefully reading this manuscript and for their helpful advice with both exposition and subject matter. We are grateful to Ionu\c{t} Ciocan-Fontanine for thoroughly examining a preliminary version of this manuscript and providing several clarifications and corrections. We would also like to thank Fabio Bernasconi, Andrea Petracci and Richard Thomas for useful conversations. 
 
 L.B. is supported by a Royal Society 1st Year URF and DHF Research Grant Scheme and N.N. by an EPSRC Standard DTP Scholarship.
 This work was supported by the Engineering and Physical Sciences Research Council grant EP/L015234/1: the EPSRC Centre for Doctoral Training in Geometry and Number Theory at the Interface.
 \end{acknowledgements}
+
+
 \subsection{Table of notation} We will use the following notation, most of which is introduced in the main body of the paper.
 %\tabulinesep=^0.4mm_0.4mm
 \begin{longtabu}{r c c p{0.8\linewidth}}
 $X$ & & & a smooth projective toric variety \\
 $Y$ & & & a smooth very ample hypersurface in $X$ \\
-$\Sigma$ & & & the fan of $X$ \\
-$\Sigma(1)$ & & & the set of $1$-dimensional cones of $\Sigma$ \\
-$\rho$ & & & an element of $\Sigma(1)$ \\
-$D_\rho$ & & & the toric divisor in $X$ corresponding to $\rho$ \\
+$\Sigma$, $\Sigma(1)$ & & & the fan of $X$, and the set of $1$-dimensional cones of $\Sigma$ \\
+$\rho$, $D_\rho$ & & & an element of $\Sigma(1)$, and the toric divisor in $X$ associated to it \\
 $\M{g}{n}{X}{\beta}$ & & & the moduli space of stable maps to $X$ \\
 $\M{0}{\alpha}{X|Y}{\beta}$ & & & the moduli space of relative stable maps to $(X,Y)$; see \S \ref{Subsection relative stable maps} \\
 $\Q{g}{n}{X}{\beta}$ & & & the moduli space of toric quasimaps to $X$; see \S \ref{Subsection stable quasimaps} \\
@@ -271,14 +272,15 @@ $\mathcal{E}^{\mathcal{Q}}(X|Y,A,B,M)$ & & & the total product for the comb locu
 $\mathcal{D}^{\mathcal{Q}}(X,A,B)$ & & & the quasimap centipede locus; see \S \ref{Subsection comb loci pull back} \\
 $\mathcal{E}^{\mathcal{Q}}(X,A,B)$ & & & the total product for the centipede locus; see \S \ref{Subsection comb loci pull back} \\
 $\MM^{\operatorname{wt}}_{g,n}$ & & & the moduli stack of weighted prestable curves; see \S \ref{Subsection comb loci pull back} \\
-$\mathfrak{Pic}_{g,n}^{d,\operatorname{st}}$ & & & an open substack of the relative Picard stack of the universal curve over $\MM_{g,n}$; see Appendix \ref{Section comparison with GIT construction} \\
-$\mathfrak{Bun}^{G}_{g,n}$ & & & the moduli stack of principal $G$-bundles on the universal curve over $\MM_{g,n}$; see Appendix \ref{Section comparison with GIT construction} \\
+%$\mathfrak{Pic}_{g,n}^{d,\operatorname{st}}$ & & & an open substack of the relative Picard stack of the universal curve over $\MM_{g,n}$; see Appendix \ref{Section comparison with GIT construction} \\
+$\mathfrak{Bun}^{G}_{g,n}$ & & & the moduli stack of principal $G$-bundles on the universal curve over $\MM_{g,n}$; see Remark \ref{Section comparison with GIT construction} \\
 $\om{Q}(f)$ & & & the push-forward morphism between quasimap spaces; see \S \ref{Subsection virtual class in general} \\
 $\chi$ & & & the comparison morphism from stable maps to quasimaps; see \S \ref{Subsection basic properties of the moduli space} \\
-$f^!$ & & & Gysin morphism for $f$ a regular embedding \\
+%$f^!$ & & & Gysin morphism for $f$ a regular embedding \\
 $f^!_{\text{v}}$ & & & virtual pull-back for $f$ virtually smooth; see Appendix \ref{appendix:intersection} \\
 $f^!_{\Delta}$ & & & diagonal pull-back; see Appendix \ref{appendix:intersection}
 \end{longtabu}
+ 
 
 \section{Relative stable quasimaps} \label{Section relative stable quasimaps}
 
@@ -315,7 +317,7 @@ of stable (toric) quasimaps to $X$, which is a proper Deligne--Mumford stack of 
 
 As with the case of stable maps, there is a combinatorial characterisation of stability which is easy to check in practice; a prestable quasimap is stable if and only if the following conditions hold:
 \begin{enumerate}
-\item the line bundle $L = \otimes_\rho L_\rho^{\otimes \alpha_\rho}$ must have strictly positive degree on any rational component with fewer than three special points, and on any elliptic component with no special points;
+\item the line bundle $L = \otimes_\rho L_\rho^{\otimes \alpha_\rho}$ must have strictly positive degree on any rational component with fewer than three special points, and on any elliptic component with no special points (case $(g,n)=(1,0)$);
 \item $C$ cannot have any rational components with fewer than two special points (that is, no \emph{rational tails}).
 \end{enumerate}
 Condition (1) is analogous to the ordinary stability condition for stable maps. Condition (2) is new, however, and gives quasimaps a distinctly different flavour to stable maps; we shall sometimes refer to it as the \ilemph{strong stability condition}. 
@@ -331,7 +333,7 @@ The moduli space $\Q{g}{n}{X}{\beta}$ admits a perfect obstruction theory relati
 \begin{equation*} \virt{\Q{g}{n}{X}{\beta}} \in \Achow_{\operatorname{vdim}\Q{g}{n}{X}{\beta}} \left( \Q{g}{n}{X}{\beta} \right) \end{equation*}
 where the virtual dimension is the same as for stable maps:
 \begin{equation*} \operatorname{vdim}\Q{g}{n}{X}{\beta} = (\dim{X} - 3)(1-g) - (K_X \cdot \beta) + n \end{equation*}
-Since the markings are not basepoints there exist evaluation maps
+Since the markings are not basepoints, there exist evaluation maps
 \begin{equation*} \ev_i : \Q{g}{n}{X}{\beta} \to X \end{equation*}
 and there are $\psi$-classes defined in the usual way by pulling back the relative dualising sheaf of the universal curve
 \begin{equation*} \psi_i = \operatorname{c}_1(x_i^* \omega_{\mathcal{C}/\om{Q}}) \end{equation*}
@@ -376,7 +378,7 @@ The image of the degree $1$ component under $f$ can be any line passing through 
 \begin{equation*} \omega_C(x_1 + \ldots + x_n)\otimes L^{\otimes \epsilon} \end{equation*} 
 is ample, is only required to hold for a fixed $\epsilon \in \QQ_{>0}$ (instead of for arbitrary $\epsilon$, as was the case with ordinary quasimaps).
 
-This has the effect of allowing some rational tails to appear, as long as their degree is high enough with respect to $\epsilon$. In order to keep the moduli space Deligne--Mumford and seperated, one also has to bound the multiplicity of the basepoints that can occur.
+This has the effect of allowing some rational tails to appear, as long as their degree is high enough with respect to $\epsilon$. In order to keep the moduli space Deligne--Mumford and separated, one also has to bound the multiplicity of the basepoints that can occur.
 
 By boundedness and the fact that the degree is an integer-valued function, there exist finitely many critical values of $\epsilon$ which divide $\QQ_{>0}$ into chambers inside which the moduli spaces $\Qe{g}{n}{X}{\beta}$ do not change.
 For $\epsilon$ sufficiently small we recover the space of (ordinary) quasimaps, and for $\epsilon$ sufficiently large we obtain the moduli space of stable maps. Thus one can view the spaces of $\epsilon$-stable quasimaps as interpolating between these two extremes, and they have proven  successful as a tool for comparing quasimap invariants to stable map invariants \cite{TodaStableQuotient} \cite{CF-K-wallcrossing}.
@@ -384,7 +386,7 @@ For $\epsilon$ sufficiently small we recover the space of (ordinary) quasimaps, 
 
 Another variant of the theory, which will play a role in later sections, is that of \emph{parametrised quasimaps} \cite[\S 7]{CF-K}. A parametrised quasimap comes with a preferred rational component, which is equipped with the extra data of an isomorphism with $\PP^1$, and the stability condition is imposed \emph{on all but the preferred component}. This mimics the construction of graph spaces in Gromov-Witten theory -- for example, there is a $\Gm$-action on $\QG{g}{n}{X}{\beta}$ by rotating the preferred component, which plays the role of the $\Gm$-action that rotates the graph. The fixed loci and their equivariant normal bundles are well-understood, at least in the toric setting \cite[\S 7]{CF-K}.  In the parametrised case we no longer require $2g-2+n\geq 0$, due to the modified stability condition. In particular it makes sense, and turns out to be very useful, to consider unmarked parametrised quasimaps $\QG{0}{0}{X}{\beta}$. In this case the source curve is necessarily irreducible. 
 
-\begin{example} $\QG{0}{0}{\PP^N}{d} = \PP^k$ with $k=(N+1)(d+1)-1$. Indeed, the curve and line bundle must be $(\PP^1,\mathcal O_{\PP^1}(d))$ and we are left with choosing $N+1$ sections of $\mathcal O_{\PP^1}(d)$ (not all zero) up to automorphisms of $\mathcal O_{\PP^1}(d)$, i.e. up to scaling. For early appearances of such spaces, see for instance \cite{Givental-mirror} \cite{MorrisonPlesser} \cite{Bertram}.\end{example}
+\begin{example} $\QG{0}{0}{\PP^N}{d} = \PP^K$ with $K=(N+1)(d+1)-1$. Indeed, the curve and line bundle must be $(\PP^1,\mathcal O_{\PP^1}(d))$ and we are left with choosing $N+1$ sections of $\mathcal O_{\PP^1}(d)$ (not all zero) up to automorphisms of $\mathcal O_{\PP^1}(d)$, i.e. up to scaling. For early appearances of such spaces, see for instance \cite{MorrisonPlesser} \cite{Givental-mirror} \cite{Bertram}.\end{example}
 
 \subsection{Review of relative stable maps} \label{Subsection relative stable maps} Given a smooth projective variety $X$ and a smooth very ample divisor $Y$, Gathmann's moduli space of relative stable maps parametrises stable maps to $X$ with specified tangencies to $Y$ at the marked points.
 
@@ -409,6 +411,8 @@ The definition given above works in families; however there is an equivalent, mo
 
 \begin{remark} In case (2) above we call $Z$ an \ilemph{internal} component and the $C^{(i)}$ \ilemph{external} components. Note that $Z$ is not necessarily irreducible. \end{remark}
 
+\begin{remark} Effectivity can be translated into a purely numerical condition because we are working in genus zero, hence $\Pic(Z)=\mathbb Z$. \end{remark}
+
 \begin{remark} When $\alpha = (0, \ldots, 0)$, condition (2) becomes $Y \cdot \beta \geq 0$, so $\M{0}{(0,\ldots,0)}{X|Y}{\beta} = \M{0}{n}{X}{\beta}$ as long as $Y$ is nef.\end{remark}
 
 \begin{remark} In the case of maximal multiplicity $\Sigma_{i} \alpha_i = Y \cdot \beta$, all the inequalities in the above definition must be equalities. \end{remark}
@@ -427,7 +431,7 @@ Thus one can define relative Gromov--Witten invariants in the usual way, by capp
 
 In \cite[\S\S 2-4]{Ga} Gathmann establishes a recursion relation inside the Chow group of $\M{0}{\alpha}{X|Y}{\beta}$. This describes what happens when we increase the multiplicity at one of the marked points by $1$. Let us therefore fix a marked point $x_k \in \{ x_1, \ldots, x_n \}$ and let $e_k = (0,\ldots,1,\ldots,0)$. Then
 \begin{equation*} (\alpha_k \psi_k + \ev_k^* [Y]) \cap \virt{\M{0}{\alpha}{X|Y}{\beta}} = \virt{\M{0}{\alpha+e_k}{X|Y}{\beta}} + \virt{\mathcal{D}_{\alpha,k}(X,\beta)} \end{equation*}
-where $\mathcal{D}_{\alpha,k}(X,\beta)$ is an appropriate \ilemph{comb locus}. This parametrises relative stable maps where the component containing $x_k$ is mapped entirely into $Y$, and which satisfy inequality \eqref{Relative stable map internal component inequality} for $\alpha$ but not for $\alpha+e_k$; these form a divisor in $\M{0}{\alpha}{X|Y}{\beta}$.
+where $\mathcal{D}_{\alpha,k}(X,\beta)$ is an appropriate \ilemph{comb locus}. This parametrises relative stable maps where the component containing $x_k$ is mapped entirely into $Y$, and which satisfy inequality \eqref{Relative stable map internal component inequality} for $\alpha$ but not for $\alpha+e_k$; these form a virtual divisor in $\M{0}{\alpha}{X|Y}{\beta}$.
 
 Repeated application of this result shows that both the relative Gromov--Witten invariants of $(X,Y)$ and the (restricted) Gromov--Witten invariants of $Y$ are completely determined by the Gromov--Witten invariants of $X$ \cite[Corollary 5.7]{Ga}. This result is then applied in \cite{Ga-MF} to obtain a new proof of the mirror theorem for projective hypersurfaces.
 
@@ -446,7 +450,7 @@ should ``map'' a point $x \in C$ into $Y$ if and only if the section
 \begin{equation} \label{uY expression} u_Y := \sum_{\underline{a}} \lambda_{\underline{a}} \prod_\rho u_\rho^{a_\rho} \end{equation}
 vanishes at $x$. We now explain how to make sense of expression \eqref{uY expression}. For each exponent $\underline{a}$ appearing in $s_Y$ we have a well-defined section:
 \begin{equation*} u_{\underline{a}} := \lambda_{\underline{a}} \prod_\rho u_\rho^{a_\rho} \in \HH^0(C,\otimes_\rho L_\rho^{\otimes a_\rho}) \end{equation*}
-Furthermore given two such $\underline{a}$ and $\underline{b}$, since $\sum_\rho a_\rho [D_\rho] = [Y] = \sum_\rho b_\rho [D_\rho]$ in $\Pic{X}$ it follows from the exact sequence
+Furthermore, given two such $\underline{a}$ and $\underline{b}$, since $\sum_\rho a_\rho [D_\rho] = [Y] = \sum_\rho b_\rho [D_\rho]$ in $\Pic{X}$ it follows from the exact sequence
 \begin{equation*} 0 \to M \to \Z^{\Sigma(1)} \to \Pic{X} \to 0 \end{equation*}
 that $\underline{a}$ and $\underline{b}$ differ by an element $m$ of $M$. Thus the isomorphism $\varphi_m$ allows us to view the sections $u_{\underline{a}}$ and $u_{\underline{b}}$ as sections of the same bundle, which we denote by $L_Y$ (there is a choice for $L_Y$ here, but up to isomorphism it does not matter). We can thus sum the $u_{\underline{a}}$ together to obtain $u_Y$.
 
@@ -494,15 +498,15 @@ At this stage we do not know much about the moduli space of relative quasimaps. 
 \subsection{Basic properties of the moduli space} \label{Subsection basic properties of the moduli space}
 We now show that the moduli space
 \begin{equation*} \Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
-is irreducible of the expected dimension, and thus admits a fundamental class. We then prove a recursion formula for these fundamental classes by pushing forward Gathmann's recursion formula along the comparison morphism:
+is irreducible of the expected dimension, and thus admits a fundamental class. We then prove a recursion formula for these fundamental classes by pushing d Gathmann's recursion formula along the comparison morphism:
 \begin{equation*}\chi : \M{0}{n}{\PP^N}{d} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
 Let us briefly recall what this morphism does. Every stable map defines a quasimap which is stable except for the fact that it may have rational tails. $\chi$ has the effect of contracting these rational tails and introducing a basepoint at the corresponding node, with multiplicity equal to the degree of the rational tail. 
 
-[PICTURE]
+%[PICTURE]
 
 For more details, see \cite[Theorem 3]{MOP} and \cite[Section 4.3]{Manolache-Push} (earlier manifestations of these ideas can be found in \cite{Bertram} and \cite{Popa-Roth}).
 
-For the remainder of this section we set $X=\PP^N$, denote the projective co-ordinates on $X$ by $[z_0: \cdots: z_N]$ and set $Y=H=\{ z_0 = 0 \}$. Given a quasimap
+For the remainder of this section we set $X=\PP^N$, denote the projective coordinates on $X$ by $[z_0: \ldots: z_N]$ and set $Y=H=\{ z_0 = 0 \}$. Given a quasimap
 \begin{equation*} \big((C,x_1,\ldots,x_n), L, u_0,\ldots,u_N\big) \in \Q{0}{n}{\PP^N}{d} \end{equation*}
 the line bundle $L_Y$ of the previous section is equal to $L$ and the section $u_Y$ is equal to $u_0$.
 
@@ -526,7 +530,7 @@ the \ilemph{nice locus}, consisting of those quasimaps with irreducible source c
 This is an irreducible, locally closed substack of $\Q{0}{n}{\PP^N}{d}$ of codimension $\Sigma_i \alpha_i$, by essentially the same argument as in \cite[Lemma 1.8]{Ga}. In fact it is isomorphic to the nice locus inside the stable map space, denoted $\mathcal M_{0,\alpha}(\PP^N|H,d)$ by Gathmann (see \cite[Def. 1.6]{Ga}); the stricter stability condition has no effect when the source curve is irreducible.
 
 \begin{lem} \label{lem:closure}
-$\Q{0}{\alpha}{\PP^N|H}{d}$ is equal to the closure of the nice locus $\mathcal{Q}^{\circ}_{0,\alpha}(\PP^N|H,d)$ inside $\Q{0}{n}{\PP^N}{d}$. 
+$\Q{0}{\alpha}{\PP^N|H}{d}$ is the closure of the nice locus $\mathcal{Q}^{\circ}_{0,\alpha}(\PP^N|H,d)$ inside $\Q{0}{n}{\PP^N}{d}$. 
 \end{lem}
 \begin{proof}
 $\Q{0}{\alpha}{\PP^N|H}{d}\subseteq\overline{\mathcal{Q}^{\circ}_{0,\alpha}(\PP^N|H,d)}$: we show that any relative stable quasimap can be infinitesimally deformed to a relative stable quasimap with no basepoints. This is in particular a relative stable map; we then appeal to \cite[Prop. 1.14]{Ga} to deform this stable map and obtain a point in the nice locus. Since this deformation does not introduce any rational tails, this is also a deformation of quasimaps, and the statement follows.
@@ -548,7 +552,7 @@ We can continue this process, replacing $C_0$ by $C_i$; since the genus of the c
 \begin{equation*} \big((C,x_1,\ldots,x_n),L,u_0, \ldots, u_{N-1}, u_N^\prime\big) \end{equation*}
 over $\Spec \CC[\epsilon]/(\epsilon^2)$ which has no basepoints on $C_0$. We can repeat this process for all the components of $C$ (using higher powers of $\epsilon$ each time in order to ensure that we never introduce additional basepoints) and thus we obtain an infinitesimal deformation of our original quasimap which has no basepoints, as required.
 
-$\overline{\mathcal{Q}^{\circ}_{0,\alpha}(\PP^N|H,d)}\subseteq\Q{0}{\alpha}{\PP^N|H}{d}$: consider a family of stable quasimaps over a smooth curve $S$, such that the generic fibre lies in the nice locus. We may  blow-up the source curve (a fibered surface over $S$) in the locus of basepoints (which consists of finitely many smooth points of the central fiber) and repeat this process a finite number of times in order to obtain an actual morphism to $\PP^N$. This has the effect of adding rational tails at the basepoints in the central fibre. If the morphism is constant on any of these rational tails we may contract them, and thus we obtain a family of stable maps which pushes down along $\chi$ to our original family of quasimaps.
+$\overline{\mathcal{Q}^{\circ}_{0,\alpha}(\PP^N|H,d)}\subseteq\Q{0}{\alpha}{\PP^N|H}{d}$: consider a family of stable quasimaps over a smooth curve $S$, such that the generic fibre lies in the nice locus. We may  blow-up the source curve (a fibred surface over $S$) in the locus of basepoints (which consists of finitely many smooth points of the central fibre) and repeat this process a finite number of times in order to obtain an actual morphism to $\PP^N$. This has the effect of adding rational trees at the basepoints in the central fibre. If the morphism is constant on any of these newly introduced rational tails or bridges we may contract them, and thus we obtain a family of stable maps which pushes down along $\chi$ to our original family of quasimaps.
 
 The general fibre is not modified at all, and so is still in the nice locus. By \cite[Lemma 1.9]{Ga} it follows that the central fibre is a relative stable map, and then by applying $\chi$ and appealing to Lemma \ref{lem:comparison} it follows that the same is true for the central fibre of the family of quasimaps. \end{proof}
 
@@ -639,7 +643,7 @@ Suppose for simplicity that $r$, the number of teeth of the comb, is equal to $1
 &\big((C^1,x^1_1,\ldots,x^1_{n_1},q^1),L^1,u^1_0, \ldots, u^1_N\big) \end{align*}
 such that $u^0(q^0) = u^1(q^1)$ in $\PP^N$. We want to glue these quasimaps together at $q^0$,~$q^1$. The definition of the curve is obvious; we simply take:
 \begin{equation*} C = C^0 \,_{q^0}\!\sqcup_{q^1} C^1 \end{equation*}
-On the other hand, gluing together the line bundles $L^0$ and $L^1$ to obtain a line bundle $L$ over $C$ requires a choice of scalar $\lambda \in \Gm$, in order to match up the fibres over $q^i$. Furthermore if the sections are to extend as well then this scalar must be chosen in such a way that it takes $(u^0_0(q^0), \ldots, u^0_N(q^0)) \in (L^0_{q^0})^{\oplus (N+1)}$ to $(u^1_0(q^1), \ldots, u^1_N(q^1)) \in (L^1_{q^1})^{\oplus (N+1)}$. Since neither $q^0$ nor $q^1$ are basepoints (because they are markings), these tuples are nonzero, and so $\lambda$ is unique if it exists. Furthermore it exists if and only if these tuples belong to the same $\Gm$-orbit in $\Aaff^{N+1}$. This is precisely the statement that $u^0(q^0) = u^1(q^1) \in \PP^N$. 
+On the other hand, gluing together the line bundles $L^0$ and $L^1$ to obtain a line bundle $L$ over $C$ requires a choice of scalar $\lambda \in \Gm$, in order to match up the fibres over $q^i$. Furthermore, if the sections are to extend as well, then this scalar must be chosen in such a way that it takes $(u^0_0(q^0), \ldots, u^0_N(q^0)) \in (L^0_{q^0})^{\oplus (N+1)}$ to $(u^1_0(q^1), \ldots, u^1_N(q^1)) \in (L^1_{q^1})^{\oplus (N+1)}$. Since neither $q^0$ nor $q^1$ are basepoints (because they are markings), these tuples are nonzero, and so $\lambda$ is unique if it exists. Furthermore it exists if and only if these tuples belong to the same $\Gm$-orbit in $\Aaff^{N+1}$. This is precisely the statement that $u^0(q^0) = u^1(q^1) \in \PP^N$. 
 
 Similar arguments apply for $r>1$, and for more general toric varieties. \end{remark}
 
@@ -647,7 +651,7 @@ Similar arguments apply for $r>1$, and for more general toric varieties. \end{re
 
 In this section we prove the main result of this paper: a recursion formula for relative quasimap invariants of a general pair $(X,Y)$.  
 
-\begin{thm} \label{Theorem general recursion} Let $X$ be a smooth and proper toric variety and let $Y \subseteq X$ be a very ample hypersurface (not necessarily toric). Then
+\begin{thm} \label{Theorem general recursion} Let $X$ be a smooth projective toric variety and let $Y \subseteq X$ be a very ample hypersurface (not necessarily toric). Then
 \begin{equation*} (\alpha_k \psi_k + \ev_k^* [Y]) \cap \virt{\Q{0}{\alpha}{X|Y}{\beta}} = \virt{\Q{0}{\alpha+e_k}{X|Y}{\beta}} + \virt{\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)} \end{equation*}
 in the Chow group of $\Q{0}{\alpha}{X|Y}{\beta}$. 
 \end{thm}
@@ -656,7 +660,7 @@ in the Chow group of $\Q{0}{\alpha}{X|Y}{\beta}$.
 
 \subsection{The virtual class on the space of relative quasimaps}\label{Subsection virtual class in general} Let $X$ and $Y$ be as in the statement of Theorem~\ref{Theorem general recursion}.  The complete linear system associated to $\OO_X(Y)$ defines an embedding $i : X \hookrightarrow \PP^N$ such that $i^{-1}(H) = Y$ for a certain hyperplane $H$. By the functoriality property of quasimap spaces (see \cite[\S 3.1]{CF-K-wallcrossing}) we have a map:
 \begin{equation*} k := \om{Q}(i) : \Q{0}{n}{X}{\beta} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
-where $d=i_*\beta$. Because $\Q{0}{n}{\PP^N}{d}$ is smooth, $k$ admits a compatible perfect obstruction theory, so we have a notion of virtual pull-back along $k$.
+where $d=i_*\beta$. %Because $\Q{0}{n}{\PP^N}{d}$ is smooth, $k$ admits a compatible perfect obstruction theory, so we have a notion of virtual pull-back along $k$.
 
 \begin{remark}\label{Example of non-injectivity}
 I. Ciocan-Fontanine has kindly pointed out that, contrary to the case of stable maps, $k$ might not be a closed embedding, even though $i$ is. Consider the Segre embedding:
@@ -679,7 +683,7 @@ Notice that this only happens on the locus of quasimaps with basepoints.
 
 It is easy to see that $k$ restricts to a morphism between moduli space of relative quasimaps, and thus we have a diagram
 \bcd
-\Q{0}{\alpha}{X|Y}{\beta} \ar[d, "f", hook] \ar[r, "g"] \ar[dr, phantom, "\square"] & \Q{0}{\alpha}{\PP^N|H}{d} \ar[d, "j", hook] \\
+\Q{0}{\alpha}{X|Y}{\beta} \ar[d, hook] \ar[r] \ar[dr, phantom, "\square"] & \Q{0}{\alpha}{\PP^N|H}{d} \ar[d, hook] \\
 \Q{0}{n}{X}{\beta}  \ar[r, "k"] & \Q{0}{n}{\PP^N}{d}
 \ecd
 which one can show is cartesian. Since $\Q{0}{n}{\PP^N}{d}$ is unobstructed, the morphism $k$ admits a natural perfect obstruction theory, and so there is a virtual pull-back morphism $k^!_{\operatorname{v}}$. Alternatively, we may use the presence of a virtual class on $\Q{0}{n}{X}{\beta}$ to define a diagonal pull-back morphism $k^!_{\Delta}$. The arguments in Appendix \ref{appendix:intersection} show that these two maps coincide, and from now on we will denote them both by $k^!$.
@@ -689,6 +693,79 @@ We now define the virtual class on $\Q{0}{\alpha}{X|Y}{\beta}$ by pull-back alon
 and use this class to define relative quasimap invariants in general:
 \begin{equation*} \langle \gamma_1 \psi_1^{k_1}, \ldots, \gamma_n \psi_n^{k_n} \rangle_{0,\alpha,\beta}^{X|Y} := \int_{\virt{\Q{0}{\alpha}{X|Y}{\beta}}} \prod_{i=1}^n \ev_i^*(\gamma_i) \cdot \psi_i^{k_i} \end{equation*}
 These invariants will play a role in our proof of the quasimap Lefschetz formula in \S \ref{Section quasimap mirror theorem}.
+
+\begin{remark}\label{Section comparison with GIT construction}
+
+When $\sum\alpha\geq d+1$ we get the following diagram:
+\bcd
+\Q{0}{n}{Y}{\beta}\ar[d, hook] \ar[r]\ar[rd,phantom,"\square"] & \Q{0}{n}{H}{d} \ar[d, hook] \\
+\Q{0}{n}{X}{\beta}\ar[r, "k"] & \Q{0}{n}{\PP^N}{d}
+\ecd
+This presents $\Q{0}{n}{Y}{\beta}$ as follows: let $s_Y$ denote the section of $\OO_X(Y)$ cutting out $Y$ inside $X$. Recall from \S \ref{Subsection relative stable quasimaps} that for any quasimap
+\begin{equation*} ((C,x_1,\ldots,x_n),(L_\rho,u_\rho)_{\rho \in \Sigma_X(1)}, (\varphi_m)_{m \in M_X}) \in \Q{0}{n}{X}{\beta} \end{equation*}
+we can construct a section $u_Y$ of a line bundle $L_Y$ on $C$, which plays the role of the pull-back of $s_Y$ to $C$. Then
+\begin{equation*} \Q{0}{n}{Y}{\beta} \subseteq \Q{0}{n}{X}{\beta} \end{equation*}
+consists of those quasimaps such that $u_Y \equiv 0$.
+
+Also, this diagram endows $\Q{0}{n}{Y}{\beta}$ with a virtual class by pull-back along $k$.
+
+In \cite{CFKM} moduli spaces of quasimaps are constructed for GIT quotient targets (under a number of conditions), and given a perfect obstruction theory. Notice that $Y$ has the natural structure of a GIT quotient (satisfying those conditions)
+\begin{equation*} Y = C(Y) \sslash G \end{equation*}
+where $C(Y)\subseteq \mathbb A^{\Sigma_X(1)}$ is the affine cone over $Y$ and $G=\Hom_{\mathbb Z}(\Pic(X),\Gm)\cong\Gm^{r_X}$ acts on $C(Y)$ via the natural inclusion
+\begin{equation*} \Gm^{r_X}\hookrightarrow \Gm^{\Sigma_X(1)} \end{equation*}
+(here $C(Y)\subseteq \mathbb{A}^{\Sigma_X(1)}$ is preserved by $G$ because it is cut out by a homogeneous equation). We claim here that the two perspectives on $\Q{0}{n}{Y}{\beta}$ and its virtual class do agree.
+
+Objects of $\om{Q}^{\operatorname{GIT}}_{0,n}(Y,\beta)$ are diagrams of the form
+\begin{comment}\bcd
+P \ar[d,"G"] \ar[r] & C(Y) \\ 
+C & \,
+\ecd
+where $C$ is a prestable curve, $P$ is a principal $G$-bundle and the map $P \to C(Y)$ is $G$-equivariant. Equivalently, an object consists of a prestable curve $C$, a principal $G$-bundle $P$ and a section $u$ of the associated $C(Y)$-bundle:
+\bcd
+P\times_{G} C(Y) \ar[d,"p" left] \\
+C \ar[u,bend right,"u"right]
+\ecd\end{comment}
+\bcd
+P\times_{G} C(Y) \ar[d,"p" left] \\
+C \ar[u,bend right,"u"right]
+\ecd
+where $C$ is a prestable curve, $P$ a principal $G$-bundle on it, and $u$ a section  of the associated $C(Y)$-bundle.
+
+The obstruction theory on this space is defined relative to the stack $\mathfrak{Bun}^{G}_{0,n}$ parametrising principal $G$-bundles on the universal curve
+$\mathcal{C}_{\MM_{0,n}} \to \MM_{0,n}$.
+It is given by
+\begin{equation*} \EE_{\om{Q}/\mathfrak{Bun}^G_{0,n}}^\vee = \R \pi_* (u^*\TT_p) \end{equation*}
+where $\pi$ is the universal curve over $\om{Q} = \om{Q}^{\operatorname{GIT}}_{0,n}(Y,\beta)$ and $\TT_p$ is the relative tangent complex. There is a natural isomorphism
+\begin{equation*} \mathfrak{Bun}^{G}_{0,n} = \underbrace{\mathfrak{Pic}_{0,n} \times_{\MM_{0,n}} \ldots \times_{\MM_{0,n}} \mathfrak{Pic}_{0,n}}_{r_X} \end{equation*}
+given by sending $P$ to the $r_X$ individual factors of the affine bundle $P\times_{G}\mathbb A^{r_X}$. Furthermore there is a $G$-equivariant embedding
+\bcd
+P\times_{G} C(Y) \ar[r,hook, "j"]\ar[d,"p" left] & P\times_{G}\mathbb A^{\Sigma_X(1)}= \bigoplus_{\rho\in\Sigma_X(1)} L_{\rho}\ar[dl]\\
+C \ar[u,bend right,"u"right] &
+\ecd
+which expresses $P \times_G C(Y)$ as the vanishing locus of $u_Y$ in $\oplus_{\rho \in \Sigma_X(1)} L_\rho$. This shows that the two definitions of the moduli space agree.
+
+Finally, we must compare the virtual classes. Using the normal sheaf sequence for the inclusion $j$ (relative to the base $C$) we obtain a short exact sequence on $C$:
+\begin{equation*} 0 \to u^* \TT_p \to \bigoplus_{\rho \in \Sigma_X(1)} L_\rho \to u^* \NN_{P \times_G C(Y)/\oplus_{\rho \in \Sigma_X(1)} L_\rho} \to 0 \end{equation*}
+Since $P \times_G C(Y)$ is defined by the vanishing of $u_Y$, we see that the final term is isomorphic to the line bundle $L_Y$ discussed above. Thus we have a natural isomorphism of objects of the derived category:
+\begin{equation*} u^* \TT_p = \left[ \bigoplus_{\rho \in \Sigma_X(1)} L_\rho \to L_Y \right] \end{equation*}
+Applying $\R \pi_*$ we obtain on the left hand side the obstruction theory for $\om{Q}^{\operatorname{GIT}}_{0,n}(Y,\beta)$ relative $\mathfrak{Bun}^G_{g,n}$. On the other hand, the first term on the right hand side is the obstruction theory for $\om{Q}(X)$ relative the product of the Picard stacks, %(isomorphic to $\mathfrak{Bun}^G_{g,n}$ via the discussion above) 
+whereas the second term is the relative obstruction theory for $\om{Q}(Y)$ inside $\om{Q}(X)$. Thus the virtual classes agree as well.
+
+\end{remark}
+
+\begin{remark} In Remark \ref{Example of non-injectivity} we saw that if $Y=\PP^1 \times \PP^1$ and $X=\PP^3$, with $Y \hookrightarrow X$ given by the Segre embedding, then the induced map
+\begin{equation*} \mathcal{Q}^{\operatorname{GIT}}_{0,3}(Y,(2,2)) \to \mathcal{Q}^{\operatorname{GIT}}_{0,3}(X,4)\end{equation*}
+is not injective.
+
+However, there is no contradiction between this and the discussion above. The somewhat subtle point is that the definition of the quasimap space depends on the presentation of the target as a GIT quotient \cite[\S 4.6]{CFKM}. In Remark \ref{Example of non-injectivity} we expressed $Y$ as a toric GIT quotient
+\begin{equation*} Y \cong \Aaff^4 \sslash \Gm^2 \end{equation*}
+whereas in the context of Remark \ref{Section comparison with GIT construction}, $Y$ would be expressed as a more parsimonious quotient:
+\begin{equation*} Y \cong C(Y) \sslash \Gm \end{equation*}
+The map $\mathcal{Q}^{\operatorname{GIT}}(\Aaff^4\sslash\Gm^2) \to \mathcal{Q}^{\operatorname{GIT}}(X)$ is not an embedding, but it factors through $\mathcal{Q}^{\operatorname{GIT}}(C(Y)\sslash\Gm) \hookrightarrow \mathcal{Q}^{\operatorname{GIT}}(X)$.
+
+%This is quite easy to see: it is clear that $\mathcal{Q}^{\operatorname{GIT}}(H) \to \mathcal{Q}^{\operatorname{GIT}}(\PP^N)$ is a closed embedding, so the corresponding fact about $\mathcal{Q}^{\operatorname{GIT}}(Y) \to \mathcal{Q}^{\operatorname{GIT}}(X)$ follows by pull-back and the identification $\mathcal{Q}(Y) \cong \mathcal{Q}^{\operatorname{GIT}}(Y)$ established above.
+\end{remark}
+
 
 \subsection{Relative spaces pull back}
 The idea is to prove the recursion formula for general $(X,Y)$ by pulling back the formula for $(\PP^N,H)$ along $k$. In order to do this, we need to understand how the various virtual classes involved in the formula pull back along this map. The first two terms pull back by the very definition of the virtual class:
@@ -703,7 +780,7 @@ where the union runs over all splittings $A = (A^{(0)},\ldots,A^{(r)})$ of the m
 Y \cdot \beta^{(0)} +\sum_{i=1}^r m^{(i)}=\sum \alpha^{(0)}
 \]
 We refer to the $\mathcal D^{\mathcal{Q}}(X|Y,A,B,M)$ as \emph{comb loci}.
-
+\begin{comment}
 \begin{remark} \label{GIT comparison remark} Note that $Y$ is not in general toric, and so we should clarify what we mean by:
 \begin{equation*} \om{Q}(Y) = \Q{0}{A^{(0)} \cup \{ q_1, \ldots, q_n \}}{Y}{\beta^{(0)}} \end{equation*}
 There are two possibilities here: one is to \emph{define} this space as the cartesian product
@@ -723,7 +800,7 @@ and so we may use the more general theory of quasimaps to GIT quotients \cite{CF
 
 In fact these two definitions of $\om{Q}(Y)$ agree:  there exists an isomorphism between these moduli spaces which preserves the virtual classes. We show this in Appendix~\ref{Section comparison with GIT construction}.
 \end{remark}
-
+\end{comment}
 We now construct a virtual class on the comb locus $\mathcal D^{\mathcal{Q}}(X|Y,A,B,M)$.  Consider the product (\emph{not} the fibre product over $Y^r$)
 \begin{equation*} \mathcal E^{\mathcal{Q}}(X|Y,A,B,M) := \Q{0}{A^{(0)} \cup \{q_1, \ldots, q_r\}}{Y}{\beta^{(0)}} \times \prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta^{(i)}} \end{equation*}
 which we may endow with the product virtual class (with weighting as before):
@@ -751,7 +828,7 @@ On the other hand, there is another cartesian diagram:
 Recall that we are trying to show that the virtual class of the comb locus pulls back nicely along $k$. The result that we need is:
 \begin{lem} \label{Comb loci pull back} $\displaystyle k^! \virt{\mathcal D^\mathcal{Q}(\PP^N|H,A,B^\prime,M)} = \sum_{B : i_* B = B^\prime} \virt{\mathcal D^\mathcal{Q}(X|Y,A,B,M)}$ \end{lem}
 
-For the proof of Lemma~\ref{Comb loci pull back}, let us introduce the following shorthand notation.  We fix the the data of $A$, $B^\prime$, $M$ for a comb locus of $(\PP^N,H)$, and set:
+For the proof of Lemma~\ref{Comb loci pull back}, let us introduce the following shorthand notation.  We fix the data of $A$, $B^\prime$, $M$ for a comb locus of $(\PP^N,H)$, and set:
 \begin{align*}
 \mathcal{D}(X|Y) & := \textstyle \coprod_{B \colon i_* B = B^\prime} \mathcal D^{\mathcal{Q}}(X|Y,A,B,M) &&& \mathcal{D}(\PP^N|H) & := \mathcal D^{\mathcal{Q}}(\PP^N|H,A,B^\prime,M)\\
 \mathcal{E}(X|Y) & := \textstyle \coprod_{B \colon i_* B = B^\prime} \mathcal E^{\mathcal{Q}}(X|Y,A,B,M) &&& \mathcal{E}(\PP^N|H) & := \mathcal E^{\mathcal{Q}}(\PP^N|H,A,B^\prime,M)\\
@@ -767,17 +844,12 @@ Here $\mathcal{D}(X)$ and $\mathcal{E}(X)$ are the so-called centipede loci; the
 Since $\mathcal{E}(\PP^N)$ is smooth (being a product of spaces of quasimaps to $\PP^N$) and there is a natural fundamental class on $\mathcal{E}(\PP^N|H)$, we have a diagonal pull-back morphism $\theta^! = \theta_{\Delta}^!$ (see Appendix~\ref{appendix:intersection}).
 \begin{lemma}\label{theta-pull} $\virt{\mathcal{E}(X|Y)}=\theta^!\virt{\mathcal{E}(X)}$ \end{lemma}
 \begin{proof}
-It suffices to check that in the following cartesian diagram
-\bcd
-\om{Q}(Y) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \om{Q}(H) \ar[d,"\theta"] \\
-\om{Q}(X) \ar[r] & \om{Q}(\PP^N)
-\ecd
-we have $\theta^! \virt{\om{Q}(X)} = \virt{\om{Q}(Y)}$. Depending on one's definition of $\om{Q}(Y)$ (see Remark \ref{GIT comparison remark} above) this is either true by definition or is proved in Appendix \ref{Section comparison with GIT construction}.
+It follows from the discussion in \S\ref{Subsection virtual class in general}.
 \end{proof}
 
 Now consider the following cartesian diagram
 \bcd
-\mathcal D(X)\ar[r]\ar[d,"\varphi_X"]\ar[dr,phantom,"\Box"] & \mathcal D(\PP^N)\ar[r]\ar[d,"\varphi_{\PP^N}"]\ar[dr,phantom,"\Box"] & \MM_{A,B}^{\operatorname{wt}}\ar[d,"\psi"] \\
+\mathcal D(X)\ar[r]\ar[d,"\varphi_{{}_X}"]\ar[dr,phantom,"\Box"] & \mathcal D(\PP^N)\ar[r]\ar[d,"\varphi_{\PP^N}"]\ar[dr,phantom,"\Box"] & \MM_{A,B}^{\operatorname{wt}}\ar[d,"\psi"] \\
 \om{Q}(X)\ar[r,"k"] & \om{Q}(\PP^N)\ar[r] & \MM_{0,n,\beta}^{\operatorname{wt}}
 \ecd
 where $\MM_{0,n,\beta}^{\operatorname{wt}}$ is the moduli space of prestable curves weighted by the class~$\beta$ \cite[\S 2]{Costello} and:
@@ -849,7 +921,7 @@ Now, since $X$ and $Y$ are smooth, we may use Poincar\'{e} duality to define a p
 \Q{0}{2}{Y}{\beta} \ar[rr,"\ev_1"] \ar[rd,"\ev_1" left=0.2cm] & & Y \ar[ld,"i"] \\
 & X & 
 \ecd
-Let us spell this out explicitly, in order to help familiarise the reader with the generating functions involved. First, it is easy to see from the projection formula that:
+Let us spell this out explicitly, in order to help the reader familiarise with the generating functions involved. First, it is easy to see from the projection formula that:
 \begin{align*} i_* \rho^i =
 \begin{cases} \eta^i \qquad \text{for $i = 1, \ldots, k$} \\
 0 \qquad \text{\ for $i = k+1, \ldots, l$} \end{cases} \end{align*}
@@ -913,7 +985,7 @@ Next consider the case of a comb with one tooth. Let $\beta^{(0)}$ and $\beta^{(
  \end{tikzpicture}
 \end{center}
 and the invariants which contribute take the form
-\begin{equation*} \bigg\langle \dfrac{\rho_i}{z-\psi_1},\rho^h\bigg\rangle_{0,2,\beta^{(0)}}^Y \bigg\langle \rho_h, \mathbbm 1_{X}\bigg\rangle_{0,(m^{(1)},0),\beta^{(1)}}^{X|Y} \end{equation*}
+\begin{equation*} \bigg\langle \dfrac{\rho_i}{z-\psi_1},\rho^h\bigg\rangle_{0,2,\beta^{(0)}}^Y \bigg\langle \rho_h, \mathbbm 1_{X}\bigg\rangle_{0,(m^{(1)},0),\beta^{(1)}}^{X|Y}\eta^i \end{equation*}
 for $i = 1, \ldots, k$ and $h = 1, \ldots, l$. By computing dimensions, we find
 \begin{align*}
 0\leq \codim \rho^h &= \dim Y-\codim \rho_h \\
@@ -983,9 +1055,9 @@ where the second equality holds because $Y\cdot\eta_1=\eta^1 \cdot \eta_1 = [\pt
 
 \begin{cor}
 Let $Y = Y_5 \subseteq  X = \PP^4$ be the quintic three-fold. Then
-\begin{equation*} \tilde{S}_0^{Y_5}(z,q)=\dfrac{I_{\text{sm}}^{Y_5}(z,q)}{P(q)} \end{equation*}
+\begin{equation*} \tilde{S}_0^{Y_5}(z,q)=\dfrac{I_{\text{small}}^{Y_5}(z,q)}{P(q)} \end{equation*}
 where
-\begin{equation*} I_{\text{sm}}^{Y_5}(z,q)=5H+\sum_{d>0}\frac{\prod_{j=0}^{5d}(H+jz)}{\prod_{j=0}^{d}(H+jz)^5} \ q^d \end{equation*}
+\begin{equation*} I_{\text{small}}^{Y_5}(z,q)=5H+\sum_{d>0}\frac{\prod_{j=0}^{5d}(H+jz)}{\prod_{j=0}^{d}(H+jz)^5} \ q^d \end{equation*}
 and:
 \begin{equation*} P(q)=1+\sum_{d>0}\frac{(5d)!}{(d!)^5}q^d \end{equation*}
 \end{cor}
@@ -1084,74 +1156,6 @@ which appears in our $P_0^X(q)$-series also appears in $S_0^X(z,\beta)$. So agai
 which proves \eqref{P epsilon equation}. We thus conclude that \eqref{Ciocan-Fontanine Theorem t zero} implies our Theorem~\ref{Theorem Quantum Lefschetz}. \end{proof}
 
 \appendix
-
-\section{Comparison with the GIT construction} \label{Section comparison with GIT construction}
-
-Let $X$ be a smooth projective toric variety and $Y \hookrightarrow X$ a smooth very ample hypersurface. The complete linear system $|\OO_X(Y)|$ gives an embedding $i : X \hookrightarrow \PP^N$ which expresses $Y$ as the intersection inside $\PP^N$ of $X$ and a certain hyperplane $H$:
-\begin{equation*} Y=X\cap H = i^{-1}(H)\end{equation*}
-We can \ilemph{define} the moduli space of quasimaps to $Y$ via the following cartesian diagram:
-\bcd
-\Q{g}{n}{Y}{\beta}\ar[d, hook] \ar[r]\ar[rd,phantom,"\square"] & \Q{g}{n}{H}{d} \ar[d, hook] \\
-\Q{g}{n}{X}{\beta}\ar[r, "k"] & \Q{g}{n}{\PP^N}{d}
-\ecd
-where $d=i_*\beta$. This moduli space is easy to describe: let $s_Y$ denote the section of $\OO_X(Y)$ cutting out $Y$ inside $X$. Recall from \S \ref{Subsection relative stable quasimaps} that for any quasimap
-\begin{equation*} ((C,x_1,\ldots,x_n),(L_\rho,u_\rho)_{\rho \in \Sigma_X(1)}, (\varphi_m)_{m \in M_X}) \in \Q{g}{n}{X}{\beta} \end{equation*}
-we can construct a section $u_Y$ of a line bundle $L_Y$ on $C$, which plays the role of the pull-back of $s_Y$ to $C$. Then
-\begin{equation*} \Q{g}{n}{Y}{\beta} \subseteq \Q{g}{n}{X}{\beta} \end{equation*}
-consists of those quasimaps such that $u_Y \equiv 0$.
-
-When $g=0$, the moduli space $\Q{0}{n}{\PP^N}{d}$ is smooth and so there exists a natural perfect obstruction theory for the morphism $k$. Thus we have a virtual pull-back map $k^!$ (which also coincides with the diagonal pull-back: see Appendix \ref{appendix:intersection}). We use this to endow $\Q{0}{n}{Y}{\beta}$ with a virtual class:
-\begin{equation*} \virt{\Q{0}{n}{Y}{\beta}} := k^! [\Q{0}{n}{H}{d}] \end{equation*}
-Thus we can define quasimap invariants for $Y$.
-
-On the other hand, $Y$ has the natural structure of a GIT quotient
-\begin{equation*} Y = C(Y) \sslash G \end{equation*}
-where $C(Y)\subseteq \mathbb A^{\Sigma_X(1)}$ is the affine cone over $Y$ and $G=\Hom_{\mathbb Z}(\Pic(X),\Gm)\cong\Gm^{r_X}$ acts on $C(Y)$ via the natural inclusion
-\begin{equation*} \Gm^{r_X}\hookrightarrow \Gm^{\Sigma_X(1)} \end{equation*}
-(here $C(Y)\subseteq \mathbb{A}^{\Sigma_X(1)}$ is preserved by $G$ because it is cut out by a homogeneous equation). In \cite{CFKM} moduli spaces of quasimaps are constructed for GIT quotient targets (under a number of conditions, all of which hold for $Y$). There is thus a moduli space
-\begin{equation*} \om{Q}^{\operatorname{GIT}}_{g,n}(Y,\beta) \end{equation*}
-which admits a virtual class. Hence we have two moduli spaces of quasimaps to $Y$, each equipped with a virtual class, and we want to check that these definitions agree.
-
-Objects of $\om{Q}^{\operatorname{GIT}}_{g,n}(Y,\beta)$ are diagrams of the form
-\bcd
-P \ar[d,"G"] \ar[r] & C(Y) \\ 
-C & \,
-\ecd
-where $C$ is a prestable curve, $P$ is a principal $G$-bundle and the map $P \to C(Y)$ is $G$-equivariant. Equivalently, an object consists of a prestable curve $C$, a principal $G$-bundle $P$ and a section $u$ of the associated $C(Y)$-bundle:
-\bcd
-P\times_{G} C(Y) \ar[d,"p" left] \\
-C \ar[u,bend right,"u"right]
-\ecd
-The obstruction theory on this space is defined relative to the stack $\mathfrak{Bun}^{G}_{g,n}$ parametrising principal $G$-bundles on the universal curve:
-\begin{equation*} \mathcal{C}_{\MM_{g,n}} \to \MM_{g,n} \end{equation*}
-It is given by
-\begin{equation*} \EE_{\om{Q}/\mathfrak{Bun}^G_{g,n}}^\vee = \R \pi_* (u^*\TT_p) \end{equation*}
-where $\pi$ is the universal curve over $\om{Q} = \om{Q}^{\operatorname{GIT}}_{g,n}(Y,\beta)$ and $\TT_p$ is the relative tangent complex. There is a natural isomorphism
-\begin{equation*} \mathfrak{Bun}^{G}_{g,n} = \underbrace{\mathfrak{Pic_{g,n}} \times_{\MM_{g,n}} \ldots \times_{\MM_{g,n}} \mathfrak{Pic_{g,n}}}_{r_X} \end{equation*}
-given by sending $P$ to the $r_X$ individual factors of the affine bundle $P\times_{G}\mathbb A^{r_X}$. Furthermore there is a $G$-equivariant embedding
-\bcd
-P\times_{G} C(Y) \ar[r,hook, "j"]\ar[d,"p" left] & P\times_{G}\mathbb A^{\Sigma_X(1)}= \bigoplus_{\rho\in\Sigma_X(1)} L_{\rho}\ar[dl]\\
-C \ar[u,bend right,"u"right] &
-\ecd
-which expresses $P \times_G C(Y)$ as the vanishing locus of $u_Y$ in $\oplus_{\rho \in \Sigma_X(1)} L_\rho$. This shows that the two definitions of the moduli space agree.
-
-\begin{remark} In Remark \ref{Example of non-injectivity} we saw that if $Y=\PP^1 \times \PP^1$ and $X=\PP^3$, with $Y \hookrightarrow X$ given by the Segre embedding, then the induced map
-\begin{equation*} \mathcal{Q}^{\operatorname{GIT}}_{0,3}(Y,(2,2)) \to \mathcal{Q}^{\operatorname{GIT}}_{0,3}(X,4)\end{equation*}
-is not injective.
-
-However, there is no contradiction between this and the discussion above. The somewhat subtle point is that the definition of the quasimap space depends on the presentation of the target as a GIT quotient \cite[\S 4.6]{CFKM}. In Remark \ref{Example of non-injectivity} we expressed $Y$ as a toric GIT quotient
-\begin{equation*} Y \cong \Aaff^4 \sslash \Gm^2 \end{equation*}
-whereas in the context of this appendix, $Y$ would be expressed as a more parsimonious quotient:
-\begin{equation*} Y \cong C(Y) \sslash \Gm \end{equation*}
-We saw before that the map $\mathcal{Q}^{\operatorname{GIT}}(\Aaff^4\sslash\Gm^2) \to \mathcal{Q}^{\operatorname{GIT}}(X)$ is not an embedding; however the map $\mathcal{Q}^{\operatorname{GIT}}(C(Y)\sslash\Gm) \to \mathcal{Q}^{\operatorname{GIT}}(X)$ is.
-
-This is quite easy to see: it is clear that $\mathcal{Q}^{\operatorname{GIT}}(H) \to \mathcal{Q}^{\operatorname{GIT}}(\PP^N)$ is a closed embedding, so the corresponding fact about $\mathcal{Q}^{\operatorname{GIT}}(Y) \to \mathcal{Q}^{\operatorname{GIT}}(X)$ follows by pull-back and the identification $\mathcal{Q}(Y) \cong \mathcal{Q}^{\operatorname{GIT}}(Y)$ established above.\end{remark}
-
-Finally, we must compare the virtual classes. Using the normal sheaf sequence for the inclusion $j$ (relative to the base $C$) we obtain a short exact sequence on $C$:
-\begin{equation*} 0 \to u^* \TT_p \to \bigoplus_{\rho \in \Sigma_X(1)} L_\rho \to u^* \NN_{P \times_G C(Y)/\oplus_{\rho \in \Sigma_X(1)} L_\rho} \to 0 \end{equation*}
-Since $P \times_G C(Y)$ is defined by the vanishing of $u_Y$, we see that the final term is isomorphic to the line bundle $L_Y$ discussed above. Thus we have a natural isomorphism of objects of the derived category:
-\begin{equation*} u^* \TT_p = \left[ \bigoplus_{\rho \in \Sigma_X(1)} L_\rho \to L_Y \right] \end{equation*}
-Applying $\R \pi_*$ we obtain on the left hand side the obstruction theory for the GIT moduli space relative $\mathfrak{Bun}^G_{g,n}$. On the other hand, the first term on the right hand side is the obstruction theory for $\om{Q}(X)$ relative the product of the Picard stacks (isomorphic to $\mathfrak{Bun}^G_{g,n}$ via the discussion above) whereas the second term is the relative obstruction theory for $\om{Q}(Y)$ inside $\om{Q}(X)$. Thus the virtual classes agree, as claimed.
 
 \section{Intersection-theoretic lemmas}\label{appendix:intersection}
 
