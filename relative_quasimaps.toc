@@ -22,4 +22,3 @@
 \contentsline {subsection}{\tocsubsection {}{5.4}{Comparison with the work of Ciocan-Fontanine and Kim}}{33}{subsection.5.4}
 \contentsline {section}{\tocsection {Appendix}{A}{Comparison with the GIT construction}}{37}{appendix.A}
 \contentsline {section}{\tocsection {Appendix}{B}{Intersection-theoretic lemmas}}{39}{appendix.B}
-\contentsline {section}{\tocsection {Appendix}{}{References}}{41}{section*.4}
