@@ -855,18 +855,6 @@ Summing over all the components of $\mathcal{D}^{\mathcal{Q}}_{\alpha,k}(\PP^N|H
 Apply $k^!$ to Proposition~\ref{Recursion formula for PN}, using Lemmas~\ref{Relative spaces pull back} and~\ref{Comb loci pull back}. 
 \end{proof}
 
-\begin{remark} Gathmann's insight is that his recursion formula provides us with an explicit algorithm to compute all restricted (and some unrestricted) absolute invariants of $Y$ and relative invariants of $(X,Y)$, provided we know the absolute invariants of $X$, with no extra positivity assumption on $X$ or $Y$ \cite[\S 5]{Ga}. His arguments carry over untouched to the quasimap setting; we recall them briefly here.
-
-The proof \cite[Corollary 5.7]{Ga} is by induction on $\sum \alpha,n,\beta$ in this order. Assume we want to compute the relative invariant $\langle \gamma_1 \psi_1^{k_1}, \ldots, \gamma_n \psi_n^{k_n} \rangle_{0,\alpha,\beta}^{X|Y}$; then we need to intersect $\virt{\Q{0}{\alpha}{X|Y}{\beta}}$ with $\psi_1^{k_1}\ev_1^*\gamma_1\cdot\ldots\cdot\psi_n^{k_n}\ev_n^*\gamma_n$ and take the degree. If $\sum\alpha=0$ then this is an absolute invariant of $X$, so it is known by assumption; otherwise choose $k$ such that $\alpha_k>0$. By applying the recursion formula \ref{Theorem general recursion} we may write
-\begin{equation*} \virt{\Q{0}{\alpha}{X|Y}{\beta}} =  ((\alpha_k-1) \psi_k + \ev_k^* [Y]) \cap \virt{\Q{0}{\alpha-e_k}{X|Y}{\beta}} - \virt{\mathcal D^\mathcal{Q}_{\alpha-e_k,k}(X|Y,\beta)} \end{equation*}
-The first term on the right hand side is a relative invariant with lower $\sum \alpha$, so it is known by induction hypothesis. On the other hand recall \S\ref{Comb loci pull back} that $\virt{\mathcal D^\mathcal{Q}_{\alpha-e_k,k}(X|Y,\beta)}$ is a sum of contributions, each obtained by a diagram of the following form:
-\bcd
-\mathcal D^{\mathcal{Q}}(X|Y,A,B,M) \ar[r]\ar[d]\ar[rd,phantom,"\Box"] & \Q{0}{A^{(0)} \cup \{q_1, \ldots, q_r\}}{Y}{\beta^{(0)}} \times \prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta^{(i)}}\ar[d] \\
-Y^r\ar[r,"\Delta_{Y^r}"] & Y^r\times Y^r
-\ecd
-So we may use a splitting of the diagonal in the cohomology ring $H^*(Y^r\times Y^r)$ to reduce the second summand in the recursion formula to a product of invariants with lower $\sum \alpha, n,$ or $\beta$. There is a caveat here: the splitting of the diagonal might introduce some unrestricted cohomology class $\tilde\gamma\in i^*H^*(X)^\perp$ in the picture, but Gathmann is able to show that when there is only one such insertion the resulting invariant (absolute or relative) vanishes; he then notices that the diagonal always contributes only one insertion to the relative invariants obtained by capping with $\virt{\Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta^{(i)}}}$, and since $\tilde\gamma^\vee\in i^*H^*(X)^\perp$ if and only if $\tilde\gamma\in i^*H^*(X)^\perp$, this implies that the only non-vanishing contributions to the invariants come from capping $\virt{\Q{0}{A^{(0)} \cup \{q_1, \ldots, q_r\}}{Y}{\beta^{(0)}}}$ with restricted classes as well. \end{remark}
-In the next section we see how these computations may be simplified and made explicit under some positivity assumption on the target varieties.
-
 \section{A Lefschetz-type theorem for quasimaps} \label{Section quasimap mirror theorem}
 
 In \cite{Ga-MF} Gathmann applies his recursion formula for relative stable maps to obtain a new proof of the mirror theorem for hypersurfaces \cite{Givental-equivariantGW} \cite{LLY1}. This can be viewed as a quantum Lefschetz formula, expressing stable map invariants of $Y$ in terms of those of $X$.
