@@ -13,12 +13,12 @@
 \contentsline {subsection}{\tocsubsection {}{3.2}{Proof of the recursion formula}}{18}{subsection.3.2}
 \contentsline {section}{\tocsection {}{4}{Recursion formula in the general case}}{21}{section.4}
 \contentsline {subsection}{\tocsubsection {}{4.1}{The virtual class on the space of relative quasimaps}}{21}{subsection.4.1}
-\contentsline {subsection}{\tocsubsection {}{4.2}{Relative spaces pull back}}{24}{subsection.4.2}
-\contentsline {subsection}{\tocsubsection {}{4.3}{Comb loci pull back}}{24}{subsection.4.3}
-\contentsline {section}{\tocsection {}{5}{A Lefschetz-type theorem for quasimaps}}{27}{section.5}
-\contentsline {subsection}{\tocsubsection {}{5.1}{Setup}}{28}{subsection.5.1}
-\contentsline {subsection}{\tocsubsection {}{5.2}{Generating functions for quasimap invariants}}{28}{subsection.5.2}
-\contentsline {subsection}{\tocsubsection {}{5.3}{Quasimap Lefschetz formula}}{30}{subsection.5.3}
-\contentsline {subsection}{\tocsubsection {}{5.4}{Comparison with the work of Ciocan-Fontanine and Kim}}{35}{subsection.5.4}
-\contentsline {section}{\tocsection {Appendix}{A}{Intersection-theoretic lemmas}}{39}{appendix.A}
-\contentsline {section}{\tocsection {Appendix}{}{References}}{40}{section*.4}
+\contentsline {subsection}{\tocsubsection {}{4.2}{Relative spaces pull back}}{22}{subsection.4.2}
+\contentsline {subsection}{\tocsubsection {}{4.3}{Comb loci pull back}}{22}{subsection.4.3}
+\contentsline {section}{\tocsection {}{5}{A Lefschetz-type theorem for quasimaps}}{28}{section.5}
+\contentsline {subsection}{\tocsubsection {}{5.1}{Setup}}{29}{subsection.5.1}
+\contentsline {subsection}{\tocsubsection {}{5.2}{Generating functions for quasimap invariants}}{29}{subsection.5.2}
+\contentsline {subsection}{\tocsubsection {}{5.3}{Quasimap Lefschetz formula}}{31}{subsection.5.3}
+\contentsline {subsection}{\tocsubsection {}{5.4}{Comparison with the work of Ciocan-Fontanine and Kim}}{36}{subsection.5.4}
+\contentsline {section}{\tocsection {Appendix}{A}{Intersection-theoretic lemmas}}{40}{appendix.A}
+\contentsline {section}{\tocsection {Appendix}{}{References}}{41}{section*.4}

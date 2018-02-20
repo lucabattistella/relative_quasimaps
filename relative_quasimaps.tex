@@ -684,85 +684,13 @@ It is easy to see that $k$ restricts to a morphism between moduli space of relat
 \Q{0}{\alpha}{X|Y}{\beta} \ar[d, hook] \ar[r] \ar[dr, phantom, "\square"] & \Q{0}{\alpha}{\PP^N|H}{d} \ar[d, hook] \\
 \Q{0}{n}{X}{\beta}  \ar[r, "k"] & \Q{0}{n}{\PP^N}{d}
 \ecd
-which one can show is cartesian. Since $\Q{0}{n}{\PP^N}{d}$ is unobstructed, the morphism $k$ admits a natural perfect obstruction theory, and so there is a virtual pull-back morphism $k^!_{\operatorname{v}}$. Alternatively, we may use the presence of a virtual class on $\Q{0}{n}{X}{\beta}$ to define a diagonal pull-back morphism $k^!_{\Delta}$. The arguments in Appendix \ref{appendix:intersection} show that these two maps coincide, and from now on we will denote them both by $k^!$.
+which one can show is cartesian. Since $\Q{0}{n}{\PP^N}{d}$ is unobstructed, the morphism $k$ admits a natural perfect obstruction theory, and so there is a virtual pull-back morphism $k^!_{\operatorname{v}}$. Alternatively, we may use the presence of a virtual class on $\Q{0}{n}{X}{\beta}$ to define a diagonal pull-back morphism $k^!_{\Delta}$. The discussion in Appendix \ref{appendix:intersection} shows that these two maps coincide, and from now on we will denote them both by $k^!$.
 
 We now define the virtual class on $\Q{0}{\alpha}{X|Y}{\beta}$ by pull-back along $k$
 \begin{equation*} \virt{\Q{0}{\alpha}{X|Y}{\beta}} := k^! [ \Q{0}{\alpha}{\PP^N|H}{d} ] \end{equation*}
 and use this class to define relative quasimap invariants in general:
 \begin{equation*} \langle \gamma_1 \psi_1^{k_1}, \ldots, \gamma_n \psi_n^{k_n} \rangle_{0,\alpha,\beta}^{X|Y} := \int_{\virt{\Q{0}{\alpha}{X|Y}{\beta}}} \prod_{i=1}^n \ev_i^*(\gamma_i) \cdot \psi_i^{k_i} \end{equation*}
 These invariants will play a role in our proof of the quasimap Lefschetz formula in \S \ref{Section quasimap mirror theorem}.
-
-\begin{remark}\label{Section comparison with GIT construction}
-
-When $\sum\alpha\geq d+1$ we get the following diagram:
-\bcd
-\Q{0}{n}{Y}{\beta}\ar[d, hook] \ar[r]\ar[rd,phantom,"\square"] & \Q{0}{n}{H}{d} \ar[d, hook] \\
-\Q{0}{n}{X}{\beta}\ar[r, "k"] & \Q{0}{n}{\PP^N}{d}
-\ecd
-This presents $\Q{0}{n}{Y}{\beta}$ as follows: let $s_Y$ denote the section of $\OO_X(Y)$ cutting out $Y$ inside $X$. Recall from \S \ref{Subsection relative stable quasimaps} that for any quasimap
-\begin{equation*} ((C,x_1,\ldots,x_n),(L_\rho,u_\rho)_{\rho \in \Sigma_X(1)}, (\varphi_m)_{m \in M_X}) \in \Q{0}{n}{X}{\beta} \end{equation*}
-we can construct a section $u_Y$ of a line bundle $L_Y$ on $C$, which plays the role of the pull-back of $s_Y$ to $C$. Then
-\begin{equation*} \Q{0}{n}{Y}{\beta} \subseteq \Q{0}{n}{X}{\beta} \end{equation*}
-consists of those quasimaps such that $u_Y \equiv 0$.
-
-Also, this diagram endows $\Q{0}{n}{Y}{\beta}$ with a virtual class by pull-back along $k$.
-
-In \cite{CFKM} moduli spaces of quasimaps are constructed for GIT quotient targets (under a number of conditions), and given a perfect obstruction theory. Notice that $Y$ has the natural structure of a GIT quotient (satisfying those conditions)
-\begin{equation*} Y = C(Y) \sslash G \end{equation*}
-where $C(Y)\subseteq \mathbb A^{\Sigma_X(1)}$ is the affine cone over $Y$ and $G=\Hom_{\mathbb Z}(\Pic(X),\Gm)\cong\Gm^{r_X}$ acts on $C(Y)$ via the natural inclusion
-\begin{equation*} \Gm^{r_X}\hookrightarrow \Gm^{\Sigma_X(1)} \end{equation*}
-(here $C(Y)\subseteq \mathbb{A}^{\Sigma_X(1)}$ is preserved by $G$ because it is cut out by a homogeneous equation). We claim here that the two perspectives on $\Q{0}{n}{Y}{\beta}$ and its virtual class do agree.
-
-Objects of $\om{Q}^{\operatorname{GIT}}_{0,n}(Y,\beta)$ are diagrams of the form
-\begin{comment}\bcd
-P \ar[d,"G"] \ar[r] & C(Y) \\ 
-C & \,
-\ecd
-where $C$ is a prestable curve, $P$ is a principal $G$-bundle and the map $P \to C(Y)$ is $G$-equivariant. Equivalently, an object consists of a prestable curve $C$, a principal $G$-bundle $P$ and a section $u$ of the associated $C(Y)$-bundle:
-\bcd
-P\times_{G} C(Y) \ar[d,"p" left] \\
-C \ar[u,bend right,"u"right]
-\ecd\end{comment}
-\bcd
-P\times_{G} C(Y) \ar[d,"p" left] \\
-C \ar[u,bend right,"u"right]
-\ecd
-where $C$ is a prestable curve, $P$ a principal $G$-bundle on it, and $u$ a section  of the associated $C(Y)$-bundle.
-
-The obstruction theory on this space is defined relative to the stack $\mathfrak{Bun}^{G}_{0,n}$ parametrising principal $G$-bundles on the universal curve
-$\mathcal{C}_{\MM_{0,n}} \to \MM_{0,n}$.
-It is given by
-\begin{equation*} \EE_{\om{Q}/\mathfrak{Bun}^G_{0,n}}^\vee = \R \pi_* (u^*\TT_p) \end{equation*}
-where $\pi$ is the universal curve over $\om{Q} = \om{Q}^{\operatorname{GIT}}_{0,n}(Y,\beta)$ and $\TT_p$ is the relative tangent complex. There is a natural isomorphism
-\begin{equation*} \mathfrak{Bun}^{G}_{0,n} = \underbrace{\mathfrak{Pic}_{0,n} \times_{\MM_{0,n}} \ldots \times_{\MM_{0,n}} \mathfrak{Pic}_{0,n}}_{r_X} \end{equation*}
-given by sending $P$ to the $r_X$ individual factors of the affine bundle $P\times_{G}\mathbb A^{r_X}$. Furthermore there is a $G$-equivariant embedding
-\bcd
-P\times_{G} C(Y) \ar[r,hook, "j"]\ar[d,"p" left] & P\times_{G}\mathbb A^{\Sigma_X(1)}= \bigoplus_{\rho\in\Sigma_X(1)} L_{\rho}\ar[dl]\\
-C \ar[u,bend right,"u"right] &
-\ecd
-which expresses $P \times_G C(Y)$ as the vanishing locus of $u_Y$ in $\oplus_{\rho \in \Sigma_X(1)} L_\rho$. This shows that the two definitions of the moduli space agree.
-
-Finally, we must compare the virtual classes. Using the normal sheaf sequence for the inclusion $j$ (relative to the base $C$) we obtain a short exact sequence on $C$:
-\begin{equation*} 0 \to u^* \TT_p \to \bigoplus_{\rho \in \Sigma_X(1)} L_\rho \to u^* \NN_{P \times_G C(Y)/\oplus_{\rho \in \Sigma_X(1)} L_\rho} \to 0 \end{equation*}
-Since $P \times_G C(Y)$ is defined by the vanishing of $u_Y$, we see that the final term is isomorphic to the line bundle $L_Y$ discussed above. Thus we have a natural isomorphism of objects of the derived category:
-\begin{equation*} u^* \TT_p = \left[ \bigoplus_{\rho \in \Sigma_X(1)} L_\rho \to L_Y \right] \end{equation*}
-Applying $\R \pi_*$ we obtain on the left hand side the obstruction theory for $\om{Q}^{\operatorname{GIT}}_{0,n}(Y,\beta)$ relative $\mathfrak{Bun}^G_{g,n}$. On the other hand, the first term on the right hand side is the obstruction theory for $\om{Q}(X)$ relative the product of the Picard stacks, %(isomorphic to $\mathfrak{Bun}^G_{g,n}$ via the discussion above) 
-whereas the second term is the relative obstruction theory for $\om{Q}(Y)$ inside $\om{Q}(X)$. Thus the virtual classes agree as well.
-
-\end{remark}
-
-\begin{remark} In Remark \ref{Example of non-injectivity} we saw that if $Y=\PP^1 \times \PP^1$ and $X=\PP^3$, with $Y \hookrightarrow X$ given by the Segre embedding, then the induced map
-\begin{equation*} \mathcal{Q}^{\operatorname{GIT}}_{0,3}(Y,(2,2)) \to \mathcal{Q}^{\operatorname{GIT}}_{0,3}(X,4)\end{equation*}
-is not injective.
-
-However, there is no contradiction between this and the discussion above. The somewhat subtle point is that the definition of the quasimap space depends on the presentation of the target as a GIT quotient \cite[\S 4.6]{CFKM}. In Remark \ref{Example of non-injectivity} we expressed $Y$ as a toric GIT quotient
-\begin{equation*} Y \cong \Aaff^4 \sslash \Gm^2 \end{equation*}
-whereas in the context of Remark \ref{Section comparison with GIT construction}, $Y$ would be expressed as a more parsimonious quotient:
-\begin{equation*} Y \cong C(Y) \sslash \Gm \end{equation*}
-The map $\mathcal{Q}^{\operatorname{GIT}}(\Aaff^4\sslash\Gm^2) \to \mathcal{Q}^{\operatorname{GIT}}(X)$ is not an embedding, but it factors through $\mathcal{Q}^{\operatorname{GIT}}(C(Y)\sslash\Gm) \hookrightarrow \mathcal{Q}^{\operatorname{GIT}}(X)$.
-
-%This is quite easy to see: it is clear that $\mathcal{Q}^{\operatorname{GIT}}(H) \to \mathcal{Q}^{\operatorname{GIT}}(\PP^N)$ is a closed embedding, so the corresponding fact about $\mathcal{Q}^{\operatorname{GIT}}(Y) \to \mathcal{Q}^{\operatorname{GIT}}(X)$ follows by pull-back and the identification $\mathcal{Q}(Y) \cong \mathcal{Q}^{\operatorname{GIT}}(Y)$ established above.
-\end{remark}
 
 
 \subsection{Relative spaces pull back}
@@ -778,28 +706,75 @@ where the union runs over all splittings $A = (A^{(0)},\ldots,A^{(r)})$ of the m
 Y \cdot \beta^{(0)} +\sum_{i=1}^r m^{(i)}=\sum \alpha^{(0)}
 \]
 We refer to the $\mathcal D^{\mathcal{Q}}(X|Y,A,B,M)$ as \emph{comb loci}.
-\begin{comment}
-\begin{remark} \label{GIT comparison remark} Note that $Y$ is not in general toric, and so we should clarify what we mean by:
-\begin{equation*} \om{Q}(Y) = \Q{0}{A^{(0)} \cup \{ q_1, \ldots, q_n \}}{Y}{\beta^{(0)}} \end{equation*}
-There are two possibilities here: one is to \emph{define} this space as the cartesian product
+
+\begin{remark}\label{Section comparison with GIT construction}
+\label{GIT comparison remark}Note that $Y$ is not in general toric, and so we should clarify the meaning of the factor
+\begin{equation*} \Q{0}{A^{(0)} \cup \{ q_1, \ldots, q_n \}}{Y}{\beta^{(0)}} \end{equation*}
+above. There are two possibilities here: one is to \emph{define} this space as the cartesian product
 \bcd
-\om{Q}(Y) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \om{Q}(H) \ar[d] \\
-\om{Q}(X) \ar[r,"k"] & \om{Q}(\PP^N)
+\om{Q}_{0,n}(Y,\beta) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \om{Q}_{0,n}(H,d) \ar[d] \\
+\om{Q}_{0,n}(X,\beta) \ar[r,"k"] & \om{Q}_{0,n}(\PP^N,d)
 \ecd
 and equip it with the virtual class pulled back along $k$:
-\begin{equation*} \virt{\om{Q}(Y)} := k^! [ \om{Q}(H) ] \end{equation*}
-Using this definition, $\om{Q}(Y)$ consists of those quasimaps in $\om{Q}(X)$ for which $u_Y \equiv 0$.
+\begin{equation*} \virt{\om{Q}_{0,n}(Y,\beta)} := k^! [ \om{Q}_{0,n}(H,d) ] \end{equation*}
+Using this definition, $\om{Q}_{0,n}(Y,\beta)$ consists of those quasimaps in $\om{Q}_{0,n}(X,\beta)$ for which the section $u_Y$ (constructed in \S \ref{Subsection relative stable quasimaps}) is identically zero.
 This has obvious advantages from the point of view of our computations, but is conceptually unsatisfying. 
 
-On the other hand, $X$ is a GIT quotient  $\Aaff^{\Sigma_X(1)}  \sslash \Gm^r$, and $Y \subseteq X$ defines a $\Gm^r$-invariant subvariety $C(Y)$ of $\Aaff^{\Sigma_X(1)}$, which we call the \ilemph{cone over Y}.
-Then $Y$ is equal to the GIT quotient
-\begin{equation*} Y = C(Y) \sslash \Gm^r \end{equation*}
-and so we may use the more general theory of quasimaps to GIT quotients \cite{CFKM} to define $\om{Q}(Y)$ and its virtual class.  
+On the other hand, in \cite{CFKM} moduli spaces of stable quasimaps are constructed for GIT quotient targets satisfying a number of conditions. Since $Y$ is a hypersurface in a toric variety, it has a natural presentation as such a GIT quotient
+\begin{equation*} Y = C(Y) \sslash G \end{equation*}
+where $C(Y)\subseteq \mathbb A^{\Sigma_X(1)}$ is the affine cone over $Y$ and $G=\Hom_{\mathbb Z}(\Pic(X),\Gm)\cong\Gm^{r_X}$ acts on $C(Y)$ via the natural inclusion
+\begin{equation*} \Gm^{r_X}\hookrightarrow \Gm^{\Sigma_X(1)} \end{equation*}
+(here $C(Y)\subseteq \mathbb{A}^{\Sigma_X(1)}$ is preserved by $G$ because it is cut out by a homogeneous polynomial in the Cox ring of $X$). Thus, we have two possible definitions of $\om{Q}_{0,n}(Y,\beta)$ and its virtual class; we will now show that they agree.
 
-In fact these two definitions of $\om{Q}(Y)$ agree:  there exists an isomorphism between these moduli spaces which preserves the virtual classes. We show this in Appendix~\ref{Section comparison with GIT construction}.
+Objects of $\om{Q}^{\operatorname{GIT}}_{0,n}(Y,\beta)$ are diagrams of the form
+%\begin{comment}\bcd
+%P \ar[d,"G"] \ar[r] & C(Y) \\ 
+%C & \,
+%\ecd
+%where $C$ is a prestable curve, $P$ is a principal $G$-bundle and the map $P \to C(Y)$ is $G$-equivariant. Equivalently, an object consists of a prestable curve $C$, a principal $G$-bundle $P$ and a section $u$ of the associated $C(Y)$-bundle:
+%\bcd
+%P\times_{G} C(Y) \ar[d,"p" left] \\
+%C \ar[u,bend right,"u"right]
+%\ecd\end{comment}
+\bcd
+P\times_{G} C(Y) \ar[d,"p" left] \\
+C \ar[u,bend right,"u"right]
+\ecd
+where $C$ is a prestable curve, $P$ is a principal $G$-bundle on $C$, and $u$ is a section of the associated $C(Y)$-bundle. Given this data, there is a $G$-equivariant embedding
+\bcd
+P\times_{G} C(Y) \ar[r,hook, "j"]\ar[d,"p" left] & P\times_{G}\mathbb A^{\Sigma_X(1)}= \bigoplus_{\rho\in\Sigma_X(1)} L_{\rho}\ar[dl]\\
+C \ar[u,bend right,"u"right] &
+\ecd
+which expresses $P \times_G C(Y)$ as the vanishing locus of $u_Y$, viewed as a section of a line bundle on the total space of $\oplus_{\rho \in \Sigma_X(1)} L_\rho$. This shows that the two definitions of the moduli space agree.
+
+It remains to compare the virtual classes. The obstruction theory on the GIT space is defined relative to the stack $\mathfrak{Bun}^{G}_{0,n}$ parametrising principal $G$-bundles on the universal curve
+$\mathcal{C}_{\MM_{0,n}} \to \MM_{0,n}$.
+It is given by
+\begin{equation*} \EE_{\om{Q}/\mathfrak{Bun}^G_{0,n}}^\vee = \R \pi_* (u^*\TT_p) \end{equation*}
+where $\pi$ is the universal curve over $\om{Q} = \om{Q}^{\operatorname{GIT}}_{0,n}(Y,\beta)$ and $\TT_p$ is the relative tangent complex of the projection map $\rho$. There is a natural isomorphism
+\begin{equation*} \mathfrak{Bun}^{G}_{0,n} = \underbrace{\mathfrak{Pic}_{0,n} \times_{\MM_{0,n}} \ldots \times_{\MM_{0,n}} \mathfrak{Pic}_{0,n}}_{r_X} \end{equation*}
+given by sending $P$ to the $r_X$ individual factors of the affine bundle $P\times_{G}\mathbb A^{r_X}$. 
+Using the normal sheaf sequence for the inclusion $j$ in the diagram above (all relative to the base $C$) we obtain a short exact sequence on $C$:
+\begin{equation*} 0 \to u^* \TT_p \to \bigoplus_{\rho \in \Sigma_X(1)} L_\rho \to u^* \NN_{P \times_G C(Y)/\oplus_{\rho \in \Sigma_X(1)} L_\rho} \to 0 \end{equation*}
+Since $P \times_G C(Y)$ is defined by the vanishing of $u_Y$, we see that the final term is isomorphic to the line bundle $L_Y$ discussed above. Thus we have a natural isomorphism of objects of the derived category:
+\begin{equation*} u^* \TT_p = \left[ \bigoplus_{\rho \in \Sigma_X(1)} L_\rho \to L_Y \right] \end{equation*}
+Applying $\R \pi_*$ we obtain on the left hand side the obstruction theory for $\om{Q}^{\operatorname{GIT}}_{0,n}(Y,\beta)$ relative $\mathfrak{Bun}^G_{0,n}$. On the other hand, the first term on the right hand side is the obstruction theory for the toric quasimap space $\om{Q}_{0,n}(X,\beta)$ relative to the fibre product of the Picard stacks, %(isomorphic to $\mathfrak{Bun}^G_{g,n}$ via the discussion above) 
+whereas the second term is the relative obstruction theory for $\om{Q}_{0,n}(Y,\beta)$ inside $\om{Q}_{0,n}(X,\beta)$. Thus the virtual classes agree as well.
+
 \end{remark}
-\end{comment}
-We now construct a virtual class on the comb locus $\mathcal D^{\mathcal{Q}}(X|Y,A,B,M)$.  Consider the product (\emph{not} the fibre product over $Y^r$)
+
+\begin{aside} In Remark \ref{Example of non-injectivity} we saw that if $Y=\PP^1 \times \PP^1$ and $X=\PP^3$, with $Y \hookrightarrow X$ given by the Segre embedding, then the induced map
+\begin{equation*} \mathcal{Q}^{\operatorname{GIT}}_{0,3}(Y,(2,2)) \to \mathcal{Q}^{\operatorname{GIT}}_{0,3}(X,4)\end{equation*}
+is not injective. However, there is no contradiction between this and the discussion above. The somewhat subtle point is that the definition of the quasimap space depends on the presentation of the target as a GIT quotient \cite[\S 4.6]{CFKM}. In Remark \ref{Example of non-injectivity} we expressed $Y$ as a toric GIT quotient
+\begin{equation*} Y \cong \Aaff^4 \sslash \Gm^2 \end{equation*}
+whereas in the context of Remark \ref{Section comparison with GIT construction}, $Y$ would be expressed as a more parsimonious quotient:
+\begin{equation*} Y \cong C(Y) \sslash \Gm \end{equation*}
+The map $\mathcal{Q}^{\operatorname{GIT}}(\Aaff^4\sslash\Gm^2) \to \mathcal{Q}^{\operatorname{GIT}}(X)$ is not an embedding, but it factors through $\mathcal{Q}^{\operatorname{GIT}}(C(Y)\sslash\Gm) \rightarrow \mathcal{Q}^{\operatorname{GIT}}(X)$ which is.
+
+%This is quite easy to see: it is clear that $\mathcal{Q}^{\operatorname{GIT}}(H) \to \mathcal{Q}^{\operatorname{GIT}}(\PP^N)$ is a closed embedding, so the corresponding fact about $\mathcal{Q}^{\operatorname{GIT}}(Y) \to \mathcal{Q}^{\operatorname{GIT}}(X)$ follows by pull-back and the identification $\mathcal{Q}(Y) \cong \mathcal{Q}^{\operatorname{GIT}}(Y)$ established above.
+\end{aside}
+
+We have thus shown that the comb locus $\mathcal D^{\mathcal{Q}}(X|Y,A,B,M)$ makes sense for general $(X,Y)$. Our next task is to construct a virtual class on this locus.  Consider the product (\emph{not} the fibre product over $Y^r$)
 \begin{equation*} \mathcal E^{\mathcal{Q}}(X|Y,A,B,M) := \Q{0}{A^{(0)} \cup \{q_1, \ldots, q_r\}}{Y}{\beta^{(0)}} \times \prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta^{(i)}} \end{equation*}
 which we may endow with the product virtual class (with weighting as before):
 \begin{align*} \virt{\mathcal E^{\mathcal{Q}}(X|Y, & A,B,M)} := \\
@@ -1171,7 +1146,7 @@ which proves \eqref{P epsilon equation}. We thus conclude that \eqref{Ciocan-Fon
 
 In this appendix we explicitly define the \emph{diagonal pull-back} along a morphism whose target is unobstructed (used in \cite{Ga}) and verify that this agrees with the virtual pull-back of \cite{Manolache-Pull} when both are defined. We also check that it satisfies some expected compatibility properties.
 
-Consider a morphism of DM stacks $f\colon Y\to X$ over a smooth base $\mathfrak M$, such that $X$ is smooth over $\mathfrak M$ and $Y$ carries a virtual class given by a perfect obstruction theory $\EE_{Y/\mathfrak M}$. Then, for every Cartesian diagram
+Consider a morphism of DM stacks $f\colon Y\to X$ over a smooth base $\mathfrak M$, such that $X$ is smooth over $\mathfrak M$ and $Y$ carries a virtual class given by a perfect obstruction theory $\EE_{Y/\mathfrak M}$. Then, for every cartesian diagram
  \bcd
  G\ar[r,"g"]\ar[d,"q"]\ar[rd,phantom,"\Box"] & F\ar[d,"p"] \\
  Y\ar[r,"f"] & X 
@@ -1188,7 +1163,7 @@ Assume that there exists a relative obstruction theory $\EE_f$ compatible with $
  f^* \LL_{X/\mathfrak M} \ar[r] \ar[d,"\operatorname{Id}"] & \EE_{Y/\mathfrak M} \ar[r] \ar[d] & \EE_f \ar[r,"{[1]}"] \ar[d] & \, \\
  f^* \LL_{X/\mathfrak M} \ar[r] & \LL_{Y/\mathfrak M} \ar[r] & \LL_f \ar[r,"{[1]}"] & \,
  \ecd
- Then for every Cartesian diagram and every class $\alpha\in \Achow_*(F)$ as above,
+ Then for every cartesian diagram and every class $\alpha\in \Achow_*(F)$ as above,
  \[
   f^!_{\operatorname{v}}(\alpha)=f^!_\Delta(\alpha).
  \]
