@@ -224,11 +224,11 @@ in the Chow group of $\Q{0}{\alpha}{X|Y}{\beta}$.
 \end{customthm}
 \noindent Here $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ is a certain \emph{quasimap comb locus} sitting inside the boundary of the relative space (see \S \ref{Subsection comb loci pull back}); its virtual class should be thought of as a correction term. Such terms also appear in Gathmann's stable map recursion formula; however, in our setting the stronger stability condition for quasimaps considerably reduces the number of such contributions.
 
-Finally in \S \ref{Section quasimap mirror theorem} we apply the recursion formula of \S \ref{Section recursion formula in general case} to obtain a Lefschetz-type formula for quasimap invariants. This takes two forms: first we have a general result without additional restrictions on $Y$.
+Finally in \S \ref{Section quasimap mirror theorem} we apply the recursion formula of \S \ref{Section recursion formula in general case} to obtain a Lefschetz-type theorem for quasimap invariants. This takes two forms: first we have a general result which holds without any special restrictions on $Y$.
 
 \begin{customthm}{\ref{Theorem full quasimap Lefschetz}} Let $X$ be a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. Then there is an explicit algorithm to recover the (restricted) quasimap invariants of $Y$ from the quasimap invariants of $X$.\end{customthm}
 
-If we are willing to impose some (semi)positivity assumptions, we can do better and actually obtain a closed formula for this relationship.
+If, however, we are willing to impose some (semi)positivity assumptions, we can do better and actually obtain a closed formula (rather than just an algorithm) for this relationship.
 
 \begin{customthm}{\ref{Theorem Quantum Lefschetz}}
 Let $X$ be a smooth projective toric Fano variety and let $i\colon Y \hookrightarrow X$ be a very ample hypersurface. Assume that $-K_Y$ is nef and that $Y$ contains all curve classes (see \S \ref{Subsection setup}). Then
@@ -249,7 +249,7 @@ P_0^X(q) = 1 + \sum_{\substack{\beta>0 \\ K_Y\cdot\beta=0}} q^\beta(Y\cdot\beta)
 The argument is similar in spirit to the one given in \cite{Ga-MF}, however the stronger stability condition considerably simplifies both the proof and the final result. This formula can also be obtained as a consequence of \cite[Corollary~5.5.1]{CF-K-wallcrossing}; see \S \ref{Subsection CFK comparison}. 
 
 %We also include a short appendix, dedicated to important but slightly technical lemmas. In Appendix~\ref{Section comparison with GIT construction} we show that the moduli space $\Q{g}{n}{Y}{\beta}$, defined in \S \ref{Section recursion formula in general case} as a closed substack of $\Q{g}{n}{X}{\beta}$, is in fact virtually isomorphic to the moduli space $\om{Q}^{\operatorname{GIT}}_{g,n}(Y,\beta)$ of stable quasimaps to the GIT quotient $C(Y)\sslash \Gm^r=Y$, as defined in \cite{CFKM}.
-In Appendix~\ref{appendix:intersection} we define the \emph{diagonal pull-back} along a morphism whose target is smooth, and verify that it agrees with the more modern concept of virtual pull-back \cite{Manolache-Pull} when both are defined. This has a historical motivation, since the diagonal pull-back was implicitly employed in \cite{Ga}.
+In Appendix~\ref{appendix:intersection} we define the \emph{diagonal pull-back} along a morphism whose target is smooth, and verify that it agrees with the more modern concept of virtual pull-back \cite{Manolache-Pull} when both are defined. The diagonal pull-back was employed implicitly in \cite{Ga}, but we find it useful here to give a more explicit treatment.
 
 \begin{acknowledgements} We thank Tom Coates and Cristina Manolache for carefully reading this manuscript and for their helpful advice with both exposition and subject matter. We are grateful to Ionu\c{t} Ciocan-Fontanine for thoroughly examining a preliminary version of this manuscript and providing several clarifications and corrections. We would also like to thank Fabio Bernasconi, Andrea Petracci and Richard Thomas for useful conversations. 
 
@@ -860,14 +860,16 @@ Apply $k^!$ to Proposition~\ref{Recursion formula for PN}, using Lemmas~\ref{Rel
 \end{proof}
 
 \section{A Lefschetz-type theorem for quasimaps} \label{Section quasimap mirror theorem}
-Suppose that we want to compute a particular relative quasimap invariant of the pair $(X,Y)$. By applying the recursion formula established in the preceding section, we can express this invariant in terms of a number of relative invariants of $(X,Y)$ and absolute invariants of $Y$, all of which have strictly smaller degree, number of marked points or tangency orders. Repeating this procedure, we see that the relative quasimap invariants are completely determined, in an algorithmic way, from the absolute invariants of $X$ and $Y$.
+The recursion formula shows that the relative quasimap invariants of $(X,Y)$ are completely determined, in an algorithmic way, from the absolute invariants of $X$ and $Y$; by repeatedly applying the recursion formula, we can remove all the tangency conditions, leaving us with an expression which only involves the invariants of $X$ and $Y$.
 
-\subsection{The general Lefschetz-type theorem}\label{Subsection general quasimap Lefschetz}
-However, we can do much better than this. In this section we will prove a \emph{Lefschetz-type theorem for quasimap invariants}, that is, a result which expresses the quasimap invariants of $Y$ in terms of those of $X$. This is the quasimap analogue of the quantum Lefschetz hyperplane principle in Gromov--Witten theory.
+However, we can do much more than this. In this section we will prove (two variations of) a \emph{Lefschetz-type theorem for quasimap invariants}, that is, a result which expresses the quasimap invariants of $Y$ in terms of those of $X$. This is the quasimap analogue of the quantum Lefschetz hyperplane principle in Gromov--Witten theory and, on the face of it, has nothing to do with relative invariants.
+
+\subsection{General quasimap Lefschetz theorem}\label{Subsection general quasimap Lefschetz}
+First we state the most general form of the theorem, without any additional assumptions on $X$ and $Y$.
 \begin{thm}[Lefschetz-type theorem for quasimap invariants] \label{Theorem full quasimap Lefschetz} Let $X$ be a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. Then there is an explicit algorithm to recover the (restricted) absolute quasimap invariants of $Y$, as well as the relative quasimap invariants of $(X,Y)$, from the absolute quasimap invariants of $X$.\end{thm}
 The corresponding result in Gromov--Witten theory is due to Gathmann \cite[Corollary 2.5.6]{GathmannThesis}; the proof we present in the quasimap setting is very similar to his. The term \emph{``restricted''} here means that we only integrate against cohomology classes pulled back from $\HH^*(X)$, rather than allowing arbitrary classes from $\HH^*(Y)$.
 
-\begin{proof} The idea, of course, is to repeatedly apply the recursion formula. The proof is by induction, and in order for the argument to work it is essential that we simultaneously determine  both the absolute invariants of $Y$ and the relative invariants of $(X,Y)$.
+\begin{proof} The idea, of course, is to repeatedly apply the recursion formula. The proof is by induction, and in order for the argument to work it is essential that we determine simultaneously  the absolute invariants of $Y$ and the relative invariants of $(X,Y)$.
 
 We induct on: the intersection number $d=Y\cdot\beta$, the number of marked points $n$, and the total tangency $\Sigma_i \alpha_i$, in that order. This means that when we come to compute an absolute or relative invariant, we assume that all of the absolute \emph{and} relative invariants with
 \begin{enumerate}
@@ -891,11 +893,11 @@ Now we prove the induction step for the absolute invariants of $Y$. Suppose then
 \begin{equation*} (d \psi_1 + \ev_1^* [Y]) \cap \virt{\Q{0}{\alpha-e_1}{X|Y}{\beta}} = \virt{\mathcal D^\mathcal{Q}_{\alpha,1}(X|Y,\beta)} \end{equation*}
 where the comb locus on the right-hand side has a connected component isomorphic to the moduli space
 \begin{equation*} \Q{0}{n}{Y}{\beta} \end{equation*}
-(this corresponds to a ``comb with no teeth''). Capping as before with an appropriate class, we obtain from this the invariant that we are looking for. The term on the left-hand side is known since $\Sigma_i \alpha_i$ is smaller, while any other terms coming from the comb locus either involve invariants with smaller $d$ or with the same $d$ but smaller $n$, and so are also known inductively. This completes the proof. \end{proof}
+(corresponding to a ``comb with no teeth''). Capping as before with an appropriate class, we obtain the invariant that we are looking for. The term on the left-hand side is known since $\Sigma_i \alpha_i$ is smaller, while any other terms coming from the comb locus either involve invariants with smaller $d$ or with the same $d$ but smaller $n$, and so are also known inductively. This completes the proof. \end{proof}
 
-\begin{remark} There is a subtle but extremely important point which we have ignored in the proof above. While the statement of Theorem \ref{Theorem full quasimap Lefschetz} only concerns the \emph{restricted} quasimap invariants, i.e. those with insertions from $\HH^*(X)$, when we calculate contributions from the comb loci we are forced to consider unrestricted invariants, due to classes in the diagonal in $\HH^*(Y\times Y)$ which do not come from $\HH^*(X\times X)$. This is problematic, since in general these terms can not be computed inductively.
+\begin{remark} There is a subtle but extremely important point which we have ignored in the proof above. While the statement of Theorem \ref{Theorem full quasimap Lefschetz} only concerns the \emph{restricted} quasimap invariants, i.e. those with insertions from $\HH^*(X)$, when we calculate contributions from the comb loci we are forced to consider unrestricted invariants, due to classes in the diagonal in $\HH^*(Y\times Y)$ which do not come from $\HH^*(X\times X)$. This is problematic, since in general these terms cannot be computed inductively.
 
-However, a careful analysis of the recursion formula shows that any term which appears in this way must in fact be zero. The argument is the same as the one given for Gromov--Witten invariants in \cite[\S 2.5]{GathmannThesis}; the details are left to the reader. The key idea is to show that any absolute or relative quasimap invariant which has precisely one insertion from outside of $\HH^*(X)$ must be zero, and then to show that any term arising from the comb locus is equal to a product of invariants, one of which is of this form.\end{remark}
+However, a careful analysis of the recursion formula shows that any term which appears in this way must in fact be zero. The argument is the same as the one given for Gromov--Witten invariants in \cite[\S 2.5]{GathmannThesis}; the details are left to the reader. The key idea is to show that any absolute or relative quasimap invariant which has precisely one insertion from outside of $\HH^*(X)$ must be zero, and then to show that any term arising from the comb locus and involving unrestricted classes is equal to a product of invariants, at least one of which takes this form.\end{remark}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 \begin{comment}
@@ -913,11 +915,11 @@ In the next section we see how these computations may be simplified and made exp
 %%%%%%%%%%%%%%%%%%%%%
 
 \subsection{A mirror theorem for quasimap invariants}
-Although the algorithm presented in the previous section is completely explicit, it is in general quite involved, since the combinatorics can become arbitrarily complicated. We would like to be able to find a closed formula which expresses the quasimap invariants of $Y$ in terms of those of $X$. This is our goal over the next few sections, culminating in Theorem \ref{Theorem Quantum Lefschetz}, which provides a closed formula under some additional restrictions.
+Although the algorithm presented in the previous section is completely explicit, it is in general quite involved, since the combinatorics can become arbitrarily complicated. We would like to be able to find a closed formula which expresses the quasimap invariants of $Y$ in terms of those of $X$. This is our goal over the next few sections, culminating in Theorem \ref{Theorem Quantum Lefschetz}, which provides such a closed formula, under some additional restrictions.
 
 In \cite{Ga-MF} Gathmann applies the stable map recursion formula to obtain a new proof of the mirror theorem for hypersurfaces \cite{Givental-equivariantGW}. This can be viewed as a partial quantum Lefschetz formula, expressing certain stable map invariants of $Y$ in terms of those of $X$.
 
-In this section we carry out a similar computation in the quasimap setting, using the recursion found in Theorem \ref{Theorem general recursion} above. We work with generating functions for $2$-pointed quasimap invariants (the minimal number of markings, due to the strong stability condition). The absence of rational tails in the quasimap moduli space makes the quasimap recursion much simpler than Gathmann's.
+In this section we carry out a similar computation in the quasimap setting. We work with generating functions for $2$-pointed quasimap invariants (the minimal number of markings, due to the strong stability condition). The absence of rational tails in the quasimap moduli space makes the quasimap recursion much simpler than Gathmann's.
 
 Our formula can be viewed as a special case of \cite[Corollary 5.5.1]{CF-K-wallcrossing}, and thus as a relation between certain residues of the $\Gm$-action on spaces of $0$-pointed and $1$-pointed parametrised quasimaps to $Y$. Some of the consequences of this formula are explored in \cite[Section 5.5]{CF-K-wallcrossing}; for instance, it follows in the semipositive case that all primary $\epsilon$-quasimap invariants with a fundamental class insertion can be expressed in terms of $2$-pointed invariants.
 
@@ -940,7 +942,7 @@ For any smooth projective toric variety\footnote{Or more generally any space for
 S_0^X(z,q) &=\sum_{\beta\geq 0} q^\beta S_0^X(z,\beta)\end{align*}
 where by convention $S_0^X(z,0)= \mathbbm 1_X$, and $q$ is a Novikov variable. These are generating functions for quasimap invariants of $X$ which take values in $\HH^*(X)$.
 
-The same definition applies to $Y$. However, as noted in \S \ref{Subsection general quasimap Lefschetz}, Lefschetz-type theorems only make sense when talking about \emph{restricted quasimap invariants}. The generating function for these is defined as
+The same definition applies to $Y$. However, as noted in \S \ref{Subsection general quasimap Lefschetz}, Lefschetz-type theorems only work if we study \emph{restricted quasimap invariants}. The generating function for these is defined as
 \begin{equation*} \tilde{S}^Y_0(z,\beta) = (\ev_1)_* \left( \dfrac{1}{z-\psi_1} \virt{\Q{0}{2}{Y}{\beta}} \right) \end{equation*}
 where crucially $\ev_1$ is viewed as \emph{mapping to $X$} instead of to $Y$. Thus $\tilde{S}^Y_0(z,\beta)$ takes values in $\HH^*(X)$ and involves only quasimap invariants of $Y$ with insertions coming from $i^*\HH^*(X)$; this is in contrast to $S^Y_0(z,\beta)$, which takes values in $\HH^*(Y)$ and involves quasimap invariants of $Y$ with arbitrary insertions. As earlier, we can also define $\tilde{S}_0^Y(z,q)$.
 
