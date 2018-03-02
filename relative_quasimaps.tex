@@ -1,4 +1,4 @@
-\documentclass[11pt]{amsart}
+\documentclass{alggeom}
 %\usepackage[english]{babel}
 \usepackage{appendix}
 \usepackage{amsmath}
@@ -11,9 +11,9 @@
 \usepackage{stmaryrd}
 \usepackage{enumitem}
 \usepackage[english]{babel}
-\usepackage{yfonts}
-\usepackage[T1]{fontenc}
-\usepackage[utf8x]{inputenc}
+%\usepackage{yfonts}
+%\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc} %input encodings
 %\usepackage{enumerate}
 \usepackage{verbatim}
 \usepackage{graphicx}
@@ -31,11 +31,11 @@
 \usepackage{booktabs}
 \usepackage{mathtools}
 
-\usepackage[]{textcomp}
-\usepackage[sups]{Baskervaldx}
-\usepackage{cabin}
-\usepackage[varqu,varl]{inconsolata}
-\usepackage[cal=cm]{mathalfa}
+%\usepackage[]{textcomp}
+%\usepackage[sups]{Baskervaldx}
+%\usepackage{cabin}
+%\usepackage[varqu,varl]{inconsolata}
+%\usepackage[cal=cm]{mathalfa}
 
 %I removed this guy because he was messing up the tildes
 %\usepackage[baskervaldx,bigdelims,vvarbb]{newtxmath}
@@ -115,7 +115,7 @@
 \newcommand{\RR}{\textbf{R}}
 \newcommand{\NN}{\operatorname{N}}
 
-\theoremstyle{definition}
+\theoremstyle{plain}
 \newtheorem{thm}{Theorem}[section]
 \newtheorem{lem}[thm]{Lemma}
 \newtheorem{lemma}[thm]{Lemma}
@@ -124,8 +124,6 @@
 \newtheorem*{teo*}{Theorem}
 \newtheorem{ipotesi}{ipotesi}
 \newtheorem*{nota}{Nota}
-\newtheorem{claim}{Claim}
-\newtheorem{question}[thm]{Question}
 \newtheorem{conj}[thm]{Conjecture}
 
 \newtheorem{innercustomthm}{Theorem}
@@ -134,10 +132,14 @@
   {\endinnercustomthm}
 
 \theoremstyle{definition}
-\newtheorem{example}[thm]{Example}
-\newtheorem{ex}[thm]{Example}
+\newtheorem{claim}{Claim}
+\newtheorem{question}[thm]{Question}
 \newtheorem{dfn}[thm]{Definition}
 \newtheorem{definition}[thm]{Definition}
+
+\theoremstyle{remark}
+\newtheorem{example}[thm]{Example}
+\newtheorem{ex}[thm]{Example}
 \newtheorem{aside}[thm]{Aside}
 \newtheorem{remark}[thm]{Remark}
 \newtheorem{com}[thm]{Comment}
@@ -145,11 +147,10 @@
 \newtheorem*{sketch}{Sketch}
 \newtheorem*{rem}{Remark}
 \newtheorem*{aside*}{Aside}
-\newtheorem*{acknowledgements}{Acknowledgements}
 
 \newcommand{\ilemph}[1]{\emph{#1}}
 
-\setcounter{tocdepth}{1}
+%\setcounter{tocdepth}{1}
 
 \newcommand{\todo}[1]{\vspace{5mm}\par \noindent
 \framebox{\begin{minipage}[c]{0.95 \textwidth} \tt #1\end{minipage}} \vspace{5mm} \par}
@@ -162,24 +163,33 @@
 \newcommand{\thismonthyear}{{\thismonth} {\number\year}}
 \newcommand{\thisdaymonthyear}{{\number\day} {\thismonth} {\number\year}}
 
-\usepackage[T1]{fontenc}
-\usepackage{newpxtext,newpxmath}
+%\usepackage[T1]{fontenc}
+%\usepackage{newpxtext,newpxmath}
 
 \title[Quasimap Lefschetz via Relative Quasimaps]{A Lefschetz-type Theorem for Quasimap Invariants via Relative Quasimaps}
-\author{Luca Battistella and Navid Nabijou}
+\author{Luca Battistella}
+\email{l.battistella14@imperial.ac.uk}
+\address{Department of Mathematics, Imperial College London}
+\author{Navid Nabijou}
+\email{navid.nabijou09@imperial.ac.uk} 
+\address{Department of Mathematics, Imperial College London}
+
+\classification{14N35}
+\keywords{quasimap invariants, relative Gromov--Witten invariants, quantum Lefschetz hyperplane principle.}
+\thanks{L.B. is supported by a Royal Society 1st Year URF and DHF Research Grant Scheme and N.N. by an EPSRC Standard DTP Scholarship. This work was supported by the Engineering and Physical Sciences Research Council grant EP/L015234/1: the EPSRC Centre for Doctoral Training in Geometry and Number Theory at the Interface.}
+
 \begin{document}
 
 \begin{abstract} We define moduli spaces of relative toric quasimaps in genus zero, in the spirit of A. Gathmann. When $X$ is a smooth toric variety and $Y$ is a very ample hypersurface in $X$ we construct a virtual class on the moduli space of relative quasimaps to $(X,Y)$ which can be used to define relative quasimap invariants of the pair. We obtain a recursion formula which expresses each relative invariant in terms of invariants of lower multiplicity. Finally we apply this formula to derive a Lefschetz-type theorem expressing the restricted quasimap invariants of $Y$ in terms of those of $X$. \end{abstract}
 
 \maketitle
-\appendixtitletocoff
-\tableofcontents
+%\appendixtitletocoff
+%\tableofcontents
 
 \section{Introduction}
 In this paper we construct moduli spaces of relative quasimaps as substacks of moduli spaces of (absolute) quasimaps. This provides a common generalisation of two different theories: stable quasimaps on the one hand, and relative stable maps (in the sense of A. Gathmann) on the other. In this introductory section we briefly recall these, putting our work in its proper context.
 
-\subsection{Stable quasimaps}
-The moduli space of \ilemph{stable toric quasimaps} $\Q{g}{n}{X}{\beta}$ was constructed by I. Ciocan-Fontanine and B. Kim \cite{CF-K} as a compactification of the moduli space of smooth curves in a smooth and complete toric variety $X$. Roughly speaking, the objects are rational maps $C \dashrightarrow X$ where $C$ is a nodal curve, subject to a stability condition; the precise definition depends on the description of $X$ as a GIT quotient.  The space $\Q{g}{n}{X}{\beta}$ is a proper Deligne--Mumford stack of finite type.  It admits a virtual fundamental class, which is used to define curve-counting invariants for $X$ called \ilemph{quasimap invariants}.
+\subsection{Stable quasimaps.} The moduli space of \ilemph{stable toric quasimaps} $\Q{g}{n}{X}{\beta}$ was constructed by I. Ciocan-Fontanine and B. Kim \cite{CF-K} as a compactification of the moduli space of smooth curves in a smooth and complete toric variety $X$. Roughly speaking, the objects are rational maps $C \dashrightarrow X$ where $C$ is a nodal curve, subject to a stability condition; the precise definition depends on the description of $X$ as a GIT quotient.  The space $\Q{g}{n}{X}{\beta}$ is a proper Deligne--Mumford stack of finite type.  It admits a virtual fundamental class, which is used to define curve-counting invariants for $X$ called \ilemph{quasimap invariants}.
 
 This theory agrees with that of stable quotients \cite{MOP} when both are defined, namely when $X$ is a projective space.  There is a common generalisation given by the theory of stable quasimaps to GIT quotients \cite{CFKM}. For simplicity, however, we will work mostly in the toric setting\footnote{This restriction is not essential for our arguments; the case of GIT quotients will be addressed in forthcoming work.}. Thus in this paper when we say ``quasimaps'' we are implicitly talking about toric quasimaps.
 Quasimap invariants provide an alternative system of curve counts to the more well-known Gromov--Witten invariants. These latter invariants are defined via moduli spaces of stable maps, and as such we will often refer to them as \emph{stable map invariants}.
@@ -194,16 +204,14 @@ In general, however, the invariants differ, the difference being encoded by cert
 
 %An important fact for understanding the difference between these two theories is the observation that $\Q{g}{n+1}{X}{\beta}$ is \emph{not} the universal curve over $\Q{g}{n}{X}{\beta}$; in fact there is not even a morphism between these spaces in general. Instead, the universal curve $\mathcal C_{g,n}^\mathcal{Q}$ is a substack of $\MM_{g,n+1}(X,\beta)$ and comparing the geometry of $\om{Q}_{g,n+1}$ and $\mathcal{C}^{\mathcal{Q}}_{g,n}$ results in \emph{string transformations} that determine the difference between generating functions for $\epsilon_1$- and $\epsilon_2$-stable quasimaps \cite[\S 6 and 7]{CF-K-wallcrossing}.
 
-\subsection{Relative stable maps}
-Let $Y$ be a smooth very ample hypersurface in a smooth projective variety $X$. In \cite{Ga} A. Gathmann constructs a moduli space of relative stable maps to the pair $(X,Y)$ as a closed substack of the moduli space of (absolute) stable maps to $X$:
+\subsection{Relative stable maps.} Let $Y$ be a smooth very ample hypersurface in a smooth projective variety $X$. In \cite{Ga} A. Gathmann constructs a moduli space of relative stable maps to the pair $(X,Y)$ as a closed substack of the moduli space of (absolute) stable maps to $X$:
 \begin{equation*} \M{0}{\alpha}{X|Y}{\beta} \hookrightarrow \M{0}{n}{X}{\beta} \end{equation*}
 The relative moduli space parametrises stable maps with prescribed tangencies to $Y$ at the marked points.  Unfortunately this space does not admit a natural perfect obstruction theory. Nevertheless, because $Y$ is very ample it is still possible to construct a virtual fundamental class by intersection-theoretic methods, and hence one can define relative stable map invariants.
 
 Gathmann establishes a recursion formula for these virtual classes which allows one to express any relative invariant of $(X,Y)$ in terms of absolute invariants of $Y$ and relative invariants with lower contact multiplicities. 
 By successively increasing the contact multiplicites from zero to the maximum possible value, this gives an algorithm expressing the (restricted) invariants of $Y$ in terms of those of $X$: see \cite[Corollary 5.7]{Ga}. In \cite{Ga-MF} this result is applied to give an alternative proof of the mirror theorem for projective hypersurfaces \cite{Givental-equivariantGW} \cite{LLY1}.
 
-\subsection{Relative stable quasimaps}
-In this paper we construct moduli spaces of relative quasimaps in genus zero. We prove a recursion relation similar to Gathmann's formula, and use this to derive a Lefschetz-type formula for quasimap invariants.
+\subsection{Relative stable quasimaps.} In this paper we construct moduli spaces of relative quasimaps in genus zero. We prove a recursion relation similar to Gathmann's formula, and use this to derive a Lefschetz-type formula for quasimap invariants.
 Our construction carries over to the setting of $\epsilon$-stable quasimaps~\cite{CF-K}; since for $\epsilon > 1$ these moduli spaces agree with the space of stable maps, one can view our construction as giving a common generalisation of the two stories outlined above.
 
 The plan of the paper is as follows. In \S\S \ref{Subsection stable quasimaps} and \ref{Subsection relative stable maps} we provide a brief review of the theories of stable quasimaps and relative stable maps. Then in \S \ref{Subsection relative stable quasimaps} we define the moduli space of relative quasimaps as a substack of the moduli space of (absolute) quasimaps:
@@ -251,13 +259,9 @@ The argument is similar in spirit to the one given in \cite{Ga-MF}, however the 
 %We also include a short appendix, dedicated to important but slightly technical lemmas. In Appendix~\ref{Section comparison with GIT construction} we show that the moduli space $\Q{g}{n}{Y}{\beta}$, defined in \S \ref{Section recursion formula in general case} as a closed substack of $\Q{g}{n}{X}{\beta}$, is in fact virtually isomorphic to the moduli space $\om{Q}^{\operatorname{GIT}}_{g,n}(Y,\beta)$ of stable quasimaps to the GIT quotient $C(Y)\sslash \Gm^r=Y$, as defined in \cite{CFKM}.
 In Appendix~\ref{appendix:intersection} we define the \emph{diagonal pull-back} along a morphism whose target is smooth, and verify that it agrees with the more modern concept of virtual pull-back \cite{Manolache-Pull} when both are defined. The diagonal pull-back was employed implicitly in \cite{Ga}, but we find it useful here to give a more explicit treatment.
 
-\begin{acknowledgements} We thank Tom Coates and Cristina Manolache for carefully reading this manuscript and for their helpful advice with both exposition and subject matter. We are grateful to Ionu\c{t} Ciocan-Fontanine for thoroughly examining a preliminary version of this manuscript and providing several clarifications and corrections. We would also like to thank Fabio Bernasconi, Andrea Petracci and Richard Thomas for useful conversations. 
+\acknowledgements{We thank Tom Coates and Cristina Manolache for carefully reading this manuscript and for their helpful advice with both exposition and subject matter. We are grateful to Ionu\c{t} Ciocan-Fontanine for thoroughly examining a preliminary version of this manuscript and providing several clarifications and corrections. We would also like to thank Fabio Bernasconi, Andrea Petracci and Richard Thomas for useful conversations.}
 
-L.B. is supported by a Royal Society 1st Year URF and DHF Research Grant Scheme and N.N. by an EPSRC Standard DTP Scholarship.
-This work was supported by the Engineering and Physical Sciences Research Council grant EP/L015234/1: the EPSRC Centre for Doctoral Training in Geometry and Number Theory at the Interface.
-\end{acknowledgements}
-
-\subsection{Table of notation} We will use the following notation, most of which is introduced in the main body of the paper.
+\subsection{Table of notation.} We will use the following notation, most of which is introduced in the main body of the paper.
 %\tabulinesep=^0.4mm_0.4mm
 \begin{longtabu}{r c c p{0.8\linewidth}}
 $X$ & & & a smooth projective toric variety \\
@@ -286,8 +290,7 @@ $f^!_{\Delta}$ & & & diagonal pull-back; see Appendix \ref{appendix:intersection
  
 \section{Relative stable quasimaps} \label{Section relative stable quasimaps}
 
-\subsection{Review of absolute stable quasimaps} \label{Subsection stable quasimaps}
-We briefly recall the definition and basic properties of the moduli space of toric quasimaps; see \cite{CF-K} for more details.
+\subsection{Review of absolute stable quasimaps.} \label{Subsection stable quasimaps} We briefly recall the definition and basic properties of the moduli space of toric quasimaps; see \cite{CF-K} for more details.
 \begin{definition}\cite[Definition 3.1.1]{CF-K} Let $N$ be a lattice, let $\Sigma \subseteq N_{\QQ}$ be a fan, and let $X= X_{\Sigma}$ be the corresponding toric variety.  Suppose that $X$ is smooth and projective.   Let $M = N^\vee = \Hom(N,\Z)$ and let $\OO_{X_\Sigma}(1)$ be a fixed polarisation, which we can write (non-uniquely) in terms of the torus-invariant divisors as:
 \begin{equation*} \OO_{X_\Sigma}(1) = \otimes_{\rho \in \Sigma(1)} \OO_{X_\Sigma}(D_\rho)^{\otimes \alpha_\rho} \end{equation*}
 for some $\alpha_\rho \in \Z$. We fix the following numerical invariants: a genus $g \geq 0$, a number of marked points $n \geq 0$, and an effective curve class $\beta \in \HH_2^+(X)$. A \ilemph{stable (toric) quasimap} is given by the data
@@ -390,7 +393,7 @@ Another variant of the theory, which will play a role in later sections, is that
 
 \begin{example} $\QG{0}{0}{\PP^N}{d} = \PP^K$ with $K=(N+1)(d+1)-1$. Indeed, the curve and line bundle must be $(\PP^1,\mathcal O_{\PP^1}(d))$ and we are left with choosing $N+1$ sections of $\mathcal O_{\PP^1}(d)$ (not all zero) up to automorphisms of $\mathcal O_{\PP^1}(d)$, i.e. up to scaling. For early appearances of such spaces, see for instance \cite{MorrisonPlesser} \cite{Givental-mirror} \cite{Bertram}.\end{example}
 
-\subsection{Review of relative stable maps} \label{Subsection relative stable maps} Given a smooth projective variety $X$ and a smooth very ample divisor $Y$, Gathmann's moduli space of relative stable maps parametrises stable maps to $X$ with specified tangencies to $Y$ at the marked points.
+\subsection{Review of relative stable maps.} \label{Subsection relative stable maps} Given a smooth projective variety $X$ and a smooth very ample divisor $Y$, Gathmann's moduli space of relative stable maps parametrises stable maps to $X$ with specified tangencies to $Y$ at the marked points.
 
 \begin{definition} {\cite[Definition 1.1]{Ga}}  Let $X$ be a smooth projective variety and $Y \subseteq X$ a smooth very ample divisor. Fix a number $n \geq 0$ of marked points, an effective curve class $\beta \in \HH_2^+(X)$ and an $n$-tuple $\alpha = (\alpha_1, \ldots, \alpha_n)$ of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. The moduli space
 \begin{equation*} \M{0}{\alpha}{X|Y}{\beta} \end{equation*}
@@ -439,9 +442,7 @@ Repeated application of this result shows that both the relative Gromov--Witten 
 
 \begin{remark} There are many other approaches to defining relative stable maps besides Gathmann's: the moduli space of maps to expanded degenerations of J.~Li \cite{Li1} \cite{Li2}, the twisted stable maps of D.~Abramovich and B.~Fantechi \cite{AbramovichFantechi}, the logarithmic stable maps with expansions of B.~Kim \cite{KimLog} and the logarithmic stable maps (without expansions) of M.~Gross and B.~Siebert \cite{GrossSiebertLog}, Q.~Chen \cite{ChenLog} and D.~Abramovich and Q.~Chen \cite{AbramovichChenLog}. However, the invariants defined via these theories are all known to coincide \cite{AbramovichMarcusWiseComparison} \cite{GathmannThesis}, so the choice of which moduli space to work with mainly depends on one's intended application. \end{remark}
 
-\subsection{Definition of relative stable quasimaps} \label{Subsection relative stable quasimaps}
-
-We now give the main definition of the paper. From here on $X$ will denote a smooth projective toric variety and $Y \subseteq X$ a very ample hypersurface. We \emph{do not} require that $Y$ is toric.
+\subsection{Definition of relative stable quasimaps.} \label{Subsection relative stable quasimaps} We now give the main definition of the paper. From here on $X$ will denote a smooth projective toric variety and $Y \subseteq X$ a very ample hypersurface. We \emph{do not} require that $Y$ is toric.
 Consider the line bundle $\OO_X(Y)$ and the section $s_Y$ cutting out $Y$. By \cite{CoxRing} we have a natural isomorphism of $\CC$-vector spaces
 \begin{equation*} \HH^0(X,\OO_X(Y)) = \left\langle \prod_{\rho} z_\rho^{a_\rho} : \Sigma_\rho a_\rho [D_\rho] = [Y] \right\rangle_{\CC} \end{equation*}
 where the $z_\rho$ for $\rho \in \Sigma(1)$ are the generators of the Cox ring of $X$ and the $a_\rho$ are non-negative integers. We can therefore write $s_Y$ as
@@ -497,8 +498,7 @@ For simplicity we restrict ourselves to the case $\epsilon=0+$. However, all of 
 \section{Recursion formula for $\PP^N$ relative a hyperplane} \label{Section recursion for PN}
 At this stage we do not know much about the moduli space of relative quasimaps. In this section we will examine the case $X=\PP^N$ and $Y=H$ a hyperplane in detail.
 
-\subsection{Basic properties of the moduli space} \label{Subsection basic properties of the moduli space}
-We now show that the moduli space
+\subsection{Basic properties of the moduli space.} \label{Subsection basic properties of the moduli space} We now show that the moduli space
 \begin{equation*} \Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
 is irreducible of the expected dimension, and thus admits a fundamental class. We then prove a recursion formula for these fundamental classes by pushing d Gathmann's recursion formula along the comparison morphism:
 \begin{equation*}\chi : \M{0}{n}{\PP^N}{d} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
@@ -568,8 +568,7 @@ We will now establish a number of properties of the fundamental class.
 \begin{proof} This follows because the comparison morphism restricts to an isomorphism on the nice locus, which by Lemma~\ref{lem:closure} is a dense open subset of both spaces. Notice that by setting $\alpha=0$ we recover the absolute case. \end{proof}
 
 
-\subsection{Proof of the recursion formula} \label{Subsection recursion formula for PN}
-We wish to obtain a recursion formula relating the quasimap invariants of multiplicity $\alpha$ with the quasimap invariants of multiplicity $\alpha + e_k$, as in \cite[Theorem 2.6]{Ga}. For $m = \alpha_k + 1$ the following section (of the pull-back of the jet bundle of the universal line bundle)
+\subsection{Proof of the recursion formula.} \label{Subsection recursion formula for PN} We wish to obtain a recursion formula relating the quasimap invariants of multiplicity $\alpha$ with the quasimap invariants of multiplicity $\alpha + e_k$, as in \cite[Theorem 2.6]{Ga}. For $m = \alpha_k + 1$ the following section (of the pull-back of the jet bundle of the universal line bundle)
 \[
 \sigma^m_k := x_k^*d^m_{\mathcal C/\om{Q}}(u_0)\in \HH^0(\om{Q},x_k^*\mathcal P^m_{\mathcal C/\mathcal Q}(\mathcal L))
 \]
@@ -660,7 +659,7 @@ in the Chow group of $\Q{0}{\alpha}{X|Y}{\beta}$.
 
 \noindent We begin by defining the terms that appear in the statement.
 
-\subsection{The virtual class on the space of relative quasimaps}\label{Subsection virtual class in general} Let $X$ and $Y$ be as in the statement of Theorem~\ref{Theorem general recursion}.  The complete linear system associated to $\OO_X(Y)$ defines an embedding $i : X \hookrightarrow \PP^N$ such that $i^{-1}(H) = Y$ for a certain hyperplane $H$. By the functoriality property of quasimap spaces (see \cite[\S 3.1]{CF-K-wallcrossing}) we have a map:
+\subsection{The virtual class on the space of relative quasimaps.}\label{Subsection virtual class in general} Let $X$ and $Y$ be as in the statement of Theorem~\ref{Theorem general recursion}.  The complete linear system associated to $\OO_X(Y)$ defines an embedding $i : X \hookrightarrow \PP^N$ such that $i^{-1}(H) = Y$ for a certain hyperplane $H$. By the functoriality property of quasimap spaces (see \cite[\S 3.1]{CF-K-wallcrossing}) we have a map:
 \begin{equation*} k := \om{Q}(i) : \Q{0}{n}{X}{\beta} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
 where $d=i_*\beta$. %Because $\Q{0}{n}{\PP^N}{d}$ is smooth, $k$ admits a compatible perfect obstruction theory, so we have a notion of virtual pull-back along $k$.
 
@@ -697,13 +696,12 @@ and use this class to define relative quasimap invariants in general:
 These invariants will play a role in our proof of the quasimap Lefschetz formula in \S \ref{Section quasimap mirror theorem}.
 
 
-\subsection{Relative spaces pull back}
-The idea is to prove the recursion formula for general $(X,Y)$ by pulling back the formula for $(\PP^N,H)$ along $k$. In order to do this, we need to understand how the various virtual classes involved in the formula pull back along this map. The first two terms pull back by the very definition of the virtual class:
+\subsection{Relative spaces pull back.} The idea is to prove the recursion formula for general $(X,Y)$ by pulling back the formula for $(\PP^N,H)$ along $k$. In order to do this, we need to understand how the various virtual classes involved in the formula pull back along this map. The first two terms pull back by the very definition of the virtual class:
 \begin{lemma} \label{Relative spaces pull back} $k^! [\Q{0}{\alpha}{\PP^N|H}{d}] = \virt{\Q{0}{\alpha}{X|Y}{\beta}}$ \end{lemma}
 
 \noindent It thus remains to consider the third term, namely the virtual class of the comb locus. This is the technical heart of the proof.
 
-\subsection{Comb loci pull back} \label{Subsection comb loci pull back} As in the previous section, we define $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ to be the union of the moduli spaces
+\subsection{Comb loci pull back.} \label{Subsection comb loci pull back} As in the previous section, we define $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ to be the union of the moduli spaces
 \begin{equation*} \mathcal D^{\mathcal{Q}}(X|Y,A,B,M) := \Q{0}{A^{(0)} \cup \{q_1, \ldots, q_r\}}{Y}{\beta^{(0)}} \times_{Y^r} \prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta^{(i)}} \end{equation*}
 where the union runs over all splittings $A = (A^{(0)},\ldots,A^{(r)})$ of the markings (inducing a splitting $(\alpha^{(0)}, \ldots, \alpha^{(r)})$ of the corresponding tangency requirements), $B = (\beta^{(0)}, \ldots, \beta^{(r)})$ of the curve class $\beta$ and all valid multiplicities $M = (m^{(1)}, \ldots, m^{(r)})$ such that the above spaces are non-empty and such that:
 \[
@@ -864,8 +862,7 @@ The recursion formula shows that the relative quasimap invariants of $(X,Y)$ are
 
 However, we can do much more than this. In this section we will prove (two variations of) a \emph{Lefschetz-type theorem for quasimap invariants}, that is, a result which expresses the quasimap invariants of $Y$ in terms of those of $X$. This is the quasimap analogue of the quantum Lefschetz hyperplane principle in Gromov--Witten theory and, on the face of it, has nothing to do with relative invariants.
 
-\subsection{General quasimap Lefschetz theorem}\label{Subsection general quasimap Lefschetz}
-First we state the most general form of the theorem, without any additional assumptions on $X$ and $Y$.
+\subsection{General quasimap Lefschetz theorem.}\label{Subsection general quasimap Lefschetz} First we state the most general form of the theorem, without any additional assumptions on $X$ and $Y$.
 \begin{thm}[Lefschetz-type theorem for quasimap invariants] \label{Theorem full quasimap Lefschetz} Let $X$ be a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. Then there is an explicit algorithm to recover the (restricted) absolute quasimap invariants of $Y$, as well as the relative quasimap invariants of $(X,Y)$, from the absolute quasimap invariants of $X$.\end{thm}
 The corresponding result in Gromov--Witten theory is due to Gathmann \cite[Corollary 2.5.6]{GathmannThesis}; the proof we present in the quasimap setting is very similar to his. The term \emph{``restricted''} here means that we only integrate against cohomology classes pulled back from $\HH^*(X)$, rather than allowing arbitrary classes from $\HH^*(Y)$.
 
@@ -914,8 +911,7 @@ So we may use a splitting of the diagonal in the cohomology ring $H^*(Y^r\times 
 In the next section we see how these computations may be simplified and made explicit under some positivity assumption on the target varieties.\end{comment}
 %%%%%%%%%%%%%%%%%%%%%
 
-\subsection{A mirror theorem for quasimap invariants}
-Although the algorithm presented in the previous section is completely explicit, it is in general quite involved, since the combinatorics can become arbitrarily complicated. We would like to be able to find a closed formula which expresses the quasimap invariants of $Y$ in terms of those of $X$. This is our goal over the next few sections, culminating in Theorem \ref{Theorem Quantum Lefschetz}, which provides such a closed formula, under some additional restrictions.
+\subsection{A mirror theorem for quasimap invariants.} Although the algorithm presented in the previous section is completely explicit, it is in general quite involved, since the combinatorics can become arbitrarily complicated. We would like to be able to find a closed formula which expresses the quasimap invariants of $Y$ in terms of those of $X$. This is our goal over the next few sections, culminating in Theorem \ref{Theorem Quantum Lefschetz}, which provides such a closed formula, under some additional restrictions.
 
 In \cite{Ga-MF} Gathmann applies the stable map recursion formula to obtain a new proof of the mirror theorem for hypersurfaces \cite{Givental-equivariantGW}. This can be viewed as a partial quantum Lefschetz formula, expressing certain stable map invariants of $Y$ in terms of those of $X$.
 
@@ -923,8 +919,7 @@ In this section we carry out a similar computation in the quasimap setting. We w
 
 Our formula can be viewed as a special case of \cite[Corollary 5.5.1]{CF-K-wallcrossing}, and thus as a relation between certain residues of the $\Gm$-action on spaces of $0$-pointed and $1$-pointed parametrised quasimaps to $Y$. Some of the consequences of this formula are explored in \cite[Section 5.5]{CF-K-wallcrossing}; for instance, it follows in the semipositive case that all primary $\epsilon$-quasimap invariants with a fundamental class insertion can be expressed in terms of $2$-pointed invariants.
 
-\subsection{Setup} \label{Subsection setup}
-As before, we let $X=X_{\Sigma}$ be a smooth projective toric variety and $i \colon Y \hookrightarrow X$ a smooth very ample hypersurface. We also make the following two assumptions:
+\subsection{Setup.} \label{Subsection setup} As before, we let $X=X_{\Sigma}$ be a smooth projective toric variety and $i \colon Y \hookrightarrow X$ a smooth very ample hypersurface. We also make the following two assumptions:
 \begin{enumerate}
 \item \emph{$Y$ is semi-positive}: $-K_Y$ is nef;
 \item \emph{$Y$ contains all curve classes}: the map $i_* : \Achow_1(Y) \to \Achow_1(X)$ is surjective.
@@ -933,8 +928,7 @@ By adjunction, $-K_X$ pairs strictly positively with every curve class coming fr
 
 We fix a homogeneous basis $\eta_0, \ldots, \eta_k$ for $\HH^*(X) = \HH^*(X,\QQ)$ and let $\eta^0, \ldots, \eta^k$ denote the dual basis with respect to the Poincar\'e pairing. Without loss of generality we may suppose that $\eta^0=\mathbbm 1_X$ and $\eta^1=[Y]$. We get an induced basis $\rho_1=i^*\eta_1, \ldots, \rho_k = i^* \eta_k$ for $i^*\HH^*(X)$. Notice that $\rho_0 = i^* \eta_0 = i^* [\pt_X] = 0$, $\rho_1 = i^* \eta_1 = [\pt_Y]$.  We can extend the $\rho_i$ to a basis $\rho_1, \ldots, \rho_l$ for $\HH^*(Y)$ by adding $\rho_{k+1}\ldots,\rho_{l}$. Let $\rho^1, \ldots, \rho^l$ denote the dual basis; notice that $\rho^i$ is \emph{not} equal to $i^* \eta^i$ (they do not even have the same degree!).  Note also that $\rho^1 = \mathbbm{1}_Y$.
 
-\subsection{Generating functions for quasimap invariants}
-As with many results in enumerative geometry, the quasimap Lefchetz formula is most conveniently stated in terms of generating functions. Here we define several such generating functions for the absolute quasimap invariants of $X$ and $Y$.  We work with two marked points since this is the minimum number required in order for the quasimap space to be nonempty. However since we only take insertions at the first marking we would like to think of these, morally speaking, as $1$-pointed invariants (in Gromov--Witten theory the corresponding statement is literally true, due to the string equation).
+\subsection{Generating functions for quasimap invariants.} As with many results in enumerative geometry, the quasimap Lefchetz formula is most conveniently stated in terms of generating functions. Here we define several such generating functions for the absolute quasimap invariants of $X$ and $Y$.  We work with two marked points since this is the minimum number required in order for the quasimap space to be nonempty. However since we only take insertions at the first marking we would like to think of these, morally speaking, as $1$-pointed invariants (in Gromov--Witten theory the corresponding statement is literally true, due to the string equation).
 
 For any smooth projective toric variety\footnote{Or more generally any space for which the quasimap invariants are defined, for instance a smooth hypersurface in a toric variety.} $X$ and any effective curve class $\beta\in \HH_2^+(X)$, we define
 \begin{align*} S_0^X(z,\beta) & =(\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{X}{\beta}}\right) 
@@ -965,7 +959,7 @@ Thus applying $i_*$ gives
 = \sum_{i=1}^k \left\langle \dfrac{\eta_i}{z-\psi_1}, \mathbbm{1}_X \right\rangle_{0,2,\beta}^Y   \eta^i = \tilde{S}_0^Y(z,\beta) \end{align*}
 as claimed. \end{proof}
 
-\subsection{Quasimap Lefschetz formula} We now turn to our main result: a formula expressing the generating function $\tilde{S}_0^Y(z,q)$ for restricted quasimap invariants of $Y$ in terms of the quasimap invariants of $X$.
+\subsection{Quasimap Lefschetz formula.} We now turn to our main result: a formula expressing the generating function $\tilde{S}_0^Y(z,q)$ for restricted quasimap invariants of $Y$ in terms of the quasimap invariants of $X$.
 
 \begin{thm} \label{Theorem Quantum Lefschetz}
 Let $X$ and $Y$ be as above. Then
@@ -1100,8 +1094,7 @@ and:
 Theorem \ref{Theorem Quantum Lefschetz} agrees with \cite[Theorem~1]{CZ-mirror} when $X$ is a projective space.
 \end{remark}
 
-\subsection{Comparison with the work of Ciocan-Fontanine and Kim} \label{Subsection CFK comparison}
-Here we briefly explain how to compare our Theorem \ref{Theorem Quantum Lefschetz} to a formula obtained by Ciocan-Fontanine and Kim. We assume that the reader is familiar with the paper \cite{CF-K-wallcrossing}, in particular \S4 and \S5 thereof. There they introduce (in the more general context of $\epsilon$-stable quasimaps) the following generating functions for quasimap invariants of $Y$:
+\subsection{Comparison with the work of Ciocan-Fontanine and Kim.} \label{Subsection CFK comparison} Here we briefly explain how to compare our Theorem \ref{Theorem Quantum Lefschetz} to a formula obtained by Ciocan-Fontanine and Kim. We assume that the reader is familiar with the paper \cite{CF-K-wallcrossing}, in particular \S4 and \S5 thereof. There they introduce (in the more general context of $\epsilon$-stable quasimaps) the following generating functions for quasimap invariants of $Y$:
 \begin{enumerate}
 \item The \emph{$J^{\epsilon}$-function}
 \begin{equation*} J^\epsilon({\bf t}, z)=\sum_{m\geq 0,\beta\geq 0} \dfrac{q^\beta}{m!} (\ev_\bullet)_*\left( \prod_{i=1}^m \ev_i^*({\bf t}) \cap\operatorname{Res}_{F_0} \virt{\QGe{0}{m}{Y}{\beta}} \right) \end{equation*}
@@ -1255,17 +1248,5 @@ and apply commutativity of usual Gysin morphisms. In the case where $k$ is not a
 
 \bibliographystyle{alpha}
 \bibliography{relqm}
-
-\bigskip\bigskip
-
-\noindent Luca Battistella\\
-Department of Mathematics, Imperial College London \\
-\texttt{l.battistella14@imperial.ac.uk}\\
-
-\noindent Navid Nabijou \\
-Department of Mathematics, Imperial College London \\
-\texttt{navid.nabijou09@imperial.ac.uk}
-
-
 
 \end{document}
