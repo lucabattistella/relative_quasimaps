@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  2 MAR 2018 11:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  3 APR 2018 17:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1700,7 +1700,7 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [42]
-Underfull \hbox (badness 2126) in paragraph at lines 154--157
+Underfull \hbox (badness 2126) in paragraph at lines 178--181
 []\T1/zpltlf/m/n/9 Cristina Manolache. Sta-ble maps and sta-ble quo-tients. \T1
 /zpltlf/m/it/9 Com-pos. Math.\T1/zpltlf/m/n/9 ,
  []
@@ -1726,19 +1726,22 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1271.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1271.
 
 Package rerunfilecheck Info: File `relative_quasimaps.out' has not changed.
-(rerunfilecheck)             Checksum: 653CB809E13005E09A96E797502C975E;471.
+(rerunfilecheck)             Checksum: 7694E109DD77522CC345B0AD6D9DFD3D;467.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.64499pt have occurred.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1271.
  ) 
 Here is how much of TeX's memory you used:
- 34934 strings out of 493014
- 657233 string characters out of 6133351
- 736820 words of memory out of 5000000
- 37377 multiletter control sequences out of 15000+600000
+ 34942 strings out of 493014
+ 657299 string characters out of 6133351
+ 736966 words of memory out of 5000000
+ 37381 multiletter control sequences out of 15000+600000
  128912 words of font info for 263 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  56i,19n,82p,10394b,1019s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1768,10 +1771,10 @@ f-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2016/texmf-dist
 wpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zplr.
 pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zplri.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (43 pages, 358678 bytes).
+Output written on relative_quasimaps.pdf (43 pages, 359307 bytes).
 PDF statistics:
- 736 PDF objects out of 1000 (max. 8388607)
- 627 compressed objects within 7 object streams
- 191 named destinations out of 1000 (max. 500000)
+ 741 PDF objects out of 1000 (max. 8388607)
+ 632 compressed objects within 7 object streams
+ 195 named destinations out of 1000 (max. 500000)
  69 words of extra memory for PDF output out of 10000 (max. 10000000)
 

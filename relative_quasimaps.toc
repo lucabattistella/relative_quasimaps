@@ -15,12 +15,12 @@
 \contentsline {subsection}{\tocsubsection {}{4.1}{The virtual class on the space of relative quasimaps}}{20}{subsection.4.1}
 \contentsline {subsection}{\tocsubsection {}{4.2}{Relative spaces pull back}}{21}{subsection.4.2}
 \contentsline {subsection}{\tocsubsection {}{4.3}{Comb loci pull back}}{21}{subsection.4.3}
-\contentsline {section}{\tocsection {}{5}{A Lefschetz-type theorem for quasimaps}}{26}{section.5}
-\contentsline {subsection}{\tocsubsection {}{5.1}{General quasimap Lefschetz theorem}}{27}{subsection.5.1}
+\contentsline {section}{\tocsection {}{5}{Quasimap quantum Lefschetz theorem}}{26}{section.5}
+\contentsline {subsection}{\tocsubsection {}{5.1}{General quasimap quantum Lefschetz}}{27}{subsection.5.1}
 \contentsline {subsection}{\tocsubsection {}{5.2}{A mirror theorem for quasimap invariants}}{29}{subsection.5.2}
 \contentsline {subsection}{\tocsubsection {}{5.3}{Setup}}{29}{subsection.5.3}
 \contentsline {subsection}{\tocsubsection {}{5.4}{Generating functions for quasimap invariants}}{30}{subsection.5.4}
-\contentsline {subsection}{\tocsubsection {}{5.5}{Quasimap Lefschetz formula}}{31}{subsection.5.5}
+\contentsline {subsection}{\tocsubsection {}{5.5}{Quasimap quantum Lefschetz formula}}{31}{subsection.5.5}
 \contentsline {subsection}{\tocsubsection {}{5.6}{Comparison with the work of Ciocan-Fontanine and Kim}}{36}{subsection.5.6}
 \contentsline {section}{\tocsection {Appendix}{A}{Intersection-theoretic lemmas}}{40}{appendix.A}
 \contentsline {section}{\tocsection {Appendix}{}{References}}{41}{section*.4}
