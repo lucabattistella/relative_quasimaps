@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  15 MAR 2018 18:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  3 APR 2018 17:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1695,18 +1695,21 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1939.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1939.
 
 Package rerunfilecheck Info: File `relative_quasimaps.out' has not changed.
-(rerunfilecheck)             Checksum: B291AD9830B56F2FF9EA1ED500EB2267;608.
+(rerunfilecheck)             Checksum: 07B48DEC376CDFACCD89D471B427A37E;596.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.64499pt have occurred.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1939.
  ) 
 Here is how much of TeX's memory you used:
  35729 strings out of 493014
  679493 string characters out of 6133351
- 759224 words of memory out of 5000000
+ 758239 words of memory out of 5000000
  38154 multiletter control sequences out of 15000+600000
  118522 words of font info for 253 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
@@ -1735,7 +1738,7 @@ pe1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
 /newpx/zplb.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zp
 lr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zplri.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/newpx/zplx-regular.pfb>
-Output written on relative_quasimaps.pdf (66 pages, 443386 bytes).
+Output written on relative_quasimaps.pdf (66 pages, 443337 bytes).
 PDF statistics:
  934 PDF objects out of 1000 (max. 8388607)
  801 compressed objects within 9 object streams
