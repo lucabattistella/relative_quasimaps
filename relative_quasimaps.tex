@@ -195,9 +195,9 @@ In general, however, the invariants differ, the difference being encoded by cert
 %An important fact for understanding the difference between these two theories is the observation that $\Q{g}{n+1}{X}{\beta}$ is \emph{not} the universal curve over $\Q{g}{n}{X}{\beta}$; in fact there is not even a morphism between these spaces in general. Instead, the universal curve $\mathcal C_{g,n}^\mathcal{Q}$ is a substack of $\MM_{g,n+1}(X,\beta)$ and comparing the geometry of $\om{Q}_{g,n+1}$ and $\mathcal{C}^{\mathcal{Q}}_{g,n}$ results in \emph{string transformations} that determine the difference between generating functions for $\epsilon_1$- and $\epsilon_2$-stable quasimaps \cite[\S 6 and 7]{CF-K-wallcrossing}.
 
 \subsection{Relative stable maps}
-Let $Y$ be a smooth very ample hypersurface in a smooth projective variety $X$. In \cite{Ga} A. Gathmann constructs a moduli space of relative stable maps to the pair $(X,Y)$ as a closed substack of the moduli space of (absolute) stable maps to $X$:
+Let $Y$ be a smooth very ample hypersurface in a smooth projective variety $X$. In \cite{Ga} A. Gathmann constructs a space of relative stable maps to the pair $(X,Y)$ as a closed substack of the moduli space of (absolute) stable maps to $X$:
 \begin{equation*} \M{0}{\alpha}{X|Y}{\beta} \hookrightarrow \M{0}{n}{X}{\beta} \end{equation*}
-The relative moduli space parametrises stable maps with prescribed tangencies to $Y$ at the marked points.  Unfortunately this space does not admit a natural perfect obstruction theory. Nevertheless, because $Y$ is very ample it is still possible to construct a virtual fundamental class by intersection-theoretic methods, and hence one can define relative stable map invariants.
+The relative space parametrises stable maps with prescribed tangencies to $Y$ at the marked points.  Unfortunately this space does not admit a natural perfect obstruction theory. Nevertheless, because $Y$ is very ample it is still possible to construct a virtual fundamental class by intersection-theoretic methods, and hence one can define relative stable map invariants.
 
 Gathmann establishes a recursion formula for these virtual classes which allows one to express any relative invariant of $(X,Y)$ in terms of absolute invariants of $Y$ and relative invariants with lower contact multiplicities. 
 By successively increasing the contact multiplicites from zero to the maximum possible value, this gives an algorithm expressing the (restricted) invariants of $Y$ in terms of those of $X$: see \cite[Corollary 5.7]{Ga}. In \cite{Ga-MF} this result is applied to give an alternative proof of the mirror theorem for projective hypersurfaces \cite{Givental-equivariantGW} \cite{LLY1}.
@@ -206,11 +206,11 @@ By successively increasing the contact multiplicites from zero to the maximum po
 In this paper we construct moduli spaces of relative quasimaps in genus zero. We prove a recursion relation similar to Gathmann's formula, and use this to derive a quantum Lefschetz formula for quasimap invariants.
 Our construction carries over to the setting of $\epsilon$-stable quasimaps~\cite{CF-K}; since for $\epsilon > 1$ these moduli spaces agree with the space of stable maps, one can view our construction as giving a common generalisation of the two stories outlined above.
 
-The plan of the paper is as follows. In \S\S \ref{Subsection stable quasimaps} and \ref{Subsection relative stable maps} we provide a brief review of the theories of stable quasimaps and relative stable maps. Then in \S \ref{Subsection relative stable quasimaps} we define the moduli space of relative quasimaps as a substack of the moduli space of (absolute) quasimaps:
+The plan of the paper is as follows. In \S\S \ref{Subsection stable quasimaps} and \ref{Subsection relative stable maps} we provide a brief review of the theories of stable quasimaps and relative stable maps. Then in \S \ref{Subsection relative stable quasimaps} we define the space of relative quasimaps as a substack of the moduli space of (absolute) quasimaps:
 \begin{equation*} \Q{0}{\alpha}{X|Y}{\beta} \hookrightarrow \Q{0}{n}{X}{\beta}. \end{equation*}
 Here $X$ is a smooth toric variety, $Y$ is a smooth very ample hypersurface and $\alpha = (\alpha_1, \ldots, \alpha_n)$ encodes the orders of tangency of the marked points to $Y$. Note that we \emph{do not} require $Y$ to be toric.
 
-In \S \ref{Section recursion for PN} we examine the special case of a hyperplane $H \subseteq \PP^N$. We find that the moduli space is irreducible of the expected dimension (in fact, more than this: it is the closure of the so-called ``nice locus'' consisting of maps from a $\PP^1$ whose image is not contained in $H$). Thus it has an actual fundamental class, which we can use to define relative quasimap invariants.
+In \S \ref{Section recursion for PN} we examine the special case of a hyperplane $H \subseteq \PP^N$. We find that the relative space is irreducible of the expected dimension (in fact, more than this: it is the closure of the so-called ``nice locus'' consisting of maps from a $\PP^1$ whose image is not contained in $H$). Thus it has an actual fundamental class, which we can use to define relative quasimap invariants.
 Another useful fact about this special case is that there exists a birational comparison morphism:
 \begin{equation*} \comp : \M{0}{n}{\PP^N}{d} \to \Q{0}{n}{\PP^N}{d} \end{equation*} 
 This restricts to a birational morphism between the relative spaces, which we use to push down Gathmann's formula to obtain a recursion formula for relative stable quasimaps.
@@ -390,21 +390,21 @@ Another variant of the theory, which will play a role in later sections, is that
 
 \begin{example} $\QG{0}{0}{\PP^N}{d} = \PP^K$ with $K=(N+1)(d+1)-1$. Indeed, the curve and line bundle must be $(\PP^1,\mathcal O_{\PP^1}(d))$ and we are left with choosing $N+1$ sections of $\mathcal O_{\PP^1}(d)$ (not all zero) up to automorphisms of $\mathcal O_{\PP^1}(d)$, i.e. up to scaling. For early appearances of such spaces, see for instance \cite{MorrisonPlesser} \cite{Givental-mirror} \cite{Bertram}.\end{example}
 
-\subsection{Review of relative stable maps} \label{Subsection relative stable maps} Given a smooth projective variety $X$ and a smooth very ample divisor $Y$, Gathmann's moduli space of relative stable maps parametrises stable maps to $X$ with specified tangencies to $Y$ at the marked points.
+\subsection{Review of relative stable maps} \label{Subsection relative stable maps} Given a smooth projective variety $X$ and a smooth very ample divisor $Y$, Gathmann's space of relative stable maps parametrises stable maps to $X$ with specified tangencies to $Y$ at the marked points.
 
-\begin{definition} {\cite[Definition 1.1]{Ga}}  Let $X$ be a smooth projective variety and $Y \subseteq X$ a smooth very ample divisor. Fix a number $n \geq 0$ of marked points, an effective curve class $\beta \in \HH_2^+(X)$ and an $n$-tuple $\alpha = (\alpha_1, \ldots, \alpha_n)$ of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. The moduli space
+\begin{definition} {\cite[Definition 1.1]{Ga}}  Let $X$ be a smooth projective variety and $Y \subseteq X$ a smooth very ample divisor. Fix a number $n \geq 0$ of marked points, an effective curve class $\beta \in \HH_2^+(X)$ and an $n$-tuple $\alpha = (\alpha_1, \ldots, \alpha_n)$ of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. The space
 \begin{equation*} \M{0}{\alpha}{X|Y}{\beta} \end{equation*}
-of relative stable maps to $(X,Y)$ is defined to be the locus in $\M{0}{n}{X}{\beta}$ of stable maps $(C \to S , (x_i : S \to C)_{i=1}^n , f : C \to X)$ satisfying the following two conditions:
+of relative stable maps to $(X,Y)$ consists of those points $(C, (x_i \in C)_{i=1}^n , f : C \to X)$ in $\M{0}{n}{X}{\beta}$ satisfying the following two conditions:
 \begin{enumerate}
 \item if $x_i$ is a marked point such that $\alpha_i > 0$ then $f(x_i) \in Y$;
-\item if we consider the class $f^* [Y] \in \Achow^0(f^{-1}Y \to S)$ then the difference $f^* [Y] - \sum_i \alpha_i [x_i]$ is an effective class.
+\item if we consider the class $f^* [Y] \in \Achow_0(f^{-1}Y)$ then the difference $f^* [Y] - \sum_i \alpha_i [x_i]$ is an effective class.
 \end{enumerate}
-These conditions define a closed substack of $\M{0}{n}{X}{\beta}$. Condition (1) is required in order for the class $\sum_i \alpha_i [x_i]$ to make sense in $\Achow^0(f^{-1}Y \to S)$.
+These conditions define a closed substack of $\M{0}{n}{X}{\beta}$. %Condition (1) is required in order for the class $\sum_i \alpha_i [x_i]$ to make sense in $\Achow^0(f^{-1}Y \to S)$.
 \end{definition}
 
-\begin{remark} The notation in (2) comes from bivariant intersection theory: see \cite[\S 17]{FUL}. Fibrewise, the condition is that the class $f^*[Y] - \sum_i \alpha_i [x_i] \in A_0(f^{-1}Y)$ is required to be effective.\end{remark}
+%\begin{remark} The notation in (2) comes from bivariant intersection theory: see \cite[\S 17]{FUL}. Fibrewise, the condition is that the class $f^*[Y] - \sum_i \alpha_i [x_i] \in A_0(f^{-1}Y)$ is required to be effective.\end{remark}
 
-The definition given above works in families; however there is an equivalent, more combinatorial definition for individual maps which is more useful in practice (see \cite[Remark 1.4]{Ga}): a stable map $(C,x_1, \ldots, x_n,f)$ is a relative stable map if and only if, for each connected component $Z$ of $f^{-1}(Y) \subseteq C$:
+There is an equivalent, more combinatorial definition which is more useful in practice (see \cite[Remark 1.4]{Ga}): a stable map $(C,x_1, \ldots, x_n,f)$ is a relative stable map if and only if, for each connected component $Z$ of $f^{-1}(Y) \subseteq C$:
 \begin{enumerate}
 \item if $Z$ is a point and is equal to a marked point $x_i$, then the multiplicity of $f$ to $Y$ at $x_i$ is greater than or equal to $\alpha_i$;
 \item if $Z$ is one-dimensional (hence a union of irreducible components of $C$) and if we let $C^{(i)}$ for $1 \leq i \leq r$ denote the irreducible components of $C$ adjacent to $Z$ and $m^{(i)}$ denote the multiplicity of $f|_{C^{(i)}}$ to $Y$ at the node $Z \cap C^{(i)}$, then:
@@ -460,14 +460,14 @@ The upshot is that we obtain a line bundle $L_Y$ on $C$, which plays the role of
 \begin{equation*} u_Y \in \HH^0(C,L_Y) \end{equation*}
 which plays the role of the ``pull-back'' of $s_Y$.
 
-\begin{definition} With notation as above, let $n \geq 2$ be a number of marked points, $\beta \in \HH_2^+(X)$ be an effective curve class and $\alpha=(\alpha_1, \ldots, \alpha_n)$ be a collection of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. The \ilemph{moduli space of relative stable quasimaps}
+\begin{definition} With notation as above, let $n \geq 2$ be a number of marked points, $\beta \in \HH_2^+(X)$ be an effective curve class and $\alpha=(\alpha_1, \ldots, \alpha_n)$ be a collection of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. The \ilemph{space of relative stable quasimaps}
 \begin{equation*} \Q{0}{\alpha}{X|Y}{\beta} \subseteq \Q{0}{n}{X}{\beta} \end{equation*}
 is defined to be the locus of quasimaps
-\begin{equation*} \big((C \to S, (x_i : S \to C)_{i=1}^n), (L_\rho,u_\rho)_{\rho \in \Sigma(1)}, (\varphi_m)_{m \in M}\big) \end{equation*}
+\begin{equation*} \big((C, (x_i\in C)_{i=1}^n), (L_\rho,u_\rho)_{\rho \in \Sigma(1)}, (\varphi_m)_{m \in M}\big) \end{equation*}
 such that:
 \begin{enumerate}
 \item if $x_i$ is a marking such that $\alpha_i > 0$, then $x_i^* u_Y = 0$;
-\item if we let $u_Y^*(0) \in \Achow^0(u_Y^{-1}(0)\to S)$ denote the class defined by the Gysin map for $L_Y$, then the difference $u_Y^*(0) - \Sigma_i \alpha_i [x_i]$ is an effective class.
+\item if we let $u_Y^*(0) \in \Achow_0(u_Y^{-1}(0))$ denote the class defined by the Gysin map for $L_Y$, then the difference $u_Y^*(0) - \Sigma_i \alpha_i [x_i]$ is an effective class.
 \end{enumerate}
 \end{definition}
 
@@ -481,7 +481,7 @@ where $0_Y$ is the zero section. There is a Gysin map \cite[\S 2.6]{FUL}
 and we define $u_Y^*(0) := 0_Y^!([C])$.
 
 
-\begin{remark} As in the case of relative stable maps (see \S \ref{Subsection relative stable maps}) there is an equivalent definition which is more useful in practice: a quasimap is a relative quasimap if and only if for every connected component $Z$ of $u_Y^{-1}(0)$ we have that:
+\begin{remark} As in the case of relative stable maps (see \S \ref{Subsection relative stable maps}) there is an equivalent definition which is more useful in practice: a quasimap is an $\alpha$-relative quasimap if and only if for every connected component $Z$ of $u_Y^{-1}(0)$ we have that:
 \begin{enumerate}
 \item if $Z$ is a point and is equal to a marked point $x_i$, then the order of vanishing of $u_Y$ at $x_i$ is greater than or equal to $\alpha_i$;
 \item if $Z$ is one-dimensional (hence a union of irreducible components) and if we let $C^{(i)}$ for $1 \leq i \leq r$ denote the irreducible components of $C$ adjacent to $Z$ and $m^{(i)}$ the order of vanishing of $u_Y$ at the node $Z \cap C^{(i)}$, then:

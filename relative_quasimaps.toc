@@ -7,9 +7,9 @@
 \contentsline {section}{\tocsection {}{2}{Relative stable quasimaps}}{5}{section.2}
 \contentsline {subsection}{\tocsubsection {}{2.1}{Review of absolute stable quasimaps}}{5}{subsection.2.1}
 \contentsline {subsection}{\tocsubsection {}{2.2}{Review of relative stable maps}}{9}{subsection.2.2}
-\contentsline {subsection}{\tocsubsection {}{2.3}{Definition of relative stable quasimaps}}{12}{subsection.2.3}
-\contentsline {section}{\tocsection {}{3}{Recursion formula for $\mathbb P^N$ relative a hyperplane}}{14}{section.3}
-\contentsline {subsection}{\tocsubsection {}{3.1}{Basic properties of the moduli space}}{14}{subsection.3.1}
+\contentsline {subsection}{\tocsubsection {}{2.3}{Definition of relative stable quasimaps}}{11}{subsection.2.3}
+\contentsline {section}{\tocsection {}{3}{Recursion formula for $\mathbb P^N$ relative a hyperplane}}{13}{section.3}
+\contentsline {subsection}{\tocsubsection {}{3.1}{Basic properties of the moduli space}}{13}{subsection.3.1}
 \contentsline {subsection}{\tocsubsection {}{3.2}{Proof of the recursion formula}}{17}{subsection.3.2}
 \contentsline {section}{\tocsection {}{4}{Recursion formula in the general case}}{20}{section.4}
 \contentsline {subsection}{\tocsubsection {}{4.1}{The virtual class on the space of relative quasimaps}}{20}{subsection.4.1}
@@ -17,10 +17,10 @@
 \contentsline {subsection}{\tocsubsection {}{4.3}{Comb loci pull back}}{21}{subsection.4.3}
 \contentsline {section}{\tocsection {}{5}{Quasimap quantum Lefschetz theorem}}{26}{section.5}
 \contentsline {subsection}{\tocsubsection {}{5.1}{General quasimap quantum Lefschetz}}{27}{subsection.5.1}
-\contentsline {subsection}{\tocsubsection {}{5.2}{A mirror theorem for quasimap invariants}}{29}{subsection.5.2}
+\contentsline {subsection}{\tocsubsection {}{5.2}{A mirror theorem for quasimap invariants}}{28}{subsection.5.2}
 \contentsline {subsection}{\tocsubsection {}{5.3}{Setup}}{29}{subsection.5.3}
-\contentsline {subsection}{\tocsubsection {}{5.4}{Generating functions for quasimap invariants}}{30}{subsection.5.4}
+\contentsline {subsection}{\tocsubsection {}{5.4}{Generating functions for quasimap invariants}}{29}{subsection.5.4}
 \contentsline {subsection}{\tocsubsection {}{5.5}{Quasimap quantum Lefschetz formula}}{31}{subsection.5.5}
 \contentsline {subsection}{\tocsubsection {}{5.6}{Comparison with the work of Ciocan-Fontanine and Kim}}{36}{subsection.5.6}
-\contentsline {section}{\tocsection {Appendix}{A}{Intersection-theoretic lemmas}}{40}{appendix.A}
+\contentsline {section}{\tocsection {Appendix}{A}{Intersection-theoretic lemmas}}{39}{appendix.A}
 \contentsline {section}{\tocsection {Appendix}{}{References}}{41}{section*.4}
