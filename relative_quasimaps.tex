@@ -1,4 +1,4 @@
-\documentclass[11pt]{amsart}
+\documentclass[times,doublespace]{oupau}
 
 %\usepackage[english]{babel}
 \usepackage{appendix}
@@ -13,7 +13,7 @@
 \usepackage{enumitem}
 \usepackage[english]{babel}
 \usepackage{yfonts}
-\usepackage[T1]{fontenc}
+%\usepackage[T1]{fontenc}
 \usepackage[utf8x]{inputenc}
 %\usepackage{enumerate}
 \usepackage{verbatim}
@@ -51,6 +51,8 @@
 \newcommand{\D}[3]{\mathcal{D^Q}(#1,#2,#3)}
 \newcommand{\E}[3]{\mathcal{E^Q}(#1,#2,#3)}
 \newcommand{\PP}{\mathbb P}
+\renewcommand*\copyright{{%
+  \usefont{T1}{lmr}{m}{n}\textcopyright}}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\OO}{\mathcal{O}}
@@ -119,7 +121,7 @@
 \theoremstyle{definition}
 \newtheorem{thm}{Theorem}[section]
 \newtheorem{lem}[thm]{Lemma}
-\newtheorem{lemma}[thm]{Lemma}
+%\newtheorem{lemma}[thm]{Lemma}
 \newtheorem{prop}[thm]{Proposition}
 \newtheorem{cor}[thm]{Corollary}
 \newtheorem*{teo*}{Theorem}
@@ -135,10 +137,10 @@
   {\endinnercustomthm}
 
 \theoremstyle{definition}
-\newtheorem{example}[thm]{Example}
+%\newtheorem{example}[thm]{Example}
 \newtheorem{ex}[thm]{Example}
 \newtheorem{dfn}[thm]{Definition}
-\newtheorem{definition}[thm]{Definition}
+%\newtheorem{definition}[thm]{Definition}
 \newtheorem{aside}[thm]{Aside}
 \newtheorem{remark}[thm]{Remark}
 \newtheorem{com}[thm]{Comment}
@@ -163,18 +165,46 @@
 \newcommand{\thismonthyear}{{\thismonth} {\number\year}}
 \newcommand{\thisdaymonthyear}{{\number\day} {\thismonth} {\number\year}}
 
-\usepackage[T1]{fontenc}
+%\usepackage[T1]{fontenc}
 \usepackage{newpxtext,newpxmath}
 
-\title[Quasimap quantum Lefschetz via relative quasimaps]{Quasimap quantum Lefschetz via relative quasimaps}
-\author{Luca Battistella and Navid Nabijou}
 \begin{document}
 
-\begin{abstract} We define moduli spaces of relative toric quasimaps in genus zero, in the spirit of A. Gathmann. When $X$ is a smooth toric variety and $Y$ is a very ample hypersurface in $X$ we construct a virtual class on the moduli space of relative quasimaps to $(X,Y)$ which can be used to define relative quasimap invariants of the pair. We obtain a recursion formula which expresses each relative invariant in terms of invariants of lower multiplicity. Finally we apply this formula to derive a quantum Lefschetz theorem for quasimaps, expressing the restricted quasimap invariants of $Y$ in terms of those of $X$. \end{abstract}
+\title{Quasimap quantum Lefschetz via relative quasimaps}
+%\textit{Oxford University Press Ltd Journal}
+\shorttitle{Quasimap quantum Lefschetz via relative quasimaps}
+\author{Luca Battistella\affil{1} and Navid Nabijou\affil{1}}
+
+% Enter the publication year and the ID number of the paper
+\volumeyear{}
+\paperID{}
+
+
+\abbrevauthor{L. Battistella and N. Nabijou}
+% Abbreviated author name for first page header
+\headabbrevauthor{Battistella, L., and Nabijou, N.}
+
+\address{
+\affilnum{1}Department of Mathematics, Imperial College London}
+
+% Address / e-mail address of corresponding author
+\correspdetails{l.battistella14@imperial.ac.uk}
+
+
+% Received/revised/accepted dates will be entered by the publisher during production of an accepted paper. Please do not edit these placeholders for submission.
+\received{}
+\revised{}
+\accepted{}
+
+% Enter details of editor communicatin0g this article
+\communicated{}
+
+\begin{abstract}We define moduli spaces of relative toric quasimaps in genus zero, in the spirit of A. Gathmann. When $X$ is a smooth toric variety and $Y$ is a very ample hypersurface in $X$ we construct a virtual class on the moduli space of relative quasimaps to $(X,Y)$ which can be used to define relative quasimap invariants of the pair. We obtain a recursion formula which expresses each relative invariant in terms of invariants of lower multiplicity. Finally we apply this formula to derive a quantum Lefschetz theorem for quasimaps, expressing the restricted quasimap invariants of $Y$ in terms of those of $X$.\end{abstract}
 
 \maketitle
-\appendixtitletocoff
-\tableofcontents
+
+%\appendixtitletocoff
+%\tableofcontents
 
 \section{Introduction}
 In this paper we construct moduli spaces of relative quasimaps as substacks of moduli spaces of (absolute) quasimaps. This provides a common generalisation of two different theories: stable quasimaps on the one hand, and relative stable maps (in the sense of A. Gathmann) on the other. In this introductory section we briefly recall these, putting our work in its proper context.
@@ -193,15 +223,11 @@ For $X$ sufficiently positive, the quasimap invariants coincide with the Gromov-
 \end{itemize}
 In general, however, the invariants differ, the difference being encoded by certain wall-crossing formulae, which can be interpreted in the context of toric mirror symmetry \cite{CF-K-wallcrossing}.
 
-%An important fact for understanding the difference between these two theories is the observation that $\Q{g}{n+1}{X}{\beta}$ is \emph{not} the universal curve over $\Q{g}{n}{X}{\beta}$; in fact there is not even a morphism between these spaces in general. Instead, the universal curve $\mathcal C_{g,n}^\mathcal{Q}$ is a substack of $\MM_{g,n+1}(X,\beta)$ and comparing the geometry of $\om{Q}_{g,n+1}$ and $\mathcal{C}^{\mathcal{Q}}_{g,n}$ results in \emph{string transformations} that determine the difference between generating functions for $\epsilon_1$- and $\epsilon_2$-stable quasimaps \cite[\S 6 and 7]{CF-K-wallcrossing}.
-
 \subsection{Relative stable maps}
 Let $Y$ be a smooth very ample hypersurface in a smooth projective variety $X$. In \cite{Ga} A. Gathmann constructs a space of relative stable maps to the pair $(X,Y)$ as a closed substack of the moduli space of (absolute) stable maps to $X$:
-\begin{equation*} \M{0}{\alpha}{X|Y}{\beta} \hookrightarrow \M{0}{n}{X}{\beta} \end{equation*}
+%\begin{equation*} \M{0}{\alpha}{X|Y}{\beta} \hookrightarrow \M{0}{n}{X}{\beta}\end{equation*}
 The relative space parametrises stable maps with prescribed tangencies to $Y$ at the marked points.  Unfortunately this space does not admit a natural perfect obstruction theory. Nevertheless, because $Y$ is very ample it is still possible to construct a virtual fundamental class by intersection-theoretic methods, and hence one can define relative stable map invariants.
-
-Gathmann establishes a recursion formula for these virtual classes which allows one to express any relative invariant of $(X,Y)$ in terms of absolute invariants of $Y$ and relative invariants with lower contact multiplicities. 
-By successively increasing the contact multiplicites from zero to the maximum possible value, this gives an algorithm expressing the (restricted) invariants of $Y$ in terms of those of $X$: see \cite[Corollary 5.7]{Ga}. In \cite{Ga-MF} this result is applied to give an alternative proof of the mirror theorem for projective hypersurfaces \cite{Givental-equivariantGW} \cite{LLY1}.
+Gathmann establishes a recursion formula for these virtual classes which allows one to express any relative invariant of $(X,Y)$ in terms of absolute invariants of $Y$ and relative invariants with lower contact multiplicities. By successively increasing the contact multiplicites from zero to the maximum possible value, this gives an algorithm expressing the (restricted) invariants of $Y$ in terms of those of $X$: see \cite[Corollary 5.7]{Ga}. In \cite{Ga-MF} this result is applied to give an alternative proof of the mirror theorem for projective hypersurfaces \cite{Givental-equivariantGW} \cite{LLY1}.
 
 \subsection{Relative stable quasimaps}
 In this paper we construct moduli spaces of relative quasimaps in genus zero. We prove a recursion relation similar to Gathmann's formula, and use this to derive a quantum Lefschetz formula for quasimap invariants.
@@ -251,12 +277,6 @@ The argument is similar in spirit to the one given in \cite{Ga-MF}, however the 
 
 %We also include a short appendix, dedicated to important but slightly technical lemmas. In Appendix~\ref{Section comparison with GIT construction} we show that the moduli space $\Q{g}{n}{Y}{\beta}$, defined in \S \ref{Section recursion formula in general case} as a closed substack of $\Q{g}{n}{X}{\beta}$, is in fact virtually isomorphic to the moduli space $\om{Q}^{\operatorname{GIT}}_{g,n}(Y,\beta)$ of stable quasimaps to the GIT quotient $C(Y)\sslash \Gm^r=Y$, as defined in \cite{CFKM}.
 In Appendix~\ref{appendix:intersection} we define the \emph{diagonal pull-back} along a morphism whose target is smooth, and verify that it agrees with the more modern concept of virtual pull-back \cite{Manolache-Pull} when both are defined. The diagonal pull-back was employed implicitly in \cite{Ga}, but we find it useful here to give a more explicit treatment.
-
-\begin{acknowledgements} We thank Tom Coates and Cristina Manolache for carefully reading this manuscript and for their helpful advice with both exposition and subject matter. We are grateful to Ionu\c{t} Ciocan-Fontanine for thoroughly examining a preliminary version of this manuscript and providing several clarifications and corrections. We would also like to thank Fabio Bernasconi, Andrea Petracci and Richard Thomas for useful conversations. 
-
-L.B. is supported by a Royal Society 1st Year URF and DHF Research Grant Scheme and N.N. by an EPSRC Standard DTP Scholarship.
-This work was supported by the Engineering and Physical Sciences Research Council grant EP/L015234/1: the EPSRC Centre for Doctoral Training in Geometry and Number Theory at the Interface.
-\end{acknowledgements}
 
 \subsection{Table of notation} We will use the following notation, most of which is introduced in the main body of the paper.
 %\tabulinesep=^0.4mm_0.4mm
@@ -1257,19 +1277,13 @@ X \ar[r,"\Delta_X"] & X\times X &
 and apply commutativity of usual Gysin morphisms. In the case where $k$ is not a regular embedding but rather is equipped with a relative perfect obstruction theory, the same argument works with $k^!$ replaced by $k_{\text{v}}^!$.
 \end{proof}
 
+\acks
+We thank Tom Coates and Cristina Manolache for carefully reading this manuscript and for their helpful advice with both exposition and subject matter. We are grateful to Ionu\c{t} Ciocan-Fontanine for thoroughly examining a preliminary version of this manuscript and providing several clarifications and corrections. We would also like to thank Fabio Bernasconi, Andrea Petracci and Richard Thomas for useful conversations. 
+
+L.B. is supported by a Royal Society 1st Year URF and DHF Research Grant Scheme and N.N. by an EPSRC Standard DTP Scholarship.
+This work was supported by the Engineering and Physical Sciences Research Council grant EP/L015234/1: the EPSRC Centre for Doctoral Training in Geometry and Number Theory at the Interface.
+
 \bibliographystyle{alpha}
 \bibliography{relqm}
-
-\bigskip\bigskip
-
-\noindent Luca Battistella\\
-Department of Mathematics, Imperial College London \\
-\texttt{l.battistella14@imperial.ac.uk}\\
-
-\noindent Navid Nabijou \\
-Department of Mathematics, Imperial College London \\
-\texttt{navid.nabijou09@imperial.ac.uk}
-
-
 
 \end{document}
