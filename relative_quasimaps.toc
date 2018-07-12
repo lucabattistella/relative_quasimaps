@@ -15,7 +15,7 @@
 \contentsline {subsection}{\tocsubsection {}{4.1}{The virtual class on the space of relative quasimaps}}{20}{subsection.4.1}
 \contentsline {subsection}{\tocsubsection {}{4.2}{Relative spaces pull back}}{21}{subsection.4.2}
 \contentsline {subsection}{\tocsubsection {}{4.3}{Comb loci pull back}}{21}{subsection.4.3}
-\contentsline {section}{\tocsection {}{5}{A Lefschetz-type theorem for quasimaps}}{25}{section.5}
+\contentsline {section}{\tocsection {}{5}{Quasimap quantum Lefschetz}}{25}{section.5}
 \contentsline {subsection}{\tocsubsection {}{5.1}{General quasimap Lefschetz theorem}}{25}{subsection.5.1}
 \contentsline {subsection}{\tocsubsection {}{5.2}{A mirror theorem for quasimap invariants}}{27}{subsection.5.2}
 \contentsline {subsection}{\tocsubsection {}{5.3}{Setup}}{28}{subsection.5.3}

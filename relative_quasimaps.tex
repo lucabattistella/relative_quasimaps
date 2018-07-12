@@ -156,11 +156,11 @@
 \usepackage[T1]{fontenc}
 \usepackage{newpxtext,newpxmath}
 
-\title[Quasimap Lefschetz via Relative Quasimaps]{A Lefschetz-type Theorem for Quasimap Invariants via Relative Quasimaps}
+\title[Quasimap quantum Lefschetz via relative quasimaps]{Quasimap quantum Lefschetz via relative quasimaps}
 \author{Luca Battistella and Navid Nabijou}
 \begin{document}
 
-\begin{abstract} We define moduli spaces of relative toric quasimaps in genus zero, in the spirit of A. Gathmann. When $X$ is a smooth toric variety and $Y$ is a very ample hypersurface in $X$ we construct a virtual class on the moduli space of relative quasimaps to $(X,Y)$ which can be used to define relative quasimap invariants of the pair. We obtain a recursion formula which expresses each relative invariant in terms of invariants of lower multiplicity. Finally we apply this formula to derive a Lefschetz-type theorem expressing the restricted quasimap invariants of $Y$ in terms of those of $X$. We include several appendices collecting proofs of standard results in quasimap theory. \end{abstract}
+\begin{abstract} We define moduli spaces of relative toric quasimaps in genus zero, in the spirit of A. Gathmann. When $X$ is a smooth toric variety and $Y$ is a very ample hypersurface in $X$ we construct a virtual class on the moduli space of relative quasimaps to $(X,Y)$ which can be used to define relative quasimap invariants of the pair. We obtain a recursion formula which expresses each relative invariant in terms of invariants of lower multiplicity. Finally we apply this formula to derive a quantum Lefschetz theorem expressing the restricted quasimap invariants of $Y$ in terms of those of $X$. We include several appendices collecting proofs of standard results in quasimap theory. \end{abstract}
 
 \maketitle
 \appendixtitletocoff
@@ -194,7 +194,7 @@ Gathmann establishes a recursion formula for these virtual classes which allows 
 By successively increasing the contact multiplicites from zero to the maximum possible value, this gives an algorithm expressing the (restricted) invariants of $Y$ in terms of those of $X$: see \cite[Corollary 5.7]{Ga}. In \cite{Ga-MF} this result is applied to give an alternative proof of the mirror theorem for projective hypersurfaces \cite{Givental-equivariantGW} \cite{LLY1}.
 
 \subsection{Relative stable quasimaps}
-In this paper we construct moduli spaces of relative quasimaps in genus zero. We prove a recursion relation similar to Gathmann's formula, and use this to derive a Lefschetz-type formula for quasimap invariants.
+In this paper we construct moduli spaces of relative quasimaps in genus zero. We prove a recursion relation similar to Gathmann's formula, and use this to derive a quantum Lefschetz formula for quasimap invariants.
 Our construction carries over to the setting of $\epsilon$-stable quasimaps~\cite{CF-K}; since for $\epsilon > 1$ these moduli spaces agree with the space of stable maps, one can view our construction as giving a common generalisation of the two stories outlined above.
 
 The plan of the paper is as follows. In \S\S \ref{Subsection stable quasimaps} and \ref{Subsection relative stable maps} we provide a brief review of the theories of stable quasimaps and relative stable maps. Then in \S \ref{Subsection relative stable quasimaps} we define the moduli space of relative quasimaps as a substack of the moduli space of (absolute) quasimaps:
@@ -215,7 +215,7 @@ in the Chow group of $\Q{0}{\alpha}{X|Y}{\beta}$.
 \end{customthm}
 \noindent Here $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ is a certain \emph{quasimap comb locus} sitting inside the boundary of the relative space (see \S \ref{Subsection comb loci pull back}); its virtual class should be thought of as a correction term. Such terms also appear in Gathmann's stable map recursion formula; however, in our setting the stronger stability condition for quasimaps considerably reduces the number of such contributions.
 
-Finally in \S \ref{Section quasimap mirror theorem} we apply the recursion formula of \S \ref{Section recursion formula in general case} to obtain a Lefschetz-type theorem for quasimap invariants. This takes two forms: first we have a general result which holds without any special restrictions on $Y$.
+Finally in \S \ref{Section quasimap mirror theorem} we apply the recursion formula of \S \ref{Section recursion formula in general case} to obtain a quantum Lefschetz theorem for quasimap invariants. This takes two forms: first we have a general result which holds without any special restrictions on $Y$.
 
 \begin{customthm}{\ref{Theorem full quasimap Lefschetz}} Let $X$ be a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. Then there is an explicit algorithm to recover the (restricted) quasimap invariants of $Y$ from the quasimap invariants of $X$.\end{customthm}
 
@@ -478,7 +478,7 @@ and we define $u_Y^*(0) := 0_Y^!([C])$.
 
 \begin{remark} The above disussion also makes sense for $\epsilon$-stable quasimaps where $\epsilon > 0$ is an arbitrary rational number. We therefore have a notion of \emph{$\epsilon$-stable relative quasimap}. For $\epsilon=0+$ we recover relative quasimaps as above, whereas for $\epsilon>1$ we recover relative stable maps in the sense of Gathmann.
 
-For simplicity we restrict ourselves to the case $\epsilon=0+$. However, all of the arguments can be adapted to the general case. As $\epsilon$ increases, the recursion formula (see \S \ref{Section recursion formula in general case}) becomes progressively more complicated due to the presence of rational tails of lower and lower degree. Consequently the Lefschetz-type theorem (see \S \ref{Section quasimap mirror theorem}) also becomes more complicated.
+For simplicity we restrict ourselves to the case $\epsilon=0+$. However, all of the arguments can be adapted to the general case. As $\epsilon$ increases, the recursion formula (see \S \ref{Section recursion formula in general case}) becomes progressively more complicated due to the presence of rational tails of lower and lower degree. Consequently the quantum Lefschetz theorem (see \S \ref{Section quasimap mirror theorem}) also becomes more complicated.
 \end{remark}
 
 \section{Recursion formula for $\PP^N$ relative a hyperplane} \label{Section recursion for PN}
@@ -799,14 +799,14 @@ Summing over all the components of $\mathcal{D}^{\mathcal{Q}}_{\alpha,k}(\PP^N|H
 Apply $k^!$ to Proposition~\ref{Recursion formula for PN}, using Lemmas~\ref{Relative spaces pull back} and~\ref{Comb loci pull back}. 
 \end{proof}
 
-\section{A Lefschetz-type theorem for quasimaps} \label{Section quasimap mirror theorem}
+\section{Quasimap quantum Lefschetz} \label{Section quasimap mirror theorem}
 The recursion formula shows that the relative quasimap invariants of $(X,Y)$ are completely determined, in an algorithmic way, from the absolute invariants of $X$ and $Y$; by repeatedly applying the recursion formula, we can remove all the tangency conditions, leaving us with an expression which only involves the invariants of $X$ and $Y$.
 
-However, we can do much more than this. In this section we will prove (two variations of) a \emph{Lefschetz-type theorem for quasimap invariants}, that is, a result which expresses the quasimap invariants of $Y$ in terms of those of $X$. This is the quasimap analogue of the quantum Lefschetz hyperplane principle in Gromov--Witten theory and, on the face of it, has nothing to do with relative invariants.
+However, we can do much more than this. In this section we will prove (two variations of) a \emph{quantum Lefschetz theorem for quasimap invariants}, that is, a result which expresses the quasimap invariants of $Y$ in terms of those of $X$. This is the quasimap analogue of the quantum Lefschetz hyperplane principle in Gromov--Witten theory and, on the face of it, has nothing to do with relative invariants.
 
 \subsection{General quasimap Lefschetz theorem}\label{Subsection general quasimap Lefschetz}
 First we state the most general form of the theorem, without any additional assumptions on $X$ and $Y$.
-\begin{thm}[Lefschetz-type theorem for quasimap invariants] \label{Theorem full quasimap Lefschetz} Let $X$ be a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. Then there is an explicit algorithm to recover the (restricted) absolute quasimap invariants of $Y$, as well as the relative quasimap invariants of $(X,Y)$, from the absolute quasimap invariants of $X$.\end{thm}
+\begin{thm}[Quasimap quantum Lefschetz] \label{Theorem full quasimap Lefschetz} Let $X$ be a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. Then there is an explicit algorithm to recover the (restricted) absolute quasimap invariants of $Y$, as well as the relative quasimap invariants of $(X,Y)$, from the absolute quasimap invariants of $X$.\end{thm}
 The corresponding result in Gromov--Witten theory is due to Gathmann \cite[Corollary 2.5.6]{GathmannThesis}; the proof we present in the quasimap setting is very similar to his. The term \emph{``restricted''} here means that we only integrate against cohomology classes pulled back from $\HH^*(X)$, rather than allowing arbitrary classes from $\HH^*(Y)$.
 
 \begin{proof} The idea, of course, is to repeatedly apply the recursion formula. The proof is by induction, and in order for the argument to work it is essential that we determine simultaneously  the absolute invariants of $Y$ and the relative invariants of $(X,Y)$.
