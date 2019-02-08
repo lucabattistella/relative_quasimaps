@@ -1,6 +1,10 @@
-\documentclass[times,doublespace]{oupau}
-
-%\usepackage[english]{babel}
+\documentclass[10pt]{article}
+    \textwidth=125mm
+    \textheight=185mm
+    \parindent=8mm
+    \evensidemargin=0pt
+    \oddsidemargin=0pt
+    \frenchspacing
 \usepackage{appendix}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -18,7 +22,6 @@
 %\usepackage{enumerate}
 \usepackage{verbatim}
 \usepackage{graphicx}
-\usepackage{verbatim}
 \usepackage{faktor}
 \usepackage{xcolor}
 \usepackage{xfrac}
@@ -137,10 +140,11 @@
   {\endinnercustomthm}
 
 \theoremstyle{definition}
-%\newtheorem{example}[thm]{Example}
+\newtheorem{example}[thm]{Example}
+\newtheorem{lemma}[thm]{Lemma}
 \newtheorem{ex}[thm]{Example}
 \newtheorem{dfn}[thm]{Definition}
-%\newtheorem{definition}[thm]{Definition}
+\newtheorem{definition}[thm]{Definition}
 \newtheorem{aside}[thm]{Aside}
 \newtheorem{remark}[thm]{Remark}
 \newtheorem{com}[thm]{Comment}
@@ -154,16 +158,16 @@
 
 \setcounter{tocdepth}{1}
 
-\newcommand{\todo}[1]{\vspace{5mm}\par \noindent
-\framebox{\begin{minipage}[c]{0.95 \textwidth} \tt #1\end{minipage}} \vspace{5mm} \par}
+%\newcommand{\todo}[1]{\vspace{5mm}\par \noindent
+%\framebox{\begin{minipage}[c]{0.95 \textwidth} \tt #1\end{minipage}} \vspace{5mm} \par}
 
-\def\ti{-\allowhyphens}
-\newcommand{\thismonth}{\ifcase\month % case 0 --- impossible!
-  \or January\or February\or March\or April\or May\or June%
-  \or July\or August\or September\or October\or November%
-  \or December\fi}
-\newcommand{\thismonthyear}{{\thismonth} {\number\year}}
-\newcommand{\thisdaymonthyear}{{\number\day} {\thismonth} {\number\year}}
+%\def\ti{-\allowhyphens}
+%\newcommand{\thismonth}{\ifcase\month % case 0 --- impossible!
+%  \or January\or February\or March\or April\or May\or June%
+%  \or July\or August\or September\or October\or November%
+%  \or December\fi}
+%\newcommand{\thismonthyear}{{\thismonth} {\number\year}}
+%\newcommand{\thisdaymonthyear}{{\number\day} {\thismonth} {\number\year}}
 
 %\usepackage[T1]{fontenc}
 %\usepackage{newpxtext,newpxmath}
@@ -171,40 +175,22 @@
 \begin{document}
 
 \title{Quasimap quantum Lefschetz via relative quasimaps}
-%\textit{Oxford University Press Ltd Journal}
-\shorttitle{Quasimap quantum Lefschetz via relative quasimaps}
-\author{Luca Battistella\affil{1} and Navid Nabijou\affil{1}}
 
-% Enter the publication year and the ID number of the paper
-\volumeyear{}
-\paperID{}
+\author{Luca Battistella\footnote{Max-Planck-Institut f\"ur Mathematik, Bonn} and Navid Nabijou\footnote{School of Mathematics and Statistics, University of Glasgow}}
 
-
-\abbrevauthor{L. Battistella and N. Nabijou}
-% Abbreviated author name for first page header
-\headabbrevauthor{Battistella, L., and Nabijou, N.}
-
-\address{
-\affilnum{1}Department of Mathematics, Imperial College London}
-
-% Address / e-mail address of corresponding author
-\correspdetails{navid.nabijou09@imperial.ac.uk}
-
-
-% Received/revised/accepted dates will be entered by the publisher during production of an accepted paper. Please do not edit these placeholders for submission.
-\received{}
-\revised{}
-\accepted{}
-
-% Enter details of editor communicatin0g this article
-\communicated{}
-
-\begin{abstract}We define moduli spaces of relative toric quasimaps in genus zero, in the spirit of A. Gathmann. When $X$ is a smooth toric variety and $Y$ is a very ample hypersurface in $X$ we construct a virtual class on the moduli space of relative quasimaps to $(X,Y)$ which can be used to define relative quasimap invariants of the pair. We obtain a recursion formula which expresses each relative invariant in terms of invariants of lower multiplicity. Finally we apply this formula to derive a quantum Lefschetz theorem for quasimaps, expressing the restricted quasimap invariants of $Y$ in terms of those of $X$.\end{abstract}
 
 \maketitle
 
+\begin{abstract}We define moduli spaces of relative toric quasimaps in genus zero, in the spirit of A. Gathmann. When $X$ is a smooth toric variety and $Y$ is a very ample hypersurface in $X$ we construct a virtual class on the moduli space of relative quasimaps to $(X,Y)$ which can be used to define relative quasimap invariants of the pair. We obtain a recursion formula which expresses each relative invariant in terms of invariants of lower multiplicity. Finally we apply this formula to derive a quantum Lefschetz theorem for quasimaps, expressing the restricted quasimap invariants of $Y$ in terms of those of $X$.\end{abstract}
 %\appendixtitletocoff
 %\tableofcontents
+
+\acknowledgements
+
+We thank Tom Coates and Cristina Manolache for carefully reading this manuscript and for their helpful advice with both exposition and subject matter. We are grateful to Ionu\c{t} Ciocan-Fontanine for thoroughly examining a preliminary version of this manuscript and providing several clarifications and corrections. We would also like to thank Fabio Bernasconi, Andrea Petracci and Richard Thomas for useful conversations. 
+
+During the preparation of this manuscript, L.B. was supported by a Royal Society 1st Year URF and DHF Research Grant Scheme and N.N. by an EPSRC Standard DTP Scholarship. We thank Imperial College London for providing a fruitful research environment.
+This work was supported by the Engineering and Physical Sciences Research Council grant EP/L015234/1: the EPSRC Centre for Doctoral Training in Geometry and Number Theory at the Interface.
 
 \section{Introduction}
 In this paper we construct moduli spaces of relative quasimaps as substacks of moduli spaces of (absolute) quasimaps. This provides a common generalisation of two different theories: stable quasimaps on the one hand, and relative stable maps (in the sense of A. Gathmann) on the other. In this introductory section we briefly recall these, putting our work in its proper context.
@@ -396,7 +382,7 @@ The image of the degree $1$ component under $f$ can be any line passing through 
 
 %[EXAMPLE: $\Q{0}{2}{\PP^2}{1}$ and $\M{0}{2}{\PP^2}{1}$]
 
-\begin{remark}
+\begin{remark}\label{rmk:epsilonstable}
  There is a more general notion of \ilemph{$\epsilon$-stable quasimap} \cite[\S 7.1]{CFKM}. Here the stability condition, namely that the line bundle
 \begin{equation*} \omega_C(x_1 + \ldots + x_n)\otimes L^{\otimes \epsilon} \end{equation*} 
 is ample, is only required to hold for a fixed $\epsilon \in \QQ_{>0}$ (instead of for arbitrary $\epsilon$, as was the case with ordinary quasimaps).
@@ -413,7 +399,7 @@ Another variant of the theory, which will play a role in later sections, is that
 
 \subsection{Review of relative stable maps} \label{Subsection relative stable maps} Given a smooth projective variety $X$ and a smooth very ample divisor $Y$, Gathmann's space of relative stable maps parametrises stable maps to $X$ with specified tangencies to $Y$ at the marked points.
 
-\begin{definition} {\cite[Definition 1.1]{Ga}}  Let $X$ be a smooth projective variety and $Y \subseteq X$ a smooth very ample divisor. Fix a number $n \geq 0$ of marked points, an effective curve class $\beta \in \HH_2^+(X)$ and an $n$-tuple $\alpha = (\alpha_1, \ldots, \alpha_n)$ of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. The space
+\begin{definition}\label{def:Garelmap} {\cite[Definition 1.1]{Ga}}  Let $X$ be a smooth projective variety and $Y \subseteq X$ a smooth very ample divisor. Fix a number $n \geq 0$ of marked points, an effective curve class $\beta \in \HH_2^+(X)$ and an $n$-tuple $\alpha = (\alpha_1, \ldots, \alpha_n)$ of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. The space
 \begin{equation*} \M{0}{\alpha}{X|Y}{\beta} \end{equation*}
 of relative stable maps to $(X,Y)$ consists of those points $(C, (x_i \in C)_{i=1}^n , f : C \to X)$ in $\M{0}{n}{X}{\beta}$ satisfying the following two conditions:
 \begin{enumerate}
@@ -462,7 +448,7 @@ Repeated application of this result shows that both the relative Gromov--Witten 
 
 \subsection{Definition of relative stable quasimaps} \label{Subsection relative stable quasimaps}
 
-We now give the main definition of the paper. From here on $X$ will denote a smooth projective toric variety and $Y \subseteq X$ a very ample hypersurface. We \emph{do not} require that $Y$ is toric.
+From here on $X$ will denote a smooth projective toric variety and $Y \subseteq X$ a very ample hypersurface. We \emph{do not} require that $Y$ is toric.
 Consider the line bundle $\OO_X(Y)$ and the section $s_Y$ cutting out $Y$. By \cite{CoxRing} we have a natural isomorphism of $\CC$-vector spaces
 \begin{equation*} \HH^0(X,\OO_X(Y)) = \left\langle \prod_{\rho} z_\rho^{a_\rho} : \Sigma_\rho a_\rho [D_\rho] = [Y] \right\rangle_{\CC} \end{equation*}
 where the $z_\rho$ for $\rho \in \Sigma(1)$ are the generators of the Cox ring of $X$ and the $a_\rho$ are non-negative integers. We can therefore write $s_Y$ as
@@ -481,33 +467,45 @@ The upshot is that we obtain a line bundle $L_Y$ on $C$, which plays the role of
 \begin{equation*} u_Y \in \HH^0(C,L_Y) \end{equation*}
 which plays the role of the ``pull-back'' of $s_Y$.
 
+We now give the main definition of the paper. We start from the unbstructed case $(\PP^N|H=\{z_0=0\})$. The above discussion simplifies.
+\begin{definition}
+ The space of relative quasimaps $\Q{0}{\alpha}{\PP^N|H}{d}$ is the closure inside $\Q{0}{n}{\PP^N}{d}$ of the nice locus of quasimaps \[\left((\PP^1,x_1,\ldots,x_n),u_0,\ldots,u_N\in H^0(\PP^1,\OO_{\PP^1}(d))\right)\] such that $u_0\not\equiv 0$, $u_0^*(0)\geq\sum\alpha_ix_i$ and $(u_0,\ldots,u_N)$ do not vanish simultaneously on $\PP^1$.
+ \end{definition}
+\noindent We use Fulton's refined Gysin map \cite[\S 2.6]{FUL} to define $u_0^*(0) := 0^!([C])\in\Achow_*(u_0^{-1}(0))$ from the diagram:
+\bcd
+u_0^{-1}(0) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \PP^1 \ar[d,"u_0"] \\
+\PP^1 \ar[r,"0"] & \operatorname{Vec}(\OO_{\PP^1}(d))
+\ecd
+
+More generally, let $X$ and $Y$ be as above. The complete linear system associated to $\OO_X(Y)$ defines an embedding $i \colon X \hookrightarrow \PP^N$ such that $i^{-1}(H) = Y$ for a certain hyperplane $H$. By the functoriality property of quasimap spaces (see \cite[\S 3.1]{CF-K-wallcrossing}) we have a map:
+\begin{equation*} \om{Q}(i) \colon \Q{0}{n}{X}{\beta} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
+where $d=i_*\beta$. %Because $\Q{0}{n}{\PP^N}{d}$ is smooth, $k$ admits a compatible perfect obstruction theory, so we have a notion of virtual pull-back along $k$.
 \begin{definition} With notation as above, let $n \geq 2$ be a number of marked points, $\beta \in \HH_2^+(X)$ be an effective curve class and $\alpha=(\alpha_1, \ldots, \alpha_n)$ be a collection of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. The \ilemph{space of relative stable quasimaps}
 \begin{equation*} \Q{0}{\alpha}{X|Y}{\beta} \subseteq \Q{0}{n}{X}{\beta} \end{equation*}
-is defined to be the locus of quasimaps
-\begin{equation*} \big((C, (x_i\in C)_{i=1}^n), (L_\rho,u_\rho)_{\rho \in \Sigma(1)}, (\varphi_m)_{m \in M}\big) \end{equation*}
-such that:
-\begin{enumerate}
-\item if $x_i$ is a marking such that $\alpha_i > 0$, then $x_i^* u_Y = 0$;
-\item if we let $u_Y^*(0) \in \Achow_0(u_Y^{-1}(0))$ denote the class defined by the Gysin map for $L_Y$, then the difference $u_Y^*(0) - \Sigma_i \alpha_i [x_i]$ is an effective class.
-\end{enumerate}
+is defined to be the following fiber product:
+\bcd
+\Q{0}{\alpha}{X|Y}{\beta}\ar[d]\ar[r,hook]\ar[dr,phantom,"\Box"] & \Q{0}{n}{X}{\beta}\ar[d,"\om{Q}(i)"] \\
+\Q{0}{\alpha}{\PP^N|H}{d}\ar[r,hook] & \Q{0}{n}{\PP^N}{d}
+\ecd
 \end{definition}
 
-\noindent The class $u_Y^*(0)$ is defined as follows. Consider the cartesian diagram
-\bcd
-u_Y^{-1}(0) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & C \ar[d,"u_Y"] \\
-C \ar[r,"0_Y"] & L_Y
-\ecd
-where $0_Y$ is the zero section. There is a Gysin map \cite[\S 2.6]{FUL}
-\begin{equation*} 0_Y^! : \Achow_*(C) \to \Achow_*(u_Y^{-1}(0)) \end{equation*}
-and we define $u_Y^*(0) := 0_Y^!([C])$.
-
-
-\begin{remark} As in the case of relative stable maps (see \S \ref{Subsection relative stable maps}) there is an equivalent definition which is more useful in practice: a quasimap is an $\alpha$-relative quasimap if and only if for every connected component $Z$ of $u_Y^{-1}(0)$ we have that:
-\begin{enumerate}
-\item if $Z$ is a point and is equal to a marked point $x_i$, then the order of vanishing of $u_Y$ at $x_i$ is greater than or equal to $\alpha_i$;
-\item if $Z$ is one-dimensional (hence a union of irreducible components) and if we let $C^{(i)}$ for $1 \leq i \leq r$ denote the irreducible components of $C$ adjacent to $Z$ and $m^{(i)}$ the order of vanishing of $u_Y$ at the node $Z \cap C^{(i)}$, then:
-\begin{equation} \label{Relative quasimap internal component inequality} \deg L_Y|_Z + \sum_{i=1}^r m^{(i)} \geq \sum_{x_i \in Z} \alpha_i \tag{\textasteriskcentered\textasteriskcentered} \end{equation}
-\end{enumerate}
+\begin{remark}\label{Example of non-injectivity}
+I. Ciocan-Fontanine has kindly pointed out that, contrary to the case of stable maps, $k$ might not be a closed embedding, even though $i$ is. For instance, consider the Segre embedding
+\begin{align*}
+\PP^1\times\PP^1 & \xhookrightarrow{i} \PP^3\\ 
+([x:y],[z:w]) & \mapsto [xz:xw:yz:yw]\end{align*}
+and the induced morphism between quasimap spaces:
+\begin{equation*} k\colon \Q{0}{3}{\PP^1\times\PP^1}{(2,2)}\to\Q{0}{3}{\PP^3}{4} \end{equation*}
+If we take the following two objects of $\Q{0}{3}{\PP^1 \times \PP^1}{(2,2)}$:
+\begin{align*}
+  \left(\left(\PP^1_{[s:t]},0,1,\infty\right),\left(L_1=\OO_{\PP^1}(2),u_1=s^2 ,v_1=st\right),\left(L_2=\OO_{\PP^1}(2), u_2=st,v_2=t^2\right)\right)\\
+  \left(\left(\PP^1_{[s:t]},0,1,\infty\right),\left(L_1=\OO_{\PP^1}(2),u_1=st ,v_1=t^2 \right),\left(L_2=\OO_{\PP^1}(2), u_2=s^2,v_2=st\right)\right)
+\end{align*}
+then these two quasimaps are non-isomorphic, but they both map to the same object under $k$, namely:
+ \[
+   \left(\left(\PP^1_{[s:t]},0,1,\infty\right),\left(L=\OO_{\PP^1}(4),z_0=s^3t,z_1=s^2t^2,z_2=s^2t^2,z_3=st^3\right)\right)
+ \]
+Notice that this only happens on the locus of quasimaps with basepoints.
 \end{remark}
 
 \begin{remark} The above disussion also makes sense for $\epsilon$-stable quasimaps where $\epsilon > 0$ is an arbitrary rational number. We therefore have a notion of \emph{$\epsilon$-stable relative quasimap}. For $\epsilon=0+$ we recover relative quasimaps as above, whereas for $\epsilon>1$ we recover relative stable maps in the sense of Gathmann.
@@ -518,81 +516,52 @@ For simplicity we restrict ourselves to the case $\epsilon=0+$. However, all of 
 \begin{remark} To avoid confusion, we remark that the spaces defined above are not the same as the spaces defined in \cite[\S 6]{OkounkovKTheory}, which also go by the name of ``relative quasimaps.''
 \end{remark}
 
-\section{Recursion formula for $\PP^N$ relative a hyperplane} \label{Section recursion for PN}
-At this stage we do not know much about the moduli space of relative quasimaps. In this section we will examine the case $X=\PP^N$ and $Y=H$ a hyperplane in detail.
-
 \subsection{Basic properties of the moduli space} \label{Subsection basic properties of the moduli space}
-We now show that the moduli space
-\begin{equation*} \Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
-is irreducible of the expected dimension, and thus admits a fundamental class. We then prove a recursion formula for these fundamental classes by pushing d Gathmann's recursion formula along the comparison morphism:
-\begin{equation*}\chi : \M{0}{n}{\PP^N}{d} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
-Let us briefly recall what this morphism does. Every stable map defines a quasimap which is stable except for the fact that it may have rational tails. $\chi$ has the effect of contracting these rational tails and introducing a basepoint at the corresponding node, with multiplicity equal to the degree of the rational tail. 
-
-%[PICTURE]
-
-For more details, see \cite[Theorem 3]{MOP} and \cite[Section 4.3]{Manolache-Push} (earlier manifestations of these ideas can be found in \cite{Bertram} and \cite{Popa-Roth}).
-
-For the remainder of this section we set $X=\PP^N$, denote the projective coordinates on $X$ by $[z_0: \ldots: z_N]$ and set $Y=H=\{ z_0 = 0 \}$. Given a quasimap
-\begin{equation*} \big((C,x_1,\ldots,x_n), L, u_0,\ldots,u_N\big) \in \Q{0}{n}{\PP^N}{d} \end{equation*}
-the line bundle $L_Y$ of the previous section is equal to $L$ and the section $u_Y$ is equal to $u_0$.
-
-\begin{lem}\label{lem:comparison}
-The comparison morphism restricts to a morphism 
-\begin{equation*} \chi: \M{0}{\alpha}{\PP^N|H}{d}\to \Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
-\end{lem}
+\begin{lemma}
+ $\Q{0}{\alpha}{\PP^N|H}{d}$ is irreducible of codimension $\sum\alpha$ in $\Q{0}{n}{\PP^N}{d}$.
+\end{lemma}
 \begin{proof}
-We need to verify that a relative stable map is sent to a relative stable quasimap by $\chi$. Since the contraction of a rational tail $R$ always occurs away from the markings, we only need to examine the internal components $Z$ of the quasimap. To be more precise, we have to show that the inequality \eqref{Relative quasimap internal component inequality} is satisfied, using the fact that the inequality \eqref{Relative stable map internal component inequality} is satisfied by the stable map that we started with.  Let us describe this stable map around $Z$. For each basepoint $x$ on $Z$ there is a rational tail $R$ of the stable map attached to $Z$ at $x$. This is either internal (mapped into $H$) or external (not mapped entirely into $H$).  
-
-If $R$ is internal then both $R$ and $Z$ live inside the same connected component $Z^\prime$ of $f^{-1}(H)$. Applying $\chi$ has the effect of contracting $R$ and increasing the degree of the line bundle on $Z$ by $H \cdot f_* [R]$. Thus the left hand side of inequality \eqref{Relative stable map internal component inequality} is left unchanged, and since the right hand side is also unaltered we obtain inequality \eqref{Relative quasimap internal component inequality}.
-
-On the other hand if $R$ is external then the multiplicity $m^{(R)}$ of $R \cap Z$ satisfies:
-\begin{equation*} m^{(R)} \leq H \cdot f_* [R] \end{equation*}
-Since applying $\chi$ has the effect of replacing $m^{(R)}$ by $H \cdot f_* [R]$ in the left hand side of \eqref{Relative stable map internal component inequality}, inequality \eqref{Relative quasimap internal component inequality} holds a fortiori for the quasimap. Thus we obtain a morphism from the relative stable map space to the relative quasimap space, as claimed.
+ It is enough to show the statement holds for the nice locus of which we are taking the closure. Since we are requiring that there are no basepoints, such locus is also a locally closed substack of $\M{0}{n}{\PP^N}{d}$. The proof of \cite[Lemma 1.8]{Ga} applies.
 \end{proof}
-Let us denote by
-\begin{equation*} \mathcal Q^{\circ}_{0,\alpha}(\PP^N|H,d) \subseteq \Q{0}{\alpha}{\PP^N|H}{d} \end{equation*}
-the \ilemph{nice locus}, consisting of those quasimaps with irreducible source curve $C \cong \PP^1$ and no basepoints (so that we have an actual map $u : C \to \PP^N$) such that the curve is not mapped inside $H$ and $u$ has tangency at least $\alpha_i$ to $H$ at the marking $x_i$.
+Indeed there exists a comparison morphism:
+\begin{equation*}\chi : \M{0}{n}{\PP^N}{d} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
+Recall that $\chi$ has the effect of contracting every rational tail and introducing a basepoint at the corresponding node, with multiplicity equal to the degree of the rational tail. For more details, see \cite[Theorem 3]{MOP} and \cite[Section 4.3]{Manolache-Push} (earlier manifestations of these ideas can be found in \cite{Bertram} and \cite{Popa-Roth}).
 
-This is an irreducible, locally closed substack of $\Q{0}{n}{\PP^N}{d}$ of codimension $\Sigma_i \alpha_i$, by essentially the same argument as in \cite[Lemma 1.8]{Ga}. In fact it is isomorphic to the nice locus inside the stable map space, denoted $\mathcal M_{0,\alpha}(\PP^N|H,d)$ by Gathmann (see \cite[Def. 1.6]{Ga}); the stricter stability condition has no effect when the source curve is irreducible.
-
-\begin{lem} \label{lem:closure}
-$\Q{0}{\alpha}{\PP^N|H}{d}$ is the closure of the nice locus $\mathcal{Q}^{\circ}_{0,\alpha}(\PP^N|H,d)$ inside $\Q{0}{n}{\PP^N}{d}$. 
-\end{lem}
+\begin{lemma}\label{Comparison morphism birational}
+ The comparison morphism $\chi$ restricts to a proper and birational morphism \[\chi_\alpha\colon \M{0}{\alpha}{\PP^N|H}{d}\to \Q{0}{\alpha}{\PP^N|H}{d}.\]
+\end{lemma}
 \begin{proof}
-$\Q{0}{\alpha}{\PP^N|H}{d}\subseteq\overline{\mathcal{Q}^{\circ}_{0,\alpha}(\PP^N|H,d)}$: we show that any relative stable quasimap can be infinitesimally deformed to a relative stable quasimap with no basepoints. This is in particular a relative stable map; we then appeal to \cite[Prop. 1.14]{Ga} to deform this stable map and obtain a point in the nice locus. Since this deformation does not introduce any rational tails, this is also a deformation of quasimaps, and the statement follows.
-
-We induct on the number of components containing at least one base-point. Suppose this number is non-zero (otherwise there is nothing to prove) and pick such a component $C_0$, with base-points $y_1 ,\ldots, y_k$. Recall that this means that $u_i(y_j)=0$ for all $i$ and $j$. We will deform the section $u_N|_{C_0}$ to a new section $u_N^\prime|_{C_0}$ in such a way that $u_N^\prime|_{C_0}(y_j) \neq 0$ and in such a way that we do not introduce any new basepoints. Notice that since the relative condition only depends on $u_0$, the resulting deformed quasimap will still be a relative quasimap.
-
-Now, by nondegeneracy and the fact that there exists a basepoint, we must have $\deg(L|_{C_0})>0$, and since $C_0 \cong \PP^1$ we can find a section $w_0$ of $L|_{C_0} \cong \OO_{\PP^1}(d_0)$ not vanishing at any of the base-points $y_i$.
-We then set
-\begin{equation*} u_N^\prime|_{C_0} := u_N|_{C_0} + \epsilon w_0 \end{equation*}
-and $u_i^\prime|_{C_0} = u_i|_{C_0}$ for all other $i$. Notice that $u_N^\prime|_{C_0}(y_j) \neq 0$ for all $j$ as claimed. It is also clear that we do not introduce any new basepoints, since $u_N^\prime|_{C_0}(y) = 0$ implies $u_N|_{C_0}(y)=0$ (put differently: being a basepoint is a closed condition).
-
-It remains to extend the section $u_N^\prime|_{C_0}$ to a section $u_N^\prime$ on the whole curve. Let $C_1, \ldots, C_r$ be the components of $C$ adjacent to $C_0$ and let $q_i = C_0 \cap C_i$. We need to modify the sections $u_N|_{C_i}$ in such a way that $u_N^\prime|_{C_i}(q_i) = u_N^\prime|_{C_0}(q_i)$.
-
-By nondegeneracy, we can choose a section $w_i$ of $L|_{C_i}$ such that $w_i(q_i) \neq 0$. Then set:
-\begin{equation*} {u_N^\prime}|_{C_i} := {u_N}|_{C_i} + \epsilon \left( \frac{w_0(q_i)}{w_i(q_i)} \right) \cdot w_i \end{equation*}
-Then indeed we have:
-\begin{equation*} {u_N^\prime}|_{C_i}(q_i) = u_N(q_i) + \epsilon \left( \frac{w_0(q_i)}{w_i(q_i)} \right) \cdot w_i(q_i) = u_N(q_i) + \epsilon w_0(q_i) = {u_N^\prime}|_{C_0}(q_i) \end{equation*}
-We can continue this process, replacing $C_0$ by $C_i$; since the genus of the curve is zero there are no cycles in the dual intersection graph, and so we will never come to the same component twice. In this way we obtain a new quasimap
-\begin{equation*} \big((C,x_1,\ldots,x_n),L,u_0, \ldots, u_{N-1}, u_N^\prime\big) \end{equation*}
-over $\Spec \CC[\epsilon]/(\epsilon^2)$ which has no basepoints on $C_0$. We can repeat this process for all the components of $C$ (using higher powers of $\epsilon$ each time in order to ensure that we never introduce additional basepoints) and thus we obtain an infinitesimal deformation of our original quasimap which has no basepoints, as required.
-
-$\overline{\mathcal{Q}^{\circ}_{0,\alpha}(\PP^N|H,d)}\subseteq\Q{0}{\alpha}{\PP^N|H}{d}$: consider a family of stable quasimaps over a smooth curve $S$, such that the generic fibre lies in the nice locus. We may  blow-up the source curve (a fibred surface over $S$) in the locus of basepoints (which consists of finitely many smooth points of the central fibre) and repeat this process a finite number of times in order to obtain an actual morphism to $\PP^N$. This has the effect of adding rational trees at the basepoints in the central fibre. If the morphism is constant on any of these newly introduced rational tails or bridges we may contract them, and thus we obtain a family of stable maps which pushes down along $\chi$ to our original family of quasimaps.
-
-The general fibre is not modified at all, and so is still in the nice locus. By \cite[Lemma 1.9]{Ga} it follows that the central fibre is a relative stable map, and then by applying $\chi$ and appealing to Lemma \ref{lem:comparison} it follows that the same is true for the central fibre of the family of quasimaps. \end{proof}
-
-\begin{cor} The moduli space $\Q{0}{\alpha}{\PP^N|H}{d}$ is irreducible of the expected dimension. Hence it has a fundamental class. \end{cor}
-\begin{proof} This holds because the moduli space is equal to the closure of the nice locus, which is irreducible of the expected dimension.\end{proof}
+ $\chi(\M{0}{\alpha}{\PP^N|H}{d})\subseteq \Q{0}{\alpha}{\PP^N|H}{d}$ follows by applying $\chi$ to a smoothing family of a relative map, while the reverse inclusion follows because $\chi$ is proper (hence closed). Notice that $\M{0}{\alpha}{\PP^N|H}{d}$ embeds as a closed substack of the fiber product $\chi^{-1}(\Q{0}{\alpha}{\PP^N|H}{d})$ (where the map along rational tails is sufficiently ramified at $H$), hence $\chi_\alpha$ is also proper.
+\end{proof}
 
 Since the moduli space of relative quasimaps has a fundamental class, we can define \emph{relative quasimap invariants} for the pair $(\PP^N,H)$:
 \begin{equation*} \left\langle \gamma_1 \psi_1^{k_1} , \ldots, \gamma_n \psi_n^{k_n} \right\rangle_{0,\alpha,d}^{\PP^N|H} := \int_{[\Q{0}{\alpha}{\PP^N|H}{d}]} \prod_{i=1}^n \ev_i^* \gamma_i \cdot \psi_i^{k_i} \end{equation*}
-We will now establish a number of properties of the fundamental class.
-\begin{cor} \label{Comparison morphism birational} The comparison morphism from relative stable maps to relative quasimaps is birational. In particular it sends the fundamental class to the fundamental class, and thus the invariants coincide. \end{cor}
-\begin{proof} This follows because the comparison morphism restricts to an isomorphism on the nice locus, which by Lemma~\ref{lem:closure} is a dense open subset of both spaces. Notice that by setting $\alpha=0$ we recover the absolute case. \end{proof}
+
+\begin{remark}
+ Relative Gromov-Witten and quasimap invariants of $(\PP^N|H)$ coincide on the nose: $\chi$ being birational, it preserves the fundamental class; furthermore, any stabilisation of the source curve happens away from the markings, hence $\psi$-classes pullback under $\chi$. Setting $\alpha=0$ recovers the absolute case.
+\end{remark}
+
+Since $\Q{0}{n}{\PP^N}{d}$ is unobstructed, the morphism $\om{Q}(i)\colon\Q{0}{n}{X}{\beta}\to \Q{0}{n}{\PP^N}{d}$ admits a natural perfect obstruction theory, and so there is a virtual pull-back morphism $\om{Q}(i)^!_{\operatorname{v}}$. Alternatively, we may use the presence of a virtual class on $\Q{0}{n}{X}{\beta}$ to define a diagonal pull-back morphism $\om{Q}(i)^!_{\Delta}$. The discussion in Appendix \ref{appendix:intersection} shows that these two maps coincide, and from now on we will denote them both by $\om{Q}(i)^!$.
+
+We now define the virtual class on $\Q{0}{\alpha}{X|Y}{\beta}$ by pull-back along $\om{Q}(i)$
+\begin{equation*} \virt{\Q{0}{\alpha}{X|Y}{\beta}} := \om{Q}(i)^! [ \Q{0}{\alpha}{\PP^N|H}{d} ] \end{equation*}
+and use this class to define relative quasimap invariants in general.
+
+Recall the discussion at the beginning of Section \ref{Subsection relative stable quasimaps}. We may now use $\chi$ to identify the points of $\Q{0}{\alpha}{X|Y}{\beta}$ more explicitly.
+\begin{lem}[Combinatorial description] A quasimap belongs to the relative space $\Q{0}{\alpha}{X|Y}{\beta}\subseteq \Q{0}{n}{X}{\beta}$ if and only if every connected component $Z$ of $u_Y^{-1}(0)$ satisfies the following:
+\begin{enumerate}
+\item if $Z$ is a point and is equal to a marking $x_i$, then $u_Y^*(0)$ has order at least $\alpha_i$ at $x_i$;
+\item if $Z$ is a curve - it is then a rational tree -, and if we let $C^{(i)}$ for $1 \leq i \leq r$ denote the irreducible components of $C$ adjacent to $Z$, and $m^{(i)}$ denote the multiplicity of $f|_{C^{(i)}}$ to $H$ at the (unique) node $Z \cap C^{(i)}$, then:
+\begin{equation} \label{Relative quasimap internal component inequality} \deg(L_{Y}|_Z) + \sum_{i=1}^r m^{(i)} \geq \sum_{x_i \in Z} \alpha_i \end{equation}
+\end{enumerate}
+\end{lem}
+\begin{proof}
+ From the definition of $\Q{0}{\alpha}{X|Y}{\beta}$, we see that it is enough to prove the characterisation in the case $(X|Y)=(\PP^N|H)$. The statement holds on the nice locus by definition, so it holds on its closure $\Q{0}{\alpha}{\PP^N|H}{d}$ by the principle of conservation of number. On the other hand, let $\xi'$ be a quasimap satisfying the combinatorial description, with a basepoint $q_0$ of order $d_0$ on an internal component $Z$. Choose any line $\ell$ through the image of $q_0$, with $\ell$ transverse to $H$. Lift $\xi'$ to a stable map $\xi$ by adjoining a $\PP^1=:R$ to the source curve at $q_0$, and defining the map $f_{|R}$ to be a $d_0$-fold cover of $\ell$ totally ramified at $q_0$ (any basepoint which is not internal is easier to deal with). Then $\xi$ belongs to $\M{0}{\alpha}{\PP^N|H}{d}$ by the discussion following Definition \ref{def:Garelmap}, hence $\xi'=\chi(\xi)\in\Q{0}{\alpha}{\PP^N|H}{d}$.
+\end{proof}
 
 
-\subsection{Proof of the recursion formula} \label{Subsection recursion formula for PN}
+\section{Recursion formula for $\PP^N$ relative a hyperplane} \label{Section recursion for PN}
+%\subsection{Proof of the recursion formula} \label{Subsection recursion formula for PN}
 We wish to obtain a recursion formula relating the quasimap invariants of multiplicity $\alpha$ with the quasimap invariants of multiplicity $\alpha + e_k$, as in \cite[Theorem 2.6]{Ga}. For $m = \alpha_k + 1$ the following section (of the pull-back of the jet bundle of the universal line bundle)
 \[
 \sigma^m_k := x_k^*d^m_{\mathcal C/\om{Q}}(u_0)\in \HH^0(\om{Q},x_k^*\mathcal P^m_{\mathcal C/\mathcal Q}(\mathcal L))
@@ -682,50 +651,8 @@ In this section we prove the main result of this paper: a recursion formula for 
 in the Chow group of $\Q{0}{\alpha}{X|Y}{\beta}$. 
 \end{thm}
 
-\noindent We begin by defining the terms that appear in the statement.
+The formula is proven by pulling back the recursion for $(\PP^N|H)$ along $\om{Q}(i)$. Only the last term needs discussion at this point.
 
-\subsection{The virtual class on the space of relative quasimaps}\label{Subsection virtual class in general} Let $X$ and $Y$ be as in the statement of Theorem~\ref{Theorem general recursion}.  The complete linear system associated to $\OO_X(Y)$ defines an embedding $i : X \hookrightarrow \PP^N$ such that $i^{-1}(H) = Y$ for a certain hyperplane $H$. By the functoriality property of quasimap spaces (see \cite[\S 3.1]{CF-K-wallcrossing}) we have a map:
-\begin{equation*} k := \om{Q}(i) : \Q{0}{n}{X}{\beta} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
-where $d=i_*\beta$. %Because $\Q{0}{n}{\PP^N}{d}$ is smooth, $k$ admits a compatible perfect obstruction theory, so we have a notion of virtual pull-back along $k$.
-
-\begin{remark}\label{Example of non-injectivity}
-I. Ciocan-Fontanine has kindly pointed out that, contrary to the case of stable maps, $k$ might not be a closed embedding, even though $i$ is. For instance, consider the Segre embedding
-\begin{align*}
-\PP^1\times\PP^1 & \xhookrightarrow{i} \PP^3\\ 
-([x:y],[z:w]) & \mapsto [xz:xw:yz:yw]\end{align*}
-and the induced morphism between quasimap spaces:
-\begin{equation*} k\colon \Q{0}{3}{\PP^1\times\PP^1}{(2,2)}\to\Q{0}{3}{\PP^3}{4} \end{equation*}
-If we take the following two objects of $\Q{0}{3}{\PP^1 \times \PP^1}{(2,2)}$:
-\begin{align*}
-  \left(\left(\PP^1_{[s:t]},0,1,\infty\right),\left(L_1=\OO_{\PP^1}(2),u_1=s^2 ,v_1=st\right),\left(L_2=\OO_{\PP^1}(2), u_2=st,v_2=t^2\right)\right)\\
-  \left(\left(\PP^1_{[s:t]},0,1,\infty\right),\left(L_1=\OO_{\PP^1}(2),u_1=st ,v_1=t^2 \right),\left(L_2=\OO_{\PP^1}(2), u_2=s^2,v_2=st\right)\right)
-\end{align*}
-then these two quasimaps are non-isomorphic, but they both map to the same object under $k$, namely:
- \[
-   \left(\left(\PP^1_{[s:t]},0,1,\infty\right),\left(L=\OO_{\PP^1}(4),z_0=s^3t,z_1=s^2t^2,z_2=s^2t^2,z_3=st^3\right)\right)
- \]
-Notice that this only happens on the locus of quasimaps with basepoints.
-\end{remark}
-
-It is easy to see that $k$ restricts to a morphism between moduli space of relative quasimaps, and thus we have a diagram
-\bcd
-\Q{0}{\alpha}{X|Y}{\beta} \ar[d, hook] \ar[r] \ar[dr, phantom, "\square"] & \Q{0}{\alpha}{\PP^N|H}{d} \ar[d, hook] \\
-\Q{0}{n}{X}{\beta}  \ar[r, "k"] & \Q{0}{n}{\PP^N}{d}
-\ecd
-which one can show is cartesian. Since $\Q{0}{n}{\PP^N}{d}$ is unobstructed, the morphism $k$ admits a natural perfect obstruction theory, and so there is a virtual pull-back morphism $k^!_{\operatorname{v}}$. Alternatively, we may use the presence of a virtual class on $\Q{0}{n}{X}{\beta}$ to define a diagonal pull-back morphism $k^!_{\Delta}$. The discussion in Appendix \ref{appendix:intersection} shows that these two maps coincide, and from now on we will denote them both by $k^!$.
-
-We now define the virtual class on $\Q{0}{\alpha}{X|Y}{\beta}$ by pull-back along $k$
-\begin{equation*} \virt{\Q{0}{\alpha}{X|Y}{\beta}} := k^! [ \Q{0}{\alpha}{\PP^N|H}{d} ] \end{equation*}
-and use this class to define relative quasimap invariants in general:
-\begin{equation*} \langle \gamma_1 \psi_1^{k_1}, \ldots, \gamma_n \psi_n^{k_n} \rangle_{0,\alpha,\beta}^{X|Y} := \int_{\virt{\Q{0}{\alpha}{X|Y}{\beta}}} \prod_{i=1}^n \ev_i^*(\gamma_i) \cdot \psi_i^{k_i} \end{equation*}
-These invariants will play a role in our proof of the quasimap quantum Lefschetz formula in \S \ref{Section quasimap mirror theorem}.
-
-
-\subsection{Relative spaces pull back}
-The idea is to prove the recursion formula for general $(X,Y)$ by pulling back the formula for $(\PP^N,H)$ along $k$. In order to do this, we need to understand how the various virtual classes involved in the formula pull back along this map. The first two terms pull back by the very definition of the virtual class:
-\begin{lemma} \label{Relative spaces pull back} $k^! [\Q{0}{\alpha}{\PP^N|H}{d}] = \virt{\Q{0}{\alpha}{X|Y}{\beta}}$ \end{lemma}
-
-\noindent It thus remains to consider the third term, namely the virtual class of the comb locus. This is the technical heart of the proof.
 
 \subsection{Comb loci pull back} \label{Subsection comb loci pull back} As in the previous section, we define $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ to be the union of the moduli spaces
 \begin{equation*} \mathcal D^{\mathcal{Q}}(X|Y,A,B,M) := \Q{0}{A^{(0)} \cup \{q_1, \ldots, q_r\}}{Y}{\beta^{(0)}} \times_{Y^r} \prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta^{(i)}} \end{equation*}
@@ -1129,7 +1056,7 @@ Here we briefly explain how to compare our Theorem \ref{Theorem Quantum Lefschet
 \begin{enumerate}
 \item The \emph{$J^{\epsilon}$-function}
 \begin{equation*} J^\epsilon({\bf t}, z)=\sum_{m\geq 0,\beta\geq 0} \dfrac{q^\beta}{m!} (\ev_\bullet)_*\left( \prod_{i=1}^m \ev_i^*({\bf t}) \cap\operatorname{Res}_{F_0} \virt{\QGe{0}{m}{Y}{\beta}} \right) \end{equation*}
-for $\mathbf{t} \in \HH^*(X)$. Here $\QGe{0}{m}{Y}{\beta}$ is the moduli space of $\epsilon$-stable  quasimaps with a parametrised component, $F_0$ is a certain fixed locus of the natural $\Gm$-action on this space, and $\ev_\bullet$ is the evaluation at the point $\infty \in \PP^1$ on the parametrised component. $\operatorname{Res}_{F_0}$ is the residue of the virtual class, i.e. the virtual class of the fixed locus divided by the Euler class of the virtual normal bundle (see \cite{GraberPandharipande} for details on virtual localisation). The variable $z$ is the $\Gm$-equivariant parameter.
+for $\mathbf{t} \in \HH^*(X)$. Here $\QGe{0}{m}{Y}{\beta}$ is the moduli space of $\epsilon$-stable quasimaps with a parametrised component - described briefly after Remark \ref{rmk:epsilonstable} -, $F_0$ is a certain fixed locus of the natural $\Gm$-action on this space, and $\ev_\bullet$ is the evaluation at the point $\infty \in \PP^1$ on the parametrised component. $\operatorname{Res}_{F_0}$ is the residue of the virtual class, i.e. the virtual class of the fixed locus divided by the Euler class of the virtual normal bundle (see \cite{GraberPandharipande} for details on virtual localisation). The variable $z$ is the $\Gm$-equivariant parameter.
 \item The \emph{$S^\epsilon$-operator}
 \begin{equation*}
  S^\epsilon(\mathbf{t},z)(\gamma)=\sum_{m\ge 0,\beta\ge 0}\frac{q^\beta}{m!} 
@@ -1277,11 +1204,6 @@ X \ar[r,"\Delta_X"] & X\times X &
 and apply commutativity of usual Gysin morphisms. In the case where $k$ is not a regular embedding but rather is equipped with a relative perfect obstruction theory, the same argument works with $k^!$ replaced by $k_{\text{v}}^!$.
 \end{proof}
 
-\acks
-We thank Tom Coates and Cristina Manolache for carefully reading this manuscript and for their helpful advice with both exposition and subject matter. We are grateful to Ionu\c{t} Ciocan-Fontanine for thoroughly examining a preliminary version of this manuscript and providing several clarifications and corrections. We would also like to thank Fabio Bernasconi, Andrea Petracci and Richard Thomas for useful conversations. 
-
-L.B. is supported by a Royal Society 1st Year URF and DHF Research Grant Scheme and N.N. by an EPSRC Standard DTP Scholarship.
-This work was supported by the Engineering and Physical Sciences Research Council grant EP/L015234/1: the EPSRC Centre for Doctoral Training in Geometry and Number Theory at the Interface.
 
 \bibliographystyle{alpha}
 \bibliography{relqm}
