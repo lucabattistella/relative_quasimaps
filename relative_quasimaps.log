@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  11 FEB 2019 17:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  11 FEB 2019 17:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1269,65 +1269,49 @@ tim
 ) [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (2.74223pt too wide) in paragraph at lines 208--209
+Overfull \hbox (2.74223pt too wide) in paragraph at lines 207--208
 []\OT1/cmr/m/n/10 For $\OML/cmm/m/it/10 X$ \OT1/cmr/m/n/10 suf-fi-ciently pos-i
 -tive, the quasimap in-vari-ants co-in-cide with the Gromov--
  []
 
 [2] [3]
-LaTeX Font Info:    Try loading font information for U+bbm on input line 262.
+LaTeX Font Info:    Try loading font information for U+bbm on input line 261.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
-[4] (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/ueuf.fd)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/ueuf.fd)
 
-LaTeX Warning: Reference `Subsection recursion formula for PN' on page 5 undefi
-ned on input line 296.
-
-
-LaTeX Warning: Reference `Subsection recursion formula for PN' on page 5 undefi
-ned on input line 296.
+LaTeX Warning: Reference `Subsection relative stable maps' on page 4 undefined 
+on input line 295.
 
 
-LaTeX Warning: Reference `Subsection virtual class in general' on page 5 undefi
-ned on input line 296.
+LaTeX Warning: Reference `Subsection stable quasimaps' on page 4 undefined on i
+nput line 295.
 
 
-Overfull \hbox (57.6102pt too wide) in alignment at lines 296--296
+LaTeX Warning: Reference `Subsection recursion formula for PN' on page 4 undefi
+ned on input line 295.
+
+
+LaTeX Warning: Reference `Subsection recursion formula for PN' on page 4 undefi
+ned on input line 295.
+
+
+LaTeX Warning: Reference `Subsection virtual class in general' on page 4 undefi
+ned on input line 295.
+
+
+Overfull \hbox (57.6102pt too wide) in alignment at lines 295--295
  [] [] [] [] 
  []
 
-[5] [6] [7] [8] [9] [10] [11]pdfTeX warning (ext4): destination with the same i
-dentifier (name{equation.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.463 \begin{equation}
-                       \label{uY expression} u_Y := \sum_{\underline{a}} \la...
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.463 \begin{equation}
-                       \label{uY expression} u_Y := \sum_{\underline{a}} \la...
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.463 \begin{equation}
-                       \label{uY expression} u_Y := \sum_{\underline{a}} \la...
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.463 \begin{equation}
-                       \label{uY expression} u_Y := \sum_{\underline{a}} \la...
-[12]
-Overfull \hbox (4.47192pt too wide) in paragraph at lines 507--507
+[4] [5] [6]
+Overfull \hbox (4.47192pt too wide) in paragraph at lines 353--353
 [] 
  []
 
-[13] [14]
-Overfull \hbox (18.7941pt too wide) in paragraph at lines 548--549
+[7] [8]
+Overfull \hbox (18.7941pt too wide) in paragraph at lines 394--395
 []\OT1/cmr/m/n/10 Since $\U/cmsy/m/n/10 Q[]\OT1/cmr/m/n/10 (\U/msb/m/n/10 P[]\O
 ML/cmm/m/it/10 ; d\OT1/cmr/m/n/10 )$ is un-ob-structed, the mor-phism $\U/cmsy/
 m/n/10 Q\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i\OT1/cmr/m/n/10 ) [] [] \U/cmsy/m/n/
@@ -1335,60 +1319,62 @@ m/n/10 Q\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i\OT1/cmr/m/n/10 ) [] [] \U/cmsy/m/n/
 ! Q[]\OT1/cmr/m/n/10 (\U/msb/m/n/10 P[]\OML/cmm/m/it/10 ; d\OT1/cmr/m/n/10 )$
  []
 
-[15]
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 567.
+LaTeX Warning: Reference `def:Garelmap' on page 9 undefined on input line 409.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 567.
+(hyperref)                removing `math shift' on input line 413.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 567.
+(hyperref)                removing `superscript' on input line 413.
 
-[16]
-Overfull \hbox (11.9822pt too wide) in paragraph at lines 589--589
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 413.
+
+[9]
+Overfull \hbox (11.9822pt too wide) in paragraph at lines 435--435
 [] 
  []
 
-[17] [18]
-Overfull \hbox (20.41005pt too wide) in paragraph at lines 662--664
+[10] [11] [12]
+Overfull \hbox (20.41005pt too wide) in paragraph at lines 508--510
 \OML/cmm/m/it/10 B \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 ^^L[]; [] ; ^^L[]\OT1/cm
 r/m/n/10 )$ of the curve class $\OML/cmm/m/it/10 ^^L$ \OT1/cmr/m/n/10 and all v
 alid mul-ti-plic-i-ties $\OML/cmm/m/it/10 M \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10
  m[]; [] ; m[]\OT1/cmr/m/n/10 )$
  []
 
-[19] [20]
-Overfull \hbox (5.0102pt too wide) in paragraph at lines 719--722
+[13] [14]
+Overfull \hbox (5.0102pt too wide) in paragraph at lines 565--568
 \OT1/cmr/m/n/10 Applying $[][] \OML/cmm/m/it/10 ^^Y[]$ \OT1/cmr/m/n/10 we ob-ta
 in on the left hand side the ob-struc-tion the-ory for $\U/cmsy/m/n/10 Q[]\OT1/
 cmr/m/n/10 (\OML/cmm/m/it/10 Y; ^^L\OT1/cmr/m/n/10 )$
  []
 
-[21]
-Overfull \hbox (47.24872pt too wide) in paragraph at lines 740--740
+[15]
+Overfull \hbox (47.24872pt too wide) in paragraph at lines 586--586
 [] 
  []
 
 
-LaTeX Warning: Reference `Subsection recursion formula for PN' on page 22 undef
-ined on input line 753.
+LaTeX Warning: Reference `Subsection recursion formula for PN' on page 16 undef
+ined on input line 599.
 
-[22]
+[16]
 
-LaTeX Warning: Reference `Subsection virtual class in general' on page 23 undef
-ined on input line 779.
+LaTeX Warning: Reference `Subsection virtual class in general' on page 17 undef
+ined on input line 625.
 
-[23]
+[17]
 
-LaTeX Warning: Reference `Relative spaces pull back' on page 24 undefined on in
-put line 814.
+LaTeX Warning: Reference `Relative spaces pull back' on page 18 undefined on in
+put line 660.
 
-[24] [25]
-Overfull \hbox (14.99428pt too wide) detected at line 840
+[18] [19]
+Overfull \hbox (14.99428pt too wide) detected at line 686
 \OT1/cmr/m/n/10 ((\OML/cmm/m/it/10 [] \U/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1)\OM
 L/cmm/m/it/10  [] \OT1/cmr/m/n/10 + [][][\OML/cmm/m/it/10 Y\OT1/cmr/m/n/10 ]) \
 U/cmsy/m/n/10 \ \OT1/cmr/m/n/10 [\U/cmsy/m/n/10 Q[]\OT1/cmr/m/n/10 (\OML/cmm/m/
@@ -1398,47 +1384,51 @@ it/10 X\U/cmsy/m/n/10 j\OML/cmm/m/it/10 Y; ^^L\OT1/cmr/m/n/10 )][] = [\U/cmsy/m
  X\U/cmsy/m/n/10 j\OML/cmm/m/it/10 Y; ^^L\OT1/cmr/m/n/10 )][]
  []
 
-[26] [27]
-Overfull \hbox (4.02176pt too wide) in paragraph at lines 889--890
+[20] [21]
+Overfull \hbox (4.02176pt too wide) in paragraph at lines 735--736
 []\OT1/cmr/m/n/10 We fix a ho-mo-ge-neous ba-sis $\OML/cmm/m/it/10 ^^Q[]; [] ; 
 ^^Q[]$ \OT1/cmr/m/n/10 for $[][](\OML/cmm/m/it/10 X\OT1/cmr/m/n/10 ) = [][](\OM
 L/cmm/m/it/10 X; \U/msb/m/n/10 Q\OT1/cmr/m/n/10 )$ and let $\OML/cmm/m/it/10 ^^
 Q[]; [] ; ^^Q[]$
  []
 
-[28] [29] [30] [31]
-Overfull \hbox (32.2458pt too wide) in paragraph at lines 1006--1006
+[22] [23] [24] [25]
+Overfull \hbox (32.2458pt too wide) in paragraph at lines 852--852
 [] 
  []
 
 
-Overfull \hbox (25.30243pt too wide) in paragraph at lines 1010--1010
+Overfull \hbox (25.30243pt too wide) in paragraph at lines 856--856
 [] 
  []
 
-[32] [33]
-Overfull \hbox (1.81836pt too wide) in paragraph at lines 1058--1058
+[26] [27]
+Overfull \hbox (1.81836pt too wide) in paragraph at lines 904--904
 []\OT1/cmr/bx/n/12 Comparison with the work of Ciocan-Fontanine and Kim 
  []
 
-[34]
-Overfull \hbox (3.22484pt too wide) detected at line 1068
+
+LaTeX Warning: Reference `rmk:epsilonstable' on page 28 undefined on input line
+ 909.
+
+[28]
+Overfull \hbox (3.22484pt too wide) detected at line 914
 \OML/cmm/m/it/10 S[]\OT1/cmr/m/n/10 (\OT1/cmr/bx/n/10 t\OML/cmm/m/it/10 ; z\OT1
 /cmr/m/n/10 )(\OML/cmm/m/it/10 ^^M\OT1/cmr/m/n/10 ) = [] []([][])[] []
  []
 
-[35] [36] [37] [38] [39] (./relative_quasimaps.bbl [40] [41]
+[29] [30] [31] [32] [33] (./relative_quasimaps.bbl [34] [35]
 Underfull \hbox (badness 1442) in paragraph at lines 144--147
 []\OT1/cmr/m/n/10 Cristina Manolache.  Vir-tual pull-backs.  \OT1/cmr/m/it/10 J
 . Al-ge-braic Geom.\OT1/cmr/m/n/10 ,
  []
 
-) [42]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1215.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1215.
+) [36]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1061.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1061.
  (./relative_quasimaps.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1215.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1215.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1061.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1061.
 
 Package rerunfilecheck Info: File `relative_quasimaps.out' has not changed.
 (rerunfilecheck)             Checksum: EEF9F77EFE39F19CD6B304A0675CCC0F;394.
@@ -1446,16 +1436,16 @@ Package rerunfilecheck Info: File `relative_quasimaps.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1215.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1061.
  ) 
 Here is how much of TeX's memory you used:
- 32444 strings out of 493014
- 623259 string characters out of 6133351
- 720257 words of memory out of 5000000
- 35250 multiletter control sequences out of 15000+600000
+ 32373 strings out of 493014
+ 621998 string characters out of 6133351
+ 719342 words of memory out of 5000000
+ 35211 multiletter control sequences out of 15000+600000
  21131 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,19n,84p,10394b,1007s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,19n,84p,10394b,1024s stack positions out of 5000i,500n,10000p,200000b,80000s
  </Users/navid/Library/texlive/2016/texmf-var/fonts/pk/ljfour/public/bbm/bbm1
 0.600pk>{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t
 s1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
@@ -1488,10 +1478,10 @@ xlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texliv
 e/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/
 2016/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
-Output written on relative_quasimaps.pdf (42 pages, 491501 bytes).
+Output written on relative_quasimaps.pdf (36 pages, 465387 bytes).
 PDF statistics:
- 706 PDF objects out of 1000 (max. 8388607)
- 592 compressed objects within 6 object streams
- 178 named destinations out of 1000 (max. 500000)
+ 609 PDF objects out of 1000 (max. 8388607)
+ 503 compressed objects within 6 object streams
+ 146 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
