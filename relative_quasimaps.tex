@@ -176,11 +176,27 @@
 %\usepackage[T1]{fontenc}
 %\usepackage{newpxtext,newpxmath}
 
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnotetext{#1}%
+  %\addtocounter{footnote}{-1}%
+  \endgroup
+}
+
 \begin{document}
+
+
+\blfootnote{
+\emph{Acknowledgements:} We thank Tom Coates and Cristina Manolache for carefully reading this manuscript and for their helpful advice with both exposition and subject matter. We are grateful to Ionu\c{t} Ciocan-Fontanine for thoroughly examining a preliminary version of this manuscript and providing several clarifications and corrections. We would also like to thank Fabio Bernasconi, Andrea Petracci and Richard Thomas for useful conversations. 
+
+During the preparation of this manuscript, L.B. was supported by a Royal Society 1st Year URF and DHF Research Grant Scheme and N.N. by an EPSRC Standard DTP Scholarship. We thank Imperial College London for providing a fruitful research environment.
+This work was supported by the Engineering and Physical Sciences Research Council grant EP/L015234/1: the EPSRC Centre for Doctoral Training in Geometry and Number Theory at the Interface.}
 
 \title{Quasimap quantum Lefschetz via relative quasimaps}
 
 \author{Luca Battistella\footnote{Max-Planck-Institut f\"ur Mathematik, Bonn}\, and Navid Nabijou\footnote{School of Mathematics and Statistics, University of Glasgow}}
+
+\date{}
 
 
 \maketitle
@@ -189,11 +205,6 @@
 %\appendixtitletocoff
 %\tableofcontents
 
-\let\thefootnote\relax\footnote{
-We thank Tom Coates and Cristina Manolache for carefully reading this manuscript and for their helpful advice with both exposition and subject matter. We are grateful to Ionu\c{t} Ciocan-Fontanine for thoroughly examining a preliminary version of this manuscript and providing several clarifications and corrections. We would also like to thank Fabio Bernasconi, Andrea Petracci and Richard Thomas for useful conversations. 
-
-During the preparation of this manuscript, L.B. was supported by a Royal Society 1st Year URF and DHF Research Grant Scheme and N.N. by an EPSRC Standard DTP Scholarship. We thank Imperial College London for providing a fruitful research environment.
-This work was supported by the Engineering and Physical Sciences Research Council grant EP/L015234/1: the EPSRC Centre for Doctoral Training in Geometry and Number Theory at the Interface.}
 
 \section{Introduction}
 In this paper we construct moduli spaces of relative quasimaps as substacks of moduli spaces of (absolute) quasimaps. This provides a common generalisation of two different theories: stable quasimaps on the one hand, and relative stable maps (in the sense of A. Gathmann) on the other. In this introductory section we briefly recall these, putting our work in its proper context.
@@ -298,7 +309,7 @@ $f^!_{\Delta}$ & & & diagonal pull-back; see Appendix \ref{appendix:intersection
 
 \subsection{Definition of relative stable quasimaps} \label{Subsection relative stable quasimaps}
 
-From here on $X$ will denote a smooth projective toric variety and $Y \subseteq X$ a very ample hypersurface. We \emph{do not} require that $Y$ is toric.
+For the rest of the paper, $X$ will denote a smooth projective toric variety and $Y \subseteq X$ a very ample hypersurface. We \emph{do not} require that $Y$ is toric.
 Consider the line bundle $\OO_X(Y)$ and the section $s_Y$ cutting out $Y$. By \cite{CoxRing} we have a natural isomorphism of $\CC$-vector spaces
 \begin{equation*} \HH^0(X,\OO_X(Y)) = \left\langle \prod_{\rho} z_\rho^{a_\rho} : \Sigma_\rho a_\rho [D_\rho] = [Y] \right\rangle_{\CC} \end{equation*}
 where the $z_\rho$ for $\rho \in \Sigma(1)$ are the generators of the Cox ring of $X$ and the $a_\rho$ are non-negative integers. We can therefore write $s_Y$ as
@@ -315,26 +326,26 @@ that $\underline{a}$ and $\underline{b}$ differ by an element $m$ of $M$. Thus t
 
 The upshot is that we obtain a line bundle $L_Y$ on $C$, which plays the role of the ``pull-back'' of $\OO_X(Y)$ along the ``map'' $C \to X$, and a global section
 \begin{equation*} u_Y \in \HH^0(C,L_Y) \end{equation*}
-which plays the role of the ``pull-back'' of $s_Y$.
-
-We now give the main definition of the paper. We start from the unbstructed case $(\PP^N|H=\{z_0=0\})$. The above discussion simplifies.
+which plays the role of the ``pull-back'' of $s_Y$. With this at hand, we are ready to give the main definition of this paper. We begin with the case $X=\PP^N$ and $Y=H=\{ z_0 = 0\}$ a co-ordinate hyperplane. In this situation, the discussion above simplifies significantly.
 \begin{definition}
- The space of relative quasimaps $\Q{0}{\alpha}{\PP^N|H}{d}$ is the closure inside $\Q{0}{n}{\PP^N}{d}$ of the nice locus of quasimaps \[\left((\PP^1,x_1,\ldots,x_n),u_0,\ldots,u_N\in H^0(\PP^1,\OO_{\PP^1}(d))\right)\] such that $u_0\not\equiv 0$, $u_0^*(0)\geq\sum\alpha_ix_i$ and $(u_0,\ldots,u_N)$ do not vanish simultaneously on $\PP^1$.
+ The space of \emph{relative stable quasimaps} $\Q{0}{\alpha}{\PP^N|H}{d}$ is the closure inside $\Q{0}{n}{\PP^N}{d}$ of the so-called \emph{nice locus}, consisting of quasimaps with smooth source curve
+ \begin{equation*} \left( (\PP^1,x_1,\ldots,x_n),u_0,\ldots,u_N \right) \end{equation*}
+(each $u_i \in \HH^0(\PP^1,\OO_{\PP^1}(d)))$ such that $u_0 \neq 0$, $u_0^*(0)\geq\sum\alpha_ix_i$ and $(u_0,\ldots,u_N)$ do not vanish simultaneously on $\PP^1$ (i.e. there are no basepoints).
  \end{definition}
-\noindent We use Fulton's refined Gysin map \cite[\S 2.6]{FUL} to define $u_0^*(0) := 0^!([C])\in\Achow_*(u_0^{-1}(0))$ from the diagram:
+\noindent In the above definition $u_0^*(0) := 0^!([\PP^1])\in\Achow_*(u_0^{-1}(0))$ is obtained via Fulton's refined Gysin map \cite[\S 2.6]{FUL} applied to the diagram:
 \bcd
 u_0^{-1}(0) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \PP^1 \ar[d,"u_0"] \\
-\PP^1 \ar[r,"0"] & \operatorname{Vec}(\OO_{\PP^1}(d))
+\PP^1 \ar[r,"0"] & \OO_{\PP^1}(d)
 \ecd
 
-More generally, let $X$ and $Y$ be as above. The complete linear system associated to $\OO_X(Y)$ defines an embedding $i \colon X \hookrightarrow \PP^N$ such that $i^{-1}(H) = Y$ for a certain hyperplane $H$. By the functoriality property of quasimap spaces (see \cite[\S 3.1]{CF-K-wallcrossing}) we have a map:
-\begin{equation*} \om{Q}(i) \colon \Q{0}{n}{X}{\beta} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
+In the general case, the complete linear system $|\OO_X(Y)|$ defines an embedding $i \colon X \hookrightarrow \PP^N$ such that $i^{-1}(H) = Y$ for some hyperplane $H$. By the functoriality property of quasimap spaces (see \cite[\S 3.1]{CF-K-wallcrossing}) we have a map
+\begin{equation*} k = \om{Q}(i) \colon \Q{0}{n}{X}{\beta} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
 where $d=i_*\beta$. %Because $\Q{0}{n}{\PP^N}{d}$ is smooth, $k$ admits a compatible perfect obstruction theory, so we have a notion of virtual pull-back along $k$.
 \begin{definition} With notation as above, let $n \geq 2$ be a number of marked points, $\beta \in \HH_2^+(X)$ be an effective curve class and $\alpha=(\alpha_1, \ldots, \alpha_n)$ be a collection of non-negative integers such that $\Sigma_i \alpha_i \leq Y \cdot \beta$. The \ilemph{space of relative stable quasimaps}
 \begin{equation*} \Q{0}{\alpha}{X|Y}{\beta} \subseteq \Q{0}{n}{X}{\beta} \end{equation*}
-is defined to be the following fiber product:
+is defined as the following fiber product:
 \bcd
-\Q{0}{\alpha}{X|Y}{\beta}\ar[d]\ar[r,hook]\ar[dr,phantom,"\Box"] & \Q{0}{n}{X}{\beta}\ar[d,"\om{Q}(i)"] \\
+\Q{0}{\alpha}{X|Y}{\beta}\ar[d]\ar[r,hook]\ar[dr,phantom,"\Box"] & \Q{0}{n}{X}{\beta}\ar[d,"k"] \\
 \Q{0}{\alpha}{\PP^N|H}{d}\ar[r,hook] & \Q{0}{n}{\PP^N}{d}
 \ecd
 \end{definition}
@@ -368,45 +379,43 @@ For simplicity we restrict ourselves to the case $\epsilon=0+$. However, all of 
 
 \subsection{Basic properties of the moduli space} \label{Subsection basic properties of the moduli space}
 \begin{lemma}
- $\Q{0}{\alpha}{\PP^N|H}{d}$ is irreducible of codimension $\sum\alpha$ in $\Q{0}{n}{\PP^N}{d}$.
+ $\Q{0}{\alpha}{\PP^N|H}{d}$ is irreducible of codimension $\sum_i\alpha_i$ in $\Q{0}{n}{\PP^N}{d}$.
 \end{lemma}
-\begin{proof}
- It is enough to show the statement holds for the nice locus of which we are taking the closure. Since we are requiring that there are no basepoints, such locus is also a locally closed substack of $\M{0}{n}{\PP^N}{d}$. The proof of \cite[Lemma 1.8]{Ga} applies.
-\end{proof}
-Indeed there exists a comparison morphism:
+\begin{proof} Since $\Q{0}{\alpha}{\PP^N|H}{d}$ is defined as the closure of the nice locus, it is enough to show that the nice locus itself is irreducible of the correct dimension. The quasimaps which appear in the nice locus have no basepoints, and as such may be viewed simply as stable maps. This identifies the nice locus with a locally closed substack of $\M{0}{n}{\PP^N}{d}$, and then \cite[Lemma 1.8]{Ga} applies to show that this has the desired properties.\end{proof}
+
+Recall that there exists a comparison morphism
 \begin{equation*}\chi : \M{0}{n}{\PP^N}{d} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
-Recall that $\chi$ has the effect of contracting every rational tail and introducing a basepoint at the corresponding node, with multiplicity equal to the degree of the rational tail. For more details, see \cite[Theorem 3]{MOP} and \cite[Section 4.3]{Manolache-Push} (earlier manifestations of these ideas can be found in \cite{Bertram} and \cite{Popa-Roth}).
+which has the effect of contracting each rational tail and introducing a basepoint at the corresponding node, with multiplicity equal to the degree of the rational tail. (For more details, see \cite[Theorem 3]{MOP} and \cite[\S 4.3]{Manolache-Push}; earlier manifestations of these ideas can be found in \cite{Bertram} and \cite{Popa-Roth}.)
 
 \begin{lemma}\label{Comparison morphism birational}
  The comparison morphism $\chi$ restricts to a proper and birational morphism \[\chi_\alpha\colon \M{0}{\alpha}{\PP^N|H}{d}\to \Q{0}{\alpha}{\PP^N|H}{d}.\]
 \end{lemma}
-\begin{proof}
- $\chi(\M{0}{\alpha}{\PP^N|H}{d})\subseteq \Q{0}{\alpha}{\PP^N|H}{d}$ follows by applying $\chi$ to a smoothing family of a relative map, while the reverse inclusion follows because $\chi$ is proper (hence closed). Notice that $\M{0}{\alpha}{\PP^N|H}{d}$ embeds as a closed substack of the fiber product $\chi^{-1}(\Q{0}{\alpha}{\PP^N|H}{d})$ (where the map along rational tails is sufficiently ramified at $H$), hence $\chi_\alpha$ is also proper.
-\end{proof}
+\begin{proof} Let $\chi_\alpha$ denote the restriction of $\chi$ to $\M{0}{\alpha}{\PP^N|H}{d}$. The fact that this factors through $\Q{0}{\alpha}{\PP^N|H}{d}$ can be deduced by applying $\chi_\alpha$ to a smoothing family of any relative stable map. Moreover $\chi_\alpha$ is an isomorphism over the nice locus, which is an open dense subset of both source and target. It follows that $\chi_\alpha$ is birational, proper and surjective.\end{proof}
 
-Since the moduli space of relative quasimaps has a fundamental class, we can define \emph{relative quasimap invariants} for the pair $(\PP^N,H)$:
+Since the moduli space of relative quasimaps is irreducible of the correct dimension, it has a fundamental class which we can use to define \emph{relative quasimap invariants} for the pair $(\PP^N,H)$:
 \begin{equation*} \left\langle \gamma_1 \psi_1^{k_1} , \ldots, \gamma_n \psi_n^{k_n} \right\rangle_{0,\alpha,d}^{\PP^N|H} := \int_{[\Q{0}{\alpha}{\PP^N|H}{d}]} \prod_{i=1}^n \ev_i^* \gamma_i \cdot \psi_i^{k_i} \end{equation*}
 
 \begin{remark}
- Relative Gromov-Witten and quasimap invariants of $(\PP^N|H)$ coincide on the nose: $\chi$ being birational, it preserves the fundamental class; furthermore, any stabilisation of the source curve happens away from the markings, hence $\psi$-classes pullback under $\chi$. Setting $\alpha=0$ recovers the absolute case.
+The relative quasimap invariants of $(\PP^N,H)$ agree with the relative Gromov--Witten invariants of $(\PP^N,H)$, since the map $\chi_\alpha$ is birational and hence preserves the fundamental classes (the psi classes pull back along $\chi_\alpha$ because the stabilisation of the source curve occurs away from the markings). Note that if we set $\alpha=(0,\ldots,0)$ we recover the classical comparison theorem for the absolute Gromov--Witten and quasimap invariants of projective space.
 \end{remark}
 
-Since $\Q{0}{n}{\PP^N}{d}$ is unobstructed, the morphism $\om{Q}(i)\colon\Q{0}{n}{X}{\beta}\to \Q{0}{n}{\PP^N}{d}$ admits a natural perfect obstruction theory, and so there is a virtual pull-back morphism $\om{Q}(i)^!_{\operatorname{v}}$. Alternatively, we may use the presence of a virtual class on $\Q{0}{n}{X}{\beta}$ to define a diagonal pull-back morphism $\om{Q}(i)^!_{\Delta}$. The discussion in Appendix \ref{appendix:intersection} shows that these two maps coincide, and from now on we will denote them both by $\om{Q}(i)^!$.
+We will now use the above results to define relative quasimap invariants in general. Since the absolute space $\Q{0}{n}{\PP^N}{d}$ is unobstructed, the morphism $k\colon\Q{0}{n}{X}{\beta}\to \Q{0}{n}{\PP^N}{d}$ admits a natural relative perfect obstruction theory, and so there is a virtual pull-back morphism $k^!_{\operatorname{v}}$. Alternatively, we may use the presence of a virtual class on $\Q{0}{n}{X}{\beta}$ and the smoothness of $\Q{0}{n}{\PP^N}{d}$ to define a diagonal pull-back morphism $k^!_{\Delta}$. The discussion in Appendix \ref{appendix:intersection} shows that these two maps coincide, and from now on we will denote them both by $k^!$. We then define the virtual class on $\Q{0}{\alpha}{X|Y}{\beta}$ by pull-back along $k$
+\begin{equation*} \virt{\Q{0}{\alpha}{X|Y}{\beta}} := k^! [ \Q{0}{\alpha}{\PP^N|H}{d} ] \end{equation*}
+and use this class to define relative quasimap invariants in general:
+\begin{equation*} \left\langle \gamma_1 \psi_1^{k_1} , \ldots, \gamma_n \psi_n^{k_n} \right\rangle_{0,\alpha,\beta}^{X|Y} := \int_{\virt{\Q{0}{\alpha}{X|Y}{\beta}}} \prod_{i=1}^n \ev_i^* \gamma_i \cdot \psi_i^{k_i}. \end{equation*}
 
-We now define the virtual class on $\Q{0}{\alpha}{X|Y}{\beta}$ by pull-back along $\om{Q}(i)$
-\begin{equation*} \virt{\Q{0}{\alpha}{X|Y}{\beta}} := \om{Q}(i)^! [ \Q{0}{\alpha}{\PP^N|H}{d} ] \end{equation*}
-and use this class to define relative quasimap invariants in general.
-
-Recall the discussion at the beginning of Section \ref{Subsection relative stable quasimaps}. We may now use $\chi$ to identify the points of $\Q{0}{\alpha}{X|Y}{\beta}$ more explicitly.
-\begin{lem}[Combinatorial description] A quasimap belongs to the relative space $\Q{0}{\alpha}{X|Y}{\beta}\subseteq \Q{0}{n}{X}{\beta}$ if and only if every connected component $Z$ of $u_Y^{-1}(0)$ satisfies the following:
+It will be important for the statement of the recursion formula to provide a description of the geometric points of $\Q{0}{\alpha}{X|Y}{\beta}$. Recall the notation introduced at the beginning of \S \ref{Subsection relative stable quasimaps}.
+\begin{lem}[Combinatorial description] Let
+\begin{equation*} \big((C,x_1,\ldots,x_n), (L_\rho,u_\rho)_{\rho \in \Sigma(1)}, (\varphi_m)_{m \in M}\big) \in \Q{0}{n}{X}{\beta}\end{equation*}
+be a quasimap to $X$. This belongs to the relative space $\Q{0}{\alpha}{X|Y}{\beta}\subseteq \Q{0}{n}{X}{\beta}$ if and only if, for every connected component $Z$ of $u_Y^{-1}(0) \subseteq C$, the following conditions hold:
 \begin{enumerate}
-\item if $Z$ is a point and is equal to a marking $x_i$, then $u_Y^*(0)$ has order at least $\alpha_i$ at $x_i$;
-\item if $Z$ is a curve - it is then a rational tree -, and if we let $C^{(i)}$ for $1 \leq i \leq r$ denote the irreducible components of $C$ adjacent to $Z$, and $m^{(i)}$ denote the multiplicity of $f|_{C^{(i)}}$ to $H$ at the (unique) node $Z \cap C^{(i)}$, then:
-\begin{equation} \label{Relative quasimap internal component inequality} \deg(L_{Y}|_Z) + \sum_{i=1}^r m^{(i)} \geq \sum_{x_i \in Z} \alpha_i \end{equation}
+\item if $Z$ consists of an isolated marked point $x_i$, then $u_Y^*(0)$ has order at least $\alpha_i$ at $x_i$;
+\item if $Z$ is a subcurve of $C$ (in which case it is a union of irreducible components) and if we let $C^{(i)}$ for $1 \leq i \leq r$ denote the irreducible components of $C$ adjacent to $Z$, and $m^{(i)}$ the multiplicity of $u_Y|_{C^{(i)}}^*(0)$ at the unique node $Z \cap C^{(i)}$, then:
+\begin{equation} \label{Relative quasimap internal component inequality} \deg(L_{Y}|_Z) + \sum_{i=1}^r m^{(i)} \geq \sum_{x_i \in Z} \alpha_i. \end{equation}
 \end{enumerate}
 \end{lem}
 \begin{proof}
- From the definition of $\Q{0}{\alpha}{X|Y}{\beta}$, we see that it is enough to prove the characterisation in the case $(X|Y)=(\PP^N|H)$. The statement holds on the nice locus by definition, so it holds on its closure $\Q{0}{\alpha}{\PP^N|H}{d}$ by the principle of conservation of number. On the other hand, let $\xi'$ be a quasimap satisfying the combinatorial description, with a basepoint $q_0$ of order $d_0$ on an internal component $Z$. Choose any line $\ell$ through the image of $q_0$, with $\ell$ transverse to $H$. Lift $\xi'$ to a stable map $\xi$ by adjoining a $\PP^1=:R$ to the source curve at $q_0$, and defining the map $f_{|R}$ to be a $d_0$-fold cover of $\ell$ totally ramified at $q_0$ (any basepoint which is not internal is easier to deal with). Then $\xi$ belongs to $\M{0}{\alpha}{\PP^N|H}{d}$ by the discussion following Definition \ref{def:Garelmap}, hence $\xi'=\chi(\xi)\in\Q{0}{\alpha}{\PP^N|H}{d}$.
+From the definition of $\Q{0}{\alpha}{X|Y}{\beta}$, we see that it is sufficient to prove the statement in the case $(X,Y)=(\PP^N,H)$. These conditions are satisfied on the nice locus by definition, and so continue to be satisfied on the closure $\Q{0}{\alpha}{\PP^N|H}{d}$ by the conservation of number principle. On the other hand, suppose we are given a quasimap satisfying these conditions. If $x$ is a basepoint of this quasimap, of multiplicity $m$, then we may adjoin a rational tail to the source curve at $x$, and define a map from this rational tail to $\PP^N$ by choosing a line in $\PP^N$ and taking an $m$-fold cover of this line, totally ramified at the point of intersection of the rational tail with the rest of the curve. In this way we obtain a stable map which maps down to our original quasimap under $\chi$. Moreover this stable map belongs to $\M{0}{\alpha}{\PP^N|H}{d}$ by \cite[Proposition 1.14]{Ga}; hence by Lemma \ref{Comparison morphism birational} our quasimap belongs to $\Q{0}{\alpha}{\PP^N|H}{d}$, as required.
 \end{proof}
 
 
@@ -501,7 +510,7 @@ In this section we prove the main result of this paper: a recursion formula for 
 in the Chow group of $\Q{0}{\alpha}{X|Y}{\beta}$. 
 \end{thm}
 
-The formula is proven by pulling back the recursion for $(\PP^N|H)$ along $\om{Q}(i)$. Only the last term needs discussion at this point.
+The formula is proven by pulling back the recursion for $(\PP^N,H)$ along $k=\om{Q}(i)$. Only the final term requires further discussion.
 
 
 \subsection{Comb loci pull back} \label{Subsection comb loci pull back} As in the previous section, we define $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ to be the union of the moduli spaces
@@ -704,14 +713,14 @@ However, a careful analysis of the recursion formula shows that any term which a
 \begin{comment}
 \begin{remark}Gathmann's insight is that his recursion formula provides us with an explicit algorithm to compute all restricted (and some unrestricted) absolute invariants of $Y$ and relative invariants of $(X,Y)$, provided we know the absolute invariants of $X$, with no extra positivity assumption on $X$ or $Y$ \cite[\S 5]{Ga}. His arguments carry over untouched to the quasimap setting; we recall them briefly here.
 
-The proof \cite[Corollary 5.7]{Ga} is by induction on $\sum \alpha,n,\beta$ in this order. Assume we want to compute the relative invariant $\langle \gamma_1 \psi_1^{k_1}, \ldots, \gamma_n \psi_n^{k_n} \rangle_{0,\alpha,\beta}^{X|Y}$; then we need to intersect $\virt{\Q{0}{\alpha}{X|Y}{\beta}}$ with $\psi_1^{k_1}\ev_1^*\gamma_1\cdot\ldots\cdot\psi_n^{k_n}\ev_n^*\gamma_n$ and take the degree. If $\sum\alpha=0$ then this is an absolute invariant of $X$, so it is known by assumption; otherwise choose $k$ such that $\alpha_k>0$. By applying the recursion formula \ref{Theorem general recursion} we may write
+The proof \cite[Corollary 5.7]{Ga} is by induction on $\sum_i \alpha_i,n,\beta$ in this order. Assume we want to compute the relative invariant $\langle \gamma_1 \psi_1^{k_1}, \ldots, \gamma_n \psi_n^{k_n} \rangle_{0,\alpha,\beta}^{X|Y}$; then we need to intersect $\virt{\Q{0}{\alpha}{X|Y}{\beta}}$ with $\psi_1^{k_1}\ev_1^*\gamma_1\cdot\ldots\cdot\psi_n^{k_n}\ev_n^*\gamma_n$ and take the degree. If $\sum\alpha=0$ then this is an absolute invariant of $X$, so it is known by assumption; otherwise choose $k$ such that $\alpha_k>0$. By applying the recursion formula \ref{Theorem general recursion} we may write
 \begin{equation*} \virt{\Q{0}{\alpha}{X|Y}{\beta}} =  ((\alpha_k-1) \psi_k + \ev_k^* [Y]) \cap \virt{\Q{0}{\alpha-e_k}{X|Y}{\beta}} - \virt{\mathcal D^\mathcal{Q}_{\alpha-e_k,k}(X|Y,\beta)} \end{equation*}
-The first term on the right hand side is a relative invariant with lower $\sum \alpha$, so it is known by induction hypothesis. On the other hand recall \S\ref{Comb loci pull back} that $\virt{\mathcal D^\mathcal{Q}_{\alpha-e_k,k}(X|Y,\beta)}$ is a sum of contributions, each obtained by a diagram of the following form:
+The first term on the right hand side is a relative invariant with lower $\sum_i \alpha_i$, so it is known by induction hypothesis. On the other hand recall \S\ref{Comb loci pull back} that $\virt{\mathcal D^\mathcal{Q}_{\alpha-e_k,k}(X|Y,\beta)}$ is a sum of contributions, each obtained by a diagram of the following form:
 \bcd
 \mathcal D^{\mathcal{Q}}(X|Y,A,B,M) \ar[r]\ar[d]\ar[rd,phantom,"\Box"] & \Q{0}{A^{(0)} \cup \{q_1, \ldots, q_r\}}{Y}{\beta^{(0)}} \times \prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta^{(i)}}\ar[d] \\
 Y^r\ar[r,"\Delta_{Y^r}"] & Y^r\times Y^r
 \ecd
-So we may use a splitting of the diagonal in the cohomology ring $H^*(Y^r\times Y^r)$ to reduce the second summand in the recursion formula to a product of invariants with lower $\sum \alpha, n,$ or $\beta$. There is a caveat here: the splitting of the diagonal might introduce some unrestricted cohomology class $\tilde\gamma\in i^*H^*(X)^\perp$ in the picture, but Gathmann is able to show that when there is only one such insertion the resulting invariant (absolute or relative) vanishes; he then notices that the diagonal always contributes only one insertion to the relative invariants obtained by capping with $\virt{\Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta^{(i)}}}$, and since $\tilde\gamma^\vee\in i^*H^*(X)^\perp$ if and only if $\tilde\gamma\in i^*H^*(X)^\perp$, this implies that the only non-vanishing contributions to the invariants come from capping $\virt{\Q{0}{A^{(0)} \cup \{q_1, \ldots, q_r\}}{Y}{\beta^{(0)}}}$ with restricted classes as well. \end{remark}
+So we may use a splitting of the diagonal in the cohomology ring $H^*(Y^r\times Y^r)$ to reduce the second summand in the recursion formula to a product of invariants with lower $\sum_i \alpha_i, n,$ or $\beta$. There is a caveat here: the splitting of the diagonal might introduce some unrestricted cohomology class $\tilde\gamma\in i^*H^*(X)^\perp$ in the picture, but Gathmann is able to show that when there is only one such insertion the resulting invariant (absolute or relative) vanishes; he then notices that the diagonal always contributes only one insertion to the relative invariants obtained by capping with $\virt{\Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta^{(i)}}}$, and since $\tilde\gamma^\vee\in i^*H^*(X)^\perp$ if and only if $\tilde\gamma\in i^*H^*(X)^\perp$, this implies that the only non-vanishing contributions to the invariants come from capping $\virt{\Q{0}{A^{(0)} \cup \{q_1, \ldots, q_r\}}{Y}{\beta^{(0)}}}$ with restricted classes as well. \end{remark}
 In the next section we see how these computations may be simplified and made explicit under some positivity assumption on the target varieties.\end{comment}
 %%%%%%%%%%%%%%%%%%%%%
 
