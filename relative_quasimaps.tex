@@ -209,7 +209,7 @@ This work was supported by the Engineering and Physical Sciences Research Counci
 \section{Introduction}
 In this paper we construct moduli spaces of relative quasimaps as substacks of moduli spaces of (absolute) quasimaps. This provides a common generalisation of two different theories: stable quasimaps on the one hand, and relative stable maps (in the sense of A. Gathmann) on the other. In this introductory section we briefly recall these, putting our work in its proper context.
 
-\subsection{Stable quasimaps}
+\subsection{Stable quasimaps}\label{subsection quasimaps}
 The moduli space of \ilemph{stable toric quasimaps} $\Q{g}{n}{X}{\beta}$ was constructed by I. Ciocan-Fontanine and B. Kim \cite{CF-K} as a compactification of the moduli space of smooth curves in a smooth and complete toric variety $X$. Roughly speaking, the objects are rational maps $C \dashrightarrow X$ where $C$ is a nodal curve, subject to a stability condition; the precise definition depends on the description of $X$ as a GIT quotient.  The space $\Q{g}{n}{X}{\beta}$ is a proper Deligne--Mumford stack of finite type.  It admits a virtual fundamental class, which is used to define curve-counting invariants for $X$ called \ilemph{quasimap invariants}.
 
 This theory agrees with that of stable quotients \cite{MOP} when both are defined, namely when $X$ is a projective space.  There is a common generalisation given by the theory of stable quasimaps to GIT quotients \cite{CFKM}. For simplicity, we will work mostly in the toric setting; however, this restriction is not essential for our arguments. Thus in this paper when we say ``quasimaps'' we are implicitly talking about toric quasimaps.
@@ -223,7 +223,7 @@ For $X$ sufficiently positive, the quasimap invariants coincide with the Gromov-
 \end{itemize}
 In general, however, the invariants differ, the difference being encoded by certain wall-crossing formulae, which can be interpreted in the context of toric mirror symmetry \cite{CF-K-wallcrossing}.
 
-\subsection{Relative stable maps}
+\subsection{Relative stable maps}\label{subsection relative maps}
 Let $Y$ be a smooth very ample hypersurface in a smooth projective variety $X$. In \cite{Ga} A. Gathmann constructs a space of relative stable maps to the pair $(X,Y)$ as a closed substack of the moduli space of (absolute) stable maps to $X$:
 %\begin{equation*} \M{0}{\alpha}{X|Y}{\beta} \hookrightarrow \M{0}{n}{X}{\beta}\end{equation*}
 The relative space parametrises stable maps with prescribed tangencies to $Y$ at the marked points.  Unfortunately this space does not admit a natural perfect obstruction theory. Nevertheless, because $Y$ is very ample it is still possible to construct a virtual fundamental class by intersection-theoretic methods, and hence one can define relative stable map invariants.
@@ -286,8 +286,8 @@ $Y$ & & & a smooth very ample hypersurface in $X$ \\
 $\Sigma$, $\Sigma(1)$ & & & the fan of $X$, and the set of $1$-dimensional cones of $\Sigma$ \\
 $\rho$, $D_\rho$ & & & an element of $\Sigma(1)$, and the toric divisor in $X$ associated to it \\
 $\M{g}{n}{X}{\beta}$ & & & the moduli space of stable maps to $X$ \\
-$\M{0}{\alpha}{X|Y}{\beta}$ & & & the moduli space of relative stable maps to $(X,Y)$; see \S \ref{Subsection relative stable maps} \\
-$\Q{g}{n}{X}{\beta}$ & & & the moduli space of toric quasimaps to $X$; see \S \ref{Subsection stable quasimaps} \\
+$\M{0}{\alpha}{X|Y}{\beta}$ & & & the moduli space of relative stable maps to $(X,Y)$; see \S \ref{subsection relative maps} \\
+$\Q{g}{n}{X}{\beta}$ & & & the moduli space of toric quasimaps to $X$; see \S \ref{subsection quasimaps} \\
 $\mathcal{Q}^{\circ}_{0,\alpha}(X|Y,\beta)$ & & & the nice locus of relative quasimaps to $(X,Y)$; see \S \ref{Subsection basic properties of the moduli space} \\
 $\Q{0}{\alpha}{X|Y}{\beta}$ & & & the moduli space of relative quasimaps to $(X,Y)$; see \S \ref{Subsection relative stable quasimaps} \\
 $\mathcal{D}^{\mathcal{Q}}_{\alpha,k}(X|Y,\beta)$ & & & the quasimap comb locus; see \S \ref{Subsection recursion formula for PN} \\
@@ -298,7 +298,7 @@ $\mathcal{E}^{\mathcal{Q}}(X,A,B)$ & & & the total product for the centipede loc
 $\MM^{\operatorname{wt}}_{g,n}$ & & & the moduli stack of weighted prestable curves; see \S \ref{Subsection comb loci pull back} \\
 %$\mathfrak{Pic}_{g,n}^{d,\operatorname{st}}$ & & & an open substack of the relative Picard stack of the universal curve over $\MM_{g,n}$; see Appendix \ref{Section comparison with GIT construction} \\
 $\mathfrak{Bun}^{G}_{g,n}$ & & & the moduli stack of principal $G$-bundles on the universal curve over $\MM_{g,n}$; see Remark \ref{Section comparison with GIT construction} \\
-$\om{Q}(f)$ & & & the push-forward morphism between quasimap spaces; see \S \ref{Subsection virtual class in general} \\
+$\om{Q}(f)$ & & & the push-forward morphism between quasimap spaces; see \S \ref{Subsection relative stable quasimaps} \\
 $\chi$ & & & the comparison morphism from stable maps to quasimaps; see \S \ref{Subsection basic properties of the moduli space} \\
 %$f^!$ & & & Gysin morphism for $f$ a regular embedding \\
 $f^!_{\text{v}}$ & & & virtual pull-back for $f$ virtually smooth; see Appendix \ref{appendix:intersection} \\
@@ -420,7 +420,7 @@ From the definition of $\Q{0}{\alpha}{X|Y}{\beta}$, we see that it is sufficient
 
 
 \section{Recursion formula for $\PP^N$ relative a hyperplane} \label{Section recursion for PN}
-%\subsection{Proof of the recursion formula} \label{Subsection recursion formula for PN}
+\label{Subsection recursion formula for PN}
 We wish to obtain a recursion formula relating the quasimap invariants of multiplicity $\alpha$ with the quasimap invariants of multiplicity $\alpha + e_k$, as in \cite[Theorem 2.6]{Ga}. For $m = \alpha_k + 1$ the following section (of the pull-back of the jet bundle of the universal line bundle)
 \[
 \sigma^m_k := x_k^*d^m_{\mathcal C/\om{Q}}(u_0)\in \HH^0(\om{Q},x_k^*\mathcal P^m_{\mathcal C/\mathcal Q}(\mathcal L))
@@ -497,9 +497,7 @@ Suppose for simplicity that $r$, the number of teeth of the comb, is equal to $1
 &\big((C^1,x^1_1,\ldots,x^1_{n_1},q^1),L^1,u^1_0, \ldots, u^1_N\big) \end{align*}
 such that $u^0(q^0) = u^1(q^1)$ in $\PP^N$. We want to glue these quasimaps together at $q^0$,~$q^1$. The definition of the curve is obvious; we simply take:
 \begin{equation*} C = C^0 \,_{q^0}\!\sqcup_{q^1} C^1 \end{equation*}
-On the other hand, gluing together the line bundles $L^0$ and $L^1$ to obtain a line bundle $L$ over $C$ requires a choice of scalar $\lambda \in \Gm$, in order to match up the fibres over $q^i$. Furthermore, if the sections are to extend as well, then this scalar must be chosen in such a way that it takes $(u^0_0(q^0), \ldots, u^0_N(q^0)) \in (L^0_{q^0})^{\oplus (N+1)}$ to $(u^1_0(q^1), \ldots, u^1_N(q^1)) \in (L^1_{q^1})^{\oplus (N+1)}$. Since neither $q^0$ nor $q^1$ are basepoints (because they are markings), these tuples are nonzero, and so $\lambda$ is unique if it exists. Furthermore it exists if and only if these tuples belong to the same $\Gm$-orbit in $\Aaff^{N+1}$. This is precisely the statement that $u^0(q^0) = u^1(q^1) \in \PP^N$. 
-
-Similar arguments apply for $r>1$, and for more general toric varieties. \end{remark}
+On the other hand, gluing together the line bundles $L^0$ and $L^1$ to obtain a line bundle $L$ over $C$ requires a choice of scalar $\lambda \in \Gm$, in order to match up the fibres over $q^i$. Furthermore, if the sections are to extend as well, then this scalar must be chosen in such a way that it takes $(u^0_0(q^0), \ldots, u^0_N(q^0)) \in (L^0_{q^0})^{\oplus (N+1)}$ to $(u^1_0(q^1), \ldots, u^1_N(q^1)) \in (L^1_{q^1})^{\oplus (N+1)}$. Since neither $q^0$ nor $q^1$ are basepoints (because they are markings), these tuples are nonzero, and so $\lambda$ is unique if it exists. Furthermore it exists if and only if these tuples belong to the same $\Gm$-orbit in $\Aaff^{N+1}$. This is precisely the statement that $u^0(q^0) = u^1(q^1) \in \PP^N$. Similar arguments apply for $r>1$, and for more general toric varieties. \end{remark}
 
 \section{Recursion formula in the general case}\label{Section recursion formula in general case}
 
@@ -628,11 +626,8 @@ Here $\mathcal{D}(X)$ and $\mathcal{E}(X)$ are the so-called centipede loci; the
 \mathcal{E}(X|Y) \ar[d]\ar[r]\ar[dr,phantom,"\Box"] & \mathcal{E}(\PP^N|H)\ar[d,"\theta"] \\
 \mathcal{E}(X)\ar[r] & \mathcal{E}(\PP^N)
 \ecd
-Since $\mathcal{E}(\PP^N)$ is smooth (being a product of spaces of quasimaps to $\PP^N$) and there is a natural fundamental class on $\mathcal{E}(\PP^N|H)$, we have a diagonal pull-back morphism $\theta^! = \theta_{\Delta}^!$ (see Appendix~\ref{appendix:intersection}).
-\begin{lemma}\label{theta-pull} $\virt{\mathcal{E}(X|Y)}=\theta^!\virt{\mathcal{E}(X)}$ \end{lemma}
-\begin{proof}
-It follows from the discussion in \S\ref{Subsection virtual class in general}.
-\end{proof}
+Since $\mathcal{E}(\PP^N)$ is smooth (being a product of spaces of quasimaps to $\PP^N$) and there is a natural fundamental class on $\mathcal{E}(\PP^N|H)$, we have a diagonal pull-back morphism $\theta^! = \theta_{\Delta}^!$ (see Appendix~\ref{appendix:intersection}). It follows immediately from the definitions that:
+\begin{lemma}\label{theta-pull} $\virt{\mathcal{E}(X|Y)}=\theta^!\virt{\mathcal{E}(X)}$ .\end{lemma}
 
 Now consider the following cartesian diagram
 \bcd
@@ -666,7 +661,7 @@ We then have:
 Summing over all the components of $\mathcal{D}^{\mathcal{Q}}_{\alpha,k}(\PP^N|H,d)$ we obtain the result. \end{proof}
 
 \begin{proof}[Proof of Theorem~\ref{Theorem general recursion}]
-Apply $k^!$ to Proposition~\ref{Recursion formula for PN}, using Lemmas~\ref{Relative spaces pull back} and~\ref{Comb loci pull back}. 
+Apply $k^!$ to Proposition~\ref{Recursion formula for PN}, using  Lemma~\ref{Comb loci pull back}. 
 \end{proof}
 
 \section{Quasimap quantum Lefschetz theorem} \label{Section quasimap mirror theorem}
@@ -915,7 +910,7 @@ Here we briefly explain how to compare our Theorem \ref{Theorem Quantum Lefschet
 \begin{enumerate}
 \item The \emph{$J^{\epsilon}$-function}
 \begin{equation*} J^\epsilon({\bf t}, z)=\sum_{m\geq 0,\beta\geq 0} \dfrac{q^\beta}{m!} (\ev_\bullet)_*\left( \prod_{i=1}^m \ev_i^*({\bf t}) \cap\operatorname{Res}_{F_0} \virt{\QGe{0}{m}{Y}{\beta}} \right) \end{equation*}
-for $\mathbf{t} \in \HH^*(X)$. Here $\QGe{0}{m}{Y}{\beta}$ is the moduli space of $\epsilon$-stable quasimaps with a parametrised component - described briefly after Remark \ref{rmk:epsilonstable} -, $F_0$ is a certain fixed locus of the natural $\Gm$-action on this space, and $\ev_\bullet$ is the evaluation at the point $\infty \in \PP^1$ on the parametrised component. $\operatorname{Res}_{F_0}$ is the residue of the virtual class, i.e. the virtual class of the fixed locus divided by the Euler class of the virtual normal bundle (see \cite{GraberPandharipande} for details on virtual localisation). The variable $z$ is the $\Gm$-equivariant parameter.
+for $\mathbf{t} \in \HH^*(X)$. Here $\QGe{0}{m}{Y}{\beta}$ is the moduli space of $\epsilon$-stable quasimaps with a parametrised component \cite[\S 7.2]{CFKM}, $F_0$ is a certain fixed locus of the natural $\Gm$-action on this space, and $\ev_\bullet$ is the evaluation at the point $\infty \in \PP^1$ on the parametrised component. $\operatorname{Res}_{F_0}$ is the residue of the virtual class, i.e. the virtual class of the fixed locus divided by the Euler class of the virtual normal bundle (see \cite{GraberPandharipande} for details on virtual localisation). The variable $z$ is the $\Gm$-equivariant parameter.
 \item The \emph{$S^\epsilon$-operator}
 \begin{equation*}
  S^\epsilon(\mathbf{t},z)(\gamma)=\sum_{m\ge 0,\beta\ge 0}\frac{q^\beta}{m!} 

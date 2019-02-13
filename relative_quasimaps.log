@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  13 FEB 2019 15:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  13 FEB 2019 15:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1284,27 +1284,6 @@ LaTeX Font Info:    Try loading font information for U+bbm on input line 272.
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/ueuf.fd)
-
-LaTeX Warning: Reference `Subsection relative stable maps' on page 4 undefined 
-on input line 306.
-
-
-LaTeX Warning: Reference `Subsection stable quasimaps' on page 4 undefined on i
-nput line 306.
-
-
-LaTeX Warning: Reference `Subsection recursion formula for PN' on page 4 undefi
-ned on input line 306.
-
-
-LaTeX Warning: Reference `Subsection recursion formula for PN' on page 4 undefi
-ned on input line 306.
-
-
-LaTeX Warning: Reference `Subsection virtual class in general' on page 4 undefi
-ned on input line 306.
-
-
 Overfull \hbox (57.6102pt too wide) in alignment at lines 306--306
  [] [] [] [] 
  []
@@ -1333,7 +1312,7 @@ Overfull \hbox (11.9822pt too wide) in paragraph at lines 444--444
  []
 
 [11] [12]
-Overfull \hbox (20.41005pt too wide) in paragraph at lines 517--519
+Overfull \hbox (20.41005pt too wide) in paragraph at lines 515--517
 \OML/cmm/m/it/10 B \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 ^^L[]; [] ; ^^L[]\OT1/cm
 r/m/n/10 )$ of the curve class $\OML/cmm/m/it/10 ^^L$ \OT1/cmr/m/n/10 and all v
 alid mul-ti-plic-i-ties $\OML/cmm/m/it/10 M \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10
@@ -1341,33 +1320,19 @@ alid mul-ti-plic-i-ties $\OML/cmm/m/it/10 M \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10
  []
 
 [13] [14]
-Overfull \hbox (5.0102pt too wide) in paragraph at lines 574--577
+Overfull \hbox (5.0102pt too wide) in paragraph at lines 572--575
 \OT1/cmr/m/n/10 Applying $[][] \OML/cmm/m/it/10 ^^Y[]$ \OT1/cmr/m/n/10 we ob-ta
 in on the left hand side the ob-struc-tion the-ory for $\U/cmsy/m/n/10 Q[]\OT1/
 cmr/m/n/10 (\OML/cmm/m/it/10 Y; ^^L\OT1/cmr/m/n/10 )$
  []
 
 [15]
-Overfull \hbox (47.24872pt too wide) in paragraph at lines 595--595
+Overfull \hbox (47.24872pt too wide) in paragraph at lines 593--593
 [] 
  []
 
-
-LaTeX Warning: Reference `Subsection recursion formula for PN' on page 16 undef
-ined on input line 608.
-
-[16]
-
-LaTeX Warning: Reference `Subsection virtual class in general' on page 17 undef
-ined on input line 634.
-
-[17]
-
-LaTeX Warning: Reference `Relative spaces pull back' on page 18 undefined on in
-put line 669.
-
-[18] [19]
-Overfull \hbox (14.99428pt too wide) detected at line 695
+[16] [17] [18] [19]
+Overfull \hbox (14.99428pt too wide) detected at line 690
 \OT1/cmr/m/n/10 ((\OML/cmm/m/it/10 [] \U/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1)\OM
 L/cmm/m/it/10  [] \OT1/cmr/m/n/10 + [][][\OML/cmm/m/it/10 Y\OT1/cmr/m/n/10 ]) \
 U/cmsy/m/n/10 \ \OT1/cmr/m/n/10 [\U/cmsy/m/n/10 Q[]\OT1/cmr/m/n/10 (\OML/cmm/m/
@@ -1378,7 +1343,7 @@ it/10 X\U/cmsy/m/n/10 j\OML/cmm/m/it/10 Y; ^^L\OT1/cmr/m/n/10 )][] = [\U/cmsy/m
  []
 
 [20] [21]
-Overfull \hbox (4.02176pt too wide) in paragraph at lines 744--745
+Overfull \hbox (4.02176pt too wide) in paragraph at lines 739--740
 []\OT1/cmr/m/n/10 We fix a ho-mo-ge-neous ba-sis $\OML/cmm/m/it/10 ^^Q[]; [] ; 
 ^^Q[]$ \OT1/cmr/m/n/10 for $[][](\OML/cmm/m/it/10 X\OT1/cmr/m/n/10 ) = [][](\OM
 L/cmm/m/it/10 X; \U/msb/m/n/10 Q\OT1/cmr/m/n/10 )$ and let $\OML/cmm/m/it/10 ^^
@@ -1386,57 +1351,48 @@ Q[]; [] ; ^^Q[]$
  []
 
 [22] [23] [24] [25]
-Overfull \hbox (32.2458pt too wide) in paragraph at lines 861--861
+Overfull \hbox (32.2458pt too wide) in paragraph at lines 856--856
 [] 
  []
 
 
-Overfull \hbox (25.30243pt too wide) in paragraph at lines 865--865
+Overfull \hbox (25.30243pt too wide) in paragraph at lines 860--860
 [] 
  []
 
 [26] [27]
-Overfull \hbox (1.81836pt too wide) in paragraph at lines 913--913
+Overfull \hbox (1.81836pt too wide) in paragraph at lines 908--908
 []\OT1/cmr/bx/n/12 Comparison with the work of Ciocan-Fontanine and Kim 
  []
 
 [28]
-
-LaTeX Warning: Reference `rmk:epsilonstable' on page 29 undefined on input line
- 918.
-
-
-Overfull \hbox (3.22484pt too wide) detected at line 923
+Overfull \hbox (3.22484pt too wide) detected at line 918
 \OML/cmm/m/it/10 S[]\OT1/cmr/m/n/10 (\OT1/cmr/bx/n/10 t\OML/cmm/m/it/10 ; z\OT1
 /cmr/m/n/10 )(\OML/cmm/m/it/10 ^^M\OT1/cmr/m/n/10 ) = [] []([][])[] []
  []
 
-[29] [30] [31] [32] [33] (./relative_quasimaps.bbl [34] [35]
-Underfull \hbox (badness 1442) in paragraph at lines 144--147
+[29] [30] [31] [32] [33] (./relative_quasimaps.bbl [34]
+Underfull \hbox (badness 1442) in paragraph at lines 96--99
 []\OT1/cmr/m/n/10 Cristina Manolache.  Vir-tual pull-backs.  \OT1/cmr/m/it/10 J
 . Al-ge-braic Geom.\OT1/cmr/m/n/10 ,
  []
 
-) [36]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1070.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1070.
+[35]) [36]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1065.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1065.
  (./relative_quasimaps.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1070.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1070.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1065.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1065.
 
 Package rerunfilecheck Info: File `relative_quasimaps.out' has not changed.
 (rerunfilecheck)             Checksum: EEF9F77EFE39F19CD6B304A0675CCC0F;394.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1070.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1065.
  ) 
 Here is how much of TeX's memory you used:
- 32374 strings out of 493014
- 622002 string characters out of 6133351
- 714398 words of memory out of 5000000
- 35212 multiletter control sequences out of 15000+600000
+ 32349 strings out of 493014
+ 621544 string characters out of 6133351
+ 719035 words of memory out of 5000000
+ 35198 multiletter control sequences out of 15000+600000
  21483 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,19n,84p,10394b,1024s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1473,10 +1429,10 @@ ive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texliv
 e/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/
 2016/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/20
 16/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
-Output written on relative_quasimaps.pdf (36 pages, 474025 bytes).
+Output written on relative_quasimaps.pdf (36 pages, 470886 bytes).
 PDF statistics:
- 613 PDF objects out of 1000 (max. 8388607)
- 506 compressed objects within 6 object streams
- 145 named destinations out of 1000 (max. 500000)
+ 610 PDF objects out of 1000 (max. 8388607)
+ 499 compressed objects within 5 object streams
+ 134 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
