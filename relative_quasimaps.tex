@@ -195,7 +195,7 @@ This work was supported by the Engineering and Physical Sciences Research Counci
 
 \title{Quasimap quantum Lefschetz via relative quasimaps}
 
-\author{Luca Battistella\thanks{Max-Planck-Institut f\"ur Mathematik, Bonn, \href{mailto:battistella@mpim-bonn.mpg.de}{battistella@mpim-bonn.mpg.de}}\, and Navid Nabijou\thanks{School of Mathematics and Statistics, University of Glasgow,\href{mailto:Navid.Nabijou@glasgow.ac.uk}{Navid.Nabijou@glasgow.ac.uk}}}
+\author{Luca Battistella\thanks{Max-Planck-Institut f\"ur Mathematik, Bonn: \href{mailto:battistella@mpim-bonn.mpg.de}{battistella@mpim-bonn.mpg.de}}\, and Navid Nabijou\thanks{School of Mathematics and Statistics, University of Glasgow: \href{mailto:Navid.Nabijou@glasgow.ac.uk}{navid.nabijou@glasgow.ac.uk}}}
 
 \date{}
 
@@ -238,7 +238,7 @@ The plan of the paper is as follows. In \S \ref{Section relative stable quasimap
 \begin{equation*} \Q{0}{\alpha}{X|Y}{\beta} \hookrightarrow \Q{0}{n}{X}{\beta}. \end{equation*}
 Here $X$ is a smooth toric variety, $Y$ is a smooth very ample hypersurface and $\alpha = (\alpha_1, \ldots, \alpha_n)$ encodes the orders of tangency of the marked points to $Y$. Note that we \emph{do not} require $Y$ to be toric.
 
-The study of projective space relative a hyperplane plays a fundamental role: in this case, the relative space is irreducible of the expected codimension $\sum\alpha$ (in fact, it is the closure of the so-called ``nice locus'' consisting of maps from a $\PP^1$ whose image is not contained in $H$ and satisfying the tangency requirement). Thus it has an actual fundamental class, which we can use to define relative quasimap invariants, and to endow $\Q{0}{\alpha}{X|Y}{\beta}$ with a virtual class by pullback.
+The study of projective space relative to a hyperplane plays a fundamental role: in this case, the relative space is irreducible of the expected codimension $\Sigma_i \alpha_i$ (in fact, it is the closure of the so-called ``nice locus'' consisting of maps from a $\PP^1$ whose image is not contained inside $H$, and which satisfies the tangency conditions at the marked points). Thus it has an actual fundamental class, which we use to define relative quasimap invariants of the pair $(\PP^N,H)$. This fundamental class can also be pulled back to endow $\Q{0}{\alpha}{X|Y}{\beta}$ with a virtual  class, and hence we can define relative quasimap invariants of a general pair $(X,Y)$ as above.
 
 In \S \ref{Section recursion for PN} we prove a recursion formula relating $[\Q{0}{\alpha}{\PP^N|H}{d}]$ with classes determined by lower numerical invariants. We make use of the \emph{comparison morphism}:
 \begin{equation*} \comp : \M{0}{n}{\PP^N}{d} \to \Q{0}{n}{\PP^N}{d} \end{equation*} 
@@ -329,7 +329,7 @@ that $\underline{a}$ and $\underline{b}$ differ by an element $m$ of $M$. Thus t
 The upshot is that we obtain a line bundle $L_Y$ on $C$, which plays the role of the ``pull-back'' of $\OO_X(Y)$ along the ``map'' $C \to X$, and a global section
 \begin{equation*} u_Y \in \HH^0(C,L_Y) \end{equation*}
 which plays the role of the ``pull-back'' of $s_Y$. With this at hand, we are ready to give the main definition of this paper. We begin with the case $X=\PP^N$ and $Y=H=\{ z_0 = 0\}$ a co-ordinate hyperplane. In this situation, the discussion above simplifies significantly.
-\begin{definition} Let $n\geq 2$ be a number of marked points, $d\in\mathbb N$ a degree, and $\alpha=(\alpha_1, \ldots, \alpha_n)\in\mathbb N^n$ a tangency requirement such that $\Sigma_i \alpha_i \leq d$.
+\begin{definition} Fix a number $n\geq 2$ of marked points, a degree $d\geq 0$ and a vector $\alpha=(\alpha_1, \ldots, \alpha_n)\in\mathbb N^n$ of tangency orders such that $\Sigma_i \alpha_i \leq d$.
  The space of \emph{relative stable quasimaps} $\Q{0}{\alpha}{\PP^N|H}{d}$ is the closure inside $\Q{0}{n}{\PP^N}{d}$ of the so-called \emph{nice locus}, consisting of quasimaps with smooth source curve
  \begin{equation*} \left( (\PP^1,x_1,\ldots,x_n),u_0,\ldots,u_N \right) \end{equation*}
 (each $u_i \in \HH^0(\PP^1,\OO_{\PP^1}(d)))$ such that $u_0 \neq 0$, $u_0^*(0)\geq\sum\alpha_ix_i$ and $(u_0,\ldots,u_N)$ do not vanish simultaneously on $\PP^1$ (i.e. there are no basepoints).
@@ -343,7 +343,7 @@ u_0^{-1}(0) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \PP^1 \ar[d,"u_0"] \\
 In the general case, the complete linear system $|\OO_X(Y)|$ defines an embedding $i \colon X \hookrightarrow \PP^N$ such that $i^{-1}(H) = Y$ for some hyperplane $H$. By the functoriality property of quasimap spaces (see \cite[\S 3.1]{CF-K-wallcrossing}) we have a map
 \begin{equation*} k = \om{Q}(i) \colon \Q{0}{n}{X}{\beta} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
 where $d=i_*\beta$. %Because $\Q{0}{n}{\PP^N}{d}$ is smooth, $k$ admits a compatible perfect obstruction theory, so we have a notion of virtual pull-back along $k$.
-\begin{definition} With notation as above, $\beta \in \HH_2^+(X)$ an effective curve class and $\alpha\in\mathbb N^n$ such that $\sum_i\alpha_i\leq\OO_X(Y)\cdot\beta$. The \ilemph{space of relative stable quasimaps}
+\begin{definition} As before, fix a number $n \geq 2$ of marked points, an effective curve class $\beta \in \HH_2^+(X)$ and a vector $\alpha=(\alpha_1,\ldots,\alpha_n)\in\mathbb N^n$ of tangency orders such that $\Sigma_i\alpha_i\leq Y\cdot\beta$. The \ilemph{space of relative stable quasimaps}
 \begin{equation*} \Q{0}{\alpha}{X|Y}{\beta} \subseteq \Q{0}{n}{X}{\beta} \end{equation*}
 is defined as the following fiber product:
 \bcd
@@ -392,13 +392,13 @@ which has the effect of contracting each rational tail and introducing a basepoi
 \begin{lemma}\label{Comparison morphism birational}
  The comparison morphism $\chi$ restricts to a proper and birational morphism \[\chi_\alpha\colon \M{0}{\alpha}{\PP^N|H}{d}\to \Q{0}{\alpha}{\PP^N|H}{d}.\]
 \end{lemma}
-\begin{proof} Let $\chi_\alpha$ denote the restriction of $\chi$ to $\M{0}{\alpha}{\PP^N|H}{d}$. The fact that this factors through $\Q{0}{\alpha}{\PP^N|H}{d}$ can be deduced by applying $\chi_\alpha$ to a smoothing family of any relative stable map. Moreover $\chi_\alpha$ is an isomorphism over the nice locus, which is an open dense subset of both source and target. It follows that $\chi_\alpha$ is proper and birational (therefore surjective).\end{proof}
+\begin{proof} Let $\chi_\alpha$ denote the restriction of $\chi$ to $\M{0}{\alpha}{\PP^N|H}{d}$. The fact that this factors through $\Q{0}{\alpha}{\PP^N|H}{d}$ can be deduced by applying $\chi_\alpha$ to a smoothing family of any relative stable map. Moreover $\chi_\alpha$ is an isomorphism over the nice locus, which is an open dense subset of both source and target. It follows that $\chi_\alpha$ is proper and birational (and hence also surjective).\end{proof}
 
 Since the moduli space of relative quasimaps is irreducible of the correct dimension, it has a fundamental class which we can use to define \emph{relative quasimap invariants} for the pair $(\PP^N,H)$:
 \begin{equation*} \left\langle \gamma_1 \psi_1^{k_1} , \ldots, \gamma_n \psi_n^{k_n} \right\rangle_{0,\alpha,d}^{\PP^N|H} := \int_{[\Q{0}{\alpha}{\PP^N|H}{d}]} \prod_{i=1}^n \ev_i^* \gamma_i \cdot \psi_i^{k_i} \end{equation*}
 
 \begin{remark}
-The relative quasimap invariants of $(\PP^N,H)$ agree with the relative Gromov--Witten invariants of $(\PP^N,H)$, since the birational map $\chi_\alpha$ preserves the fundamental classes (also, the psi classes pull back along $\chi_\alpha$, see Lemma \ref{lem:compare_psi}). Note that if we set $\alpha=(0,\ldots,0)$ we recover the classical comparison theorem for the absolute Gromov--Witten and quasimap invariants of projective space.
+The relative quasimap invariants of $(\PP^N,H)$ agree with the relative Gromov--Witten invariants of $(\PP^N,H)$, since the birational map $\chi_\alpha$ preserves the fundamental classes (the psi classes pull back along $\chi_\alpha$ by Lemma \ref{lem:compare_psi} below). Note that if we set $\alpha=(0,\ldots,0)$ we recover the classical comparison theorem for the absolute Gromov--Witten and quasimap invariants of projective space.
 \end{remark}
 
 We will now use the above results to define relative quasimap invariants in general. Since the absolute space $\Q{0}{n}{\PP^N}{d}$ is unobstructed, the morphism $k\colon\Q{0}{n}{X}{\beta}\to \Q{0}{n}{\PP^N}{d}$ admits a natural relative perfect obstruction theory, and so there is a virtual pull-back morphism $k^!_{\operatorname{v}}$. Alternatively, we may use the presence of a virtual class on $\Q{0}{n}{X}{\beta}$ and the smoothness of $\Q{0}{n}{\PP^N}{d}$ to define a diagonal pull-back morphism $k^!_{\Delta}$. The discussion in Appendix \ref{appendix:intersection} shows that these two maps coincide, and from now on we will denote them both by $k^!$. We then define the virtual class on $\Q{0}{\alpha}{X|Y}{\beta}$ by pull-back along $k$
@@ -455,7 +455,7 @@ Since we wish to apply the projection formula to Gathmann's recursion relation, 
 \end{align*}
 \end{lem}
 \begin{proof}
-The contraction of rational tails happens away from any marking.
+The contraction of rational tails occurs away from the markings.
 \end{proof}
 \begin{prop} \label{Recursion formula for PN}
 Define the \ilemph{quasimap comb locus} $\mathcal{D}^\mathcal{Q}_{\alpha,k}(\PP^N|H,d)$ as the union of the moduli spaces
