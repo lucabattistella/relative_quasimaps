@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  14 FEB 2019 12:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.6)  21 FEB 2019 19:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1277,66 +1277,66 @@ Package hyperref Warning: Ignoring empty anchor on input line 194.
  [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (2.74223pt too wide) in paragraph at lines 219--220
+Overfull \hbox (2.74223pt too wide) in paragraph at lines 223--224
 []\OT1/cmr/m/n/10 For $\OML/cmm/m/it/10 X$ \OT1/cmr/m/n/10 suf-fi-ciently pos-i
 -tive, the quasimap in-vari-ants co-in-cide with the Gromov--
  []
 
-[2] [3]
-LaTeX Font Info:    Try loading font information for U+bbm on input line 274.
+[2] [3] [4]
+LaTeX Font Info:    Try loading font information for U+bbm on input line 278.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
-[4] (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/ueuf.fd)
-Overfull \hbox (57.6102pt too wide) in alignment at lines 308--308
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/ueuf.fd)
+Overfull \hbox (57.6102pt too wide) in alignment at lines 312--312
  [] [] [] [] 
  []
 
 [5] [6] [7]
-Overfull \hbox (4.47192pt too wide) in paragraph at lines 366--366
+Overfull \hbox (4.47192pt too wide) in paragraph at lines 370--370
 [] 
  []
 
 [8] [9]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 424.
+(hyperref)                removing `math shift' on input line 428.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 424.
+(hyperref)                removing `superscript' on input line 428.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 424.
+(hyperref)                removing `math shift' on input line 428.
 
 [10]
-Overfull \hbox (11.9822pt too wide) in paragraph at lines 446--446
+Overfull \hbox (11.9822pt too wide) in paragraph at lines 450--450
 [] 
  []
 
-[11] [12]
-Overfull \hbox (20.41005pt too wide) in paragraph at lines 508--510
+[11] [12] [13]
+Overfull \hbox (20.41005pt too wide) in paragraph at lines 512--514
 \OML/cmm/m/it/10 B \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 ^^L[]; [] ; ^^L[]\OT1/cm
 r/m/n/10 )$ of the curve class $\OML/cmm/m/it/10 ^^L$ \OT1/cmr/m/n/10 and all v
 alid mul-ti-plic-i-ties $\OML/cmm/m/it/10 M \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10
  m[]; [] ; m[]\OT1/cmr/m/n/10 )$
  []
 
-[13] [14]
-Overfull \hbox (5.0102pt too wide) in paragraph at lines 565--568
+[14]
+Overfull \hbox (5.0102pt too wide) in paragraph at lines 569--572
 \OT1/cmr/m/n/10 Applying $[][] \OML/cmm/m/it/10 ^^Y[]$ \OT1/cmr/m/n/10 we ob-ta
 in on the left hand side the ob-struc-tion the-ory for $\U/cmsy/m/n/10 Q[]\OT1/
 cmr/m/n/10 (\OML/cmm/m/it/10 Y; ^^L\OT1/cmr/m/n/10 )$
  []
 
 [15]
-Overfull \hbox (47.24872pt too wide) in paragraph at lines 586--586
+Overfull \hbox (47.24872pt too wide) in paragraph at lines 590--590
 [] 
  []
 
 [16] [17] [18] [19]
-Overfull \hbox (14.99428pt too wide) detected at line 683
+Overfull \hbox (14.99428pt too wide) detected at line 687
 \OT1/cmr/m/n/10 ((\OML/cmm/m/it/10 [] \U/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1)\OM
 L/cmm/m/it/10  [] \OT1/cmr/m/n/10 + [][][\OML/cmm/m/it/10 Y\OT1/cmr/m/n/10 ]) \
 U/cmsy/m/n/10 \ \OT1/cmr/m/n/10 [\U/cmsy/m/n/10 Q[]\OT1/cmr/m/n/10 (\OML/cmm/m/
@@ -1347,7 +1347,7 @@ it/10 X\U/cmsy/m/n/10 j\OML/cmm/m/it/10 Y; ^^L\OT1/cmr/m/n/10 )][] = [\U/cmsy/m
  []
 
 [20] [21]
-Overfull \hbox (4.02176pt too wide) in paragraph at lines 732--733
+Overfull \hbox (4.02176pt too wide) in paragraph at lines 736--737
 []\OT1/cmr/m/n/10 We fix a ho-mo-ge-neous ba-sis $\OML/cmm/m/it/10 ^^Q[]; [] ; 
 ^^Q[]$ \OT1/cmr/m/n/10 for $[][](\OML/cmm/m/it/10 X\OT1/cmr/m/n/10 ) = [][](\OM
 L/cmm/m/it/10 X; \U/msb/m/n/10 Q\OT1/cmr/m/n/10 )$ and let $\OML/cmm/m/it/10 ^^
@@ -1355,47 +1355,47 @@ Q[]; [] ; ^^Q[]$
  []
 
 [22] [23] [24] [25]
-Overfull \hbox (32.2458pt too wide) in paragraph at lines 849--849
+Overfull \hbox (32.2458pt too wide) in paragraph at lines 853--853
 [] 
  []
 
-
-Overfull \hbox (25.30243pt too wide) in paragraph at lines 853--853
+[26]
+Overfull \hbox (25.30243pt too wide) in paragraph at lines 857--857
 [] 
  []
 
-[26] [27]
-Overfull \hbox (1.81836pt too wide) in paragraph at lines 901--901
+[27] [28]
+Overfull \hbox (1.81836pt too wide) in paragraph at lines 905--905
 []\OT1/cmr/bx/n/12 Comparison with the work of Ciocan-Fontanine and Kim 
  []
 
-[28]
-Overfull \hbox (3.22484pt too wide) detected at line 911
+
+Overfull \hbox (3.22484pt too wide) detected at line 915
 \OML/cmm/m/it/10 S[]\OT1/cmr/m/n/10 (\OT1/cmr/bx/n/10 t\OML/cmm/m/it/10 ; z\OT1
 /cmr/m/n/10 )(\OML/cmm/m/it/10 ^^M\OT1/cmr/m/n/10 ) = [] []([][])[] []
  []
 
-[29] [30] [31] [32] [33] (./relative_quasimaps.bbl [34]
+[29] [30] [31] [32] [33] (./relative_quasimaps.bbl [34] [35]
 Underfull \hbox (badness 1442) in paragraph at lines 96--99
 []\OT1/cmr/m/n/10 Cristina Manolache.  Vir-tual pull-backs.  \OT1/cmr/m/it/10 J
 . Al-ge-braic Geom.\OT1/cmr/m/n/10 ,
  []
 
-[35]) [36]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1058.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1058.
+) [36]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1062.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1062.
  (./relative_quasimaps.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1058.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1058.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1062.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1062.
 
 Package rerunfilecheck Info: File `relative_quasimaps.out' has not changed.
 (rerunfilecheck)             Checksum: EEF9F77EFE39F19CD6B304A0675CCC0F;394.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1058.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1062.
  ) 
 Here is how much of TeX's memory you used:
- 32261 strings out of 493014
- 619387 string characters out of 6133351
- 718013 words of memory out of 5000000
+ 32262 strings out of 493014
+ 619403 string characters out of 6133351
+ 714404 words of memory out of 5000000
  35106 multiletter control sequences out of 15000+600000
  21483 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1433,10 +1433,10 @@ ive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texliv
 e/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/
 2016/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/20
 16/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
-Output written on relative_quasimaps.pdf (36 pages, 471485 bytes).
+Output written on relative_quasimaps.pdf (36 pages, 472452 bytes).
 PDF statistics:
- 621 PDF objects out of 1000 (max. 8388607)
- 509 compressed objects within 6 object streams
- 135 named destinations out of 1000 (max. 500000)
+ 624 PDF objects out of 1000 (max. 8388607)
+ 512 compressed objects within 6 object streams
+ 136 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
