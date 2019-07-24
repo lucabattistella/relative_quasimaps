@@ -200,7 +200,7 @@ This work was supported by EPSRC, the Royal Society and the London School for Ge
 
 \maketitle
 
-\begin{abstract}We define moduli spaces of relative toric quasimaps in genus zero, in the spirit of A. Gathmann. When $X$ is a smooth toric variety and $Y$ is a very ample hypersurface in $X$ we construct a virtual class on the moduli space of relative quasimaps to $(X,Y)$ which can be used to define relative quasimap invariants of the pair. We obtain a recursion formula which expresses each relative invariant in terms of invariants of lower multiplicity. Finally we apply this formula to derive a quantum Lefschetz theorem for quasimaps, expressing the restricted quasimap invariants of $Y$ in terms of those of $X$.\end{abstract}
+\begin{abstract}We define moduli spaces of relative toric quasimaps in genus zero, in the spirit of A. Gathmann. When $X$ is a smooth toric variety and $Y$ is a very ample hypersurface in $X$ we construct a virtual class on the moduli space of relative quasimaps to $(X,Y)$ which can be used to define relative quasimap invariants of the pair. We obtain a recursion formula which expresses each relative invariant in terms of invariants of lower multiplicity. We apply this formula to derive a quantum Lefschetz theorem for quasimaps, expressing the restricted quasimap invariants of $Y$ in terms of those of $X$. Finally, we show that the relative $I$-function of \cite{FanTsengYou} coincides with a generating function for relative quasimap invariants.\end{abstract}
 %\appendixtitletocoff
 \tableofcontents
 
@@ -208,29 +208,40 @@ This work was supported by EPSRC, the Royal Society and the London School for Ge
 \section{Introduction}
 \subsection{The goals of relative quasimap theory} Relative Gromov--Witten theory for smooth pairs $(X,Y)$\cite{Ga,Vre,Li1,Li2} occupies a central place in modern enumerative geometry, owing to both its intrinsic interest and its role in the degeneration formula \cite{MaulikPandharipande}. However, while the structures underlying the absolute Gromov--Witten invariants --- generating functions, Frobenius manifolds, Lagrangian cones, etc. --- are well-understood, the nature of the corresponding structures in the relative setting remains mysterious.
 
-One possible approach to this problem is to adapt ideas coming from mirror symmetry to the relative setting. Precisely what this would entail depends on one's point of view, but the end goal should be to obtain closed formulae for certain generating functions of relative Gromov--Witten invariants. Recent work of Fan--Tseng--You \cite{FanTsengYou} uses the correspondence between these relative invariants and the Gromov--Witten invariants of orbifolds \cite{AbramovichCadmanWise} in order to derive a relative mirror theorem for certain restricted generating functions.
+One possible approach to this problem is to adapt ideas coming from mirror symmetry to the relative context. Precisely what this would entail depends on one's point of view, but the end goal should be to obtain closed formulae for certain generating functions of relative Gromov--Witten invariants. Recent work of Fan--Tseng--You \cite{FanTsengYou} uses the correspondence between these relative invariants and the Gromov--Witten invariants of orbifolds \cite{AbramovichCadmanWise} in order to derive a relative mirror theorem for certain restricted generating functions.
 
-Our approach is different, taking motivation from the theory of stable quasimaps \cite{CF-K,CFKM} which has been applied with great success to prove mirror theorems in the absolute setting \cite{CF-K-wallcrossing,CF-K-MirrorSymmetry}. The belief is that a fully-fledged theory of relative quasimaps should lead to an equally powerful collection of mirror theorems in the relative setting.
+Our approach is different, taking motivation from the theory of stable quasimaps \cite{CF-K,CFKM} which has been applied with great success to prove mirror theorems in the absolute setting \cite{CF-K-wallcrossing,CF-K-MirrorSymmetry}. The belief is that a fully-fledged theory of \emph{relative} quasimaps should lead to an equally powerful collection of mirror theorems in the relative setting.
 
 \subsection{Results}
 In this paper, we carry out this program in the context of genus-zero quasimaps relative to a hyperplane section. We construct moduli spaces of relative quasimaps in the spirit of A. Gathmann, that is, as substacks of moduli spaces of (absolute) quasimaps. We prove a recursion formula for the resulting relative quasimap invariants, analogous to Gathmann's recursion \cite[\S 3]{Ga} in the stable map setting. We then apply this formula in order to show that our invariants give the correct general context for studying relative mirror symmetry:
-\begin{customthm}{A} The relative $I$-function, as constructed in \cite{FanTsengYou}, coincides with a certain generating function for relative quasimap invariants.
+\begin{customthm}{A}[\textbf{Theorem \ref{Ifunction}}]\label{thmA} The relative $I$-function, as constructed in \cite{FanTsengYou}, coincides with a certain generating function for relative quasimap invariants.
 \end{customthm}
 
-We may also use the recursion formula to derive quantum Lefschetz theorems for absolute quasimap invariants. We have:
-\begin{customthm}{B} Let $X$ be a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. Then there is an explicit algorithm to recover the (restricted) quasimap invariants of $Y$ from the quasimap invariants of $X$.\end{customthm}
+Aside from the connections to relative Gromov--Witten theory, we may also apply the recursion formula to study absolute quasimap theory. To be more precise, we obtain a quantum Lefschetz theorem for quasimap invariants, expressing the invariants of a hyperplane section $Y$ in terms of those of $X$. This takes two forms; first, we have a general result which holds without any special restrictions on the target geometry:
+\begin{customthm}{B}[\textbf{Theorem \ref{Theorem full quasimap Lefschetz}}] \label{thmB} Let $X$ be a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. Then there is an explicit algorithm to recover the (restricted) quasimap invariants of $Y$ from the quasimap invariants of $X$.\end{customthm}
 
-\begin{remark} Even in the situation where the quasimap theories of $X$ and $Y$ coincide with the respective Gromov--Witten theories (for instance, if $X$ and $Y$ are projective complete intersections of Fano index $\geq 2$), the quasimap algorithm is combinatorially much simpler than the Gromov--Witten algorithm \cite[Corollary 5.7]{Ga}, due to the absence of rational tails. This phenomenon will generalise to the setting of the quasimap degeneration formula, once such a formula has been established.
+\begin{remark} Even in the situation where the quasimap theories of $X$ and $Y$ coincide with the respective Gromov--Witten theories (for instance, if $X$ and $Y$ are projective complete intersections of Fano index $\geq 2$), the quasimap algorithm is combinatorially much simpler than the Gromov--Witten algorithm \cite[Corollary 5.7]{Ga}, due to the absence of rational tails. This phenomenon will obviously generalise to the setting of the quasimap degeneration formula (once such a result has been established).
 \end{remark}
 
-Under some semipositivity assumptions on $X$ and $Y$, we are able to apply this algorithm to obtain an explicit relation between generating functions:
-\begin{customthm}{C}
+The second form of the quantum Lefschetz theorem is an explicit relation between generating functions, obtained by applying Theorem \ref{thmB} in the semipositive context.
+\begin{customthm}{C}[\textbf{Theorem \ref{Theorem Quantum Lefschetz}}]\label{thmC}
 Let $X$ be a smooth projective toric Fano variety and let $i\colon Y \hookrightarrow X$ be a very ample hypersurface. Assume that $-K_Y$ is nef and that $Y$ contains all curve classes (see \S \ref{Subsection setup}). Then
 \begin{equation*}
 \dfrac{\sum_{\beta\geq 0} q^\beta\prod_{j=0}^{Y\cdot\beta}(Y+jz)S_0^X(z,\beta)}{P_0^X(q)}= \tilde{S}_0^Y(z,q)
 \end{equation*}
-where $S_0^X(z,\beta), \tilde{S}_0^Y(z,q)$ and $P_0^X(q)$ are appropriate generating functions for quasimap invariants.
+where $S_0^X(z,\beta)$ and $\tilde{S}_0^Y(z,q)$ are the following generating functions for $2$-pointed quasimap invariants
+\begin{align*}
+S_0^X(z,\beta)&=(\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{X}{\beta}}\right) \\
+\tilde{S}_0^Y(z,q)&=i_* \sum_{\beta \geq 0} q^\beta (\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{Y}{\beta}}\right)
+\end{align*}
+and $P_0^X(q)$ is given by:
+\begin{equation*}
+P_0^X(q) = 1 + \sum_{\substack{\beta>0 \\ K_Y\cdot\beta=0}} q^\beta(Y\cdot\beta)!\langle [\pt_X] \psi_1^{Y\cdot\beta-1} ,\mathbbm 1_{X}\rangle_{0,2,\beta}^X
+\end{equation*}
 \end{customthm}
+\noindent This is similar in spirit to the arguments of \cite{Ga-MF}; however, the stronger stability condition considerably simplifies both the proof and the final result. This formula can also be obtained as a consequence of \cite[Corollary~5.5.1]{CF-K-wallcrossing}; see \S \ref{Subsection CFK comparison}. 
+
+
 
 \subsection{Plan of the paper}
 The plan of the paper is as follows. In \S \ref{Section relative stable quasimaps} we define the space of relative quasimaps, as a substack of the moduli space of (absolute) quasimaps:
@@ -252,35 +263,13 @@ in the Chow group of $\Q{0}{\alpha}{X|Y}{\beta}$.
 \end{customthm}
 \noindent Here $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ is a certain \emph{quasimap comb locus} sitting inside the boundary of the relative space (see \S \ref{Subsection comb loci pull back}); its virtual class should be thought of as a correction term. Such terms also appear in Gathmann's stable map recursion formula; however, in our setting the stronger stability condition for quasimaps considerably reduces the number of such contributions.
 
-Finally in \S \ref{Section quasimap mirror theorem} we apply the recursion formula of \S \ref{Section recursion formula in general case} to obtain a quantum Lefschetz theorem for quasimap invariants. This takes two forms: first we have a general result which holds without any special restrictions on $Y$.
-
-\begin{customthm}{\ref{Theorem full quasimap Lefschetz}} Let $X$ be a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. Then there is an explicit algorithm to recover the (restricted) quasimap invariants of $Y$ from the quasimap invariants of $X$.\end{customthm}
-
-If, however, we are willing to impose some (semi)positivity assumptions, we can do better and actually obtain a closed formula (rather than just an algorithm) for this relationship.
-
-\begin{customthm}{\ref{Theorem Quantum Lefschetz}}
-Let $X$ be a smooth projective toric Fano variety and let $i\colon Y \hookrightarrow X$ be a very ample hypersurface. Assume that $-K_Y$ is nef and that $Y$ contains all curve classes (see \S \ref{Subsection setup}). Then
-\begin{equation*}
-\dfrac{\sum_{\beta\geq 0} q^\beta\prod_{j=0}^{Y\cdot\beta}(Y+jz)S_0^X(z,\beta)}{P_0^X(q)}= \tilde{S}_0^Y(z,q)
-\end{equation*}
-where $S_0^X(z,\beta)$ and $\tilde{S}_0^Y(z,q)$ are the following generating functions for $2$-pointed quasimap invariants
-\begin{align*}
-S_0^X(z,\beta)&=(\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{X}{\beta}}\right) \\
-\tilde{S}_0^Y(z,q)&=i_* \sum_{\beta \geq 0} q^\beta (\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{Y}{\beta}}\right)
-\end{align*}
-and $P_0^X(q)$ is given by:
-\begin{equation*}
-P_0^X(q) = 1 + \sum_{\substack{\beta>0 \\ K_Y\cdot\beta=0}} q^\beta(Y\cdot\beta)!\langle [\pt_X] \psi_1^{Y\cdot\beta-1} ,\mathbbm 1_{X}\rangle_{0,2,\beta}^X
-\end{equation*}
-\end{customthm}
-
-The argument is similar in spirit to the one given in \cite{Ga-MF}, however the stronger stability condition considerably simplifies both the proof and the final result. This formula can also be obtained as a consequence of \cite[Corollary~5.5.1]{CF-K-wallcrossing}; see \S \ref{Subsection CFK comparison}. 
+Finally in \S \ref{Section quasimap mirror theorem} we apply the recursion formula of \S \ref{Section recursion formula in general case} to obtain the main Theorems \ref{thmA},\ref{thmB} and \ref{thmC} discussed above.
 
 %We also include a short appendix, dedicated to important but slightly technical lemmas. In Appendix~\ref{Section comparison with GIT construction} we show that the moduli space $\Q{g}{n}{Y}{\beta}$, defined in \S \ref{Section recursion formula in general case} as a closed substack of $\Q{g}{n}{X}{\beta}$, is in fact virtually isomorphic to the moduli space $\om{Q}^{\operatorname{GIT}}_{g,n}(Y,\beta)$ of stable quasimaps to the GIT quotient $C(Y)\sslash \Gm^r=Y$, as defined in \cite{CFKM}.
 In Appendix~\ref{appendix:intersection} we define the \emph{diagonal pull-back} along a morphism whose target is smooth, and verify that it agrees with the more modern concept of virtual pull-back \cite{Manolache-Pull} when both are defined. The diagonal pull-back was employed implicitly in \cite{Ga}, but we find it useful here to give a more explicit treatment.
 
 \subsection{Future directions}
-We expect Theorem A to generalise to the case of arbitrary simple normal crossings divisors and arbitrary genus. To this end, we are currently in the process of developing and applying a fully-fledged theory of \emph{logarithmic quasimaps}. In this context, the ``relative mirror theorem'' will take the form of a wall-crossing formula between logarithmic quasimap and Gromov--Witten invariants, together with closed-form expressions for the quasimap generating functions.
+We expect Theorem \ref{thmA} to generalise to the case of arbitrary simple normal crossings divisors and arbitrary genus. To this end, we are currently in the process of developing and applying a fully-fledged theory of \emph{logarithmic quasimaps}. In this context, the ``relative mirror theorem'' will take the form of a wall-crossing formula between logarithmic quasimap and Gromov--Witten invariants, together with closed-form expressions for the quasimap generating functions.
 
 
 \subsection{Table of notation} We will use the following notation, most of which is introduced in the main body of the paper.
