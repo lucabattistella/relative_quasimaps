@@ -1,4 +1,4 @@
-\documentclass[10pt,oneside]{article}
+\documentclass[10pt]{amsart}
 
 %3\usepackage[margin=1in]{geometry}
 
@@ -176,7 +176,7 @@
 %\usepackage[T1]{fontenc}
 %\usepackage{newpxtext,newpxmath}
 
-\newcommand\blfootnote[1]{%
+\newcommand\blfootnote[1]{
   \begingroup
   \renewcommand\thefootnote{}\footnotetext{#1}%
   %\addtocounter{footnote}{-1}%
@@ -188,17 +188,15 @@
 
 
 \blfootnote{
-\emph{Acknowledgements:} We thank Tom Coates and Cristina Manolache for carefully reading this manuscript and for their helpful advice with both exposition and subject matter. We are grateful to Ionu\c{t} Ciocan-Fontanine for thoroughly examining a preliminary version of this manuscript and providing several clarifications and corrections. We would also like to thank Fabio Bernasconi, Andrea Petracci and Richard Thomas for useful conversations. 
+\emph{Acknowledgements:} We thank Tom Coates and Cristina Manolache for carefully reading this manuscript and for their helpful advice with both exposition and subject matter. We are especially grateful to Ionu\c{t} Ciocan-Fontanine for thoroughly examining a preliminary version of this manuscript and providing several clarifications and corrections. We would also like to thank Fabio Bernasconi, Andrea Petracci and Richard Thomas for useful conversations. 
 
-During the preparation of this manuscript, L.B. was supported by a Royal Society 1st Year URF and DHF Research Grant Scheme and N.N. by an EPSRC Standard DTP Scholarship. We thank Imperial College London for providing a fruitful research environment.
-This work was supported by the Engineering and Physical Sciences Research Council grant EP/L015234/1: the EPSRC Centre for Doctoral Training in Geometry and Number Theory at the Interface.}
+This work was supported by EPSRC, the Royal Society and the London School for Geometry and Number Theory.}
 
 \title{Quasimap quantum Lefschetz via relative quasimaps}
 
-\author{Luca Battistella\thanks{Max-Planck-Institut f\"ur Mathematik, Bonn: \href{mailto:battistella@mpim-bonn.mpg.de}{battistella@mpim-bonn.mpg.de}}\, and Navid Nabijou\thanks{School of Mathematics and Statistics, University of Glasgow: \href{mailto:Navid.Nabijou@glasgow.ac.uk}{navid.nabijou@glasgow.ac.uk}}}
+\author{Luca Battistella and Navid Nabijou}
 
 \date{}
-
 
 \maketitle
 
@@ -208,9 +206,26 @@ This work was supported by the Engineering and Physical Sciences Research Counci
 
 
 \section{Introduction}
-In this paper we construct moduli spaces of relative quasimaps as substacks of moduli spaces of (absolute) quasimaps. This provides a common generalisation of two different theories: stable quasimaps on the one hand, and relative stable maps (in the sense of A. Gathmann) on the other. We prove a recursion formula for the resulting invariants, and use this to derive the following quantum Lefschetz result:
-\begin{customthm}{\ref{Theorem full quasimap Lefschetz}} Let $X$ be a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. Then there is an explicit algorithm to recover the (restricted) quasimap invariants of $Y$ from the quasimap invariants of $X$.\end{customthm}
-\noindent Under some semipositivity assumptions on $X$ and $Y$, we are able to apply this algorithm to obtain an explicit relation between generating functions (see Theorem \ref{Theorem Quantum Lefschetz} below).
+The theory of relative stable maps occupies a central place in modern enumerative geometry, due both to its intrinsic interest and its role in the degeneration formula. In this paper we take the first steps towards an extension of this theory to the setting of quasimaps. The two main applications we have in mind are:
+\begin{enumerate}
+\item a dramatically simplified degeneration formula, which could be used to derive closed formulae for generating functions;
+\item an extension of mirror symmetry to the relative setting.
+\end{enumerate}
+In this paper, we carry out this program in the setting of genus-zero quasimaps relative a hyperplane section. We construct moduli spaces of relative quasimaps in the spirit of A. Gathmann, that is, as substacks of moduli spaces of (absolute) quasimaps. We prove a recursion formula for the resulting invariants which plays the role of the degeneration formula. , and use this to derive the following quantum Lefschetz result:
+\begin{customthm}{A} Let $X$ be a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. Then there is an explicit algorithm to recover the (restricted) quasimap invariants of $Y$ from the quasimap invariants of $X$.\end{customthm}
+\noindent Under some semipositivity assumptions on $X$ and $Y$, we are able to apply this algorithm to obtain an explicit relation between generating functions:
+
+\begin{customthm}{B}
+Let $X$ be a smooth projective toric Fano variety and let $i\colon Y \hookrightarrow X$ be a very ample hypersurface. Assume that $-K_Y$ is nef and that $Y$ contains all curve classes (see \S \ref{Subsection setup}). Then
+\begin{equation*}
+\dfrac{\sum_{\beta\geq 0} q^\beta\prod_{j=0}^{Y\cdot\beta}(Y+jz)S_0^X(z,\beta)}{P_0^X(q)}= \tilde{S}_0^Y(z,q)
+\end{equation*}
+where $S_0^X(z,\beta), \tilde{S}_0^Y(z,q)$ and $P_0^X(q)$ are appropriate generating functions for quasimap invariants.
+\end{customthm}
+\noindent Finally, we apply our recursion to show that our relative quasimap invariants provide the correct general context for studying relative mirror symmetry:
+\begin{customthm}{C} The relative $I$-function, as constructed in \cite{FanTsengYou}, coincides with a certain generating function for relative quasimap invariants.
+\end{customthm}
+
 
 In this introductory section we briefly recall the theories of stable quasimaps and relative stable maps, thus putting our work in its proper context.
 
@@ -1058,5 +1073,14 @@ and apply commutativity of usual Gysin morphisms. In the case where $k$ is not a
 
 \bibliographystyle{alpha}
 \bibliography{relqm}
+
+\medskip
+\noindent Luca Battistella\\
+Max-Planck-Institut f\"ur Mathematik, Bonn \\
+\href{mailto:battistella@mpim-bonn.mpg.de}{battistella@mpim-bonn.mpg.de}\\
+
+\noindent Navid Nabijou \\
+School of Mathematics and Statistics, University of Glasgow \\
+\href{mailto:Navid.Nabijou@glasgow.ac.uk}{navid.nabijou@glasgow.ac.uk}\\
 
 \end{document}
