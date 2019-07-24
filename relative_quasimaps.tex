@@ -192,7 +192,7 @@
 
 This work was supported by EPSRC, the Royal Society and the London School for Geometry and Number Theory.}
 
-\title{Quasimap quantum Lefschetz via relative quasimaps}
+\title{Relative quasimaps and a quantum Lefschetz theorem}
 
 \author{Luca Battistella and Navid Nabijou}
 
@@ -206,53 +206,33 @@ This work was supported by EPSRC, the Royal Society and the London School for Ge
 
 
 \section{Introduction}
-The theory of relative stable maps occupies a central place in modern enumerative geometry, due both to its intrinsic interest and its role in the degeneration formula. In this paper we take the first steps towards an extension of this theory to the setting of quasimaps. The two main applications we have in mind are:
-\begin{enumerate}
-\item a dramatically simplified degeneration formula, which could be used to derive closed formulae for generating functions;
-\item an extension of mirror symmetry to the relative setting.
-\end{enumerate}
-In this paper, we carry out this program in the setting of genus-zero quasimaps relative a hyperplane section. We construct moduli spaces of relative quasimaps in the spirit of A. Gathmann, that is, as substacks of moduli spaces of (absolute) quasimaps. We prove a recursion formula for the resulting invariants which plays the role of the degeneration formula. , and use this to derive the following quantum Lefschetz result:
-\begin{customthm}{A} Let $X$ be a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. Then there is an explicit algorithm to recover the (restricted) quasimap invariants of $Y$ from the quasimap invariants of $X$.\end{customthm}
-\noindent Under some semipositivity assumptions on $X$ and $Y$, we are able to apply this algorithm to obtain an explicit relation between generating functions:
+\subsection{The goals of relative quasimap theory} Relative Gromov--Witten theory for smooth pairs $(X,Y)$\cite{Ga,Vre,Li1,Li2} occupies a central place in modern enumerative geometry, owing to both its intrinsic interest and its role in the degeneration formula \cite{MaulikPandharipande}. However, while the structures underlying the absolute Gromov--Witten invariants --- generating functions, Frobenius manifolds, Lagrangian cones, etc. --- are well-understood, the nature of the corresponding structures in the relative setting remains mysterious.
 
-\begin{customthm}{B}
+One possible approach to this problem is to adapt ideas coming from mirror symmetry to the relative setting. Precisely what this would entail depends on one's point of view, but the end goal should be to obtain closed formulae for certain generating functions of relative Gromov--Witten invariants. Recent work of Fan--Tseng--You \cite{FanTsengYou} uses the correspondence between these relative invariants and the Gromov--Witten invariants of orbifolds \cite{AbramovichCadmanWise} in order to derive a relative mirror theorem for certain restricted generating functions.
+
+Our approach is different, taking motivation from the theory of stable quasimaps \cite{CF-K,CFKM} which has been applied with great success to prove mirror theorems in the absolute setting \cite{CF-K-wallcrossing,CF-K-MirrorSymmetry}. The belief is that a fully-fledged theory of relative quasimaps should lead to an equally powerful collection of mirror theorems in the relative setting.
+
+\subsection{Results}
+In this paper, we carry out this program in the context of genus-zero quasimaps relative to a hyperplane section. We construct moduli spaces of relative quasimaps in the spirit of A. Gathmann, that is, as substacks of moduli spaces of (absolute) quasimaps. We prove a recursion formula for the resulting relative quasimap invariants, analogous to Gathmann's recursion \cite[\S 3]{Ga} in the stable map setting. We then apply this formula in order to show that our invariants give the correct general context for studying relative mirror symmetry:
+\begin{customthm}{A} The relative $I$-function, as constructed in \cite{FanTsengYou}, coincides with a certain generating function for relative quasimap invariants.
+\end{customthm}
+
+We may also use the recursion formula to derive quantum Lefschetz theorems for absolute quasimap invariants. We have:
+\begin{customthm}{B} Let $X$ be a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. Then there is an explicit algorithm to recover the (restricted) quasimap invariants of $Y$ from the quasimap invariants of $X$.\end{customthm}
+
+\begin{remark} Even in the situation where the quasimap theories of $X$ and $Y$ coincide with the respective Gromov--Witten theories (for instance, if $X$ and $Y$ are projective complete intersections of Fano index $\geq 2$), the quasimap algorithm is combinatorially much simpler than the Gromov--Witten algorithm \cite[Corollary 5.7]{Ga}, due to the absence of rational tails. This phenomenon will generalise to the setting of the quasimap degeneration formula, once such a formula has been established.
+\end{remark}
+
+Under some semipositivity assumptions on $X$ and $Y$, we are able to apply this algorithm to obtain an explicit relation between generating functions:
+\begin{customthm}{C}
 Let $X$ be a smooth projective toric Fano variety and let $i\colon Y \hookrightarrow X$ be a very ample hypersurface. Assume that $-K_Y$ is nef and that $Y$ contains all curve classes (see \S \ref{Subsection setup}). Then
 \begin{equation*}
 \dfrac{\sum_{\beta\geq 0} q^\beta\prod_{j=0}^{Y\cdot\beta}(Y+jz)S_0^X(z,\beta)}{P_0^X(q)}= \tilde{S}_0^Y(z,q)
 \end{equation*}
 where $S_0^X(z,\beta), \tilde{S}_0^Y(z,q)$ and $P_0^X(q)$ are appropriate generating functions for quasimap invariants.
 \end{customthm}
-\noindent Finally, we apply our recursion to show that our relative quasimap invariants provide the correct general context for studying relative mirror symmetry:
-\begin{customthm}{C} The relative $I$-function, as constructed in \cite{FanTsengYou}, coincides with a certain generating function for relative quasimap invariants.
-\end{customthm}
 
-
-In this introductory section we briefly recall the theories of stable quasimaps and relative stable maps, thus putting our work in its proper context.
-
-\subsection{Stable quasimaps}\label{subsection quasimaps}
-The moduli space of \ilemph{stable toric quasimaps} $\Q{g}{n}{X}{\beta}$ was constructed by I. Ciocan-Fontanine and B. Kim \cite{CF-K} as a compactification of the moduli space of smooth curves in a smooth and complete toric variety $X$. Roughly speaking, the objects are rational maps $C \dashrightarrow X$ where $C$ is a nodal curve, subject to a stability condition; the precise definition depends on the description of $X$ as a GIT quotient.  The space $\Q{g}{n}{X}{\beta}$ is a proper Deligne--Mumford stack of finite type.  It admits a virtual fundamental class, which is used to define curve-counting invariants for $X$ called \ilemph{quasimap invariants}.
-
-This theory agrees with that of stable quotients \cite{MOP} when both are defined, namely when $X$ is a projective space.  There is a common generalisation given by the theory of stable quasimaps to GIT quotients \cite{CFKM}. For simplicity, we will work mostly in the toric setting; however, this restriction is not essential for our arguments. Thus in this paper when we say ``quasimaps'' we are implicitly talking about toric quasimaps.
-Quasimap invariants provide an alternative system of curve counts to the more well-known Gromov--Witten invariants. These latter invariants are defined via moduli spaces of stable maps, and as such we will often refer to them as \emph{stable map invariants}.
-
-For $X$ sufficiently positive, the quasimap invariants coincide with the Gromov--Witten invariants, in all genera. This has been proven in the following cases:
-\begin{itemize}[leftmargin=0.7cm]
-\item $X$ a projective space or a Grassmannian: see \cite[Theorems~ 3~and~4]{MOP}, and \cite{ManolacheStable} for an alternative proof.
-\item $X$ a projective complete intersection of Fano index at least $2$: see \cite[Corollary 1.7]{CF-K-MirrorSymmetry}, and \cite{CZ-mirror} for an earlier approach.
-\item $X$ a projective toric Fano variety: see \cite[Corollary 1.3]{CF-K-higher-genus}.
-\end{itemize}
-In general, however, the invariants differ, the difference being encoded by certain wall-crossing formulae, which can be interpreted in the context of toric mirror symmetry \cite{CF-K-wallcrossing}.
-
-\subsection{Relative stable maps}\label{subsection relative maps}
-Let $Y$ be a smooth very ample hypersurface in a smooth projective variety $X$. In \cite{Ga} A. Gathmann constructs a space of relative stable maps to the pair $(X,Y)$ as a closed substack of the moduli space of (absolute) stable maps to $X$:
-%\begin{equation*} \M{0}{\alpha}{X|Y}{\beta} \hookrightarrow \M{0}{n}{X}{\beta}\end{equation*}
-The relative space parametrises stable maps with prescribed tangencies to $Y$ at the marked points.  Unfortunately this space does not admit a natural perfect obstruction theory. Nevertheless, because $Y$ is very ample it is still possible to construct a virtual fundamental class by intersection-theoretic methods, and hence one can define relative stable map invariants.
-Gathmann establishes a recursion formula for these virtual classes which allows one to express any relative invariant of $(X,Y)$ in terms of absolute invariants of $Y$ and relative invariants with lower contact multiplicities. By successively increasing the contact multiplicites from zero to the maximum possible value, this gives an algorithm expressing the (restricted) invariants of $Y$ in terms of those of $X$: see \cite[Corollary 5.7]{Ga}. In \cite{Ga-MF} this result is applied to give an alternative proof of the mirror theorem for projective hypersurfaces \cite{Givental-equivariantGW} \cite{LLY1}.
-
-\subsection{Relative stable quasimaps}
-In this paper we construct moduli spaces of relative quasimaps in genus zero. We prove a recursion relation similar to Gathmann's formula, and use this to derive a quantum Lefschetz formula for quasimap invariants.
-Our construction carries over to the setting of $\epsilon$-stable quasimaps~\cite{CF-K}; since for $\epsilon > 1$ these moduli spaces agree with the space of stable maps, one can view our construction as giving a common generalisation of the two stories outlined above.
-
+\subsection{Plan of the paper}
 The plan of the paper is as follows. In \S \ref{Section relative stable quasimaps} we define the space of relative quasimaps, as a substack of the moduli space of (absolute) quasimaps:
 \begin{equation*} \Q{0}{\alpha}{X|Y}{\beta} \hookrightarrow \Q{0}{n}{X}{\beta}. \end{equation*}
 Here $X$ is a smooth toric variety, $Y$ is a smooth very ample hypersurface and $\alpha = (\alpha_1, \ldots, \alpha_n)$ encodes the orders of tangency of the marked points to $Y$. Note that we \emph{do not} require $Y$ to be toric.
@@ -299,6 +279,10 @@ The argument is similar in spirit to the one given in \cite{Ga-MF}, however the 
 %We also include a short appendix, dedicated to important but slightly technical lemmas. In Appendix~\ref{Section comparison with GIT construction} we show that the moduli space $\Q{g}{n}{Y}{\beta}$, defined in \S \ref{Section recursion formula in general case} as a closed substack of $\Q{g}{n}{X}{\beta}$, is in fact virtually isomorphic to the moduli space $\om{Q}^{\operatorname{GIT}}_{g,n}(Y,\beta)$ of stable quasimaps to the GIT quotient $C(Y)\sslash \Gm^r=Y$, as defined in \cite{CFKM}.
 In Appendix~\ref{appendix:intersection} we define the \emph{diagonal pull-back} along a morphism whose target is smooth, and verify that it agrees with the more modern concept of virtual pull-back \cite{Manolache-Pull} when both are defined. The diagonal pull-back was employed implicitly in \cite{Ga}, but we find it useful here to give a more explicit treatment.
 
+\subsection{Future directions}
+We expect Theorem A to generalise to the case of arbitrary simple normal crossings divisors and arbitrary genus. To this end, we are currently in the process of developing and applying a fully-fledged theory of \emph{logarithmic quasimaps}. In this context, the ``relative mirror theorem'' will take the form of a wall-crossing formula between logarithmic quasimap and Gromov--Witten invariants, together with closed-form expressions for the quasimap generating functions.
+
+
 \subsection{Table of notation} We will use the following notation, most of which is introduced in the main body of the paper.
 %\tabulinesep=^0.4mm_0.4mm
 \begin{longtabu}{r c c p{0.8\linewidth}}
@@ -327,6 +311,27 @@ $f^!_{\Delta}$ & & & diagonal pull-back; see Appendix \ref{appendix:intersection
 \end{longtabu}
  
 \section{Relative stable quasimaps} \label{Section relative stable quasimaps}
+We begin with a brief recollection of the theories of stable quasimaps and relative stable maps, thus putting our work in its proper context.
+
+\subsection{Stable quasimaps}\label{subsection quasimaps}
+The moduli space of \ilemph{stable toric quasimaps} $\Q{g}{n}{X}{\beta}$ was constructed by I. Ciocan-Fontanine and B. Kim \cite{CF-K} as a compactification of the moduli space of smooth curves in a smooth and complete toric variety $X$. Roughly speaking, the objects are rational maps $C \dashrightarrow X$ where $C$ is a nodal curve, subject to a stability condition; the precise definition depends on the description of $X$ as a GIT quotient.  The space $\Q{g}{n}{X}{\beta}$ is a proper Deligne--Mumford stack of finite type.  It admits a virtual fundamental class, which is used to define curve-counting invariants for $X$ called \ilemph{quasimap invariants}.
+
+This theory agrees with that of stable quotients \cite{MOP} when both are defined, namely when $X$ is a projective space.  There is a common generalisation given by the theory of stable quasimaps to GIT quotients \cite{CFKM}. For simplicity, we will work mostly in the toric setting; however, this restriction is not essential for our arguments. Thus in this paper when we say ``quasimaps'' we are implicitly talking about toric quasimaps.
+Quasimap invariants provide an alternative system of curve counts to the more well-known Gromov--Witten invariants. These latter invariants are defined via moduli spaces of stable maps, and as such we will often refer to them as \emph{stable map invariants}.
+
+For $X$ sufficiently positive, the quasimap invariants coincide with the Gromov--Witten invariants, in all genera. This has been proven in the following cases:
+\begin{itemize}[leftmargin=0.7cm]
+\item $X$ a projective space or a Grassmannian: see \cite[Theorems~ 3~and~4]{MOP}, and \cite{ManolacheStable} for an alternative proof.
+\item $X$ a projective complete intersection of Fano index at least $2$: see \cite[Corollary 1.7]{CF-K-MirrorSymmetry}, and \cite{CZ-mirror} for an earlier approach.
+\item $X$ a projective toric Fano variety: see \cite[Corollary 1.3]{CF-K-higher-genus}.
+\end{itemize}
+In general, however, the invariants differ, the difference being encoded by certain wall-crossing formulae, which can be interpreted in the context of toric mirror symmetry \cite{CF-K-wallcrossing}.
+
+\subsection{Relative stable maps}\label{subsection relative maps}
+Let $Y$ be a smooth very ample hypersurface in a smooth projective variety $X$. In \cite{Ga} A. Gathmann constructs a space of relative stable maps to the pair $(X,Y)$ as a closed substack of the moduli space of (absolute) stable maps to $X$:
+%\begin{equation*} \M{0}{\alpha}{X|Y}{\beta} \hookrightarrow \M{0}{n}{X}{\beta}\end{equation*}
+The relative space parametrises stable maps with prescribed tangencies to $Y$ at the marked points.  Unfortunately this space does not admit a natural perfect obstruction theory. Nevertheless, because $Y$ is very ample it is still possible to construct a virtual fundamental class by intersection-theoretic methods, and hence one can define relative stable map invariants.
+Gathmann establishes a recursion formula for these virtual classes which allows one to express any relative invariant of $(X,Y)$ in terms of absolute invariants of $Y$ and relative invariants with lower contact multiplicities. By successively increasing the contact multiplicites from zero to the maximum possible value, this gives an algorithm expressing the (restricted) invariants of $Y$ in terms of those of $X$: see \cite[Corollary 5.7]{Ga}. In \cite{Ga-MF} this result is applied to give an alternative proof of the mirror theorem for projective hypersurfaces \cite{Givental-equivariantGW} \cite{LLY1}.
 
 \subsection{Definition of relative stable quasimaps} \label{Subsection relative stable quasimaps}
 
