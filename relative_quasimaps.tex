@@ -208,19 +208,19 @@ This work was supported by EPSRC, the Royal Society and the London School for Ge
 \section{Introduction}
 \subsection{The goal of relative quasimap theory} Relative Gromov--Witten theory for smooth pairs $(X,Y)$ \cite{Ga,Vre,Li1,Li2} occupies a central place in modern enumerative geometry, owing both to its intrinsic interest and to the role it plays in the degeneration formula \cite{MaulikPandharipande}. However, while the structures underlying the absolute Gromov--Witten invariants --- generating functions, Frobenius manifolds, Lagrangian cones, etc. --- are well-understood, the nature of the corresponding structures in the relative setting remains mysterious.
 
-A promising avenue for addressing these questions is to adapt ideas coming from mirror symmetry to the relative context. Precisely what this would entail depends on one's point of view, but the end goal should be to obtain closed formulae for certain generating functions of relative Gromov--Witten invariants. Recent work of Fan--Tseng--You \cite{FanTsengYou} uses the correspondence between relative invariants and the Gromov--Witten invariants of orbifolds \cite{AbramovichCadmanWise} in order to derive a relative mirror theorem for certain restricted generating functions.
+A promising avenue for addressing these questions is to adapt ideas coming from mirror symmetry to the relative context. Precisely what this would entail depends on one's point of view, but the end goal should be to obtain closed formulae for certain generating functions of relative Gromov--Witten invariants. Recent work of Fan--Tseng--You \cite{FanTsengYou} uses the correspondence between relative invariants and the Gromov--Witten invariants of orbifolds \cite{AbramovichCadmanWise} in order to derive a mirror theorem for certain restricted generating functions of relative invariants.
 
-We propose an alternative approach, taking motivation from the theory of stable quasimaps \cite{CF-K,CFKM} which has been applied with great success to prove mirror theorems in the absolute setting \cite{CF-K-wallcrossing,CF-K-MirrorSymmetry}. The belief is that a fully-fledged theory of \emph{relative} quasimaps should lead to an equally powerful collection of mirror theorems in the relative setting.
+We propose an alternative and complementary approach to this problem. We take our motivation from the theory of stable quasimaps \cite{CF-K,CFKM}, which has been applied with great success to prove mirror theorems in the absolute setting \cite{CF-K-wallcrossing,CF-K-MirrorSymmetry}. The belief is that a fully-fledged theory of \emph{relative} quasimaps should lead to an equally powerful collection of mirror theorems in the relative setting.
 
 \subsection{Results}
-In this paper, we carry out this program in the context of genus-zero quasimaps relative to a hyperplane section. We construct moduli spaces of relative quasimaps in the spirit of A. Gathmann, that is, as substacks of moduli spaces of (absolute) quasimaps. We prove a recursion formula for the resulting relative quasimap invariants, analogous to Gathmann's recursion \cite[\S 3]{Ga} in the stable map setting. We then apply this formula in order to show that our invariants give the correct general context for studying relative mirror symmetry:
+In this paper, we realise this proposal in the context of genus-zero quasimaps relative to a hyperplane section. We construct moduli spaces of relative quasimaps in the spirit of A. Gathmann, that is, as substacks of moduli spaces of (absolute) quasimaps. We prove a recursion formula for the resulting relative quasimap invariants, analogous to Gathmann's recursion \cite[\S 3]{Ga} in the stable maps setting. We then use this formula to provide evidence that our invariants give the correct general context for studying relative mirror symmetry:
 \begin{customthm}{A}[\textbf{Theorem \ref{wallcrossing thm}}]\label{thmA} The relative $I$-function, as constructed in \cite{FanTsengYou}, coincides with a certain generating function for relative quasimap invariants.
 \end{customthm}
 
-Besides the connections to relative Gromov--Witten theory, we may also apply the recursion formula to study absolute quasimap theory. To be more precise, we obtain a quantum Lefschetz theorem for quasimap invariants, expressing the invariants of a hyperplane section $Y$ in terms of those of $X$. This takes two forms; first, we have a general result which holds without any special restrictions on the target geometry:
+Besides the connections to relative Gromov--Witten theory, we may also apply the recursion formula to study absolute quasimap theory (in analogy with Gathmann's results in absolute Gromov--Witten theory). To be more precise, we obtain a quantum Lefschetz theorem for quasimap invariants, expressing the invariants of a hyperplane section $Y$ in terms of those of $X$. This takes two forms; first, we have a general result which holds without any special restrictions on the target geometry:
 \begin{customthm}{B}[\textbf{Theorem \ref{Theorem full quasimap Lefschetz}}] \label{thmB} Let $X$ be a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. Then there is an explicit algorithm to recover the (restricted) quasimap invariants of $Y$ from the quasimap invariants of $X$.\end{customthm}
 
-We remark that, even in the situation where the quasimap theories of $X$ and $Y$ coincide with the (respective) Gromov--Witten theories (for instance, if $X$ and $Y$ are each projective complete intersections of Fano index $\geq 2$), the quasimap algorithm is combinatorially far simpler than the Gromov--Witten algorithm \cite[Corollary 5.7]{Ga}, due to the absence of rational tails. This phenomenon clearly generalises to the setting of the quasimap degeneration formula (once such a result has been established); we will revisit this in future work.
+We remark that, even in the situation where the quasimap theories of $X$ and $Y$ coincide with the (respective) Gromov--Witten theories (for instance, if $X$ and $Y$ are each projective complete intersections of Fano index $\geq 2$), the quasimap algorithm is much more efficient than the Gromov--Witten algorithm, due to the absence of rational tails. This phenomenon clearly generalises to the setting of the quasimap degeneration formula (once such a result has been established); we plan to revisit this in future work.
 
 The second form of the quantum Lefschetz theorem is an explicit relation between generating functions, obtained by applying Theorem \ref{thmB} in the semipositive context.
 \begin{customthm}{C}[\textbf{Theorem \ref{Theorem Quantum Lefschetz}}]\label{thmC}
@@ -270,10 +270,10 @@ In Appendix~\ref{appendix:intersection} we define the \emph{diagonal pull-back} 
 \subsection{Future directions}
 We expect Theorem \ref{thmA} to generalise to the case of arbitrary simple normal crossings divisors and arbitrary genus. To this end, we are currently in the process of developing and applying a fully-fledged theory of \emph{logarithmic quasimaps}. In this context, the ``relative mirror theorem'' will take the form of a wall-crossing formula between logarithmic quasimap and Gromov--Witten invariants, together with closed-form expressions for the quasimap generating functions.
 
+\subsection{Table of notation} We will use the following notation, most of which is introduced in the main body of the paper.\medskip
 
-\subsection{Table of notation} We will use the following notation, most of which is introduced in the main body of the paper.
-%\tabulinesep=^0.4mm_0.4mm
-\begin{longtabu}{r c c p{0.8\linewidth}}
+\tabulinesep=^0.4mm_0.4mm
+\begin{tabu}{r c c p{0.8\linewidth}}
 $X$ & & & a smooth projective toric variety \\
 $Y$ & & & a smooth very ample hypersurface in $X$ \\
 $\Sigma$, $\Sigma(1)$ & & & the fan of $X$, and the set of $1$-dimensional cones of $\Sigma$ \\
@@ -296,8 +296,7 @@ $\chi$ & & & the comparison morphism from stable maps to quasimaps; see \S \ref{
 %$f^!$ & & & Gysin morphism for $f$ a regular embedding \\
 $f^!_{\text{v}}$ & & & virtual pull-back for $f$ virtually smooth; see Appendix \ref{appendix:intersection} \\
 $f^!_{\Delta}$ & & & diagonal pull-back; see Appendix \ref{appendix:intersection}
-\end{longtabu}
- 
+\end{tabu}
 \section{Relative stable quasimaps} \label{Section relative stable quasimaps}
 We begin with a brief recollection of the theories of stable quasimaps and relative stable maps, thus putting our work in its proper context.
 \subsection{Stable quasimaps}\label{subsection quasimaps}
@@ -997,7 +996,7 @@ which proves \eqref{P epsilon equation}. We thus conclude that \eqref{Ciocan-Fon
 
 \section{Relative wall-crossing}
 \subsection{Context}
-The classical mirror theorem, due to Givental, equates a certain generating function for Gromov--Witten invariants -- the $J$-\emph{function} -- with an explicit hypergeometric function -- the $I$-\emph{function} -- after a suitable change of variables called the \emph{mirror map} \cite{}. A fundamental insight is that the $I$-function may be interpreted as a generating function for \emph{quasimap invariants}. From this perspective, the mirror theorem breaks into two parts:
+The classical mirror theorem, due to Givental, equates a certain generating function for Gromov--Witten invariants -- the $J$-\emph{function} -- with an explicit hypergeometric function -- the $I$-\emph{function} -- after a suitable change of variables called the \emph{mirror map} \cite{Givental-mirror}. A fundamental insight is that the $I$-function may be interpreted as a generating function for \emph{quasimap invariants}. From this perspective, the mirror theorem breaks into two parts:
 \begin{enumerate}
 \item find an explicit formula for the quasimap generating function;
 \item prove a wall-crossing formula, relating the quasimap and Gromov--Witten generating functions via a change of variables.
