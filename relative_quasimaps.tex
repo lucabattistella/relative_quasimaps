@@ -1016,20 +1016,21 @@ On the other hand we have the Fan--Tseng--You relative $I$-function, which can b
 \begin{equation*} I_{\beta,\mathrm{FTY}}^{X|Y}(z,0) = i^* \left( J^X_{\beta}(z,0) \cdot \prod_{m=1}^{d-1}(Y+mz) \right) \in \HH^*(Y)\llbracket z \rrbracket\end{equation*}
 (see \cite[Theorem 4.3]{FanTsengYou}, and \cite[\S 7.1]{FanWuYou} for the definition of the product structure used implicitly in the first reference).
 \begin{thm} \label{wallcrossing thm} Assume that $-K_X-Y$ is nef and that $X$ has Fano index $\geq 2$. Then we have:
-\begin{equation*} I_\beta^{X|Y}(z,0) = z^{-1}\cdot I_{\beta,\mathrm{FTY}}^{X|Y}(z,0).\end{equation*}
+\begin{equation*} i^*Y \cdot I_\beta^{X|Y}(z,0) = i^*Y \cdot I_{\beta,\mathrm{FTY}}^{X|Y}(z,0).\end{equation*}
 \end{thm}
 \begin{proof}
-Applying \eqref{Gathmann recursion via generating functions} we obtain the following formula in $\HH^*(X)$:
-\begin{equation*} \left( \prod_{m=0}^{d-1} (Y+mz) \right) S^{X}_{0,(d)}(z,\beta) = \widetilde{S}_{0,d}^{X|Y}(z,\beta) + \sum_{k=0}^{d-1} \left(\prod_{m=k+1}^{d-1}(Y+mz) \right) \widetilde{T}^{X|Y}_{0,(k)}(z,\beta).\end{equation*}
+Applying \eqref{Gathmann recursion via generating functions} repeatedly, we obtain the following formula in $\HH^*(X)$:
+\begin{equation*} \left( \prod_{m=0}^{d-1} (Y+mz) \right) S^{X}_{0}(z,\beta) = \widetilde{S}_{0,d}^{X|Y}(z,\beta) + \sum_{k=0}^{d-1} \left(\prod_{m=k+1}^{d-1}(Y+mz) \right) \widetilde{T}^{X|Y}_{0,(k)}(z,\beta).\end{equation*}
 By a dimension counting argument similar to the one given in the proof of Theorem \ref{Theorem Quantum Lefschetz}, we see that $\widetilde{T}^{X|Y}_{0,(k)}(z,\beta)=0$ for $k=0,\ldots,d-1$ so that the formula reads:
-\begin{equation}\label{halfway to comparison of I} \widetilde{S}^{X|Y}_{0,(d)}(z,\beta) = \left( \prod_{m=0}^{d-1}(Y+mz) \right) S_{0,(d)}^X(z,\beta).\end{equation}
+\begin{equation}\label{halfway to comparison of I} \widetilde{S}^{X|Y}_{0,(d)}(z,\beta) = \left( \prod_{m=0}^{d-1}(Y+mz) \right) S_{0}^X(z,\beta).\end{equation}
 Since $X$ has Fano index $\geq 2$ its quasimap invariants coincide with its Gromov--Witten invariants. Thus we may identify:
-\begin{equation*} S^X_{0,(d)}(z,\beta) = J^X_\beta(z,0).\end{equation*}
-Applying $i^*$ to \eqref{halfway to comparison of I} we obtain:
-\begin{align*} i^*Y \cdot I_\beta^{X|Y}(z,0) & = i^* i_* \widetilde{S}^{X|Y}_{0,(d)}(z,\beta) \\
-& = i^*Y \cdot i^* \left(J^X_\beta(z,0) \cdot \prod_{m=0}^{d-1}(Y+mz) \right) \\
-& = i^*Y \cdot z^{-1} \cdot I_{\beta,\mathrm{FTY}}^{X|Y}(z,0).\end{align*}
-The result then follows from the hard Lefschetz theorem.\end{proof}
+\begin{equation*} S^X_{0}(z,\beta) = J^X_\beta(z,0).\end{equation*}
+Applying $i^*$ to \eqref{halfway to comparison of I} we obtain
+\begin{align*} i^* \widetilde{S}^{X|Y}_{0,(d)}(z,\beta) & = i^* \left(J^X_\beta(z,0) \cdot \prod_{m=0}^{d-1}(Y+mz) \right) \\
+& = i^*Y \cdot I_{\beta,\mathrm{FTY}}^{X|Y}(z,0).\end{align*}
+But we also have
+\begin{equation*} i^* \widetilde{S}_{0,(d)}^{X|Y}(z,\beta) = i^* i_* I_\beta^{X|Y}(z,0) = i^*Y \cdot I_\beta^{X|Y}(z,0)\end{equation*}
+and so the result follows.\end{proof}
 
 \begin{remark} This result suffers from a number of defects, and is best thought of as a proof-of-concept. For one, it establishes wall-crossing only in the $t=0$ case (i.e. we only consider generating functions for two-pointed invariants with a fundamental class insertion). More importantly, the proof is not geometric; it uses the relative mirror theorem \cite[Theorem 4.3]{FanTsengYou}, rather than providing a new proof of this result. We aim to correct both of these defects, and more, in our upcoming work on logarithmic quasimap theory.
 \end{remark}
