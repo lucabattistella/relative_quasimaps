@@ -200,46 +200,45 @@ This work was supported by EPSRC, the Royal Society and the London School for Ge
 
 \maketitle
 
-\begin{abstract}We define moduli spaces of relative toric quasimaps in genus zero, in the spirit of A. Gathmann. When $X$ is a smooth toric variety and $Y$ is a very ample hypersurface in $X$ we construct a virtual class on the moduli space of relative quasimaps to $(X,Y)$ which can be used to define relative quasimap invariants of the pair. We obtain a recursion formula which expresses each relative invariant in terms of invariants of lower multiplicity. We apply this formula to derive a quantum Lefschetz theorem for quasimaps, expressing the restricted quasimap invariants of $Y$ in terms of those of $X$. Finally, we show that the relative $I$-function of \cite{FanTsengYou} coincides with a generating function for relative quasimap invariants.\end{abstract}
+\begin{abstract}We define moduli spaces of relative toric quasimaps in genus zero, in the spirit of A. Gathmann. When $X$ is a smooth toric variety and $Y$ is a very ample hypersurface in $X$ we construct a virtual class on the moduli space of relative quasimaps to $(X,Y)$ which can be used to define relative quasimap invariants of the pair. We obtain a recursion formula which expresses each relative invariant in terms of invariants of lower multiplicity, and apply this formula to derive a quantum Lefschetz theorem for quasimaps, expressing the restricted quasimap invariants of $Y$ in terms of those of $X$. Finally, we show that the relative $I$-function of \cite{FanTsengYou} coincides with a natural generating function for our relative quasimap invariants.\end{abstract}
 %\appendixtitletocoff
 \tableofcontents
 
 
 \section{Introduction}
-\subsection{The goals of relative quasimap theory} Relative Gromov--Witten theory for smooth pairs $(X,Y)$\cite{Ga,Vre,Li1,Li2} occupies a central place in modern enumerative geometry, owing to both its intrinsic interest and its role in the degeneration formula \cite{MaulikPandharipande}. However, while the structures underlying the absolute Gromov--Witten invariants --- generating functions, Frobenius manifolds, Lagrangian cones, etc. --- are well-understood, the nature of the corresponding structures in the relative setting remains mysterious.
+\subsection{The goal of relative quasimap theory} Relative Gromov--Witten theory for smooth pairs $(X,Y)$ \cite{Ga,Vre,Li1,Li2} occupies a central place in modern enumerative geometry, owing both to its intrinsic interest and to the role it plays in the degeneration formula \cite{MaulikPandharipande}. However, while the structures underlying the absolute Gromov--Witten invariants --- generating functions, Frobenius manifolds, Lagrangian cones, etc. --- are well-understood, the nature of the corresponding structures in the relative setting remains mysterious.
 
-One possible approach to this problem is to adapt ideas coming from mirror symmetry to the relative context. Precisely what this would entail depends on one's point of view, but the end goal should be to obtain closed formulae for certain generating functions of relative Gromov--Witten invariants. Recent work of Fan--Tseng--You \cite{FanTsengYou} uses the correspondence between these relative invariants and the Gromov--Witten invariants of orbifolds \cite{AbramovichCadmanWise} in order to derive a relative mirror theorem for certain restricted generating functions.
+A promising avenue for addressing these questions is to adapt ideas coming from mirror symmetry to the relative context. Precisely what this would entail depends on one's point of view, but the end goal should be to obtain closed formulae for certain generating functions of relative Gromov--Witten invariants. Recent work of Fan--Tseng--You \cite{FanTsengYou} uses the correspondence between relative invariants and the Gromov--Witten invariants of orbifolds \cite{AbramovichCadmanWise} in order to derive a relative mirror theorem for certain restricted generating functions.
 
-Our approach is different, taking motivation from the theory of stable quasimaps \cite{CF-K,CFKM} which has been applied with great success to prove mirror theorems in the absolute setting \cite{CF-K-wallcrossing,CF-K-MirrorSymmetry}. The belief is that a fully-fledged theory of \emph{relative} quasimaps should lead to an equally powerful collection of mirror theorems in the relative setting.
+We propose an alternative approach, taking motivation from the theory of stable quasimaps \cite{CF-K,CFKM} which has been applied with great success to prove mirror theorems in the absolute setting \cite{CF-K-wallcrossing,CF-K-MirrorSymmetry}. The belief is that a fully-fledged theory of \emph{relative} quasimaps should lead to an equally powerful collection of mirror theorems in the relative setting.
 
 \subsection{Results}
 In this paper, we carry out this program in the context of genus-zero quasimaps relative to a hyperplane section. We construct moduli spaces of relative quasimaps in the spirit of A. Gathmann, that is, as substacks of moduli spaces of (absolute) quasimaps. We prove a recursion formula for the resulting relative quasimap invariants, analogous to Gathmann's recursion \cite[\S 3]{Ga} in the stable map setting. We then apply this formula in order to show that our invariants give the correct general context for studying relative mirror symmetry:
-\begin{customthm}{A}[\textbf{Theorem \ref{Ifunction}}]\label{thmA} The relative $I$-function, as constructed in \cite{FanTsengYou}, coincides with a certain generating function for relative quasimap invariants.
+\begin{customthm}{A}[\textbf{Theorem \ref{wallcrossing thm}}]\label{thmA} The relative $I$-function, as constructed in \cite{FanTsengYou}, coincides with a certain generating function for relative quasimap invariants.
 \end{customthm}
 
-Aside from the connections to relative Gromov--Witten theory, we may also apply the recursion formula to study absolute quasimap theory. To be more precise, we obtain a quantum Lefschetz theorem for quasimap invariants, expressing the invariants of a hyperplane section $Y$ in terms of those of $X$. This takes two forms; first, we have a general result which holds without any special restrictions on the target geometry:
+Besides the connections to relative Gromov--Witten theory, we may also apply the recursion formula to study absolute quasimap theory. To be more precise, we obtain a quantum Lefschetz theorem for quasimap invariants, expressing the invariants of a hyperplane section $Y$ in terms of those of $X$. This takes two forms; first, we have a general result which holds without any special restrictions on the target geometry:
 \begin{customthm}{B}[\textbf{Theorem \ref{Theorem full quasimap Lefschetz}}] \label{thmB} Let $X$ be a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. Then there is an explicit algorithm to recover the (restricted) quasimap invariants of $Y$ from the quasimap invariants of $X$.\end{customthm}
 
-\begin{remark} Even in the situation where the quasimap theories of $X$ and $Y$ coincide with the respective Gromov--Witten theories (for instance, if $X$ and $Y$ are projective complete intersections of Fano index $\geq 2$), the quasimap algorithm is combinatorially much simpler than the Gromov--Witten algorithm \cite[Corollary 5.7]{Ga}, due to the absence of rational tails. This phenomenon will obviously generalise to the setting of the quasimap degeneration formula (once such a result has been established).
-\end{remark}
+We remark that, even in the situation where the quasimap theories of $X$ and $Y$ coincide with the (respective) Gromov--Witten theories (for instance, if $X$ and $Y$ are each projective complete intersections of Fano index $\geq 2$), the quasimap algorithm is combinatorially far simpler than the Gromov--Witten algorithm \cite[Corollary 5.7]{Ga}, due to the absence of rational tails. This phenomenon clearly generalises to the setting of the quasimap degeneration formula (once such a result has been established); we will revisit this in future work.
 
 The second form of the quantum Lefschetz theorem is an explicit relation between generating functions, obtained by applying Theorem \ref{thmB} in the semipositive context.
 \begin{customthm}{C}[\textbf{Theorem \ref{Theorem Quantum Lefschetz}}]\label{thmC}
 Let $X$ be a smooth projective toric Fano variety and let $i\colon Y \hookrightarrow X$ be a very ample hypersurface. Assume that $-K_Y$ is nef and that $Y$ contains all curve classes (see \S \ref{Subsection setup}). Then
 \begin{equation*}
-\dfrac{\sum_{\beta\geq 0} q^\beta\prod_{j=0}^{Y\cdot\beta}(Y+jz)S_0^X(z,\beta)}{P_0^X(q)}= \tilde{S}_0^Y(z,q)
+\tilde{S}_0^Y(z,q) = \dfrac{\sum_{\beta\geq 0} q^\beta\left(\prod_{j=0}^{Y\cdot\beta}(Y+jz)\right)\cdot S_0^X(z,\beta)}{P_0^X(q)}
 \end{equation*}
-where $S_0^X(z,\beta)$ and $\tilde{S}_0^Y(z,q)$ are the following generating functions for $2$-pointed quasimap invariants
+where $\tilde{S}_0^Y(z,q)$ and $S_0^X(z,\beta)$ are the following generating functions for $2$-pointed quasimap invariants
 \begin{align*}
-S_0^X(z,\beta)&=(\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{X}{\beta}}\right) \\
-\tilde{S}_0^Y(z,q)&=i_* \sum_{\beta \geq 0} q^\beta (\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{Y}{\beta}}\right)
+\tilde{S}_0^Y(z,q)&=i_* \sum_{\beta \geq 0} q^\beta (\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{Y}{\beta}}\right)\\
+S_0^X(z,\beta)&=(\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{X}{\beta}}\right)
 \end{align*}
 and $P_0^X(q)$ is given by:
 \begin{equation*}
-P_0^X(q) = 1 + \sum_{\substack{\beta>0 \\ K_Y\cdot\beta=0}} q^\beta(Y\cdot\beta)!\langle [\pt_X] \psi_1^{Y\cdot\beta-1} ,\mathbbm 1_{X}\rangle_{0,2,\beta}^X
+P_0^X(q) = 1 + \sum_{\substack{\beta>0 \\ K_Y\cdot\beta=0}} q^\beta(Y\cdot\beta)!\langle [\pt_X] \psi_1^{Y\cdot\beta-1} ,\mathbbm 1_{X}\rangle_{0,2,\beta}^X.
 \end{equation*}
 \end{customthm}
-\noindent This is similar in spirit to the arguments of \cite{Ga-MF}; however, the stronger stability condition considerably simplifies both the proof and the final result. This formula can also be obtained as a consequence of \cite[Corollary~5.5.1]{CF-K-wallcrossing}; see \S \ref{Subsection CFK comparison}. 
+\noindent This is similar in spirit to the results of \cite{Ga-MF}; however, the stronger stability condition considerably simplifies both the proof and the final formula. This result can also be obtained as a consequence of \cite[Corollary~5.5.1]{CF-K-wallcrossing}; see \S \ref{Subsection CFK comparison}. 
 
 
 
@@ -248,7 +247,7 @@ The plan of the paper is as follows. In \S \ref{Section relative stable quasimap
 \begin{equation*} \Q{0}{\alpha}{X|Y}{\beta} \hookrightarrow \Q{0}{n}{X}{\beta}. \end{equation*}
 Here $X$ is a smooth toric variety, $Y$ is a smooth very ample hypersurface and $\alpha = (\alpha_1, \ldots, \alpha_n)$ encodes the orders of tangency of the marked points to $Y$. Note that we \emph{do not} require $Y$ to be toric.
 
-The study of projective space relative to a hyperplane plays a fundamental role: in this case, the relative space is irreducible of the expected codimension $\Sigma_i \alpha_i$ (in fact, it is the closure of the so-called ``nice locus'' consisting of maps from a $\PP^1$ whose image is not contained inside $H$, and which satisfies the tangency conditions at the marked points). Thus it has an actual fundamental class, which we use to define relative quasimap invariants of the pair $(\PP^N,H)$. This fundamental class can also be pulled back to endow $\Q{0}{\alpha}{X|Y}{\beta}$ with a virtual  class, and hence we can define relative quasimap invariants of a general pair $(X,Y)$ as above.
+The study of the relative geometry $(\PP^N,H)$, for $H \subseteq \PP^N$ a hyperplane, plays a fundamental role: in this case, the relative space is irreducible of the expected codimension $\Sigma_{i=1}^n \alpha_i$ (in fact, it is the closure of the so-called ``nice locus'' consisting of maps from a $\PP^1$ whose image is not contained inside $H$, and which satisfies the tangency conditions at the marked points). Thus it has an actual fundamental class, which we use to define relative quasimap invariants of the pair $(\PP^N,H)$. This fundamental class can also be pulled back to endow $\Q{0}{\alpha}{X|Y}{\beta}$ with a virtual  class, and hence we can define relative quasimap invariants of a general pair $(X,Y)$ as above.
 
 In \S \ref{Section recursion for PN} we prove a recursion formula relating $[\Q{0}{\alpha}{\PP^N|H}{d}]$ with classes determined by lower numerical invariants. We make use of the \emph{comparison morphism}:
 \begin{equation*} \comp : \M{0}{n}{\PP^N}{d} \to \Q{0}{n}{\PP^N}{d} \end{equation*} 
@@ -261,9 +260,9 @@ We then prove the recursion formula for $(X,Y)$ by pulling back the formula for 
 \begin{equation*} (\alpha_k \psi_k + \ev_k^* [Y]) \cap \virt{\Q{0}{\alpha}{X|Y}{\beta}} = \virt{\Q{0}{\alpha+e_k}{X|Y}{\beta}} + \virt{\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)} \end{equation*}
 in the Chow group of $\Q{0}{\alpha}{X|Y}{\beta}$. 
 \end{customthm}
-\noindent Here $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ is a certain \emph{quasimap comb locus} sitting inside the boundary of the relative space (see \S \ref{Subsection comb loci pull back}); its virtual class should be thought of as a correction term. Such terms also appear in Gathmann's stable map recursion formula; however, in our setting the stronger stability condition for quasimaps considerably reduces the number of such contributions.
+\noindent Here $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ is a certain \emph{quasimap comb locus} sitting inside the boundary of the relative space; its virtual class should be thought of as a correction term. Such terms also appear in Gathmann's stable map recursion formula; however, in our setting the stronger stability condition for quasimaps considerably reduces the number of such contributions.
 
-Finally in \S \ref{Section quasimap mirror theorem} we apply the recursion formula of \S \ref{Section recursion formula in general case} to obtain the main Theorems \ref{thmA},\ref{thmB} and \ref{thmC} discussed above.
+Finally in \S \ref{Section quasimap mirror theorem} we apply the recursion formula of \S \ref{Section recursion formula in general case} to obtain the main results of the paper: Theorem \ref{thmA} (equating the relative $I$-function with a generating function for relative quasimap invariants) and Theorems \ref{thmB} and \ref{thmC} (quasimap quantum Lefschetz).
 
 %We also include a short appendix, dedicated to important but slightly technical lemmas. In Appendix~\ref{Section comparison with GIT construction} we show that the moduli space $\Q{g}{n}{Y}{\beta}$, defined in \S \ref{Section recursion formula in general case} as a closed substack of $\Q{g}{n}{X}{\beta}$, is in fact virtually isomorphic to the moduli space $\om{Q}^{\operatorname{GIT}}_{g,n}(Y,\beta)$ of stable quasimaps to the GIT quotient $C(Y)\sslash \Gm^r=Y$, as defined in \cite{CFKM}.
 In Appendix~\ref{appendix:intersection} we define the \emph{diagonal pull-back} along a morphism whose target is smooth, and verify that it agrees with the more modern concept of virtual pull-back \cite{Manolache-Pull} when both are defined. The diagonal pull-back was employed implicitly in \cite{Ga}, but we find it useful here to give a more explicit treatment.
@@ -286,10 +285,10 @@ $\mathcal{Q}^{\circ}_{0,\alpha}(X|Y,\beta)$ & & & the nice locus of relative qua
 $\Q{0}{\alpha}{X|Y}{\beta}$ & & & the moduli space of relative quasimaps to $(X,Y)$; see \S \ref{Subsection relative stable quasimaps} \\
 $\mathcal{D}^{\mathcal{Q}}_{\alpha,k}(X|Y,\beta)$ & & & the quasimap comb locus; see \S \ref{Subsection recursion formula for PN} \\
 $\mathcal{D}^{\mathcal{Q}}(X|Y,A,B,M)$ & & & (a component of) the comb locus; see \S \ref{Subsection recursion formula for PN} \\
-$\mathcal{E}^{\mathcal{Q}}(X|Y,A,B,M)$ & & & the total product for the comb locus; see \S \ref{Subsection comb loci pull back} \\
-$\mathcal{D}^{\mathcal{Q}}(X,A,B)$ & & & the quasimap centipede locus; see \S \ref{Subsection comb loci pull back} \\
-$\mathcal{E}^{\mathcal{Q}}(X,A,B)$ & & & the total product for the centipede locus; see \S \ref{Subsection comb loci pull back} \\
-$\MM^{\operatorname{wt}}_{g,n}$ & & & the moduli stack of weighted prestable curves; see \S \ref{Subsection comb loci pull back} \\
+$\mathcal{E}^{\mathcal{Q}}(X|Y,A,B,M)$ & & & the total product for the comb locus; see \S \ref{Subsection recursion formula for PN} \\
+$\mathcal{D}^{\mathcal{Q}}(X,A,B)$ & & & the quasimap centipede locus; see \S \ref{Subsection recursion formula for PN} \\
+$\mathcal{E}^{\mathcal{Q}}(X,A,B)$ & & & the total product for the centipede locus; see \S \ref{Subsection recursion formula for PN} \\
+$\MM^{\operatorname{wt}}_{g,n}$ & & & the moduli stack of weighted prestable curves; see \S \ref{Subsection recursion formula for PN} \\
 %$\mathfrak{Pic}_{g,n}^{d,\operatorname{st}}$ & & & an open substack of the relative Picard stack of the universal curve over $\MM_{g,n}$; see Appendix \ref{Section comparison with GIT construction} \\
 $\mathfrak{Bun}^{G}_{g,n}$ & & & the moduli stack of principal $G$-bundles on the universal curve over $\MM_{g,n}$; see Remark \ref{Section comparison with GIT construction} \\
 $\om{Q}(f)$ & & & the push-forward morphism between quasimap spaces; see \S \ref{Subsection relative stable quasimaps} \\
@@ -301,7 +300,6 @@ $f^!_{\Delta}$ & & & diagonal pull-back; see Appendix \ref{appendix:intersection
  
 \section{Relative stable quasimaps} \label{Section relative stable quasimaps}
 We begin with a brief recollection of the theories of stable quasimaps and relative stable maps, thus putting our work in its proper context.
-
 \subsection{Stable quasimaps}\label{subsection quasimaps}
 The moduli space of \ilemph{stable toric quasimaps} $\Q{g}{n}{X}{\beta}$ was constructed by I. Ciocan-Fontanine and B. Kim \cite{CF-K} as a compactification of the moduli space of smooth curves in a smooth and complete toric variety $X$. Roughly speaking, the objects are rational maps $C \dashrightarrow X$ where $C$ is a nodal curve, subject to a stability condition; the precise definition depends on the description of $X$ as a GIT quotient.  The space $\Q{g}{n}{X}{\beta}$ is a proper Deligne--Mumford stack of finite type.  It admits a virtual fundamental class, which is used to define curve-counting invariants for $X$ called \ilemph{quasimap invariants}.
 
@@ -434,7 +432,8 @@ From the definition of $\Q{0}{\alpha}{X|Y}{\beta}$, we see that it is sufficient
 \end{proof}
 
 
-\section{Recursion formula for $\PP^N$ relative a hyperplane} \label{Section recursion for PN}
+\section{Recursion formula}\label{section recursion}
+\subsection{Recursion formula for $(\PP^N,H)$} \label{Section recursion for PN}
 \label{Subsection recursion formula for PN}
 We wish to obtain a recursion formula relating the quasimap invariants of multiplicity $\alpha$ with the quasimap invariants of multiplicity $\alpha + e_k$, as in \cite[Theorem 2.6]{Ga}. For $m = \alpha_k + 1$ the following section (of the pull-back of the jet bundle of the universal line bundle)
 \[
@@ -505,7 +504,7 @@ such that $u^0(q^0) = u^1(q^1)$ in $\PP^N$. We want to glue these quasimaps toge
 \begin{equation*} C = C^0 \,_{q^0}\!\sqcup_{q^1} C^1 \end{equation*}
 On the other hand, gluing together the line bundles $L^0$ and $L^1$ to obtain a line bundle $L$ over $C$ requires a choice of scalar $\lambda \in \Gm$, in order to match up the fibres over $q^i$. Furthermore, if the sections are to extend as well, then this scalar must be chosen in such a way that it takes $(u^0_0(q^0), \ldots, u^0_N(q^0)) \in (L^0_{q^0})^{\oplus (N+1)}$ to $(u^1_0(q^1), \ldots, u^1_N(q^1)) \in (L^1_{q^1})^{\oplus (N+1)}$. Since neither $q^0$ nor $q^1$ are basepoints (because they are markings), these tuples are nonzero, and so $\lambda$ is unique if it exists. Furthermore it exists if and only if these tuples belong to the same $\Gm$-orbit in $\Aaff^{N+1}$. This is precisely the statement that $u^0(q^0) = u^1(q^1) \in \PP^N$. Similar arguments apply for $r>1$, and for more general toric varieties. \end{remark}
 
-\section{Recursion formula in the general case}\label{Section recursion formula in general case}
+\subsection{Recursion formula in the general case}\label{Section recursion formula in general case}
 
 In this section we prove the main result of this paper: a recursion formula for relative quasimap invariants of a general pair $(X,Y)$.  
 
@@ -514,10 +513,7 @@ In this section we prove the main result of this paper: a recursion formula for 
 in the Chow group of $\Q{0}{\alpha}{X|Y}{\beta}$. 
 \end{thm}
 
-The formula is proven by pulling back the recursion for $(\PP^N,H)$ along $k=\om{Q}(i)$. Only the final term requires further discussion.
-
-
-\subsection{Comb loci pull back} \label{Subsection comb loci pull back} As in the previous section, we define $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ to be the union of the moduli spaces
+The formula is proven by pulling back the recursion for $(\PP^N,H)$ along $k=\om{Q}(i)$. Only the final term requires further discussion. As in the previous section, we define $\mathcal D^\mathcal{Q}_{\alpha,k}(X|Y,\beta)$ to be the union of the moduli spaces
 \begin{equation*} \mathcal D^{\mathcal{Q}}(X|Y,A,B,M) := \Q{0}{A^{(0)} \cup \{q_1, \ldots, q_r\}}{Y}{\beta^{(0)}} \times_{Y^r} \prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m_i)}{X|Y}{\beta^{(i)}} \end{equation*}
 where the union runs over all splittings $A = (A^{(0)},\ldots,A^{(r)})$ of the markings (inducing a splitting $(\alpha^{(0)}, \ldots, \alpha^{(r)})$ of the corresponding tangency requirements), $B = (\beta^{(0)}, \ldots, \beta^{(r)})$ of the curve class $\beta$ and all valid multiplicities $M = (m^{(1)}, \ldots, m^{(r)})$ such that the above spaces are non-empty and such that:
 \[
@@ -759,7 +755,7 @@ where crucially $\ev_1$ is viewed as \emph{mapping to $X$} instead of to $Y$. Th
 
 Now, since $X$ and $Y$ are smooth, we may use Poincar\'{e} duality to define a push-forward map on cohomology, $i_* \colon \HH^k(Y) \to \HH^{k+2}(X)$.
 
-\begin{lemma} $i_* S^Y_0(z,\beta) = \tilde{S}^Y_0(z,\beta)$. \end{lemma}
+\begin{lemma} \label{lemma pushforward} $i_* S^Y_0(z,\beta) = \tilde{S}^Y_0(z,\beta)$. \end{lemma}
 \begin{proof} This follows from functoriality of cohomological push-forwards and the fact that we have a commuting triangle:
 \bcd
 \Q{0}{2}{Y}{\beta} \ar[rr,"\ev_1"] \ar[rd,"\ev_1" left=0.2cm] & & Y \ar[ld,"i"] \\
@@ -781,7 +777,7 @@ as claimed. \end{proof}
 \begin{thm} \label{Theorem Quantum Lefschetz}
 Let $X$ and $Y$ be as above. Then
 \begin{equation}\label{eqn:mirror}
-\dfrac{\sum_{\beta\geq 0} q^\beta\prod_{j=0}^{Y\cdot\beta}(Y+jz)S_0^X(z,\beta)}{P_0^X(q)}= \tilde{S}_0^Y(z,q)
+\tilde{S}_0^Y(z,q) = \dfrac{\sum_{\beta\geq 0} q^\beta \left(\prod_{j=0}^{Y\cdot\beta}(Y+jz)\right) \cdot S_0^X(z,\beta)}{P_0^X(q)}
 \end{equation}
 where:
 \begin{align*}
@@ -794,25 +790,25 @@ Notice that $P_0^X(q)$ depends not only on $X$ but also on the divisor class of 
 \begin{proof}
 For $m = 0, \ldots, Y \cdot \beta$, define the following generating function for $2$-pointed relative quasimap invariants
  \[
-  S_{0,(m)}^{X|Y}(z,\beta)=(\ev_1)_*\left(\frac{1}{z-\psi_1}\virt{\Q{0}{(m,0)}{X|Y}{\beta}}\right)
+  \widetilde{S}_{0,(m)}^{X|Y}(z,\beta)=(\ev_1)_*\left(\frac{1}{z-\psi_1}\virt{\Q{0}{(m,0)}{X|Y}{\beta}}\right)
  \]
-where we view $\ev_1$ as mapping to $X$.  Note that  $S_{0,(0)}^{X|Y}(z,\beta) = S_0^X(z, \beta)$. Also define the following generating function for ``comb loci invariants''
+where we view $\ev_1$ as mapping to $X$.  Note that  $\widetilde{S}_{0,(0)}^{X|Y}(z,\beta) = S_0^X(z, \beta)$. Also define the following generating function for ``comb loci invariants''
 \[
- T_{0,(m)}^{X|Y}(z,\beta)=(\ev_1)_*\left(m \virt{\Q{0}{(m,0)}{X|Y}{\beta}}+\frac{1}{z-\psi_1} \virt{\mathcal{D}^{\mathcal{Q}}_{(m,0),1}(X|Y,\beta)} \right)
+ \widetilde{T}_{0,(m)}^{X|Y}(z,\beta)=(\ev_1)_*\left(m \virt{\Q{0}{(m,0)}{X|Y}{\beta}}+\frac{1}{z-\psi_1} \virt{\mathcal{D}^{\mathcal{Q}}_{(m,0),1}(X|Y,\beta)} \right)
 \]
 where again we view $\ev_1$ as mapping to $X$. As in \cite[Lemma 1.2]{Ga-MF}, it follows from Theorem \ref{Theorem general recursion} that
-\begin{equation}
- (Y+mz) S_{0,(m)}^{X|Y}(z,\beta) = S_{0,(m+1)}^{X|Y}(z,\beta)+ T_{0,(m)}^{X|Y}(z,\beta)
+\begin{equation}\label{Gathmann recursion via generating functions}
+ (Y+mz) \widetilde{S}_{0,(m)}^{X|Y}(z,\beta) = \widetilde{S}_{0,(m+1)}^{X|Y}(z,\beta)+ \widetilde{T}_{0,(m)}^{X|Y}(z,\beta)
 \end{equation}
 and we can apply this repeatedly to obtain:
 \begin{equation} \label{eqn:G}
-\prod_{j=0}^{Y\cdot\beta}(Y+jz) S_0^X(z,\beta) = \sum_{m=0}^{Y\cdot\beta}\prod_{j=m+1}^{Y\cdot\beta}(Y+jz)T_{0,(m)}^{X|Y}(z,\beta)
+\prod_{j=0}^{Y\cdot\beta}(Y+jz) S_0^X(z,\beta) = \sum_{m=0}^{Y\cdot\beta}\prod_{j=m+1}^{Y\cdot\beta}(Y+jz)\widetilde{T}_{0,(m)}^{X|Y}(z,\beta)
 \end{equation}
-We now examine the right-hand side in detail. By definition, $T_{0,(m)}^{X|Y}(z,\beta)$ splits into two parts: those terms coming from the relative space and those terms coming from the comb loci.
+We now examine the right-hand side in detail. By definition, $\widetilde{T}_{0,(m)}^{X|Y}(z,\beta)$ splits into two parts: those terms coming from the relative space and those terms coming from the comb loci.
 
 Let us first consider the contribution of the comb loci. Since there are only two marked points and the first is required to lie on the internal component of the comb, it follows from the strong stability condition that there are only two options: a comb with zero teeth or a comb with one tooth.
 
-First consider the case of a comb with zero teeth. The moduli space is then $\Q{0}{2}{Y}{\beta}$ and we require that $Y \cdot \beta = m$. Thus this piece only contributes to $T_{0,(Y\cdot\beta)}^{X|Y}(z,\beta)$, and the contribution is:
+First consider the case of a comb with zero teeth. The moduli space is then $\Q{0}{2}{Y}{\beta}$ and we require that $Y \cdot \beta = m$. Thus this piece only contributes to $\widetilde{T}_{0,(Y\cdot\beta)}^{X|Y}(z,\beta)$, and the contribution is:
 \begin{equation*} \sum_{i=1}^k \left\langle \dfrac{\rho_i}{z-\psi_1}, \mathbbm{1}_Y \right\rangle_{0,2,\beta}^Y \eta^i \end{equation*}
 
 Next consider the case of a comb with one tooth. Let $\beta^{(0)}$ and $\beta^{(1)}$ denote the curve classes of the internal and external components, respectively, and let $m^{(1)}$ be the contact order of the external component with $Y$. The picture is as follows
@@ -840,9 +836,9 @@ for $i = 1, \ldots, k$ and $h = 1, \ldots, l$. By computing dimensions, we find
 \end{align*}
 where the final equality follows from adjunction and the final inequality holds because $-K_Y$ is nef and $m^{(1)}\leq Y \cdot \beta_1$. This shows that the only non-trivial contributions come from curve classes $\beta^{(1)}$ such that $K_Y \cdot \beta^{(1)}=0$, and that in this case the order of tangency must be maximal, i.e. $m^{(1)}=Y \cdot \beta^{(1)}$. Furthermore we must have $\codim \rho^h = 0$ and so $\rho^h = \rho^1 = \mathbbm{1}_Y$ which implies $\rho_h = \rho_1 = [\pt_Y]$. Finally since $m^{(1)}=Y \cdot \beta^{(1)}$ we have
 \begin{equation*} m = Y \cdot \beta^{(0)}+m^{(1)}=Y \cdot (\beta^{(0)} + \beta^{(1)}) = Y \cdot \beta \end{equation*}
-and so again this piece only contributes to $T_{0,(Y\cdot\beta)}^{X|Y}(z,\beta)$, and the contribution is:
+and so again this piece only contributes to $\widetilde{T}_{0,(Y\cdot\beta)}^{X|Y}(z,\beta)$, and the contribution is:
 \begin{equation*} \sum_{i=1}^k \left( \sum_{\substack{0 < \beta^{(1)} < \beta \\ K_Y \cdot \beta^{(1)}=0}} (Y \cdot \beta^{(1)}) \bigg\langle \dfrac{\rho_i}{z-\psi_1}, \mathbbm{1}_Y \bigg\rangle_{0,2,\beta-\beta^{(1)}}^Y \bigg\langle \rho_1, \mathbbm{1}_X \bigg\rangle_{0,(Y \cdot \beta^{(1)},0),\beta^{(1)}}^{X|Y} \right) \eta^i \end{equation*}
-where the $Y \cdot \beta^{(1)}$ factor comes from the weighting on the virtual class of the comb locus. Finally, we must examine the terms of $T_{0,(m)}^{X|Y}(z,\beta)$ coming from:
+where the $Y \cdot \beta^{(1)}$ factor comes from the weighting on the virtual class of the comb locus. Finally, we must examine the terms of $\widetilde{T}_{0,(m)}^{X|Y}(z,\beta)$ coming from:
 \begin{equation*}\ev_{1*}(m\virt{\Q{0}{(m,0)}{X|Y}{\beta}})\end{equation*} 
 Notice that we only have insertions from $i^*\HH^*(X) \subseteq \HH^*(Y)$, since $\ev_1$ is viewed as mapping to $X$. On the other hand
 \begin{align*} \vdim \Q{0}{(m,0)}{X|Y}{\beta} & = \dim X-3 -K_X \cdot \beta +2-m & \\
@@ -851,11 +847,11 @@ Notice that we only have insertions from $i^*\HH^*(X) \subseteq \HH^*(Y)$, since
 & \geq \dim X - 1 \ \ & \text{since $m \leq Y \cdot \beta$} \end{align*}
 where in the second line we have applied the projection formula to $i$, and thus have implicitly used Assumption (2), discussed in \S \ref{Subsection setup}; namely that every curve class on $X$ comes from a class on $Y$.
 
-Consequently the only insertions that can appear are those of dimension $0$ and $1$. However, the restriction of the $0$-dimensional class $\eta_0 = [\pt_X]$ to $Y$ vanishes, as do the restrictions of all $1$-dimensional classes except for $\eta_1$ (by the definition of the dual basis, since $\eta^1 = Y$). Thus the only insertion is $i^*\eta_1=\rho_1=[\pt_Y]$, and since $\eta^1$ has dimension $1$ all the inequalities above must actually be equalities. Thus we only have a contribution if $-K_Y \cdot \beta = 0$ and $m = Y \cdot \beta$. The contribution to $T_{0,(Y\cdot\beta)}^{X|Y}(z,\beta)$ in this case is:
+Consequently the only insertions that can appear are those of dimension $0$ and $1$. However, the restriction of the $0$-dimensional class $\eta_0 = [\pt_X]$ to $Y$ vanishes, as do the restrictions of all $1$-dimensional classes except for $\eta_1$ (by the definition of the dual basis, since $\eta^1 = Y$). Thus the only insertion is $i^*\eta_1=\rho_1=[\pt_Y]$, and since $\eta^1$ has dimension $1$ all the inequalities above must actually be equalities. Thus we only have a contribution if $-K_Y \cdot \beta = 0$ and $m = Y \cdot \beta$. The contribution to $\widetilde{T}_{0,(Y\cdot\beta)}^{X|Y}(z,\beta)$ in this case is:
 \begin{equation*} (Y \cdot \beta) \langle \rho_1 , \mathbbm{1}_X \rangle_{0,(Y \cdot \beta,0),\beta}^{X|Y} \eta^1 \end{equation*}
 
-Thus we have calculated $T_{0,(m)}^{X|Y}(z,\beta)$ for all $m$; substituting into equation \eqref{eqn:G} we obtain
-\begin{align*} \prod_{j=0}^{Y \cdot \beta} (Y + jz) & S_0^X(z,\beta) = T_{0,(Y\cdot\beta)}^{X|Y}(z,\beta) \\
+Thus we have calculated $\widetilde{T}_{0,(m)}^{X|Y}(z,\beta)$ for all $m$; substituting into equation \eqref{eqn:G} we obtain
+\begin{align*} \prod_{j=0}^{Y \cdot \beta} (Y + jz) & S_0^X(z,\beta) = \widetilde{T}_{0,(Y\cdot\beta)}^{X|Y}(z,\beta) \\
 = \ & \sum_{i=1}^k \left\langle \dfrac{\rho_i}{z-\psi_1}, \mathbbm{1}_Y \right\rangle_{0,2,\beta}^Y \eta^i + \\
 & \sum_{i=1}^k \left( \sum_{\substack{0 < \beta^{(1)} < \beta \\ K_Y \cdot \beta^{(1)}=0}} (Y \cdot \beta^{(1)}) \bigg\langle \dfrac{\rho_i}{z-\psi_1}, \mathbbm{1}_Y \bigg\rangle_{0,2,\beta-\beta^{(1)}}^Y \bigg\langle \rho_1, \mathbbm{1}_X \bigg\rangle_{0,(Y \cdot \beta^{(1)},0),\beta^{(1)}}^{X|Y} \right) \eta^i + \\
 & (Y \cdot \beta) \langle \rho_1 , \mathbbm{1}_X \rangle_{0,(Y \cdot \beta,0),\beta}^{X|Y} \eta^1
@@ -998,6 +994,47 @@ which appears in our $P_0^X(q)$-series also appears in $S_0^X(z,\beta)$. So agai
 & =\frac{\prod_{\rho\colon D_\rho\cdot\beta< 0}(-1)^{-D_{\rho}\cdot\beta}(-D_{\rho}\cdot\beta)!}{\prod_{\rho\colon D_\rho\cdot\beta> 0}(D_{\rho}\cdot\beta)!}
 \end{align*}
 which proves \eqref{P epsilon equation}. We thus conclude that \eqref{Ciocan-Fontanine Theorem t zero} implies our Theorem~\ref{Theorem Quantum Lefschetz}. \end{proof}
+
+\section{Relative wall-crossing}
+\subsection{Context}
+The classical mirror theorem, due to Givental, equates a certain generating function for Gromov--Witten invariants -- the $J$-\emph{function} -- with an explicit hypergeometric function -- the $I$-\emph{function} -- after a suitable change of variables called the \emph{mirror map} \cite{}. A fundamental insight is that the $I$-function may be interpreted as a generating function for \emph{quasimap invariants}. From this perspective, the mirror theorem breaks into two parts:
+\begin{enumerate}
+\item find an explicit formula for the quasimap generating function;
+\item prove a wall-crossing formula, relating the quasimap and Gromov--Witten generating functions via a change of variables.
+\end{enumerate}
+This basic strategy was pursued, with great success, in a series of papers by Ciocan-Fontanine--Kim \cite{CFKBigI,CF-K-wallcrossing,CF-K-MirrorSymmetry}.
+
+Recently \cite{FanTsengYou} Fan--Tseng--You have used the correspondence between relative and orbifold Gromov--Witten invariants \cite{AbramovichCadmanWise} to obtain a version of the mirror theorem in the relative setting. Their result \cite[Theorem 4.3]{FanTsengYou} provides an explicit formula for the relative $I$-function of a smooth pair $(X,Y)$, assuming that the pair is sufficiently semipositive and that the absolute $J$-function of $X$ is known. They then show that the relative $I$-function and the relative $J$-function coincide after a change of variables.
+
+In this final section, we will show that their relative $I$-fuction coincides with a natural generating function $I_\beta^{X|Y}(z,0)$ for relative quasimap invariants. This provides strong evidence for our main conjecture, namely that relative quasimap invariants provide a means to generalise the mirror theorems of Ciocan-Fontanine--Kim to the relative setting. In work in progress, we follow up on this claim by developing a fully-fledged, general theory of logarithmic quasimaps, and proving reconstruction and wall-crossing formulas in this context.
+
+\subsection{Comparison of relative $I$-functions} First, we establish some notation. Fix as before a smooth very ample pair $(X,Y)$ and a curve class $\beta \in \HH_2^+(X)$, and let $d=Y\cdot \beta$. We define our relative $I$-function as the following formal power series in the cohomology of $Y$
+\begin{align*} I^{X|Y}_\beta(z,0) = S_{0,(d)}^{X|Y}(z,\beta) & = (\ev_1)_*\left( \frac{1}{z-\psi_1}\virt{\Q{0}{(d,0)}{X|Y}{\beta}}\right) \\
+& = \sum_{i=0}^l \left\langle \dfrac{\rho_i}{z- \psi_1}, \mathbbm{1}_X \right\rangle^{X|Y}_{0,(d,0),\beta} \rho^i \in \HH^*(Y)\llbracket z \rrbracket \end{align*}
+where here $\ev_1$ is viewed as a map to $Y$ (the $\beta=0$ term is not defined). Just as in Lemma \ref{lemma pushforward} we have:
+\begin{equation*} i_* I_\beta^{X|Y}(z,0) = \widetilde{S}_{0,(d)}^{X|Y}(z,\beta).\end{equation*}
+On the other hand we have the Fan--Tseng--You relative $I$-function, which can be expressed as
+\begin{equation*} I_{\beta,\mathrm{FTY}}^{X|Y}(z,0) = i^* \left( J^X_{\beta}(z,0) \cdot \prod_{m=1}^{d-1}(Y+mz) \right) \in \HH^*(Y)\llbracket z \rrbracket\end{equation*}
+(see \cite[Theorem 4.3]{FanTsengYou}, and \cite[\S 7.1]{FanWuYou} for the definition of the product structure used implicitly in the first reference).
+\begin{thm} \label{wallcrossing thm} Assume that $-K_X-Y$ is nef and that $X$ has Fano index $\geq 2$. Then we have:
+\begin{equation*} I_\beta^{X|Y}(z,0) = z^{-1}\cdot I_{\beta,\mathrm{FTY}}^{X|Y}(z,0).\end{equation*}
+\end{thm}
+\begin{proof}
+Applying \eqref{Gathmann recursion via generating functions} we obtain the following formula in $\HH^*(X)$:
+\begin{equation*} \left( \prod_{m=0}^{d-1} (Y+mz) \right) S^{X}_{0,(d)}(z,\beta) = \widetilde{S}_{0,d}^{X|Y}(z,\beta) + \sum_{k=0}^{d-1} \left(\prod_{m=k+1}^{d-1}(Y+mz) \right) \widetilde{T}^{X|Y}_{0,(k)}(z,\beta).\end{equation*}
+By a dimension counting argument similar to the one given in the proof of Theorem \ref{Theorem Quantum Lefschetz}, we see that $\widetilde{T}^{X|Y}_{0,(k)}(z,\beta)=0$ for $k=0,\ldots,d-1$ so that the formula reads:
+\begin{equation}\label{halfway to comparison of I} \widetilde{S}^{X|Y}_{0,(d)}(z,\beta) = \left( \prod_{m=0}^{d-1}(Y+mz) \right) S_{0,(d)}^X(z,\beta).\end{equation}
+Since $X$ has Fano index $\geq 2$ its quasimap invariants coincide with its Gromov--Witten invariants. Thus we may identify:
+\begin{equation*} S^X_{0,(d)}(z,\beta) = J^X_\beta(z,0).\end{equation*}
+Applying $i^*$ to \eqref{halfway to comparison of I} we obtain:
+\begin{align*} i^*Y \cdot I_\beta^{X|Y}(z,0) & = i^* i_* \widetilde{S}^{X|Y}_{0,(d)}(z,\beta) \\
+& = i^*Y \cdot i^* \left(J^X_\beta(z,0) \cdot \prod_{m=0}^{d-1}(Y+mz) \right) \\
+& = i^*Y \cdot z^{-1} \cdot I_{\beta,\mathrm{FTY}}^{X|Y}(z,0).\end{align*}
+The result then follows from the hard Lefschetz theorem.\end{proof}
+
+\begin{remark} This result suffers from a number of defects, and is best thought of as a proof-of-concept. For one, it establishes wall-crossing only in the $t=0$ case (i.e. we only consider generating functions for two-pointed invariants with a fundamental class insertion). More importantly, the proof is not geometric; it uses the relative mirror theorem \cite[Theorem 4.3]{FanTsengYou}, rather than providing a new proof of this result. We aim to correct both of these defects, and more, in our upcoming work on logarithmic quasimap theory.
+\end{remark}
+
 
 \appendix
 
