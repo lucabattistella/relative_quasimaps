@@ -192,7 +192,7 @@
 
 This work was supported by EPSRC, the Royal Society and the London School of Geometry and Number Theory.}
 
-\title{Relative quasimaps and a quantum Lefschetz theorem}
+\title{Relative quasimaps and mirror symmetry}
 
 \author{Luca Battistella and Navid Nabijou}
 
@@ -208,24 +208,25 @@ This work was supported by EPSRC, the Royal Society and the London School of Geo
 \section{Introduction}
 \subsection{The aim of relative quasimap theory} Relative Gromov--Witten theory for smooth pairs $(X,Y)$ occupies a central place in modern enumerative geometry, owing both to its intrinsic interest and to the role it plays in the degeneration formula \cite{Ga,Vre,Li1,Li2,MaulikPandharipande}. However, while the structures underlying the absolute Gromov--Witten invariants --- generating functions, Frobenius manifolds, Lagrangian cones, etc. --- are well-understood, the nature of the corresponding structures in the relative setting remains mysterious.
 
-A promising avenue for addressing these questions is to adapt ideas coming from mirror symmetry to the relative context. Precisely what this would entail depends on one's point of view, but the end goal should be to obtain closed formulae for certain generating functions of relative Gromov--Witten invariants. Recent work of Fan--Tseng--You \cite{FanTsengYou} uses the correspondence between relative invariants and the Gromov--Witten invariants of orbifolds \cite{AbramovichCadmanWise} in order to derive a mirror theorem for certain restricted generating functions of relative invariants.
+A promising avenue for addressing these questions is to adapt ideas coming from mirror symmetry to the relative context. There are several possible approaches here, depending on one's viewpoint on mirror symmetry, but the end goal of each should be to obtain pleasant closed formulae for generating functions of relative Gromov--Witten invariants.
 
-We propose an alternative and complementary approach to this problem. Our motivation comes from the theory of stable quasimaps \cite{CF-K,CFKM}, which has been applied with great success to prove mirror theorems in the absolute setting \cite{CF-K-wallcrossing,CF-K-MirrorSymmetry}. The belief is that a fully-fledged theory of \emph{relative} quasimaps should lead to an equally powerful collection of mirror theorems in the relative setting.
+Recent work of Fan--Tseng--You \cite{FanTsengYou} uses the correspondence between relative invariants and the Gromov--Witten invariants of orbifolds \cite{AbramovichCadmanWise} in order to derive a mirror theorem for certain restricted generating functions of relative invariants.
+
+We propose a more direct approach to the problem. Our motivation comes from the theory of stable quasimaps: this theory dates back to Givental's earliest work on mirror symmetry \cite{Givental-mirror}, and has since been systematised and extended in order to prove a large class of mirror theroems in the absolute setting \cite{CF-K,CFKM, CF-K-wallcrossing,CF-K-MirrorSymmetry}. The belief is that a fully-fledged theory of \emph{relative} quasimaps should lead to an equally powerful collection of mirror theorems in the relative setting.
 
 \subsection{Results}
 In this paper, we realise this proposal in the context of genus-zero quasimaps relative to a hyperplane section.
 
-\subsubsection{Construction and recursion} We begin by constructing moduli spaces of relative stable quasimaps in the spirit of A. Gathmann, that is, as substacks of moduli spaces of (absolute) quasimaps:
+\subsubsection{Construction and recursion} We begin by constructing moduli spaces of relative stable quasimaps in the spirit of Gathmann, that is, as substacks of moduli spaces of (absolute) quasimaps:
 \begin{equation*} \mathcal{Q}_{0,\alpha}(X|Y,\beta) \hookrightarrow \mathcal{Q}_{0,n}(X,\beta).\end{equation*}
 These spaces are equipped with natural virtual fundamental classes, and hence can be used to define \emph{relative quasimap invariants}. We prove a recursion formula for such invariants, expressing each relative invariant in terms of invariants with smaller numerical data (see Theorem \ref{thm recursion intro} below).
 
-\subsubsection{Application: wall-crossing} We then apply the recursion formula to relate our invariants to the relative $I$-function considered in \cite{FanTsengYou}.
-\begin{customthm}{A}[\textbf{Theorem \ref{wallcrossing thm}}]\label{thmA} The relative $I$-function coincides with the following natural generating function for relative quasimap invariants: 
-\begin{equation*}I^{X|Y}_\beta(z,0) = (\ev_1)_*\left( \frac{1}{z-\psi_1}\virt{\Q{0}{(Y\cdot\beta,0)}{X|Y}{\beta}}\right).\end{equation*}
+\subsubsection{Application 1: wall-crossing} We then apply the recursion formula to relate our invariants to the relative $I$-function considered in \cite{FanTsengYou}. This demonstrates that the theory of relative quasimaps provides a natural framework for studying relative mirror symmetry.
+\begin{customthm}{A}[\textbf{Theorem \ref{wallcrossing thm}}]\label{thmA} The relative $I$-function coincides with the following natural generating function for relative quasimap invariants
+\begin{equation*}I^{X|Y}_\beta(z,0) = (\ev_1)_*\left( \frac{1}{z-\psi_1}\virt{\Q{0}{(Y\cdot\beta,0)}{X|Y}{\beta}}\right)\end{equation*}
+(see \S \ref{section wallcrossing} for details).
 \end{customthm}
-\noindent (See \S \ref{section wallcrossing} for a precise statement.) This demonstrates that the theory of relative quasimaps provides a natural framework for studying relative mirror symmetry.
-
-\subsubsection{Application: quasimap quantum Lefschetz} Besides the connections to relative Gromov--Witten theory, we may also apply the recursion formula to study absolute quasimap theory. By repeatedly decreasing the tangency orders, we obtain a quantum Lefschetz theorem for quasimap invariants, expressing the invariants of a hyperplane section $Y$ in terms of those of $X$. This takes two forms; first, we have a general result which holds without any special restrictions on the target geometry:
+\subsubsection{Application 2: quasimap quantum Lefschetz} Besides the connections to relative Gromov--Witten theory, we may also apply the recursion formula to study absolute quasimap theory. By repeatedly decreasing the tangency orders, we obtain a quantum Lefschetz theorem for quasimap invariants, expressing the invariants of a hyperplane section $Y$ in terms of those of $X$. This takes two forms; first, we have a general result which holds without any special restrictions on the target geometry:
 \begin{customthm}{B}[\textbf{Theorem \ref{Theorem full quasimap Lefschetz}}] \label{thmB} Let $X$ be a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. Then there is an explicit algorithm to recover the (restricted) quasimap invariants of $Y$, as well as the relative invariants of $(X,Y)$, from the quasimap invariants of $X$.\end{customthm}
 
 Even in the situation where the quasimap theories of $X$ and $Y$ coincide with the (respective) Gromov--Witten theories, the quasimap algorithm is much more efficient than the Gromov--Witten algorithm, due to the absence of rational tails. It is clear that this phenomenon generalises to the setting of the quasimap degeneration formula (once such a result has been established); we plan to revisit this in future work.
@@ -779,7 +780,7 @@ Thus applying $i_*$ gives
 = \sum_{i=1}^k \left\langle \dfrac{\eta_i}{z-\psi_1}, \mathbbm{1}_X \right\rangle_{0,2,\beta}^Y   \eta^i = \tilde{S}_0^Y(z,\beta) \end{align*}
 as claimed. \end{proof}
 
-\subsection{Quasimap quantum Lefschetz formula} We now turn to our main result: a formula expressing the generating function $\tilde{S}_0^Y(z,q)$ for restricted quasimap invariants of $Y$ in terms of the quasimap invariants of $X$.
+\subsection{Quasimap quantum Lefschetz formula} \label{subsection quasimap quantum Lefschetz formula} We now turn to our main result: a formula expressing the generating function $\tilde{S}_0^Y(z,q)$ for restricted quasimap invariants of $Y$ in terms of the quasimap invariants of $X$.
 
 \begin{thm} \label{Theorem Quantum Lefschetz}
 Let $X$ and $Y$ be as above. Then
@@ -1011,36 +1012,36 @@ The classical mirror theorem, due to Givental, equates a certain generating func
 \end{enumerate}
 This basic strategy was pursued, with great success, in a series of papers by Ciocan-Fontanine--Kim \cite{CFKBigI,CF-K-wallcrossing,CF-K-MirrorSymmetry}.
 
-Recently \cite{FanTsengYou} Fan--Tseng--You have used the correspondence between relative and orbifold Gromov--Witten invariants \cite{AbramovichCadmanWise} to obtain a version of the mirror theorem in the relative setting. Their result \cite[Theorem 4.3]{FanTsengYou} provides an explicit formula for the relative $I$-function of a smooth pair $(X,Y)$, assuming that the pair is sufficiently semipositive and that the absolute $J$-function of $X$ is known. They then show that the relative $I$-function and the relative $J$-function coincide after a change of variables.
+Recently \cite{FanTsengYou} Fan--Tseng--You have used the correspondence between relative and orbifold Gromov--Witten invariants \cite{AbramovichCadmanWise} to obtain a version of the mirror theorem in the relative setting (without using quasimaps). They write down an explicit combinatorial formula for the relative $I$-function of a smooth pair $(X,Y)$, under the assumption that the pair is sufficiently semipositive and that the absolute $J$-function of $X$ is known. They then show \cite[Theorem 4.3]{FanTsengYou} that their relative $I$-function and the relative $J$-function coincide after a change of variables.
 
-In this final section, we will show that their relative $I$-fuction coincides with a natural generating function $I_\beta^{X|Y}(z,0)$ for relative quasimap invariants. This provides strong evidence for our main hypothesis, namely that relative quasimap invariants provide a means to generalise the mirror theorems of Ciocan-Fontanine--Kim to the relative setting. In ongoing work in progress, we follow up on this claim by developing a fully-fledged, general theory of logarithmic quasimaps, and proving reconstruction and wall-crossing formulas in this context.
+In this final section, we will show that their relative $I$-fuction coincides with a natural generating function $I_\beta^{X|Y}(z,0)$ for relative quasimap invariants. This provides strong evidence for our main hypothesis, namely that relative quasimap invariants provide a means to generalise the mirror theorems of Givental and Ciocan-Fontanine--Kim to the relative setting. In ongoing work in progress, we follow up on this claim by developing a fully-fledged, general theory of logarithmic quasimaps, and proving reconstruction and wall-crossing formulas in this context.
 
-\subsection{Comparison of relative $I$-functions} We begin by establishing notation. Fix as before a smooth very ample pair $(X,Y)$ and a curve class $\beta \in \HH_2^+(X)$, and let $d=Y\cdot \beta$. We define our relative $I$-function as the following formal power series in the cohomology of $Y$
-\begin{align*} I^{X|Y}_\beta(z,0) = S_{0,(d)}^{X|Y}(z,\beta) & = (\ev_1)_*\left( \frac{1}{z-\psi_1}\virt{\Q{0}{(d,0)}{X|Y}{\beta}}\right) \\
-& = \sum_{i=0}^l \left\langle \dfrac{\rho_i}{z- \psi_1}, \mathbbm{1}_X \right\rangle^{X|Y}_{0,(d,0),\beta} \rho^i \in \HH^*(Y)\llbracket z \rrbracket \end{align*}
-where $\ev_1$ is viewed as a map to $Y$ (for simplicity we leave undefined the terms for which $d=0$). Just as in Lemma \ref{lemma pushforward} we have:
-\begin{equation*} i_* I_\beta^{X|Y}(z,0) = \widetilde{S}_{0,(d)}^{X|Y}(z,\beta).\end{equation*}
+\subsection{Comparison of relative $I$-functions} We begin by establishing notation. Fix as before a smooth very ample pair $(X,Y)$ and a curve class $\beta \in \HH_2^+(X)$, and let $e=Y\cdot \beta$. We define our relative $I$-function as the following formal power series in the cohomology of $Y$
+\begin{align*} I^{X|Y}_\beta(z,0) = S_{0,(e)}^{X|Y}(z,\beta) & = (\ev_1)_*\left( \frac{1}{z-\psi_1}\virt{\Q{0}{(e,0)}{X|Y}{\beta}}\right) \\
+& = \sum_{i=0}^l \left\langle \dfrac{\rho_i}{z- \psi_1}, \mathbbm{1}_X \right\rangle^{X|Y}_{0,(e,0),\beta} \rho^i \in \HH^*(Y)\llbracket z \rrbracket \end{align*}
+where $\ev_1$ is viewed as mapping to $Y$ (for simplicity we leave undefined the terms for which $e=0$). Just as in Lemma \ref{lemma pushforward} we have:
+\begin{equation*} i_* I_\beta^{X|Y}(z,0) = \widetilde{S}_{0,(e)}^{X|Y}(z,\beta).\end{equation*}
 On the other hand we have the Fan--Tseng--You relative $I$-function at $t=0$, which may be expressed as
-\begin{equation*} I_{\beta,\mathrm{FTY}}^{X|Y}(z,0) = i^* \left( J^X_{\beta}(z,0) \cdot \prod_{m=1}^{d-1}(Y+mz) \right) \in \HH^*(Y)\llbracket z \rrbracket\end{equation*}
-(see \cite[Theorem 4.3]{FanTsengYou}, and \cite[\S 7.1]{FanWuYou} for the definition of the product structure used implicitly in the first reference).
+\begin{equation*} I_{\beta,\mathrm{FTY}}^{X|Y}(z,0) = i^* \left( J^X_{\beta}(z,0) \cdot \prod_{m=1}^{e-1}(Y+mz) \right) \in \HH^*(Y)\llbracket z \rrbracket\end{equation*}
+(see \cite[Theorem 4.3]{FanTsengYou}, and \cite[\S 7.1]{FanWuYou} for the definition of the product structure used in the first reference).
 \begin{thm} \label{wallcrossing thm} Assume as in \S \ref{Subsection setup} that $Y$ is semipositive. Then we have:
 \begin{equation*} i^* i_* I_\beta^{X|Y}(z,0) = z^{-1}\cdot i^* i_* I_{\beta,\mathrm{FTY}}^{X|Y}(z,0).\end{equation*}
 \end{thm}
-\begin{remark} The effect of applying $i^* i_*$ is to remove the terms corresponding to the non-restricted quasimap invariants. This is merely an artefact of the proof, since the recursion formula established in \S \ref{section recursion formula} only deals with restricted insertions; the statement should hold without this caveat.\end{remark}
+\begin{remark} The effect of applying $i^* i_*$ is to remove the terms corresponding to the non-restricted quasimap invariants. This is an artefact of the proof, since the recursion formula established in \S \ref{section recursion formula} only deals with restricted insertions. The final statement should hold without this caveat.\end{remark}
 
 \begin{proof}
-Applying \eqref{Gathmann recursion via generating functions} repeatedly, we obtain the following formula in $\HH^*(X)$:
-\begin{equation*} \left( \prod_{m=0}^{d-1} (Y+mz) \right) S^{X}_{0}(z,\beta) = \widetilde{S}_{0,d}^{X|Y}(z,\beta) + \sum_{k=0}^{d-1} \left(\prod_{m=k+1}^{d-1}(Y+mz) \right) \widetilde{T}^{X|Y}_{0,(k)}(z,\beta).\end{equation*}
-By a dimension counting argument similar to the one given in the proof of Theorem \ref{Theorem Quantum Lefschetz}, we see that $\widetilde{T}^{X|Y}_{0,(k)}(z,\beta)=0$ for $k=0,\ldots,d-1$, so that the formula reads:
-\begin{equation}\label{halfway to comparison of I} \widetilde{S}^{X|Y}_{0,(d)}(z,\beta) = \left( \prod_{m=0}^{d-1}(Y+mz) \right) S_{0}^X(z,\beta).\end{equation}
+Applying \eqref{Gathmann recursion via generating functions} from \S \ref{subsection quasimap quantum Lefschetz formula} repeatedly, we obtain the following formula in $\HH^*(X)\llbracket z \rrbracket$:
+\begin{equation*} \left( \prod_{m=0}^{e-1} (Y+mz) \right) S^{X}_{0}(z,\beta) = \widetilde{S}_{0,(e)}^{X|Y}(z,\beta) + \sum_{k=0}^{e-1} \left(\prod_{m=k+1}^{e-1}(Y+mz) \right) \widetilde{T}^{X|Y}_{0,(k)}(z,\beta).\end{equation*}
+By a dimension counting argument similar to the one given in the proof of Theorem \ref{Theorem Quantum Lefschetz}, we see that $\widetilde{T}^{X|Y}_{0,(k)}(z,\beta)=0$ for $k=0,\ldots,e-1$, so that the formula reads:
+\begin{equation}\label{halfway to comparison of I} \widetilde{S}^{X|Y}_{0,(e)}(z,\beta) = \left( \prod_{m=0}^{e-1}(Y+mz) \right) S_{0}^X(z,\beta).\end{equation}
 Since $Y$ is semipositive and very ample, we have that $X$ is Fano. Hence its quasimap invariants coincide with its Gromov--Witten invariants (see \S \ref{subsection quasimaps}). The string equation then gives:
 \begin{equation*} S^X_{0}(z,\beta) = z^{-1} \cdot J^X_\beta(z,0).\end{equation*}
 Applying $i^*$ to \eqref{halfway to comparison of I} we then obtain
-\begin{align*} i^* \widetilde{S}^{X|Y}_{0,(d)}(z,\beta) & = i^* \left(J^X_\beta(z,0) \cdot \prod_{m=0}^{d-1}(Y+mz) \right) \\
+\begin{align*} i^* \widetilde{S}^{X|Y}_{0,(e)}(z,\beta) & = z^{-1}\cdot i^* \left(J^X_\beta(z,0) \cdot \prod_{m=0}^{e-1}(Y+mz) \right) \\
 & = z^{-1} \cdot i^*Y \cdot I_{\beta,\mathrm{FTY}}^{X|Y}(z,0)\\
 & = z^{-1} \cdot i^* i_* I_{\beta,\mathrm{FTY}}^{X|Y}(z,0).\end{align*}
 But we also have
-\begin{equation*} i^* \widetilde{S}_{0,(d)}^{X|Y}(z,\beta) = i^* i_* I_\beta^{X|Y}(z,0)\end{equation*}
+\begin{equation*} i^* \widetilde{S}_{0,(e)}^{X|Y}(z,\beta) = i^* i_* I_\beta^{X|Y}(z,0)\end{equation*}
 and the claim follows.\end{proof}
 
 \begin{remark} This result is unnecessarily restrictive, and is best thought of as a proof-of-concept. For one, it establishes wall-crossing only in the $t=0$ case (i.e. we only consider generating functions for two-pointed invariants with a fundamental class insertion). More importantly, the proof is not geometric; it \emph{uses} the relative mirror theorem \cite[Theorem 4.3]{FanTsengYou}, rather than providing a new proof of this result. We plan to correct both these defects, and more, in our upcoming work on logarithmic quasimap theory.
