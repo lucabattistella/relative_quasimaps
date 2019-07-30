@@ -1,10 +1,10 @@
-\documentclass[times]{oupau}
+\documentclass[times,doublespace]{oupau}
 
 %\usepackage[margin=1in]{geometry}
 
-\textwidth=125mm
-\textheight=185mm
-\parindent=8mm
+%\textwidth=125mm
+%\textheight=185mm
+%\parindent=8mm
 %\evensidemargin=0pt
 %\oddsidemargin=0pt
 %\frenchspacing
@@ -126,7 +126,7 @@
 \newcommand{\NN}{\operatorname{N}}
 
 \theoremstyle{definition}
-\newtheorem{thm}{Theorem}[section]
+\newtheorem{thm}{Theorem}[subsection]
 \newtheorem{lem}[thm]{Lemma}
 %\newtheorem{lemma}[thm]{Lemma}
 \newtheorem{prop}[thm]{Proposition}
@@ -143,6 +143,7 @@
   {\renewcommand\theinnercustomthm{#1}\innercustomthm}
   {\endinnercustomthm}
 
+\setcounter{tocdepth}{2}
 \theoremstyle{definition}
 %\newtheorem{example}[thm]{Example}
 %\newtheorem{lemma}[thm]{Lemma}
@@ -160,7 +161,7 @@
 
 \newcommand{\ilemph}[1]{\emph{#1}}
 
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{2}
 
 %\newcommand{\todo}[1]{\vspace{5mm}\par \noindent
 %\framebox{\begin{minipage}[c]{0.95 \textwidth} \tt #1\end{minipage}} \vspace{5mm} \par}
@@ -204,13 +205,11 @@
 \headabbrevauthor{L. Battistella and N. Nabijou}
 
 \address{%
-\affilnum{1}Max-Planck-Institut f\"ur Mathematik, Bonn \\
-\href{mailto:battistella@mpim-bonn.mpg.de}{battistella@mpim-bonn.mpg.de}
-\affilnum{2}School of Mathematics and Statistics, University of Glasgow \\
-\href{mailto:Navid.Nabijou@glasgow.ac.uk}{navid.nabijou@glasgow.ac.uk}\\}
+\affilnum{1}Max-Planck-Institut f\"ur Mathematik, Bonn\\
+\affilnum{2}School of Mathematics and Statistics, University of Glasgow}
 
 % Address / e-mail address of corresponding author
-\correspdetails{corr.email@math.edu}
+\correspdetails{navid.nabijou@glasgow.ac.uk}
 
 % Received/revised/accepted dates will be entered by the publisher during production of an accepted paper. Please do not edit these placeholders for submission.
 \received{1 Month 20XX}
@@ -218,11 +217,11 @@
 \accepted{21 Month 20XX}
 
 % Enter details of editor communicating this article
-\communicated{A. Editor}
+\communicated{C. De Concini}
 
 
 
-\begin{abstract}We construct and study the theory of relative quasimaps in genus zero, in the spirit of A. Gathmann. When $X$ is a smooth toric variety and $Y$ is a very ample hypersurface in $X$ we produce a virtual class on the moduli space of relative quasimaps to $(X,Y)$ which can be used to define relative quasimap invariants of the pair. We obtain a recursion formula which expresses each relative invariant in terms of invariants of lower tangency, and apply this formula to derive a quantum Lefschetz theorem for quasimaps, expressing the restricted quasimap invariants of $Y$ in terms of those of $X$. Finally, we show that the relative $I$-function of \cite{FanTsengYou} coincides with a natural generating function for  relative quasimap invariants, providing mirror-symmetric motivation for the theory.\end{abstract}
+\begin{abstract}We construct and study the theory of relative quasimaps in genus zero, in the spirit of A. Gathmann. When $X$ is a smooth toric variety and $Y$ is a smooth very ample hypersurface in $X$, we produce a virtual class on the moduli space of relative quasimaps to $(X,Y)$, which we use to define relative quasimap invariants of the pair. We obtain a recursion formula which expresses each relative invariant in terms of invariants of lower tangency, and apply this formula to derive a quantum Lefschetz theorem for quasimaps, expressing the restricted quasimap invariants of $Y$ in terms of those of $X$. Finally, we show that the relative $I$-function of Fan--Tseng--You coincides with a natural generating function for  relative quasimap invariants, providing mirror-symmetric motivation for the theory.\end{abstract}
 
 \maketitle
 %\appendixtitletocoff
@@ -236,7 +235,7 @@ A promising avenue for addressing these questions is to adapt ideas coming from 
 
 Recent work of Fan--Tseng--You \cite{FanTsengYou} uses the correspondence between relative invariants and the Gromov--Witten invariants of orbifolds \cite{AbramovichCadmanWise} in order to derive a mirror theorem for certain restricted generating functions of relative invariants.
 
-We propose a more direct approach to the problem. Our motivation comes from the theory of stable quasimaps: this theory dates back to Givental's earliest work on mirror symmetry \cite{Givental-mirror}, and has since been systematised and extended in order to prove a large class of mirror theroems in the absolute setting \cite{CF-K,CFKM, CF-K-wallcrossing,CF-K-MirrorSymmetry}. The belief is that a fully-fledged theory of \emph{relative} quasimaps should lead to an equally powerful collection of mirror theorems in the relative setting.
+We propose a more direct approach to the problem. Our motivation comes from the theory of stable quasimaps: this theory dates back to Givental's earliest work on mirror symmetry \cite{Givental-mirror}, and since then has been systematised and extended in order to prove a large class of mirror theorems in the absolute setting \cite{CF-K,CFKM, CF-K-wallcrossing,CF-K-MirrorSymmetry}. The belief is that a fully-fledged theory of \emph{relative} quasimaps should lead to an equally powerful collection of mirror theorems in the relative setting.
 
 \subsection{Results}
 In this paper, we realise this proposal in the context of genus-zero quasimaps relative to a hyperplane section.
@@ -247,8 +246,7 @@ These spaces are equipped with natural virtual fundamental classes, and hence ca
 
 \subsubsection{Application 1: wall-crossing} We then apply the recursion formula to relate our invariants to the relative $I$-function considered in \cite{FanTsengYou}. This demonstrates that the theory of relative quasimaps provides a natural framework for studying relative mirror symmetry.
 \begin{customthm}{A}[\textbf{Theorem \ref{wallcrossing thm}}]\label{thmA} The relative $I$-function coincides with the following natural generating function for relative quasimap invariants
-\begin{equation*}I^{X|Y}_\beta(z,0) = (\ev_1)_*\left( \frac{1}{z-\psi_1}\virt{\Q{0}{(Y\cdot\beta,0)}{X|Y}{\beta}}\right)\end{equation*}
-(see \S \ref{section wallcrossing} for details).
+\begin{equation*}I^{X|Y}_\beta(z,0) = (\ev_1)_*\left( \frac{1}{z-\psi_1}\virt{\Q{0}{(Y\cdot\beta,0)}{X|Y}{\beta}}\right).\end{equation*}
 \end{customthm}
 \subsubsection{Application 2: quasimap quantum Lefschetz} Besides the connections to relative Gromov--Witten theory, we may also apply the recursion formula to study absolute quasimap theory. By repeatedly decreasing the tangency orders, we obtain a quantum Lefschetz theorem for quasimap invariants, expressing the invariants of a hyperplane section $Y$ in terms of those of $X$. This takes two forms; first, we have a general result which holds without any special restrictions on the target geometry:
 \begin{customthm}{B}[\textbf{Theorem \ref{Theorem full quasimap Lefschetz}}] \label{thmB} Let $X$ be a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. Then there is an explicit algorithm to recover the (restricted) quasimap invariants of $Y$, as well as the relative invariants of $(X,Y)$, from the quasimap invariants of $X$.\end{customthm}
@@ -372,11 +370,11 @@ that $\underline{a}$ and $\underline{b}$ differ by an element $m$ of $M$. Thus t
 The upshot is that we obtain a line bundle $L_Y$ on $C$, which plays the role of the ``pull-back'' of $\OO_X(Y)$ along the ``map'' $C \to X$, and a global section
 \begin{equation*} u_Y \in \HH^0(C,L_Y) \end{equation*}
 which plays the role of the ``pull-back'' of $s_Y$. With this at hand, we are ready to give the main definition of this paper. We begin with the case $X=\PP^N$ and $Y=H=\{ z_0 = 0\}$ a co-ordinate hyperplane. In this situation, the discussion above simplifies significantly.
-\begin{definition} Fix a number $n\geq 2$ of marked points, a degree $d\geq 0$ and a vector $\alpha=(\alpha_1, \ldots, \alpha_n)\in\mathbb N^n$ of tangency orders such that $\Sigma_i \alpha_i \leq d$.
+\begin{dfn} Fix a number $n\geq 2$ of marked points, a degree $d\geq 0$ and a vector $\alpha=(\alpha_1, \ldots, \alpha_n)\in\mathbb N^n$ of tangency orders such that $\Sigma_i \alpha_i \leq d$.
  The space of \emph{relative stable quasimaps} $\Q{0}{\alpha}{\PP^N|H}{d}$ is the closure inside $\Q{0}{n}{\PP^N}{d}$ of the so-called \emph{nice locus}, consisting of quasimaps with smooth source curve
  \begin{equation*} \left( (\PP^1,x_1,\ldots,x_n),u_0,\ldots,u_N \right) \end{equation*}
 (each $u_i \in \HH^0(\PP^1,\OO_{\PP^1}(d)))$ such that $u_0 \neq 0$, $u_0^*(0)\geq\sum\alpha_ix_i$ and $(u_0,\ldots,u_N)$ do not vanish simultaneously on $\PP^1$ (i.e. there are no basepoints).
- \end{definition}
+ \end{dfn}
 \noindent In the above definition $u_0^*(0) := 0^!([\PP^1])\in\Achow_*(u_0^{-1}(0))$ is obtained via Fulton's refined Gysin map \cite[\S 2.6]{FUL} applied to the diagram:
 \bcd
 u_0^{-1}(0) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \PP^1 \ar[d,"u_0"] \\
@@ -386,14 +384,14 @@ u_0^{-1}(0) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \PP^1 \ar[d,"u_0"] \\
 In the general case, the complete linear system $|\OO_X(Y)|$ defines an embedding $i \colon X \hookrightarrow \PP^N$ such that $i^{-1}(H) = Y$ for some hyperplane $H$. By the functoriality property of quasimap spaces (see \cite[\S 3.1]{CF-K-wallcrossing}) we have a map
 \begin{equation*} k = \om{Q}(i) \colon \Q{0}{n}{X}{\beta} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
 where $d=i_*\beta$. %Because $\Q{0}{n}{\PP^N}{d}$ is smooth, $k$ admits a compatible perfect obstruction theory, so we have a notion of virtual pull-back along $k$.
-\begin{definition} As before, fix a number $n \geq 2$ of marked points, an effective curve class $\beta \in \HH_2^+(X)$ and a vector $\alpha=(\alpha_1,\ldots,\alpha_n)\in\mathbb N^n$ of tangency orders such that $\Sigma_i\alpha_i\leq Y\cdot\beta$. The \ilemph{space of relative stable quasimaps}
+\begin{dfn} As before, fix a number $n \geq 2$ of marked points, an effective curve class $\beta \in \HH_2^+(X)$ and a vector $\alpha=(\alpha_1,\ldots,\alpha_n)\in\mathbb N^n$ of tangency orders such that $\Sigma_i\alpha_i\leq Y\cdot\beta$. The \ilemph{space of relative stable quasimaps}
 \begin{equation*} \Q{0}{\alpha}{X|Y}{\beta} \subseteq \Q{0}{n}{X}{\beta} \end{equation*}
 is defined as the following fiber product:
 \bcd
 \Q{0}{\alpha}{X|Y}{\beta}\ar[d]\ar[r,hook]\ar[dr,phantom,"\Box"] & \Q{0}{n}{X}{\beta}\ar[d,"k"] \\
 \Q{0}{\alpha}{\PP^N|H}{d}\ar[r,hook] & \Q{0}{n}{\PP^N}{d}
 \ecd
-\end{definition}
+\end{dfn}
 
 \begin{remark}\label{Example of non-injectivity}
 I. Ciocan-Fontanine has kindly pointed out that, contrary to the case of stable maps, $k$ might not be a closed embedding, even though $i$ is. For instance, consider the Segre embedding
@@ -423,18 +421,18 @@ For simplicity we restrict ourselves to the case $\epsilon=0+$. However, all of 
 \end{remark}
 
 \subsection{Basic properties of the moduli space} \label{Subsection basic properties of the moduli space}
-\begin{lemma}
+\begin{lem}
  $\Q{0}{\alpha}{\PP^N|H}{d}$ is irreducible of codimension $\sum_i\alpha_i$ in $\Q{0}{n}{\PP^N}{d}$.
-\end{lemma}
+\end{lem}
 \begin{proof} Since $\Q{0}{\alpha}{\PP^N|H}{d}$ is defined as the closure of the nice locus, it is enough to show that the nice locus itself is irreducible of the correct dimension. The quasimaps which appear in the nice locus have no basepoints, and as such may be viewed simply as stable maps. This identifies the nice locus with a locally closed substack of $\M{0}{n}{\PP^N}{d}$, and then \cite[Lemma 1.8]{Ga} applies to show that this has the desired properties.\end{proof}
 
 Recall that there exists a comparison morphism
 \begin{equation*}\chi : \M{0}{n}{\PP^N}{d} \to \Q{0}{n}{\PP^N}{d} \end{equation*}
 which has the effect of contracting each rational tail and introducing a basepoint at the corresponding node, with multiplicity equal to the degree of the rational tail. (For more details, see \cite[Theorem 3]{MOP} and \cite[\S 4.3]{Manolache-Push}; earlier manifestations of these ideas can be found in \cite{Bertram} and \cite{Popa-Roth}.)
 
-\begin{lemma}\label{Comparison morphism birational}
+\begin{lem}\label{Comparison morphism birational}
  The comparison morphism $\chi$ restricts to a proper and birational morphism \[\chi_\alpha\colon \M{0}{\alpha}{\PP^N|H}{d}\to \Q{0}{\alpha}{\PP^N|H}{d}.\]
-\end{lemma}
+\end{lem}
 \begin{proof} Let $\chi_\alpha$ denote the restriction of $\chi$ to $\M{0}{\alpha}{\PP^N|H}{d}$. The fact that this factors through $\Q{0}{\alpha}{\PP^N|H}{d}$ can be deduced by applying $\chi_\alpha$ to a smoothing family of any relative stable map. Moreover $\chi_\alpha$ is an isomorphism over the nice locus, which is an open dense subset of both source and target. It follows that $\chi_\alpha$ is proper and birational (and hence also surjective).\end{proof}
 
 Since the moduli space of relative quasimaps is irreducible of the correct dimension, it has a fundamental class which we can use to define \emph{relative quasimap invariants} for the pair $(\PP^N,H)$:
@@ -454,8 +452,8 @@ It will be important for the statement of the recursion formula to provide a des
 \begin{equation*} \big((C,x_1,\ldots,x_n), (L_\rho,u_\rho)_{\rho \in \Sigma(1)}, (\varphi_m)_{m \in M}\big) \in \Q{0}{n}{X}{\beta}\end{equation*}
 be a quasimap to $X$. This belongs to the relative space $\Q{0}{\alpha}{X|Y}{\beta}\subseteq \Q{0}{n}{X}{\beta}$ if and only if, for every connected component $Z$ of $u_Y^{-1}(0) \subseteq C$, the following conditions hold:
 \begin{enumerate}
-\item if $Z$ consists of an isolated marked point $x_i$, then $u_Y^*(0)$ has order at least $\alpha_i$ at $x_i$;
-\item if $Z$ is a (possibly reducible) subcurve of $C$, and if we let $C^{(i)}$ for $1 \leq i \leq r$ denote the irreducible components of $C$ adjacent to $Z$, and $m^{(i)}$ the multiplicity of $u_Y|_{C^{(i)}}^*(0)$ at the unique node $Z \cap C^{(i)}$, then:
+\item[(i)] if $Z$ consists of an isolated marked point $x_i$, then $u_Y^*(0)$ has order at least $\alpha_i$ at $x_i$;
+\item[(ii)] if $Z$ is a (possibly reducible) subcurve of $C$, and if we let $C^{(i)}$ for $1 \leq i \leq r$ denote the irreducible components of $C$ adjacent to $Z$, and $m^{(i)}$ the multiplicity of $u_Y|_{C^{(i)}}^*(0)$ at the unique node $Z \cap C^{(i)}$, then:
 \begin{equation} \label{Relative quasimap internal component inequality} \deg(L_{Y}|_Z) + \sum_{i=1}^r m^{(i)} \geq \sum_{x_i \in Z} \alpha_i. \end{equation}
 \end{enumerate}
 \end{lem}
@@ -661,7 +659,7 @@ Here $\mathcal{D}(X)$ and $\mathcal{E}(X)$ are the so-called centipede loci; the
 \mathcal{E}(X)\ar[r] & \mathcal{E}(\PP^N)
 \ecd
 Since $\mathcal{E}(\PP^N)$ is smooth (being a product of spaces of quasimaps to $\PP^N$) and there is a natural fundamental class on $\mathcal{E}(\PP^N|H)$, we have a diagonal pull-back morphism $\theta^! = \theta_{\Delta}^!$ (see Appendix~\ref{appendix:intersection}). It follows immediately from the definitions that:
-\begin{lemma}\label{theta-pull} $\virt{\mathcal{E}(X|Y)}=\theta^!\virt{\mathcal{E}(X)}$ .\end{lemma}
+\begin{lem}\label{theta-pull} $\virt{\mathcal{E}(X|Y)}=\theta^!\virt{\mathcal{E}(X)}$ .\end{lem}
 
 Now consider the following cartesian diagram
 \bcd
@@ -712,9 +710,9 @@ The corresponding result in Gromov--Witten theory is due to Gathmann \cite[Corol
 
 We induct on: the intersection number $d=Y\cdot\beta$, the number of marked points $n$, and the total tangency $\Sigma_i \alpha_i$, in that order. This means that when we come to compute an absolute or relative invariant, we assume that all of the absolute \emph{and} relative invariants with
 \begin{enumerate}
-\item smaller $d$, or
-\item the same $d$, but smaller $n$, or
-\item the same $d$, the same $n$, but smaller $\Sigma_i \alpha_i$
+\item[(i)] smaller $d$, or
+\item[(ii)] the same $d$, but smaller $n$, or
+\item[(iii)] the same $d$, the same $n$, but smaller $\Sigma_i \alpha_i$
 \end{enumerate}
 are known. For the purposes of this ordering, we set $\Sigma_i \alpha_i = d+1$ for any absolute invariant of $Y$. This means that when we come to compute such an invariant, we assume that all the relative invariants with the same $d$ and $n$ are known.
 
@@ -765,8 +763,8 @@ Our formula can be viewed as a special case of \cite[Corollary 5.5.1]{CF-K-wallc
 \subsection{Setup} \label{Subsection setup}
 As before, we let $X=X_{\Sigma}$ be a smooth projective toric variety and $i \colon Y \hookrightarrow X$ a smooth very ample hypersurface. We also make the following two assumptions:
 \begin{enumerate}
-\item \emph{$Y$ is semi-positive}: $-K_Y$ is nef;
-\item \emph{$Y$ contains all curve classes}: the map $i_* : \Achow_1(Y) \to \Achow_1(X)$ is surjective.
+\item[(i)] \emph{$Y$ is semi-positive}: $-K_Y$ is nef;
+\item[(ii)] \emph{$Y$ contains all curve classes}: the map $i_* : \Achow_1(Y) \to \Achow_1(X)$ is surjective.
 \end{enumerate}
 By adjunction, $-K_X$ pairs strictly positively with every curve class coming from $Y$, hence with every curve class by Assumption (2). Thus $-K_X$ is ample by Kleiman's criterion (since the effective cone of a toric variety is finitely generated), so $X$ is Fano. Also note that if $\dim X \geq 3$ then Assumption (2) always holds, due to the classical Lefschetz hyperplane theorem; on the other hand if $\dim X = 2$ then Assumption (2) forces $X$ to be $\PP^2$.
 
@@ -787,7 +785,7 @@ where crucially $\ev_1$ is viewed as \emph{mapping to $X$} instead of to $Y$. Th
 
 Now, since $X$ and $Y$ are smooth, we may use Poincar\'{e} duality to define a push-forward map on cohomology, $i_* \colon \HH^k(Y) \to \HH^{k+2}(X)$.
 
-\begin{lemma} \label{lemma pushforward} $i_* S^Y_0(z,\beta) = \tilde{S}^Y_0(z,\beta)$. \end{lemma}
+\begin{lem} \label{lemma pushforward} $i_* S^Y_0(z,\beta) = \tilde{S}^Y_0(z,\beta)$. \end{lem}
 \begin{proof} This follows from functoriality of cohomological push-forwards and the fact that we have a commuting triangle:
 \bcd
 \Q{0}{2}{Y}{\beta} \ar[rr,"\ev_1"] \ar[rd,"\ev_1" left=0.2cm] & & Y \ar[ld,"i"] \\
@@ -942,16 +940,16 @@ Theorem \ref{Theorem Quantum Lefschetz} agrees with \cite[Theorem~1]{CZ-mirror} 
 \subsection{Comparison with the work of Ciocan-Fontanine and Kim} \label{Subsection CFK comparison}
 Here we briefly explain how to compare our Theorem \ref{Theorem Quantum Lefschetz} to a formula obtained by Ciocan-Fontanine and Kim. We assume that the reader is familiar with the paper \cite{CF-K-wallcrossing}, in particular \S4 and \S5 thereof. There they introduce (in the more general context of $\epsilon$-stable quasimaps) the following generating functions for quasimap invariants of $Y$:
 \begin{enumerate}
-\item The \emph{$J^{\epsilon}$-function}
+\item[(i)] The \emph{$J^{\epsilon}$-function}
 \begin{equation*} J^\epsilon({\bf t}, z)=\sum_{m\geq 0,\beta\geq 0} \dfrac{q^\beta}{m!} (\ev_\bullet)_*\left( \prod_{i=1}^m \ev_i^*({\bf t}) \cap\operatorname{Res}_{F_0} \virt{\QGe{0}{m}{Y}{\beta}} \right) \end{equation*}
 for $\mathbf{t} \in \HH^*(X)$. Here $\QGe{0}{m}{Y}{\beta}$ is the moduli space of $\epsilon$-stable quasimaps with a parametrised component \cite[\S 7.2]{CFKM}, $F_0$ is a certain fixed locus of the natural $\Gm$-action on this space, and $\ev_\bullet$ is the evaluation at the point $\infty \in \PP^1$ on the parametrised component. $\operatorname{Res}_{F_0}$ is the residue of the virtual class, i.e. the virtual class of the fixed locus divided by the Euler class of the virtual normal bundle (see \cite{GraberPandharipande} for details on virtual localisation). The variable $z$ is the $\Gm$-equivariant parameter.
-\item The \emph{$S^\epsilon$-operator}
+\item[(ii)] The \emph{$S^\epsilon$-operator}
 \begin{equation*}
  S^\epsilon(\mathbf{t},z)(\gamma)=\sum_{m\ge 0,\beta\ge 0}\frac{q^\beta}{m!} 
 (\ev_1)_*\left( \dfrac{\ev_2^*(\gamma) \cdot \prod_{j=3}^{2+m} \ev_j^*({\bf t})}{z-\psi_1} \cap\virt{\Qe{0}{2+m}{Y}{\beta}} \right)
 \end{equation*}
 where $\mathbf{t}, \gamma \in \HH^*(X)$ and $z$ is a formal variable.
-\item The \emph{$P^\epsilon$-series}
+\item[(iii)] The \emph{$P^\epsilon$-series}
 \begin{equation*}
  P^\epsilon({\bf t}, z)=\sum_{h=1}^k \rho^h \sum_{m\geq 0,\beta\geq 0} \frac{q^\beta }{m!} \left( \ev_1^*(\rho_h \boxtimes p_\infty) \cap \virt{\QGe{0}{1+m}{Y}{\beta}} \right) \end{equation*}
 where $\mathbf{t} \in \HH^*(X)$ and $z$ is the $\Gm$-equivariant parameter. Here we view $\ev_1$ as mapping to $Y \times \PP^1$, and $p_\infty\in \HH^*_{\Gm}(\PP^1)$ is the equivariant cohomology class defined by setting $p_{\infty}|_0 =0$ and $p_{\infty}|_{\infty}=-z$.
@@ -1031,14 +1029,14 @@ which proves \eqref{P epsilon equation}. We thus conclude that \eqref{Ciocan-Fon
 \subsection{Context}
 The classical mirror theorem, due to Givental, equates a certain generating function for Gromov--Witten invariants --- the $J$-\emph{function} --- with an explicit hypergeometric function --- the $I$-\emph{function} --- after a suitable change of variables called the mirror map \cite{Givental-mirror}. A fundamental insight is that the $I$-function may be interpreted as a generating function for \emph{quasimap invariants}. From this perspective, the mirror theorem breaks into two parts:
 \begin{enumerate}
-\item find an explicit formula for the quasimap generating function;
-\item prove a wall-crossing formula, relating the quasimap and Gromov--Witten generating functions via a change of variables.
+\item[(i)] find an explicit formula for the quasimap generating function;
+\item[(ii)] prove a wall-crossing formula, relating the quasimap and Gromov--Witten generating functions via a change of variables.
 \end{enumerate}
 This basic strategy was pursued, with great success, in a series of papers by Ciocan-Fontanine--Kim \cite{CFKBigI,CF-K-wallcrossing,CF-K-MirrorSymmetry}.
 
 Recently \cite{FanTsengYou} Fan--Tseng--You have used the correspondence between relative and orbifold Gromov--Witten invariants \cite{AbramovichCadmanWise} to obtain a version of the mirror theorem in the relative setting (without using quasimaps). They write down an explicit combinatorial formula for the relative $I$-function of a smooth pair $(X,Y)$, under the assumption that the pair is sufficiently semipositive and that the absolute $J$-function of $X$ is known. They then show \cite[Theorem 4.3]{FanTsengYou} that their relative $I$-function and the relative $J$-function coincide after a change of variables.
 
-In this final section, we will show that their relative $I$-fuction coincides with a natural generating function $I_\beta^{X|Y}(z,0)$ for relative quasimap invariants. This provides strong evidence for our main hypothesis, namely that relative quasimap invariants provide a means to generalise the mirror theorems of Givental and Ciocan-Fontanine--Kim to the relative setting. In ongoing work in progress, we follow up on this claim by developing a fully-fledged, general theory of logarithmic quasimaps, and proving reconstruction and wall-crossing formulas in this context.
+In this final section, we will show that their relative $I$-function coincides with a natural generating function $I_\beta^{X|Y}(z,0)$ for relative quasimap invariants. This provides strong evidence for our main hypothesis, namely that relative quasimap invariants provide a means to generalise the mirror theorems of Givental and Ciocan-Fontanine--Kim to the relative setting. In ongoing work in progress, we follow up on this claim by developing a fully-fledged, general theory of logarithmic quasimaps, and proving reconstruction and wall-crossing formulas in this context.
 
 \subsection{Comparison of relative $I$-functions} We begin by establishing notation. Fix as before a smooth very ample pair $(X,Y)$ and a curve class $\beta \in \HH_2^+(X)$, and let $e=Y\cdot \beta$. We define our relative $I$-function as the following formal power series in the cohomology of $Y$
 \begin{align*} I^{X|Y}_\beta(z,0) = S_{0,(e)}^{X|Y}(z,\beta) & = (\ev_1)_*\left( \frac{1}{z-\psi_1}\virt{\Q{0}{(e,0)}{X|Y}{\beta}}\right) \\
@@ -1093,7 +1091,7 @@ and every class $\alpha\in \Achow_*(F)$, we may define
 \]
 which we call the \emph{diagonal pull-back}. We first show that it coincides with the usual virtual pull-back along $f$ in the presence of a compatible perfect obstruction theory for $f$.
 
-\begin{lemma}\label{lem:diagonal_virtual_coincide}
+\begin{lem}\label{lem:diagonal_virtual_coincide}
 Assume that there exists a relative obstruction theory $\EE_f$ compatible with $\EE_{Y/\mathfrak M}$ and the standard (unobstructed) obstruction theory for $X$, i.e:
  \bcd
  f^* \LL_{X/\mathfrak M} \ar[r] \ar[d,"\operatorname{Id}"] & \EE_{Y/\mathfrak M} \ar[r] \ar[d] & \EE_f \ar[r,"{[1]}"] \ar[d] & \, \\
@@ -1103,7 +1101,7 @@ Assume that there exists a relative obstruction theory $\EE_f$ compatible with $
  \[
   f^!_{\operatorname{v}}(\alpha)=f^!_\Delta(\alpha).
  \]
-\end{lemma}
+\end{lem}
 \begin{proof}
 
 Consider the following cartesian diagram:
@@ -1123,7 +1121,7 @@ as required.
 
 Secondly, we show that the diagonal pull-back behaves similarly to an ordinary virtual pull-back (e.g. commutes with other virtual pull-backs) even in the absence of a compatible perfect obstruction theory.
 
-\begin{lemma} The diagonal pull-back morphism as defined above commutes with ordinary Gysin maps and with virtual pull-backs. \end{lemma}
+\begin{lem} The diagonal pull-back morphism as defined above commutes with ordinary Gysin maps and with virtual pull-backs. \end{lem}
 \begin{proof} First consider the case of ordinary Gysin maps. We must consider a cartesian diagram:
 \bcd
 Y^{\prime \prime} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & X^{\prime \prime} \ar[r] \ar[d] \ar[rd,phantom,"\square"] & S \ar[d,"k"] \\
