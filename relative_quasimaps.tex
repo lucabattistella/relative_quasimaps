@@ -223,9 +223,11 @@ These spaces are equipped with natural virtual fundamental classes, and hence ca
 
 \subsubsection{Application 1: wall-crossing} We then apply the recursion formula to relate our invariants to the relative $I$-function considered in \cite{FanTsengYou}. This demonstrates that the theory of relative quasimaps provides a natural framework for studying relative mirror symmetry.
 \begin{customthm}{A}[\textbf{Theorem \ref{wallcrossing thm}}]\label{thmA} The relative $I$-function coincides with the following natural generating function for relative quasimap invariants
-\begin{equation*}I^{X|Y}_\beta(z,0) = (\ev_1)_*\left( \frac{1}{z-\psi_1}\virt{\Q{0}{(Y\cdot\beta,0)}{X|Y}{\beta}}\right)\end{equation*}
-(see \S \ref{section wallcrossing} for details).
+\begin{equation*}I^{X|Y}_\beta(z,0) = (\ev_1)_*\left( \frac{1}{z-\psi_1}\virt{\Q{0}{(Y\cdot\beta,0)}{X|Y}{\beta}}\right).\end{equation*}
 \end{customthm}
+This theorem provides a geometric interpretation of the combinatorial factors appearing in \cite[Theorem 4.3]{FanTsengYou}: they are the first Chern classes of the tangency line bundles appearing in the recursion formula for relative quasimaps. The fact that no other terms enter into the recursion is due to the stronger stability condition enjoyed by the quasimap spaces.
+
+
 \subsubsection{Application 2: quasimap quantum Lefschetz} Besides the connections to relative Gromov--Witten theory, we may also apply the recursion formula to study absolute quasimap theory. By repeatedly decreasing the tangency orders, we obtain a quantum Lefschetz theorem for quasimap invariants, expressing the invariants of a hyperplane section $Y$ in terms of those of $X$. This takes two forms; first, we have a general result which holds without any special restrictions on the target geometry:
 \begin{customthm}{B}[\textbf{Theorem \ref{Theorem full quasimap Lefschetz}}] \label{thmB} Let $X$ be a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. Then there is an explicit algorithm to recover the (restricted) quasimap invariants of $Y$, as well as the relative invariants of $(X,Y)$, from the quasimap invariants of $X$.\end{customthm}
 
@@ -1014,7 +1016,7 @@ This basic strategy was pursued, with great success, in a series of papers by Ci
 
 Recently \cite{FanTsengYou} Fan--Tseng--You have used the correspondence between relative and orbifold Gromov--Witten invariants \cite{AbramovichCadmanWise} to obtain a version of the mirror theorem in the relative setting (without using quasimaps). They write down an explicit combinatorial formula for the relative $I$-function of a smooth pair $(X,Y)$, under the assumption that the pair is sufficiently semipositive and that the absolute $J$-function of $X$ is known. They then show \cite[Theorem 4.3]{FanTsengYou} that their relative $I$-function and the relative $J$-function coincide after a change of variables.
 
-In this final section, we will show that their relative $I$-fuction coincides with a natural generating function $I_\beta^{X|Y}(z,0)$ for relative quasimap invariants. This provides strong evidence for our main hypothesis, namely that relative quasimap invariants provide a means to generalise the mirror theorems of Givental and Ciocan-Fontanine--Kim to the relative setting. In ongoing work in progress, we follow up on this claim by developing a fully-fledged, general theory of logarithmic quasimaps, and proving reconstruction and wall-crossing formulas in this context.
+In this final section, we will show that their relative $I$-function coincides with a natural generating function $I_\beta^{X|Y}(z,0)$ for relative quasimap invariants. This provides strong evidence for our main hypothesis, namely that relative quasimap invariants provide a means to generalise the mirror theorems of Givental and Ciocan-Fontanine--Kim to the relative setting. In ongoing work in progress, we follow up on this claim by developing a fully-fledged, general theory of logarithmic quasimaps, and proving reconstruction and wall-crossing formulas in this context.
 
 \subsection{Comparison of relative $I$-functions} We begin by establishing notation. Fix as before a smooth very ample pair $(X,Y)$ and a curve class $\beta \in \HH_2^+(X)$, and let $e=Y\cdot \beta$. We define our relative $I$-function as the following formal power series in the cohomology of $Y$
 \begin{align*} I^{X|Y}_\beta(z,0) = S_{0,(e)}^{X|Y}(z,\beta) & = (\ev_1)_*\left( \frac{1}{z-\psi_1}\virt{\Q{0}{(e,0)}{X|Y}{\beta}}\right) \\
