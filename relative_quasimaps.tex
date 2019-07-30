@@ -1,6 +1,6 @@
-\documentclass[10pt]{amsart}
+\documentclass[times]{oupau}
 
-%3\usepackage[margin=1in]{geometry}
+%\usepackage[margin=1in]{geometry}
 
 \textwidth=125mm
 \textheight=185mm
@@ -144,11 +144,11 @@
   {\endinnercustomthm}
 
 \theoremstyle{definition}
-\newtheorem{example}[thm]{Example}
-\newtheorem{lemma}[thm]{Lemma}
+%\newtheorem{example}[thm]{Example}
+%\newtheorem{lemma}[thm]{Lemma}
 \newtheorem{ex}[thm]{Example}
 \newtheorem{dfn}[thm]{Definition}
-\newtheorem{definition}[thm]{Definition}
+%\newtheorem{definition}[thm]{Definition}
 \newtheorem{aside}[thm]{Aside}
 \newtheorem{remark}[thm]{Remark}
 \newtheorem{com}[thm]{Comment}
@@ -187,22 +187,46 @@
 
 
 
-\blfootnote{
-\emph{Acknowledgements:} We thank Tom Coates, Cristina Manolache and Dhruv Ranganathan for helpful advice concerning both exposition and subject matter. We are especially grateful to Ionu\c{t} Ciocan-Fontanine for thoroughly examining a preliminary version of this manuscript and providing several clarifications and corrections. We would also like to thank Fabio Bernasconi, Andrea Petracci and Richard Thomas for useful conversations. 
 
-This work was supported by EPSRC, the Royal Society and the London School of Geometry and Number Theory.}
+% Enter full title and short title for running headers
+\title{Relative quasimaps and mirror formulae}
+\shorttitle{Relative quasimaps and mirror formulae}
 
-\title{Relative quasimaps and mirror theorems}
+% Enter the publication year and the ID number of the paper
+\volumeyear{}
+\paperID{}
 
-\author{Luca Battistella and Navid Nabijou}
+% Author name(s)
+\author{Luca Battistella\affil{1} and Navid Nabijou\affil{2}}
+% Abbreviated author name for running headers
+\abbrevauthor{L. Battistella and N. Nabijou}
+% Abbreviated author name for first page header
+\headabbrevauthor{L. Battistella and N. Nabijou}
 
-\date{}
+\address{%
+\affilnum{1}Max-Planck-Institut f\"ur Mathematik, Bonn \\
+\href{mailto:battistella@mpim-bonn.mpg.de}{battistella@mpim-bonn.mpg.de}
+\affilnum{2}School of Mathematics and Statistics, University of Glasgow \\
+\href{mailto:Navid.Nabijou@glasgow.ac.uk}{navid.nabijou@glasgow.ac.uk}\\}
 
-\maketitle
+% Address / e-mail address of corresponding author
+\correspdetails{corr.email@math.edu}
+
+% Received/revised/accepted dates will be entered by the publisher during production of an accepted paper. Please do not edit these placeholders for submission.
+\received{1 Month 20XX}
+\revised{11 Month 20XX}
+\accepted{21 Month 20XX}
+
+% Enter details of editor communicating this article
+\communicated{A. Editor}
+
+
 
 \begin{abstract}We construct and study the theory of relative quasimaps in genus zero, in the spirit of A. Gathmann. When $X$ is a smooth toric variety and $Y$ is a very ample hypersurface in $X$ we produce a virtual class on the moduli space of relative quasimaps to $(X,Y)$ which can be used to define relative quasimap invariants of the pair. We obtain a recursion formula which expresses each relative invariant in terms of invariants of lower tangency, and apply this formula to derive a quantum Lefschetz theorem for quasimaps, expressing the restricted quasimap invariants of $Y$ in terms of those of $X$. Finally, we show that the relative $I$-function of \cite{FanTsengYou} coincides with a natural generating function for  relative quasimap invariants, providing mirror-symmetric motivation for the theory.\end{abstract}
+
+\maketitle
 %\appendixtitletocoff
-\tableofcontents
+%\tableofcontents
 
 
 \section{Introduction}
@@ -1047,6 +1071,10 @@ and the claim follows.\end{proof}
 \begin{remark} This result is unnecessarily restrictive, and is best thought of as a proof-of-concept. For one, it establishes wall-crossing only in the $t=0$ case (i.e. we only consider generating functions for two-pointed invariants with a fundamental class insertion). More importantly, the proof is not geometric; it \emph{uses} the relative mirror theorem \cite[Theorem 4.3]{FanTsengYou}, rather than providing a new proof of this result. We plan to correct both these defects, and more, in our upcoming work on logarithmic quasimap theory.
 \end{remark}
 
+\acks
+We thank Tom Coates, Cristina Manolache and Dhruv Ranganathan for helpful advice concerning both exposition and subject matter. We are especially grateful to Ionu\c{t} Ciocan-Fontanine for thoroughly examining a preliminary version of this manuscript and providing several clarifications and corrections. We would also like to thank Fabio Bernasconi, Andrea Petracci and Richard Thomas for useful conversations. 
+
+This work was supported by EPSRC, the Royal Society and the London School of Geometry and Number Theory.
 
 \appendix
 
@@ -1116,14 +1144,5 @@ and apply commutativity of usual Gysin morphisms. In the case where $k$ is not a
 
 \bibliographystyle{alpha}
 \bibliography{relqm}
-
-\medskip
-\noindent Luca Battistella\\
-Max-Planck-Institut f\"ur Mathematik, Bonn \\
-\href{mailto:battistella@mpim-bonn.mpg.de}{battistella@mpim-bonn.mpg.de}\\
-
-\noindent Navid Nabijou \\
-School of Mathematics and Statistics, University of Glasgow \\
-\href{mailto:Navid.Nabijou@glasgow.ac.uk}{navid.nabijou@glasgow.ac.uk}\\
 
 \end{document}
