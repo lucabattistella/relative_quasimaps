@@ -1,10 +1,10 @@
 \documentclass[10pt]{amsart}
 
-%3\usepackage[margin=1in]{geometry}
+\usepackage[marginratio=1:1]{geometry}
 
-\textwidth=125mm
-\textheight=185mm
-\parindent=8mm
+%\textwidth=150mm
+%\textheight=185mm
+%\parindent=8mm
 %\evensidemargin=0pt
 %\oddsidemargin=0pt
 %\frenchspacing
@@ -185,14 +185,7 @@
 
 \begin{document}
 
-
-
-\blfootnote{
-\emph{Acknowledgements:} We thank Tom Coates, Cristina Manolache and Dhruv Ranganathan for helpful advice concerning both exposition and subject matter. We are especially grateful to Ionu\c{t} Ciocan-Fontanine for thoroughly examining a preliminary version of this manuscript and providing several clarifications and corrections. We would also like to thank Fabio Bernasconi, Andrea Petracci and Richard Thomas for useful conversations. 
-
-This work was supported by EPSRC, the Royal Society and the London School of Geometry and Number Theory.}
-
-\title{Relative quasimaps and mirror theorems}
+\title{Relative quasimaps and mirror formulae}
 
 \author{Luca Battistella and Navid Nabijou}
 
@@ -212,7 +205,7 @@ A promising avenue for addressing these questions is to adapt ideas coming from 
 
 Recent work of Fan--Tseng--You \cite{FanTsengYou} uses the correspondence between relative invariants and the Gromov--Witten invariants of orbifolds \cite{AbramovichCadmanWise} in order to derive a mirror theorem for certain restricted generating functions of relative invariants.
 
-We propose a more direct approach to the problem. Our motivation comes from the theory of stable quasimaps: this theory dates back to Givental's earliest work on mirror symmetry \cite{Givental-mirror}, and has since been systematised and extended in order to prove a large class of mirror theroems in the absolute setting \cite{CF-K,CFKM, CF-K-wallcrossing,CF-K-MirrorSymmetry}. The belief is that a fully-fledged theory of \emph{relative} quasimaps should lead to an equally powerful collection of mirror theorems in the relative setting.
+We propose a more direct approach to the problem. Our motivation comes from the theory of stable quasimaps: this theory dates back to Givental's earliest work on mirror symmetry \cite{Givental-mirror}, and has since been systematised and extended in order to prove a large class of mirror theorems in the absolute setting \cite{CF-K,CFKM, CF-K-wallcrossing,CF-K-MirrorSymmetry}. The belief is that a fully-fledged theory of \emph{relative} quasimaps should lead to an equally powerful collection of mirror theorems in the relative setting.
 
 \subsection{Results}
 In this paper, we realise this proposal in the context of genus-zero quasimaps relative to a hyperplane section.
@@ -281,10 +274,12 @@ In Appendix~\ref{appendix:intersection} we define the \emph{diagonal pull-back} 
 \subsection{Future directions}
 We expect Theorem \ref{thmA} to extend to general simple normal crossings divisors and arbitrary genus. To this end, we are currently in the process of developing and applying a fully-fledged theory of \emph{logarithmic quasimaps}, taking inspiration from the theory of logarithmic stable maps \cite{GrossSiebertLog,ChenLog,AbramovichChenLog}. In this context, the ``relative mirror theorem'' will take the form of a wall-crossing formula between logarithmic quasimap and Gromov--Witten invariants, together with closed-form expressions for the quasimap generating functions.
 
+\subsection*{Acknowledgements} We thank Tom Coates, Cristina Manolache and Dhruv Ranganathan for helpful advice concerning both exposition and subject matter. We are especially grateful to Ionu\c{t} Ciocan-Fontanine for thoroughly examining a preliminary version of this manuscript and providing several clarifications and corrections. We would also like to thank Fabio Bernasconi, Andrea Petracci and Richard Thomas for useful conversations. This work was supported by EPSRC, the Royal Society and the London School of Geometry and Number Theory.
+
 \subsection{Table of notation} We will use the following notation, most of which is introduced in the main body of the paper.\medskip
 
 \tabulinesep=^0.4mm_0.4mm
-\begin{tabu}{r c c p{0.8\linewidth}}
+\begin{longtabu}{r c c p{0.8\linewidth}}
 $X$ & & & a smooth projective toric variety \\
 $Y$ & & & a smooth very ample hypersurface in $X$ \\
 $\Sigma$, $\Sigma(1)$ & & & the fan of $X$, and the set of $1$-dimensional cones of $\Sigma$ \\
@@ -307,7 +302,8 @@ $\chi$ & & & the comparison morphism from stable maps to quasimaps; see \S \ref{
 %$f^!$ & & & Gysin morphism for $f$ a regular embedding \\
 $f^!_{\text{v}}$ & & & virtual pull-back for $f$ virtually smooth; see Appendix \ref{appendix:intersection} \\
 $f^!_{\Delta}$ & & & diagonal pull-back; see Appendix \ref{appendix:intersection}
-\end{tabu}
+\end{longtabu}
+
 \section{Relative stable quasimaps} \label{Section relative stable quasimaps}
 We begin with a brief recollection of the theories of stable quasimaps and relative stable maps, thus putting our work in its proper context.
 \subsection{Stable quasimaps}\label{subsection quasimaps}
@@ -328,7 +324,7 @@ In general, however, the invariants differ, the difference being encoded by cert
 Let $Y$ be a smooth very ample hypersurface in a smooth projective variety $X$. In \cite{Ga} A. Gathmann constructs a space of relative stable maps to the pair $(X,Y)$ as a closed substack of the moduli space of (absolute) stable maps to $X$:
 %\begin{equation*} \M{0}{\alpha}{X|Y}{\beta} \hookrightarrow \M{0}{n}{X}{\beta}\end{equation*}
 The relative space parametrises stable maps with prescribed tangencies to $Y$ at the marked points.  Unfortunately this space does not admit a natural perfect obstruction theory. Nevertheless, because $Y$ is very ample it is still possible to construct a virtual fundamental class by intersection-theoretic methods, and hence one can define relative stable map invariants.
-Gathmann establishes a recursion formula for these virtual classes which allows one to express any relative invariant of $(X,Y)$ in terms of absolute invariants of $Y$ and relative invariants with lower contact multiplicities. By successively increasing the contact multiplicites from zero to the maximum possible value, this gives an algorithm expressing the (restricted) invariants of $Y$ in terms of those of $X$: see \cite[Corollary 5.7]{Ga}. In \cite{Ga-MF} this result is applied to give an alternative proof of the mirror theorem for projective hypersurfaces \cite{Givental-equivariantGW} \cite{LLY1}.
+Gathmann establishes a recursion formula for these virtual classes which allows one to express any relative invariant of $(X,Y)$ in terms of absolute invariants of $Y$ and relative invariants with lower contact multiplicities. By successively increasing the contact multiplicities from zero to the maximum possible value, this gives an algorithm expressing the (restricted) invariants of $Y$ in terms of those of $X$: see \cite[Corollary 5.7]{Ga}. In \cite{Ga-MF} this result is applied to give an alternative proof of the mirror theorem for projective hypersurfaces \cite{Givental-equivariantGW} \cite{LLY1}.
 
 \subsection{Definition of relative stable quasimaps} \label{Subsection relative stable quasimaps}
 
@@ -366,7 +362,7 @@ In the general case, the complete linear system $|\OO_X(Y)|$ defines an embeddin
 where $d=i_*\beta$. %Because $\Q{0}{n}{\PP^N}{d}$ is smooth, $k$ admits a compatible perfect obstruction theory, so we have a notion of virtual pull-back along $k$.
 \begin{definition} As before, fix a number $n \geq 2$ of marked points, an effective curve class $\beta \in \HH_2^+(X)$ and a vector $\alpha=(\alpha_1,\ldots,\alpha_n)\in\mathbb N^n$ of tangency orders such that $\Sigma_i\alpha_i\leq Y\cdot\beta$. The \ilemph{space of relative stable quasimaps}
 \begin{equation*} \Q{0}{\alpha}{X|Y}{\beta} \subseteq \Q{0}{n}{X}{\beta} \end{equation*}
-is defined as the following fiber product:
+is defined as the following fibre product:
 \bcd
 \Q{0}{\alpha}{X|Y}{\beta}\ar[d]\ar[r,hook]\ar[dr,phantom,"\Box"] & \Q{0}{n}{X}{\beta}\ar[d,"k"] \\
 \Q{0}{\alpha}{\PP^N|H}{d}\ar[r,hook] & \Q{0}{n}{\PP^N}{d}
@@ -392,7 +388,7 @@ then these two quasimaps are non-isomorphic, but they both map to the same objec
 Notice that this only happens on the locus of quasimaps with basepoints.
 \end{remark}
 
-\begin{remark} The above disussion also makes sense for $\epsilon$-stable quasimaps where $\epsilon > 0$ is an arbitrary rational number. We therefore have a notion of \emph{$\epsilon$-stable relative quasimap}. For $\epsilon=0+$ we recover relative quasimaps as above, whereas for $\epsilon>1$ we recover relative stable maps in the sense of Gathmann.
+\begin{remark} The above discussion also makes sense for $\epsilon$-stable quasimaps where $\epsilon > 0$ is an arbitrary rational number. We therefore have a notion of \emph{$\epsilon$-stable relative quasimap}. For $\epsilon=0+$ we recover relative quasimaps as above, whereas for $\epsilon>1$ we recover relative stable maps in the sense of Gathmann.
 
 For simplicity we restrict ourselves to the case $\epsilon=0+$. However, all of the arguments can be adapted to the general case. As $\epsilon$ increases, the recursion formula (see \S \ref{Section recursion formula in general case}) becomes progressively more complicated due to the presence of rational tails of lower and lower degree. Consequently the quantum Lefschetz theorem (see \S \ref{Section quasimap mirror theorem}) also becomes more complicated.
 \end{remark}
@@ -484,7 +480,7 @@ Define the \ilemph{quasimap comb locus} $\mathcal{D}^\mathcal{Q}_{\alpha,k}(\PP^
 \begin{equation*}
 \mathcal{D}^{\mathcal{Q}}(\PP^N|H,A,B,M) := \Q{0}{A^{(0)} \cup \{q_1^0,\ldots,q_r^0\}}{H}{d_0}\times_{H^r}\prod_{i=1}^r \Q{0}{\alpha^{(i)}\cup (m^{(i)})}{\PP^N|H}{d_i}
 \end{equation*}
-where the union runs over all splittings $A =(A^{(0)},\ldots,A^{(r)})$ of the markings (inducing a splitting $(\alpha^{(0)}, \ldots, \alpha^{(r)})$ of the corresponding tangency conditions), $B = (d_0, \ldots, d_r)$ of the degree and all valid multiplicites $M = (m^{(1)}, \ldots, m^{(r)})$ such that the above spaces are all well-defined (in particular we require that $|A^{(0)}|+r$ and $|A^{(i)}|+1$ are all $\geq 2$) and such that
+where the union runs over all splittings $A =(A^{(0)},\ldots,A^{(r)})$ of the markings (inducing a splitting $(\alpha^{(0)}, \ldots, \alpha^{(r)})$ of the corresponding tangency conditions), $B = (d_0, \ldots, d_r)$ of the degree and all valid multiplicities $M = (m^{(1)}, \ldots, m^{(r)})$ such that the above spaces are all well-defined (in particular we require that $|A^{(0)}|+r$ and $|A^{(i)}|+1$ are all $\geq 2$) and such that
 
 \[
 d_0+\sum_{i=1}^r m^{(i)}=\sum \alpha^{(0)}
@@ -497,7 +493,7 @@ Then
 \]
 \end{prop}
 \begin{proof}
-This follows from \cite[Thm. 2.6]{Ga} by pushing forward along $\chi$, using the projection fomula and Lemmas \ref{Comparison morphism birational}, \ref{lem:posdimfiber} and \ref{lem:compare_psi} .
+This follows from \cite[Thm. 2.6]{Ga} by pushing forward along $\chi$, using the projection formula and Lemmas \ref{Comparison morphism birational}, \ref{lem:posdimfiber} and \ref{lem:compare_psi} .
 \end{proof}
 
 \begin{remark} \label{Remark on definition of comb locus} In the discussion above we have implicitly used the fact that there exists a commuting diagram of comb loci:
@@ -751,7 +747,7 @@ By adjunction, $-K_X$ pairs strictly positively with every curve class coming fr
 We fix a homogeneous basis $\eta_0, \ldots, \eta_k$ for $\HH^*(X) = \HH^*(X,\QQ)$ and let $\eta^0, \ldots, \eta^k$ denote the dual basis with respect to the Poincar\'e pairing. Without loss of generality we may suppose that $\eta^0=\mathbbm 1_X$ and $\eta^1=[Y]$. We get an induced basis $\rho_1=i^*\eta_1, \ldots, \rho_k = i^* \eta_k$ for $i^*\HH^*(X)$. Notice that $\rho_0 = i^* \eta_0 = i^* [\pt_X] = 0$, $\rho_1 = i^* \eta_1 = [\pt_Y]$.  We can extend the $\rho_i$ to a basis $\rho_1, \ldots, \rho_l$ for $\HH^*(Y)$ by adding $\rho_{k+1}\ldots,\rho_{l}$. Let $\rho^1, \ldots, \rho^l$ denote the dual basis; notice that $\rho^i$ is \emph{not} equal to $i^* \eta^i$ (they do not even have the same degree!).  Note also that $\rho^1 = \mathbbm{1}_Y$.
 
 \subsection{Generating functions for quasimap invariants}
-As with many results in enumerative geometry, the quasimap Lefchetz formula is most conveniently stated in terms of generating functions. Here we define several such generating functions for the absolute quasimap invariants of $X$ and $Y$.  We work with two marked points since this is the minimum number required in order for the quasimap space to be nonempty. However since we only take insertions at the first marking we would like to think of these, morally speaking, as $1$-pointed invariants (in Gromov--Witten theory the corresponding statement is literally true, due to the string equation).
+As with many results in enumerative geometry, the quasimap Lefschetz formula is most conveniently stated in terms of generating functions. Here we define several such generating functions for the absolute quasimap invariants of $X$ and $Y$.  We work with two marked points since this is the minimum number required in order for the quasimap space to be nonempty. However since we only take insertions at the first marking we would like to think of these, morally speaking, as $1$-pointed invariants (in Gromov--Witten theory the corresponding statement is literally true, due to the string equation).
 
 For any smooth projective toric variety $X$ (or more generally, any space for which the quasimap invariants are defined), and any effective curve class $\beta\in \HH_2^+(X)$, we define
 \begin{align*} S_0^X(z,\beta) & =(\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{X}{\beta}}\right) 
@@ -1114,7 +1110,6 @@ X \ar[r,"\Delta_X"] & X\times X &
 \ecd
 and apply commutativity of usual Gysin morphisms. In the case where $k$ is not a regular embedding but rather is equipped with a relative perfect obstruction theory, the same argument works with $k^!$ replaced by $k_{\text{v}}^!$.
 \end{proof}
-
 
 \bibliographystyle{alpha}
 \bibliography{relqm}
