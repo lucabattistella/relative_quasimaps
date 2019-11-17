@@ -1,4 +1,6 @@
-\documentclass[times,doublespace]{oupau}
+\documentclass[times]{oupau}
+
+%\documentclass[times,doublespace]{oupau}
 
 %\usepackage[margin=1in]{geometry}
 
@@ -333,7 +335,7 @@ $f^!_{\Delta}$ & & & diagonal pull-back; see Appendix \ref{appendix:intersection
 \section{Relative stable quasimaps} \label{Section relative stable quasimaps}
 We begin with a brief recollection of the theories of stable quasimaps and relative stable maps, thus putting our work in its proper context.
 \subsection{Stable quasimaps}\label{subsection quasimaps}
-The moduli space of \ilemph{stable toric quasimaps} $\Q{g}{n}{X}{\beta}$ was constructed by I. Ciocan-Fontanine and B. Kim \cite{CF-K} as a compactification of the moduli space of smooth curves in a smooth and complete toric variety $X$. Roughly speaking, the objects are rational maps $C \dashrightarrow X$ where $C$ is a nodal curve, subject to a stability condition; the precise definition depends on the description of $X$ as a GIT quotient.  The space $\Q{g}{n}{X}{\beta}$ is a proper Deligne--Mumford stack of finite type.  It admits a virtual fundamental class, which is used to define curve-counting invariants for $X$ called \ilemph{quasimap invariants}.
+The moduli space of \ilemph{stable toric quasimaps} $\Q{g}{n}{X}{\beta}$ was constructed by I. Ciocan-Fontanine and B. Kim \cite{CF-K} as a compactification of the moduli space of smooth curves in a smooth and complete toric variety $X$. Roughly speaking, the objects are rational maps $C \dashrightarrow X$ where $C$ is a nodal curve, subject to a stability condition. The precise definition depends on the description of $X$ as a GIT quotient; see \cite[Definition~3.1.1]{CF-K} and \cite[Definition~3.1.1]{CFKM}.  The space $\Q{g}{n}{X}{\beta}$ is a proper Deligne--Mumford stack of finite type.  It admits a virtual fundamental class, which is used to define curve-counting invariants for $X$ called \ilemph{quasimap invariants}.
 
 This theory agrees with that of stable quotients \cite{MOP} when both are defined, namely when $X$ is a projective space.  There is a common generalisation given by the theory of stable quasimaps to GIT quotients \cite{CFKM}. For simplicity, we will work mostly in the toric setting; however, this restriction is not essential for our arguments. Thus in this paper when we say ``quasimaps'' we are implicitly talking about toric quasimaps.
 Quasimap invariants provide an alternative system of curve counts to the more well-known Gromov--Witten invariants. These latter invariants are defined via moduli spaces of stable maps, and as such we will often refer to them as \emph{stable map invariants}.
@@ -354,7 +356,7 @@ Gathmann establishes a recursion formula for these virtual classes which allows 
 
 \subsection{Definition of relative stable quasimaps} \label{Subsection relative stable quasimaps}
 
-For the rest of the paper, $X$ will denote a smooth projective toric variety and $Y \subseteq X$ a very ample hypersurface. We \emph{do not} require that $Y$ is toric.
+For the rest of the paper, $X$ will denote a smooth projective toric variety and $Y \subseteq X$ a smooth very ample hypersurface. We \emph{do not} require that $Y$ is toric.
 Consider the line bundle $\OO_X(Y)$ and the section $s_Y$ cutting out $Y$. By \cite{CoxRing} we have a natural isomorphism of $\CC$-vector spaces
 \begin{equation*} \HH^0(X,\OO_X(Y)) = \left\langle \prod_{\rho} z_\rho^{a_\rho} : \Sigma_\rho a_\rho [D_\rho] = [Y] \right\rangle_{\CC} \end{equation*}
 where the $z_\rho$ for $\rho \in \Sigma(1)$ are the generators of the Cox ring of $X$ and the $a_\rho$ are non-negative integers. We can therefore write $s_Y$ as
@@ -374,9 +376,13 @@ The upshot is that we obtain a line bundle $L_Y$ on $C$, which plays the role of
 which plays the role of the ``pull-back'' of $s_Y$. With this at hand, we are ready to give the main definition of this paper. We begin with the case $X=\PP^N$ and $Y=H=\{ z_0 = 0\}$ a co-ordinate hyperplane. In this situation, the discussion above simplifies significantly.
 \begin{dfn} Fix a number $n\geq 2$ of marked points, a degree $d\geq 0$ and a vector $\alpha=(\alpha_1, \ldots, \alpha_n)\in\mathbb N^n$ of tangency orders such that $\Sigma_i \alpha_i \leq d$.
  The space of \emph{relative stable quasimaps} $\Q{0}{\alpha}{\PP^N|H}{d}$ is the closure inside $\Q{0}{n}{\PP^N}{d}$ of the so-called \emph{nice locus}, consisting of quasimaps with smooth source curve
- \begin{equation*} \left( (\PP^1,x_1,\ldots,x_n),u_0,\ldots,u_N \right) \end{equation*}
-(each $u_i \in \HH^0(\PP^1,\OO_{\PP^1}(d)))$ such that $u_0 \neq 0$, $u_0^*(0)\geq\sum\alpha_ix_i$ and $(u_0,\ldots,u_N)$ do not vanish simultaneously on $\PP^1$ (i.e. there are no basepoints).
- \end{dfn}
+ \begin{equation*} \left( (\PP^1,x_1,\ldots,x_n),u_0,\ldots,u_N \right), \qquad u_i \in \HH^0(\PP^1,\OO_{\PP^1}(d))\end{equation*}
+ such that:
+ \begin{enumerate}
+ 	\item $u_0 \not\equiv 0$;
+ 	\item the relation $u_0^*(0)\geq\sum_i \alpha_ix_i$ holds in $\Achow_*(u_0^{-1}(0))$;
+ 	\item the sections $(u_0,\ldots,u_N)$ do not vanish simultaneously on $\PP^1$ (that is, there are no basepoints).
+ \end{enumerate} \end{dfn}
 \noindent In the above definition $u_0^*(0) := 0^!([\PP^1])\in\Achow_*(u_0^{-1}(0))$ is obtained via Fulton's refined Gysin map \cite[\S 2.6]{FUL} applied to the diagram:
 \bcd
 u_0^{-1}(0) \ar[r] \ar[d] \ar[rd,phantom,"\square"] & \PP^1 \ar[d,"u_0"] \\
@@ -776,10 +782,10 @@ We fix a homogeneous basis $\eta_0, \ldots, \eta_k$ for $\HH^*(X) = \HH^*(X,\QQ)
 As with many results in enumerative geometry, the quasimap Lefschetz formula is most conveniently stated in terms of generating functions. Here we define several such generating functions for the absolute quasimap invariants of $X$ and $Y$.  We work with two marked points since this is the minimum number required in order for the quasimap space to be nonempty. However since we only take insertions at the first marking we would like to think of these, morally speaking, as $1$-pointed invariants (in Gromov--Witten theory the corresponding statement is literally true, due to the string equation).
 
 For any smooth projective toric variety $X$ (or more generally, any space for which the quasimap invariants are defined), and any effective curve class $\beta\in \HH_2^+(X)$, we define
-\begin{align*} S_0^X(z,\beta) & =(\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{X}{\beta}}\right) 
+\begin{align*} \mathfrak{S}^X_\beta(z) & =(\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{X}{\beta}}\right) 
 \intertext{and}
-S_0^X(z,q) &=\sum_{\beta\geq 0} q^\beta S_0^X(z,\beta)\end{align*}
-where by convention $S_0^X(z,0)= \mathbbm 1_X$, and $q$ is a Novikov variable. These are generating functions for quasimap invariants of $X$ which take values in $\HH^*(X)$.
+S_0^X(z,q) &=\sum_{\beta\geq 0} q^\beta \mathfrak{S}^X_\beta(z)\end{align*}
+where by convention $\mathfrak{S}_0^X(z) = \mathbbm 1_X$, and $q$ is a Novikov variable. These are generating functions for quasimap invariants of $X$ which take values in $\HH^*(X)$. The notation $S_0^X(z,q)$ is due to the fact that this is the $t=0$ restriction of the $S^{\small{0+}}$-operator; see \S \ref{Subsection CFK comparison} below.
 
 The same definition applies to $Y$. However, as noted in \S \ref{Subsection general quasimap Lefschetz}, quantum Lefschetz theorems only work if we study \emph{restricted quasimap invariants}. The generating function for these is defined as
 \begin{equation*} \tilde{S}^Y_0(z,\beta) = (\ev_1)_* \left( \dfrac{1}{z-\psi_1} \virt{\Q{0}{2}{Y}{\beta}} \right) \end{equation*}
