@@ -11,6 +11,8 @@
 %\oddsidemargin=0pt
 %\frenchspacing
     
+\usepackage{mathrsfs}
+    
 \usepackage{appendix}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -782,10 +784,10 @@ We fix a homogeneous basis $\eta_0, \ldots, \eta_k$ for $\HH^*(X) = \HH^*(X,\QQ)
 As with many results in enumerative geometry, the quasimap Lefschetz formula is most conveniently stated in terms of generating functions. Here we define several such generating functions for the absolute quasimap invariants of $X$ and $Y$.  We work with two marked points since this is the minimum number required in order for the quasimap space to be nonempty. However since we only take insertions at the first marking we would like to think of these, morally speaking, as $1$-pointed invariants (in Gromov--Witten theory the corresponding statement is literally true, due to the string equation).
 
 For any smooth projective toric variety $X$ (or more generally, any space for which the quasimap invariants are defined), and any effective curve class $\beta\in \HH_2^+(X)$, we define
-\begin{align*} \mathfrak{S}^X_\beta(z) & =(\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{X}{\beta}}\right) 
+\begin{align*} \mathscr{S}^X_\beta(z) & =(\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{X}{\beta}}\right) 
 \intertext{and}
-S_0^X(z,q) &=\sum_{\beta\geq 0} q^\beta \mathfrak{S}^X_\beta(z)\end{align*}
-where by convention $\mathfrak{S}_0^X(z) = \mathbbm 1_X$, and $q$ is a Novikov variable. These are generating functions for quasimap invariants of $X$ which take values in $\HH^*(X)$. The notation $S_0^X(z,q)$ is due to the fact that this is the $t=0$ restriction of the $S^{\small{0+}}$-operator; see \S \ref{Subsection CFK comparison} below.
+S_0^X(z,q) &=\sum_{\beta\geq 0} q^\beta \mathscr{S}^X_\beta(z)\end{align*}
+where by convention $\mathscr{S}_0^X(z) = \mathbbm 1_X$, and $q$ is a Novikov variable. These are generating functions for quasimap invariants of $X$ which take values in $\HH^*(X)$. The notation $S_0^X(z,q)$ is due to the fact that this is the $t=0$ restriction of the $S^{\small{0+}}$-operator; see \S \ref{Subsection CFK comparison} below.
 
 The same definition applies to $Y$. However, as noted in \S \ref{Subsection general quasimap Lefschetz}, quantum Lefschetz theorems only work if we study \emph{restricted quasimap invariants}. The generating function for these is defined as
 \begin{equation*} \tilde{S}^Y_0(z,\beta) = (\ev_1)_* \left( \dfrac{1}{z-\psi_1} \virt{\Q{0}{2}{Y}{\beta}} \right) \end{equation*}
