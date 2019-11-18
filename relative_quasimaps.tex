@@ -1,7 +1,8 @@
-\documentclass[times]{oupau}
+\documentclass[10pt]{amsart}
+
+\usepackage[marginratio=1:1,margin=1in]{geometry}
 
 %\documentclass[times,doublespace]{oupau}
-
 %\usepackage[margin=1in]{geometry}
 
 %\textwidth=125mm
@@ -190,40 +191,12 @@
 
 \begin{document}
 
-
-
-
 % Enter full title and short title for running headers
 \title{Relative quasimaps and mirror formulae}
-\shorttitle{Relative quasimaps and mirror formulae}
-
-% Enter the publication year and the ID number of the paper
-\volumeyear{}
-\paperID{}
+%\shorttitle{Relative quasimaps and mirror formulae}
 
 % Author name(s)
-\author{Luca Battistella\affil{1} and Navid Nabijou\affil{2}}
-% Abbreviated author name for running headers
-\abbrevauthor{L. Battistella and N. Nabijou}
-% Abbreviated author name for first page header
-\headabbrevauthor{L. Battistella and N. Nabijou}
-
-\address{%
-\affilnum{1}Mathematisches Institut, Ruprecht-Karls-Universit\"at Heidelberg\\
-\affilnum{2}School of Mathematics and Statistics, University of Glasgow}
-
-% Address / e-mail address of corresponding author
-\correspdetails{navid.nabijou@glasgow.ac.uk}
-
-% Received/revised/accepted dates will be entered by the publisher during production of an accepted paper. Please do not edit these placeholders for submission.
-\received{1 Month 20XX}
-\revised{11 Month 20XX}
-\accepted{21 Month 20XX}
-
-% Enter details of editor communicating this article
-\communicated{C. De Concini}
-
-
+\author{Luca Battistella and Navid Nabijou}
 
 \begin{abstract}We construct and study the theory of relative quasimaps in genus zero, in the spirit of Gathmann. When $X$ is a smooth toric variety and $Y$ is a smooth very ample hypersurface in $X$, we produce a virtual class on the moduli space of relative quasimaps to $(X,Y)$, which we use to define relative quasimap invariants. We obtain a recursion formula which expresses each relative invariant in terms of invariants of lower tangency, and apply this formula to derive a quantum Lefschetz theorem for quasimaps, expressing the restricted quasimap invariants of $Y$ in terms of those of $X$. Finally, we show that the relative $I$-function of Fan--Tseng--You coincides with a natural generating function for  relative quasimap invariants, providing mirror-symmetric motivation for the theory.\end{abstract}
 
@@ -303,6 +276,11 @@ In Appendix~\ref{appendix:intersection} we define the \emph{diagonal pull-back} 
 
 \subsection{Future directions}
 We expect Theorem \ref{thmA} to extend to general simple normal crossings divisors and arbitrary genus. To this end, we are currently in the process of developing and applying a fully-fledged theory of \emph{logarithmic quasimaps}, taking inspiration from the theory of logarithmic stable maps \cite{GrossSiebertLog,ChenLog,AbramovichChenLog}. In this context, the ``relative mirror theorem'' will take the form of a wall-crossing formula between logarithmic quasimap and Gromov--Witten invariants, together with closed-form expressions for the quasimap generating functions.
+
+
+\subsection{Acknowledgements} We thank Tom Coates, Cristina Manolache and Dhruv Ranganathan for helpful advice concerning both exposition and subject matter. We are especially grateful to Ionu\c{t} Ciocan-Fontanine for thoroughly examining a preliminary version of this manuscript and providing several clarifications and corrections. We would also like to thank Fabio Bernasconi, Andrea Petracci and Richard Thomas for useful conversations. We thank the referees for a number of valuable suggestions.
+
+This work was supported by EPSRC, the Royal Society and the London School of Geometry and Number Theory.
 
 \subsection{Table of notation} We will use the following notation, most of which is introduced in the main body of the paper.\medskip
 
@@ -1076,11 +1054,6 @@ where $I_{\beta,\mathrm{FTY}}^{X|Y}(z,0)$ is the bracketed term in \eqref{FTY I-
 \begin{remark} This result is unnecessarily restrictive, and is best thought of as a proof-of-concept. For one, it establishes wall-crossing only in the $t=0$ case (i.e. we only consider generating functions for two-pointed invariants with a fundamental class insertion). More importantly, the proof is not geometric; it \emph{uses} the relative mirror theorem \cite[Theorem 4.3]{FanTsengYou}, rather than providing a new proof of this result. We plan to correct both these defects, and more, in our upcoming work on logarithmic quasimap theory.
 \end{remark}
 
-\acks
-We thank Tom Coates, Cristina Manolache and Dhruv Ranganathan for helpful advice concerning both exposition and subject matter. We are especially grateful to Ionu\c{t} Ciocan-Fontanine for thoroughly examining a preliminary version of this manuscript and providing several clarifications and corrections. We would also like to thank Fabio Bernasconi, Andrea Petracci and Richard Thomas for useful conversations. We thank the referees for a number of valuable suggestions.
-
-This work was supported by EPSRC, the Royal Society and the London School of Geometry and Number Theory.
-
 \appendix
 
 \section{Intersection-theoretic lemmas}\label{appendix:intersection}
@@ -1149,5 +1122,14 @@ and apply commutativity of usual Gysin morphisms. In the case where $k$ is not a
 
 \bibliographystyle{alpha}
 \bibliography{relqm}
+
+\bigskip
+\noindent Luca Battistella\\
+Mathematisches Institut, Ruprecht-Karls-Universit\"at Heidelberg\\
+\href{mailto:lbattistella@mathi.uni-heidelberg.de}{lbattistella@mathi.uni-heidelberg.de}\\ \, \\
+\noindent Navid Nabijou \\
+School of Mathematics and Statistics, University of Glasgow \\
+\href{mailto:Navid.Nabijou@glasgow.ac.uk}{navid.nabijou@glasgow.ac.uk}\\
+
 
 \end{document}
