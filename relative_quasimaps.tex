@@ -91,7 +91,7 @@
 \newcommand{\Id}{\operatorname{Id}}
 \newcommand{\CC}{\mathbb{C}}
 \newcommand{\QQ}{\mathbb{Q}}
-\newcommand{\HH}{\operatorname{H}}
+\newcommand{\HH}{\mathrm{H}}
 \newcommand{\Achow}{\operatorname{A}}
 \newcommand{\pt}{\operatorname{pt}}
 \newcommand{\bq}{\begin{equation}}
@@ -209,7 +209,7 @@
 \headabbrevauthor{L. Battistella and N. Nabijou}
 
 \address{%
-\affilnum{1}Max-Planck-Institut f\"ur Mathematik, Bonn\\
+\affilnum{1}Mathematisches Institut, Ruprecht-Karls-Universit\"at Heidelberg\\
 \affilnum{2}School of Mathematics and Statistics, University of Glasgow}
 
 % Address / e-mail address of corresponding author
@@ -263,18 +263,15 @@ The second form of the quantum Lefschetz theorem is an explicit relation between
 \begin{customthm}{C}[\textbf{Theorem \ref{Theorem Quantum Lefschetz}}]\label{thmC}
 Let $X$ be a smooth projective toric Fano variety and let $i\colon Y \hookrightarrow X$ be a very ample hypersurface. Assume that $-K_Y$ is nef and that $Y$ contains all curve classes (see \S \ref{Subsection setup}). Then
 \begin{equation*}
-\tilde{S}_0^Y(z,q) = \dfrac{\sum_{\beta\geq 0} q^\beta\left(\prod_{j=0}^{Y\cdot\beta}(Y+jz)\right)\cdot S_0^X(z,\beta)}{P_0^X(q)}
+\tilde{S}_0^Y(z,q) = \dfrac{\sum_{\beta\geq 0} q^\beta\left(\prod_{j=0}^{Y\cdot\beta}(Y+jz)\right)\cdot \mathscr{S}^X_\beta(z)}{P_0^X(q)}
 \end{equation*}
-where $\tilde{S}_0^Y(z,q)$ and $S_0^X(z,\beta)$ are the following generating functions for $2$-pointed quasimap invariants
+where $\tilde{S}_0^Y(z,q)$ and $\mathscr{S}^X_\beta(z)$ are the following generating functions for $2$-pointed quasimap invariants
 \begin{align*}
 \tilde{S}_0^Y(z,q)&=i_* \sum_{\beta \geq 0} q^\beta (\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{Y}{\beta}}\right)\\
-S_0^X(z,\beta)&=(\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{X}{\beta}}\right)
+\mathscr{S}^X_\beta(z)&=(\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{X}{\beta}}\right)
 \end{align*}
 and $P_0^X(q)$ is given by:
-\begin{equation*}
-P_0^X(q) = 1 + \sum_{\substack{\beta>0 \\ K_Y\cdot\beta=0}} q^\beta(Y\cdot\beta)!\langle [\pt_X] \psi_1^{Y\cdot\beta-1} ,\mathbbm 1_{X}\rangle_{0,2,\beta}^X.
-\end{equation*}
-\end{customthm}
+$$ P_0^X(q) = 1 + \sum_{\substack{\beta>0 \\ K_Y\cdot\beta=0}} q^\beta(Y\cdot\beta)!\langle [\pt_X] \psi_1^{Y\cdot\beta-1} ,\mathbbm 1_{X}\rangle_{0,2,\beta}^X.$$\end{customthm}
 \noindent This is similar in spirit to the results of \cite{Ga-MF}; however, the stronger stability condition considerably simplifies both the proof and the final formula. This result can also be obtained as a consequence of \cite[Corollary~5.5.1]{CF-K-wallcrossing}; see \S \ref{Subsection CFK comparison}. 
 
 
@@ -785,31 +782,33 @@ As with many results in enumerative geometry, the quasimap Lefschetz formula is 
 
 For any smooth projective toric variety $X$ (or more generally, any space for which the quasimap invariants are defined), and any effective curve class $\beta\in \HH_2^+(X)$, we define
 \begin{align*} \mathscr{S}^X_\beta(z) & =(\ev_1)_*\left(\frac{1}{z-\psi_1} \virt{\Q{0}{2}{X}{\beta}}\right) 
-\intertext{and}
+\intertext{and take}
 S_0^X(z,q) &=\sum_{\beta\geq 0} q^\beta \mathscr{S}^X_\beta(z)\end{align*}
-where by convention $\mathscr{S}_0^X(z) = \mathbbm 1_X$, and $q$ is a Novikov variable. These are generating functions for quasimap invariants of $X$ which take values in $\HH^*(X)$. The notation $S_0^X(z,q)$ is due to the fact that this is the $t=0$ restriction of the $S^{\small{0+}}$-operator; see \S \ref{Subsection CFK comparison} below.
+where $q$ is a Novikov variable and $\mathscr{S}_0^X(z) = \mathbbm 1_X$ by convention. These are generating functions for quasimap invariants of $X$ which take values in $\HH^*(X)$. We remark that each $q$-coefficient $\mathscr{S}_\beta^X(z)$ is a polynomial in $z$. 
 
-The same definition applies to $Y$. However, as noted in \S \ref{Subsection general quasimap Lefschetz}, quantum Lefschetz theorems only work if we study \emph{restricted quasimap invariants}. The generating function for these is defined as
-\begin{equation*} \tilde{S}^Y_0(z,\beta) = (\ev_1)_* \left( \dfrac{1}{z-\psi_1} \virt{\Q{0}{2}{Y}{\beta}} \right) \end{equation*}
-where crucially $\ev_1$ is viewed as \emph{mapping to $X$} instead of to $Y$. Thus $\tilde{S}^Y_0(z,\beta)$ takes values in $\HH^*(X)$ and involves only quasimap invariants of $Y$ with insertions coming from $i^*\HH^*(X)$; this is in contrast to $S^Y_0(z,\beta)$, which takes values in $\HH^*(Y)$ and involves quasimap invariants of $Y$ with arbitrary insertions. As earlier, we can also define $\tilde{S}_0^Y(z,q)$.
+\begin{remark} We use the notation $S_0^X(z,q)$ because this is the $\mathbf{t}=0$ restriction of the $S^{\small{0+}}$-operator applied to the fundamental class (see \S \ref{Subsection CFK comparison} below).\end{remark}
+
+The same definition applies to $Y$. However, as noted in \S \ref{Subsection general quasimap Lefschetz}, quantum Lefschetz theorems only work to study \emph{restricted quasimap invariants}. The generating function for these is defined as
+\begin{equation*} \tilde{\mathscr{S}}^Y_\beta(z) = (\ev_1)_* \left( \dfrac{1}{z-\psi_1} \virt{\Q{0}{2}{Y}{\beta}} \right) \end{equation*}
+where crucially $\ev_1$ is viewed as \emph{mapping to $X$} instead of to $Y$. Thus $\tilde{\mathscr{S}}^Y_\beta(z)$ takes values in $\HH^*(X)$ and involves only quasimap invariants of $Y$ with insertions coming from $i^*\HH^*(X)$; this is in contrast to $\mathscr{S}^Y_\beta(z)$, which takes values in $\HH^*(Y)$ and involves quasimap invariants of $Y$ with arbitrary insertions. As earlier, we can also define $\tilde{S}_0^Y(z,q)$.
 
 Now, since $X$ and $Y$ are smooth, we may use Poincar\'{e} duality to define a push-forward map on cohomology, $i_* \colon \HH^k(Y) \to \HH^{k+2}(X)$.
 
-\begin{lem} \label{lemma pushforward} $i_* S^Y_0(z,\beta) = \tilde{S}^Y_0(z,\beta)$. \end{lem}
+\begin{lem} \label{lemma pushforward} $i_* \mathscr{S}^Y_\beta(z) = \tilde{\mathscr{S}}^Y_\beta(z)$. \end{lem}
 \begin{proof} This follows from functoriality of cohomological push-forwards and the fact that we have a commuting triangle:
 \bcd
 \Q{0}{2}{Y}{\beta} \ar[rr,"\ev_1"] \ar[rd,"\ev_1" left=0.2cm] & & Y \ar[ld,"i"] \\
 & X & 
 \ecd
-Let us spell this out explicitly, in order to help the reader familiarise with the generating functions involved. First, it is easy to see from the projection formula that:
+Let us spell this out explicitly, in order to familiarise the reader with the generating functions involved. First, it is easy to see from the projection formula that:
 \begin{align*} i_* \rho^i =
 \begin{cases} \eta^i \qquad \text{for $i = 1, \ldots, k$} \\
 0 \qquad \text{\ for $i = k+1, \ldots, l$} \end{cases} \end{align*}
-Now, we can write $S_0^Y(z,\beta)$ as:
-\begin{equation*} S_0^Y(z,\beta) = \sum_{i=1}^l \left\langle \dfrac{\rho_i}{z-\psi_1} , \mathbbm{1}_Y \right\rangle_{0,2,\beta}^Y  \rho^i \end{equation*}
+Now, we can write $\mathscr{S}^Y_\beta(z)$ as:
+\begin{equation*} \mathscr{S}^Y_\beta(z) = \sum_{i=1}^l \left\langle \dfrac{\rho_i}{z-\psi_1} , \mathbbm{1}_Y \right\rangle_{0,2,\beta}^Y  \rho^i \end{equation*}
 Thus applying $i_*$ gives
-\begin{align*} i_* S_0^Y(z,\beta)  = \sum_{i=1}^l \left\langle \dfrac{\rho_i}{z-\psi_1} , \mathbbm{1}_Y \right\rangle_{0,2,\beta}^Y   i_* \rho^i
-= \sum_{i=1}^k \left\langle \dfrac{\eta_i}{z-\psi_1}, \mathbbm{1}_X \right\rangle_{0,2,\beta}^Y   \eta^i = \tilde{S}_0^Y(z,\beta) \end{align*}
+\begin{align*} i_* \mathscr{S}^Y_\beta(z)  = \sum_{i=1}^l \left\langle \dfrac{\rho_i}{z-\psi_1} , \mathbbm{1}_Y \right\rangle_{0,2,\beta}^Y   i_* \rho^i
+= \sum_{i=1}^k \left\langle \dfrac{\eta_i}{z-\psi_1}, \mathbbm{1}_X \right\rangle_{0,2,\beta}^Y   \eta^i = \tilde{\mathscr{S}}^Y_\beta(z) \end{align*}
 as claimed. \end{proof}
 
 \subsection{Quasimap quantum Lefschetz formula} \label{subsection quasimap quantum Lefschetz formula} We now turn to our main result: a formula expressing the generating function $\tilde{S}_0^Y(z,q)$ for restricted quasimap invariants of $Y$ in terms of the quasimap invariants of $X$.
@@ -817,7 +816,7 @@ as claimed. \end{proof}
 \begin{thm} \label{Theorem Quantum Lefschetz}
 Let $X$ and $Y$ be as above. Then
 \begin{equation}\label{eqn:mirror}
-\tilde{S}_0^Y(z,q) = \dfrac{\sum_{\beta\geq 0} q^\beta \left(\prod_{j=0}^{Y\cdot\beta}(Y+jz)\right) \cdot S_0^X(z,\beta)}{P_0^X(q)}
+\tilde{S}_0^Y(z,q) = \dfrac{\sum_{\beta\geq 0} q^\beta \left(\prod_{j=0}^{Y\cdot\beta}(Y+jz)\right) \cdot \mathscr{S}^X_\beta(z)}{P_0^X(q)}
 \end{equation}
 where:
 \begin{align*}
@@ -830,25 +829,25 @@ Notice that $P_0^X(q)$ depends not only on $X$ but also on the divisor class of 
 \begin{proof}
 For $m = 0, \ldots, Y \cdot \beta$, define the following generating function for $2$-pointed relative quasimap invariants
  \[
-  \widetilde{S}_{0,(m)}^{X|Y}(z,\beta)=(\ev_1)_*\left(\frac{1}{z-\psi_1}\virt{\Q{0}{(m,0)}{X|Y}{\beta}}\right)
+  \tilde{\mathscr{S}}_{\beta,(m)}^{X|Y}(z)=(\ev_1)_*\left(\frac{1}{z-\psi_1}\virt{\Q{0}{(m,0)}{X|Y}{\beta}}\right)
  \]
-where we view $\ev_1$ as mapping to $X$.  Note that  $\widetilde{S}_{0,(0)}^{X|Y}(z,\beta) = S_0^X(z, \beta)$. Also define the following generating function for ``comb loci invariants''
+where we view $\ev_1$ as mapping to $X$.  Note that  $\tilde{\mathscr{S}}_{\beta,(0)}^{X|Y}(z) = \mathscr{S}_\beta^X(z)$. Also define the following generating function for ``comb loci invariants''
 \[
- \widetilde{T}_{0,(m)}^{X|Y}(z,\beta)=(\ev_1)_*\left(m \virt{\Q{0}{(m,0)}{X|Y}{\beta}}+\frac{1}{z-\psi_1} \virt{\mathcal{D}^{\mathcal{Q}}_{(m,0),1}(X|Y,\beta)} \right)
+ \tilde{\mathscr{R}}_{\beta,(m)}^{X|Y}(z)=(\ev_1)_*\left(m \virt{\Q{0}{(m,0)}{X|Y}{\beta}}+\frac{1}{z-\psi_1} \virt{\mathcal{D}^{\mathcal{Q}}_{(m,0),1}(X|Y,\beta)} \right)
 \]
 where again we view $\ev_1$ as mapping to $X$. As in \cite[Lemma 1.2]{Ga-MF}, it follows from Theorem \ref{Theorem general recursion} that
 \begin{equation}\label{Gathmann recursion via generating functions}
- (Y+mz) \widetilde{S}_{0,(m)}^{X|Y}(z,\beta) = \widetilde{S}_{0,(m+1)}^{X|Y}(z,\beta)+ \widetilde{T}_{0,(m)}^{X|Y}(z,\beta)
+ (Y+mz) \tilde{\mathscr{S}}_{\beta,(m)}^{X|Y}(z) = \tilde{\mathscr{S}}_{\beta,(m+1)}^{X|Y}(z)+ \tilde{\mathscr{R}}_{\beta,(m)}^{X|Y}(z)
 \end{equation}
 and we can apply this repeatedly to obtain:
 \begin{equation} \label{eqn:G}
-\prod_{j=0}^{Y\cdot\beta}(Y+jz) S_0^X(z,\beta) = \sum_{m=0}^{Y\cdot\beta}\prod_{j=m+1}^{Y\cdot\beta}(Y+jz)\widetilde{T}_{0,(m)}^{X|Y}(z,\beta)
+\prod_{j=0}^{Y\cdot\beta}(Y+jz) \mathscr{S}^X_\beta(z) = \sum_{m=0}^{Y\cdot\beta}\prod_{j=m+1}^{Y\cdot\beta}(Y+jz)\tilde{\mathscr{R}}_{\beta,(m)}^{X|Y}(z)
 \end{equation}
-We now examine the right-hand side in detail. By definition, $\widetilde{T}_{0,(m)}^{X|Y}(z,\beta)$ splits into two parts: those terms coming from the relative space and those terms coming from the comb loci.
+We now examine the right-hand side in detail. By definition, $\tilde{\mathscr{R}}_{\beta,(m)}^{X|Y}(z)$ splits into two parts: those terms coming from the relative space and those terms coming from the comb loci.
 
 Let us first consider the contribution of the comb loci. Since there are only two marked points and the first is required to lie on the internal component of the comb, it follows from the strong stability condition that there are only two options: a comb with zero teeth or a comb with one tooth.
 
-First consider the case of a comb with zero teeth. The moduli space is then $\Q{0}{2}{Y}{\beta}$ and we require that $Y \cdot \beta = m$. Thus this piece only contributes to $\widetilde{T}_{0,(Y\cdot\beta)}^{X|Y}(z,\beta)$, and the contribution is:
+First consider the case of a comb with zero teeth. The moduli space is then $\Q{0}{2}{Y}{\beta}$ and we require that $Y \cdot \beta = m$. Thus this piece only contributes to $\tilde{\mathscr{R}}_{\beta,(Y\cdot\beta)}^{X|Y}(z)$, and the contribution is:
 \begin{equation*} \sum_{i=1}^k \left\langle \dfrac{\rho_i}{z-\psi_1}, \mathbbm{1}_Y \right\rangle_{0,2,\beta}^Y \eta^i \end{equation*}
 
 Next consider the case of a comb with one tooth. Let $\beta^{(0)}$ and $\beta^{(1)}$ denote the curve classes of the internal and external components, respectively, and let $m^{(1)}$ be the contact order of the external component with $Y$. The picture is as follows
@@ -876,9 +875,9 @@ for $i = 1, \ldots, k$ and $h = 1, \ldots, l$. By computing dimensions, we find
 \end{align*}
 where the final equality follows from adjunction and the final inequality holds because $-K_Y$ is nef and $m^{(1)}\leq Y \cdot \beta_1$. This shows that the only non-trivial contributions come from curve classes $\beta^{(1)}$ such that $K_Y \cdot \beta^{(1)}=0$, and that in this case the order of tangency must be maximal, i.e. $m^{(1)}=Y \cdot \beta^{(1)}$. Furthermore we must have $\codim \rho^h = 0$ and so $\rho^h = \rho^1 = \mathbbm{1}_Y$ which implies $\rho_h = \rho_1 = [\pt_Y]$. Finally since $m^{(1)}=Y \cdot \beta^{(1)}$ we have
 \begin{equation*} m = Y \cdot \beta^{(0)}+m^{(1)}=Y \cdot (\beta^{(0)} + \beta^{(1)}) = Y \cdot \beta \end{equation*}
-and so again this piece only contributes to $\widetilde{T}_{0,(Y\cdot\beta)}^{X|Y}(z,\beta)$, and the contribution is:
+and so again this piece only contributes to $\tilde{\mathscr{R}}_{\beta,(Y\cdot\beta)}^{X|Y}(z)$, and the contribution is:
 \begin{equation*} \sum_{i=1}^k \left( \sum_{\substack{0 < \beta^{(1)} < \beta \\ K_Y \cdot \beta^{(1)}=0}} (Y \cdot \beta^{(1)}) \bigg\langle \dfrac{\rho_i}{z-\psi_1}, \mathbbm{1}_Y \bigg\rangle_{0,2,\beta-\beta^{(1)}}^Y \bigg\langle \rho_1, \mathbbm{1}_X \bigg\rangle_{0,(Y \cdot \beta^{(1)},0),\beta^{(1)}}^{X|Y} \right) \eta^i \end{equation*}
-where the $Y \cdot \beta^{(1)}$ factor comes from the weighting on the virtual class of the comb locus. Finally, we must examine the terms of $\widetilde{T}_{0,(m)}^{X|Y}(z,\beta)$ coming from:
+where the $Y \cdot \beta^{(1)}$ factor comes from the weighting on the virtual class of the comb locus. Finally, we must examine the terms of $\tilde{\mathscr{R}}_{\beta,(m)}^{X|Y}(z)$ coming from:
 \begin{equation*}\ev_{1*}(m\virt{\Q{0}{(m,0)}{X|Y}{\beta}})\end{equation*} 
 Notice that we only have insertions from $i^*\HH^*(X) \subseteq \HH^*(Y)$, since $\ev_1$ is viewed as mapping to $X$. On the other hand
 \begin{align*} \vdim \Q{0}{(m,0)}{X|Y}{\beta} & = \dim X-3 -K_X \cdot \beta +2-m & \\
@@ -887,20 +886,20 @@ Notice that we only have insertions from $i^*\HH^*(X) \subseteq \HH^*(Y)$, since
 & \geq \dim X - 1 \ \ & \text{since $m \leq Y \cdot \beta$} \end{align*}
 where in the second line we have applied the projection formula to $i$, and thus have implicitly used Assumption (2), discussed in \S \ref{Subsection setup}; namely that every curve class on $X$ comes from a class on $Y$.
 
-Consequently the only insertions that can appear are those of dimension $0$ and $1$. However, the restriction of the $0$-dimensional class $\eta_0 = [\pt_X]$ to $Y$ vanishes, as do the restrictions of all $1$-dimensional classes except for $\eta_1$ (by the definition of the dual basis, since $\eta^1 = Y$). Thus the only insertion is $i^*\eta_1=\rho_1=[\pt_Y]$, and since $\eta^1$ has dimension $1$ all the inequalities above must actually be equalities. Thus we only have a contribution if $-K_Y \cdot \beta = 0$ and $m = Y \cdot \beta$. The contribution to $\widetilde{T}_{0,(Y\cdot\beta)}^{X|Y}(z,\beta)$ in this case is:
+Consequently the only insertions that can appear are those of dimension $0$ and $1$. However, the restriction of the $0$-dimensional class $\eta_0 = [\pt_X]$ to $Y$ vanishes, as do the restrictions of all $1$-dimensional classes except for $\eta_1$ (by the definition of the dual basis, since $\eta^1 = Y$). Thus the only insertion is $i^*\eta_1=\rho_1=[\pt_Y]$, and since $\eta^1$ has dimension $1$ all the inequalities above must actually be equalities. Thus we only have a contribution if $-K_Y \cdot \beta = 0$ and $m = Y \cdot \beta$. The contribution to $\tilde{\mathscr{R}}_{\beta,(Y\cdot\beta)}^{X|Y}(z)$ in this case is:
 \begin{equation*} (Y \cdot \beta) \langle \rho_1 , \mathbbm{1}_X \rangle_{0,(Y \cdot \beta,0),\beta}^{X|Y} \eta^1 \end{equation*}
 
-Thus we have calculated $\widetilde{T}_{0,(m)}^{X|Y}(z,\beta)$ for all $m$; substituting into equation \eqref{eqn:G} we obtain
-\begin{align*} \prod_{j=0}^{Y \cdot \beta} (Y + jz) & S_0^X(z,\beta) = \widetilde{T}_{0,(Y\cdot\beta)}^{X|Y}(z,\beta) \\
+Thus we have calculated $\tilde{\mathscr{R}}_{\beta,(m)}^{X|Y}(z)$ for all $m$; substituting into equation \eqref{eqn:G} we obtain
+\begin{align*} \prod_{j=0}^{Y \cdot \beta} (Y + jz) & \mathscr{S}^X_\beta(z) = \tilde{\mathscr{R}}_{\beta,(Y\cdot\beta)}^{X|Y}(z) \\
 = \ & \sum_{i=1}^k \left\langle \dfrac{\rho_i}{z-\psi_1}, \mathbbm{1}_Y \right\rangle_{0,2,\beta}^Y \eta^i + \\
 & \sum_{i=1}^k \left( \sum_{\substack{0 < \beta^{(1)} < \beta \\ K_Y \cdot \beta^{(1)}=0}} (Y \cdot \beta^{(1)}) \bigg\langle \dfrac{\rho_i}{z-\psi_1}, \mathbbm{1}_Y \bigg\rangle_{0,2,\beta-\beta^{(1)}}^Y \bigg\langle \rho_1, \mathbbm{1}_X \bigg\rangle_{0,(Y \cdot \beta^{(1)},0),\beta^{(1)}}^{X|Y} \right) \eta^i + \\
 & (Y \cdot \beta) \langle \rho_1 , \mathbbm{1}_X \rangle_{0,(Y \cdot \beta,0),\beta}^{X|Y} \eta^1
 \end{align*}
 where the third term only appears if $K_Y \cdot \beta=0$. We can rewrite this as:
-\begin{align*} \prod_{j=0}^{Y \cdot \beta} (Y + jz) & S_0^X(z,\beta) \\
-& = \tilde{S}_0^Y(z,\beta) + \sum_{\substack{0 < \beta^{(1)} \leq \beta \\ K_Y \cdot \beta^{(1)}=0}} \left( (Y \cdot \beta^{(1)}) \bigg\langle \rho_1, \mathbbm{1}_X \bigg\rangle_{0,(Y \cdot \beta^{(1)},0),\beta^{(1)}}^{X|Y} \right) \tilde{S}_0^Y(z,\beta-\beta^{(1)})
+\begin{align*} \prod_{j=0}^{Y \cdot \beta} (Y + jz) & \mathscr{S}^X_\beta(z) \\
+& = \tilde{\mathscr{S}}^Y_\beta(z) + \sum_{\substack{0 < \beta^{(1)} \leq \beta \\ K_Y \cdot \beta^{(1)}=0}} \left( (Y \cdot \beta^{(1)}) \bigg\langle \rho_1, \mathbbm{1}_X \bigg\rangle_{0,(Y \cdot \beta^{(1)},0),\beta^{(1)}}^{X|Y} \right) \tilde{\mathscr{S}}_{\beta-\beta^{(1)}}^Y(z).
 \end{align*}
-It is now clear from the expression above that equation \eqref{eqn:mirror} in the statement of Theorem \ref{Theorem Quantum Lefschetz} holds, with:
+Summing over $\beta$, we see that equation \eqref{eqn:mirror} in the statement of Theorem \ref{Theorem Quantum Lefschetz} holds, with:
 \begin{equation*} P_0^X(q) = 1 + \sum_{\substack{\beta>0 \\ K_Y\cdot\beta=0}} q^\beta (Y\cdot\beta) \langle \rho_1,\mathbbm 1_{X}\rangle_{0,(Y\cdot\beta,0),\beta}^{X|Y} \end{equation*}
 To complete the proof it thus remains to show that:
 \begin{equation*} P_0^X(q) = 1 + \sum_{\substack{\beta>0 \\ K_Y\cdot\beta=0}} q^\beta(Y\cdot\beta)!\langle\psi_1^{Y\cdot\beta-1} [\pt_X],\mathbbm 1_{X}\rangle_{0,2,\beta}^X \end{equation*}
@@ -930,7 +929,7 @@ where the second equality holds because $Y\cdot\eta_1=\eta^1 \cdot \eta_1 = [\pt
 
 \begin{cor}
  If $Y$ is Fano then there is no correction term:
-\begin{equation*} \sum_{\beta\geq 0} q^\beta\prod_{j=0}^{Y\cdot\beta}(Y+jz)S_0^X(z,\beta) = \tilde{S}_0^Y(z,q) \end{equation*}
+\begin{equation*} \sum_{\beta\geq 0} q^\beta\prod_{j=0}^{Y\cdot\beta}(Y+jz)\mathscr{S}^X_\beta(z) = \tilde{S}_0^Y(z,q) \end{equation*}
 \end{cor}
 
 \begin{cor}
@@ -939,7 +938,7 @@ Let $Y = Y_5 \subseteq  X = \PP^4$ be the quintic three-fold. Then
 where
 \begin{equation*} I_{\text{small}}^{Y_5}(z,q)=5H+\sum_{d>0}\frac{\prod_{j=0}^{5d}(H+jz)}{\prod_{j=0}^{d}(H+jz)^5} \ q^d \end{equation*}
 and:
-\begin{equation*} P(q)=1+\sum_{d>0}\frac{(5d)!}{(d!)^5}q^d \end{equation*}
+\begin{equation*} P(q)=1+\sum_{d>0}\frac{(5d)!}{(d!)^5}q^d. \end{equation*}
 \end{cor}
 \begin{proof} Apply Theorem \ref{Theorem Quantum Lefschetz} and use the fact that the quasimap invariants of $\PP^4$ coincide with the Gromov--Witten invariants, which are well-known from mirror symmetry. \end{proof}
 
@@ -974,7 +973,7 @@ They observe that if we set ${\bf t}=0$ and restrict to semi-positive targets, t
 see \cite[Corollary 5.5.1]{CF-K-wallcrossing}. In our setting, $\epsilon=0+$ and $Y$ embeds as a very ample hypersurface in a toric Fano variety $X$. Our Theorem \ref{Theorem Quantum Lefschetz} makes explicit a consequence of formula \eqref{Ciocan-Fontanine Theorem t zero}. More precisely:
 \begin{lem} We have the following relations between our generating functions and the generating functions of Ciocan-Fontanine and Kim:
 \begin{align}
-\label{J epsilon equation} i_*J^{0+}|_{\mathbf{t}=0} & = \sum_{\beta \geq 0} q^\beta \prod_{j=0}^{Y \cdot \beta} (Y + jz) S_0^X(z,\beta) \\
+\label{J epsilon equation} i_*J^{0+}|_{\mathbf{t}=0} & = \sum_{\beta \geq 0} q^\beta \prod_{j=0}^{Y \cdot \beta} (Y + jz) \mathscr{S}^X_\beta(z) \\
 \label{P epsilon equation} \langle [\pt_Y], P^{0+}|_{\mathbf{t}=0} \rangle & = P_0^X(q) \\
 \label{S epsilon equation} i_*S^{0+}(\mathbbm{1}_Y)|_{\mathbf{t}=0} & = \tilde{S}^Y_0(z,q)
 \end{align}
@@ -1010,16 +1009,16 @@ Furthermore, the Euler classes of the virtual normal bundles match under $i$. Su
 \begin{align*} i_* {J^{0+}}|_{{\mathbf{t}=0}} & = \sum_{\beta\geq 0}q^\beta(i\circ\ev_\bullet)_* \left( \operatorname{Res}_{F_0^Y}\virt{\QG{0}{0}{Y}{\beta}} \right) \\
 & = \sum_{\beta \geq 0} q^\beta \prod_{j=0}^{Y \cdot \beta} (Y + jz) (\ev_{\bullet})_* \left( \operatorname{Res}_{F_0^X}\virt{\QG{0}{0}{X}{\beta}} \right) \end{align*}
 On the other hand, if we apply \eqref{Ciocan-Fontanine Theorem t zero} with $X$ instead of $Y$, then the denominator on the left-hand side vanishes since $X$ is Fano. Comparing coefficients of $q^\beta$ we thus obtain
-\begin{equation*} (\ev_{\bullet})_* \operatorname{Res}_{F_0^X}\virt{\QG{0}{0}{X}{\beta}} = S_0^X(z,\beta) \end{equation*}
+\begin{equation*} (\ev_{\bullet})_* \operatorname{Res}_{F_0^X}\virt{\QG{0}{0}{X}{\beta}} = \mathscr{S}^X_\beta(z) \end{equation*}
 from which it follows that:
-\begin{equation*} i_*J^{0+}|_{\mathbf{t}=0} = \sum_{\beta \geq 0} q^\beta \prod_{j=0}^{Y\cdot\beta}(Y+jz) S_0^X(z,\beta)\end{equation*}
+\begin{equation*} i_*J^{0+}|_{\mathbf{t}=0} = \sum_{\beta \geq 0} q^\beta \prod_{j=0}^{Y\cdot\beta}(Y+jz) \mathscr{S}^X_\beta(z)\end{equation*}
 This proves \eqref{J epsilon equation}. It remains to show \eqref{P epsilon equation}. According to Ciocan-Fontanine and Kim, if we write the $1/z$-expansion of ${J^{\epsilon}}|_{\mathbf{t}=0}$ as
 \begin{equation*} {J^{\epsilon}}|_{\mathbf{t}=0}=J^{\epsilon}_{0}(q)\mathbbm 1_Y+O(1/z) \end{equation*}
 then $\langle [\pt_Y],  P^\epsilon|_{{\bf t}=0}\rangle=J^{\epsilon}_{0}(q)$. It thus remains to prove that $J^{0+}_0(q)=P_0^X(q)$.
 
 Since $X$ is a toric Fano variety, we have the following calculation of residues due to Givental \cite{Givental-mirror} (see also \cite[Definition 7.2.8]{CF-K}):
 \begin{align*}
-S_0^X(z,\beta) =\prod_{\rho\in\Sigma_X(1)}\dfrac{\prod_{j=-\infty}^0(D_{\rho}+jz)}{\prod_{j=-\infty}^{D_{\rho}\cdot \beta}(D_\rho+jz)}
+\mathscr{S}^X_\beta(z) =\prod_{\rho\in\Sigma_X(1)}\dfrac{\prod_{j=-\infty}^0(D_{\rho}+jz)}{\prod_{j=-\infty}^{D_{\rho}\cdot \beta}(D_\rho+jz)}
 =\dfrac{\prod_{\substack{\rho \colon D_\rho \cdot \beta\leq 0}} \prod_{j=D_\rho \cdot \beta}^0 (D_{\rho}+jz)}{\prod_{\substack{\rho\colon D_\rho \cdot\beta > 0}} \prod_{j=1}^{D_\rho\cdot\beta} (D_{\rho}+jz)}
 \end{align*}
 We can then apply equation \eqref{J epsilon equation} to find $i_*J^{0+}|_{\mathbf{t}=0}$, and hence also to find $J^{0+}_0(q)$. In the end we obtain:
@@ -1028,7 +1027,7 @@ We can then apply equation \eqref{J epsilon equation} to find $i_*J^{0+}|_{\math
 \end{equation*}
 On the other hand the coefficient
 \begin{equation*} \langle[\pt_X]\psi_1^{Y\cdot\beta-1},\mathbbm 1_X\rangle_{0,2,\beta}^X\end{equation*}
-which appears in our $P_0^X(q)$-series also appears in $S_0^X(z,\beta)$. So again we can find it by appealing to Givental's calculation of $S_0^X(z,q)$.
+which appears in our $P_0^X(q)$-series also appears in $\mathscr{S}^X_\beta(z)$. So again we can find it by appealing to Givental's calculation of $S_0^X(z,q)$
 \begin{align*}
  \langle[\pt_X]\psi_1^{Y\cdot\beta-1},\mathbbm 1_X\rangle_{0,2,\beta}^X &=\operatorname{coeff}_{q^\beta z^{-Y\cdot\beta}}\langle [\pt_X],S_0^X(z,q) \rangle\\
 & =\frac{\prod_{\rho\colon D_\rho\cdot\beta< 0}(-1)^{-D_{\rho}\cdot\beta}(-D_{\rho}\cdot\beta)!}{\prod_{\rho\colon D_\rho\cdot\beta> 0}(D_{\rho}\cdot\beta)!}
